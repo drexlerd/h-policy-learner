@@ -1,0 +1,13 @@
+arm-empty 0
+at 2
+at-robot 1
+conn 2
+holding 1
+key 1
+key-shape 2
+lock-shape 2
+locked 1
+object 1
+open 1
+place 1
+shape 1

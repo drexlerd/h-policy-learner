@@ -1,0 +1,4224 @@
+{
+  "lama_first-blocks_4_clear-p-200-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 29,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-200-0.pddl"
+    ],
+    "node": "n195",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 23.95,
+    "problem": "p-200-0.pddl",
+    "run_dir": "runs-00001-00100/00001",
+    "total_time": 23.92
+  },
+  "lama_first-blocks_4_clear-p-202-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 31,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-202-0.pddl"
+    ],
+    "node": "n386",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 29.07,
+    "problem": "p-202-0.pddl",
+    "run_dir": "runs-00001-00100/00002",
+    "total_time": 29.04
+  },
+  "lama_first-blocks_4_clear-p-204-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 5,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-204-0.pddl"
+    ],
+    "node": "n151",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 25.05,
+    "problem": "p-204-0.pddl",
+    "run_dir": "runs-00001-00100/00003",
+    "total_time": 25.02
+  },
+  "lama_first-blocks_4_clear-p-206-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 39,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-206-0.pddl"
+    ],
+    "node": "n388",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 24.75,
+    "problem": "p-206-0.pddl",
+    "run_dir": "runs-00001-00100/00004",
+    "total_time": 24.72
+  },
+  "lama_first-blocks_4_clear-p-208-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 7,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-208-0.pddl"
+    ],
+    "node": "n241",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 22.03,
+    "problem": "p-208-0.pddl",
+    "run_dir": "runs-00001-00100/00005",
+    "total_time": 22.01
+  },
+  "lama_first-blocks_4_clear-p-210-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 7,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-210-0.pddl"
+    ],
+    "node": "n196",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 25.38,
+    "problem": "p-210-0.pddl",
+    "run_dir": "runs-00001-00100/00006",
+    "total_time": 25.35
+  },
+  "lama_first-blocks_4_clear-p-212-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 35,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-212-0.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 21.05,
+    "problem": "p-212-0.pddl",
+    "run_dir": "runs-00001-00100/00007",
+    "total_time": 21.02
+  },
+  "lama_first-blocks_4_clear-p-214-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 5,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-214-0.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 26.51,
+    "problem": "p-214-0.pddl",
+    "run_dir": "runs-00001-00100/00008",
+    "total_time": 26.49
+  },
+  "lama_first-blocks_4_clear-p-216-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 9,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-216-0.pddl"
+    ],
+    "node": "n1396",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 28.1,
+    "problem": "p-216-0.pddl",
+    "run_dir": "runs-00001-00100/00009",
+    "total_time": 28.07
+  },
+  "lama_first-blocks_4_clear-p-218-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 43,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-218-0.pddl"
+    ],
+    "node": "n241",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 27.08,
+    "problem": "p-218-0.pddl",
+    "run_dir": "runs-00001-00100/00010",
+    "total_time": 27.05
+  },
+  "lama_first-blocks_4_clear-p-220-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 57,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-220-0.pddl"
+    ],
+    "node": "n386",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 38.63,
+    "problem": "p-220-0.pddl",
+    "run_dir": "runs-00001-00100/00011",
+    "total_time": 38.6
+  },
+  "lama_first-blocks_4_clear-p-222-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 13,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-222-0.pddl"
+    ],
+    "node": "n232",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 25.95,
+    "problem": "p-222-0.pddl",
+    "run_dir": "runs-00001-00100/00012",
+    "total_time": 25.93
+  },
+  "lama_first-blocks_4_clear-p-224-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 7,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-224-0.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 32.91,
+    "problem": "p-224-0.pddl",
+    "run_dir": "runs-00001-00100/00013",
+    "total_time": 32.88
+  },
+  "lama_first-blocks_4_clear-p-226-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 23,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-226-0.pddl"
+    ],
+    "node": "n386",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 35.88,
+    "problem": "p-226-0.pddl",
+    "run_dir": "runs-00001-00100/00014",
+    "total_time": 35.85
+  },
+  "lama_first-blocks_4_clear-p-228-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 21,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-228-0.pddl"
+    ],
+    "node": "n235",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 25.25,
+    "problem": "p-228-0.pddl",
+    "run_dir": "runs-00001-00100/00015",
+    "total_time": 25.22
+  },
+  "lama_first-blocks_4_clear-p-230-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 21,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-230-0.pddl"
+    ],
+    "node": "n202",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 29.46,
+    "problem": "p-230-0.pddl",
+    "run_dir": "runs-00001-00100/00016",
+    "total_time": 29.43
+  },
+  "lama_first-blocks_4_clear-p-232-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 1,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-232-0.pddl"
+    ],
+    "node": "n235",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 25.01,
+    "problem": "p-232-0.pddl",
+    "run_dir": "runs-00001-00100/00017",
+    "total_time": 24.98
+  },
+  "lama_first-blocks_4_clear-p-234-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 3,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-234-0.pddl"
+    ],
+    "node": "n243",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 27.87,
+    "problem": "p-234-0.pddl",
+    "run_dir": "runs-00001-00100/00018",
+    "total_time": 27.84
+  },
+  "lama_first-blocks_4_clear-p-236-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 5,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-236-0.pddl"
+    ],
+    "node": "n234",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 28.83,
+    "problem": "p-236-0.pddl",
+    "run_dir": "runs-00001-00100/00019",
+    "total_time": 28.8
+  },
+  "lama_first-blocks_4_clear-p-238-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 3,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-238-0.pddl"
+    ],
+    "node": "n199",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 32.46,
+    "problem": "p-238-0.pddl",
+    "run_dir": "runs-00001-00100/00020",
+    "total_time": 32.43
+  },
+  "lama_first-blocks_4_clear-p-240-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 3,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-240-0.pddl"
+    ],
+    "node": "n202",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 29.95,
+    "problem": "p-240-0.pddl",
+    "run_dir": "runs-00001-00100/00021",
+    "total_time": 29.92
+  },
+  "lama_first-blocks_4_clear-p-242-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 29,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-242-0.pddl"
+    ],
+    "node": "n199",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 34.6,
+    "problem": "p-242-0.pddl",
+    "run_dir": "runs-00001-00100/00022",
+    "total_time": 34.57
+  },
+  "lama_first-blocks_4_clear-p-244-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 15,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-244-0.pddl"
+    ],
+    "node": "n337",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 35.01,
+    "problem": "p-244-0.pddl",
+    "run_dir": "runs-00001-00100/00023",
+    "total_time": 34.98
+  },
+  "lama_first-blocks_4_clear-p-246-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 37,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-246-0.pddl"
+    ],
+    "node": "n241",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 35.49,
+    "problem": "p-246-0.pddl",
+    "run_dir": "runs-00001-00100/00024",
+    "total_time": 35.46
+  },
+  "lama_first-blocks_4_clear-p-248-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 67,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-248-0.pddl"
+    ],
+    "node": "n193",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 39.7,
+    "problem": "p-248-0.pddl",
+    "run_dir": "runs-00001-00100/00025",
+    "total_time": 39.64
+  },
+  "lama_first-blocks_4_clear-p-250-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 61,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-250-0.pddl"
+    ],
+    "node": "n235",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 33.96,
+    "problem": "p-250-0.pddl",
+    "run_dir": "runs-00001-00100/00026",
+    "total_time": 33.93
+  },
+  "lama_first-blocks_4_clear-p-252-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 7,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-252-0.pddl"
+    ],
+    "node": "n198",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 39.81,
+    "problem": "p-252-0.pddl",
+    "run_dir": "runs-00001-00100/00027",
+    "total_time": 39.78
+  },
+  "lama_first-blocks_4_clear-p-254-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 0,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-254-0.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 27.11,
+    "problem": "p-254-0.pddl",
+    "run_dir": "runs-00001-00100/00028",
+    "total_time": 27.08
+  },
+  "lama_first-blocks_4_clear-p-256-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 37,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-256-0.pddl"
+    ],
+    "node": "n388",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 39.03,
+    "problem": "p-256-0.pddl",
+    "run_dir": "runs-00001-00100/00029",
+    "total_time": 39.0
+  },
+  "lama_first-blocks_4_clear-p-258-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 15,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_clear",
+      "p-258-0.pddl"
+    ],
+    "node": "n200",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 34.64,
+    "problem": "p-258-0.pddl",
+    "run_dir": "runs-00001-00100/00030",
+    "total_time": 34.61
+  },
+  "lama_first-blocks_4_on-p-200-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 38,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-200-0.pddl"
+    ],
+    "node": "n232",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 23.41,
+    "problem": "p-200-0.pddl",
+    "run_dir": "runs-00001-00100/00031",
+    "total_time": 23.38
+  },
+  "lama_first-blocks_4_on-p-202-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 42,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-202-0.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 25.16,
+    "problem": "p-202-0.pddl",
+    "run_dir": "runs-00001-00100/00032",
+    "total_time": 25.13
+  },
+  "lama_first-blocks_4_on-p-204-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 38,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-204-0.pddl"
+    ],
+    "node": "n232",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 24.1,
+    "problem": "p-204-0.pddl",
+    "run_dir": "runs-00001-00100/00033",
+    "total_time": 24.07
+  },
+  "lama_first-blocks_4_on-p-206-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 154,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-206-0.pddl"
+    ],
+    "node": "n202",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 32.0,
+    "problem": "p-206-0.pddl",
+    "run_dir": "runs-00001-00100/00034",
+    "total_time": 31.97
+  },
+  "lama_first-blocks_4_on-p-208-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 58,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-208-0.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 20.6,
+    "problem": "p-208-0.pddl",
+    "run_dir": "runs-00001-00100/00035",
+    "total_time": 20.56
+  },
+  "lama_first-blocks_4_on-p-210-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 114,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-210-0.pddl"
+    ],
+    "node": "n238",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 37.38,
+    "problem": "p-210-0.pddl",
+    "run_dir": "runs-00001-00100/00036",
+    "total_time": 37.34
+  },
+  "lama_first-blocks_4_on-p-212-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 10,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-212-0.pddl"
+    ],
+    "node": "n1396",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 27.16,
+    "problem": "p-212-0.pddl",
+    "run_dir": "runs-00001-00100/00037",
+    "total_time": 27.14
+  },
+  "lama_first-blocks_4_on-p-214-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 28,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-214-0.pddl"
+    ],
+    "node": "n386",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 32.65,
+    "problem": "p-214-0.pddl",
+    "run_dir": "runs-00001-00100/00038",
+    "total_time": 32.62
+  },
+  "lama_first-blocks_4_on-p-216-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 24,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-216-0.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 23.36,
+    "problem": "p-216-0.pddl",
+    "run_dir": "runs-00001-00100/00039",
+    "total_time": 23.34
+  },
+  "lama_first-blocks_4_on-p-218-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 106,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-218-0.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 25.22,
+    "problem": "p-218-0.pddl",
+    "run_dir": "runs-00001-00100/00040",
+    "total_time": 25.19
+  },
+  "lama_first-blocks_4_on-p-220-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 78,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-220-0.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 34.05,
+    "problem": "p-220-0.pddl",
+    "run_dir": "runs-00001-00100/00041",
+    "total_time": 34.02
+  },
+  "lama_first-blocks_4_on-p-222-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 40,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-222-0.pddl"
+    ],
+    "node": "n198",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 33.38,
+    "problem": "p-222-0.pddl",
+    "run_dir": "runs-00001-00100/00042",
+    "total_time": 33.35
+  },
+  "lama_first-blocks_4_on-p-224-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 2,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-224-0.pddl"
+    ],
+    "node": "n238",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 31.19,
+    "problem": "p-224-0.pddl",
+    "run_dir": "runs-00001-00100/00043",
+    "total_time": 31.16
+  },
+  "lama_first-blocks_4_on-p-226-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 22,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-226-0.pddl"
+    ],
+    "node": "n202",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 29.81,
+    "problem": "p-226-0.pddl",
+    "run_dir": "runs-00001-00100/00044",
+    "total_time": 29.78
+  },
+  "lama_first-blocks_4_on-p-228-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 36,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-228-0.pddl"
+    ],
+    "node": "n238",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 36.18,
+    "problem": "p-228-0.pddl",
+    "run_dir": "runs-00001-00100/00045",
+    "total_time": 36.15
+  },
+  "lama_first-blocks_4_on-p-230-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 22,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-230-0.pddl"
+    ],
+    "node": "n203",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 28.46,
+    "problem": "p-230-0.pddl",
+    "run_dir": "runs-00001-00100/00046",
+    "total_time": 28.42
+  },
+  "lama_first-blocks_4_on-p-232-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 50,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-232-0.pddl"
+    ],
+    "node": "n241",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 33.42,
+    "problem": "p-232-0.pddl",
+    "run_dir": "runs-00001-00100/00047",
+    "total_time": 33.39
+  },
+  "lama_first-blocks_4_on-p-234-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 82,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-234-0.pddl"
+    ],
+    "node": "n241",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 36.16,
+    "problem": "p-234-0.pddl",
+    "run_dir": "runs-00001-00100/00048",
+    "total_time": 36.13
+  },
+  "lama_first-blocks_4_on-p-236-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 48,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-236-0.pddl"
+    ],
+    "node": "n147",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 34.56,
+    "problem": "p-236-0.pddl",
+    "run_dir": "runs-00001-00100/00049",
+    "total_time": 34.53
+  },
+  "lama_first-blocks_4_on-p-238-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 46,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-238-0.pddl"
+    ],
+    "node": "n1009",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 30.94,
+    "problem": "p-238-0.pddl",
+    "run_dir": "runs-00001-00100/00050",
+    "total_time": 30.92
+  },
+  "lama_first-blocks_4_on-p-240-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 54,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-240-0.pddl"
+    ],
+    "node": "n237",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 33.64,
+    "problem": "p-240-0.pddl",
+    "run_dir": "runs-00001-00100/00051",
+    "total_time": 33.61
+  },
+  "lama_first-blocks_4_on-p-242-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 30,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-242-0.pddl"
+    ],
+    "node": "n388",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 33.8,
+    "problem": "p-242-0.pddl",
+    "run_dir": "runs-00001-00100/00052",
+    "total_time": 33.77
+  },
+  "lama_first-blocks_4_on-p-244-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 28,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-244-0.pddl"
+    ],
+    "node": "n337",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 33.77,
+    "problem": "p-244-0.pddl",
+    "run_dir": "runs-00001-00100/00053",
+    "total_time": 33.74
+  },
+  "lama_first-blocks_4_on-p-246-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 34,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-246-0.pddl"
+    ],
+    "node": "n337",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 37.06,
+    "problem": "p-246-0.pddl",
+    "run_dir": "runs-00001-00100/00054",
+    "total_time": 37.03
+  },
+  "lama_first-blocks_4_on-p-248-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 28,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-248-0.pddl"
+    ],
+    "node": "n235",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 31.0,
+    "problem": "p-248-0.pddl",
+    "run_dir": "runs-00001-00100/00055",
+    "total_time": 30.96
+  },
+  "lama_first-blocks_4_on-p-250-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 88,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-250-0.pddl"
+    ],
+    "node": "n241",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 42.2,
+    "problem": "p-250-0.pddl",
+    "run_dir": "runs-00001-00100/00056",
+    "total_time": 42.17
+  },
+  "lama_first-blocks_4_on-p-252-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 16,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-252-0.pddl"
+    ],
+    "node": "n390",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 38.2,
+    "problem": "p-252-0.pddl",
+    "run_dir": "runs-00001-00100/00057",
+    "total_time": 38.17
+  },
+  "lama_first-blocks_4_on-p-254-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 56,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-254-0.pddl"
+    ],
+    "node": "n234",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 37.52,
+    "problem": "p-254-0.pddl",
+    "run_dir": "runs-00001-00100/00058",
+    "total_time": 37.49
+  },
+  "lama_first-blocks_4_on-p-256-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 92,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-256-0.pddl"
+    ],
+    "node": "n204",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 39.7,
+    "problem": "p-256-0.pddl",
+    "run_dir": "runs-00001-00100/00059",
+    "total_time": 39.67
+  },
+  "lama_first-blocks_4_on-p-258-0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 48,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "blocks_4_on",
+      "p-258-0.pddl"
+    ],
+    "node": "n338",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 40.56,
+    "problem": "p-258-0.pddl",
+    "run_dir": "runs-00001-00100/00060",
+    "total_time": 40.53
+  },
+  "lama_first-delivery-instance_20_25_40_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_20_25_40_0.pddl"
+    ],
+    "node": "n197",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1807.18,
+    "problem": "instance_20_25_40_0.pddl",
+    "run_dir": "runs-00001-00100/00061"
+  },
+  "lama_first-delivery-instance_20_25_45_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_20_25_45_0.pddl"
+    ],
+    "node": "n203",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1808.33,
+    "problem": "instance_20_25_45_0.pddl",
+    "run_dir": "runs-00001-00100/00062"
+  },
+  "lama_first-delivery-instance_20_30_30_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_20_30_30_0.pddl"
+    ],
+    "node": "n386",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1809.1,
+    "problem": "instance_20_30_30_0.pddl",
+    "run_dir": "runs-00001-00100/00063"
+  },
+  "lama_first-delivery-instance_20_30_35_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_20_30_35_0.pddl"
+    ],
+    "node": "n232",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1808.21,
+    "problem": "instance_20_30_35_0.pddl",
+    "run_dir": "runs-00001-00100/00064"
+  },
+  "lama_first-delivery-instance_20_30_40_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_20_30_40_0.pddl"
+    ],
+    "node": "n193",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1809.34,
+    "problem": "instance_20_30_40_0.pddl",
+    "run_dir": "runs-00001-00100/00065"
+  },
+  "lama_first-delivery-instance_20_30_45_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_20_30_45_0.pddl"
+    ],
+    "node": "n241",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1810.44,
+    "problem": "instance_20_30_45_0.pddl",
+    "run_dir": "runs-00001-00100/00066"
+  },
+  "lama_first-delivery-instance_25_20_30_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_25_20_30_0.pddl"
+    ],
+    "node": "n202",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1806.27,
+    "problem": "instance_25_20_30_0.pddl",
+    "run_dir": "runs-00001-00100/00067"
+  },
+  "lama_first-delivery-instance_25_20_35_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_25_20_35_0.pddl"
+    ],
+    "node": "n389",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1808.36,
+    "problem": "instance_25_20_35_0.pddl",
+    "run_dir": "runs-00001-00100/00068"
+  },
+  "lama_first-delivery-instance_25_20_40_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_25_20_40_0.pddl"
+    ],
+    "node": "n389",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1809.91,
+    "problem": "instance_25_20_40_0.pddl",
+    "run_dir": "runs-00001-00100/00069"
+  },
+  "lama_first-delivery-instance_25_20_45_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_25_20_45_0.pddl"
+    ],
+    "node": "n389",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1811.01,
+    "problem": "instance_25_20_45_0.pddl",
+    "run_dir": "runs-00001-00100/00070"
+  },
+  "lama_first-delivery-instance_25_25_30_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_25_25_30_0.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1805.99,
+    "problem": "instance_25_25_30_0.pddl",
+    "run_dir": "runs-00001-00100/00071"
+  },
+  "lama_first-delivery-instance_25_25_35_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_25_25_35_0.pddl"
+    ],
+    "node": "n204",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1807.61,
+    "problem": "instance_25_25_35_0.pddl",
+    "run_dir": "runs-00001-00100/00072"
+  },
+  "lama_first-delivery-instance_25_25_40_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_25_25_40_0.pddl"
+    ],
+    "node": "n199",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1809.54,
+    "problem": "instance_25_25_40_0.pddl",
+    "run_dir": "runs-00001-00100/00073"
+  },
+  "lama_first-delivery-instance_25_25_45_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_25_25_45_0.pddl"
+    ],
+    "node": "n193",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1811.32,
+    "problem": "instance_25_25_45_0.pddl",
+    "run_dir": "runs-00001-00100/00074"
+  },
+  "lama_first-delivery-instance_25_30_30_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_25_30_30_0.pddl"
+    ],
+    "node": "n1009",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1808.32,
+    "problem": "instance_25_30_30_0.pddl",
+    "run_dir": "runs-00001-00100/00075"
+  },
+  "lama_first-delivery-instance_25_30_35_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_25_30_35_0.pddl"
+    ],
+    "node": "n389",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1808.88,
+    "problem": "instance_25_30_35_0.pddl",
+    "run_dir": "runs-00001-00100/00076"
+  },
+  "lama_first-delivery-instance_25_30_40_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_25_30_40_0.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1810.04,
+    "problem": "instance_25_30_40_0.pddl",
+    "run_dir": "runs-00001-00100/00077"
+  },
+  "lama_first-delivery-instance_25_30_45_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_25_30_45_0.pddl"
+    ],
+    "node": "n202",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1812.9,
+    "problem": "instance_25_30_45_0.pddl",
+    "run_dir": "runs-00001-00100/00078"
+  },
+  "lama_first-delivery-instance_30_20_30_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_30_20_30_0.pddl"
+    ],
+    "node": "n241",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1807.14,
+    "problem": "instance_30_20_30_0.pddl",
+    "run_dir": "runs-00001-00100/00079"
+  },
+  "lama_first-delivery-instance_30_20_35_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_30_20_35_0.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1809.87,
+    "problem": "instance_30_20_35_0.pddl",
+    "run_dir": "runs-00001-00100/00080"
+  },
+  "lama_first-delivery-instance_30_20_40_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_30_20_40_0.pddl"
+    ],
+    "node": "n204",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1809.42,
+    "problem": "instance_30_20_40_0.pddl",
+    "run_dir": "runs-00001-00100/00081"
+  },
+  "lama_first-delivery-instance_30_20_45_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_30_20_45_0.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1811.4,
+    "problem": "instance_30_20_45_0.pddl",
+    "run_dir": "runs-00001-00100/00082"
+  },
+  "lama_first-delivery-instance_30_25_30_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_30_25_30_0.pddl"
+    ],
+    "node": "n389",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1810.97,
+    "problem": "instance_30_25_30_0.pddl",
+    "run_dir": "runs-00001-00100/00083"
+  },
+  "lama_first-delivery-instance_30_25_35_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_30_25_35_0.pddl"
+    ],
+    "node": "n237",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1810.23,
+    "problem": "instance_30_25_35_0.pddl",
+    "run_dir": "runs-00001-00100/00084"
+  },
+  "lama_first-delivery-instance_30_25_40_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_30_25_40_0.pddl"
+    ],
+    "node": "n232",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1811.34,
+    "problem": "instance_30_25_40_0.pddl",
+    "run_dir": "runs-00001-00100/00085"
+  },
+  "lama_first-delivery-instance_30_25_45_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_30_25_45_0.pddl"
+    ],
+    "node": "n204",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1812.04,
+    "problem": "instance_30_25_45_0.pddl",
+    "run_dir": "runs-00001-00100/00086"
+  },
+  "lama_first-delivery-instance_30_30_30_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_30_30_30_0.pddl"
+    ],
+    "node": "n337",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1811.17,
+    "problem": "instance_30_30_30_0.pddl",
+    "run_dir": "runs-00001-00100/00087"
+  },
+  "lama_first-delivery-instance_30_30_35_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_30_30_35_0.pddl"
+    ],
+    "node": "n204",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1811.92,
+    "problem": "instance_30_30_35_0.pddl",
+    "run_dir": "runs-00001-00100/00088"
+  },
+  "lama_first-delivery-instance_30_30_40_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_30_30_40_0.pddl"
+    ],
+    "node": "n1009",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1812.43,
+    "problem": "instance_30_30_40_0.pddl",
+    "run_dir": "runs-00001-00100/00089"
+  },
+  "lama_first-delivery-instance_30_30_45_0.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "delivery",
+      "instance_30_30_45_0.pddl"
+    ],
+    "node": "n195",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1816.34,
+    "problem": "instance_30_30_45_0.pddl",
+    "run_dir": "runs-00001-00100/00090"
+  },
+  "lama_first-gripper-p01.pddl": {
+    "algorithm": "lama_first",
+    "cost": 59,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p01.pddl"
+    ],
+    "node": "n236",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.98,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00001-00100/00091",
+    "total_time": 0.95
+  },
+  "lama_first-gripper-p02.pddl": {
+    "algorithm": "lama_first",
+    "cost": 75,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p02.pddl"
+    ],
+    "node": "n237",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.48,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00001-00100/00092",
+    "total_time": 0.45
+  },
+  "lama_first-gripper-p03.pddl": {
+    "algorithm": "lama_first",
+    "cost": 89,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p03.pddl"
+    ],
+    "node": "n337",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.54,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00001-00100/00093",
+    "total_time": 0.52
+  },
+  "lama_first-gripper-p04.pddl": {
+    "algorithm": "lama_first",
+    "cost": 105,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p04.pddl"
+    ],
+    "node": "n234",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.6,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00001-00100/00094",
+    "total_time": 0.57
+  },
+  "lama_first-gripper-p05.pddl": {
+    "algorithm": "lama_first",
+    "cost": 119,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p05.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.48,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00001-00100/00095",
+    "total_time": 0.45
+  },
+  "lama_first-gripper-p06.pddl": {
+    "algorithm": "lama_first",
+    "cost": 135,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p06.pddl"
+    ],
+    "node": "n147",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.66,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00001-00100/00096",
+    "total_time": 0.62
+  },
+  "lama_first-gripper-p07.pddl": {
+    "algorithm": "lama_first",
+    "cost": 149,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p07.pddl"
+    ],
+    "node": "n193",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.6,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00001-00100/00097",
+    "total_time": 0.53
+  },
+  "lama_first-gripper-p08.pddl": {
+    "algorithm": "lama_first",
+    "cost": 165,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p08.pddl"
+    ],
+    "node": "n236",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.56,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00001-00100/00098",
+    "total_time": 0.52
+  },
+  "lama_first-gripper-p09.pddl": {
+    "algorithm": "lama_first",
+    "cost": 179,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p09.pddl"
+    ],
+    "node": "n204",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.56,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00001-00100/00099",
+    "total_time": 0.53
+  },
+  "lama_first-gripper-p10.pddl": {
+    "algorithm": "lama_first",
+    "cost": 195,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p10.pddl"
+    ],
+    "node": "n204",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.57,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00001-00100/00100",
+    "total_time": 0.53
+  },
+  "lama_first-gripper-p11.pddl": {
+    "algorithm": "lama_first",
+    "cost": 209,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p11.pddl"
+    ],
+    "node": "n158",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.81,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00101-00200/00101",
+    "total_time": 0.76
+  },
+  "lama_first-gripper-p12.pddl": {
+    "algorithm": "lama_first",
+    "cost": 225,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p12.pddl"
+    ],
+    "node": "n390",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.75,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00101-00200/00102",
+    "total_time": 0.72
+  },
+  "lama_first-gripper-p13.pddl": {
+    "algorithm": "lama_first",
+    "cost": 239,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p13.pddl"
+    ],
+    "node": "n243",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.65,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00101-00200/00103",
+    "total_time": 0.59
+  },
+  "lama_first-gripper-p14.pddl": {
+    "algorithm": "lama_first",
+    "cost": 255,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p14.pddl"
+    ],
+    "node": "n203",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.72,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00101-00200/00104",
+    "total_time": 0.68
+  },
+  "lama_first-gripper-p15.pddl": {
+    "algorithm": "lama_first",
+    "cost": 269,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p15.pddl"
+    ],
+    "node": "n386",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.75,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00101-00200/00105",
+    "total_time": 0.71
+  },
+  "lama_first-gripper-p16.pddl": {
+    "algorithm": "lama_first",
+    "cost": 285,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p16.pddl"
+    ],
+    "node": "n338",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.75,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00101-00200/00106",
+    "total_time": 0.7
+  },
+  "lama_first-gripper-p17.pddl": {
+    "algorithm": "lama_first",
+    "cost": 299,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p17.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.76,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00101-00200/00107",
+    "total_time": 0.72
+  },
+  "lama_first-gripper-p18.pddl": {
+    "algorithm": "lama_first",
+    "cost": 315,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p18.pddl"
+    ],
+    "node": "n232",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.83,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00101-00200/00108",
+    "total_time": 0.8
+  },
+  "lama_first-gripper-p19.pddl": {
+    "algorithm": "lama_first",
+    "cost": 329,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p19.pddl"
+    ],
+    "node": "n232",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.84,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00101-00200/00109",
+    "total_time": 0.8
+  },
+  "lama_first-gripper-p20.pddl": {
+    "algorithm": "lama_first",
+    "cost": 345,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p20.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.88,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00101-00200/00110",
+    "total_time": 0.84
+  },
+  "lama_first-gripper-p21.pddl": {
+    "algorithm": "lama_first",
+    "cost": 359,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p21.pddl"
+    ],
+    "node": "n390",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.25,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00101-00200/00111",
+    "total_time": 1.21
+  },
+  "lama_first-gripper-p22.pddl": {
+    "algorithm": "lama_first",
+    "cost": 375,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p22.pddl"
+    ],
+    "node": "n202",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.86,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00101-00200/00112",
+    "total_time": 0.82
+  },
+  "lama_first-gripper-p23.pddl": {
+    "algorithm": "lama_first",
+    "cost": 389,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p23.pddl"
+    ],
+    "node": "n197",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.75,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00101-00200/00113",
+    "total_time": 0.72
+  },
+  "lama_first-gripper-p24.pddl": {
+    "algorithm": "lama_first",
+    "cost": 405,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p24.pddl"
+    ],
+    "node": "n1009",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.83,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00101-00200/00114",
+    "total_time": 0.79
+  },
+  "lama_first-gripper-p25.pddl": {
+    "algorithm": "lama_first",
+    "cost": 419,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p25.pddl"
+    ],
+    "node": "n202",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.92,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00101-00200/00115",
+    "total_time": 0.88
+  },
+  "lama_first-gripper-p26.pddl": {
+    "algorithm": "lama_first",
+    "cost": 435,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p26.pddl"
+    ],
+    "node": "n202",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.94,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00101-00200/00116",
+    "total_time": 0.89
+  },
+  "lama_first-gripper-p27.pddl": {
+    "algorithm": "lama_first",
+    "cost": 449,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p27.pddl"
+    ],
+    "node": "n337",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.93,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00101-00200/00117",
+    "total_time": 0.87
+  },
+  "lama_first-gripper-p28.pddl": {
+    "algorithm": "lama_first",
+    "cost": 465,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p28.pddl"
+    ],
+    "node": "n202",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.99,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00101-00200/00118",
+    "total_time": 0.94
+  },
+  "lama_first-gripper-p29.pddl": {
+    "algorithm": "lama_first",
+    "cost": 479,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p29.pddl"
+    ],
+    "node": "n204",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.95,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00101-00200/00119",
+    "total_time": 0.9
+  },
+  "lama_first-gripper-p30.pddl": {
+    "algorithm": "lama_first",
+    "cost": 495,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "gripper",
+      "p30.pddl"
+    ],
+    "node": "n337",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.99,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00101-00200/00120",
+    "total_time": 0.94
+  },
+  "lama_first-miconic-p01.pddl": {
+    "algorithm": "lama_first",
+    "cost": 58,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p01.pddl"
+    ],
+    "node": "n199",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.51,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00101-00200/00121",
+    "total_time": 0.48
+  },
+  "lama_first-miconic-p02.pddl": {
+    "algorithm": "lama_first",
+    "cost": 79,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p02.pddl"
+    ],
+    "node": "n238",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.58,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00101-00200/00122",
+    "total_time": 0.54
+  },
+  "lama_first-miconic-p03.pddl": {
+    "algorithm": "lama_first",
+    "cost": 96,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p03.pddl"
+    ],
+    "node": "n390",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.54,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00101-00200/00123",
+    "total_time": 0.51
+  },
+  "lama_first-miconic-p04.pddl": {
+    "algorithm": "lama_first",
+    "cost": 111,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p04.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.74,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00101-00200/00124",
+    "total_time": 0.62
+  },
+  "lama_first-miconic-p05.pddl": {
+    "algorithm": "lama_first",
+    "cost": 131,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p05.pddl"
+    ],
+    "node": "n232",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.61,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00101-00200/00125",
+    "total_time": 0.57
+  },
+  "lama_first-miconic-p06.pddl": {
+    "algorithm": "lama_first",
+    "cost": 147,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p06.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.62,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00101-00200/00126",
+    "total_time": 0.58
+  },
+  "lama_first-miconic-p07.pddl": {
+    "algorithm": "lama_first",
+    "cost": 178,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p07.pddl"
+    ],
+    "node": "n203",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.75,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00101-00200/00127",
+    "total_time": 0.71
+  },
+  "lama_first-miconic-p08.pddl": {
+    "algorithm": "lama_first",
+    "cost": 192,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p08.pddl"
+    ],
+    "node": "n154",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.94,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00101-00200/00128",
+    "total_time": 0.9
+  },
+  "lama_first-miconic-p09.pddl": {
+    "algorithm": "lama_first",
+    "cost": 201,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p09.pddl"
+    ],
+    "node": "n202",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.9,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00101-00200/00129",
+    "total_time": 0.86
+  },
+  "lama_first-miconic-p10.pddl": {
+    "algorithm": "lama_first",
+    "cost": 222,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p10.pddl"
+    ],
+    "node": "n200",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.0,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00101-00200/00130",
+    "total_time": 0.96
+  },
+  "lama_first-miconic-p11.pddl": {
+    "algorithm": "lama_first",
+    "cost": 244,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p11.pddl"
+    ],
+    "node": "n1009",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.03,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00101-00200/00131",
+    "total_time": 0.99
+  },
+  "lama_first-miconic-p12.pddl": {
+    "algorithm": "lama_first",
+    "cost": 262,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p12.pddl"
+    ],
+    "node": "n199",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.23,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00101-00200/00132",
+    "total_time": 1.18
+  },
+  "lama_first-miconic-p13.pddl": {
+    "algorithm": "lama_first",
+    "cost": 290,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p13.pddl"
+    ],
+    "node": "n201",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.21,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00101-00200/00133",
+    "total_time": 1.17
+  },
+  "lama_first-miconic-p14.pddl": {
+    "algorithm": "lama_first",
+    "cost": 296,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p14.pddl"
+    ],
+    "node": "n241",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.44,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00101-00200/00134",
+    "total_time": 1.4
+  },
+  "lama_first-miconic-p15.pddl": {
+    "algorithm": "lama_first",
+    "cost": 312,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p15.pddl"
+    ],
+    "node": "n198",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.85,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00101-00200/00135",
+    "total_time": 1.79
+  },
+  "lama_first-miconic-p16.pddl": {
+    "algorithm": "lama_first",
+    "cost": 341,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p16.pddl"
+    ],
+    "node": "n147",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.92,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00101-00200/00136",
+    "total_time": 1.87
+  },
+  "lama_first-miconic-p17.pddl": {
+    "algorithm": "lama_first",
+    "cost": 356,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p17.pddl"
+    ],
+    "node": "n195",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.1,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00101-00200/00137",
+    "total_time": 2.04
+  },
+  "lama_first-miconic-p18.pddl": {
+    "algorithm": "lama_first",
+    "cost": 357,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p18.pddl"
+    ],
+    "node": "n202",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.17,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00101-00200/00138",
+    "total_time": 2.12
+  },
+  "lama_first-miconic-p19.pddl": {
+    "algorithm": "lama_first",
+    "cost": 394,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p19.pddl"
+    ],
+    "node": "n198",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.79,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00101-00200/00139",
+    "total_time": 2.73
+  },
+  "lama_first-miconic-p20.pddl": {
+    "algorithm": "lama_first",
+    "cost": 410,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p20.pddl"
+    ],
+    "node": "n390",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.85,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00101-00200/00140",
+    "total_time": 2.79
+  },
+  "lama_first-miconic-p21.pddl": {
+    "algorithm": "lama_first",
+    "cost": 431,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p21.pddl"
+    ],
+    "node": "n236",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.23,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00101-00200/00141",
+    "total_time": 3.16
+  },
+  "lama_first-miconic-p22.pddl": {
+    "algorithm": "lama_first",
+    "cost": 441,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p22.pddl"
+    ],
+    "node": "n238",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.68,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00101-00200/00142",
+    "total_time": 3.6
+  },
+  "lama_first-miconic-p23.pddl": {
+    "algorithm": "lama_first",
+    "cost": 452,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p23.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.36,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00101-00200/00143",
+    "total_time": 4.28
+  },
+  "lama_first-miconic-p24.pddl": {
+    "algorithm": "lama_first",
+    "cost": 489,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p24.pddl"
+    ],
+    "node": "n338",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.29,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00101-00200/00144",
+    "total_time": 4.21
+  },
+  "lama_first-miconic-p25.pddl": {
+    "algorithm": "lama_first",
+    "cost": 507,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p25.pddl"
+    ],
+    "node": "n1009",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.1,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00101-00200/00145",
+    "total_time": 4.02
+  },
+  "lama_first-miconic-p26.pddl": {
+    "algorithm": "lama_first",
+    "cost": 514,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p26.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 5.15,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00101-00200/00146",
+    "total_time": 5.07
+  },
+  "lama_first-miconic-p27.pddl": {
+    "algorithm": "lama_first",
+    "cost": 546,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p27.pddl"
+    ],
+    "node": "n235",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 5.18,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00101-00200/00147",
+    "total_time": 5.09
+  },
+  "lama_first-miconic-p28.pddl": {
+    "algorithm": "lama_first",
+    "cost": 569,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p28.pddl"
+    ],
+    "node": "n386",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 7.04,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00101-00200/00148",
+    "total_time": 6.95
+  },
+  "lama_first-miconic-p29.pddl": {
+    "algorithm": "lama_first",
+    "cost": 579,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p29.pddl"
+    ],
+    "node": "n200",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.3,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00101-00200/00149",
+    "total_time": 6.21
+  },
+  "lama_first-miconic-p30.pddl": {
+    "algorithm": "lama_first",
+    "cost": 603,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "miconic",
+      "p30.pddl"
+    ],
+    "node": "n1009",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.59,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00101-00200/00150",
+    "total_time": 6.49
+  },
+  "lama_first-reward-instance_60x60_0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 764,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_60x60_0.pddl"
+    ],
+    "node": "n198",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 37.12,
+    "problem": "instance_60x60_0.pddl",
+    "run_dir": "runs-00101-00200/00151",
+    "total_time": 36.86
+  },
+  "lama_first-reward-instance_60x60_1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 888,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_60x60_1.pddl"
+    ],
+    "node": "n197",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 35.68,
+    "problem": "instance_60x60_1.pddl",
+    "run_dir": "runs-00101-00200/00152",
+    "total_time": 35.46
+  },
+  "lama_first-reward-instance_60x60_2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 658,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_60x60_2.pddl"
+    ],
+    "node": "n237",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 26.7,
+    "problem": "instance_60x60_2.pddl",
+    "run_dir": "runs-00101-00200/00153",
+    "total_time": 26.46
+  },
+  "lama_first-reward-instance_60x60_3.pddl": {
+    "algorithm": "lama_first",
+    "cost": 728,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_60x60_3.pddl"
+    ],
+    "node": "n200",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 20.89,
+    "problem": "instance_60x60_3.pddl",
+    "run_dir": "runs-00101-00200/00154",
+    "total_time": 20.66
+  },
+  "lama_first-reward-instance_60x60_4.pddl": {
+    "algorithm": "lama_first",
+    "cost": 801,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_60x60_4.pddl"
+    ],
+    "node": "n200",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 49.53,
+    "problem": "instance_60x60_4.pddl",
+    "run_dir": "runs-00101-00200/00155",
+    "total_time": 49.3
+  },
+  "lama_first-reward-instance_65x65_0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 880,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_65x65_0.pddl"
+    ],
+    "node": "n1396",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 46.23,
+    "problem": "instance_65x65_0.pddl",
+    "run_dir": "runs-00101-00200/00156",
+    "total_time": 45.92
+  },
+  "lama_first-reward-instance_65x65_1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 949,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_65x65_1.pddl"
+    ],
+    "node": "n235",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 31.38,
+    "problem": "instance_65x65_1.pddl",
+    "run_dir": "runs-00101-00200/00157",
+    "total_time": 31.12
+  },
+  "lama_first-reward-instance_65x65_2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 348,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_65x65_2.pddl"
+    ],
+    "node": "n1396",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 18.74,
+    "problem": "instance_65x65_2.pddl",
+    "run_dir": "runs-00101-00200/00158",
+    "total_time": 18.45
+  },
+  "lama_first-reward-instance_65x65_3.pddl": {
+    "algorithm": "lama_first",
+    "cost": 332,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_65x65_3.pddl"
+    ],
+    "node": "n1009",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 14.13,
+    "problem": "instance_65x65_3.pddl",
+    "run_dir": "runs-00101-00200/00159",
+    "total_time": 13.87
+  },
+  "lama_first-reward-instance_65x65_4.pddl": {
+    "algorithm": "lama_first",
+    "cost": 671,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_65x65_4.pddl"
+    ],
+    "node": "n241",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 62.69,
+    "problem": "instance_65x65_4.pddl",
+    "run_dir": "runs-00101-00200/00160",
+    "total_time": 62.4
+  },
+  "lama_first-reward-instance_70x70_0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 1004,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_70x70_0.pddl"
+    ],
+    "node": "n196",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 120.97,
+    "problem": "instance_70x70_0.pddl",
+    "run_dir": "runs-00101-00200/00161",
+    "total_time": 120.6
+  },
+  "lama_first-reward-instance_70x70_1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 1063,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_70x70_1.pddl"
+    ],
+    "node": "n1396",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 34.3,
+    "problem": "instance_70x70_1.pddl",
+    "run_dir": "runs-00101-00200/00162",
+    "total_time": 33.95
+  },
+  "lama_first-reward-instance_70x70_2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 739,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_70x70_2.pddl"
+    ],
+    "node": "n196",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 46.82,
+    "problem": "instance_70x70_2.pddl",
+    "run_dir": "runs-00101-00200/00163",
+    "total_time": 46.46
+  },
+  "lama_first-reward-instance_70x70_3.pddl": {
+    "algorithm": "lama_first",
+    "cost": 846,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_70x70_3.pddl"
+    ],
+    "node": "n337",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 90.25,
+    "problem": "instance_70x70_3.pddl",
+    "run_dir": "runs-00101-00200/00164",
+    "total_time": 89.88
+  },
+  "lama_first-reward-instance_70x70_4.pddl": {
+    "algorithm": "lama_first",
+    "cost": 376,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_70x70_4.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 28.51,
+    "problem": "instance_70x70_4.pddl",
+    "run_dir": "runs-00101-00200/00165",
+    "total_time": 28.14
+  },
+  "lama_first-reward-instance_75x75_0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 1249,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_75x75_0.pddl"
+    ],
+    "node": "n231",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 145.21,
+    "problem": "instance_75x75_0.pddl",
+    "run_dir": "runs-00101-00200/00166",
+    "total_time": 144.83
+  },
+  "lama_first-reward-instance_75x75_1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 1094,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_75x75_1.pddl"
+    ],
+    "node": "n200",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 93.07,
+    "problem": "instance_75x75_1.pddl",
+    "run_dir": "runs-00101-00200/00167",
+    "total_time": 92.71
+  },
+  "lama_first-reward-instance_75x75_2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 781,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_75x75_2.pddl"
+    ],
+    "node": "n390",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 69.64,
+    "problem": "instance_75x75_2.pddl",
+    "run_dir": "runs-00101-00200/00168",
+    "total_time": 69.23
+  },
+  "lama_first-reward-instance_75x75_3.pddl": {
+    "algorithm": "lama_first",
+    "cost": 896,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_75x75_3.pddl"
+    ],
+    "node": "n232",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 124.84,
+    "problem": "instance_75x75_3.pddl",
+    "run_dir": "runs-00101-00200/00169",
+    "total_time": 124.46
+  },
+  "lama_first-reward-instance_75x75_4.pddl": {
+    "algorithm": "lama_first",
+    "cost": 118,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_75x75_4.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.22,
+    "problem": "instance_75x75_4.pddl",
+    "run_dir": "runs-00101-00200/00170",
+    "total_time": 10.82
+  },
+  "lama_first-reward-instance_80x80_0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 690,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_80x80_0.pddl"
+    ],
+    "node": "n388",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 68.78,
+    "problem": "instance_80x80_0.pddl",
+    "run_dir": "runs-00101-00200/00171",
+    "total_time": 68.36
+  },
+  "lama_first-reward-instance_80x80_1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 1067,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_80x80_1.pddl"
+    ],
+    "node": "n200",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 165.94,
+    "problem": "instance_80x80_1.pddl",
+    "run_dir": "runs-00101-00200/00172",
+    "total_time": 165.55
+  },
+  "lama_first-reward-instance_80x80_2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 1152,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_80x80_2.pddl"
+    ],
+    "node": "n232",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 88.06,
+    "problem": "instance_80x80_2.pddl",
+    "run_dir": "runs-00101-00200/00173",
+    "total_time": 87.62
+  },
+  "lama_first-reward-instance_80x80_3.pddl": {
+    "algorithm": "lama_first",
+    "cost": 10,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_80x80_3.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.33,
+    "problem": "instance_80x80_3.pddl",
+    "run_dir": "runs-00101-00200/00174",
+    "total_time": 5.92
+  },
+  "lama_first-reward-instance_80x80_4.pddl": {
+    "algorithm": "lama_first",
+    "cost": 1031,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_80x80_4.pddl"
+    ],
+    "node": "n235",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 120.45,
+    "problem": "instance_80x80_4.pddl",
+    "run_dir": "runs-00101-00200/00175",
+    "total_time": 120.07
+  },
+  "lama_first-reward-instance_85x85_0.pddl": {
+    "algorithm": "lama_first",
+    "cost": 1448,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_85x85_0.pddl"
+    ],
+    "node": "n135",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 324.55,
+    "problem": "instance_85x85_0.pddl",
+    "run_dir": "runs-00101-00200/00176",
+    "total_time": 324.07
+  },
+  "lama_first-reward-instance_85x85_1.pddl": {
+    "algorithm": "lama_first",
+    "cost": 1526,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_85x85_1.pddl"
+    ],
+    "node": "n151",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 356.96,
+    "problem": "instance_85x85_1.pddl",
+    "run_dir": "runs-00101-00200/00177",
+    "total_time": 356.45
+  },
+  "lama_first-reward-instance_85x85_2.pddl": {
+    "algorithm": "lama_first",
+    "cost": 835,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_85x85_2.pddl"
+    ],
+    "node": "n197",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 53.79,
+    "problem": "instance_85x85_2.pddl",
+    "run_dir": "runs-00101-00200/00178",
+    "total_time": 53.4
+  },
+  "lama_first-reward-instance_85x85_3.pddl": {
+    "algorithm": "lama_first",
+    "cost": 1360,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_85x85_3.pddl"
+    ],
+    "node": "n236",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 228.53,
+    "problem": "instance_85x85_3.pddl",
+    "run_dir": "runs-00101-00200/00179",
+    "total_time": 228.05
+  },
+  "lama_first-reward-instance_85x85_4.pddl": {
+    "algorithm": "lama_first",
+    "cost": 1238,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "reward",
+      "instance_85x85_4.pddl"
+    ],
+    "node": "n337",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 393.83,
+    "problem": "instance_85x85_4.pddl",
+    "run_dir": "runs-00101-00200/00180",
+    "total_time": 393.31
+  },
+  "lama_first-spanner-pfile01-001.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile01-001.pddl"
+    ],
+    "node": "n337",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1802.95,
+    "problem": "pfile01-001.pddl",
+    "run_dir": "runs-00101-00200/00181"
+  },
+  "lama_first-spanner-pfile01-002.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile01-002.pddl"
+    ],
+    "node": "n390",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1802.87,
+    "problem": "pfile01-002.pddl",
+    "run_dir": "runs-00101-00200/00182"
+  },
+  "lama_first-spanner-pfile01-003.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile01-003.pddl"
+    ],
+    "node": "n238",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1803.19,
+    "problem": "pfile01-003.pddl",
+    "run_dir": "runs-00101-00200/00183"
+  },
+  "lama_first-spanner-pfile01-004.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile01-004.pddl"
+    ],
+    "node": "n197",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1802.52,
+    "problem": "pfile01-004.pddl",
+    "run_dir": "runs-00101-00200/00184"
+  },
+  "lama_first-spanner-pfile01-005.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile01-005.pddl"
+    ],
+    "node": "n193",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1802.84,
+    "problem": "pfile01-005.pddl",
+    "run_dir": "runs-00101-00200/00185"
+  },
+  "lama_first-spanner-pfile02-006.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile02-006.pddl"
+    ],
+    "node": "n1396",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1803.55,
+    "problem": "pfile02-006.pddl",
+    "run_dir": "runs-00101-00200/00186"
+  },
+  "lama_first-spanner-pfile02-007.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile02-007.pddl"
+    ],
+    "node": "n199",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1805.48,
+    "problem": "pfile02-007.pddl",
+    "run_dir": "runs-00101-00200/00187"
+  },
+  "lama_first-spanner-pfile02-008.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile02-008.pddl"
+    ],
+    "node": "n238",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1803.65,
+    "problem": "pfile02-008.pddl",
+    "run_dir": "runs-00101-00200/00188"
+  },
+  "lama_first-spanner-pfile02-009.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile02-009.pddl"
+    ],
+    "node": "n202",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1803.36,
+    "problem": "pfile02-009.pddl",
+    "run_dir": "runs-00101-00200/00189"
+  },
+  "lama_first-spanner-pfile02-010.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile02-010.pddl"
+    ],
+    "node": "n154",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1803.55,
+    "problem": "pfile02-010.pddl",
+    "run_dir": "runs-00101-00200/00190"
+  },
+  "lama_first-spanner-pfile03-011.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile03-011.pddl"
+    ],
+    "node": "n158",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1806.02,
+    "problem": "pfile03-011.pddl",
+    "run_dir": "runs-00101-00200/00191"
+  },
+  "lama_first-spanner-pfile03-012.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile03-012.pddl"
+    ],
+    "node": "n390",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1803.88,
+    "problem": "pfile03-012.pddl",
+    "run_dir": "runs-00101-00200/00192"
+  },
+  "lama_first-spanner-pfile03-013.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile03-013.pddl"
+    ],
+    "node": "n158",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1804.78,
+    "problem": "pfile03-013.pddl",
+    "run_dir": "runs-00101-00200/00193"
+  },
+  "lama_first-spanner-pfile03-014.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile03-014.pddl"
+    ],
+    "node": "n197",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1803.22,
+    "problem": "pfile03-014.pddl",
+    "run_dir": "runs-00101-00200/00194"
+  },
+  "lama_first-spanner-pfile03-015.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile03-015.pddl"
+    ],
+    "node": "n337",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1803.9,
+    "problem": "pfile03-015.pddl",
+    "run_dir": "runs-00101-00200/00195"
+  },
+  "lama_first-spanner-pfile04-016.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile04-016.pddl"
+    ],
+    "node": "n201",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1804.08,
+    "problem": "pfile04-016.pddl",
+    "run_dir": "runs-00101-00200/00196"
+  },
+  "lama_first-spanner-pfile04-017.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile04-017.pddl"
+    ],
+    "node": "n243",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1804.25,
+    "problem": "pfile04-017.pddl",
+    "run_dir": "runs-00101-00200/00197"
+  },
+  "lama_first-spanner-pfile04-018.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile04-018.pddl"
+    ],
+    "node": "n234",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1804.11,
+    "problem": "pfile04-018.pddl",
+    "run_dir": "runs-00101-00200/00198"
+  },
+  "lama_first-spanner-pfile04-019.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile04-019.pddl"
+    ],
+    "node": "n202",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1804.29,
+    "problem": "pfile04-019.pddl",
+    "run_dir": "runs-00101-00200/00199"
+  },
+  "lama_first-spanner-pfile04-020.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile04-020.pddl"
+    ],
+    "node": "n243",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1804.7,
+    "problem": "pfile04-020.pddl",
+    "run_dir": "runs-00101-00200/00200"
+  },
+  "lama_first-spanner-pfile05-021.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile05-021.pddl"
+    ],
+    "node": "n237",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1804.52,
+    "problem": "pfile05-021.pddl",
+    "run_dir": "runs-00201-00300/00201"
+  },
+  "lama_first-spanner-pfile05-022.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile05-022.pddl"
+    ],
+    "node": "n390",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1804.84,
+    "problem": "pfile05-022.pddl",
+    "run_dir": "runs-00201-00300/00202"
+  },
+  "lama_first-spanner-pfile05-023.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile05-023.pddl"
+    ],
+    "node": "n147",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1804.74,
+    "problem": "pfile05-023.pddl",
+    "run_dir": "runs-00201-00300/00203"
+  },
+  "lama_first-spanner-pfile05-024.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile05-024.pddl"
+    ],
+    "node": "n241",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1804.64,
+    "problem": "pfile05-024.pddl",
+    "run_dir": "runs-00201-00300/00204"
+  },
+  "lama_first-spanner-pfile05-025.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile05-025.pddl"
+    ],
+    "node": "n1396",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1805.16,
+    "problem": "pfile05-025.pddl",
+    "run_dir": "runs-00201-00300/00205"
+  },
+  "lama_first-spanner-pfile06-026.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile06-026.pddl"
+    ],
+    "node": "n337",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1805.19,
+    "problem": "pfile06-026.pddl",
+    "run_dir": "runs-00201-00300/00206"
+  },
+  "lama_first-spanner-pfile06-027.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile06-027.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1806.27,
+    "problem": "pfile06-027.pddl",
+    "run_dir": "runs-00201-00300/00207"
+  },
+  "lama_first-spanner-pfile06-028.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile06-028.pddl"
+    ],
+    "node": "n237",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1805.13,
+    "problem": "pfile06-028.pddl",
+    "run_dir": "runs-00201-00300/00208"
+  },
+  "lama_first-spanner-pfile06-029.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile06-029.pddl"
+    ],
+    "node": "n238",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1806.13,
+    "problem": "pfile06-029.pddl",
+    "run_dir": "runs-00201-00300/00209"
+  },
+  "lama_first-spanner-pfile06-030.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "spanner",
+      "pfile06-030.pddl"
+    ],
+    "node": "n145",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1805.68,
+    "problem": "pfile06-030.pddl",
+    "run_dir": "runs-00201-00300/00210"
+  },
+  "lama_first-visitall-p01.pddl": {
+    "algorithm": "lama_first",
+    "cost": 60,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p01.pddl"
+    ],
+    "node": "n203",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.55,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00201-00300/00211",
+    "total_time": 0.52
+  },
+  "lama_first-visitall-p02.pddl": {
+    "algorithm": "lama_first",
+    "cost": 109,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p02.pddl"
+    ],
+    "node": "n200",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.55,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00201-00300/00212",
+    "total_time": 0.52
+  },
+  "lama_first-visitall-p03.pddl": {
+    "algorithm": "lama_first",
+    "cost": 209,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p03.pddl"
+    ],
+    "node": "n197",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.57,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00201-00300/00213",
+    "total_time": 0.53
+  },
+  "lama_first-visitall-p04.pddl": {
+    "algorithm": "lama_first",
+    "cost": 286,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p04.pddl"
+    ],
+    "node": "n243",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.79,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00201-00300/00214",
+    "total_time": 0.74
+  },
+  "lama_first-visitall-p05.pddl": {
+    "algorithm": "lama_first",
+    "cost": 435,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p05.pddl"
+    ],
+    "node": "n203",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.1,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00201-00300/00215",
+    "total_time": 1.04
+  },
+  "lama_first-visitall-p06.pddl": {
+    "algorithm": "lama_first",
+    "cost": 611,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p06.pddl"
+    ],
+    "node": "n151",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.52,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00201-00300/00216",
+    "total_time": 1.45
+  },
+  "lama_first-visitall-p07.pddl": {
+    "algorithm": "lama_first",
+    "cost": 800,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p07.pddl"
+    ],
+    "node": "n389",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.78,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00201-00300/00217",
+    "total_time": 1.7
+  },
+  "lama_first-visitall-p08.pddl": {
+    "algorithm": "lama_first",
+    "cost": 940,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p08.pddl"
+    ],
+    "node": "n203",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.77,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00201-00300/00218",
+    "total_time": 2.67
+  },
+  "lama_first-visitall-p09.pddl": {
+    "algorithm": "lama_first",
+    "cost": 1185,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p09.pddl"
+    ],
+    "node": "n1396",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.08,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00201-00300/00219",
+    "total_time": 3.96
+  },
+  "lama_first-visitall-p10.pddl": {
+    "algorithm": "lama_first",
+    "cost": 1346,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p10.pddl"
+    ],
+    "node": "n232",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 5.03,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00201-00300/00220",
+    "total_time": 4.9
+  },
+  "lama_first-visitall-p11.pddl": {
+    "algorithm": "lama_first",
+    "cost": 1698,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p11.pddl"
+    ],
+    "node": "n386",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 8.44,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00201-00300/00221",
+    "total_time": 8.24
+  },
+  "lama_first-visitall-p12.pddl": {
+    "algorithm": "lama_first",
+    "cost": 1866,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p12.pddl"
+    ],
+    "node": "n237",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 8.74,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00201-00300/00222",
+    "total_time": 8.56
+  },
+  "lama_first-visitall-p13.pddl": {
+    "algorithm": "lama_first",
+    "cost": 2131,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p13.pddl"
+    ],
+    "node": "n197",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 11.48,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00201-00300/00223",
+    "total_time": 11.3
+  },
+  "lama_first-visitall-p14.pddl": {
+    "algorithm": "lama_first",
+    "cost": 2652,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p14.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 13.51,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00201-00300/00224",
+    "total_time": 13.3
+  },
+  "lama_first-visitall-p15.pddl": {
+    "algorithm": "lama_first",
+    "cost": 2740,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p15.pddl"
+    ],
+    "node": "n201",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 17.4,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00201-00300/00225",
+    "total_time": 17.15
+  },
+  "lama_first-visitall-p16.pddl": {
+    "algorithm": "lama_first",
+    "cost": 3068,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p16.pddl"
+    ],
+    "node": "n204",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 27.76,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00201-00300/00226",
+    "total_time": 27.46
+  },
+  "lama_first-visitall-p17.pddl": {
+    "algorithm": "lama_first",
+    "cost": 3462,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p17.pddl"
+    ],
+    "node": "n203",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 36.93,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00201-00300/00227",
+    "total_time": 36.6
+  },
+  "lama_first-visitall-p18.pddl": {
+    "algorithm": "lama_first",
+    "cost": 4006,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p18.pddl"
+    ],
+    "node": "n201",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 37.23,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00201-00300/00228",
+    "total_time": 36.91
+  },
+  "lama_first-visitall-p19.pddl": {
+    "algorithm": "lama_first",
+    "cost": 4238,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p19.pddl"
+    ],
+    "node": "n151",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 64.11,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00201-00300/00229",
+    "total_time": 63.65
+  },
+  "lama_first-visitall-p20.pddl": {
+    "algorithm": "lama_first",
+    "cost": 4675,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p20.pddl"
+    ],
+    "node": "n199",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 69.98,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00201-00300/00230",
+    "total_time": 69.48
+  },
+  "lama_first-visitall-p21.pddl": {
+    "algorithm": "lama_first",
+    "cost": 5226,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p21.pddl"
+    ],
+    "node": "n203",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 96.02,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00201-00300/00231",
+    "total_time": 95.56
+  },
+  "lama_first-visitall-p22.pddl": {
+    "algorithm": "lama_first",
+    "cost": 5745,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p22.pddl"
+    ],
+    "node": "n197",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 86.16,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00201-00300/00232",
+    "total_time": 85.68
+  },
+  "lama_first-visitall-p23.pddl": {
+    "algorithm": "lama_first",
+    "cost": 6351,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p23.pddl"
+    ],
+    "node": "n201",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 114.72,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00201-00300/00233",
+    "total_time": 114.23,
+    "unexplained_errors": [
+      "driver.err: 2023-03-10 09:24:44,211 ERROR    run-planner finished and wrote 1124.498046875 KiB to run.log (soft limit: 1024.0 KiB)\n"
+    ]
+  },
+  "lama_first-visitall-p24.pddl": {
+    "algorithm": "lama_first",
+    "cost": 6778,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p24.pddl"
+    ],
+    "node": "n231",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 154.38,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00201-00300/00234",
+    "total_time": 153.79,
+    "unexplained_errors": [
+      "driver.err: 2023-03-10 09:25:57,087 ERROR    run-planner finished and wrote 1211.5322265625 KiB to run.log (soft limit: 1024.0 KiB)\n"
+    ]
+  },
+  "lama_first-visitall-p25.pddl": {
+    "algorithm": "lama_first",
+    "cost": 7245,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p25.pddl"
+    ],
+    "node": "n389",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 140.76,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00201-00300/00235",
+    "total_time": 140.16,
+    "unexplained_errors": [
+      "driver.err: 2023-03-10 09:26:07,790 ERROR    run-planner finished and wrote 1277.0302734375 KiB to run.log (soft limit: 1024.0 KiB)\n"
+    ]
+  },
+  "lama_first-visitall-p26.pddl": {
+    "algorithm": "lama_first",
+    "cost": 7811,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p26.pddl"
+    ],
+    "node": "n390",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 250.08,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00201-00300/00236",
+    "total_time": 249.34,
+    "unexplained_errors": [
+      "driver.err: 2023-03-10 09:28:23,677 ERROR    run-planner finished and wrote 1395.1123046875 KiB to run.log (soft limit: 1024.0 KiB)\n"
+    ]
+  },
+  "lama_first-visitall-p27.pddl": {
+    "algorithm": "lama_first",
+    "cost": 8292,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p27.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 162.12,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00201-00300/00237",
+    "total_time": 161.51,
+    "unexplained_errors": [
+      "driver.err: 2023-03-10 09:26:09,090 ERROR    run-planner finished and wrote 1489.1025390625 KiB to run.log (soft limit: 1024.0 KiB)\n"
+    ]
+  },
+  "lama_first-visitall-p28.pddl": {
+    "algorithm": "lama_first",
+    "cost": 8730,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p28.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 487.86,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00201-00300/00238",
+    "total_time": 486.93,
+    "unexplained_errors": [
+      "driver.err: 2023-03-10 09:35:25,773 ERROR    run-planner finished and wrote 1579.2822265625 KiB to run.log (soft limit: 1024.0 KiB)\n"
+    ]
+  },
+  "lama_first-visitall-p29.pddl": {
+    "algorithm": "lama_first",
+    "cost": 9263,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p29.pddl"
+    ],
+    "node": "n390",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 436.44,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00201-00300/00239",
+    "total_time": 435.54,
+    "unexplained_errors": [
+      "driver.err: 2023-03-10 09:32:49,367 ERROR    run-planner finished and wrote 1683.978515625 KiB to run.log (soft limit: 1024.0 KiB)\n"
+    ]
+  },
+  "lama_first-visitall-p30.pddl": {
+    "algorithm": "lama_first",
+    "coverage": 0,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "lama_first",
+      "visitall",
+      "p30.pddl"
+    ],
+    "node": "n200",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 699.14,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00201-00300/00240",
+    "unexplained_errors": [
+      "driver.err: 2023-03-10 09:34:25,778 ERROR    run-planner finished and wrote 1804.2421875 KiB to run.log (soft limit: 1024.0 KiB)\n"
+    ]
+  }
+}

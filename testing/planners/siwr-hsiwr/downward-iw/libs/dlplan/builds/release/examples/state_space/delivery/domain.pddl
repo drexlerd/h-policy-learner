@@ -1,0 +1,1 @@
+/home/dominik/projects/code/downward-iw/planners/downward-iw/libs/dlplan/examples/state_space/delivery/domain.pddl

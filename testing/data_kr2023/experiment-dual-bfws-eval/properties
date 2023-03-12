@@ -1,0 +1,4234 @@
+{
+  "dual_bfws-blocks_4_clear-p-200-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 29,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-200-0.pddl"
+    ],
+    "node": "n243",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 331.93,
+    "problem": "p-200-0.pddl",
+    "run_dir": "runs-00001-00100/00001",
+    "total_time": 331.9
+  },
+  "dual_bfws-blocks_4_clear-p-202-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 31,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-202-0.pddl"
+    ],
+    "node": "n137",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 340.9,
+    "problem": "p-202-0.pddl",
+    "run_dir": "runs-00001-00100/00002",
+    "total_time": 340.74
+  },
+  "dual_bfws-blocks_4_clear-p-204-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 5,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-204-0.pddl"
+    ],
+    "node": "n1012",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 301.65,
+    "problem": "p-204-0.pddl",
+    "run_dir": "runs-00001-00100/00003",
+    "total_time": 301.62
+  },
+  "dual_bfws-blocks_4_clear-p-206-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 39,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-206-0.pddl"
+    ],
+    "node": "n163",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 350.66,
+    "problem": "p-206-0.pddl",
+    "run_dir": "runs-00001-00100/00004",
+    "total_time": 350.6
+  },
+  "dual_bfws-blocks_4_clear-p-208-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 7,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-208-0.pddl"
+    ],
+    "node": "n817",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 350.04,
+    "problem": "p-208-0.pddl",
+    "run_dir": "runs-00001-00100/00005",
+    "total_time": 350.02
+  },
+  "dual_bfws-blocks_4_clear-p-210-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 7,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-210-0.pddl"
+    ],
+    "node": "n1009",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 373.24,
+    "problem": "p-210-0.pddl",
+    "run_dir": "runs-00001-00100/00006",
+    "total_time": 373.2
+  },
+  "dual_bfws-blocks_4_clear-p-212-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 35,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-212-0.pddl"
+    ],
+    "node": "n199",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 437.31,
+    "problem": "p-212-0.pddl",
+    "run_dir": "runs-00001-00100/00007",
+    "total_time": 437.26
+  },
+  "dual_bfws-blocks_4_clear-p-214-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 5,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-214-0.pddl"
+    ],
+    "node": "n1011",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 517.04,
+    "problem": "p-214-0.pddl",
+    "run_dir": "runs-00001-00100/00008",
+    "total_time": 517.01
+  },
+  "dual_bfws-blocks_4_clear-p-216-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 9,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-216-0.pddl"
+    ],
+    "node": "n1012",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 395.51,
+    "problem": "p-216-0.pddl",
+    "run_dir": "runs-00001-00100/00009",
+    "total_time": 395.41
+  },
+  "dual_bfws-blocks_4_clear-p-218-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 43,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-218-0.pddl"
+    ],
+    "node": "n1490",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 473.07,
+    "problem": "p-218-0.pddl",
+    "run_dir": "runs-00001-00100/00010",
+    "total_time": 473.05
+  },
+  "dual_bfws-blocks_4_clear-p-220-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 57,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-220-0.pddl"
+    ],
+    "node": "n390",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 513.84,
+    "problem": "p-220-0.pddl",
+    "run_dir": "runs-00001-00100/00011",
+    "total_time": 513.8
+  },
+  "dual_bfws-blocks_4_clear-p-222-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 13,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-222-0.pddl"
+    ],
+    "node": "n201",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 429.92,
+    "problem": "p-222-0.pddl",
+    "run_dir": "runs-00001-00100/00012",
+    "total_time": 429.9
+  },
+  "dual_bfws-blocks_4_clear-p-224-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 7,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-224-0.pddl"
+    ],
+    "node": "n247",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 560.45,
+    "problem": "p-224-0.pddl",
+    "run_dir": "runs-00001-00100/00013",
+    "total_time": 560.4
+  },
+  "dual_bfws-blocks_4_clear-p-226-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 23,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-226-0.pddl"
+    ],
+    "node": "n196",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 622.54,
+    "problem": "p-226-0.pddl",
+    "run_dir": "runs-00001-00100/00014",
+    "total_time": 622.52
+  },
+  "dual_bfws-blocks_4_clear-p-228-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 21,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-228-0.pddl"
+    ],
+    "node": "n205",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 626.66,
+    "problem": "p-228-0.pddl",
+    "run_dir": "runs-00001-00100/00015",
+    "total_time": 626.63
+  },
+  "dual_bfws-blocks_4_clear-p-230-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 21,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-230-0.pddl"
+    ],
+    "node": "n1401",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 497.68,
+    "problem": "p-230-0.pddl",
+    "run_dir": "runs-00001-00100/00016",
+    "total_time": 497.65
+  },
+  "dual_bfws-blocks_4_clear-p-232-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-232-0.pddl"
+    ],
+    "node": "n160",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 549.44,
+    "problem": "p-232-0.pddl",
+    "run_dir": "runs-00001-00100/00017",
+    "total_time": 549.41
+  },
+  "dual_bfws-blocks_4_clear-p-234-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 3,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-234-0.pddl"
+    ],
+    "node": "n1012",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 628.05,
+    "problem": "p-234-0.pddl",
+    "run_dir": "runs-00001-00100/00018",
+    "total_time": 628.01
+  },
+  "dual_bfws-blocks_4_clear-p-236-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 5,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-236-0.pddl"
+    ],
+    "node": "n1493",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 664.06,
+    "problem": "p-236-0.pddl",
+    "run_dir": "runs-00001-00100/00019",
+    "total_time": 664.03
+  },
+  "dual_bfws-blocks_4_clear-p-238-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 3,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-238-0.pddl"
+    ],
+    "node": "n205",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 747.18,
+    "problem": "p-238-0.pddl",
+    "run_dir": "runs-00001-00100/00020",
+    "total_time": 747.15
+  },
+  "dual_bfws-blocks_4_clear-p-240-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 3,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-240-0.pddl"
+    ],
+    "node": "n135",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 749.93,
+    "problem": "p-240-0.pddl",
+    "run_dir": "runs-00001-00100/00021",
+    "total_time": 749.9
+  },
+  "dual_bfws-blocks_4_clear-p-242-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 29,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-242-0.pddl"
+    ],
+    "node": "n818",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 796.78,
+    "problem": "p-242-0.pddl",
+    "run_dir": "runs-00001-00100/00022",
+    "total_time": 796.76
+  },
+  "dual_bfws-blocks_4_clear-p-244-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 15,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-244-0.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 693.34,
+    "problem": "p-244-0.pddl",
+    "run_dir": "runs-00001-00100/00023",
+    "total_time": 693.32
+  },
+  "dual_bfws-blocks_4_clear-p-246-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 37,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-246-0.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 835.25,
+    "problem": "p-246-0.pddl",
+    "run_dir": "runs-00001-00100/00024",
+    "total_time": 835.22
+  },
+  "dual_bfws-blocks_4_clear-p-248-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 67,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-248-0.pddl"
+    ],
+    "node": "n817",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 841.27,
+    "problem": "p-248-0.pddl",
+    "run_dir": "runs-00001-00100/00025",
+    "total_time": 841.2
+  },
+  "dual_bfws-blocks_4_clear-p-250-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 61,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-250-0.pddl"
+    ],
+    "node": "n146",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 885.83,
+    "problem": "p-250-0.pddl",
+    "run_dir": "runs-00001-00100/00026",
+    "total_time": 885.74
+  },
+  "dual_bfws-blocks_4_clear-p-252-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 7,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-252-0.pddl"
+    ],
+    "node": "n235",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 785.52,
+    "problem": "p-252-0.pddl",
+    "run_dir": "runs-00001-00100/00027",
+    "total_time": 785.5
+  },
+  "dual_bfws-blocks_4_clear-p-254-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 0,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-254-0.pddl"
+    ],
+    "node": "n818",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 994.77,
+    "problem": "p-254-0.pddl",
+    "run_dir": "runs-00001-00100/00028",
+    "total_time": 994.74
+  },
+  "dual_bfws-blocks_4_clear-p-256-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 37,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-256-0.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1008.14,
+    "problem": "p-256-0.pddl",
+    "run_dir": "runs-00001-00100/00029",
+    "total_time": 1008.11
+  },
+  "dual_bfws-blocks_4_clear-p-258-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 15,
+    "coverage": 1,
+    "domain": "blocks_4_clear",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_clear",
+      "p-258-0.pddl"
+    ],
+    "node": "n135",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1016.67,
+    "problem": "p-258-0.pddl",
+    "run_dir": "runs-00001-00100/00030",
+    "total_time": 1016.64
+  },
+  "dual_bfws-blocks_4_on-p-200-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 38,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-200-0.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 603.26,
+    "problem": "p-200-0.pddl",
+    "run_dir": "runs-00001-00100/00031",
+    "total_time": 603.23
+  },
+  "dual_bfws-blocks_4_on-p-202-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 44,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-202-0.pddl"
+    ],
+    "node": "n163",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 320.65,
+    "problem": "p-202-0.pddl",
+    "run_dir": "runs-00001-00100/00032",
+    "total_time": 320.55
+  },
+  "dual_bfws-blocks_4_on-p-204-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 38,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-204-0.pddl"
+    ],
+    "node": "n136",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 765.04,
+    "problem": "p-204-0.pddl",
+    "run_dir": "runs-00001-00100/00033",
+    "total_time": 764.99
+  },
+  "dual_bfws-blocks_4_on-p-206-0.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-206-0.pddl"
+    ],
+    "node": "n279",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.62,
+    "problem": "p-206-0.pddl",
+    "run_dir": "runs-00001-00100/00034"
+  },
+  "dual_bfws-blocks_4_on-p-208-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 60,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-208-0.pddl"
+    ],
+    "node": "n818",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 396.16,
+    "problem": "p-208-0.pddl",
+    "run_dir": "runs-00001-00100/00035",
+    "total_time": 396.13
+  },
+  "dual_bfws-blocks_4_on-p-210-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 116,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-210-0.pddl"
+    ],
+    "node": "n393",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 496.29,
+    "problem": "p-210-0.pddl",
+    "run_dir": "runs-00001-00100/00036",
+    "total_time": 496.26
+  },
+  "dual_bfws-blocks_4_on-p-212-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 12,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-212-0.pddl"
+    ],
+    "node": "n198",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 525.33,
+    "problem": "p-212-0.pddl",
+    "run_dir": "runs-00001-00100/00037",
+    "total_time": 525.3
+  },
+  "dual_bfws-blocks_4_on-p-214-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 28,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-214-0.pddl"
+    ],
+    "node": "n817",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 787.45,
+    "problem": "p-214-0.pddl",
+    "run_dir": "runs-00001-00100/00038",
+    "total_time": 787.39
+  },
+  "dual_bfws-blocks_4_on-p-216-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 24,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-216-0.pddl"
+    ],
+    "node": "n1396",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 508.29,
+    "problem": "p-216-0.pddl",
+    "run_dir": "runs-00001-00100/00039",
+    "total_time": 508.26
+  },
+  "dual_bfws-blocks_4_on-p-218-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 132,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-218-0.pddl"
+    ],
+    "node": "n200",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1179.18,
+    "problem": "p-218-0.pddl",
+    "run_dir": "runs-00001-00100/00040",
+    "total_time": 1179.11
+  },
+  "dual_bfws-blocks_4_on-p-220-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 80,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-220-0.pddl"
+    ],
+    "node": "n279",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 514.41,
+    "problem": "p-220-0.pddl",
+    "run_dir": "runs-00001-00100/00041",
+    "total_time": 514.38
+  },
+  "dual_bfws-blocks_4_on-p-222-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 42,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-222-0.pddl"
+    ],
+    "node": "n163",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 474.35,
+    "problem": "p-222-0.pddl",
+    "run_dir": "runs-00001-00100/00042",
+    "total_time": 474.29
+  },
+  "dual_bfws-blocks_4_on-p-224-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 2,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-224-0.pddl"
+    ],
+    "node": "n160",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 478.57,
+    "problem": "p-224-0.pddl",
+    "run_dir": "runs-00001-00100/00043",
+    "total_time": 478.54
+  },
+  "dual_bfws-blocks_4_on-p-226-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 26,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-226-0.pddl"
+    ],
+    "node": "n197",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 459.59,
+    "problem": "p-226-0.pddl",
+    "run_dir": "runs-00001-00100/00044",
+    "total_time": 459.56
+  },
+  "dual_bfws-blocks_4_on-p-228-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 38,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-228-0.pddl"
+    ],
+    "node": "n279",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 580.53,
+    "problem": "p-228-0.pddl",
+    "run_dir": "runs-00001-00100/00045",
+    "total_time": 580.5
+  },
+  "dual_bfws-blocks_4_on-p-230-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 26,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-230-0.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 544.55,
+    "problem": "p-230-0.pddl",
+    "run_dir": "runs-00001-00100/00046",
+    "total_time": 544.52
+  },
+  "dual_bfws-blocks_4_on-p-232-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 50,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-232-0.pddl"
+    ],
+    "node": "n393",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 705.71,
+    "problem": "p-232-0.pddl",
+    "run_dir": "runs-00001-00100/00047",
+    "total_time": 705.68
+  },
+  "dual_bfws-blocks_4_on-p-234-0.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-234-0.pddl"
+    ],
+    "node": "n163",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.63,
+    "problem": "p-234-0.pddl",
+    "run_dir": "runs-00001-00100/00048"
+  },
+  "dual_bfws-blocks_4_on-p-236-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 50,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-236-0.pddl"
+    ],
+    "node": "n135",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 699.65,
+    "problem": "p-236-0.pddl",
+    "run_dir": "runs-00001-00100/00049",
+    "total_time": 699.62
+  },
+  "dual_bfws-blocks_4_on-p-238-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 46,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-238-0.pddl"
+    ],
+    "node": "n1493",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 699.08,
+    "problem": "p-238-0.pddl",
+    "run_dir": "runs-00001-00100/00050",
+    "total_time": 699.06
+  },
+  "dual_bfws-blocks_4_on-p-240-0.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-240-0.pddl"
+    ],
+    "node": "n236",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.46,
+    "problem": "p-240-0.pddl",
+    "run_dir": "runs-00001-00100/00051"
+  },
+  "dual_bfws-blocks_4_on-p-242-0.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-242-0.pddl"
+    ],
+    "node": "n205",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.52,
+    "problem": "p-242-0.pddl",
+    "run_dir": "runs-00001-00100/00052"
+  },
+  "dual_bfws-blocks_4_on-p-244-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 36,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-244-0.pddl"
+    ],
+    "node": "n390",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1220.02,
+    "problem": "p-244-0.pddl",
+    "run_dir": "runs-00001-00100/00053",
+    "total_time": 1220.0
+  },
+  "dual_bfws-blocks_4_on-p-246-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 34,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-246-0.pddl"
+    ],
+    "node": "n1011",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 970.44,
+    "problem": "p-246-0.pddl",
+    "run_dir": "runs-00001-00100/00054",
+    "total_time": 970.42
+  },
+  "dual_bfws-blocks_4_on-p-248-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 30,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-248-0.pddl"
+    ],
+    "node": "n1490",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1218.34,
+    "problem": "p-248-0.pddl",
+    "run_dir": "runs-00001-00100/00055",
+    "total_time": 1218.32
+  },
+  "dual_bfws-blocks_4_on-p-250-0.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-250-0.pddl"
+    ],
+    "node": "n136",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.69,
+    "problem": "p-250-0.pddl",
+    "run_dir": "runs-00001-00100/00056"
+  },
+  "dual_bfws-blocks_4_on-p-252-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 16,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-252-0.pddl"
+    ],
+    "node": "n279",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 864.23,
+    "problem": "p-252-0.pddl",
+    "run_dir": "runs-00001-00100/00057",
+    "total_time": 864.2
+  },
+  "dual_bfws-blocks_4_on-p-254-0.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-254-0.pddl"
+    ],
+    "node": "n135",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1803.68,
+    "problem": "p-254-0.pddl",
+    "run_dir": "runs-00001-00100/00058"
+  },
+  "dual_bfws-blocks_4_on-p-256-0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 94,
+    "coverage": 1,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-256-0.pddl"
+    ],
+    "node": "n247",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1006.93,
+    "problem": "p-256-0.pddl",
+    "run_dir": "runs-00001-00100/00059",
+    "total_time": 1006.9
+  },
+  "dual_bfws-blocks_4_on-p-258-0.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "blocks_4_on",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "blocks_4_on",
+      "p-258-0.pddl"
+    ],
+    "node": "n232",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1802.08,
+    "problem": "p-258-0.pddl",
+    "run_dir": "runs-00001-00100/00060"
+  },
+  "dual_bfws-delivery-instance_20_25_40_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1553,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_20_25_40_0.pddl"
+    ],
+    "node": "n135",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 98.66,
+    "problem": "instance_20_25_40_0.pddl",
+    "run_dir": "runs-00001-00100/00061",
+    "total_time": 98.57
+  },
+  "dual_bfws-delivery-instance_20_25_45_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1839,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_20_25_45_0.pddl"
+    ],
+    "node": "n279",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 136.07,
+    "problem": "instance_20_25_45_0.pddl",
+    "run_dir": "runs-00001-00100/00062",
+    "total_time": 135.98
+  },
+  "dual_bfws-delivery-instance_20_30_30_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1427,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_20_30_30_0.pddl"
+    ],
+    "node": "n818",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 88.56,
+    "problem": "instance_20_30_30_0.pddl",
+    "run_dir": "runs-00001-00100/00063",
+    "total_time": 88.46
+  },
+  "dual_bfws-delivery-instance_20_30_35_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1801,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_20_30_35_0.pddl"
+    ],
+    "node": "n201",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 111.17,
+    "problem": "instance_20_30_35_0.pddl",
+    "run_dir": "runs-00001-00100/00064",
+    "total_time": 111.09
+  },
+  "dual_bfws-delivery-instance_20_30_40_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1855,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_20_30_40_0.pddl"
+    ],
+    "node": "n1012",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 146.97,
+    "problem": "instance_20_30_40_0.pddl",
+    "run_dir": "runs-00001-00100/00065",
+    "total_time": 146.87
+  },
+  "dual_bfws-delivery-instance_20_30_45_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 2156,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_20_30_45_0.pddl"
+    ],
+    "node": "n202",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 231.61,
+    "problem": "instance_20_30_45_0.pddl",
+    "run_dir": "runs-00001-00100/00066",
+    "total_time": 231.49
+  },
+  "dual_bfws-delivery-instance_25_20_30_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1386,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_25_20_30_0.pddl"
+    ],
+    "node": "n247",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 68.25,
+    "problem": "instance_25_20_30_0.pddl",
+    "run_dir": "runs-00001-00100/00067",
+    "total_time": 68.17
+  },
+  "dual_bfws-delivery-instance_25_20_35_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1567,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_25_20_35_0.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 85.55,
+    "problem": "instance_25_20_35_0.pddl",
+    "run_dir": "runs-00001-00100/00068",
+    "total_time": 85.46
+  },
+  "dual_bfws-delivery-instance_25_20_40_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 2079,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_25_20_40_0.pddl"
+    ],
+    "node": "n205",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 140.97,
+    "problem": "instance_25_20_40_0.pddl",
+    "run_dir": "runs-00001-00100/00069",
+    "total_time": 140.87
+  },
+  "dual_bfws-delivery-instance_25_20_45_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 2302,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_25_20_45_0.pddl"
+    ],
+    "node": "n204",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 178.26,
+    "problem": "instance_25_20_45_0.pddl",
+    "run_dir": "runs-00001-00100/00070",
+    "total_time": 178.15
+  },
+  "dual_bfws-delivery-instance_25_25_30_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1655,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_25_25_30_0.pddl"
+    ],
+    "node": "n203",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 105.67,
+    "problem": "instance_25_25_30_0.pddl",
+    "run_dir": "runs-00001-00100/00071",
+    "total_time": 105.57
+  },
+  "dual_bfws-delivery-instance_25_25_35_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1737,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_25_25_35_0.pddl"
+    ],
+    "node": "n247",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 139.17,
+    "problem": "instance_25_25_35_0.pddl",
+    "run_dir": "runs-00001-00100/00072",
+    "total_time": 139.07
+  },
+  "dual_bfws-delivery-instance_25_25_40_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 2319,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_25_25_40_0.pddl"
+    ],
+    "node": "n206",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 218.96,
+    "problem": "instance_25_25_40_0.pddl",
+    "run_dir": "runs-00001-00100/00073",
+    "total_time": 218.86
+  },
+  "dual_bfws-delivery-instance_25_25_45_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 2513,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_25_25_45_0.pddl"
+    ],
+    "node": "n248",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 281.52,
+    "problem": "instance_25_25_45_0.pddl",
+    "run_dir": "runs-00001-00100/00074",
+    "total_time": 281.38
+  },
+  "dual_bfws-delivery-instance_25_30_30_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1606,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_25_30_30_0.pddl"
+    ],
+    "node": "n201",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 114.85,
+    "problem": "instance_25_30_30_0.pddl",
+    "run_dir": "runs-00001-00100/00075",
+    "total_time": 114.76
+  },
+  "dual_bfws-delivery-instance_25_30_35_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1834,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_25_30_35_0.pddl"
+    ],
+    "node": "n817",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 181.61,
+    "problem": "instance_25_30_35_0.pddl",
+    "run_dir": "runs-00001-00100/00076",
+    "total_time": 181.37
+  },
+  "dual_bfws-delivery-instance_25_30_40_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 2171,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_25_30_40_0.pddl"
+    ],
+    "node": "n1400",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 275.05,
+    "problem": "instance_25_30_40_0.pddl",
+    "run_dir": "runs-00001-00100/00077",
+    "total_time": 274.93
+  },
+  "dual_bfws-delivery-instance_25_30_45_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 2474,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_25_30_45_0.pddl"
+    ],
+    "node": "n248",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 346.15,
+    "problem": "instance_25_30_45_0.pddl",
+    "run_dir": "runs-00001-00100/00078",
+    "total_time": 346.03
+  },
+  "dual_bfws-delivery-instance_30_20_30_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1547,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_30_20_30_0.pddl"
+    ],
+    "node": "n248",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 88.57,
+    "problem": "instance_30_20_30_0.pddl",
+    "run_dir": "runs-00001-00100/00079",
+    "total_time": 88.47
+  },
+  "dual_bfws-delivery-instance_30_20_35_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1726,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_30_20_35_0.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 106.98,
+    "problem": "instance_30_20_35_0.pddl",
+    "run_dir": "runs-00001-00100/00080",
+    "total_time": 106.89
+  },
+  "dual_bfws-delivery-instance_30_20_40_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 2130,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_30_20_40_0.pddl"
+    ],
+    "node": "n1011",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 165.87,
+    "problem": "instance_30_20_40_0.pddl",
+    "run_dir": "runs-00001-00100/00081",
+    "total_time": 165.77
+  },
+  "dual_bfws-delivery-instance_30_20_45_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 2081,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_30_20_45_0.pddl"
+    ],
+    "node": "n163",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 211.34,
+    "problem": "instance_30_20_45_0.pddl",
+    "run_dir": "runs-00001-00100/00082",
+    "total_time": 211.1
+  },
+  "dual_bfws-delivery-instance_30_25_30_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1648,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_30_25_30_0.pddl"
+    ],
+    "node": "n818",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 149.67,
+    "problem": "instance_30_25_30_0.pddl",
+    "run_dir": "runs-00001-00100/00083",
+    "total_time": 149.56
+  },
+  "dual_bfws-delivery-instance_30_25_35_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1942,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_30_25_35_0.pddl"
+    ],
+    "node": "n386",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 269.13,
+    "problem": "instance_30_25_35_0.pddl",
+    "run_dir": "runs-00001-00100/00084",
+    "total_time": 269.01
+  },
+  "dual_bfws-delivery-instance_30_25_40_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 2085,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_30_25_40_0.pddl"
+    ],
+    "node": "n1401",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 244.27,
+    "problem": "instance_30_25_40_0.pddl",
+    "run_dir": "runs-00001-00100/00085",
+    "total_time": 244.17
+  },
+  "dual_bfws-delivery-instance_30_25_45_0.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_30_25_45_0.pddl"
+    ],
+    "node": "n205",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 393.82,
+    "problem": "instance_30_25_45_0.pddl",
+    "run_dir": "runs-00001-00100/00086"
+  },
+  "dual_bfws-delivery-instance_30_30_30_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1736,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_30_30_30_0.pddl"
+    ],
+    "node": "n338",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 198.65,
+    "problem": "instance_30_30_30_0.pddl",
+    "run_dir": "runs-00001-00100/00087",
+    "total_time": 198.55
+  },
+  "dual_bfws-delivery-instance_30_30_35_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 2138,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_30_30_35_0.pddl"
+    ],
+    "node": "n279",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 351.27,
+    "problem": "instance_30_30_35_0.pddl",
+    "run_dir": "runs-00001-00100/00088",
+    "total_time": 351.14
+  },
+  "dual_bfws-delivery-instance_30_30_40_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 2222,
+    "coverage": 1,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_30_30_40_0.pddl"
+    ],
+    "node": "n241",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 411.92,
+    "problem": "instance_30_30_40_0.pddl",
+    "run_dir": "runs-00001-00100/00089",
+    "total_time": 411.8
+  },
+  "dual_bfws-delivery-instance_30_30_45_0.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "delivery",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "delivery",
+      "instance_30_30_45_0.pddl"
+    ],
+    "node": "n338",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 404.5,
+    "problem": "instance_30_30_45_0.pddl",
+    "run_dir": "runs-00001-00100/00090"
+  },
+  "dual_bfws-gripper-p01.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 79,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p01.pddl"
+    ],
+    "node": "n393",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.72,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00001-00100/00091",
+    "total_time": 0.58
+  },
+  "dual_bfws-gripper-p02.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 99,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p02.pddl"
+    ],
+    "node": "n818",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.52,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00001-00100/00092",
+    "total_time": 0.48
+  },
+  "dual_bfws-gripper-p03.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 119,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p03.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.46,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00001-00100/00093",
+    "total_time": 0.43
+  },
+  "dual_bfws-gripper-p04.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 139,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p04.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.47,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00001-00100/00094",
+    "total_time": 0.44
+  },
+  "dual_bfws-gripper-p05.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 159,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p05.pddl"
+    ],
+    "node": "n279",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.57,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00001-00100/00095",
+    "total_time": 0.53
+  },
+  "dual_bfws-gripper-p06.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 179,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p06.pddl"
+    ],
+    "node": "n393",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.65,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00001-00100/00096",
+    "total_time": 0.62
+  },
+  "dual_bfws-gripper-p07.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 199,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p07.pddl"
+    ],
+    "node": "n1011",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.67,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00001-00100/00097",
+    "total_time": 0.64
+  },
+  "dual_bfws-gripper-p08.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 219,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p08.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.64,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00001-00100/00098",
+    "total_time": 0.61
+  },
+  "dual_bfws-gripper-p09.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 239,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p09.pddl"
+    ],
+    "node": "n1490",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.67,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00001-00100/00099",
+    "total_time": 0.64
+  },
+  "dual_bfws-gripper-p10.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 259,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p10.pddl"
+    ],
+    "node": "n279",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.86,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00001-00100/00100",
+    "total_time": 0.73
+  },
+  "dual_bfws-gripper-p11.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 279,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p11.pddl"
+    ],
+    "node": "n393",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.92,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00101-00200/00101",
+    "total_time": 0.88
+  },
+  "dual_bfws-gripper-p12.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 299,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p12.pddl"
+    ],
+    "node": "n1396",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.04,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00101-00200/00102",
+    "total_time": 1.01
+  },
+  "dual_bfws-gripper-p13.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 319,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p13.pddl"
+    ],
+    "node": "n1490",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.14,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00101-00200/00103",
+    "total_time": 1.01
+  },
+  "dual_bfws-gripper-p14.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 339,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p14.pddl"
+    ],
+    "node": "n1396",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.23,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00101-00200/00104",
+    "total_time": 1.19
+  },
+  "dual_bfws-gripper-p15.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 359,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p15.pddl"
+    ],
+    "node": "n1011",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.5,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00101-00200/00105",
+    "total_time": 1.44
+  },
+  "dual_bfws-gripper-p16.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 379,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p16.pddl"
+    ],
+    "node": "n1012",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.4,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00101-00200/00106",
+    "total_time": 1.36
+  },
+  "dual_bfws-gripper-p17.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 399,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p17.pddl"
+    ],
+    "node": "n1490",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.5,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00101-00200/00107",
+    "total_time": 1.46
+  },
+  "dual_bfws-gripper-p18.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 419,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p18.pddl"
+    ],
+    "node": "n388",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.72,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00101-00200/00108",
+    "total_time": 1.68
+  },
+  "dual_bfws-gripper-p19.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 439,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p19.pddl"
+    ],
+    "node": "n279",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.79,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00101-00200/00109",
+    "total_time": 1.75
+  },
+  "dual_bfws-gripper-p20.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 459,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p20.pddl"
+    ],
+    "node": "n247",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.14,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00101-00200/00110",
+    "total_time": 2.06
+  },
+  "dual_bfws-gripper-p21.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 479,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p21.pddl"
+    ],
+    "node": "n136",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.1,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00101-00200/00111",
+    "total_time": 2.06
+  },
+  "dual_bfws-gripper-p22.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 499,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p22.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.2,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00101-00200/00112",
+    "total_time": 2.16
+  },
+  "dual_bfws-gripper-p23.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 519,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p23.pddl"
+    ],
+    "node": "n203",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.68,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00101-00200/00113",
+    "total_time": 2.64
+  },
+  "dual_bfws-gripper-p24.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 539,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p24.pddl"
+    ],
+    "node": "n818",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.56,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00101-00200/00114",
+    "total_time": 3.46
+  },
+  "dual_bfws-gripper-p25.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 559,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p25.pddl"
+    ],
+    "node": "n135",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.44,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00101-00200/00115",
+    "total_time": 3.39
+  },
+  "dual_bfws-gripper-p26.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 579,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p26.pddl"
+    ],
+    "node": "n1012",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.97,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00101-00200/00116",
+    "total_time": 3.92
+  },
+  "dual_bfws-gripper-p27.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 599,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p27.pddl"
+    ],
+    "node": "n1012",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.17,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00101-00200/00117",
+    "total_time": 4.12
+  },
+  "dual_bfws-gripper-p28.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 619,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p28.pddl"
+    ],
+    "node": "n205",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.96,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00101-00200/00118",
+    "total_time": 4.92
+  },
+  "dual_bfws-gripper-p29.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 639,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p29.pddl"
+    ],
+    "node": "n247",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 5.22,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00101-00200/00119",
+    "total_time": 5.15
+  },
+  "dual_bfws-gripper-p30.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 659,
+    "coverage": 1,
+    "domain": "gripper",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "gripper",
+      "p30.pddl"
+    ],
+    "node": "n818",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.55,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00101-00200/00120",
+    "total_time": 6.5
+  },
+  "dual_bfws-miconic-p01.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 73,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p01.pddl"
+    ],
+    "node": "n390",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.49,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00101-00200/00121",
+    "total_time": 0.46
+  },
+  "dual_bfws-miconic-p02.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 89,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p02.pddl"
+    ],
+    "node": "n1400",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.68,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00101-00200/00122",
+    "total_time": 0.52
+  },
+  "dual_bfws-miconic-p03.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 110,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p03.pddl"
+    ],
+    "node": "n817",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.49,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00101-00200/00123",
+    "total_time": 0.46
+  },
+  "dual_bfws-miconic-p04.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 128,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p04.pddl"
+    ],
+    "node": "n203",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.65,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00101-00200/00124",
+    "total_time": 0.62
+  },
+  "dual_bfws-miconic-p05.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 145,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p05.pddl"
+    ],
+    "node": "n388",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.56,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00101-00200/00125",
+    "total_time": 0.53
+  },
+  "dual_bfws-miconic-p06.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 168,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p06.pddl"
+    ],
+    "node": "n388",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.62,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00101-00200/00126",
+    "total_time": 0.58
+  },
+  "dual_bfws-miconic-p07.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 186,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p07.pddl"
+    ],
+    "node": "n1493",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.66,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00101-00200/00127",
+    "total_time": 0.62
+  },
+  "dual_bfws-miconic-p08.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 202,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p08.pddl"
+    ],
+    "node": "n1012",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.74,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00101-00200/00128",
+    "total_time": 0.7
+  },
+  "dual_bfws-miconic-p09.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 226,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p09.pddl"
+    ],
+    "node": "n390",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.03,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00101-00200/00129",
+    "total_time": 0.98
+  },
+  "dual_bfws-miconic-p10.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 244,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p10.pddl"
+    ],
+    "node": "n235",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.96,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00101-00200/00130",
+    "total_time": 0.92
+  },
+  "dual_bfws-miconic-p11.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 260,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p11.pddl"
+    ],
+    "node": "n206",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.24,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00101-00200/00131",
+    "total_time": 1.19
+  },
+  "dual_bfws-miconic-p12.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 279,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p12.pddl"
+    ],
+    "node": "n135",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.5,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00101-00200/00132",
+    "total_time": 1.42
+  },
+  "dual_bfws-miconic-p13.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 300,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p13.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.83,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00101-00200/00133",
+    "total_time": 1.78
+  },
+  "dual_bfws-miconic-p14.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 319,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p14.pddl"
+    ],
+    "node": "n1493",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.2,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00101-00200/00134",
+    "total_time": 2.15
+  },
+  "dual_bfws-miconic-p15.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 334,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p15.pddl"
+    ],
+    "node": "n393",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.6,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00101-00200/00135",
+    "total_time": 2.54
+  },
+  "dual_bfws-miconic-p16.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 356,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p16.pddl"
+    ],
+    "node": "n1012",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.8,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00101-00200/00136",
+    "total_time": 2.75
+  },
+  "dual_bfws-miconic-p17.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 376,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p17.pddl"
+    ],
+    "node": "n235",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 3.28,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00101-00200/00137",
+    "total_time": 3.23
+  },
+  "dual_bfws-miconic-p18.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 390,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p18.pddl"
+    ],
+    "node": "n135",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.27,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00101-00200/00138",
+    "total_time": 4.21
+  },
+  "dual_bfws-miconic-p19.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 412,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p19.pddl"
+    ],
+    "node": "n393",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 5.42,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00101-00200/00139",
+    "total_time": 5.36
+  },
+  "dual_bfws-miconic-p20.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 431,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p20.pddl"
+    ],
+    "node": "n1011",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.71,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00101-00200/00140",
+    "total_time": 6.64
+  },
+  "dual_bfws-miconic-p21.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 450,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p21.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 7.41,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00101-00200/00141",
+    "total_time": 7.34
+  },
+  "dual_bfws-miconic-p22.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 466,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p22.pddl"
+    ],
+    "node": "n203",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 7.41,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00101-00200/00142",
+    "total_time": 7.34
+  },
+  "dual_bfws-miconic-p23.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 488,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p23.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 8.51,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00101-00200/00143",
+    "total_time": 8.44
+  },
+  "dual_bfws-miconic-p24.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 509,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p24.pddl"
+    ],
+    "node": "n153",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 9.17,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00101-00200/00144",
+    "total_time": 9.09
+  },
+  "dual_bfws-miconic-p25.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 524,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p25.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 12.75,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00101-00200/00145",
+    "total_time": 12.66
+  },
+  "dual_bfws-miconic-p26.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 536,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p26.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 12.51,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00101-00200/00146",
+    "total_time": 12.43
+  },
+  "dual_bfws-miconic-p27.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 558,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p27.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 15.01,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00101-00200/00147",
+    "total_time": 14.92
+  },
+  "dual_bfws-miconic-p28.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 579,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p28.pddl"
+    ],
+    "node": "n1493",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 17.84,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00101-00200/00148",
+    "total_time": 17.75
+  },
+  "dual_bfws-miconic-p29.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 592,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p29.pddl"
+    ],
+    "node": "n247",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 19.3,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00101-00200/00149",
+    "total_time": 19.2
+  },
+  "dual_bfws-miconic-p30.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 613,
+    "coverage": 1,
+    "domain": "miconic",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "miconic",
+      "p30.pddl"
+    ],
+    "node": "n160",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 19.69,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00101-00200/00150",
+    "total_time": 19.53
+  },
+  "dual_bfws-reward-instance_60x60_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 411,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_60x60_0.pddl"
+    ],
+    "node": "n206",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.08,
+    "problem": "instance_60x60_0.pddl",
+    "run_dir": "runs-00101-00200/00151",
+    "total_time": 5.72
+  },
+  "dual_bfws-reward-instance_60x60_1.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 482,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_60x60_1.pddl"
+    ],
+    "node": "n337",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 7.03,
+    "problem": "instance_60x60_1.pddl",
+    "run_dir": "runs-00101-00200/00152",
+    "total_time": 6.77
+  },
+  "dual_bfws-reward-instance_60x60_2.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 378,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_60x60_2.pddl"
+    ],
+    "node": "n135",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 5.67,
+    "problem": "instance_60x60_2.pddl",
+    "run_dir": "runs-00101-00200/00153",
+    "total_time": 5.43
+  },
+  "dual_bfws-reward-instance_60x60_3.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 316,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_60x60_3.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.04,
+    "problem": "instance_60x60_3.pddl",
+    "run_dir": "runs-00101-00200/00154",
+    "total_time": 5.79
+  },
+  "dual_bfws-reward-instance_60x60_4.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 592,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_60x60_4.pddl"
+    ],
+    "node": "n136",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 5.58,
+    "problem": "instance_60x60_4.pddl",
+    "run_dir": "runs-00101-00200/00155",
+    "total_time": 5.28
+  },
+  "dual_bfws-reward-instance_65x65_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 443,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_65x65_0.pddl"
+    ],
+    "node": "n338",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 8.1,
+    "problem": "instance_65x65_0.pddl",
+    "run_dir": "runs-00101-00200/00156",
+    "total_time": 7.79
+  },
+  "dual_bfws-reward-instance_65x65_1.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 357,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_65x65_1.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 9.7,
+    "problem": "instance_65x65_1.pddl",
+    "run_dir": "runs-00101-00200/00157",
+    "total_time": 9.41
+  },
+  "dual_bfws-reward-instance_65x65_2.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 292,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_65x65_2.pddl"
+    ],
+    "node": "n160",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 7.67,
+    "problem": "instance_65x65_2.pddl",
+    "run_dir": "runs-00101-00200/00158",
+    "total_time": 7.43
+  },
+  "dual_bfws-reward-instance_65x65_3.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 260,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_65x65_3.pddl"
+    ],
+    "node": "n279",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 8.51,
+    "problem": "instance_65x65_3.pddl",
+    "run_dir": "runs-00101-00200/00159",
+    "total_time": 8.25
+  },
+  "dual_bfws-reward-instance_65x65_4.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 590,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_65x65_4.pddl"
+    ],
+    "node": "n1493",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 8.28,
+    "problem": "instance_65x65_4.pddl",
+    "run_dir": "runs-00101-00200/00160",
+    "total_time": 7.99
+  },
+  "dual_bfws-reward-instance_70x70_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 662,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_70x70_0.pddl"
+    ],
+    "node": "n390",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 16.31,
+    "problem": "instance_70x70_0.pddl",
+    "run_dir": "runs-00101-00200/00161",
+    "total_time": 15.97
+  },
+  "dual_bfws-reward-instance_70x70_1.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 354,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_70x70_1.pddl"
+    ],
+    "node": "n205",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 10.38,
+    "problem": "instance_70x70_1.pddl",
+    "run_dir": "runs-00101-00200/00162",
+    "total_time": 9.95
+  },
+  "dual_bfws-reward-instance_70x70_2.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 429,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_70x70_2.pddl"
+    ],
+    "node": "n201",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 8.82,
+    "problem": "instance_70x70_2.pddl",
+    "run_dir": "runs-00101-00200/00163",
+    "total_time": 8.54
+  },
+  "dual_bfws-reward-instance_70x70_3.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 627,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_70x70_3.pddl"
+    ],
+    "node": "n1011",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 16.64,
+    "problem": "instance_70x70_3.pddl",
+    "run_dir": "runs-00101-00200/00164",
+    "total_time": 16.27
+  },
+  "dual_bfws-reward-instance_70x70_4.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 229,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_70x70_4.pddl"
+    ],
+    "node": "n1401",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 8.88,
+    "problem": "instance_70x70_4.pddl",
+    "run_dir": "runs-00101-00200/00165",
+    "total_time": 8.46
+  },
+  "dual_bfws-reward-instance_75x75_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 787,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_75x75_0.pddl"
+    ],
+    "node": "n386",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 24.61,
+    "problem": "instance_75x75_0.pddl",
+    "run_dir": "runs-00101-00200/00166",
+    "total_time": 24.18
+  },
+  "dual_bfws-reward-instance_75x75_1.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 580,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_75x75_1.pddl"
+    ],
+    "node": "n205",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 16.12,
+    "problem": "instance_75x75_1.pddl",
+    "run_dir": "runs-00101-00200/00167",
+    "total_time": 15.72
+  },
+  "dual_bfws-reward-instance_75x75_2.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 505,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_75x75_2.pddl"
+    ],
+    "node": "n1493",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 15.31,
+    "problem": "instance_75x75_2.pddl",
+    "run_dir": "runs-00101-00200/00168",
+    "total_time": 14.92
+  },
+  "dual_bfws-reward-instance_75x75_3.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 598,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_75x75_3.pddl"
+    ],
+    "node": "n136",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 12.05,
+    "problem": "instance_75x75_3.pddl",
+    "run_dir": "runs-00101-00200/00169",
+    "total_time": 11.71
+  },
+  "dual_bfws-reward-instance_75x75_4.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 118,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_75x75_4.pddl"
+    ],
+    "node": "n1490",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 12.5,
+    "problem": "instance_75x75_4.pddl",
+    "run_dir": "runs-00101-00200/00170",
+    "total_time": 12.16
+  },
+  "dual_bfws-reward-instance_80x80_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 490,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_80x80_0.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 21.57,
+    "problem": "instance_80x80_0.pddl",
+    "run_dir": "runs-00101-00200/00171",
+    "total_time": 21.13
+  },
+  "dual_bfws-reward-instance_80x80_1.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 698,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_80x80_1.pddl"
+    ],
+    "node": "n1493",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 22.31,
+    "problem": "instance_80x80_1.pddl",
+    "run_dir": "runs-00101-00200/00172",
+    "total_time": 21.89
+  },
+  "dual_bfws-reward-instance_80x80_2.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 494,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_80x80_2.pddl"
+    ],
+    "node": "n247",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 24.22,
+    "problem": "instance_80x80_2.pddl",
+    "run_dir": "runs-00101-00200/00173",
+    "total_time": 23.78
+  },
+  "dual_bfws-reward-instance_80x80_3.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 10,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_80x80_3.pddl"
+    ],
+    "node": "n1401",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 15.99,
+    "problem": "instance_80x80_3.pddl",
+    "run_dir": "runs-00101-00200/00174",
+    "total_time": 15.64
+  },
+  "dual_bfws-reward-instance_80x80_4.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 533,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_80x80_4.pddl"
+    ],
+    "node": "n136",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 16.31,
+    "problem": "instance_80x80_4.pddl",
+    "run_dir": "runs-00101-00200/00175",
+    "total_time": 15.9
+  },
+  "dual_bfws-reward-instance_85x85_0.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 896,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_85x85_0.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 30.72,
+    "problem": "instance_85x85_0.pddl",
+    "run_dir": "runs-00101-00200/00176",
+    "total_time": 30.3
+  },
+  "dual_bfws-reward-instance_85x85_1.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 796,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_85x85_1.pddl"
+    ],
+    "node": "n236",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 32.32,
+    "problem": "instance_85x85_1.pddl",
+    "run_dir": "runs-00101-00200/00177",
+    "total_time": 31.86
+  },
+  "dual_bfws-reward-instance_85x85_2.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 312,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_85x85_2.pddl"
+    ],
+    "node": "n1012",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 30.2,
+    "problem": "instance_85x85_2.pddl",
+    "run_dir": "runs-00101-00200/00178",
+    "total_time": 29.78
+  },
+  "dual_bfws-reward-instance_85x85_3.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 717,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_85x85_3.pddl"
+    ],
+    "node": "n247",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 34.42,
+    "problem": "instance_85x85_3.pddl",
+    "run_dir": "runs-00101-00200/00179",
+    "total_time": 33.95
+  },
+  "dual_bfws-reward-instance_85x85_4.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 910,
+    "coverage": 1,
+    "domain": "reward",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "reward",
+      "instance_85x85_4.pddl"
+    ],
+    "node": "n136",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 30.08,
+    "problem": "instance_85x85_4.pddl",
+    "run_dir": "runs-00101-00200/00180",
+    "total_time": 29.62
+  },
+  "dual_bfws-spanner-pfile01-001.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile01-001.pddl"
+    ],
+    "node": "n340",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.73,
+    "problem": "pfile01-001.pddl",
+    "run_dir": "runs-00101-00200/00181"
+  },
+  "dual_bfws-spanner-pfile01-002.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile01-002.pddl"
+    ],
+    "node": "n247",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.51,
+    "problem": "pfile01-002.pddl",
+    "run_dir": "runs-00101-00200/00182"
+  },
+  "dual_bfws-spanner-pfile01-003.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile01-003.pddl"
+    ],
+    "node": "n1011",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.83,
+    "problem": "pfile01-003.pddl",
+    "run_dir": "runs-00101-00200/00183"
+  },
+  "dual_bfws-spanner-pfile01-004.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile01-004.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1802.25,
+    "problem": "pfile01-004.pddl",
+    "run_dir": "runs-00101-00200/00184"
+  },
+  "dual_bfws-spanner-pfile01-005.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile01-005.pddl"
+    ],
+    "node": "n232",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.65,
+    "problem": "pfile01-005.pddl",
+    "run_dir": "runs-00101-00200/00185"
+  },
+  "dual_bfws-spanner-pfile02-006.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile02-006.pddl"
+    ],
+    "node": "n194",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.7,
+    "problem": "pfile02-006.pddl",
+    "run_dir": "runs-00101-00200/00186"
+  },
+  "dual_bfws-spanner-pfile02-007.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile02-007.pddl"
+    ],
+    "node": "n163",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.55,
+    "problem": "pfile02-007.pddl",
+    "run_dir": "runs-00101-00200/00187"
+  },
+  "dual_bfws-spanner-pfile02-008.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile02-008.pddl"
+    ],
+    "node": "n231",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.57,
+    "problem": "pfile02-008.pddl",
+    "run_dir": "runs-00101-00200/00188"
+  },
+  "dual_bfws-spanner-pfile02-009.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile02-009.pddl"
+    ],
+    "node": "n279",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.91,
+    "problem": "pfile02-009.pddl",
+    "run_dir": "runs-00101-00200/00189"
+  },
+  "dual_bfws-spanner-pfile02-010.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile02-010.pddl"
+    ],
+    "node": "n388",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.48,
+    "problem": "pfile02-010.pddl",
+    "run_dir": "runs-00101-00200/00190"
+  },
+  "dual_bfws-spanner-pfile03-011.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile03-011.pddl"
+    ],
+    "node": "n135",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.2,
+    "problem": "pfile03-011.pddl",
+    "run_dir": "runs-00101-00200/00191"
+  },
+  "dual_bfws-spanner-pfile03-012.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile03-012.pddl"
+    ],
+    "node": "n818",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.75,
+    "problem": "pfile03-012.pddl",
+    "run_dir": "runs-00101-00200/00192"
+  },
+  "dual_bfws-spanner-pfile03-013.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile03-013.pddl"
+    ],
+    "node": "n200",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.52,
+    "problem": "pfile03-013.pddl",
+    "run_dir": "runs-00101-00200/00193"
+  },
+  "dual_bfws-spanner-pfile03-014.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile03-014.pddl"
+    ],
+    "node": "n243",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.46,
+    "problem": "pfile03-014.pddl",
+    "run_dir": "runs-00101-00200/00194"
+  },
+  "dual_bfws-spanner-pfile03-015.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile03-015.pddl"
+    ],
+    "node": "n146",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1808.03,
+    "problem": "pfile03-015.pddl",
+    "run_dir": "runs-00101-00200/00195"
+  },
+  "dual_bfws-spanner-pfile04-016.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile04-016.pddl"
+    ],
+    "node": "n160",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.41,
+    "problem": "pfile04-016.pddl",
+    "run_dir": "runs-00101-00200/00196"
+  },
+  "dual_bfws-spanner-pfile04-017.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile04-017.pddl"
+    ],
+    "node": "n393",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.51,
+    "problem": "pfile04-017.pddl",
+    "run_dir": "runs-00101-00200/00197"
+  },
+  "dual_bfws-spanner-pfile04-018.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile04-018.pddl"
+    ],
+    "node": "n238",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.34,
+    "problem": "pfile04-018.pddl",
+    "run_dir": "runs-00101-00200/00198"
+  },
+  "dual_bfws-spanner-pfile04-019.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile04-019.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.43,
+    "problem": "pfile04-019.pddl",
+    "run_dir": "runs-00101-00200/00199"
+  },
+  "dual_bfws-spanner-pfile04-020.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile04-020.pddl"
+    ],
+    "node": "n136",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.53,
+    "problem": "pfile04-020.pddl",
+    "run_dir": "runs-00101-00200/00200"
+  },
+  "dual_bfws-spanner-pfile05-021.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile05-021.pddl"
+    ],
+    "node": "n243",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.43,
+    "problem": "pfile05-021.pddl",
+    "run_dir": "runs-00201-00300/00201"
+  },
+  "dual_bfws-spanner-pfile05-022.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile05-022.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.4,
+    "problem": "pfile05-022.pddl",
+    "run_dir": "runs-00201-00300/00202"
+  },
+  "dual_bfws-spanner-pfile05-023.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile05-023.pddl"
+    ],
+    "node": "n205",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.47,
+    "problem": "pfile05-023.pddl",
+    "run_dir": "runs-00201-00300/00203"
+  },
+  "dual_bfws-spanner-pfile05-024.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile05-024.pddl"
+    ],
+    "node": "n160",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.4,
+    "problem": "pfile05-024.pddl",
+    "run_dir": "runs-00201-00300/00204"
+  },
+  "dual_bfws-spanner-pfile05-025.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile05-025.pddl"
+    ],
+    "node": "n1490",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.4,
+    "problem": "pfile05-025.pddl",
+    "run_dir": "runs-00201-00300/00205"
+  },
+  "dual_bfws-spanner-pfile06-026.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile06-026.pddl"
+    ],
+    "node": "n160",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.41,
+    "problem": "pfile06-026.pddl",
+    "run_dir": "runs-00201-00300/00206"
+  },
+  "dual_bfws-spanner-pfile06-027.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile06-027.pddl"
+    ],
+    "node": "n1493",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.5,
+    "problem": "pfile06-027.pddl",
+    "run_dir": "runs-00201-00300/00207"
+  },
+  "dual_bfws-spanner-pfile06-028.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile06-028.pddl"
+    ],
+    "node": "n235",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1802.09,
+    "problem": "pfile06-028.pddl",
+    "run_dir": "runs-00201-00300/00208"
+  },
+  "dual_bfws-spanner-pfile06-029.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile06-029.pddl"
+    ],
+    "node": "n337",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1800.51,
+    "problem": "pfile06-029.pddl",
+    "run_dir": "runs-00201-00300/00209"
+  },
+  "dual_bfws-spanner-pfile06-030.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "spanner",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "spanner",
+      "pfile06-030.pddl"
+    ],
+    "node": "n388",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1801.11,
+    "problem": "pfile06-030.pddl",
+    "run_dir": "runs-00201-00300/00210"
+  },
+  "dual_bfws-visitall-p01.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 45,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p01.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.46,
+    "problem": "p01.pddl",
+    "run_dir": "runs-00201-00300/00211",
+    "total_time": 0.43
+  },
+  "dual_bfws-visitall-p02.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 95,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p02.pddl"
+    ],
+    "node": "n1012",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.62,
+    "problem": "p02.pddl",
+    "run_dir": "runs-00201-00300/00212",
+    "total_time": 0.55
+  },
+  "dual_bfws-visitall-p03.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 172,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p03.pddl"
+    ],
+    "node": "n1493",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.52,
+    "problem": "p03.pddl",
+    "run_dir": "runs-00201-00300/00213",
+    "total_time": 0.49
+  },
+  "dual_bfws-visitall-p04.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 285,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p04.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.61,
+    "problem": "p04.pddl",
+    "run_dir": "runs-00201-00300/00214",
+    "total_time": 0.57
+  },
+  "dual_bfws-visitall-p05.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 355,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p05.pddl"
+    ],
+    "node": "n1493",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.89,
+    "problem": "p05.pddl",
+    "run_dir": "runs-00201-00300/00215",
+    "total_time": 0.74
+  },
+  "dual_bfws-visitall-p06.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 527,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p06.pddl"
+    ],
+    "node": "n201",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 0.9,
+    "problem": "p06.pddl",
+    "run_dir": "runs-00201-00300/00216",
+    "total_time": 0.84
+  },
+  "dual_bfws-visitall-p07.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 626,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p07.pddl"
+    ],
+    "node": "n243",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.08,
+    "problem": "p07.pddl",
+    "run_dir": "runs-00201-00300/00217",
+    "total_time": 1.0
+  },
+  "dual_bfws-visitall-p08.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 794,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p08.pddl"
+    ],
+    "node": "n1493",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1.59,
+    "problem": "p08.pddl",
+    "run_dir": "runs-00201-00300/00218",
+    "total_time": 1.5
+  },
+  "dual_bfws-visitall-p09.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 970,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p09.pddl"
+    ],
+    "node": "n817",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 2.02,
+    "problem": "p09.pddl",
+    "run_dir": "runs-00201-00300/00219",
+    "total_time": 1.91
+  },
+  "dual_bfws-visitall-p10.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1241,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p10.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 10.38,
+    "problem": "p10.pddl",
+    "run_dir": "runs-00201-00300/00220",
+    "total_time": 10.25
+  },
+  "dual_bfws-visitall-p11.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1444,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p11.pddl"
+    ],
+    "node": "n235",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 4.18,
+    "problem": "p11.pddl",
+    "run_dir": "runs-00201-00300/00221",
+    "total_time": 4.06
+  },
+  "dual_bfws-visitall-p12.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1621,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p12.pddl"
+    ],
+    "node": "n1401",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 6.92,
+    "problem": "p12.pddl",
+    "run_dir": "runs-00201-00300/00222",
+    "total_time": 6.77
+  },
+  "dual_bfws-visitall-p13.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 1863,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p13.pddl"
+    ],
+    "node": "n1490",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 10.43,
+    "problem": "p13.pddl",
+    "run_dir": "runs-00201-00300/00223",
+    "total_time": 10.26
+  },
+  "dual_bfws-visitall-p14.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 2186,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p14.pddl"
+    ],
+    "node": "n243",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 43.03,
+    "problem": "p14.pddl",
+    "run_dir": "runs-00201-00300/00224",
+    "total_time": 42.83
+  },
+  "dual_bfws-visitall-p15.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 2466,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p15.pddl"
+    ],
+    "node": "n337",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 35.54,
+    "problem": "p15.pddl",
+    "run_dir": "runs-00201-00300/00225",
+    "total_time": 35.3
+  },
+  "dual_bfws-visitall-p16.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 2689,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p16.pddl"
+    ],
+    "node": "n136",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 30.57,
+    "problem": "p16.pddl",
+    "run_dir": "runs-00201-00300/00226",
+    "total_time": 30.32
+  },
+  "dual_bfws-visitall-p17.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 3049,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p17.pddl"
+    ],
+    "node": "n1490",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 38.9,
+    "problem": "p17.pddl",
+    "run_dir": "runs-00201-00300/00227",
+    "total_time": 38.62
+  },
+  "dual_bfws-visitall-p18.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 3472,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p18.pddl"
+    ],
+    "node": "n388",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 182.78,
+    "problem": "p18.pddl",
+    "run_dir": "runs-00201-00300/00228",
+    "total_time": 182.47
+  },
+  "dual_bfws-visitall-p19.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 3805,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p19.pddl"
+    ],
+    "node": "n247",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 119.33,
+    "problem": "p19.pddl",
+    "run_dir": "runs-00201-00300/00229",
+    "total_time": 118.98
+  },
+  "dual_bfws-visitall-p20.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 4269,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p20.pddl"
+    ],
+    "node": "n280",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 312.3,
+    "problem": "p20.pddl",
+    "run_dir": "runs-00201-00300/00230",
+    "total_time": 311.84
+  },
+  "dual_bfws-visitall-p21.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 4618,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p21.pddl"
+    ],
+    "node": "n1011",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 507.22,
+    "problem": "p21.pddl",
+    "run_dir": "runs-00201-00300/00231",
+    "total_time": 506.74
+  },
+  "dual_bfws-visitall-p22.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 5086,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p22.pddl"
+    ],
+    "node": "n1396",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 974.57,
+    "problem": "p22.pddl",
+    "run_dir": "runs-00201-00300/00232",
+    "total_time": 974.09
+  },
+  "dual_bfws-visitall-p23.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p23.pddl"
+    ],
+    "node": "n279",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 959.11,
+    "problem": "p23.pddl",
+    "run_dir": "runs-00201-00300/00233"
+  },
+  "dual_bfws-visitall-p24.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 5860,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p24.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 631.79,
+    "problem": "p24.pddl",
+    "run_dir": "runs-00201-00300/00234",
+    "total_time": 631.31
+  },
+  "dual_bfws-visitall-p25.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p25.pddl"
+    ],
+    "node": "n136",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 863.17,
+    "problem": "p25.pddl",
+    "run_dir": "runs-00201-00300/00235"
+  },
+  "dual_bfws-visitall-p26.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 6798,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p26.pddl"
+    ],
+    "node": "n240",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 475.35,
+    "problem": "p26.pddl",
+    "run_dir": "runs-00201-00300/00236",
+    "total_time": 474.69
+  },
+  "dual_bfws-visitall-p27.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p27.pddl"
+    ],
+    "node": "n338",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 902.38,
+    "problem": "p27.pddl",
+    "run_dir": "runs-00201-00300/00237"
+  },
+  "dual_bfws-visitall-p28.pddl": {
+    "algorithm": "dual_bfws",
+    "cost": 7777,
+    "coverage": 1,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p28.pddl"
+    ],
+    "node": "n206",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 755.17,
+    "problem": "p28.pddl",
+    "run_dir": "runs-00201-00300/00238",
+    "total_time": 754.49
+  },
+  "dual_bfws-visitall-p29.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p29.pddl"
+    ],
+    "node": "n160",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 859.85,
+    "problem": "p29.pddl",
+    "run_dir": "runs-00201-00300/00239"
+  },
+  "dual_bfws-visitall-p30.pddl": {
+    "algorithm": "dual_bfws",
+    "coverage": 0,
+    "domain": "visitall",
+    "error": "none",
+    "id": [
+      "dual_bfws",
+      "visitall",
+      "p30.pddl"
+    ],
+    "node": "n392",
+    "planner_exit_code": 0,
+    "planner_wall_clock_time": 1535.71,
+    "problem": "p30.pddl",
+    "run_dir": "runs-00201-00300/00240"
+  }
+}

@@ -1,0 +1,6 @@
+[submodule "learning/learner/libs/dlplan"]
+	path = learning/learner/libs/dlplan
+	url = git@github.com:rleap-project/dlplan.git
+[submodule "learning/learner/libs/tarski"]
+	path = learning/learner/libs/tarski
+	url = git@github.com:drexlerd/tarski.git

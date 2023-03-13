@@ -1,0 +1,1816 @@
+Changing working directory:  /proj/ssiw/projects/code/sketch-learner/learning/d2l/workspace/grid_hierarchy_1_9_9_9_9_15
+Creating sym link: /proj/ssiw/projects/code/sketch-learner/learning/d2l/libs/dlplan/libs/scorpion/fast-downward.py /proj/ssiw/projects/code/sketch-learner/learning/d2l/workspace/grid_hierarchy_1_9_9_9_9_15/fast-downward.py
+================================================================================
+SLTP v.0.2.0
+================================================================================
+================================================================================
+(pid: 63749) STARTING STEP #1: Incremental learning module
+================================================================================
+2023-03-06 09:25:56 INFO     [40m[34mInitializing DomainData...[0m
+2023-03-06 09:25:56 INFO     Constructing DomainData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/domain.pddl
+2023-03-06 09:25:56 INFO     [40m[34m..done[0m
+2023-03-06 09:25:56 INFO     [40m[34mInitializing InstanceDatas...[0m
+2023-03-06 09:25:56 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-0.pddl
+Num states: 32
+2023-03-06 09:25:58 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-1.pddl
+Num states: 32
+2023-03-06 09:25:58 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-2.pddl
+Unsolvable.
+2023-03-06 09:25:58 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-3.pddl
+Num states: 32
+2023-03-06 09:25:58 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-4.pddl
+Num states: 32
+2023-03-06 09:25:59 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-5.pddl
+Num states: 32
+2023-03-06 09:25:59 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-6.pddl
+Num states: 32
+2023-03-06 09:25:59 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-7.pddl
+Unsolvable.
+2023-03-06 09:25:59 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-8.pddl
+Num states: 32
+2023-03-06 09:25:59 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-9.pddl
+Num states: 32
+2023-03-06 09:26:00 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-10.pddl
+Num states: 32
+2023-03-06 09:26:00 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-11.pddl
+Num states: 32
+2023-03-06 09:26:00 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-12.pddl
+Unsolvable.
+2023-03-06 09:26:00 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-13.pddl
+Num states: 32
+2023-03-06 09:26:01 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-14.pddl
+Unsolvable.
+2023-03-06 09:26:01 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-15.pddl
+Num states: 32
+2023-03-06 09:26:01 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-16.pddl
+Num states: 32
+2023-03-06 09:26:01 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-17.pddl
+Trivially solvable.
+2023-03-06 09:26:01 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-18.pddl
+Num states: 32
+2023-03-06 09:26:02 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-19.pddl
+Num states: 32
+2023-03-06 09:26:02 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-20.pddl
+Num states: 32
+2023-03-06 09:26:02 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-21.pddl
+Num states: 32
+2023-03-06 09:26:02 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-22.pddl
+Num states: 32
+2023-03-06 09:26:03 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-23.pddl
+Trivially solvable.
+2023-03-06 09:26:03 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-24.pddl
+Num states: 32
+2023-03-06 09:26:03 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-25.pddl
+Num states: 32
+2023-03-06 09:26:03 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-26.pddl
+Num states: 32
+2023-03-06 09:26:03 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-27.pddl
+Num states: 32
+2023-03-06 09:26:04 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-28.pddl
+Num states: 32
+2023-03-06 09:26:04 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-29.pddl
+Num states: 32
+2023-03-06 09:26:04 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-30.pddl
+Num states: 32
+2023-03-06 09:26:04 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-31.pddl
+Num states: 32
+2023-03-06 09:26:04 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-32.pddl
+Num states: 32
+2023-03-06 09:26:05 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-33.pddl
+Num states: 32
+2023-03-06 09:26:05 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-34.pddl
+Unsolvable.
+2023-03-06 09:26:05 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-35.pddl
+Num states: 32
+2023-03-06 09:26:05 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-36.pddl
+Num states: 32
+2023-03-06 09:26:05 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-37.pddl
+Trivially solvable.
+2023-03-06 09:26:06 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-38.pddl
+Unsolvable.
+2023-03-06 09:26:06 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-39.pddl
+Num states: 32
+2023-03-06 09:26:06 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-40.pddl
+Num states: 32
+2023-03-06 09:26:06 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-41.pddl
+Num states: 32
+2023-03-06 09:26:07 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-42.pddl
+Num states: 32
+2023-03-06 09:26:07 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-43.pddl
+Num states: 32
+2023-03-06 09:26:07 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-44.pddl
+Trivially solvable.
+2023-03-06 09:26:07 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-45.pddl
+Num states: 32
+2023-03-06 09:26:07 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-46.pddl
+Num states: 32
+2023-03-06 09:26:08 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-47.pddl
+Num states: 32
+2023-03-06 09:26:08 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-48.pddl
+Num states: 32
+2023-03-06 09:26:08 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-49.pddl
+Num states: 32
+2023-03-06 09:26:08 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-50.pddl
+Num states: 32
+2023-03-06 09:26:09 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-51.pddl
+Num states: 32
+2023-03-06 09:26:09 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-52.pddl
+Num states: 32
+2023-03-06 09:26:09 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-53.pddl
+Num states: 32
+2023-03-06 09:26:09 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-54.pddl
+Num states: 32
+2023-03-06 09:26:09 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-55.pddl
+Unsolvable.
+2023-03-06 09:26:10 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-56.pddl
+Num states: 32
+2023-03-06 09:26:10 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-57.pddl
+Num states: 32
+2023-03-06 09:26:10 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-58.pddl
+Unsolvable.
+2023-03-06 09:26:10 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-59.pddl
+Num states: 32
+2023-03-06 09:26:10 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-60.pddl
+Num states: 32
+2023-03-06 09:26:11 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-61.pddl
+Num states: 32
+2023-03-06 09:26:11 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-62.pddl
+Unsolvable.
+2023-03-06 09:26:11 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-63.pddl
+Num states: 32
+2023-03-06 09:26:11 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-64.pddl
+Num states: 32
+2023-03-06 09:26:12 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-65.pddl
+Num states: 32
+2023-03-06 09:26:12 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-66.pddl
+Num states: 32
+2023-03-06 09:26:12 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-67.pddl
+Unsolvable.
+2023-03-06 09:26:12 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-68.pddl
+Trivially solvable.
+2023-03-06 09:26:12 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-69.pddl
+Num states: 32
+2023-03-06 09:26:13 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-70.pddl
+Num states: 32
+2023-03-06 09:26:13 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-71.pddl
+Num states: 32
+2023-03-06 09:26:13 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-72.pddl
+Num states: 32
+2023-03-06 09:26:13 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-73.pddl
+Num states: 32
+2023-03-06 09:26:14 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-74.pddl
+Unsolvable.
+2023-03-06 09:26:14 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-75.pddl
+Num states: 32
+2023-03-06 09:26:14 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-76.pddl
+Unsolvable.
+2023-03-06 09:26:14 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-77.pddl
+Num states: 32
+2023-03-06 09:26:14 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-78.pddl
+Num states: 32
+2023-03-06 09:26:15 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-79.pddl
+Num states: 32
+2023-03-06 09:26:15 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-80.pddl
+Num states: 32
+2023-03-06 09:26:15 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-81.pddl
+Num states: 32
+2023-03-06 09:26:15 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-82.pddl
+Num states: 32
+2023-03-06 09:26:15 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-83.pddl
+Num states: 32
+2023-03-06 09:26:16 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-84.pddl
+Trivially solvable.
+2023-03-06 09:26:16 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-85.pddl
+Unsolvable.
+2023-03-06 09:26:16 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-86.pddl
+Num states: 32
+2023-03-06 09:26:16 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-87.pddl
+Num states: 32
+2023-03-06 09:26:17 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-88.pddl
+Num states: 32
+2023-03-06 09:26:17 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-89.pddl
+Num states: 32
+2023-03-06 09:26:17 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-90.pddl
+Num states: 32
+2023-03-06 09:26:17 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-91.pddl
+Unsolvable.
+2023-03-06 09:26:17 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-92.pddl
+Num states: 32
+2023-03-06 09:26:18 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-93.pddl
+Num states: 32
+2023-03-06 09:26:18 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-94.pddl
+Num states: 32
+2023-03-06 09:26:18 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-95.pddl
+Num states: 32
+2023-03-06 09:26:18 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-96.pddl
+Num states: 32
+2023-03-06 09:26:19 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-97.pddl
+Trivially solvable.
+2023-03-06 09:26:19 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-98.pddl
+Unsolvable.
+2023-03-06 09:26:19 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-1-1-100-1-2-2-99.pddl
+Num states: 32
+2023-03-06 09:26:19 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-0.pddl
+Num states: 159
+2023-03-06 09:26:19 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-1.pddl
+Num states: 159
+2023-03-06 09:26:20 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-2.pddl
+Unsolvable.
+2023-03-06 09:26:20 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-3.pddl
+Num states: 159
+2023-03-06 09:26:20 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-4.pddl
+Unsolvable.
+2023-03-06 09:26:20 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-5.pddl
+Num states: 155
+2023-03-06 09:26:21 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-6.pddl
+Unsolvable.
+2023-03-06 09:26:21 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-7.pddl
+Unsolvable.
+2023-03-06 09:26:21 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-8.pddl
+Num states: 159
+2023-03-06 09:26:21 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-9.pddl
+Num states: 202
+2023-03-06 09:26:21 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-10.pddl
+Unsolvable.
+2023-03-06 09:26:22 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-11.pddl
+Unsolvable.
+2023-03-06 09:26:22 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-12.pddl
+Num states: 155
+2023-03-06 09:26:22 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-13.pddl
+Num states: 159
+2023-03-06 09:26:22 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-14.pddl
+Num states: 159
+2023-03-06 09:26:22 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-15.pddl
+Num states: 202
+2023-03-06 09:26:23 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-16.pddl
+Unsolvable.
+2023-03-06 09:26:23 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-17.pddl
+Num states: 202
+2023-03-06 09:26:23 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-18.pddl
+Unsolvable.
+2023-03-06 09:26:23 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-19.pddl
+Num states: 202
+2023-03-06 09:26:24 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-20.pddl
+Num states: 202
+2023-03-06 09:26:24 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-21.pddl
+Num states: 159
+2023-03-06 09:26:24 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-22.pddl
+Num states: 159
+2023-03-06 09:26:24 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-23.pddl
+Num states: 159
+2023-03-06 09:26:24 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-24.pddl
+Unsolvable.
+2023-03-06 09:26:25 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-25.pddl
+Num states: 159
+2023-03-06 09:26:25 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-26.pddl
+Num states: 155
+2023-03-06 09:26:25 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-27.pddl
+Num states: 159
+2023-03-06 09:26:25 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-28.pddl
+Unsolvable.
+2023-03-06 09:26:26 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-29.pddl
+Num states: 159
+2023-03-06 09:26:26 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-30.pddl
+Num states: 202
+2023-03-06 09:26:26 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-31.pddl
+Unsolvable.
+2023-03-06 09:26:26 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-32.pddl
+Num states: 159
+2023-03-06 09:26:26 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-33.pddl
+Num states: 159
+2023-03-06 09:26:27 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-34.pddl
+Num states: 159
+2023-03-06 09:26:27 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-35.pddl
+Unsolvable.
+2023-03-06 09:26:27 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-36.pddl
+Num states: 159
+2023-03-06 09:26:27 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-37.pddl
+Num states: 159
+2023-03-06 09:26:28 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-38.pddl
+Unsolvable.
+2023-03-06 09:26:28 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-39.pddl
+Unsolvable.
+2023-03-06 09:26:28 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-40.pddl
+Unsolvable.
+2023-03-06 09:26:28 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-41.pddl
+Unsolvable.
+2023-03-06 09:26:28 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-42.pddl
+Unsolvable.
+2023-03-06 09:26:29 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-43.pddl
+Num states: 155
+2023-03-06 09:26:29 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-44.pddl
+Num states: 159
+2023-03-06 09:26:29 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-45.pddl
+Unsolvable.
+2023-03-06 09:26:29 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-46.pddl
+Num states: 159
+2023-03-06 09:26:29 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-47.pddl
+Num states: 202
+2023-03-06 09:26:30 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-48.pddl
+Unsolvable.
+2023-03-06 09:26:30 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-49.pddl
+Num states: 155
+2023-03-06 09:26:30 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-50.pddl
+Num states: 202
+2023-03-06 09:26:30 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-51.pddl
+Num states: 159
+2023-03-06 09:26:31 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-52.pddl
+Num states: 202
+2023-03-06 09:26:31 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-53.pddl
+Num states: 159
+2023-03-06 09:26:31 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-54.pddl
+Num states: 159
+2023-03-06 09:26:31 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-55.pddl
+Num states: 159
+2023-03-06 09:26:31 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-56.pddl
+Num states: 202
+2023-03-06 09:26:32 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-57.pddl
+Num states: 159
+2023-03-06 09:26:32 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-58.pddl
+Unsolvable.
+2023-03-06 09:26:32 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-59.pddl
+Unsolvable.
+2023-03-06 09:26:32 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-60.pddl
+Num states: 202
+2023-03-06 09:26:33 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-61.pddl
+Num states: 159
+2023-03-06 09:26:33 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-62.pddl
+Unsolvable.
+2023-03-06 09:26:33 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-63.pddl
+Num states: 188
+2023-03-06 09:26:33 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-64.pddl
+Unsolvable.
+2023-03-06 09:26:33 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-65.pddl
+Num states: 188
+2023-03-06 09:26:34 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-66.pddl
+Unsolvable.
+2023-03-06 09:26:34 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-67.pddl
+Unsolvable.
+2023-03-06 09:26:34 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-68.pddl
+Num states: 159
+2023-03-06 09:26:34 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-69.pddl
+Unsolvable.
+2023-03-06 09:26:35 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-70.pddl
+Unsolvable.
+2023-03-06 09:26:35 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-71.pddl
+Unsolvable.
+2023-03-06 09:26:35 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-72.pddl
+Num states: 159
+2023-03-06 09:26:35 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-73.pddl
+Num states: 188
+2023-03-06 09:26:35 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-74.pddl
+Num states: 202
+2023-03-06 09:26:36 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-75.pddl
+Num states: 159
+2023-03-06 09:26:36 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-76.pddl
+Num states: 159
+2023-03-06 09:26:36 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-77.pddl
+Unsolvable.
+2023-03-06 09:26:36 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-78.pddl
+Num states: 188
+2023-03-06 09:26:37 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-79.pddl
+Num states: 159
+2023-03-06 09:26:37 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-80.pddl
+Unsolvable.
+2023-03-06 09:26:37 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-81.pddl
+Unsolvable.
+2023-03-06 09:26:37 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-82.pddl
+Unsolvable.
+2023-03-06 09:26:37 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-83.pddl
+Unsolvable.
+2023-03-06 09:26:38 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-84.pddl
+Num states: 159
+2023-03-06 09:26:38 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-85.pddl
+Unsolvable.
+2023-03-06 09:26:38 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-86.pddl
+Unsolvable.
+2023-03-06 09:26:38 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-87.pddl
+Unsolvable.
+2023-03-06 09:26:38 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-88.pddl
+Unsolvable.
+2023-03-06 09:26:39 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-89.pddl
+Num states: 155
+2023-03-06 09:26:39 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-90.pddl
+Unsolvable.
+2023-03-06 09:26:39 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-91.pddl
+Unsolvable.
+2023-03-06 09:26:39 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-92.pddl
+Num states: 188
+2023-03-06 09:26:40 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-93.pddl
+Num states: 202
+2023-03-06 09:26:40 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-94.pddl
+Num states: 202
+2023-03-06 09:26:40 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-95.pddl
+Num states: 159
+2023-03-06 09:26:40 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-96.pddl
+Num states: 159
+2023-03-06 09:26:40 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-97.pddl
+Unsolvable.
+2023-03-06 09:26:41 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-98.pddl
+Unsolvable.
+2023-03-06 09:26:41 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-2-2-100-1-2-2-99.pddl
+Num states: 155
+2023-03-06 09:26:41 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-0.pddl
+Num states: 159
+2023-03-06 09:26:41 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-1.pddl
+Num states: 159
+2023-03-06 09:26:42 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-2.pddl
+Unsolvable.
+2023-03-06 09:26:42 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-3.pddl
+Num states: 159
+2023-03-06 09:26:42 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-4.pddl
+Unsolvable.
+2023-03-06 09:26:42 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-5.pddl
+Num states: 155
+2023-03-06 09:26:42 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-6.pddl
+Unsolvable.
+2023-03-06 09:26:43 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-7.pddl
+Unsolvable.
+2023-03-06 09:26:43 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-8.pddl
+Num states: 159
+2023-03-06 09:26:43 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-9.pddl
+Num states: 202
+2023-03-06 09:26:43 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-10.pddl
+Unsolvable.
+2023-03-06 09:26:43 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-11.pddl
+Unsolvable.
+2023-03-06 09:26:44 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-12.pddl
+Num states: 155
+2023-03-06 09:26:44 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-13.pddl
+Num states: 159
+2023-03-06 09:26:44 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-14.pddl
+Num states: 159
+2023-03-06 09:26:44 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-15.pddl
+Num states: 202
+2023-03-06 09:26:45 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-16.pddl
+Unsolvable.
+2023-03-06 09:26:45 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-17.pddl
+Num states: 202
+2023-03-06 09:26:45 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-18.pddl
+Unsolvable.
+2023-03-06 09:26:45 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-19.pddl
+Num states: 202
+2023-03-06 09:26:45 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-20.pddl
+Num states: 202
+2023-03-06 09:26:46 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-21.pddl
+Num states: 159
+2023-03-06 09:26:46 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-22.pddl
+Num states: 159
+2023-03-06 09:26:46 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-23.pddl
+Num states: 159
+2023-03-06 09:26:46 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-24.pddl
+Unsolvable.
+2023-03-06 09:26:47 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-25.pddl
+Num states: 159
+2023-03-06 09:26:47 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-26.pddl
+Num states: 155
+2023-03-06 09:26:47 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-27.pddl
+Num states: 159
+2023-03-06 09:26:47 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-28.pddl
+Unsolvable.
+2023-03-06 09:26:47 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-29.pddl
+Num states: 159
+2023-03-06 09:26:48 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-30.pddl
+Num states: 202
+2023-03-06 09:26:48 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-31.pddl
+Unsolvable.
+2023-03-06 09:26:48 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-32.pddl
+Num states: 159
+2023-03-06 09:26:48 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-33.pddl
+Num states: 159
+2023-03-06 09:26:49 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-34.pddl
+Num states: 159
+2023-03-06 09:26:49 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-35.pddl
+Unsolvable.
+2023-03-06 09:26:49 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-36.pddl
+Num states: 159
+2023-03-06 09:26:49 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-37.pddl
+Num states: 159
+2023-03-06 09:26:49 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-38.pddl
+Unsolvable.
+2023-03-06 09:26:50 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-39.pddl
+Unsolvable.
+2023-03-06 09:26:50 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-40.pddl
+Unsolvable.
+2023-03-06 09:26:50 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-41.pddl
+Unsolvable.
+2023-03-06 09:26:50 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-42.pddl
+Unsolvable.
+2023-03-06 09:26:50 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-43.pddl
+Num states: 155
+2023-03-06 09:26:51 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-44.pddl
+Num states: 159
+2023-03-06 09:26:51 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-45.pddl
+Unsolvable.
+2023-03-06 09:26:51 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-46.pddl
+Num states: 159
+2023-03-06 09:26:51 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-47.pddl
+Num states: 202
+2023-03-06 09:26:52 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-48.pddl
+Unsolvable.
+2023-03-06 09:26:52 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-49.pddl
+Num states: 155
+2023-03-06 09:26:52 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-50.pddl
+Num states: 202
+2023-03-06 09:26:52 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-51.pddl
+Num states: 159
+2023-03-06 09:26:52 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-52.pddl
+Num states: 202
+2023-03-06 09:26:53 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-53.pddl
+Num states: 159
+2023-03-06 09:26:53 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-54.pddl
+Num states: 159
+2023-03-06 09:26:53 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-55.pddl
+Num states: 159
+2023-03-06 09:26:53 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-56.pddl
+Num states: 202
+2023-03-06 09:26:54 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-57.pddl
+Num states: 159
+2023-03-06 09:26:54 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-58.pddl
+Unsolvable.
+2023-03-06 09:26:54 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-59.pddl
+Unsolvable.
+2023-03-06 09:26:54 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-60.pddl
+Num states: 202
+2023-03-06 09:26:54 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-61.pddl
+Num states: 159
+2023-03-06 09:26:55 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-62.pddl
+Unsolvable.
+2023-03-06 09:26:55 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-63.pddl
+Num states: 188
+2023-03-06 09:26:55 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-64.pddl
+Unsolvable.
+2023-03-06 09:26:55 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-65.pddl
+Num states: 188
+2023-03-06 09:26:56 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-66.pddl
+Unsolvable.
+2023-03-06 09:26:56 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-67.pddl
+Unsolvable.
+2023-03-06 09:26:56 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-68.pddl
+Num states: 159
+2023-03-06 09:26:56 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-69.pddl
+Unsolvable.
+2023-03-06 09:26:56 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-70.pddl
+Unsolvable.
+2023-03-06 09:26:57 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-71.pddl
+Unsolvable.
+2023-03-06 09:26:57 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-72.pddl
+Num states: 159
+2023-03-06 09:26:57 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-73.pddl
+Num states: 188
+2023-03-06 09:26:57 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-74.pddl
+Num states: 202
+2023-03-06 09:26:58 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-75.pddl
+Num states: 159
+2023-03-06 09:26:58 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-76.pddl
+Num states: 159
+2023-03-06 09:26:58 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-77.pddl
+Unsolvable.
+2023-03-06 09:26:58 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-78.pddl
+Num states: 188
+2023-03-06 09:26:58 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-79.pddl
+Num states: 159
+2023-03-06 09:26:59 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-80.pddl
+Unsolvable.
+2023-03-06 09:26:59 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-81.pddl
+Unsolvable.
+2023-03-06 09:26:59 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-82.pddl
+Unsolvable.
+2023-03-06 09:26:59 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-83.pddl
+Unsolvable.
+2023-03-06 09:27:00 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-84.pddl
+Num states: 159
+2023-03-06 09:27:00 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-85.pddl
+Unsolvable.
+2023-03-06 09:27:00 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-86.pddl
+Unsolvable.
+2023-03-06 09:27:00 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-87.pddl
+Unsolvable.
+2023-03-06 09:27:00 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-88.pddl
+Unsolvable.
+2023-03-06 09:27:01 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-89.pddl
+Num states: 155
+2023-03-06 09:27:01 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-90.pddl
+Unsolvable.
+2023-03-06 09:27:01 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-91.pddl
+Unsolvable.
+2023-03-06 09:27:01 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-92.pddl
+Num states: 188
+2023-03-06 09:27:02 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-93.pddl
+Num states: 202
+2023-03-06 09:27:02 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-94.pddl
+Num states: 202
+2023-03-06 09:27:02 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-95.pddl
+Num states: 159
+2023-03-06 09:27:02 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-96.pddl
+Num states: 159
+2023-03-06 09:27:02 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-97.pddl
+Unsolvable.
+2023-03-06 09:27:03 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-98.pddl
+Unsolvable.
+2023-03-06 09:27:03 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-20-20-100-2-2-2-99.pddl
+Num states: 155
+2023-03-06 09:27:03 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-0.pddl
+Num states: 159
+2023-03-06 09:27:03 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-1.pddl
+Num states: 159
+2023-03-06 09:27:04 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-2.pddl
+Unsolvable.
+2023-03-06 09:27:04 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-3.pddl
+Num states: 159
+2023-03-06 09:27:04 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-4.pddl
+Unsolvable.
+2023-03-06 09:27:04 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-5.pddl
+Num states: 155
+2023-03-06 09:27:04 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-6.pddl
+Unsolvable.
+2023-03-06 09:27:05 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-7.pddl
+Unsolvable.
+2023-03-06 09:27:05 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-8.pddl
+Num states: 159
+2023-03-06 09:27:05 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-9.pddl
+Num states: 202
+2023-03-06 09:27:05 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-10.pddl
+Unsolvable.
+2023-03-06 09:27:06 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-11.pddl
+Unsolvable.
+2023-03-06 09:27:06 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-12.pddl
+Num states: 155
+2023-03-06 09:27:06 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-13.pddl
+Num states: 159
+2023-03-06 09:27:06 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-14.pddl
+Num states: 159
+2023-03-06 09:27:06 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-15.pddl
+Num states: 202
+2023-03-06 09:27:07 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-16.pddl
+Unsolvable.
+2023-03-06 09:27:07 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-17.pddl
+Num states: 202
+2023-03-06 09:27:07 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-18.pddl
+Unsolvable.
+2023-03-06 09:27:07 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-19.pddl
+Num states: 202
+2023-03-06 09:27:08 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-20.pddl
+Num states: 202
+2023-03-06 09:27:08 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-21.pddl
+Num states: 159
+2023-03-06 09:27:08 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-22.pddl
+Num states: 159
+2023-03-06 09:27:08 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-23.pddl
+Num states: 159
+2023-03-06 09:27:08 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-24.pddl
+Unsolvable.
+2023-03-06 09:27:09 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-25.pddl
+Num states: 159
+2023-03-06 09:27:09 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-26.pddl
+Num states: 155
+2023-03-06 09:27:09 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-27.pddl
+Num states: 159
+2023-03-06 09:27:09 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-28.pddl
+Unsolvable.
+2023-03-06 09:27:09 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-29.pddl
+Num states: 159
+2023-03-06 09:27:10 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-30.pddl
+Num states: 202
+2023-03-06 09:27:10 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-31.pddl
+Unsolvable.
+2023-03-06 09:27:10 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-32.pddl
+Num states: 159
+2023-03-06 09:27:10 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-33.pddl
+Num states: 159
+2023-03-06 09:27:11 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-34.pddl
+Num states: 159
+2023-03-06 09:27:11 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-35.pddl
+Unsolvable.
+2023-03-06 09:27:11 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-36.pddl
+Num states: 159
+2023-03-06 09:27:11 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-37.pddl
+Num states: 159
+2023-03-06 09:27:11 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-38.pddl
+Unsolvable.
+2023-03-06 09:27:12 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-39.pddl
+Unsolvable.
+2023-03-06 09:27:12 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-40.pddl
+Unsolvable.
+2023-03-06 09:27:12 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-41.pddl
+Unsolvable.
+2023-03-06 09:27:12 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-42.pddl
+Unsolvable.
+2023-03-06 09:27:13 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-43.pddl
+Num states: 155
+2023-03-06 09:27:13 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-44.pddl
+Num states: 159
+2023-03-06 09:27:13 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-45.pddl
+Unsolvable.
+2023-03-06 09:27:13 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-46.pddl
+Num states: 159
+2023-03-06 09:27:13 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-47.pddl
+Num states: 202
+2023-03-06 09:27:14 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-48.pddl
+Unsolvable.
+2023-03-06 09:27:14 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-49.pddl
+Num states: 155
+2023-03-06 09:27:14 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-50.pddl
+Num states: 202
+2023-03-06 09:27:14 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-51.pddl
+Num states: 159
+2023-03-06 09:27:14 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-52.pddl
+Num states: 202
+2023-03-06 09:27:15 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-53.pddl
+Num states: 159
+2023-03-06 09:27:15 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-54.pddl
+Num states: 159
+2023-03-06 09:27:15 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-55.pddl
+Num states: 159
+2023-03-06 09:27:15 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-56.pddl
+Num states: 202
+2023-03-06 09:27:16 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-57.pddl
+Num states: 159
+2023-03-06 09:27:16 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-58.pddl
+Unsolvable.
+2023-03-06 09:27:16 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-59.pddl
+Unsolvable.
+2023-03-06 09:27:16 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-60.pddl
+Num states: 202
+2023-03-06 09:27:16 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-61.pddl
+Num states: 159
+2023-03-06 09:27:17 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-62.pddl
+Unsolvable.
+2023-03-06 09:27:17 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-63.pddl
+Num states: 188
+2023-03-06 09:27:17 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-64.pddl
+Unsolvable.
+2023-03-06 09:27:17 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-65.pddl
+Num states: 188
+2023-03-06 09:27:18 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-66.pddl
+Unsolvable.
+2023-03-06 09:27:18 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-67.pddl
+Unsolvable.
+2023-03-06 09:27:18 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-68.pddl
+Num states: 159
+2023-03-06 09:27:18 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-69.pddl
+Unsolvable.
+2023-03-06 09:27:18 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-70.pddl
+Unsolvable.
+2023-03-06 09:27:19 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-71.pddl
+Unsolvable.
+2023-03-06 09:27:19 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-72.pddl
+Num states: 159
+2023-03-06 09:27:19 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-73.pddl
+Num states: 188
+2023-03-06 09:27:19 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-74.pddl
+Num states: 202
+2023-03-06 09:27:20 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-75.pddl
+Num states: 159
+2023-03-06 09:27:20 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-76.pddl
+Num states: 159
+2023-03-06 09:27:20 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-77.pddl
+Unsolvable.
+2023-03-06 09:27:20 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-78.pddl
+Num states: 188
+2023-03-06 09:27:20 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-79.pddl
+Num states: 159
+2023-03-06 09:27:21 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-80.pddl
+Unsolvable.
+2023-03-06 09:27:21 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-81.pddl
+Unsolvable.
+2023-03-06 09:27:21 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-82.pddl
+Unsolvable.
+2023-03-06 09:27:21 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-83.pddl
+Unsolvable.
+2023-03-06 09:27:21 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-84.pddl
+Num states: 159
+2023-03-06 09:27:22 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-85.pddl
+Unsolvable.
+2023-03-06 09:27:22 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-86.pddl
+Unsolvable.
+2023-03-06 09:27:22 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-87.pddl
+Unsolvable.
+2023-03-06 09:27:22 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-88.pddl
+Unsolvable.
+2023-03-06 09:27:23 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-89.pddl
+Num states: 155
+2023-03-06 09:27:23 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-90.pddl
+Unsolvable.
+2023-03-06 09:27:23 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-91.pddl
+Unsolvable.
+2023-03-06 09:27:23 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-92.pddl
+Num states: 188
+2023-03-06 09:27:23 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-93.pddl
+Num states: 202
+2023-03-06 09:27:24 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-94.pddl
+Num states: 202
+2023-03-06 09:27:24 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-95.pddl
+Num states: 159
+2023-03-06 09:27:24 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-96.pddl
+Num states: 159
+2023-03-06 09:27:24 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-97.pddl
+Unsolvable.
+2023-03-06 09:27:25 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-98.pddl
+Unsolvable.
+2023-03-06 09:27:25 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-02-02-100-2-2-2-99.pddl
+Num states: 155
+2023-03-06 09:27:25 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-0.pddl
+Num states: 147
+2023-03-06 09:27:25 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-1.pddl
+Num states: 147
+2023-03-06 09:27:25 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-2.pddl
+Unsolvable.
+2023-03-06 09:27:26 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-3.pddl
+Unsolvable.
+2023-03-06 09:27:26 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-4.pddl
+Unsolvable.
+2023-03-06 09:27:26 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-5.pddl
+Num states: 143
+2023-03-06 09:27:26 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-6.pddl
+Unsolvable.
+2023-03-06 09:27:26 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-7.pddl
+Unsolvable.
+2023-03-06 09:27:27 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-8.pddl
+Num states: 18
+2023-03-06 09:27:27 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-9.pddl
+Num states: 202
+2023-03-06 09:27:27 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-10.pddl
+Unsolvable.
+2023-03-06 09:27:27 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-11.pddl
+Unsolvable.
+2023-03-06 09:27:28 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-12.pddl
+Num states: 143
+2023-03-06 09:27:28 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-13.pddl
+Num states: 147
+2023-03-06 09:27:28 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-14.pddl
+Num states: 147
+2023-03-06 09:27:28 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-15.pddl
+Num states: 202
+2023-03-06 09:27:28 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-16.pddl
+Unsolvable.
+2023-03-06 09:27:29 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-17.pddl
+Num states: 202
+2023-03-06 09:27:29 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-18.pddl
+Unsolvable.
+2023-03-06 09:27:29 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-19.pddl
+Num states: 202
+2023-03-06 09:27:29 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-20.pddl
+Num states: 202
+2023-03-06 09:27:30 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-21.pddl
+Unsolvable.
+2023-03-06 09:27:30 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-22.pddl
+Num states: 147
+2023-03-06 09:27:30 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-23.pddl
+Unsolvable.
+2023-03-06 09:27:30 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-24.pddl
+Unsolvable.
+2023-03-06 09:27:30 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-25.pddl
+Num states: 147
+2023-03-06 09:27:31 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-26.pddl
+Unsolvable.
+2023-03-06 09:27:31 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-27.pddl
+Num states: 147
+2023-03-06 09:27:31 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-28.pddl
+Unsolvable.
+2023-03-06 09:27:31 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-29.pddl
+Unsolvable.
+2023-03-06 09:27:31 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-30.pddl
+Num states: 202
+2023-03-06 09:27:32 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-31.pddl
+Unsolvable.
+2023-03-06 09:27:32 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-32.pddl
+Unsolvable.
+2023-03-06 09:27:32 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-33.pddl
+Num states: 147
+2023-03-06 09:27:32 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-34.pddl
+Num states: 18
+2023-03-06 09:27:33 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-35.pddl
+Unsolvable.
+2023-03-06 09:27:33 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-36.pddl
+Unsolvable.
+2023-03-06 09:27:33 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-37.pddl
+Num states: 18
+2023-03-06 09:27:33 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-38.pddl
+Unsolvable.
+2023-03-06 09:27:33 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-39.pddl
+Unsolvable.
+2023-03-06 09:27:34 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-40.pddl
+Unsolvable.
+2023-03-06 09:27:34 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-41.pddl
+Unsolvable.
+2023-03-06 09:27:34 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-42.pddl
+Unsolvable.
+2023-03-06 09:27:34 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-43.pddl
+Unsolvable.
+2023-03-06 09:27:35 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-44.pddl
+Num states: 147
+2023-03-06 09:27:35 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-45.pddl
+Unsolvable.
+2023-03-06 09:27:35 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-46.pddl
+Unsolvable.
+2023-03-06 09:27:35 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-47.pddl
+Num states: 202
+2023-03-06 09:27:35 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-48.pddl
+Unsolvable.
+2023-03-06 09:27:36 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-49.pddl
+Num states: 143
+2023-03-06 09:27:36 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-50.pddl
+Num states: 202
+2023-03-06 09:27:36 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-51.pddl
+Num states: 147
+2023-03-06 09:27:36 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-52.pddl
+Num states: 202
+2023-03-06 09:27:37 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-53.pddl
+Num states: 147
+2023-03-06 09:27:37 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-54.pddl
+Num states: 147
+2023-03-06 09:27:37 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-55.pddl
+Num states: 147
+2023-03-06 09:27:37 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-56.pddl
+Num states: 202
+2023-03-06 09:27:37 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-57.pddl
+Unsolvable.
+2023-03-06 09:27:38 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-58.pddl
+Unsolvable.
+2023-03-06 09:27:38 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-59.pddl
+Unsolvable.
+2023-03-06 09:27:38 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-60.pddl
+Num states: 202
+2023-03-06 09:27:38 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-61.pddl
+Num states: 18
+2023-03-06 09:27:39 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-62.pddl
+Unsolvable.
+2023-03-06 09:27:39 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-63.pddl
+Num states: 143
+2023-03-06 09:27:39 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-64.pddl
+Unsolvable.
+2023-03-06 09:27:39 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-65.pddl
+Num states: 143
+2023-03-06 09:27:39 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-66.pddl
+Unsolvable.
+2023-03-06 09:27:40 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-67.pddl
+Unsolvable.
+2023-03-06 09:27:40 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-68.pddl
+Unsolvable.
+2023-03-06 09:27:40 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-69.pddl
+Unsolvable.
+2023-03-06 09:27:40 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-70.pddl
+Unsolvable.
+2023-03-06 09:27:40 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-71.pddl
+Unsolvable.
+2023-03-06 09:27:41 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-72.pddl
+Num states: 18
+2023-03-06 09:27:41 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-73.pddl
+Num states: 143
+2023-03-06 09:27:41 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-74.pddl
+Num states: 202
+2023-03-06 09:27:41 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-75.pddl
+Unsolvable.
+2023-03-06 09:27:42 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-76.pddl
+Num states: 18
+2023-03-06 09:27:42 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-77.pddl
+Unsolvable.
+2023-03-06 09:27:42 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-78.pddl
+Num states: 143
+2023-03-06 09:27:42 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-79.pddl
+Num states: 147
+2023-03-06 09:27:42 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-80.pddl
+Unsolvable.
+2023-03-06 09:27:43 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-81.pddl
+Unsolvable.
+2023-03-06 09:27:43 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-82.pddl
+Unsolvable.
+2023-03-06 09:27:43 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-83.pddl
+Unsolvable.
+2023-03-06 09:27:43 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-84.pddl
+Num states: 147
+2023-03-06 09:27:43 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-85.pddl
+Unsolvable.
+2023-03-06 09:27:44 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-86.pddl
+Unsolvable.
+2023-03-06 09:27:44 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-87.pddl
+Unsolvable.
+2023-03-06 09:27:44 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-88.pddl
+Unsolvable.
+2023-03-06 09:27:44 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-89.pddl
+Unsolvable.
+2023-03-06 09:27:45 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-90.pddl
+Unsolvable.
+2023-03-06 09:27:45 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-91.pddl
+Unsolvable.
+2023-03-06 09:27:45 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-92.pddl
+Num states: 143
+2023-03-06 09:27:45 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-93.pddl
+Num states: 202
+2023-03-06 09:27:45 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-94.pddl
+Num states: 202
+2023-03-06 09:27:46 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-95.pddl
+Unsolvable.
+2023-03-06 09:27:46 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-96.pddl
+Unsolvable.
+2023-03-06 09:27:46 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-97.pddl
+Unsolvable.
+2023-03-06 09:27:46 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-98.pddl
+Unsolvable.
+2023-03-06 09:27:46 INFO     Constructing InstanceData for filename /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-99.pddl
+Unsolvable.
+2023-03-06 09:27:47 INFO     [40m[34m..done[0m
+2023-03-06 09:27:47 INFO     [40m[34mInitializing TupleGraphs...[0m
+2023-03-06 09:27:49 INFO     [40m[34m..done[0m
+/proj/ssiw/projects/code/sketch-learner/learning/d2l/workspace/grid_hierarchy_1_9_9_9_9_15/learning
+
+2023-03-06 09:27:49 INFO     [40m[31mIteration: 0[0m
+Number of selected instances: 1
+Selected instances:
+    id: 0 name: p-11-11-100-2-2-2-8
+initial states: [2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 15, 17]
+2023-03-06 09:27:49 INFO     [40m[34mInitializing DomainFeatureData...[0m
+[t=117.08s, 1445304 KB] Started generating base features of complexity 1.
+[t=117.08s, 1445304 KB] Complexity 1:
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 0
+    c_not: 0
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 0
+    r_transitive_closure: 0
+    b_empty: 0
+    n_count: 0
+    n_concept_distance: 0
+[t=117.08s, 1445304 KB] Finished generating base features.
+[t=117.08s, 1445304 KB] Started generating composite features. 
+[t=117.081s, 1445304 KB] Complexity 2:
+Total concept elements: 16
+Total role elements: 11
+Total numerical elements: 9
+Total boolean elements: 3
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 0
+    c_not: 7
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 4
+    r_transitive_closure: 1
+    b_empty: 1
+    n_count: 9
+    n_concept_distance: 0
+[t=117.083s, 1445436 KB] Complexity 3:
+Total concept elements: 34
+Total role elements: 20
+Total numerical elements: 15
+Total boolean elements: 3
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 0
+    c_not: 7
+    c_equal: 1
+    c_some: 9
+    c_all: 8
+    r_restrict: 8
+    r_and: 1
+    r_inverse: 4
+    r_transitive_closure: 1
+    b_empty: 1
+    n_count: 15
+    n_concept_distance: 0
+[t=117.086s, 1445436 KB] Complexity 4:
+Total concept elements: 56
+Total role elements: 29
+Total numerical elements: 29
+Total boolean elements: 6
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 2
+    c_not: 13
+    c_equal: 1
+    c_some: 16
+    c_all: 15
+    r_restrict: 8
+    r_and: 1
+    r_inverse: 13
+    r_transitive_closure: 1
+    b_empty: 4
+    n_count: 26
+    n_concept_distance: 3
+[t=117.092s, 1445568 KB] Complexity 5:
+Total concept elements: 122
+Total role elements: 31
+Total numerical elements: 40
+Total boolean elements: 9
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 31
+    c_not: 21
+    c_equal: 1
+    c_some: 29
+    c_all: 31
+    r_restrict: 8
+    r_and: 3
+    r_inverse: 13
+    r_transitive_closure: 1
+    b_empty: 7
+    n_count: 37
+    n_concept_distance: 3
+[t=117.105s, 1445832 KB] Complexity 6:
+Total concept elements: 290
+Total role elements: 33
+Total numerical elements: 90
+Total boolean elements: 20
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 102
+    c_not: 52
+    c_equal: 1
+    c_some: 55
+    c_all: 71
+    r_restrict: 8
+    r_and: 3
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 18
+    n_count: 76
+    n_concept_distance: 14
+[t=117.132s, 1446368 KB] Complexity 7:
+Total concept elements: 545
+Total role elements: 33
+Total numerical elements: 173
+Total boolean elements: 29
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 207
+    c_not: 132
+    c_equal: 1
+    c_some: 83
+    c_all: 113
+    r_restrict: 8
+    r_and: 3
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 27
+    n_count: 148
+    n_concept_distance: 25
+[t=117.198s, 1447516 KB] Complexity 8:
+Total concept elements: 1199
+Total role elements: 41
+Total numerical elements: 339
+Total boolean elements: 53
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 522
+    c_not: 245
+    c_equal: 1
+    c_some: 183
+    c_all: 239
+    r_restrict: 8
+    r_and: 11
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 51
+    n_count: 288
+    n_concept_distance: 51
+[t=117.332s, 1449608 KB] Complexity 9:
+Total concept elements: 2382
+Total role elements: 41
+Total numerical elements: 687
+Total boolean elements: 89
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 1144
+    c_not: 594
+    c_equal: 1
+    c_some: 278
+    c_all: 356
+    r_restrict: 8
+    r_and: 11
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 87
+    n_count: 580
+    n_concept_distance: 107
+[t=117.352s, 1449872 KB] Complexity 10:
+Total concept elements: 2382
+Total role elements: 41
+Total numerical elements: 758
+Total boolean elements: 89
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 1144
+    c_not: 594
+    c_equal: 1
+    c_some: 278
+    c_all: 356
+    r_restrict: 8
+    r_and: 11
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 87
+    n_count: 580
+    n_concept_distance: 178
+[t=117.403s, 1450456 KB] Complexity 11:
+Total concept elements: 2382
+Total role elements: 41
+Total numerical elements: 1001
+Total boolean elements: 89
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 1144
+    c_not: 594
+    c_equal: 1
+    c_some: 278
+    c_all: 356
+    r_restrict: 8
+    r_and: 11
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 87
+    n_count: 580
+    n_concept_distance: 421
+[t=117.492s, 1451400 KB] Complexity 12:
+Total concept elements: 2382
+Total role elements: 41
+Total numerical elements: 1280
+Total boolean elements: 89
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 1144
+    c_not: 594
+    c_equal: 1
+    c_some: 278
+    c_all: 356
+    r_restrict: 8
+    r_and: 11
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 87
+    n_count: 580
+    n_concept_distance: 700
+[t=117.625s, 1453024 KB] Complexity 13:
+Total concept elements: 2382
+Total role elements: 41
+Total numerical elements: 1608
+Total boolean elements: 89
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 1144
+    c_not: 594
+    c_equal: 1
+    c_some: 278
+    c_all: 356
+    r_restrict: 8
+    r_and: 11
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 87
+    n_count: 580
+    n_concept_distance: 1028
+[t=117.866s, 1455648 KB] Complexity 14:
+Total concept elements: 2382
+Total role elements: 41
+Total numerical elements: 2080
+Total boolean elements: 89
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 1144
+    c_not: 594
+    c_equal: 1
+    c_some: 278
+    c_all: 356
+    r_restrict: 8
+    r_and: 11
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 87
+    n_count: 580
+    n_concept_distance: 1500
+[t=118.083s, 1456988 KB] Complexity 15:
+Total concept elements: 2382
+Total role elements: 41
+Total numerical elements: 2403
+Total boolean elements: 89
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 1144
+    c_not: 594
+    c_equal: 1
+    c_some: 278
+    c_all: 356
+    r_restrict: 8
+    r_and: 11
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 87
+    n_count: 580
+    n_concept_distance: 1823
+[t=118.083s, 1456988 KB] Finished generating composite features.
+DomainFeatureDataStatistics:
+    num_dlplan_states: 18
+    num_boolean_features: 89
+    num_numerical_features: 2403
+2023-03-06 09:27:51 INFO     [40m[34m..done[0m
+2023-03-06 09:27:51 INFO     [40m[34mInitializing InstanceFeatureDatas...[0m
+2023-03-06 09:27:51 INFO     [40m[34m..done[0m
+2023-03-06 09:27:51 INFO     [40m[34mInitializing StatePairEquivalenceDatas...[0m
+2023-03-06 09:27:54 INFO     [40m[34m..done[0m
+2023-03-06 09:27:54 INFO     [40m[34mInitializing TupleGraphEquivalences...[0m
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 140
+    num_single_rule_subgoal_tuples: 140
+    num_multi_rule_subgoal_tuples: 0
+2023-03-06 09:27:54 INFO     [40m[34m..done[0m
+2023-03-06 09:27:54 INFO     [40m[34m..done[0m
+2023-03-06 09:27:54 INFO     [40m[33mIteration data preprocessing summary:[0m
+DomainFeatureDataStatistics:
+    num_dlplan_states: 18
+    num_boolean_features: 89
+    num_numerical_features: 2403
+StatePairEquivalenceStatistics:
+    num_subgoal_states: 128
+    num_equivalences: 128
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 140
+    num_single_rule_subgoal_tuples: 140
+    num_multi_rule_subgoal_tuples: 0
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 86
+    num_single_rule_subgoal_tuples: 86
+    num_multi_rule_subgoal_tuples: 0
+2023-03-06 09:28:00 INFO     [40m[34mGrounding Logic Program...[0m
+2023-03-06 09:28:25 INFO     [40m[34m..done[0m
+2023-03-06 09:28:26 INFO     [40m[34mSolving Logic Program...[0m
+Clingo statistics:
+{'call': 0.0, 'result': 1.0, 'signal': 9.0, 'exhausted': 0.0, 'costs': [9.0], 'lower': [9.0], 'concurrency': 32.0, 'winner': 32.0, 'times': {'total': 2858.907868862152, 'cpu': 89658.69901699999, 'solve': 2812.04901099205, 'unsat': 0.0, 'sat': 1999.4448080062866}, 'models': {'enumerated': 405.0, 'optimal': 1.0}}
+Solution cost: [9.0]
+Total time: 2858.907868862152
+CPU time: 89658.69901699999
+Solve time: 2812.04901099205
+2023-03-06 10:15:33 INFO     [40m[34m..done[0m
+2023-03-06 10:15:33 INFO     Learned the following sketch:
+(:policy
+(:boolean_features "b_nullary(arm-empty)")
+(:numerical_features "n_count(c_equal(r_primitive(at,0,1),r_primitive(at_g,0,1)))")
+(:rule (:conditions (:c_b_neg 0)) (:effects (:e_b_pos 0) (:e_n_inc 0)))
+(:rule (:conditions (:c_b_pos 0)) (:effects (:e_b_neg 0)))
+)
+Numer of sketch rules: 2
+Number of selected features: 2
+Maximum complexity of selected feature: 4
+2023-03-06 10:15:33 INFO     [40m[34mVerifying learned sketch...[0m
+[40m[31mSketch cycles[0m
+Instance: 84 p-11-11-100-2-2-2-5
+0 (instance index=84, state index=0, atoms={locked(f0-0f), at-robot(f0-1f), locked(f1-1f), arm-empty(), at(key0-0,f0-0f), at(key1-0,f0-1f)})
+1 (instance index=84, state index=1, atoms={locked(f0-0f), at-robot(f0-1f), locked(f1-1f), at(key0-0,f0-0f), holding(key1-0)})
+3 (instance index=84, state index=3, atoms={open(f0-0f), at-robot(f0-0f), locked(f1-1f), at(key0-0,f0-0f), holding(key1-0)})
+12 (instance index=84, state index=12, atoms={open(f0-0f), at-robot(f0-1f), locked(f1-1f), arm-empty(), at(key0-0,f0-0f), at(key1-0,f0-0f)})
+12 (instance index=84, state index=12, atoms={open(f0-0f), at-robot(f0-1f), locked(f1-1f), arm-empty(), at(key0-0,f0-0f), at(key1-0,f0-0f)})
+2023-03-06 10:15:34 INFO     [40m[34m..done[0m
+Smallest unsolved instance: 84
+Selected instances: [84]
+
+2023-03-06 10:15:34 INFO     [40m[31mIteration: 1[0m
+Number of selected instances: 1
+Selected instances:
+    id: 84 name: p-11-11-100-2-2-2-5
+initial states: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 24, 25, 26, 27, 28, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142]
+2023-03-06 10:15:34 INFO     [40m[34mInitializing DomainFeatureData...[0m
+[t=2981.13s, 31128960 KB] Started generating base features of complexity 1.
+[t=2981.13s, 31128960 KB] Complexity 1:
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 0
+    c_not: 0
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 0
+    r_transitive_closure: 0
+    b_empty: 0
+    n_count: 0
+    n_concept_distance: 0
+[t=2981.13s, 31128960 KB] Finished generating base features.
+[t=2981.13s, 31128960 KB] Started generating composite features. 
+[t=2981.13s, 31128960 KB] Complexity 2:
+Total concept elements: 16
+Total role elements: 11
+Total numerical elements: 9
+Total boolean elements: 4
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 0
+    c_not: 7
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 4
+    r_transitive_closure: 1
+    b_empty: 2
+    n_count: 9
+    n_concept_distance: 0
+[t=2981.14s, 31128960 KB] Complexity 3:
+Total concept elements: 38
+Total role elements: 21
+Total numerical elements: 15
+Total boolean elements: 4
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 0
+    c_not: 7
+    c_equal: 1
+    c_some: 11
+    c_all: 10
+    r_restrict: 9
+    r_and: 1
+    r_inverse: 4
+    r_transitive_closure: 1
+    b_empty: 2
+    n_count: 15
+    n_concept_distance: 0
+[t=2981.16s, 31128960 KB] Complexity 4:
+Total concept elements: 62
+Total role elements: 31
+Total numerical elements: 37
+Total boolean elements: 9
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 2
+    c_not: 13
+    c_equal: 1
+    c_some: 19
+    c_all: 18
+    r_restrict: 9
+    r_and: 1
+    r_inverse: 14
+    r_transitive_closure: 1
+    b_empty: 7
+    n_count: 34
+    n_concept_distance: 3
+[t=2981.19s, 31128960 KB] Complexity 5:
+Total concept elements: 144
+Total role elements: 32
+Total numerical elements: 52
+Total boolean elements: 13
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 35
+    c_not: 21
+    c_equal: 1
+    c_some: 37
+    c_all: 41
+    r_restrict: 9
+    r_and: 2
+    r_inverse: 14
+    r_transitive_closure: 1
+    b_empty: 11
+    n_count: 49
+    n_concept_distance: 3
+[t=2981.25s, 31128960 KB] Complexity 6:
+Total concept elements: 361
+Total role elements: 33
+Total numerical elements: 114
+Total boolean elements: 28
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 124
+    c_not: 54
+    c_equal: 1
+    c_some: 76
+    c_all: 97
+    r_restrict: 9
+    r_and: 2
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 26
+    n_count: 102
+    n_concept_distance: 12
+[t=2981.39s, 31128960 KB] Complexity 7:
+Total concept elements: 703
+Total role elements: 33
+Total numerical elements: 260
+Total boolean elements: 45
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 265
+    c_not: 153
+    c_equal: 1
+    c_some: 118
+    c_all: 157
+    r_restrict: 9
+    r_and: 2
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 43
+    n_count: 231
+    n_concept_distance: 29
+[t=2981.73s, 31128960 KB] Complexity 8:
+Total concept elements: 1635
+Total role elements: 38
+Total numerical elements: 501
+Total boolean elements: 93
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 692
+    c_not: 295
+    c_equal: 1
+    c_some: 278
+    c_all: 360
+    r_restrict: 9
+    r_and: 7
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 91
+    n_count: 446
+    n_concept_distance: 55
+[t=2982.41s, 31128960 KB] Complexity 9:
+Total concept elements: 3429
+Total role elements: 38
+Total numerical elements: 1133
+Total boolean elements: 194
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 1596
+    c_not: 799
+    c_equal: 1
+    c_some: 447
+    c_all: 577
+    r_restrict: 9
+    r_and: 7
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 192
+    n_count: 1008
+    n_concept_distance: 125
+[t=2982.48s, 31128960 KB] Complexity 10:
+Total concept elements: 3429
+Total role elements: 38
+Total numerical elements: 1233
+Total boolean elements: 194
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 1596
+    c_not: 799
+    c_equal: 1
+    c_some: 447
+    c_all: 577
+    r_restrict: 9
+    r_and: 7
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 192
+    n_count: 1008
+    n_concept_distance: 225
+[t=2982.63s, 31128960 KB] Complexity 11:
+Total concept elements: 3429
+Total role elements: 38
+Total numerical elements: 1606
+Total boolean elements: 194
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 1596
+    c_not: 799
+    c_equal: 1
+    c_some: 447
+    c_all: 577
+    r_restrict: 9
+    r_and: 7
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 192
+    n_count: 1008
+    n_concept_distance: 598
+[t=2982.94s, 31128960 KB] Complexity 12:
+Total concept elements: 3429
+Total role elements: 38
+Total numerical elements: 2200
+Total boolean elements: 194
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 1596
+    c_not: 799
+    c_equal: 1
+    c_some: 447
+    c_all: 577
+    r_restrict: 9
+    r_and: 7
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 192
+    n_count: 1008
+    n_concept_distance: 1192
+[t=2983.22s, 31128960 KB] Complexity 13:
+Total concept elements: 3429
+Total role elements: 38
+Total numerical elements: 2663
+Total boolean elements: 194
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 1596
+    c_not: 799
+    c_equal: 1
+    c_some: 447
+    c_all: 577
+    r_restrict: 9
+    r_and: 7
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 192
+    n_count: 1008
+    n_concept_distance: 1655
+[t=2983.74s, 31128960 KB] Complexity 14:
+Total concept elements: 3429
+Total role elements: 38
+Total numerical elements: 3440
+Total boolean elements: 194
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 1596
+    c_not: 799
+    c_equal: 1
+    c_some: 447
+    c_all: 577
+    r_restrict: 9
+    r_and: 7
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 192
+    n_count: 1008
+    n_concept_distance: 2432
+[t=2984.34s, 31128960 KB] Complexity 15:
+Total concept elements: 3429
+Total role elements: 38
+Total numerical elements: 5031
+Total boolean elements: 194
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 7
+    r_primitive: 6
+    c_and: 1596
+    c_not: 799
+    c_equal: 1
+    c_some: 447
+    c_all: 577
+    r_restrict: 9
+    r_and: 7
+    r_inverse: 15
+    r_transitive_closure: 1
+    b_empty: 192
+    n_count: 1008
+    n_concept_distance: 4023
+[t=2984.34s, 31128960 KB] Finished generating composite features.
+DomainFeatureDataStatistics:
+    num_dlplan_states: 143
+    num_boolean_features: 194
+    num_numerical_features: 5031
+2023-03-06 10:15:38 INFO     [40m[34m..done[0m
+2023-03-06 10:15:38 INFO     [40m[34mInitializing InstanceFeatureDatas...[0m
+2023-03-06 10:15:39 INFO     [40m[34m..done[0m
+2023-03-06 10:15:39 INFO     [40m[34mInitializing StatePairEquivalenceDatas...[0m
+2023-03-06 10:17:41 INFO     [40m[34m..done[0m
+2023-03-06 10:17:41 INFO     [40m[34mInitializing TupleGraphEquivalences...[0m
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 1763
+    num_single_rule_subgoal_tuples: 1708
+    num_multi_rule_subgoal_tuples: 55
+2023-03-06 10:17:41 INFO     [40m[34m..done[0m
+2023-03-06 10:17:41 INFO     [40m[34m..done[0m
+2023-03-06 10:17:41 INFO     [40m[33mIteration data preprocessing summary:[0m
+DomainFeatureDataStatistics:
+    num_dlplan_states: 143
+    num_boolean_features: 194
+    num_numerical_features: 5031
+StatePairEquivalenceStatistics:
+    num_subgoal_states: 2288
+    num_equivalences: 2288
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 1763
+    num_single_rule_subgoal_tuples: 1708
+    num_multi_rule_subgoal_tuples: 55
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 1010
+    num_single_rule_subgoal_tuples: 1007
+    num_multi_rule_subgoal_tuples: 3
+2023-03-06 10:22:17 INFO     [40m[34mGrounding Logic Program...[0m

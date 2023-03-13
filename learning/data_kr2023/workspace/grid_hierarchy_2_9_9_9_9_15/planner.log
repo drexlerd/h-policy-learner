@@ -1,0 +1,227 @@
+INFO     planner time limit: None
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /software/sse/easybuild/prefix/software/Anaconda3/2020.07-extras-nsc1/bin/python3 /proj/ssiw/projects/code/sketch-learner/learning/d2l/libs/dlplan/libs/scorpion/builds/release/bin/translate/translate.py /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/domain.pddl /proj/ssiw/projects/code/sketch-learner/learning/d2l/benchmarks/grid/p-11-11-100-2-2-2-99.pddl --dump-predicates --dump-constants --dump-static-atoms --dump-goal-atoms --sas-file output.sas
+Parsing...
+Problem grid: grid-x2-y2-t2-k11-l11-p100 [:strips]
+Types:
+  object
+Constants:
+Objects:
+  f0-0f: object
+  f1-0f: object
+  f0-1f: object
+  f1-1f: object
+  shape0: object
+  shape1: object
+  key0-0: object
+  key1-0: object
+Predicates:
+  conn(?x: object, ?y: object)
+  key-shape(?k: object, ?s: object)
+  lock-shape(?x: object, ?s: object)
+  at(?r: object, ?x: object)
+  at-robot(?x: object)
+  place(?p: object)
+  key(?k: object)
+  shape(?s: object)
+  locked(?x: object)
+  holding(?k: object)
+  open(?x: object)
+  arm-empty()
+  =(?x: object, ?y: object)
+Functions:
+Init:
+  Atom conn(f1-1f, f1-0f)
+  Atom place(f0-0f)
+  Atom conn(f0-0f, f0-1f)
+  Atom locked(f1-1f)
+  Atom conn(f0-1f, f1-1f)
+  Atom key-shape(key0-0, shape0)
+  Atom at(key1-0, f1-1f)
+  Atom at(key0-0, f1-0f)
+  Atom open(f1-0f)
+  Atom key(key1-0)
+  Atom shape(shape1)
+  Atom lock-shape(f0-0f, shape0)
+  Atom arm-empty()
+  Atom locked(f0-0f)
+  Atom conn(f1-0f, f1-1f)
+  Atom place(f1-0f)
+  Atom open(f0-1f)
+  Atom conn(f0-1f, f0-0f)
+  Atom place(f1-1f)
+  Atom shape(shape0)
+  Atom conn(f1-1f, f0-1f)
+  Atom key(key0-0)
+  Atom conn(f0-0f, f1-0f)
+  Atom at-robot(f1-0f)
+  Atom lock-shape(f1-1f, shape1)
+  Atom key-shape(key1-0, shape1)
+  Atom place(f0-1f)
+  Atom conn(f1-0f, f0-0f)
+  Atom =(f0-0f, f0-0f)
+  Atom =(f1-0f, f1-0f)
+  Atom =(f0-1f, f0-1f)
+  Atom =(f1-1f, f1-1f)
+  Atom =(shape0, shape0)
+  Atom =(shape1, shape1)
+  Atom =(key0-0, key0-0)
+  Atom =(key1-0, key1-0)
+Goal:
+  Conjunction
+    Atom at(key0-0, f1-1f)
+    Atom at(key1-0, f0-1f)
+Actions:
+unlock(?curpos: object, ?lockpos: object, ?key: object, ?shape: object)
+Precondition:
+  Conjunction
+    Atom place(?curpos)
+    Atom place(?lockpos)
+    Atom key(?key)
+    Atom shape(?shape)
+    Atom conn(?curpos, ?lockpos)
+    Atom key-shape(?key, ?shape)
+    Atom lock-shape(?lockpos, ?shape)
+    Atom at-robot(?curpos)
+    Atom locked(?lockpos)
+    Atom holding(?key)
+Effects:
+  Atom open(?lockpos)
+  NegatedAtom locked(?lockpos)
+Cost:
+  None
+move(?curpos: object, ?nextpos: object)
+Precondition:
+  Conjunction
+    Atom place(?curpos)
+    Atom place(?nextpos)
+    Atom at-robot(?curpos)
+    Atom conn(?curpos, ?nextpos)
+    Atom open(?nextpos)
+Effects:
+  Atom at-robot(?nextpos)
+  NegatedAtom at-robot(?curpos)
+Cost:
+  None
+pickup(?curpos: object, ?key: object)
+Precondition:
+  Conjunction
+    Atom place(?curpos)
+    Atom key(?key)
+    Atom at-robot(?curpos)
+    Atom at(?key, ?curpos)
+    Atom arm-empty()
+Effects:
+  Atom holding(?key)
+  NegatedAtom at(?key, ?curpos)
+  NegatedAtom arm-empty()
+Cost:
+  None
+pickup-and-loose(?curpos: object, ?newkey: object, ?oldkey: object)
+Precondition:
+  Conjunction
+    Atom place(?curpos)
+    Atom key(?newkey)
+    Atom key(?oldkey)
+    Atom at-robot(?curpos)
+    Atom holding(?oldkey)
+    Atom at(?newkey, ?curpos)
+Effects:
+  Atom holding(?newkey)
+  Atom at(?oldkey, ?curpos)
+  NegatedAtom holding(?oldkey)
+  NegatedAtom at(?newkey, ?curpos)
+Cost:
+  None
+putdown(?curpos: object, ?key: object)
+Precondition:
+  Conjunction
+    Atom place(?curpos)
+    Atom key(?key)
+    Atom at-robot(?curpos)
+    Atom holding(?key)
+Effects:
+  Atom arm-empty()
+  Atom at(?key, ?curpos)
+  NegatedAtom holding(?key)
+Cost:
+  None
+Parsing: [0.000s CPU, 0.004s wall-clock]
+<pddl.conditions.Conjunction object at 0x2ab2c1246400>
+Atom at(key0-0, f1-1f)
+Atom at(key1-0, f0-1f)
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.002s wall-clock]
+Preparing model... [0.000s CPU, 0.001s wall-clock]
+Generated 46 rules.
+Computing model... [0.000s CPU, 0.001s wall-clock]
+65 relevant atoms
+93 auxiliary atoms
+158 final queue length
+173 total queue pushes
+Completing instantiation... [0.000s CPU, 0.000s wall-clock]
+Instantiating: [0.010s CPU, 0.004s wall-clock]
+No relaxed solution! Generating unsolvable task...
+Translator variables: 1
+Translator derived variables: 0
+Translator facts: 2
+Translator goal facts: 1
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 0
+Translator axioms: 0
+Translator task size: 4
+Translator peak memory: 149300 KB
+Writing output... [0.000s CPU, 0.000s wall-clock]
+Done! [0.010s CPU, 0.009s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /proj/ssiw/projects/code/sketch-learner/learning/d2l/libs/dlplan/libs/scorpion/builds/release/bin/downward --search 'dump_reachable_search_space()' --internal-plan-file sas_plan < output.sas
+[t=5.877e-05s, 18620 KB] reading input...
+[t=0.00024794s, 18628 KB] done reading input!
+[t=0.00219333s, 19024 KB] Building successor generator...done!
+[t=0.00230648s, 19024 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00233605s, 19024 KB] time for successor generation creation: 1.3107e-05s
+[t=0.00237172s, 19024 KB] Variables: 1
+[t=0.00240203s, 19024 KB] FactPairs: 2
+[t=0.00243043s, 19024 KB] Bytes per state: 4
+[t=0.00260738s, 19024 KB] Dumping the reachable state space...
+# F (fact): [fact ID] [name]
+# G (goal state): [goal state ID] [fact ID 1] [fact ID 2] ...
+# N (non-goal state): [non-goal state ID] [fact ID 1] [fact ID 2] ...
+# T (transition): [source state ID] [target state ID]
+# The initial state has ID 0.
+F 0 dummy(val1)
+F 1 dummy(val2)
+N 0 0
+[t=0.00275917s, 19024 KB] Finished dumping the reachable state space.
+[t=0.00281701s, 19024 KB] Actual search time: 9.4129e-05s
+[t=0.00285208s, 19024 KB] Expanded 1 state(s).
+[t=0.00285208s, 19024 KB] Reopened 0 state(s).
+[t=0.00285208s, 19024 KB] Evaluated 0 state(s).
+[t=0.00285208s, 19024 KB] Evaluations: 0
+[t=0.00285208s, 19024 KB] Generated 1 state(s).
+[t=0.00285208s, 19024 KB] Dead ends: 0 state(s).
+[t=0.00285208s, 19024 KB] Number of registered states: 1
+[t=0.00285208s, 19024 KB] Closed list load factor: 1/1 = 1
+[t=0.00285208s, 19024 KB] Search time: 0.000245425s
+[t=0.00285208s, 19024 KB] Total time: 0.00285208s
+Search stopped without finding a solution.
+Peak memory: 19024 KB
+Remove intermediate file output.sas
+search exit code: 12
+
+Driver aborting after search
+INFO     Planner time: 0.14s

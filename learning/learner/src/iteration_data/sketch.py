@@ -139,8 +139,8 @@ class Sketch:
                         print(colored("Sketch cycles", "red", "on_grey"))
                         print("Instance:", instance_data.id, instance_data.instance_information.name)
                         for s_idx in s_idxs_on_path:
-                            print(f"{s_idx} {str(instance_data.get_states()[s_idx])}")
-                        print(f"{target_idx} {str(instance_data.get_states()[target_idx])}")
+                            print(f"{s_idx} {str(instance_data.state_space.get_states()[s_idx])}")
+                        print(f"{target_idx} {str(instance_data.state_space.get_states()[target_idx])}")
                         return False
                     if target_idx not in frontier:
                         frontier.add(target_idx)

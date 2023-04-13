@@ -42,7 +42,8 @@ e_satisfied(R, F, C) :- e_unk(R, F), feature(F), rule(R), state_pair_class(C).
 r_reachable(I, S) :- initial(I, S).
 
 %%%%%%%%%% C2.4 %%%%%%%%%%
-r_reachable(I, S') :- D = D', r_reachable(I, S), sat_pair(I, S, S', R), subgoal_distance(I, S, D, R), s_distance(I, S, S', D).
+% r_reachable(I, S') :- D = D', r_reachable(I, S), sat_pair(I, S, S', R), subgoal_distance(I, S, D, R), s_distance(I, S, S', D).
+r_reachable(I, S') :- r_reachable(I, S), sat_pair(I, S, S', R).
 
 %%%%%%%%%% C3.1 %%%%%%%%%%
 { subgoal(I, S, T, R) : t_distance(I, S, T, D) } != 0 :- subgoal_distance(I, S, D, R), r_reachable(I, S).

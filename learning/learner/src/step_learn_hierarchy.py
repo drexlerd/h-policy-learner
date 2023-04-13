@@ -52,52 +52,51 @@ def compute_delta_optimal_states(instance_data: InstanceData, delta: float, s_id
     return state_indices, fringe_state_indices
 
 
-def make_subproblems(config, instance_datas: List[InstanceData], sketch: dlplan.Policy, rule: dlplan.Rule, width: int):
-    features = sketch.booleans + sketch.numericals
+def make_subproblems(config, instance_datas: List[InstanceData], sketch: Sketch, rule: dlplan.Rule, width: int):
+    features = list(sketch.booleans) + list(sketch.numericals)
     subproblem_instance_datas = []
     for instance_data in instance_datas:
         state_space = instance_data.state_space
-        goal_distance_information = instance_data.goal_distance_information
-        state_information = instance_data.state_information
+        goal_distances = instance_data.goal_distances
         # 1. Compute feature valuations F over Phi for each state
         # We consider feature valuations of all states: solvable and unsolvable, goals and nongoals
         # to be able to instantiate subproblems with all of them.
         feature_valuation_to_s_idxs = defaultdict(set)
-        for s_idx in state_space.get_state_indices():
-            feature_valuation = tuple([feature.evaluate(state_information.get_state(s_idx)) for feature in features])
+        for s_idx, state in state_space.get_states().items():
+            feature_valuation = tuple([feature.evaluate(state) for feature in features])
             feature_valuation_to_s_idxs[feature_valuation].add(s_idx)
         # 2. For each f in F with f satisfies C ...
-        global_deadends = goal_distance_information.get_deadend_state_indices()
+        global_deadends = set([instance_data.is_deadend(s_idx) for s_idx in instance_data.state_space.get_states().keys()])
         covered_initial_s_idxs = set()
         novelty_base = dlplan.NoveltyBase(len(state_space.get_instance_info().get_atoms()), max(1, width))
         for _, initial_s_idxs in feature_valuation_to_s_idxs.items():
             # 2.1. Compute set of initial states, i.e., all s such that f(s) = f,
-            if not rule.evaluate_conditions(state_information.get_state(next(iter(initial_s_idxs))), instance_data.denotations_caches):
+            if not rule.evaluate_conditions(state_space.get_states()[next(iter(initial_s_idxs))], instance_data.denotations_caches):
                 continue
             # 2.2. Compute set of goal states, i.e., all s' such that (f(s), f(s')) satisfies E.
             goal_s_idxs = set()
             for _, target_s_idxs in feature_valuation_to_s_idxs.items():
-                if not rule.evaluate_effects(state_information.get_state(next(iter(initial_s_idxs))), state_information.get_state(next(iter(target_s_idxs))), instance_data.denotations_caches):
+                if not rule.evaluate_effects(state_space.get_states()[next(iter(initial_s_idxs))], state_space.get_states()[next(iter(target_s_idxs))], instance_data.denotations_caches):
                     continue
                 goal_s_idxs.update(target_s_idxs)
             if not goal_s_idxs:
                 continue
             # 3. Compute goal distances of all initial states.
             # Do backward search from goal states until all initial states are reached.
-            old_goal_distance_information = instance_data.goal_distance_information
+            old_goal_distances = instance_data.goal_distances
             old_goal_state_indices = instance_data.state_space.get_goal_state_indices()
             instance_data.state_space.set_goal_state_indices(goal_s_idxs)
-            instance_data.goal_distance_information = instance_data.state_space.compute_goal_distance_information()
+            instance_data.goal_distances = instance_data.state_space.compute_goal_distances()
             # sort initial states by distance
-            sorted_initial_s_idxs = sorted(initial_s_idxs, key=lambda x : -instance_data.goal_distance_information.get_goal_distances().get(x, math.inf))
+            sorted_initial_s_idxs = sorted(initial_s_idxs, key=lambda x : -instance_data.goal_distances.get(x, math.inf))
             for initial_s_idx in sorted_initial_s_idxs:
                 if initial_s_idx in covered_initial_s_idxs:
                     continue
-                if not instance_data.goal_distance_information.is_alive(initial_s_idx):
+                if not instance_data.is_alive(initial_s_idx):
                     continue
                 name = f"{instance_data.instance_information.name}-{initial_s_idx}"
-                state_indices, fringe_state_indices = compute_delta_optimal_states(instance_data, config.delta, initial_s_idx, instance_data.goal_distance_information.get_goal_distances())
-                state_indices_opt, fringe_state_indices_opt = compute_delta_optimal_states(instance_data, 1, initial_s_idx, instance_data.goal_distance_information.get_goal_distances())
+                state_indices, fringe_state_indices = compute_delta_optimal_states(instance_data, config.delta, initial_s_idx, instance_data.goal_distances)
+                state_indices_opt, fringe_state_indices_opt = compute_delta_optimal_states(instance_data, 1, initial_s_idx, instance_data.goal_distances)
 
                 subproblem_initial_s_idxs = set()
                 for initial_s_prime_idx in initial_s_idxs:
@@ -106,7 +105,7 @@ def make_subproblems(config, instance_datas: List[InstanceData], sketch: dlplan.
                             # goal state in subproblem can still be initial state in other subproblem, e.g.,
                             # having delivered one package
                             continue
-                        if not instance_data.goal_distance_information.is_alive(initial_s_prime_idx):
+                        if not instance_data.is_alive(initial_s_prime_idx):
                             continue
                         subproblem_initial_s_idxs.add(initial_s_prime_idx)
                 # subproblem_initial_s_idxs = {initial_s_idx}
@@ -119,14 +118,11 @@ def make_subproblems(config, instance_datas: List[InstanceData], sketch: dlplan.
                     state_indices.union(fringe_state_indices))
                 subproblem_state_space.set_initial_state_index(initial_s_idx)
                 subproblem_state_space.set_goal_state_indices(goal_s_idxs.intersection(state_indices).difference(global_deadends))
-                subproblem_goal_distance_information = subproblem_state_space.compute_goal_distance_information()
-                if not subproblem_goal_distance_information.is_solvable():
-                    continue
+                subproblem_goal_distances = subproblem_state_space.compute_goal_distances()
                 subproblem_instance_information = InstanceInformation(
                     name,
                     instance_data.instance_information.filename,
                     instance_data.instance_information.workspace / f"rule_{rule.get_index()}" / name)
-                subproblem_state_information = subproblem_state_space.compute_state_information()
                 subproblem_instance_data = InstanceData(
                     len(subproblem_instance_datas),
                     instance_data.domain_data,
@@ -134,24 +130,25 @@ def make_subproblems(config, instance_datas: List[InstanceData], sketch: dlplan.
                     novelty_base,
                     subproblem_instance_information)
                 subproblem_instance_data.set_state_space(subproblem_state_space)
-                subproblem_instance_data.set_goal_distance_information(subproblem_goal_distance_information)
-                subproblem_instance_data.set_state_information(subproblem_state_information)
+                subproblem_instance_data.set_goal_distances(subproblem_goal_distances)
                 subproblem_instance_data.initial_s_idxs = subproblem_initial_s_idxs.difference(global_deadends)
-                assert all([subproblem_goal_distance_information.is_alive(initial_s_idx) for initial_s_idx in subproblem_instance_data.initial_s_idxs])
+                if not subproblem_instance_data.is_alive(initial_s_idx):
+                    continue
+                assert all([subproblem_instance_data.is_alive(initial_s_idx) for initial_s_idx in subproblem_instance_data.initial_s_idxs])
                 # 2.2.1. Recompute tuple graph for restricted state space
                 # We might want to use the original tuple graphs without any pruning to capture potentially more deadend states.
                 subproblem_instance_data.set_tuple_graphs(TupleGraphFactory(width).make_tuple_graphs(subproblem_instance_data))
                 subproblem_instance_datas.append(subproblem_instance_data)
             instance_data.state_space.set_goal_state_indices(old_goal_state_indices)
-            instance_data.goal_distance_information = old_goal_distance_information
-    subproblem_instance_datas = sorted(subproblem_instance_datas, key=lambda x : x.state_space.get_num_states())
+            instance_data.goal_distances = old_goal_distances
+    subproblem_instance_datas = sorted(subproblem_instance_datas, key=lambda x : len(x.state_space.get_states()))
     for instance_idx, instance_data in enumerate(subproblem_instance_datas):
         instance_data.id = instance_idx
         instance_data.state_space.get_instance_info().set_index(instance_idx)
     print("Number of problems:", len(instance_datas))
     print("Number of subproblems:", len(subproblem_instance_datas))
-    print("Highest number of states in problem:", max([instance_data.state_space.get_num_states() for instance_data in instance_datas]))
-    print("Highest number of states in subproblem:", max([instance_data.state_space.get_num_states() for instance_data in subproblem_instance_datas]))
+    print("Highest number of states in problem:", max([len(instance_data.state_space.get_states()) for instance_data in instance_datas]))
+    print("Highest number of states in subproblem:", max([len(instance_data.state_space.get_states()) for instance_data in subproblem_instance_datas]))
     return subproblem_instance_datas
 
 
@@ -201,7 +198,7 @@ def run(config, data, rng):
 
             logging.info(colored(f"Initializing Subproblems...", "blue", "on_grey"))
             preprocessing_clock.set_start()
-            subproblem_instance_datas = make_subproblems(config, instance_datas, sketch.dlplan_policy, rule, sketch.width - 1)
+            subproblem_instance_datas = make_subproblems(config, instance_datas, sketch, rule, sketch.width - 1)
             preprocessing_clock.set_accumulate()
             if not subproblem_instance_datas:
                 print(colored("Sketch rule does not induce any subproblems!", "red", "on_grey"))

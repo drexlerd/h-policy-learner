@@ -60,17 +60,17 @@ class ASPFactory:
             instance_idx = instance_data.id
             for s_idx in instance_data.initial_s_idxs:
                 facts.append(("initial", [Number(instance_idx), Number(s_idx)]))
-            for s_idx in instance_data.state_space.get_state_indices():
+            for s_idx in instance_data.state_space.get_states().keys():
                 facts.append(("state", [Number(instance_idx), Number(s_idx)]))
-                if not instance_data.goal_distance_information.is_deadend(s_idx):
+                if not instance_data.is_deadend(s_idx):
                     facts.append(("solvable", [Number(instance_idx), Number(s_idx)]))
                 else:
                     facts.append(("unsolvable", [Number(instance_idx), Number(s_idx)]))
-                if instance_data.goal_distance_information.is_goal(s_idx):
+                if instance_data.is_goal(s_idx):
                     facts.append(("goal", [Number(instance_idx), Number(s_idx)]))
                 else:
                     facts.append(("nongoal", [Number(instance_idx), Number(s_idx)]))
-                if instance_data.goal_distance_information.is_alive(s_idx):
+                if instance_data.is_alive(s_idx):
                     facts.append(("alive", [Number(instance_idx), Number(s_idx)]))
         return facts
 
@@ -91,7 +91,7 @@ class ASPFactory:
         facts = []
         # Instance feature valuation facts
         for instance_data in instance_datas:
-            for s_idx in instance_data.state_space.get_state_indices():
+            for s_idx in instance_data.state_space.get_states().keys():
                 feature_valuation = instance_data.feature_valuations[s_idx]
                 for f_idx, f_val in enumerate(feature_valuation.boolean_feature_valuations):
                     facts.append(("value", [Number(instance_data.id), Number(s_idx), Number(f_idx), Number(f_val)]))
@@ -152,7 +152,7 @@ class ASPFactory:
         #print("cover:")
         for instance_data in instance_datas:
             for s_idx, state_pair_equivalence in instance_data.state_pair_equivalences.items():
-                if instance_data.goal_distance_information.is_deadend(s_idx):
+                if instance_data.is_deadend(s_idx):
                     continue
                 for r_idx, d in state_pair_equivalence.r_idx_to_distance.items():
                     facts.append(("r_distance", [Number(instance_data.id), Number(s_idx), Number(r_idx), Number(d)]))
@@ -167,7 +167,7 @@ class ASPFactory:
         # Tuple graph equivalence facts (Perhaps deprecated since we now let rules imply subgoals)
         for instance_data in instance_datas:
             for s_idx, tuple_graph_equivalence in instance_data.tuple_graph_equivalences.items():
-                if instance_data.goal_distance_information.is_deadend(s_idx):
+                if instance_data.is_deadend(s_idx):
                     continue
                 for t_idx, r_idxs in tuple_graph_equivalence.t_idx_to_r_idxs.items():
                     facts.append(("tuple", [Number(instance_data.id), Number(s_idx), Number(t_idx)]))

@@ -7,8 +7,7 @@ from learner.src.iteration_data.feature_valuations import FeatureValuation
 class FeatureValuationsFactory:
     def make_feature_valuations(self, instance_data: InstanceData) -> List[FeatureValuation]:
         feature_valuations = dict()
-        for s_idx in instance_data.state_space.get_state_indices():
-            dlplan_state = instance_data.state_information.get_state(s_idx)
+        for s_idx, dlplan_state in instance_data.state_space.get_states().items():
             boolean_state_feature_valuations = []
             # print(instance_data.state_information.get_state(s_idx))
             for boolean_feature in instance_data.domain_data.domain_feature_data.boolean_features.features_by_index:

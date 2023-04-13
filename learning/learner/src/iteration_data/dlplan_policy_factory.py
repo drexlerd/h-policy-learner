@@ -24,7 +24,7 @@ class ExplicitDlplanPolicyFactory(DlplanPolicyFactory):
         policy_builder = dlplan.PolicyBuilder()
         f_idx_to_policy_feature = self._add_features(policy_builder, symbols, domain_data)
         self._add_rules(policy_builder, symbols, f_idx_to_policy_feature)
-        return policy_builder.get_result()
+        return policy_builder.get_booleans(), policy_builder.get_numericals(), policy_builder.get_result()
 
     def _add_features(self, policy_builder: dlplan.PolicyBuilder, symbols: List[Symbol], domain_data: DomainData):
         f_idx_to_policy_feature = dict()
@@ -42,7 +42,7 @@ class ExplicitDlplanPolicyFactory(DlplanPolicyFactory):
         for symbol in symbols:
             if symbol.name == "rule":
                 r_idx = symbol.arguments[0].number
-                rules[r_idx] = [[], []]  # conditions and effects
+                rules[r_idx] = [set(), set()]  # conditions and effects
         for symbol in symbols:
             try:
                 r_idx = symbol.arguments[0].number
@@ -51,25 +51,25 @@ class ExplicitDlplanPolicyFactory(DlplanPolicyFactory):
                 continue
             if f_idx not in f_idx_to_policy_feature: continue
             if symbol.name == "c_eq":
-                rules[r_idx][0].append(policy_builder.add_eq_condition(f_idx_to_policy_feature[f_idx]))
+                rules[r_idx][0].add(policy_builder.add_eq_condition(f_idx_to_policy_feature[f_idx]))
             elif symbol.name == "c_gt":
-                rules[r_idx][0].append(policy_builder.add_gt_condition(f_idx_to_policy_feature[f_idx]))
+                rules[r_idx][0].add(policy_builder.add_gt_condition(f_idx_to_policy_feature[f_idx]))
             elif symbol.name == "c_pos":
-                rules[r_idx][0].append(policy_builder.add_pos_condition(f_idx_to_policy_feature[f_idx]))
+                rules[r_idx][0].add(policy_builder.add_pos_condition(f_idx_to_policy_feature[f_idx]))
             elif symbol.name == "c_neg":
-                rules[r_idx][0].append(policy_builder.add_neg_condition(f_idx_to_policy_feature[f_idx]))
+                rules[r_idx][0].add(policy_builder.add_neg_condition(f_idx_to_policy_feature[f_idx]))
             elif symbol.name == "e_inc":
-                rules[r_idx][1].append(policy_builder.add_inc_effect(f_idx_to_policy_feature[f_idx]))
+                rules[r_idx][1].add(policy_builder.add_inc_effect(f_idx_to_policy_feature[f_idx]))
             elif symbol.name == "e_dec":
-                rules[r_idx][1].append(policy_builder.add_dec_effect(f_idx_to_policy_feature[f_idx]))
+                rules[r_idx][1].add(policy_builder.add_dec_effect(f_idx_to_policy_feature[f_idx]))
             elif symbol.name == "e_bot":
-                rules[r_idx][1].append(policy_builder.add_bot_effect(f_idx_to_policy_feature[f_idx]))
+                rules[r_idx][1].add(policy_builder.add_bot_effect(f_idx_to_policy_feature[f_idx]))
             elif symbol.name == "e_pos":
-                rules[r_idx][1].append(policy_builder.add_pos_effect(f_idx_to_policy_feature[f_idx]))
+                rules[r_idx][1].add(policy_builder.add_pos_effect(f_idx_to_policy_feature[f_idx]))
             elif symbol.name == "e_neg":
-                rules[r_idx][1].append(policy_builder.add_neg_effect(f_idx_to_policy_feature[f_idx]))
+                rules[r_idx][1].add(policy_builder.add_neg_effect(f_idx_to_policy_feature[f_idx]))
             elif symbol.name == "e_bot":
-                rules[r_idx][1].append(policy_builder.add_bot_effect(f_idx_to_policy_feature[f_idx]))
+                rules[r_idx][1].add(policy_builder.add_bot_effect(f_idx_to_policy_feature[f_idx]))
         for _, (conditions, effects) in rules.items():
             policy_builder.add_rule(conditions, effects)
 

@@ -34,15 +34,8 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
         feature_limit=1000000,
         num_threads_feature_generator=1,
 
-
         # Require goal separating features
         goal_separation=False,
-
-        # try optimal solution before finding suboptimal solutions
-        optimal=False,
-
-        reachability=ReachabilityType.R,
-        encoding=EncodingType.EXPLICIT,
 
         width=2,
 
@@ -52,8 +45,8 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
         # In the paper by Frances et. al, it is also used to encode acyclicity
         delta=1.0,
 
-        # allow to select subgoal tuples with underlying states that require multiple rules.
-        allow_multi_rule_subgoals=False,
+        reachability_type = ReachabilityType.r,
+        reachability_closest=False,
 
         debug_features=[],
         use_debug_features=True,

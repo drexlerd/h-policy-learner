@@ -35,7 +35,7 @@ class TupleGraphEquivalenceMinimizer:
 
     def minimize(self, instance_data: InstanceData):
         for root_idx, tuple_graph in instance_data.tuple_graphs.items():
-            if instance_data.goal_distance_information.is_deadend(root_idx):
+            if instance_data.is_deadend(root_idx):
                 continue
 
             tuple_graph = instance_data.tuple_graphs[root_idx]

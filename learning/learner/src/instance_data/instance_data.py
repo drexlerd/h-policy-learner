@@ -20,8 +20,7 @@ class InstanceData:
     # Initialized before iteration
     instance_information: InstanceInformation
     state_space: dlplan.StateSpace = None
-    goal_distance_information: dlplan.GoalDistanceInformation = None
-    state_information: dlplan.StateInformation = None
+    goal_distances: Dict[int, int] = None
     tuple_graphs: Dict[int, dlplan.TupleGraph] = None
     initial_s_idxs: List[int] = None  # in cases we need multiple initial states
     # Initialized in every iteration
@@ -35,11 +34,17 @@ class InstanceData:
         self.state_space = state_space
         # write_file(self.instance_information.workspace / f"{self.instance_information.name}.dot", state_space.to_dot(1))
 
-    def set_goal_distance_information(self, goal_distance_information: dlplan.GoalDistanceInformation):
-        self.goal_distance_information =  goal_distance_information
+    def set_goal_distances(self, goal_distances: Dict[int, int]):
+        self.goal_distances =  goal_distances
 
-    def set_state_information(self, state_information: dlplan.StateInformation):
-        self.state_information = state_information
+    def is_deadend(self, s_idx: int):
+        return self.goal_distances.get(s_idx, None) is None
+
+    def is_goal(self, s_idx: int):
+        return s_idx in self.state_space.get_goal_state_indices()
+
+    def is_alive(self, s_idx: int):
+        return not self.is_goal(s_idx) and not self.is_deadend(s_idx)
 
     def set_tuple_graphs(self, tuple_graphs: Dict[int, dlplan.TupleGraph]):
         """ Set tuple graphs and writes them to files. """

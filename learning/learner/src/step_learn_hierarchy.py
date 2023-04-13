@@ -53,7 +53,7 @@ def compute_delta_optimal_states(instance_data: InstanceData, delta: float, s_id
 
 
 def make_subproblems(config, instance_datas: List[InstanceData], sketch: dlplan.Policy, rule: dlplan.Rule, width: int):
-    features = sketch.get_boolean_features() + sketch.get_numerical_features()
+    features = sketch.booleans + sketch.numericals
     subproblem_instance_datas = []
     for instance_data in instance_datas:
         state_space = instance_data.state_space
@@ -156,10 +156,10 @@ def make_subproblems(config, instance_datas: List[InstanceData], sketch: dlplan.
 
 
 def add_zero_cost_features(domain_feature_data: DomainFeatureData, sketch: Sketch):
-    for boolean_feature in sketch.dlplan_policy.get_boolean_features():
-        domain_feature_data.boolean_features.add_feature(Feature(boolean_feature, 1))
-    for numerical_feature in sketch.dlplan_policy.get_numerical_features():
-        domain_feature_data.numerical_features.add_feature(Feature(numerical_feature, 1))
+    for boolean in sketch.booleans:
+        domain_feature_data.boolean_features.add_feature(Feature(boolean, 1))
+    for numerical in sketch.numericals:
+        domain_feature_data.numerical_features.add_feature(Feature(numerical, 1))
 
 
 def run(config, data, rng):
@@ -174,8 +174,6 @@ def run(config, data, rng):
     logging.info(colored(f"..done", "blue", "on_grey"))
     preprocessing_clock.set_accumulate()
 
-    # TODO: learn rule {} -> {G} where G is over goal separating features
-    # Step 1: compute goal separating features
     root_sketch, root_sketch_minimized, root_statistics = \
         learn_sketch(config, domain_data, instance_datas, config.workspace / "learning", config.width)
     zero_cost_domain_feature_data = DomainFeatureData()
@@ -198,7 +196,8 @@ def run(config, data, rng):
             print("Sketch rule:", rule.get_index(), rule.compute_repr())
             # creates empty child subdirectory
             child_hierarchical_sketch = parent_hierarchical_sketch.add_child(f"rule_{rule.get_index()}")
-            child_hierarchical_sketch.add_rule(Sketch(make_rule_policy(rule), parent_hierarchical_sketch.sketch.width))
+            booleans, numericals, dlplan_policy = make_rule_policy(rule)
+            child_hierarchical_sketch.add_rule(Sketch(booleans, numericals, dlplan_policy, parent_hierarchical_sketch.sketch.width))
 
             logging.info(colored(f"Initializing Subproblems...", "blue", "on_grey"))
             preprocessing_clock.set_start()
@@ -233,4 +232,4 @@ def run(config, data, rng):
 def make_rule_policy(rule: dlplan.Rule):
     builder = dlplan.PolicyBuilder()
     rule.copy_to_builder(builder)
-    return builder.get_result()
+    return builder.get_booleans(), builder.get_numericals(), builder.get_result()

@@ -37,9 +37,8 @@ class TupleGraphEquivalenceFactory:
         """
         for instance_data in instance_datas:
             tuple_graph_equivalences = dict()
-            goal_distances = instance_data.goal_distance_information.get_goal_distances()
             for s_idx, tuple_graph in instance_data.tuple_graphs.items():
-                if instance_data.goal_distance_information.is_deadend(s_idx):
+                if instance_data.is_deadend(s_idx):
                     continue
                 state_pair_equivalence = instance_data.state_pair_equivalences[s_idx]
                 # rule distances, deadend rule distances
@@ -47,7 +46,7 @@ class TupleGraphEquivalenceFactory:
                 for state_distance, s_prime_idxs in enumerate(tuple_graph.get_state_indices_by_distance()):
                     for s_prime_idx in s_prime_idxs:
                         r_idx = state_pair_equivalence.subgoal_state_to_r_idx[s_prime_idx]
-                        if instance_data.goal_distance_information.is_deadend(s_prime_idx):
+                        if instance_data.is_deadend(s_prime_idx):
                             r_idx_to_deadend_distance[r_idx] = min(r_idx_to_deadend_distance.get(r_idx, math.inf), state_distance)
                 t_idx_to_r_idxs = defaultdict(set)
                 t_idx_to_distance = dict()

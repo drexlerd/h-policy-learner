@@ -113,7 +113,8 @@ def learn_sketch(config, domain_data, instance_datas, workspace, width: int):
         asp_factory.print_statistics()
         logging.info(colored(f"..done", "blue", "on_grey"))
 
-        sketch = Sketch(ExplicitDlplanPolicyFactory().make_dlplan_policy_from_answer_set(symbols, domain_data), width)
+        booleans, numericals, dlplan_policy = ExplicitDlplanPolicyFactory().make_dlplan_policy_from_answer_set(symbols, domain_data)
+        sketch = Sketch(booleans, numericals, dlplan_policy, width)
         logging.info("Learned the following sketch:")
         sketch.print()
         assert compute_smallest_unsolved_instance(config, sketch, selected_instance_datas) is None
@@ -139,7 +140,7 @@ def learn_sketch(config, domain_data, instance_datas, workspace, width: int):
     learning_statistics = LearningStatistics(
         num_training_instances=len(selected_instance_datas),
         num_selected_training_instances=len(selected_instance_datas),
-        num_states_in_selected_training_instances=sum([instance_data.state_space.get_num_states() for instance_data in selected_instance_datas]),
+        num_states_in_selected_training_instances=sum([len(instance_data.state_space.get_states()) for instance_data in selected_instance_datas]),
         num_features_in_pool=len(domain_data.domain_feature_data.boolean_features.features_by_index) + len(domain_data.domain_feature_data.numerical_features.features_by_index),
         num_cpu_seconds=clock.accumulated,
         num_peak_memory_mb=clock.used_memory())
@@ -147,6 +148,6 @@ def learn_sketch(config, domain_data, instance_datas, workspace, width: int):
     print("Resulting sketch:")
     sketch.print()
     print("Resulting sketch minimized:")
-    sketch_minimized = Sketch(dlplan.PolicyMinimizer().minimize(sketch.dlplan_policy), sketch.width)
+    sketch_minimized = Sketch(sketch.booleans, sketch.numericals, dlplan.PolicyMinimizer().minimize(sketch.dlplan_policy), sketch.width)
     sketch_minimized.print()
     return sketch, sketch_minimized, learning_statistics

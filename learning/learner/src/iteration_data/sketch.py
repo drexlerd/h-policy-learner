@@ -59,24 +59,33 @@ class Sketch:
 
     def _compute_subgoal_states_of_state(self, instance_data: InstanceData, root_idx: int):
         subgoal_states = set()
+        forward_successors = instance_data.state_space.get_forward_successor_state_indices()
         for rule in self.dlplan_policy.get_rules():
             queue = deque()
             queue.append(root_idx)
             root_state = instance_data.state_space.get_states()[root_idx]
             if not rule.evaluate_conditions(root_state, instance_data.denotations_caches):
                 continue
-            visited = set()
-            visited.add(root_idx)
-            while queue:
-                s_idx = queue.popleft()  # BrFS
-                target_state = instance_data.state_space.get_states()[s_idx]
-                if rule.evaluate_effects(root_state, target_state, instance_data.denotations_caches):
-                    subgoal_states.add(s_idx)
-                    continue  # prune states that are only reachable through subgoals
-                for s_prime_idx in instance_data.state_space.get_forward_successor_state_indices().get(s_idx, []):
-                    if s_prime_idx not in visited:
-                        visited.add(s_prime_idx)
-                        queue.append(s_prime_idx)
+            # with tg
+            for tuple_distance, tuple_nodes in enumerate(instance_data.tuple_graphs[root_idx].get_tuple_nodes_by_distance()):
+                for tuple_node in tuple_nodes:
+                    for s_prime_idx in tuple_node.get_state_indices():
+                        target_state = instance_data.state_space.get_states()[s_prime_idx]
+                        if rule.evaluate_effects(root_state, target_state, instance_data.denotations_caches):
+                            subgoal_states.add(s_prime_idx)
+            # without tg
+            #visited = set()
+            #visited.add(root_idx)
+            #while queue:
+            #    s_idx = queue.popleft()  # BrFS
+            #    target_state = instance_data.state_space.get_states()[s_idx]
+            #    if rule.evaluate_effects(root_state, target_state, instance_data.denotations_caches):
+            #        subgoal_states.add(s_idx)
+            #        continue  # prune states that are only reachable through subgoals
+            #    for s_prime_idx in forward_successors.get(s_idx, []):
+            #        if s_prime_idx not in visited:
+            #            visited.add(s_prime_idx)
+            #            queue.append(s_prime_idx)
         return subgoal_states
 
 
@@ -96,7 +105,7 @@ class Sketch:
             if instance_data.is_deadend(root_idx):
                 print("Deadend state is r_reachable")
                 print("State:", instance_data.state_space.get_states()[root_idx])
-                False, None
+                return False, None
             if instance_data.is_goal(root_idx):
                 continue
             # Step 1 verify bounded width
@@ -111,7 +120,6 @@ class Sketch:
                 if subgoal_state not in visited:
                     queue.append(subgoal_state)
                     visited.add(subgoal_state)
-            print(len(queue))
         return True, subgoal_states_per_r_reachable_state
 
 
@@ -189,7 +197,7 @@ class Sketch:
         return True
 
     def print(self):
-        print(self.dlplan_policy.compute_repr())
+        print(self.dlplan_policy.str())
         print("Numer of sketch rules:", len(self.dlplan_policy.get_rules()))
         print("Number of selected features:", len(self.booleans) + len(self.booleans))
         print("Maximum complexity of selected feature:", max([0] + [boolean.compute_complexity() for boolean in self.booleans] + [numerical.compute_complexity() for numerical in self.numericals]))

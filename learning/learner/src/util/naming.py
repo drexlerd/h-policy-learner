@@ -21,4 +21,4 @@ def compute_serialization_name(basedir, name):
 
 
 def compute_info_filename(config, name):
-    return os.path.join(config["experiment_dir"], name)
+    return os.path.join(config["workspace"], name)

@@ -43,7 +43,7 @@ class HierarchicalSketch:
 
     def print_rec(self, level):
         print(colored("    " * level + f"Level {level} sketch:", "green", "on_grey"))
-        print(self.sketch.dlplan_policy.compute_repr())
+        print(self.sketch.dlplan_policy.str())
         for child in self.children:
             child.print_rec(level+1)
 
@@ -54,8 +54,8 @@ class HierarchicalSketch:
         if self.children:
             for child in self.children:
                 features.extend(child.collect_features())
-        features.extend(self.sketch.dlplan_policy.get_boolean_features())
-        features.extend(self.sketch.dlplan_policy.get_numerical_features())
+        features.extend(self.sketch.booleans)
+        features.extend(self.sketch.numericals)
         return features
 
     def collect_rules(self):

@@ -8,7 +8,7 @@ from learner.src.instance_data.iteration_information import IterationInformation
 from learner.src.iteration_data.feature_valuations import FeatureValuation
 from learner.src.iteration_data.state_pair_equivalence import StatePairEquivalence
 from learner.src.iteration_data.tuple_graph_equivalence import TupleGraphEquivalence
-
+from learner.src.util.command import write_file
 
 @dataclass
 class InstanceData:

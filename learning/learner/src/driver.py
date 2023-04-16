@@ -115,7 +115,7 @@ class StepRunner:
             of SubprocessStepRunners
         """
         self.setup(config.quiet)
-        data = Bunch(load(config.experiment_dir, self.required_data)) if self.required_data else None
+        data = Bunch(load(config.workspace, self.required_data)) if self.required_data else None
         rng = np.random.RandomState(config.random_seed)  # ATM we simply create a RNG in each subprocess
 
         try:
@@ -128,7 +128,7 @@ class StepRunner:
             traceback.print_exception(None, exception, exception.__traceback__)
             raise CriticalPipelineError("Error: {}".format(str(exception)))
 
-        save(config.experiment_dir, output)
+        save(config.workspace, output)
         # profiling.start()
         return exitcode
 

@@ -63,7 +63,6 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
     # root level 0 directory for experimental data
     create_experiment_workspace(workspace, rm_if_existed=False)
     change_working_directory(workspace)
-    create_sym_link(BASEDIR / Path("learner/libs/dlplan/libs/downward-sse/planners/downward-sse") / Path("fast-downward.py"), workspace / "fast-downward.py", overwrite=True)
 
     # level 1 directory to store information of each iteration
     parameters["iterations_dir"] = workspace / "iterations"

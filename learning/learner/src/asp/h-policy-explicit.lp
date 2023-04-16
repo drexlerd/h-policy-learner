@@ -45,6 +45,9 @@ r_reachable(I, S) :- initial(I, S).
 % r_reachable(I, S') :- D = D', r_reachable(I, S), sat_pair(I, S, S', R), subgoal_distance(I, S, D, R), s_distance(I, S, S', D).
 r_reachable(I, S') :- r_reachable(I, S), sat_pair(I, S, S', R).
 
+%%% unable to bound width of unsolvable state.
+:- unsolvable(I, S), r_reachable(I, S).
+
 %%%%%%%%%% C3.1 %%%%%%%%%%
 { subgoal(I, S, T, R) : t_distance(I, S, T, D) } != 0 :- subgoal_distance(I, S, D, R), r_reachable(I, S).
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOMAIN="${PWD}/../../benchmarks/miconic/domain-width-fix.pddl"
+DOMAIN="${PWD}/../../benchmarks/miconic/domain-with-fix.pddl"
 TASK_DIR="${PWD}/../../benchmarks/miconic/instances"
 PIPELINE=$1
 WIDTH=$2

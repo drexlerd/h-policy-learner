@@ -55,8 +55,3 @@ sbatch -A ${PARTITION} spanner_${PIPELINE}_2.sh
 sbatch -A ${PARTITION} visitall_${PIPELINE}_0.sh
 sbatch -A ${PARTITION} visitall_${PIPELINE}_1.sh
 sbatch -A ${PARTITION} visitall_${PIPELINE}_2.sh
-
-
-sbatch -A snic2022-5-341 miconic_hierarchy_0.sh
-sbatch -A snic2022-5-341 miconic_hierarchy_1.sh
-sbatch -A snic2022-5-341 miconic_hierarchy_2.sh

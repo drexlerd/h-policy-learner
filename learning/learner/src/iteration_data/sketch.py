@@ -15,7 +15,32 @@ class Sketch:
         self.dlplan_policy = dlplan_policy
         self.width = width
 
+    def compute_r_reachable_states(self, instance_data: InstanceData):
+        queue = deque()
+        queue.extend(list(instance_data.initial_s_idxs))
+        r_reachable_states = set()
+        r_reachable_states.update(instance_data.initial_s_idxs)
+        while queue:
+            s_idx = queue.popleft()
+            subgoal_states = self._compute_subgoal_states_of_state(instance_data, s_idx)
+            for s_prime_idx in subgoal_states:
+                if s_prime_idx not in r_reachable_states:
+                    r_reachable_states.add(s_prime_idx)
+                    if not instance_data.is_goal(s_prime_idx):
+                        queue.append(s_prime_idx)
+        return r_reachable_states
+
+
     def _verify_bounded_width_of_state(self, instance_data: InstanceData, root_idx: int):
+        """
+        Args:
+            instance_data(InstanceData): the instance
+            root_idx(int): the index of the state to be checked
+
+        Returns True iff for all rule r=C->E holds that if conditions C are true then there must be a subgoal tuple t
+                         and all pairs (root_idx, s) with s underlying t must be r-compatible and
+                         there exists no s' closer s such that (root_idx, s') is r-compatible.
+        """
         bounded = False
         for rule in self.dlplan_policy.get_rules():
             source_state = instance_data.state_space.get_states()[root_idx]
@@ -66,14 +91,14 @@ class Sketch:
             root_state = instance_data.state_space.get_states()[root_idx]
             if not rule.evaluate_conditions(root_state, instance_data.denotations_caches):
                 continue
-            # with tg
+            # With tuple graph: only look as deep into the state space as furthest tuple
             for tuple_distance, tuple_nodes in enumerate(instance_data.tuple_graphs[root_idx].get_tuple_nodes_by_distance()):
                 for tuple_node in tuple_nodes:
                     for s_prime_idx in tuple_node.get_state_indices():
                         target_state = instance_data.state_space.get_states()[s_prime_idx]
                         if rule.evaluate_effects(root_state, target_state, instance_data.denotations_caches):
                             subgoal_states.add(s_prime_idx)
-            # without tg
+            # Without tuple graph: very costly because it looks very deep into the state space.
             #visited = set()
             #visited.add(root_idx)
             #while queue:

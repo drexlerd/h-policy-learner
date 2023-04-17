@@ -55,13 +55,16 @@ def compute_delta_optimal_states(instance_data: InstanceData, delta: float, s_id
 def make_subproblems(config, instance_datas: List[InstanceData], sketch: Sketch, rule: dlplan.Rule, width: int):
     features = list(sketch.booleans) + list(sketch.numericals)
     subproblem_instance_datas = []
+    # TODO: compute r-reachable states
     for instance_data in instance_datas:
         state_space = instance_data.state_space
         goal_distances = instance_data.goal_distances
         # 1. Compute feature valuations F over Phi for each state
-        # We consider feature valuations of all states: solvable and unsolvable, goals and nongoals
-        # to be able to instantiate subproblems with all of them.
+        # We consider feature valuations of all r-reachable states.
+        # for s_idx, state in state_space.get_states().items():
         feature_valuation_to_s_idxs = defaultdict(set)
+        #for s_idx in sketch.compute_r_reachable_states(instance_data):
+        #    state = state_space.get_states()[s_idx]
         for s_idx, state in state_space.get_states().items():
             feature_valuation = tuple([feature.evaluate(state) for feature in features])
             feature_valuation_to_s_idxs[feature_valuation].add(s_idx)
@@ -189,8 +192,8 @@ def run(config, data, rng):
         sketch = parent_hierarchical_sketch.sketch
         for rule in sketch.dlplan_policy.get_rules():
             print("Sketch:")
-            print(sketch.dlplan_policy.compute_repr())
-            print("Sketch rule:", rule.get_index(), rule.compute_repr())
+            print(sketch.dlplan_policy.str())
+            print("Sketch rule:", rule.get_index(), rule.str())
             # creates empty child subdirectory
             child_hierarchical_sketch = parent_hierarchical_sketch.add_child(f"rule_{rule.get_index()}")
             booleans, numericals, dlplan_policy = make_rule_policy(rule)
@@ -208,7 +211,7 @@ def run(config, data, rng):
             rule_sketch, rule_sketch_minimized, rule_statistics = \
                 learn_sketch(config, domain_data, subproblem_instance_datas, config.workspace / "learning" / f"rule_{rule.get_index()}", sketch.width - 1)
             if rule_sketch is None:
-                logging.info(colored(f"No sketch found", "red", "on_grey"))
+                logging.info(colored(f"No sketch found.", "red", "on_grey"))
                 continue
             child_zero_cost_domain_feature_data = deepcopy(parent_zero_cost_domain_feature_data)
             add_zero_cost_features(child_zero_cost_domain_feature_data, rule_sketch)

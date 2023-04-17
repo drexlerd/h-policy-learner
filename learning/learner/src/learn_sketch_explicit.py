@@ -64,10 +64,6 @@ def learn_sketch(config, domain_data, instance_datas, workspace, width: int):
         domain_feature_data_factory = DomainFeatureDataFactory()
         domain_feature_data_factory.make_domain_feature_data_from_instance_datas(config, domain_data, selected_instance_datas)
         domain_feature_data_factory.statistics.print()
-        #print("Boolean features:")
-        #print("\n".join(feature.dlplan_feature.compute_repr() for feature in domain_feature_data.boolean_features.features_by_index))
-        #print("Numerical features:")
-        #print("\n".join(feature.dlplan_feature.compute_repr() for feature in domain_feature_data.numerical_features.features_by_index))
         logging.info(colored(f"..done", "blue", "on_grey"))
 
         logging.info(colored(f"Initializing InstanceFeatureDatas...", "blue", "on_grey"))

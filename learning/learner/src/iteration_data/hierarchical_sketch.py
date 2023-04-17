@@ -20,11 +20,11 @@ class HierarchicalSketch:
 
     def add_sketch(self, sketch: Sketch):
         self.sketch = sketch
-        write_file(self.workspace / f"sketch_{self.sketch.width}.txt", self.sketch.dlplan_policy.compute_repr())
+        write_file(self.workspace / f"sketch_{self.sketch.width}.txt", self.sketch.dlplan_policy.str())
 
     def add_rule(self, rule: Sketch):
         self.rule = rule
-        write_file(self.workspace / f"rule_{self.rule.width}.txt", self.rule.dlplan_policy.compute_repr())
+        write_file(self.workspace / f"rule_{self.rule.width}.txt", self.rule.dlplan_policy.str())
 
     def add_statistics(self, statistics):
         self.statistics = statistics
@@ -43,9 +43,12 @@ class HierarchicalSketch:
 
     def print_rec(self, level):
         print(colored("    " * level + f"Level {level} sketch:", "green", "on_grey"))
-        print(self.sketch.dlplan_policy.str())
-        for child in self.children:
-            child.print_rec(level+1)
+        if self.sketch is not None:
+            print(self.sketch.dlplan_policy.str())
+            for child in self.children:
+                child.print_rec(level+1)
+        else:
+            print("No sketch found.")
 
     def collect_features(self):
         if self.sketch is None:

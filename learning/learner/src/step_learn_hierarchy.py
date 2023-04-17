@@ -59,19 +59,15 @@ def make_subproblems(config, instance_datas: List[InstanceData], sketch: Sketch,
     for instance_data in instance_datas:
         state_space = instance_data.state_space
         goal_distances = instance_data.goal_distances
-        # 1. Compute feature valuations F over Phi for each state
-        # We consider feature valuations of all r-reachable states.
-        # for s_idx, state in state_space.get_states().items():
-        feature_valuation_to_s_idxs = defaultdict(set)
-        #for s_idx in sketch.compute_r_reachable_states(instance_data):
-        #    state = state_space.get_states()[s_idx]
-        for s_idx, state in state_space.get_states().items():
-            feature_valuation = tuple([feature.evaluate(state) for feature in features])
-            feature_valuation_to_s_idxs[feature_valuation].add(s_idx)
-        # 2. For each f in F with f satisfies C ...
-        global_deadends = set([instance_data.is_deadend(s_idx) for s_idx in instance_data.state_space.get_states().keys()])
         covered_initial_s_idxs = set()
         novelty_base = dlplan.NoveltyBase(len(state_space.get_instance_info().get_atoms()), max(1, width))
+        # 1. Group states with same feature valuation together
+        feature_valuation_to_s_idxs = defaultdict(set)
+        for s_idx in sketch.compute_r_reachable_states(instance_data):
+            state = state_space.get_states()[s_idx]
+            feature_valuation = tuple([feature.evaluate(state) for feature in features])
+            feature_valuation_to_s_idxs[feature_valuation].add(s_idx)
+        # 2. Compute goals for each group.
         for _, initial_s_idxs in feature_valuation_to_s_idxs.items():
             # 2.1. Compute set of initial states, i.e., all s such that f(s) = f,
             if not rule.evaluate_conditions(state_space.get_states()[next(iter(initial_s_idxs))], instance_data.denotations_caches):
@@ -84,6 +80,7 @@ def make_subproblems(config, instance_datas: List[InstanceData], sketch: Sketch,
                 goal_s_idxs.update(target_s_idxs)
             if not goal_s_idxs:
                 continue
+
             # 3. Compute goal distances of all initial states.
             # Do backward search from goal states until all initial states are reached.
             old_goal_distances = instance_data.goal_distances
@@ -101,6 +98,18 @@ def make_subproblems(config, instance_datas: List[InstanceData], sketch: Sketch,
                 state_indices, fringe_state_indices = compute_delta_optimal_states(instance_data, config.delta, initial_s_idx, instance_data.goal_distances)
                 state_indices_opt, fringe_state_indices_opt = compute_delta_optimal_states(instance_data, 1, initial_s_idx, instance_data.goal_distances)
 
+                # Use tuple graph to obtain deadends that are further away
+                # since we do not want to end up in a deadend
+                # In general, one should use all deadend states.
+                deadends = set()
+                for root_idx in state_indices:
+                    if root_idx in instance_data.tuple_graphs:
+                        tuple_graph = instance_data.tuple_graphs[root_idx]
+                        for s_prime_idxs in tuple_graph.get_state_indices_by_distance():
+                            for s_prime_idx in s_prime_idxs:
+                                if instance_data.is_deadend(s_prime_idx):
+                                    deadends.add(s_prime_idx)
+
                 subproblem_initial_s_idxs = set()
                 for initial_s_prime_idx in initial_s_idxs:
                     if initial_s_prime_idx in state_indices_opt:
@@ -111,16 +120,15 @@ def make_subproblems(config, instance_datas: List[InstanceData], sketch: Sketch,
                         if not instance_data.is_alive(initial_s_prime_idx):
                             continue
                         subproblem_initial_s_idxs.add(initial_s_prime_idx)
-                # subproblem_initial_s_idxs = {initial_s_idx}
                 assert initial_s_idx in subproblem_initial_s_idxs
                 covered_initial_s_idxs.update(subproblem_initial_s_idxs)
+
                 # 6. Instantiate subproblem for initial state and subgoals.
                 subproblem_state_space = dlplan.StateSpace(
                     instance_data.state_space,
-                    state_indices,
-                    state_indices.union(fringe_state_indices))
+                    state_indices.union(deadends))
                 subproblem_state_space.set_initial_state_index(initial_s_idx)
-                subproblem_state_space.set_goal_state_indices(goal_s_idxs.intersection(state_indices).difference(global_deadends))
+                subproblem_state_space.set_goal_state_indices(goal_s_idxs.intersection(state_indices))
                 subproblem_goal_distances = subproblem_state_space.compute_goal_distances()
                 subproblem_instance_information = InstanceInformation(
                     name,
@@ -134,12 +142,11 @@ def make_subproblems(config, instance_datas: List[InstanceData], sketch: Sketch,
                     subproblem_instance_information)
                 subproblem_instance_data.set_state_space(subproblem_state_space)
                 subproblem_instance_data.set_goal_distances(subproblem_goal_distances)
-                subproblem_instance_data.initial_s_idxs = subproblem_initial_s_idxs.difference(global_deadends)
+                subproblem_instance_data.initial_s_idxs = subproblem_initial_s_idxs
                 if not subproblem_instance_data.is_alive(initial_s_idx):
                     continue
                 assert all([subproblem_instance_data.is_alive(initial_s_idx) for initial_s_idx in subproblem_instance_data.initial_s_idxs])
                 # 2.2.1. Recompute tuple graph for restricted state space
-                # We might want to use the original tuple graphs without any pruning to capture potentially more deadend states.
                 subproblem_instance_data.set_tuple_graphs(TupleGraphFactory(width).make_tuple_graphs(subproblem_instance_data))
                 subproblem_instance_datas.append(subproblem_instance_data)
             instance_data.state_space.set_goal_state_indices(old_goal_state_indices)

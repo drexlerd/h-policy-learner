@@ -44,7 +44,6 @@ def learn_sketch(config, domain_data, instance_datas, workspace, width: int):
     i = 0
     selected_instance_idxs = [0]
     timer = CountDownTimer(config.timeout)
-    print(workspace)
     create_experiment_workspace(workspace, rm_if_existed=True)
     while not timer.is_expired():
         # 1. Setup workspace directory
@@ -105,6 +104,7 @@ def learn_sketch(config, domain_data, instance_datas, workspace, width: int):
         logging.info(colored(f"Solving Logic Program...", "blue", "on_grey"))
         symbols, returncode = asp_factory.solve()
         if returncode == ClingoExitCode.UNSATISFIABLE:
+            print("UNSAT")
             return None, None, None
         asp_factory.print_statistics()
         logging.info(colored(f"..done", "blue", "on_grey"))

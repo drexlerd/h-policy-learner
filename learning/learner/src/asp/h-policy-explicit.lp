@@ -57,24 +57,24 @@ r_reachable(I, S') :- r_reachable(I, S), sat_pair(I, S, S', R).
 
 %%%%%%%%%% C6.1 %%%%%%%%%%
 % (Optimal-width): Require solvable states S' closer than subgoal to not be assigned to any rule.
-:- D < D', r_distance(I, S, C, D), sat_rule(R, C), subgoal_distance(I, S, D', R), alive(I, S).
+:- D < D', r_distance(I, S, C, D), sat_rule(R, C), subgoal_distance(I, S, D', R), nongoal(I, S).
 
 %%%%%%%%%% C7.1 %%%%%%%%%%
 % Define state pair equivalences that are compatible with rules.
 sat_rule(R, C) :- { feature(F) : not c_satisfied(R, F, C), select(F);
      feature(F) : not e_satisfied(R, F, C), select(F) } = 0, rule(R), state_pair_class(C).
 % Define state pairs that are compatible with rules.
-sat_pair(I, S, S', R) :- sat_rule(R, C), cover(I, S, S', C), alive(I, S).
+sat_pair(I, S, S', R) :- sat_rule(R, C), cover(I, S, S', C), nongoal(I, S).
 
 %%%%%%%%%% C7.2 %%%%%%%%%%
-sat_cond(I, S, R) :- { feature(F) : not c_satisfied(R, F, C), select(F) } = 0, rule(R), state_pair_class(C), cover(I, S, _, C), alive(I, S).
+sat_cond(I, S, R) :- { feature(F) : not c_satisfied(R, F, C), select(F) } = 0, rule(R), state_pair_class(C), cover(I, S, _, C), nongoal(I, S).
 
 %%%%%%%%%% C8.1 %%%%%%%%%%
 % (Termination): Sketch must define strict partial order over R-reachable states
 % Source of this formulation: https://users.aalto.fi/~rintanj1/papers/GebserJR14kr.pdf
-order(I, S, S') :- r_reachable(I, S), r_reachable(I, S'), alive(I, S), sat_pair(I, S, S', _), order(I, S').
-order(I, S) :- r_reachable(I, S), order(I, S, S') : sat_pair(I, S, S', _), r_reachable(I, S), r_reachable(I, S'), alive(I, S).
-:- r_reachable(I, S), alive(I, S), not order(I, S).
+order(I, S, S') :- r_reachable(I, S), r_reachable(I, S'), nongoal(I, S), sat_pair(I, S, S', _), order(I, S').
+order(I, S) :- r_reachable(I, S), order(I, S, S') : sat_pair(I, S, S', _), r_reachable(I, S), r_reachable(I, S'), nongoal(I, S).
+:- r_reachable(I, S), nongoal(I, S), not order(I, S).
 
 % Display
 #show rule/1.

@@ -32,7 +32,7 @@ class InstanceData:
     def set_state_space(self, state_space: dlplan.StateSpace):
         """ Set state space and writes it to a file. """
         self.state_space = state_space
-        write_file(self.instance_information.workspace / f"{self.instance_information.name}.dot", state_space.to_dot(1))
+        # write_file(self.instance_information.workspace / f"{self.instance_information.name}.dot", state_space.to_dot(1))
 
     def set_goal_distances(self, goal_distances: Dict[int, int]):
         self.goal_distances =  goal_distances

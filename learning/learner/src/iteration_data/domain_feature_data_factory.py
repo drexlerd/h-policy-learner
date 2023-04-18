@@ -61,28 +61,14 @@ class DomainFeatureDataFactory:
         """ Generate features and their evaluations
         for all states in the given transition systems. """
         syntactic_element_factory = domain_data.syntactic_element_factory
-        if config.debug_features and config.use_debug_features:
-            logging.info("Using predefined features:")
-            # Use custom features
-            numerical_features = [syntactic_element_factory.parse_numerical(repr) for repr in config.debug_features if repr.startswith("n_")]
-            boolean_features = [syntactic_element_factory.parse_boolean(repr) for repr in config.debug_features if repr.startswith("b_")]
-        else:
-            # Generate features
+        numerical_features = []
+        boolean_features = []
+        if config.generate_features:
             feature_generator = domain_data.feature_generator
             feature_reprs = feature_generator.generate(syntactic_element_factory, dlplan_states, config.concept_complexity_limit, config.role_complexity_limit, config.boolean_complexity_limit, config.count_numerical_complexity_limit, config.distance_numerical_complexity_limit, config.time_limit, config.feature_limit)
-
-            numerical_features = [syntactic_element_factory.parse_numerical(repr) for repr in feature_reprs if repr.startswith("n_")]
-            boolean_features = [syntactic_element_factory.parse_boolean(repr) for repr in feature_reprs if repr.startswith("b_")]
-
-            config_numerical_features = [syntactic_element_factory.parse_numerical(repr) for repr in config.debug_features if repr.startswith("n_")]
-            config_boolean_features = [syntactic_element_factory.parse_boolean(repr) for repr in config.debug_features if repr.startswith("b_")]
-
-            for c_n in config_numerical_features:
-                print("Checking existence of:", c_n.compute_repr())
-                c_n_eval = [c_n.evaluate(dlplan_state) for dlplan_state in dlplan_states]
-                for n in numerical_features:
-                    n_eval = [n.evaluate(dlplan_state) for dlplan_state in dlplan_states]
-                    if c_n_eval == n_eval:
-                        print("Found:", n.compute_repr(), n.compute_complexity())
-                        break
+            numerical_features.extend([syntactic_element_factory.parse_numerical(repr) for repr in feature_reprs if repr.startswith("n_")])
+            boolean_features.extend([syntactic_element_factory.parse_boolean(repr) for repr in feature_reprs if repr.startswith("b_")])
+        if config.add_features:
+            numerical_features.extend([syntactic_element_factory.parse_numerical(repr) for repr in config.add_features if repr.startswith("n_")])
+            boolean_features.extend([syntactic_element_factory.parse_boolean(repr) for repr in config.add_features if repr.startswith("b_")])
         return boolean_features, numerical_features

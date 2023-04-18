@@ -32,7 +32,6 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
         distance_numerical_complexity_limit=9,
         time_limit=3600,
         feature_limit=1000000,
-        num_threads_feature_generator=1,
 
         # Require goal separating features
         goal_separation=False,
@@ -45,11 +44,8 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
         # In the paper by Frances et. al, it is also used to encode acyclicity
         delta=1.0,
 
-        reachability_type = ReachabilityType.r,
-        reachability_closest=False,
-
-        debug_features=[],
-        use_debug_features=True,
+        add_features=[],
+        generate_features=True,
 
         quiet=False,
         random_seed=0,

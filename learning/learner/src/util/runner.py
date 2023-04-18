@@ -75,7 +75,6 @@ def do(domain_filename, task_dir, workspace, expid=None, pipeline=None, width=No
         parameters["count_numerical_complexity_limit"] = count_numerical_complexity_limit
     if distance_numerical_complexity_limit is not None:
         parameters["distance_numerical_complexity_limit"] = distance_numerical_complexity_limit
-    # TODO: write properties.txt containing settings into directory
 
     # Sets up experiment
     experiment = generate_experiment(**parameters)

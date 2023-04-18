@@ -83,6 +83,14 @@ class Sketch:
         return True
 
     def _compute_subgoal_states_of_state(self, instance_data: InstanceData, root_idx: int):
+        """ In general, one should compute subgoal states by running BrFS.
+            However, this computation is quite expensive to do for all states.
+            A simple approximation uses only the states that
+            make it into the tuple graph which are already precomputed.
+
+        Args:
+            instance_data(InstanceData): the instance
+            """
         subgoal_states = set()
         forward_successors = instance_data.state_space.get_forward_successor_state_indices()
         for rule in self.dlplan_policy.get_rules():
@@ -91,26 +99,12 @@ class Sketch:
             root_state = instance_data.state_space.get_states()[root_idx]
             if not rule.evaluate_conditions(root_state, instance_data.denotations_caches):
                 continue
-            # With tuple graph: only look as deep into the state space as furthest tuple
             for tuple_distance, tuple_nodes in enumerate(instance_data.tuple_graphs[root_idx].get_tuple_nodes_by_distance()):
                 for tuple_node in tuple_nodes:
                     for s_prime_idx in tuple_node.get_state_indices():
                         target_state = instance_data.state_space.get_states()[s_prime_idx]
                         if rule.evaluate_effects(root_state, target_state, instance_data.denotations_caches):
                             subgoal_states.add(s_prime_idx)
-            # Without tuple graph: very costly because it looks very deep into the state space.
-            #visited = set()
-            #visited.add(root_idx)
-            #while queue:
-            #    s_idx = queue.popleft()  # BrFS
-            #    target_state = instance_data.state_space.get_states()[s_idx]
-            #    if rule.evaluate_effects(root_state, target_state, instance_data.denotations_caches):
-            #        subgoal_states.add(s_idx)
-            #        continue  # prune states that are only reachable through subgoals
-            #    for s_prime_idx in forward_successors.get(s_idx, []):
-            #        if s_prime_idx not in visited:
-            #            visited.add(s_prime_idx)
-            #            queue.append(s_prime_idx)
         return subgoal_states
 
 

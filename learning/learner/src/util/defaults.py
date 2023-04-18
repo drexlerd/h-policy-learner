@@ -6,9 +6,8 @@ from pathlib import Path
 from typing import List
 
 from learner.src.util.command import create_experiment_workspace, change_working_directory, create_sym_link
-from learner.src.util.enum import ReachabilityType, EncodingType
 
-from learner.src.driver import Experiment, BENCHMARK_DIR, BASEDIR
+from learner.src.driver import Experiment, BASEDIR
 from learner.src.steps import generate_pipeline
 from learner.src.instance_data.instance_information import InstanceInformation
 
@@ -40,9 +39,11 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
 
         max_num_rules=4,
 
+        asp_name="h-policy-explicit.lp",
+
         # The degree of suboptimality used for pruning from the initial state.
         # In the paper by Frances et. al, it is also used to encode acyclicity
-        delta=1.0,
+        delta = 2.0,
 
         add_features=[],
         generate_features=True,
@@ -57,7 +58,7 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
     parameters["domain_filename"] = domain_filename
 
     # root level 0 directory for experimental data
-    create_experiment_workspace(workspace, rm_if_existed=False)
+    create_experiment_workspace(workspace, rm_if_existed=True)
     change_working_directory(workspace)
 
     # level 1 directory to store information of each iteration

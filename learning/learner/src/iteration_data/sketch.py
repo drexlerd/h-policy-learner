@@ -4,7 +4,6 @@ from termcolor import colored
 from typing import Dict, MutableSet, List
 from collections import defaultdict, deque
 
-from learner.src.util.enum import ReachabilityType
 from learner.src.instance_data.instance_data import InstanceData
 
 

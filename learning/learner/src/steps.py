@@ -35,8 +35,6 @@ class Step:
 class LearningHierarchiesStep(Step):
     """ Incrementally learns a sketch by considering more and more instances """
     def process_config(self, config):
-        config["delta"] = 2.0
-        config["asp_name"] = "h-policy-explicit.lp"
         return config
 
     def get_required_attributes(self):

@@ -1,13 +1,8 @@
-from re import sub
-from turtle import color
 import dlplan
-import logging
 import math
 
-from copy import deepcopy
 from collections import defaultdict, deque
 from typing import  List, Dict
-from termcolor import colored
 
 from learner.src.instance_data.instance_information import InstanceInformation
 from learner.src.instance_data.instance_data import InstanceData
@@ -15,9 +10,9 @@ from learner.src.instance_data.tuple_graph_factory import TupleGraphFactory
 from learner.src.iteration_data.sketch import Sketch
 
 
-
 class SubproblemInstanceDataFactory:
     def _compute_delta_optimal_states(self, instance_data: InstanceData, delta: float, s_idx: int, goal_distances: Dict[int, int]):
+        """ Computes all states that are delta optimal for a given state `s_idx` """
         state_space = instance_data.state_space
         fringe_state_indices = set()
         state_indices = set()
@@ -49,7 +44,6 @@ class SubproblemInstanceDataFactory:
     def make_subproblems(self, config, instance_datas: List[InstanceData], sketch: Sketch, rule: dlplan.Rule, width: int):
         features = list(sketch.booleans) + list(sketch.numericals)
         subproblem_instance_datas = []
-        # TODO: compute r-reachable states
         for instance_data in instance_datas:
             state_space = instance_data.state_space
             goal_distances = instance_data.goal_distances

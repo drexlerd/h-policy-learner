@@ -6,4 +6,3 @@ class InstanceInformation:
         self.name = name
         self.filename = filename
         self.workspace = workspace
-        self.tuple_graph_workspace = workspace / "tuple_graphs"

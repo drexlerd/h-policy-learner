@@ -7,7 +7,7 @@ from typing import List
 from learner.src.asp.asp_factory import ASPFactory
 from learner.src.asp.returncodes import ClingoExitCode
 from learner.src.instance_data.instance_data import InstanceData
-from learner.src.instance_data.iteration_information import IterationInformation
+from learner.src.instance_data.instance_information import InstanceInformation
 from learner.src.instance_data.tuple_graph_factory import TupleGraphFactory
 from learner.src.iteration_data.domain_feature_data_factory import DomainFeatureDataFactory
 from learner.src.iteration_data.feature_valuations_factory import FeatureValuationsFactory
@@ -19,7 +19,7 @@ from learner.src.iteration_data.tuple_graph_equivalence_minimizer import TupleGr
 from learner.src.util.timer import CountDownTimer
 from learner.src.util.command import create_experiment_workspace
 from learner.src.util.clock import Clock
-from learner.src.learning_statistics import LearningStatistics
+from learner.src.iteration_data.learning_statistics import LearningStatistics
 
 
 def compute_smallest_unsolved_instance(config, sketch: Sketch, instance_datas: List[InstanceData]):
@@ -46,18 +46,16 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
     timer = CountDownTimer(config.timeout)
     create_experiment_workspace(workspace, rm_if_existed=True)
     while not timer.is_expired():
-        # 1. Setup workspace directory
-        iteration_directory = workspace / f"iteration_{i}"
-        create_experiment_workspace(iteration_directory)
-        print()
         logging.info(colored(f"Iteration: {i}", "red", "on_grey"))
+
         selected_instance_datas = [instance_datas[subproblem_idx] for subproblem_idx in selected_instance_idxs]
-        print(f"Number of selected instances: {len(selected_instance_datas)}")
-        print(f"Selected instances:")
         for instance_data in selected_instance_datas:
-            print("    id:", instance_data.id, "name:", instance_data.instance_information.name)
-            print("initial states:", instance_data.initial_s_idxs)
-            instance_data.set_iteration_information(IterationInformation(iteration_directory / instance_data.instance_information.name, instance_data.instance_information.name))
+            instance_data.instance_information = InstanceInformation(
+                instance_data.instance_information.name,
+                instance_data.instance_information.filename,
+                workspace / f"iteration_{i}")
+            instance_data.set_state_space(instance_data.state_space, True)
+            print("     id:", instance_data.id, "name:", instance_data.instance_information.name)
 
         logging.info(colored(f"Initializing DomainFeatureData...", "blue", "on_grey"))
         domain_feature_data_factory = DomainFeatureDataFactory()
@@ -97,7 +95,6 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
         tuple_graph_equivalence_factory.statistics.print()
         tuple_graph_equivalence_minimizer.statistics.print()
 
-        # clingo_exitcode, sketch = learn_sketch_explicit_iteratively(config, config.asp_location / asp_filename, domain_data, selected_instance_datas)
         asp_factory = ASPFactory(max_num_rules=config.max_num_rules)
         asp_factory.load_problem_file(config.asp_location / config.asp_name)
         facts = asp_factory.make_facts(domain_data, selected_instance_datas)

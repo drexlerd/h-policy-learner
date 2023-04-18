@@ -28,13 +28,6 @@ cd testing/planners
 sudo ./build-planners.sh
 ```
 
-### Step 4: Build State Space Exploration Tool (SSE)
-
-```console
-cd learning/learner/libs/dlplan/libs/downward-sse/planners/downward-sse
-./build.py
-```
-
 ## Running the Learning Experiments
 
 

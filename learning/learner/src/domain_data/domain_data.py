@@ -15,6 +15,5 @@ class DomainData:
     vocabulary_info: dlplan.VocabularyInfo
     syntactic_element_factory: dlplan.SyntacticElementFactory
     feature_generator: dlplan.FeatureGenerator
-    zero_cost_domain_feature_data: DomainFeatureData = DomainFeatureData()
     domain_feature_data: DomainFeatureData = None
     domain_state_pair_equivalence: DomainStatePairEquivalence = None

@@ -1,22 +1,88 @@
 import copy
+import dlplan
 
+from copy import deepcopy
 from termcolor import colored
 from pathlib import Path
+from typing import List
 
+from learner.src.instance_data.instance_data import InstanceData
+from learner.src.domain_data.domain_data import DomainData
 from learner.src.iteration_data.sketch import Sketch
 from learner.src.learning_statistics import LearningStatistics
+from learner.src.instance_data.subproblem_instance_data_factory import SubproblemInstanceDataFactory
+from learner.src.iteration_data.domain_feature_data import DomainFeatureData, Features, Feature
 from learner.src.util.command import create_experiment_workspace, read_file, write_file
+from learner.src.learn_sketch_explicit import learn_sketch
+
 
 
 class HierarchicalSketch:
-    def __init__(self, workspace: Path, parent=None):
+    def __init__(self,
+        workspace_learning: Path,
+        workspace_output: Path,
+        config,
+        domain_data: DomainData,
+        instance_datas: List[InstanceData],
+        zero_cost_domain_feature_data: DomainFeatureData,
+        width: int,
+        rule: Sketch=None):
+        assert width >= 0
+        self.workspace_learning = workspace_learning
+        self.workspace_output = workspace_output
+        self.config = config
+        self.domain_data = domain_data
+        self.instance_datas = instance_datas
+        self.zero_cost_domain_feature_data = zero_cost_domain_feature_data
+        self.width = width
+        self.rule = rule  # None represents {-G}->{G}
+        create_experiment_workspace(str(self.workspace_learning), rm_if_existed=True)
+        create_experiment_workspace(str(self.workspace_output), rm_if_existed=True)
+
         self.sketch = None
-        self.rule = None
+        self.sketch_minimized = None
         self.statistics: LearningStatistics = None
-        self.parent = parent
         self.children = []
-        self.workspace = workspace
-        create_experiment_workspace(str(self.workspace), rm_if_existed=True)
+
+
+    def refine(self):
+        """ Learns a sketch for the width. """
+        self.sketch, self.sketch_minimized, self.statistics = learn_sketch(self.config, self.domain_data, self.instance_datas, self.zero_cost_domain_feature_data, self.workspace_learning, self.width)
+
+        zero_cost_domain_feature_data = deepcopy(self.zero_cost_domain_feature_data)
+        for boolean in self.sketch.booleans:
+            zero_cost_domain_feature_data.boolean_features.add_feature(Feature(boolean, 1))
+        for numerical in self.sketch.numericals:
+            zero_cost_domain_feature_data.numerical_features.add_feature(Feature(numerical, 1))
+
+        for rule in self.sketch.dlplan_policy.get_rules():
+            # create sketch consisting of single rule
+            rule_sketch = self._make_rule_sketch(rule, self.width)
+
+            if self.width == 0:
+                continue
+
+            # create subproblems
+            subproblem_instance_datas = SubproblemInstanceDataFactory().make_subproblems(self.config, self.instance_datas, self.sketch, rule, self.width - 1)
+
+            child = HierarchicalSketch(
+                self.workspace_learning / f"rule_{rule.get_index()}",
+                self.workspace_output / f"rule_{rule.get_index()}",
+                self.config,
+                self.domain_data,
+                subproblem_instance_datas,
+                zero_cost_domain_feature_data,
+                self.width - 1,
+                rule_sketch)
+            self.children.append(child)
+
+        return self.children
+
+    def _make_rule_sketch(self, rule: dlplan.Rule, width: int):
+        builder = dlplan.PolicyBuilder()
+        rule.copy_to_builder(builder)
+        return Sketch(builder.get_booleans(), builder.get_numericals(), builder.get_result(), width)
+
 
     def add_sketch(self, sketch: Sketch):
         self.sketch = sketch

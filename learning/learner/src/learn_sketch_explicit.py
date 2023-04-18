@@ -29,7 +29,7 @@ def compute_smallest_unsolved_instance(config, sketch: Sketch, instance_datas: L
     return None
 
 
-def learn_sketch(config, domain_data, instance_datas, workspace, width: int):
+def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_data, workspace, width: int):
     """ Learns a sketch that solves all given instances while first computing required data.
     """
     clock = Clock("LEARNING")
@@ -63,6 +63,10 @@ def learn_sketch(config, domain_data, instance_datas, workspace, width: int):
         domain_feature_data_factory = DomainFeatureDataFactory()
         domain_feature_data_factory.make_domain_feature_data_from_instance_datas(config, domain_data, selected_instance_datas)
         domain_feature_data_factory.statistics.print()
+        for zero_cost_boolean_feature in zero_cost_domain_feature_data.boolean_features.features_by_index:
+            domain_data.domain_feature_data.boolean_features.add_feature(zero_cost_boolean_feature)
+        for zero_cost_numerical_feature in zero_cost_domain_feature_data.numerical_features.features_by_index:
+            domain_data.domain_feature_data.numerical_features.add_feature(zero_cost_numerical_feature)
         logging.info(colored(f"..done", "blue", "on_grey"))
 
         logging.info(colored(f"Initializing InstanceFeatureDatas...", "blue", "on_grey"))

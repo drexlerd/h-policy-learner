@@ -51,10 +51,6 @@ class DomainFeatureDataFactory:
             domain_feature_data.boolean_features.add_feature(Feature(boolean_feature, boolean_feature.compute_complexity() + 1))
         for numerical_feature in numerical_features:
             domain_feature_data.numerical_features.add_feature(Feature(numerical_feature, numerical_feature.compute_complexity() + 1))
-        for zero_cost_boolean_feature in domain_data.zero_cost_domain_feature_data.boolean_features.features_by_index:
-            domain_feature_data.boolean_features.add_feature(zero_cost_boolean_feature)
-        for zero_cost_numerical_feature in domain_data.zero_cost_domain_feature_data.numerical_features.features_by_index:
-            domain_feature_data.numerical_features.add_feature(zero_cost_numerical_feature)
         domain_data.domain_feature_data = domain_feature_data
 
     def _generate_features(self, config, domain_data: DomainData, dlplan_states: List[dlplan.State]) -> Tuple[List[dlplan.Boolean], List[dlplan.Numerical]]:

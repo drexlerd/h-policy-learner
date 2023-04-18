@@ -189,6 +189,9 @@ def run(config, data, rng):
     root_hierarchical_sketch.add_sketch(root_sketch)
     root_hierarchical_sketch.add_statistics(root_statistics)
 
+    # refines the hierarchical sketch
+    # children = root_hierarchical_sketch.refine()
+
     # Learn sketches in BrFS mode, i.e., refine sketches with largest width first
     queue = deque()
     if root_hierarchical_sketch.sketch.width > 0:

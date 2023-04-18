@@ -71,7 +71,7 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
             InstanceInformation(
                 instance_filename.stem,
                 instance_filename,
-                workspace / "input" / instance_filename.name))
+                workspace / "input" / instance_filename.stem))
 
     steps, config = generate_pipeline(**parameters)
 

@@ -199,10 +199,8 @@ class Sketch:
     def solves(self, config, instance_data: InstanceData):
         """
         Returns True iff the sketch solves the instance, i.e.,
-            (1) subproblems have bounded width,
-            (2) sketch only classifies delta optimal state pairs as good,
-            (3) sketch is acyclic, and
-            (4) sketch features separate goals from nongoal states. """
+            (1) sketch has bounded modular sketch width, and
+            (2) sketch is acyclic. """
         bounded, subgoal_states_per_r_reachable_state = self._verify_bounded_modular_width(instance_data)
         if not bounded:
             return False

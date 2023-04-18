@@ -58,7 +58,7 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
     parameters["domain_filename"] = domain_filename
 
     # root level 0 directory for experimental data
-    create_experiment_workspace(workspace, rm_if_existed=True)
+    create_experiment_workspace(workspace, rm_if_existed=False)
     change_working_directory(workspace)
 
     # level 1 directory to store information of each iteration

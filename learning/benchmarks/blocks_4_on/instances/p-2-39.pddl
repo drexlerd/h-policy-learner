@@ -2,7 +2,7 @@
 
 (define (problem BW-rand-2)
 (:domain blocksworld)
-(:objects b1 b2 )
+(:objects )
 (:init
 (arm-empty)
 (on b1 b2)

@@ -35,7 +35,10 @@ class HierarchicalSketch:
         self.instance_datas = instance_datas  # Q_n
         self.zero_cost_domain_feature_data = zero_cost_domain_feature_data  # features that are used in sketches of the parents
         self.width = width  # width of sketch of current node
-        self.rule = rule  # None represents {-G}->{G}
+        if rule is None:
+            self.rule = self._compute_root_sketch_rule()
+        else:
+            self.rule = rule
         create_experiment_workspace(str(self.workspace_learning), rm_if_existed=False)
         create_experiment_workspace(str(self.workspace_output), rm_if_existed=False)
 
@@ -44,6 +47,9 @@ class HierarchicalSketch:
         self.statistics: LearningStatistics = None
         self.children = []
 
+    def _compute_root_sketch_rule(self):
+        """ Compute rule {-G}->{G} consisting of goal separating features. """
+        pass
 
     def refine(self):
         """ Decomposes Q_n `self.instance_datas` at current node into subproblems of width `self.width` """

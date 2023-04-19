@@ -5,11 +5,10 @@
 (:objects b3 )
 (:init
 (arm-empty)
-(on-table b1)
-(on b2 b3)
-(on-table b3)
+(on b1 b3)
+(on-table b2)
+(on b3 b2)
 (clear b1)
-(clear b2)
 )
 (:goal
 (and

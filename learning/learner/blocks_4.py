@@ -99,12 +99,15 @@ def experiments():
                       "n_count(c_and(c_primitive(clear,0),c_one_of(b1)))",  # 4
                       "n_count(c_some(r_primitive(on,0,1),c_one_of(b2)))",  # 4
                       "b_empty(c_and(c_one_of(b1),c_some(r_primitive(on,0,1),c_one_of(b2))))",  # 6
-
+                      "n_count(c_some(r_transitive_closure(r_primitive(on,0,1)),c_one_of(b1)))",
+                      "n_count(c_some(r_transitive_closure(r_primitive(on,0,1)),c_one_of(b2)))",
                       # "n_count(c_equal(r_primitive(on_g,0,1),r_primitive(on,0,1)))",  # 4
-                      #"n_count(r_primitive(on,0,1))",  # 2
-                      #"n_count(c_and(c_equal(r_primitive(on,0,1),r_primitive(on_g,0,1)),c_not(c_primitive(holding,0))))",  # 7
-                      #"n_count(c_primitive(on-table,0))"  # 2
+                      "n_count(r_primitive(on,0,1))",  # 2
+                      "n_count(c_and(c_equal(r_primitive(on,0,1),r_primitive(on_g,0,1)),c_not(c_primitive(holding,0))))",  # 7
+                      "n_count(c_primitive(on-table,0))"  # 2
         ],
-        max_num_rules=10,
+        delta = 2.0,
+        max_num_rules=15,
+        # works with delta=2, max_num_rules=4, and without goal separating feature
     )
     return exps

@@ -18,7 +18,7 @@ class ASPFactory:
         self.ctl.add("feature", ["f"], "feature(f).")
         self.ctl.add("complexity", ["f", "c"], "complexity(f,c).")
         self.ctl.add("value", ["i","s","f","v"], "value(i,s,f,v).")
-        self.ctl.add("b_value", ["i", "s", "f", "v"], "condition(i,s,f,v).")
+        self.ctl.add("b_value", ["i", "s", "f", "v"], "b_value(i,s,f,v).")
         # state space
         self.ctl.add("state", ["i", "s"], "state(i,s).")
         self.ctl.add("initial", ["i", "s"], "initial(i,s).")
@@ -99,7 +99,7 @@ class ASPFactory:
                     facts.append(("b_value", [Number(instance_data.id), Number(s_idx), Number(f_idx), Number(f_val)]))
                 for f_idx, f_val in enumerate(feature_valuation.numerical_feature_valuations):
                     facts.append(("value", [Number(instance_data.id), Number(s_idx), Number(f_idx + len(feature_valuation.boolean_feature_valuations)), Number(f_val)]))
-                    facts.append(("b_value", [Number(instance_data.id), Number(s_idx), Number(f_idx), Number(1 if f_val > 0 else 0)]))
+                    facts.append(("b_value", [Number(instance_data.id), Number(s_idx), Number(f_idx + len(feature_valuation.boolean_feature_valuations)), Number(1 if f_val > 0 else 0)]))
         return facts
 
     def make_state_pair_equivalence_data_facts(self, domain_data: DomainData, instance_datas: List[InstanceData]):

@@ -14,7 +14,7 @@ from learner.src.instance_data.subproblem_instance_data_factory import Subproble
 from learner.src.iteration_data.domain_feature_data import DomainFeatureData, Feature
 from learner.src.util.command import create_experiment_workspace, write_file
 from learner.src.iteration_data.learn_sketch_explicit import learn_sketch
-
+from learner.src.iteration_data.learn_goal_separating_features import learn_goal_separating_features
 
 
 class HierarchicalSketch:
@@ -35,10 +35,9 @@ class HierarchicalSketch:
         self.instance_datas = instance_datas  # Q_n
         self.zero_cost_domain_feature_data = zero_cost_domain_feature_data  # features that are used in sketches of the parents
         self.width = width  # width of sketch of current node
+        self.rule = rule
         if rule is None:
-            self.rule = self._compute_root_sketch_rule()
-        else:
-            self.rule = rule
+            self.rule = self._initialize_goal_separating_features()
         create_experiment_workspace(str(self.workspace_learning), rm_if_existed=False)
         create_experiment_workspace(str(self.workspace_output), rm_if_existed=False)
 
@@ -47,20 +46,22 @@ class HierarchicalSketch:
         self.statistics: LearningStatistics = None
         self.children = []
 
-    def _compute_root_sketch_rule(self):
-        """ Compute rule {-G}->{G} consisting of goal separating features. """
-        pass
+    def _add_zero_cost_features(self, booleans: List[dlplan.Boolean], numericals: List[dlplan.Numerical]):
+        for boolean in booleans:
+            self.zero_cost_domain_feature_data.boolean_features.add_feature(Feature(boolean, 1))
+        for numerical in numericals:
+            self.zero_cost_domain_feature_data.numerical_features.add_feature(Feature(numerical, 1))
+
+    def _initialize_goal_separating_features(self):
+        """ Instead of computing rule {-G}->{G} consisting of goal separating features,
+            we only compute the goal separating features to be reused in subsequent refinements. """
+        booleans, numericals = learn_goal_separating_features(self.config, self.domain_data, self.instance_datas, self.zero_cost_domain_feature_data, self.workspace_learning)
+        self._add_zero_cost_features(booleans, numericals)
 
     def refine(self):
         """ Decomposes Q_n `self.instance_datas` at current node into subproblems of width `self.width` """
         self.sketch, self.sketch_minimized, self.statistics = learn_sketch(self.config, self.domain_data, self.instance_datas, self.zero_cost_domain_feature_data, self.workspace_learning, self.width)
         write_file(self.workspace_output / f"sketch.txt", self.sketch.dlplan_policy.str())
-
-        zero_cost_domain_feature_data = deepcopy(self.zero_cost_domain_feature_data)
-        for boolean in self.sketch.booleans:
-            zero_cost_domain_feature_data.boolean_features.add_feature(Feature(boolean, 1))
-        for numerical in self.sketch.numericals:
-            zero_cost_domain_feature_data.numerical_features.add_feature(Feature(numerical, 1))
 
         # compute children n' of n
         for rule in self.sketch.dlplan_policy.get_rules():
@@ -73,6 +74,10 @@ class HierarchicalSketch:
 
             # compute Q_n'
             subproblem_instance_datas = SubproblemInstanceDataFactory().make_subproblems(self.config, self.instance_datas, self.sketch, rule, self.width - 1)
+
+            # copy features into child
+            zero_cost_domain_feature_data = deepcopy(self.zero_cost_domain_feature_data)
+            self._add_zero_cost_features(self.sketch.booleans, self.sketch.numericals)
 
             child = HierarchicalSketch(
                 self.workspace_learning / f"rule_{rule.get_index()}",

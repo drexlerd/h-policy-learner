@@ -176,26 +176,6 @@ class Sketch:
                     stack.pop(-1)
         return True
 
-    def _verify_goal_separating_features(self, instance_data: InstanceData):
-        """
-        Returns True iff sketch features separate goal from nongoal states.
-        """
-        dlplan_policy_features = self.dlplan_policy.get_boolean_features() + self.dlplan_policy.get_numerical_features()
-        s_idx_to_feature_valuations = dict()
-        for s_idx in instance_data.state_space.get_state_indices():
-            s_idx_to_feature_valuations[s_idx] = tuple([feature.evaluate(instance_data.state_information.get_state(s_idx)) for feature in dlplan_policy_features])
-        for s_idx_1 in instance_data.state_space.get_state_indices():
-            for s_idx_2 in instance_data.state_space.get_state_indices():
-                if (instance_data.goal_distance_information.is_goal(s_idx_1) and \
-                    not instance_data.goal_distance_information.is_goal(s_idx_2)):
-                    if (s_idx_to_feature_valuations[s_idx_1] == s_idx_to_feature_valuations[s_idx_2]):
-                        print(colored("Selected features do not separate goals from non goals.", "red", "on_grey"))
-                        print("Instance:", instance_data.id, instance_data.instance_information.name)
-                        print("Goal state:", s_idx_1, str(instance_data.state_information.get_state(s_idx_1)), s_idx_to_feature_valuations[s_idx_1])
-                        print("Nongoal state:", s_idx_2, str(instance_data.state_information.get_state(s_idx_2)), s_idx_to_feature_valuations[s_idx_2])
-                        return False
-        return True
-
     def solves(self, config, instance_data: InstanceData):
         """
         Returns True iff the sketch solves the instance, i.e.,
@@ -206,10 +186,6 @@ class Sketch:
             return False
         if not self._verify_acyclicity(instance_data, subgoal_states_per_r_reachable_state):
             return False
-
-        # if not self._verify_goal_separating_features(instance_data):
-        #     return False
-        # We do not care about the degree of suboptimality and use delta optimality just for pruning the state space.
         return True
 
     def print(self):

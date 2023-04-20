@@ -32,9 +32,6 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
         time_limit=3600,
         feature_limit=1000000,
 
-        # Require goal separating features
-        goal_separation=False,
-
         width=2,
 
         max_num_rules=4,
@@ -43,7 +40,7 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
 
         # The degree of suboptimality used for pruning from the initial state.
         # In the paper by Frances et. al, it is also used to encode acyclicity
-        delta = 2.0,
+        delta = float("inf"),
 
         add_features=[],
         generate_features=True,

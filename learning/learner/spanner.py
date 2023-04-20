@@ -49,7 +49,8 @@ def experiments():
         add_features=["n_count(c_and(c_not(c_primitive(tightened,0)),c_some(r_primitive(at,0,1),c_top)))",
                         "n_count(c_some(r_primitive(at,0,1),c_all(r_inverse(r_primitive(at,0,1)),c_primitive(man,0))))",
                         "n_count(c_some(r_transitive_closure(r_primitive(link,0,1)),c_some(r_inverse(r_primitive(at,0,1)),c_primitive(man,0))))",
-                        "b_empty(c_some(r_primitive(at,0,1),c_some(r_transitive_closure(r_primitive(link,0,1)),c_some(r_inverse(r_primitive(at,0,1)),c_primitive(man,0)))))"  # stahlberg-et-al-ijcai
+                        "b_empty(c_some(r_primitive(at,0,1),c_some(r_transitive_closure(r_primitive(link,0,1)),c_some(r_inverse(r_primitive(at,0,1)),c_primitive(man,0)))))",  # stahlberg-et-al-ijcai
+                        "n_count(c_diff(c_primitive(tightened_g,0),c_primitive(tightened,0)))"  # goal separating feature
         ],
     )
 

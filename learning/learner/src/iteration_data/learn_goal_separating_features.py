@@ -68,7 +68,7 @@ def learn_goal_separating_features(config, domain_data, instance_datas, zero_cos
     i = 0
     selected_instance_idxs = [0]
     timer = CountDownTimer(config.timeout)
-    create_experiment_workspace(workspace, rm_if_existed=True)
+    create_experiment_workspace(workspace, rm_if_existed=False)
     while not timer.is_expired():
         logging.info(colored(f"Iteration: {i}", "red", "on_grey"))
 
@@ -111,7 +111,7 @@ def learn_goal_separating_features(config, domain_data, instance_datas, zero_cos
         symbols, returncode = asp_factory.solve()
         if returncode == ClingoExitCode.UNSATISFIABLE:
             print("UNSAT")
-            return None, None, None
+            exit(1)
         asp_factory.print_statistics()
         logging.info(colored(f"..done", "blue", "on_grey"))
 

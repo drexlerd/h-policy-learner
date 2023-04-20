@@ -44,7 +44,7 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
     i = 0
     selected_instance_idxs = [0]
     timer = CountDownTimer(config.timeout)
-    create_experiment_workspace(workspace, rm_if_existed=True)
+    create_experiment_workspace(workspace, rm_if_existed=False)
     while not timer.is_expired():
         logging.info(colored(f"Iteration: {i}", "red", "on_grey"))
 

@@ -48,7 +48,6 @@ class SubproblemInstanceDataFactory:
             state_space = instance_data.state_space
             goal_distances = instance_data.goal_distances
             covered_initial_s_idxs = set()
-            novelty_base = dlplan.NoveltyBase(len(state_space.get_instance_info().get_atoms()), max(1, width))
             # 1. Group states with same feature valuation together
             feature_valuation_to_s_idxs = defaultdict(set)
             for s_idx in sketch.compute_r_reachable_states(instance_data):
@@ -126,7 +125,6 @@ class SubproblemInstanceDataFactory:
                         len(subproblem_instance_datas),
                         instance_data.domain_data,
                         instance_data.denotations_caches,
-                        novelty_base,
                         subproblem_instance_information)
                     subproblem_instance_data.set_state_space(subproblem_state_space)
                     subproblem_instance_data.set_goal_distances(subproblem_goal_distances)

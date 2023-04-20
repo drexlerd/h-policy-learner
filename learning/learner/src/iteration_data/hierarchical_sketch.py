@@ -28,18 +28,20 @@ class HierarchicalSketch:
         width: int,
         rule: Sketch=None):
         assert width >= 0
+        create_experiment_workspace(str(workspace_learning), rm_if_existed=False)
+        create_experiment_workspace(str(workspace_output), rm_if_existed=False)
         self.workspace_learning = workspace_learning
         self.workspace_output = workspace_output
         self.config = config
         self.domain_data = domain_data
-        self.instance_datas = instance_datas  # Q_n
+        self.instance_datas = instance_datas  # Q_n0
         self.zero_cost_domain_feature_data = zero_cost_domain_feature_data  # features that are used in sketches of the parents
-        self.width = width  # width of sketch of current node
+        self.width = width  # width k of the subproblems in the current node. In the root we use config.width+1 such that first decompositions yields problems with width config.width
         self.rule = rule
         if rule is None:
-            self.rule = self._initialize_goal_separating_features()
-        create_experiment_workspace(str(self.workspace_learning), rm_if_existed=False)
-        create_experiment_workspace(str(self.workspace_output), rm_if_existed=False)
+            self._initialize_goal_separating_features()
+        else:
+            write_file(self.workspace_output / f"rule.txt", self.rule.dlplan_policy.str())
 
         self.sketch = None
         self.sketch_minimized = None
@@ -60,24 +62,24 @@ class HierarchicalSketch:
 
     def refine(self):
         """ Decomposes Q_n `self.instance_datas` at current node into subproblems of width `self.width` """
-        self.sketch, self.sketch_minimized, self.statistics = learn_sketch(self.config, self.domain_data, self.instance_datas, self.zero_cost_domain_feature_data, self.workspace_learning, self.width)
+        # Base case: leaf node
+        if self.width == 0:
+            # with of current decomposition is 0 => cannot decompose further
+            return []
+
+        # Learn sketch for width k-1
+        self.sketch, self.sketch_minimized, self.statistics = learn_sketch(self.config, self.domain_data, self.instance_datas, self.zero_cost_domain_feature_data, self.workspace_learning, self.width - 1)
         write_file(self.workspace_output / f"sketch.txt", self.sketch.dlplan_policy.str())
-
-        # compute children n' of n
+        # Inductive case: compute children n' of n
         for rule in self.sketch.dlplan_policy.get_rules():
-            rule_sketch = self._make_rule_sketch(rule, self.width)
-            write_file(self.workspace_output / f"rule_{rule.get_index()}.txt", rule_sketch.dlplan_policy.str())
-
-            if self.width == 0:
-                # with of current decomposition is 0 => cannot decompose further
-                continue
-
-            # compute Q_n'
+            # compute Q_n' of width k-1
             subproblem_instance_datas = SubproblemInstanceDataFactory().make_subproblems(self.config, self.instance_datas, self.sketch, rule, self.width - 1)
 
             # copy features into child
             zero_cost_domain_feature_data = deepcopy(self.zero_cost_domain_feature_data)
             self._add_zero_cost_features(self.sketch.booleans, self.sketch.numericals)
+
+            rule_sketch = self._make_rule_sketch(rule, self.width)
 
             child = HierarchicalSketch(
                 self.workspace_learning / f"rule_{rule.get_index()}",
@@ -108,13 +110,14 @@ class HierarchicalSketch:
 
     def print_rec(self, level):
         """ Print helper function. """
-        print(colored("    " * level + f"Level {level} sketch:", "green", "on_grey"))
         if self.sketch is not None:
-            print(self.sketch.dlplan_policy.str())
-            for child in self.children:
-                child.print_rec(level+1)
-        else:
-            print("No sketch found.")
+            print(colored("    " * level + f"Level {level} sketch:", "green", "on_grey"))
+            if self.sketch is not None:
+                print(self.sketch.dlplan_policy.str())
+                for child in self.children:
+                    child.print_rec(level+1)
+            else:
+                print("No sketch found.")
 
     def collect_features(self):
         """ Returns all features in the hierarchical policy. """

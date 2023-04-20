@@ -26,7 +26,7 @@ def run(config, data, rng):
         domain_data,
         instance_datas,  # Q_n
         DomainFeatureData(),
-        config.width,
+        config.width + 1,  # Assume Q_n has width k+1, s.t. in first sketch computation sketch has width k+1-1=k
     )
     # Learn sketches in BrFS mode, i.e., refine sketches with largest width first
     queue = deque()

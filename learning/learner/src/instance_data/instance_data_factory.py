@@ -26,8 +26,7 @@ class InstanceDataFactory:
                 continue
             else:
                 print("Num states:", len(state_space.get_states()))
-                novelty_base = dlplan.NoveltyBase(len(state_space.get_instance_info().get_atoms()), max(1, config.width))
-                instance_data = InstanceData(len(instance_datas), domain_data, dlplan.DenotationsCaches(), novelty_base, instance_information)
+                instance_data = InstanceData(len(instance_datas), domain_data, dlplan.DenotationsCaches(), instance_information)
                 instance_data.set_state_space(state_space, create_dump=True)
                 instance_data.set_goal_distances(goal_distances)
                 instance_data.initial_s_idxs = [state_space.get_initial_state_index(),]

@@ -16,7 +16,6 @@ class InstanceData:
     id: int
     domain_data: DomainData
     denotations_caches: dlplan.DenotationsCaches
-    novelty_base: dlplan.NoveltyBase
     instance_information: InstanceInformation
     state_space: dlplan.StateSpace = None
     goal_distances: Dict[int, int] = None

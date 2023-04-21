@@ -1,5 +1,5 @@
 lab
-dlplan==0.1.14
+dlplan==0.1.15
 clingo
 learning/learner/libs/tarski
 jsonpickle

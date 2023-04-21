@@ -5,10 +5,6 @@ From: ubuntu:22.04
    ## Copy subdirectory into the root directory of the container
    downward-h-policy /downward-h-policy
 
-%environment
-    ## Add runtime library search paths
-    # export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib/dlplan/"
-
 %post
     ## Add info for tzdata
     export TZ=Europe/Stockholm
@@ -61,4 +57,4 @@ From: ubuntu:22.04
 Name        Hierarchical Policy Execution
 Description Hierarchical Policy Execution implemented in FastDownward with DLPlan
 Authors     Dominik Drexler <dominik.drexler@liu.se>, Jendrik Seipp <jendrik.seipp@liu.se>
-# sudo singularity build h-policy.img h-policy.sif
+# sudo singularity build h-policy.img h-policy.img

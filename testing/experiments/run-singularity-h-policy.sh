@@ -15,7 +15,7 @@ fi
 set +e
 # Some planners print to stderr when running out of memory, so we redirect stderr to stdout.
 { /usr/bin/time -o /dev/stdout -f "Singularity runtime: %es real, %Us user, %Ss sys" \
-  singularity run -C -H $PWD $1 $PWD/$2 $PWD/$3 $PWD/$4 $5 ; } 2>&1
+  singularity run -C -H $PWD $1 $PWD/$2 $PWD/$3 $PWD/$4 $PWD/$5 ; } 2>&1
 set -e
 
 printf "\nRun VAL\n\n"

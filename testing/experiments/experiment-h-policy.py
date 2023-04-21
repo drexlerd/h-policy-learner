@@ -37,27 +37,18 @@ class BaseReport(AbsoluteReport):
         "node",
     ]
 
-
 ATTRIBUTES = [
     "run_dir",
-    "length",
     "cost",
-    Attribute(name="coverage", absolute=True, min_wins=False),
-    Attribute(name="valid_plan_value", absolute=True, min_wins=False),
+    "coverage",
     "error",
-    "expanded",
-    "generated",
-    "pruned",
-    Attribute("maximum_effective_width", function=max),
-    Attribute("average_effective_width", function=arithmetic_mean),
-    Attribute("total_time_feature_evaluation", function=sum),
     Attribute(name="total_time", absolute=True, function=max),
 ]
 
 
 DIR = Path(__file__).resolve().parent
 BENCHMARKS_DIR = DIR.parent / "benchmarks"
-SKETCHES_DIR = DIR.parent.parent / "learning" / "data_kr2023" / "sketches_hierarchical"
+SKETCHES_DIR = DIR.parent.parent / "learning" / "data_kr2023_2" / "sketches_hierarchical"
 IMAGES_DIR = DIR.parent / "planners"
 print(BENCHMARKS_DIR)
 print(SKETCHES_DIR)
@@ -78,7 +69,7 @@ exp.add_step("build", exp.build)
 exp.add_step("start", exp.start_runs)
 exp.add_parse_again_step()
 exp.add_fetcher(name="fetch")
-exp.add_parser("parser-singularity-iw.py")
+exp.add_parser("parser-singularity.py")
 
 
 def get_image(name):
@@ -88,13 +79,16 @@ def get_image(name):
     return planner, image
 
 
-IMAGES = [get_image("hsiwr")]
+IMAGES = [get_image("h-policy")]
 
 for planner, image in IMAGES:
     exp.add_resource(planner, image, symlink=True)
 
-singularity_script = os.path.join(DIR, "run-singularity-hsiwr.sh")
+singularity_script = os.path.join(DIR, "run-singularity-h-policy.sh")
 exp.add_resource("run_singularity", singularity_script)
+
+H_POLICY_FILENAME = IMAGES_DIR / "h-policy" / "downward-h-policy" / "h-policy.py"
+FAST_DOWNWARD_FILENAME = IMAGES_DIR / "h-policy" / "downward-h-policy" / "fast-downward.py"
 
 TIME_LIMIT = 1800
 MEMORY_LIMIT = 8000
@@ -107,14 +101,20 @@ for planner, _ in IMAGES:
             run.add_resource("domain", task.domain_file, "domain.pddl")
             run.add_resource("problem", task.problem_file, "problem.pddl")
             run.add_resource("sketch_hierarchical_dir", sketch_hierarchical_dir)
+            run.add_resource("h_policy_py", H_POLICY_FILENAME)
             run.add_command(
                 "run-planner",
                 [
-                    "{run_singularity}",
-                    f"{{{planner}}}",
+                    H_POLICY_FILENAME,
+                    "--fd_file",
+                    FAST_DOWNWARD_FILENAME,
+                    "--domain_file",
                     "{domain}",
+                    "--instance_file",
                     "{problem}",
+                    "--hierarchical_sketch_dir",
                     "{sketch_hierarchical_dir}",
+                    "--plan_file",
                     "sas_plan",
                 ],
                 time_limit=TIME_LIMIT,
@@ -123,7 +123,7 @@ for planner, _ in IMAGES:
             run.set_property("domain", task.domain)
             run.set_property("problem", task.problem)
             run.set_property("algorithm", f"{planner}_{w}")
-            run.set_property("id", [f"{planner}_{w}.txt", task.domain, task.problem])
+            run.set_property("id", [f"{planner}_{w}", task.domain, task.problem])
 
 report = os.path.join(exp.eval_dir, f"{exp.name}.html")
 exp.add_report(BaseReport(attributes=ATTRIBUTES), outfile=report)

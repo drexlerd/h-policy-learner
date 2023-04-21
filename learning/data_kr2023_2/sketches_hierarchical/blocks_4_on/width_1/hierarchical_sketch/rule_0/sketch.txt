@@ -1,0 +1,5 @@
+(:policy
+(:boolean_features )
+(:numerical_features "n_concept_distance(c_one_of(b1),r_restrict(r_primitive(on_g,0,1),c_primitive(clear,0)),c_primitive(on-table,0))")
+(:rule (:conditions ) (:effects (:e_n_inc 0)))
+)

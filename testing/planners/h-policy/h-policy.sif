@@ -3,7 +3,7 @@ From: ubuntu:22.04
 
 %files
    ## Copy subdirectory into the root directory of the container
-   downward-iw /downward-iw
+   downward-h-policy /downward-h-policy
 
 %environment
     ## Add runtime library search paths
@@ -37,17 +37,17 @@ From: ubuntu:22.04
 	git-all
 
     ## Install python packages
-	pip install pathlib
+	pip install pathlib pybind11 pybind11-global
 
     ## Install planner
-	cd /downward-iw
+	cd /downward-h-policy
 	rm -rf builds
 	rm -rf libs/dlplan/builds
 	./build.py
 	cd /
 
-	ln -frs /downward-iw/fast-downward.py /fast-downward.py
-	ln -frs /downward-iw/hsiwr.py /hsiwr.py
+	ln -frs /downward-h-policy/fast-downward.py /fast-downward.py
+	ln -frs /downward-h-policy/h-policy.py /h-policy.py
 
 %runscript
     DOMAINFILE=$1
@@ -55,12 +55,10 @@ From: ubuntu:22.04
 	DCK=$3
 	PLANFILE=$4
 
-    /hsiwr.py --fd_file /fast-downward.py --domain_file $DOMAINFILE --instance_file $PROBLEMFILE --hierarchical_sketch_dir $DCK --plan_file $PLANFILE
+    /h-policy.py --fd_file /fast-downward.py --domain_file $DOMAINFILE --instance_file $PROBLEMFILE --hierarchical_sketch_dir $DCK --plan_file $PLANFILE
 
-## Update the following fields with meta data about your submission.
-## Please use the same field names and use only one line for each value.
 %labels
-Name        HSIWR
-Description HSIWR implemented in FastDownward with DLPlan
+Name        Hierarchical Policy Execution
+Description Hierarchical Policy Execution implemented in FastDownward with DLPlan
 Authors     Dominik Drexler <dominik.drexler@liu.se>, Jendrik Seipp <jendrik.seipp@liu.se>
-# sudo singularity build hsiwr.img hsiwr.sif
+# sudo singularity build h-policy.img h-policy.sif

@@ -206,14 +206,18 @@ class ASPFactory:
         self.ctl.ground(facts)  # ground a set of facts
 
     def solve(self):
-        with self.ctl.solve(yield_=True) as solve_handle:
-            for model in solve_handle:
+        """ https://potassco.org/clingo/python-api/current/clingo/solving.html """
+        with self.ctl.solve(yield_=True, async_=True) as solve_handle:
+            while True:
+                solve_handle.resume()
+                _ = solve_handle.wait()
+                model = solve_handle.model()
                 if model.optimality_proven:
                     return model.symbols(shown=True), ClingoExitCode.SATISFIABLE
-            if solve_handle.get().unsatisfiable:
-                return None, ClingoExitCode.UNSATISFIABLE
-            return None, ClingoExitCode.UNKNOWN
+                if model is None:
+                    return None, ClingoExitCode.UNSATISFIABLE
 
+    
     def print_statistics(self):
         print("Clingo statistics:")
         print(self.ctl.statistics["summary"])

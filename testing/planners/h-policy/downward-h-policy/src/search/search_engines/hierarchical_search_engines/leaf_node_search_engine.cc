@@ -42,7 +42,7 @@ SearchStatus LeafNodeSearchEngine::step() {
             std::cout << get_name() << " succ_state: " << m_propositional_task->compute_dlplan_state(succ_state).str() << std::endl;
         if (is_goal(succ_state)) {
             if (m_debug)
-                std::cout << get_name() << " goal_state: " << m_propositional_task->compute_dlplan_state(succ_state).str() << std::endl;
+                std::cout << op.get_name() << " " << get_name() << " goal_state: " << m_propositional_task->compute_dlplan_state(succ_state).str() << std::endl;
             // set the solution.
             m_partial_solutions = {PartialSearchSolution{Plan{OperatorID(op.get_id())}, succ_state.get_id()}};
             return SearchStatus::SOLVED;

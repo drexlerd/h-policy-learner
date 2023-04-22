@@ -25,7 +25,8 @@ HierarchicalSearchEngine::HierarchicalSearchEngine(
       m_bound(std::numeric_limits<int>::max()),
       m_initial_state_id(StateID::no_state),
       m_debug(opts.get<utils::Verbosity>("verbosity") == utils::Verbosity::DEBUG) {
-}
+    //m_debug(true) {
+    }
 
 void HierarchicalSearchEngine::initialize() {
     utils::g_log << "Top level initialization of HierarchicalSearchEngine." << endl;

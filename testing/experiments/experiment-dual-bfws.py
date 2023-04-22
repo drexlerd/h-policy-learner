@@ -57,6 +57,8 @@ IMAGES_DIR = DIR.parent / "planners"
 print(BENCHMARKS_DIR)
 print(IMAGES_DIR)
 
+TIME_LIMIT = 1800
+MEMORY_LIMIT = 8000
 if project.REMOTE:
     SUITE = ["blocks_4_clear", "blocks_4_on", "delivery", "gripper", "miconic", "reward", "spanner", "visitall"]
     ENV = project.TetralithEnvironment(
@@ -65,7 +67,8 @@ if project.REMOTE:
         memory_per_cpu="8G")
 else:
     SUITE = ["blocks_4_clear:p-200-0.pddl", "blocks_4_on:p-200-0.pddl", "delivery:instance_20_25_40_0.pddl", "gripper:p01.pddl", "miconic:p01.pddl", "reward:instance_60x60_0.pddl", "spanner:pfile01-001.pddl", "visitall:p01.pddl"]
-    ENV = project.LocalEnvironment(processes=4)
+    ENV = project.LocalEnvironment(processes=16)
+    TIME_LIMIT = 10
 
 exp = Experiment(environment=ENV)
 exp.add_step("build", exp.build)
@@ -77,7 +80,7 @@ exp.add_parser("parser-singularity.py")
 
 def get_image(name):
     planner = name.replace("-", "_")
-    image = os.path.join(IMAGES_DIR, name + ".img")
+    image = os.path.join(IMAGES_DIR, name + ".sif")
     assert os.path.exists(image), image
     return planner, image
 
@@ -90,8 +93,6 @@ for planner, image in IMAGES:
 singularity_script = os.path.join(DIR, "run-singularity.sh")
 exp.add_resource("run_singularity", singularity_script)
 
-TIME_LIMIT = 1800
-MEMORY_LIMIT = 8000
 for planner, _ in IMAGES:
     for task in suites.build_suite(BENCHMARKS_DIR, SUITE):
         run = exp.add_run()

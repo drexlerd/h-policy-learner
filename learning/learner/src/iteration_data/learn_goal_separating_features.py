@@ -47,6 +47,7 @@ def compute_smallest_unsolved_instance(booleans: List[dlplan.Boolean], numerical
 def parse_features_from_answer_set(symbols, domain_data: DomainData):
     booleans = []
     numericals = []
+    print(symbols)
     for symbol in symbols:
         if symbol.name == "select":
             f_idx = symbol.arguments[0].number

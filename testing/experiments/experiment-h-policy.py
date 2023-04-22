@@ -54,6 +54,8 @@ print(BENCHMARKS_DIR)
 print(SKETCHES_DIR)
 print(IMAGES_DIR)
 
+TIME_LIMIT = 1800
+MEMORY_LIMIT = 8000
 if project.REMOTE:
     SUITE = ["blocks_4_clear", "blocks_4_on", "delivery", "gripper", "miconic", "reward", "spanner", "visitall"]
     ENV = project.TetralithEnvironment(
@@ -62,7 +64,8 @@ if project.REMOTE:
         memory_per_cpu="8G")
 else:
     SUITE = ["blocks_4_clear:p-200-0.pddl", "blocks_4_on:p-200-0.pddl", "delivery:instance_20_25_40_0.pddl", "gripper:p01.pddl", "miconic:p01.pddl", "reward:instance_60x60_0.pddl", "spanner:pfile01-001.pddl", "visitall:p01.pddl"]
-    ENV = project.LocalEnvironment(processes=4)
+    ENV = project.LocalEnvironment(processes=16)
+    TIME_LIMIT = 100
 
 exp = Experiment(environment=ENV)
 exp.add_step("build", exp.build)
@@ -74,7 +77,7 @@ exp.add_parser("parser-singularity.py")
 
 def get_image(name):
     planner = name.replace("-", "_")
-    image = os.path.join(IMAGES_DIR, name + ".img")
+    image = os.path.join(IMAGES_DIR, name + ".sif")
     assert os.path.exists(image), image
     return planner, image
 
@@ -87,11 +90,6 @@ for planner, image in IMAGES:
 singularity_script = os.path.join(DIR, "run-singularity-h-policy.sh")
 exp.add_resource("run_singularity", singularity_script)
 
-H_POLICY_FILENAME = IMAGES_DIR / "h-policy" / "downward-h-policy" / "h-policy.py"
-FAST_DOWNWARD_FILENAME = IMAGES_DIR / "h-policy" / "downward-h-policy" / "fast-downward.py"
-
-TIME_LIMIT = 1800
-MEMORY_LIMIT = 8000
 for planner, _ in IMAGES:
     for task in suites.build_suite(BENCHMARKS_DIR, SUITE):
         for w in range(0,3):
@@ -101,20 +99,14 @@ for planner, _ in IMAGES:
             run.add_resource("domain", task.domain_file, "domain.pddl")
             run.add_resource("problem", task.problem_file, "problem.pddl")
             run.add_resource("sketch_hierarchical_dir", sketch_hierarchical_dir)
-            run.add_resource("h_policy_py", H_POLICY_FILENAME)
             run.add_command(
                 "run-planner",
                 [
-                    H_POLICY_FILENAME,
-                    "--fd_file",
-                    FAST_DOWNWARD_FILENAME,
-                    "--domain_file",
+                    "{run_singularity}",
+                    f"{{{planner}}}",
                     "{domain}",
-                    "--instance_file",
                     "{problem}",
-                    "--hierarchical_sketch_dir",
                     "{sketch_hierarchical_dir}",
-                    "--plan_file",
                     "sas_plan",
                 ],
                 time_limit=TIME_LIMIT,

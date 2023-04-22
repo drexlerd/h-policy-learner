@@ -21,6 +21,7 @@ class IWSearch;
 namespace hierarchical_search_engine {
 class HierarchicalSearchEngine;
 struct IWSearchSolution;
+class InnerNodeSearchEngine;
 }
 
 namespace novelty {
@@ -34,7 +35,7 @@ class PropositionalTask;
 class StateID {
     friend class breadth_first_search::BreadthFirstSearch;
     friend class exhaustive_search::ExhaustiveSearch;
-    friend class iw_search::IWSearch;
+    friend class hierarchical_search_engine::InnerNodeSearchEngine;
     friend class hierarchical_search_engine::HierarchicalSearchEngine;
     friend struct hierarchical_search_engine::IWSearchSolution;
     friend class extra_tasks::PropositionalTask;

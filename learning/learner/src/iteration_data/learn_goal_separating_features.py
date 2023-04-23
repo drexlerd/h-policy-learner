@@ -85,6 +85,8 @@ def learn_goal_separating_features(config, domain_data, instance_datas, zero_cos
         domain_feature_data_factory = DomainFeatureDataFactory()
         domain_feature_data_factory.make_domain_feature_data_from_instance_datas(config, domain_data, selected_instance_datas)
         domain_feature_data_factory.statistics.print()
+        for boolean_feature in domain_data.domain_feature_data.boolean_features.features_by_index:
+            print(boolean_feature.dlplan_feature.compute_repr())
         for zero_cost_boolean_feature in zero_cost_domain_feature_data.boolean_features.features_by_index:
             domain_data.domain_feature_data.boolean_features.add_feature(zero_cost_boolean_feature)
         for zero_cost_numerical_feature in zero_cost_domain_feature_data.numerical_features.features_by_index:

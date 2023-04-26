@@ -48,33 +48,39 @@ class SubproblemInstanceDataFactory:
             state_space = instance_data.state_space
             goal_distances = instance_data.goal_distances
             covered_initial_s_idxs = set()
-            # 1. Group states with same feature valuation together
-            feature_valuation_to_s_idxs = defaultdict(set)
+            # 1. Group initial states with same feature valuation together
+            # such that we can compute their "potential" goals in a single iteration
+            # "potential" in the sense that reachability must still be checked.
+            feature_valuation_to_initial_s_idxs = defaultdict(set)
             for s_idx in sketch.compute_r_reachable_states(instance_data):
                 state = state_space.get_states()[s_idx]
                 feature_valuation = tuple([feature.evaluate(state) for feature in features])
-                feature_valuation_to_s_idxs[feature_valuation].add(s_idx)
-            # 2. Compute goals for each group.
-            for _, initial_s_idxs in feature_valuation_to_s_idxs.items():
-                # 2.1. Compute set of initial states, i.e., all s such that f(s) = f,
+                feature_valuation_to_initial_s_idxs[feature_valuation].add(s_idx)
+            # 2. Group target states with same feature valuation together
+            feature_valuation_to_target_s_idxs = defaultdict(set)
+            for s_idx, state in instance_data.state_space.get_states().items():
+                feature_valuation = tuple([feature.evaluate(state) for feature in features])
+                feature_valuation_to_target_s_idxs[feature_valuation].add(s_idx)
+            # 3. Compute goals for each group.
+            for _, initial_s_idxs in feature_valuation_to_initial_s_idxs.items():
+                # 3.1. Compute set of initial states, i.e., all s such that f(s) = f,
                 if not rule.evaluate_conditions(state_space.get_states()[next(iter(initial_s_idxs))], instance_data.denotations_caches):
                     continue
-                # 2.2. Compute set of goal states, i.e., all s' such that (f(s), f(s')) satisfies E.
+                # 3.2. Compute set of goal states, i.e., all s' such that (f(s), f(s')) satisfies E.
                 goal_s_idxs = set()
-                for _, target_s_idxs in feature_valuation_to_s_idxs.items():
+                for _, target_s_idxs in feature_valuation_to_target_s_idxs.items():
                     if not rule.evaluate_effects(state_space.get_states()[next(iter(initial_s_idxs))], state_space.get_states()[next(iter(target_s_idxs))], instance_data.denotations_caches):
                         continue
                     goal_s_idxs.update(target_s_idxs)
                 if not goal_s_idxs:
                     continue
 
-                # 3. Compute goal distances of all initial states.
-                # Do backward search from goal states until all initial states are reached.
+                # 4. Compute goal distances of all initial states.
                 old_goal_distances = instance_data.goal_distances
                 old_goal_state_indices = instance_data.state_space.get_goal_state_indices()
                 instance_data.state_space.set_goal_state_indices(goal_s_idxs)
                 instance_data.goal_distances = instance_data.state_space.compute_goal_distances()
-                # sort initial states by distance
+                # 4. Sort initial states by distance and then instantiate the subproblem
                 sorted_initial_s_idxs = sorted(initial_s_idxs, key=lambda x : -instance_data.goal_distances.get(x, math.inf))
                 for initial_s_idx in sorted_initial_s_idxs:
                     if initial_s_idx in covered_initial_s_idxs:

@@ -12,7 +12,7 @@ def experiments():
     strips_base = update_dict(
         base,
         domain_filename=BENCHMARK_DIR / "spanner" / "domain.pddl",
-        task_dir = BENCHMARK_DIR / "spanner" / "instances_debug"
+        task_dir = BENCHMARK_DIR / "spanner" / "instances"
     )
 
     exps["sketch"] = update_dict(

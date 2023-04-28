@@ -1,5 +1,0 @@
-(:policy
-(:boolean_features )
-(:numerical_features "n_concept_distance(c_one_of(rooma),r_primitive(at,0,1),c_primitive(at-robby,0))""n_count(r_primitive(carry,0,1))" )
-(:rule (:conditions (:c_n_gt 0) (:c_n_eq 1)) (:effects (:e_n_dec 0)))
-)

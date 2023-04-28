@@ -4,3 +4,4 @@ clingo
 learning/learner/libs/tarski
 jsonpickle
 termcolor
+numpy

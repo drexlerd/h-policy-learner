@@ -94,7 +94,8 @@ for planner, _ in IMAGES:
     for task in suites.build_suite(BENCHMARKS_DIR, SUITE):
         for w in range(0,3):
             sketch_hierarchical_dir = SKETCHES_DIR / task.domain / f"width_{w}" / "hierarchical_sketch"
-            if not sketch_hierarchical_dir.is_dir(): continue
+            if not sketch_hierarchical_dir.is_dir(): 
+                continue
             run = exp.add_run()
             run.add_resource("domain", task.domain_file, "domain.pddl")
             run.add_resource("problem", task.problem_file, "problem.pddl")

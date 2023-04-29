@@ -15,23 +15,6 @@ def experiments():
         task_dir = BENCHMARK_DIR / "spanner" / "instances"
     )
 
-    exps["sketch"] = update_dict(
-        strips_base,
-        pipeline="sketch_pipeline",
-        instance_filenames=list(strips_base["task_dir"].iterdir()),
-    )
-
-    exps["sketch_debug"] = update_dict(
-        strips_base,
-        pipeline="sketch_pipeline",
-        instance_filenames=list(strips_base["task_dir"].iterdir()),
-        generate_features=False,
-        add_features=["n_count(c_and(c_primitive(tightened_g,0),c_not(c_primitive(tightened,0))))",  # 4
-                        "n_count(r_primitive(at,0,1))",  # 2
-                        "b_empty(c_some(r_primitive(at,0,1),c_all(r_inverse(r_primitive(at,0,1)),c_primitive(man,0)))))"  # 7
-        ],
-    )
-
     exps["hierarchy"] = update_dict(
         strips_base,
         pipeline="hierarchy_pipeline",

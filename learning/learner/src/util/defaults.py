@@ -15,8 +15,6 @@ from learner.src.instance_data.instance_information import InstanceInformation
 def generate_experiment(domain_filename: str, instance_filenames: List[str], workspace: str, **kwargs):
     """ """
     defaults = dict(
-        pipeline="sketch_pipeline",
-
         # The overall time limit in seconds
         timeout=6*24*60*60,
 

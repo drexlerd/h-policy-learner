@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 from typing import List
 
-from learner.src.util.command import create_experiment_workspace, change_working_directory, create_sym_link
+from learner.src.util.command import create_experiment_workspace, change_working_directory
 
 from learner.src.driver import Experiment, BASEDIR
 from learner.src.steps import generate_pipeline
@@ -32,7 +32,7 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
 
         width=2,
 
-        max_num_rules=4,
+        max_num_rules=5,
 
         asp_name="h-policy-explicit.lp",
 

@@ -40,13 +40,13 @@ class SubproblemInstanceDataFactory:
                     else:
                         fringe_state_indices.add(target_idx)
         return state_indices, fringe_state_indices
+    
 
     def make_subproblems(self, config, instance_datas: List[InstanceData], sketch: Sketch, rule: dlplan.Rule, width: int):
         features = list(sketch.booleans) + list(sketch.numericals)
         subproblem_instance_datas = []
         for instance_data in instance_datas:
             state_space = instance_data.state_space
-            goal_distances = instance_data.goal_distances
             covered_initial_s_idxs = set()
             # 1. Group initial states with same feature valuation together
             # such that we can compute their "potential" goals in a single iteration
@@ -88,6 +88,11 @@ class SubproblemInstanceDataFactory:
                     if not instance_data.is_alive(initial_s_idx):
                         continue
                     name = f"{instance_data.instance_information.name}-{initial_s_idx}"
+
+                    #initial_state_distances = instance_data.state_space.compute_distances({initial_s_idx}, True, True)
+                    #print(initial_state_distances)
+                    #state_indices = initial_state_distances.keys()
+                    
                     state_indices, fringe_state_indices = self._compute_delta_optimal_states(instance_data, config.delta, initial_s_idx, instance_data.goal_distances)
                     state_indices_opt, fringe_state_indices_opt = self._compute_delta_optimal_states(instance_data, 1, initial_s_idx, instance_data.goal_distances)
 

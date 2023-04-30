@@ -58,21 +58,9 @@ class SubproblemInstanceDataFactory:
                         continue
                     name = f"{instance_data.instance_information.name}-{initial_s_idx}"
 
+                    # 5. Compute states and initial states covered by these states.
                     initial_state_distances = instance_data.state_space.compute_distances({initial_s_idx}, True, True)
                     state_indices = set(initial_state_distances.keys())
-
-                    # Use tuple graph to obtain deadends that are further away
-                    # since we do not want to end up in a deadend
-                    # In general, one should use all deadend states.
-                    deadends = set()
-                    for root_idx in state_indices:
-                        if root_idx in instance_data.tuple_graphs:
-                            tuple_graph = instance_data.tuple_graphs[root_idx]
-                            for s_prime_idxs in tuple_graph.get_state_indices_by_distance():
-                                for s_prime_idx in s_prime_idxs:
-                                    if instance_data.is_deadend(s_prime_idx):
-                                        deadends.add(s_prime_idx)
-
                     subproblem_initial_s_idxs = set()
                     for initial_s_prime_idx in initial_s_idxs:
                         if initial_s_prime_idx in state_indices and instance_data.is_alive(initial_s_prime_idx):
@@ -83,7 +71,7 @@ class SubproblemInstanceDataFactory:
                     # 6. Instantiate subproblem for initial state and subgoals.
                     subproblem_state_space = dlplan.StateSpace(
                         instance_data.state_space,
-                        state_indices.union(deadends))
+                        state_indices)
                     subproblem_state_space.set_initial_state_index(initial_s_idx)
                     subproblem_state_space.set_goal_state_indices(goal_s_idxs.intersection(state_indices))
                     subproblem_goal_distances = subproblem_state_space.compute_goal_distances()

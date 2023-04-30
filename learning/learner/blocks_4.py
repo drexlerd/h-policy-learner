@@ -60,6 +60,7 @@ def experiments():
                       "n_count(c_primitive(on-table,0))",
                       "n_count(c_primitive(clear,0))",
                       "n_count(c_some(r_inverse(r_primitive(on_g,0,1)),c_primitive(holding,0)))",
+                      "b_empty(c_and(c_not(c_equal(r_primitive(on,0,1),r_primitive(on_g,0,1))),c_primitive(clear,0)))",
                       "b_empty(r_and(r_primitive(on,0,1),r_primitive(on_g,0,1)))",  # goal separating feature
         ],
     )

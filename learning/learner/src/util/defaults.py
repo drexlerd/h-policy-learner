@@ -19,7 +19,7 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
         timeout=6*24*60*60,
 
         # The maximum states that we allows in each complete state space.
-        max_states_per_instance=2000,
+        max_states_per_instance=1000,
 
         # Feature generator settings
         concept_complexity_limit=9,
@@ -32,7 +32,7 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
 
         width=2,
 
-        max_num_rules=5,
+        max_num_rules=4,
 
         asp_name="h-policy-explicit.lp",
 

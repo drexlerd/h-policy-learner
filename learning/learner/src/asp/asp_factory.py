@@ -201,20 +201,23 @@ class ASPFactory:
         facts.extend(self.make_tuple_graph_facts(domain_data, instance_datas))
         return facts
 
-    def ground(self, facts=[]):
+    def ground(self, facts):
         facts.append(("base", []))
         self.ctl.ground(facts)  # ground a set of facts
 
     def solve(self):
         """ https://potassco.org/clingo/python-api/current/clingo/solving.html """
         with self.ctl.solve(yield_=True, async_=True) as solve_handle:
+            model = None
             while True:
-                solve_handle.resume()
+                if model is not None:
+                    solve_handle.resume()  # discards last model, hence should not be called in first iteration.
                 _ = solve_handle.wait()
                 model = solve_handle.model()
                 if model.optimality_proven:
                     return model.symbols(shown=True), ClingoExitCode.SATISFIABLE
                 if model is None:
+                    print(solve_handle.get())
                     return None, ClingoExitCode.UNSATISFIABLE
 
     def print_statistics(self):

@@ -11,13 +11,13 @@ from learner.src.iteration_data.domain_feature_data import DomainFeatureData
 
 
 def run(config, data, rng):
-    logging.info(colored(f"Initializing DomainData...", "blue", "on_grey"))
+    logging.info(colored("Initializing DomainData...", "blue", "on_grey"))
     domain_data = DomainDataFactory().make_domain_data(config)
-    logging.info(colored(f"..done", "blue", "on_grey"))
+    logging.info(colored("..done", "blue", "on_grey"))
 
-    logging.info(colored(f"Initializing InstanceDatas...", "blue", "on_grey"))
+    logging.info(colored("Initializing InstanceDatas...", "blue", "on_grey"))
     instance_datas = InstanceDataFactory().make_instance_datas(config, domain_data)
-    logging.info(colored(f"..done", "blue", "on_grey"))
+    logging.info(colored("..done", "blue", "on_grey"))
 
     root_hierarchical_sketch = HierarchicalSketch(
         config.workspace / "learning" / "hierarchical_sketch",  # learning workspace

@@ -60,7 +60,7 @@ class Sketch:
                     if subgoal:
                         bounded_by_rule = True
                         if min_compatible_distance < tuple_distance:
-                            print(colored(f"Optimal width disproven.", "red", "on_grey"))
+                            print(colored("Optimal width disproven.", "red", "on_grey"))
                             print("Closest subgoal state distance:", min_compatible_distance)
                             print("Closest subgoal tuple distance:", tuple_distance)
                             return False
@@ -69,13 +69,13 @@ class Sketch:
                     bounded = True
                     break
             if not bounded_by_rule:
-                print(colored(f"State has unbounded width for a rule", "red", "on_grey"))
+                print(colored("State has unbounded width for a rule", "red", "on_grey"))
                 print("Rule:", rule)
                 print("Instance:", instance_data.id, instance_data.instance_information.name)
                 print("State:", instance_data.state_space.get_states()[root_idx])
                 return False
         if not bounded:
-            print(colored(f"State has unbounded width", "red", "on_grey"))
+            print(colored("State has unbounded width", "red", "on_grey"))
             print("Instance:", instance_data.id, instance_data.instance_information.name)
             print("State:", instance_data.state_space.get_states()[root_idx])
             return False

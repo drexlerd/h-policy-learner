@@ -217,7 +217,6 @@ class ASPFactory:
                 if model is None:
                     return None, ClingoExitCode.UNSATISFIABLE
 
-    
     def print_statistics(self):
         print("Clingo statistics:")
         print(self.ctl.statistics["summary"])

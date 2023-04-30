@@ -36,10 +36,6 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
 
         asp_name="h-policy-explicit.lp",
 
-        # The degree of suboptimality used for pruning from the initial state.
-        # In the paper by Frances et. al, it is also used to encode acyclicity
-        delta = float("inf"),
-
         add_features=[],
         generate_features=True,
 

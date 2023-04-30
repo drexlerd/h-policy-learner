@@ -62,6 +62,5 @@ def experiments():
                       "n_count(c_some(r_inverse(r_primitive(on_g,0,1)),c_primitive(holding,0)))",
                       "b_empty(r_and(r_primitive(on,0,1),r_primitive(on_g,0,1)))",  # goal separating feature
         ],
-        max_num_rules=5,
     )
     return exps

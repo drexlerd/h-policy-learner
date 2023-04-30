@@ -11,37 +11,6 @@ from learner.src.iteration_data.sketch import Sketch
 
 
 class SubproblemInstanceDataFactory:
-    def _compute_delta_optimal_states(self, instance_data: InstanceData, delta: float, s_idx: int, goal_distances: Dict[int, int]):
-        """ Computes all states that are delta optimal for a given state `s_idx` """
-        state_space = instance_data.state_space
-        fringe_state_indices = set()
-        state_indices = set()
-        state_indices.add(s_idx)
-        optimal_cost = goal_distances.get(s_idx, math.inf)
-        assert optimal_cost != math.inf
-        delta_optimal_cost = delta * optimal_cost
-        queue = deque()
-        queue.append(s_idx)
-        forward_distances = dict()
-        forward_distances[s_idx] = 0
-        forward_successors = state_space.get_forward_successor_state_indices()
-        while queue:
-            source_idx = queue.popleft()
-            source_cost = forward_distances.get(source_idx)
-            for target_idx in forward_successors.get(source_idx, []):
-                if target_idx not in forward_distances:
-                    forward_distances[target_idx] = source_cost + 1
-                    target_distance = goal_distances.get(target_idx, math.inf)
-                    if source_cost + target_distance <= delta_optimal_cost:
-                        state_indices.add(target_idx)
-                        if target_distance != 0:
-                            # not not add states after the goal.
-                            queue.append(target_idx)
-                    else:
-                        fringe_state_indices.add(target_idx)
-        return state_indices, fringe_state_indices
-    
-
     def make_subproblems(self, config, instance_datas: List[InstanceData], sketch: Sketch, rule: dlplan.Rule, width: int):
         features = list(sketch.booleans) + list(sketch.numericals)
         subproblem_instance_datas = []
@@ -89,12 +58,8 @@ class SubproblemInstanceDataFactory:
                         continue
                     name = f"{instance_data.instance_information.name}-{initial_s_idx}"
 
-                    #initial_state_distances = instance_data.state_space.compute_distances({initial_s_idx}, True, True)
-                    #print(initial_state_distances)
-                    #state_indices = initial_state_distances.keys()
-                    
-                    state_indices, fringe_state_indices = self._compute_delta_optimal_states(instance_data, config.delta, initial_s_idx, instance_data.goal_distances)
-                    state_indices_opt, fringe_state_indices_opt = self._compute_delta_optimal_states(instance_data, 1, initial_s_idx, instance_data.goal_distances)
+                    initial_state_distances = instance_data.state_space.compute_distances({initial_s_idx}, True, True)
+                    state_indices = set(initial_state_distances.keys())
 
                     # Use tuple graph to obtain deadends that are further away
                     # since we do not want to end up in a deadend
@@ -110,13 +75,7 @@ class SubproblemInstanceDataFactory:
 
                     subproblem_initial_s_idxs = set()
                     for initial_s_prime_idx in initial_s_idxs:
-                        if initial_s_prime_idx in state_indices_opt:
-                            if initial_s_prime_idx in goal_s_idxs:
-                                # goal state in subproblem can still be initial state in other subproblem, e.g.,
-                                # having delivered one package
-                                continue
-                            if not instance_data.is_alive(initial_s_prime_idx):
-                                continue
+                        if initial_s_prime_idx in state_indices and instance_data.is_alive(initial_s_prime_idx):
                             subproblem_initial_s_idxs.add(initial_s_prime_idx)
                     assert initial_s_idx in subproblem_initial_s_idxs
                     covered_initial_s_idxs.update(subproblem_initial_s_idxs)

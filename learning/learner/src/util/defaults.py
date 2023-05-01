@@ -20,6 +20,7 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
 
         # The maximum states that we allows in each complete state space.
         max_states_per_instance=1000,
+        max_time_per_instance=10,
 
         # Feature generator settings
         concept_complexity_limit=9,

@@ -1,6 +1,5 @@
 #!/bin/bash
-set -euo pipefail
-
+#
 # e.g. dfsplan=${PARTITION}
 PARTITION=$1
 

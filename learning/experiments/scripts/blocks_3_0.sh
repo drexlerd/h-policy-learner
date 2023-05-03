@@ -1,6 +1,5 @@
 #!/bin/bash
-set -euo pipefail
-
+#
 #SBATCH -J blocks_3_0
 #SBATCH -t 0-06:00:00
 #SBATCH -C thin --exclusive

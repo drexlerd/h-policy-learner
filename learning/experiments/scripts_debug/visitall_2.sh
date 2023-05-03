@@ -1,6 +1,5 @@
 #!/bin/bash
-set -euo pipefail
-
+#
 #SBATCH -J visitall_2
 #SBATCH -t 0-06:00:00
 #SBATCH -C thin --exclusive

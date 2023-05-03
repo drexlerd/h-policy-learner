@@ -1,7 +1,6 @@
 #!/bin/bash
 
-set -euo pipefail
-
+#
 if [[ $# != 6 ]]; then
     echo "usage: $(basename "$0") image domain_file problem_file sketch_file width plan_file" 1>&2
     exit 2

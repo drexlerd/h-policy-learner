@@ -39,8 +39,7 @@ Stage: run
 
 %runscript
     #! /bin/bash
-    set -euo pipefail
-
+    #
     DOMAIN_FILE="$1"
     PROBLEM_FILE="$2"
     PLAN_FILE="$3"

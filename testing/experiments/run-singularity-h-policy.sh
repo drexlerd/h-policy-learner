@@ -1,7 +1,6 @@
 #!/bin/bash
 
-set -euo pipefail
-
+#
 if [[ $# != 5 ]]; then
     echo "usage: $(basename "$0") image domain_file problem_file hierarchical_sketch_dir plan_file" 1>&2
     exit 2

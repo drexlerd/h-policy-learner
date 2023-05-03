@@ -10,7 +10,7 @@ def experiments():
 
     strips_base = update_dict(
         base,
-        domain_filename=BENCHMARK_DIR / "miconic" / "domain-with-fix.pddl",
+        domain_filename=BENCHMARK_DIR / "miconic" / "domain.pddl",
         task_dir=BENCHMARK_DIR / "miconic" / "instances",
         task_dir_debug=BENCHMARK_DIR / "miconic" / "instances_debug",
     )

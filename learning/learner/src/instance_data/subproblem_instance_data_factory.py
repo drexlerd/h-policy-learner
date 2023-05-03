@@ -16,67 +16,70 @@ class SubproblemInstanceDataFactory:
         subproblem_instance_datas = []
         for instance_data in instance_datas:
             state_space = instance_data.state_space
-            covered_initial_s_idxs = set()
-            # 1. Group initial states with same feature valuation together
-            # such that we can compute their "potential" goals in a single iteration
-            # "potential" in the sense that reachability must still be checked.
-            feature_valuation_to_initial_s_idxs = defaultdict(set)
+            covered_relevant_s_idxs = set()
+            # 1. Group relevant states with same feature valuation together
+            feature_valuation_to_relevant_s_idxs = defaultdict(set)
             for s_idx in sketch.compute_r_reachable_states(instance_data):
                 if instance_data.is_goal(s_idx):
-                    # We do not want to drive goal states to other goal states
-                    # However, goal states in this instance can be initial states in other instances.
+                    # Definition of relevant states: state must be nongoal.
+                    continue
+                if not rule.evaluate_conditions(state_space.get_states()[s_idx], instance_data.denotations_caches):
+                    # Definition of relevant states: state must satisfy condition of rule
                     continue
                 state = state_space.get_states()[s_idx]
                 feature_valuation = tuple([feature.evaluate(state) for feature in features])
-                feature_valuation_to_initial_s_idxs[feature_valuation].add(s_idx)
-            # 2. Group target states with same feature valuation together
+                feature_valuation_to_relevant_s_idxs[feature_valuation].add(s_idx)
+            # 2. Group subgoal states with same feature valuation together
             feature_valuation_to_target_s_idxs = defaultdict(set)
             for s_idx, state in instance_data.state_space.get_states().items():
                 feature_valuation = tuple([feature.evaluate(state) for feature in features])
                 feature_valuation_to_target_s_idxs[feature_valuation].add(s_idx)
             # 3. Compute goals for each group.
-            for _, initial_s_idxs in feature_valuation_to_initial_s_idxs.items():
-                # 3.1. Compute set of initial states, i.e., all s such that f(s) = f,
-                if not rule.evaluate_conditions(state_space.get_states()[next(iter(initial_s_idxs))], instance_data.denotations_caches):
-                    continue
+            for _, relevant_s_idxs in feature_valuation_to_relevant_s_idxs.items():
                 # 3.2. Compute set of goal states, i.e., all s' such that (f(s), f(s')) satisfies E.
                 goal_s_idxs = set()
                 for _, target_s_idxs in feature_valuation_to_target_s_idxs.items():
-                    if not rule.evaluate_effects(state_space.get_states()[next(iter(initial_s_idxs))], state_space.get_states()[next(iter(target_s_idxs))], instance_data.denotations_caches):
+                    if not rule.evaluate_effects(state_space.get_states()[next(iter(relevant_s_idxs))], state_space.get_states()[next(iter(target_s_idxs))], instance_data.denotations_caches):
                         continue
                     goal_s_idxs.update(target_s_idxs)
                 if not goal_s_idxs:
                     continue
 
-                # 4. Compute goal distances of all initial states.
+                # 4. Compute goal distances of all relevant states.
                 old_goal_distances = instance_data.goal_distances
                 old_goal_state_indices = instance_data.state_space.get_goal_state_indices()
                 instance_data.state_space.set_goal_state_indices(goal_s_idxs)
                 instance_data.goal_distances = instance_data.state_space.compute_goal_distances()
-                # 4. Sort initial states by distance and then instantiate the subproblem
-                sorted_initial_s_idxs = sorted(initial_s_idxs, key=lambda x : -instance_data.goal_distances.get(x, math.inf))
-                for initial_s_idx in sorted_initial_s_idxs:
-                    if initial_s_idx in covered_initial_s_idxs:
-                        continue
-                    if not instance_data.is_alive(initial_s_idx):
+                # 4. Sort relevant states by distance and then instantiate the subproblem
+                sorted_relevant_s_idxs = sorted(relevant_s_idxs, key=lambda x : -instance_data.goal_distances.get(x, math.inf))
+                for initial_s_idx in sorted_relevant_s_idxs:
+                    if initial_s_idx in covered_relevant_s_idxs:
                         continue
                     name = f"{instance_data.instance_information.name}-{initial_s_idx}"
 
                     # 5. Compute states and initial states covered by these states.
                     initial_state_distances = instance_data.state_space.compute_distances({initial_s_idx}, True, True)
+                    # All I-reachable states make it into the instance
                     state_indices = set(initial_state_distances.keys())
-                    subproblem_initial_s_idxs = set()
-                    for initial_s_prime_idx in initial_s_idxs:
-                        if initial_s_prime_idx in state_indices and instance_data.is_alive(initial_s_prime_idx):
-                            subproblem_initial_s_idxs.add(initial_s_prime_idx)
-                    assert initial_s_idx in subproblem_initial_s_idxs
-                    covered_initial_s_idxs.update(subproblem_initial_s_idxs)
+                    # Extend initial states by uncovered initial states
+                    subproblem_initial_s_idxs = {initial_s_idx,}
+                    covered_relevant_s_idxs.add(initial_s_idx)
+                    for initial_s_prime_idx in relevant_s_idxs:
+                        if initial_s_prime_idx not in state_indices:
+                            # State is not part of the subproblem
+                            continue
+                        elif initial_s_prime_idx in covered_relevant_s_idxs:
+                            # Dont cover initial states multiple times
+                            continue
+                        subproblem_initial_s_idxs.add(initial_s_prime_idx)
+                        covered_relevant_s_idxs.add(initial_s_prime_idx)
 
                     # 6. Instantiate subproblem for initial state and subgoals.
                     subproblem_state_space = dlplan.StateSpace(
                         instance_data.state_space,
                         state_indices)
                     subproblem_state_space.set_initial_state_index(initial_s_idx)
+                    # Goal states were overapproximated and must be restricted to those that are I-reachable
                     subproblem_state_space.set_goal_state_indices(goal_s_idxs.intersection(state_indices))
                     subproblem_goal_distances = subproblem_state_space.compute_goal_distances()
                     subproblem_instance_information = InstanceInformation(

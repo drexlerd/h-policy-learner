@@ -7,4 +7,4 @@ set -euo pipefail
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-user=dominik.drexler@liu.se
 
-bash ./runner.sh delivery hierarchy 2
+bash ./delivery.sh delivery hierarchy 2

@@ -12,7 +12,8 @@ def experiments():
     strips_base = update_dict(
         base,
         domain_filename=BENCHMARK_DIR / "reward" / "domain.pddl",
-        task_dir = BENCHMARK_DIR / "reward" / "instances_debug"
+        task_dir = BENCHMARK_DIR / "reward" / "instances",
+        task_dir_debug = BENCHMARK_DIR / "reward" / "instances_debug"
     )
 
     exps["hierarchy"] = update_dict(
@@ -22,7 +23,7 @@ def experiments():
 
     exps["hierarchy_debug"] = update_dict(
         strips_base,
-        instance_filenames=list(strips_base["task_dir"].iterdir()),
+        instance_filenames=list(strips_base["task_dir_debug"].iterdir()),
         generate_features=False,
         add_features=["n_count(c_primitive(reward,0))",
                       "n_concept_distance(c_primitive(at,0),r_restrict(r_primitive(adjacent,0,1),c_primitive(unblocked,0)),c_primitive(reward,0))",

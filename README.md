@@ -30,6 +30,7 @@ sudo ./build-planners.sh
 
 ## Running the Learning Experiments
 
+We provide scripts to run the learning experiments either locally or on a compute cluster.
 
 ```console
 cd learning/experiments/scripts
@@ -65,6 +66,17 @@ cd learning/experiments/scripts
 ./visitall_0.sh
 ./visitall_1.sh
 ./visitall_2.sh
+```
+
+## Running the Debug Learning Experiments
+
+We provide scripts to run debug learning experiments in a restricted setting
+to be able to spot errors before running larger experiments on a compute cluster.
+In the restricted setting, we use a handcrafted set of features and instances.
+
+```console
+cd learning/experiments/scripts_debug
+./run_all.sh
 ```
 
 ## Running the Testing Experiments

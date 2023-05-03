@@ -22,6 +22,10 @@ class SubproblemInstanceDataFactory:
             # "potential" in the sense that reachability must still be checked.
             feature_valuation_to_initial_s_idxs = defaultdict(set)
             for s_idx in sketch.compute_r_reachable_states(instance_data):
+                if instance_data.is_goal(s_idx):
+                    # We do not want to drive goal states to other goal states
+                    # However, goal states in this instance can be initial states in other instances.
+                    continue
                 state = state_space.get_states()[s_idx]
                 feature_valuation = tuple([feature.evaluate(state) for feature in features])
                 feature_valuation_to_initial_s_idxs[feature_valuation].add(s_idx)

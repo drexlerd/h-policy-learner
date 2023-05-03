@@ -1,9 +1,10 @@
 #!/bin/bash
-#
+set -euo pipefail
+
 #SBATCH -J miconic_1
 #SBATCH -t 3-00:00:00
 #SBATCH -C thin --exclusive
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-user=dominik.drexler@liu.se
 
-bash ./miconic.sh 1
+bash ./runner.sh miconic hierarchy 1

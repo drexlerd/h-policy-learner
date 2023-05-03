@@ -59,8 +59,9 @@ bool SketchSubgoal::is_goal(const State& current_state) const {
         m_propositional_task->compute_dlplan_state(current_state),
         m_satisfied_rules,
         m_propositional_task->get_denotations_caches()) != nullptr;
-    bool is_topgoal = task_properties::is_goal_state(TaskProxy(*tasks::g_root_task), current_state);
-    return is_subgoal || is_topgoal;
+    //bool is_topgoal = task_properties::is_goal_state(TaskProxy(*tasks::g_root_task), current_state);
+    //return is_subgoal || is_topgoal;
+    return is_subgoal;
 }
 
 void SketchSubgoal::set_propositional_task(std::shared_ptr<extra_tasks::PropositionalTask> propositional_task) {

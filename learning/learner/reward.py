@@ -4,7 +4,7 @@ from learner.src.driver import BENCHMARK_DIR
 
 def experiments():
     base = dict(
-        domain_dir="reward",
+        pipeline="hierarchy_pipeline",
     )
 
     exps = dict()
@@ -17,17 +17,16 @@ def experiments():
 
     exps["hierarchy"] = update_dict(
         strips_base,
-        pipeline="hierarchy_pipeline",
         instance_filenames=list(strips_base["task_dir"].iterdir()),
     )
 
     exps["hierarchy_debug"] = update_dict(
         strips_base,
-        pipeline="hierarchy_pipeline",
         instance_filenames=list(strips_base["task_dir"].iterdir()),
         generate_features=False,
-        add_features=["b_empty(c_primitive(reward,0))",
-                      "b_empty(c_primitive(picked,0))",
+        add_features=["n_count(c_primitive(reward,0))",
+                      "n_concept_distance(c_primitive(at,0),r_restrict(r_primitive(adjacent,0,1),c_primitive(unblocked,0)),c_primitive(reward,0))",
+                      "b_empty(c_primitive(reward,0))"  # goal separating feature
         ],
     )
 

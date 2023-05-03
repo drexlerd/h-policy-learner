@@ -55,7 +55,7 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
                 instance_data.instance_information.filename,
                 workspace / f"iteration_{i}")
             instance_data.set_state_space(instance_data.state_space, True)
-            print("     id:", instance_data.id, "name:", instance_data.instance_information.name)
+            print("     id:", instance_data.id, "name:", instance_data.instance_information.name, "initial_states:", instance_data.initial_s_idxs)
 
         logging.info(colored("Initializing DomainFeatureData...", "blue", "on_grey"))
         domain_feature_data_factory = DomainFeatureDataFactory()

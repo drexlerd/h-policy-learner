@@ -48,7 +48,7 @@ ATTRIBUTES = [
 
 DIR = Path(__file__).resolve().parent
 BENCHMARKS_DIR = DIR.parent / "benchmarks"
-SKETCHES_DIR = DIR.parent.parent / "learning" / "data_kr2023_3" / "sketches_hierarchical"
+SKETCHES_DIR = DIR.parent.parent / "learning" / "data_kr2023_2" / "sketches_hierarchical"
 IMAGES_DIR = DIR.parent / "planners"
 print(BENCHMARKS_DIR)
 print(SKETCHES_DIR)
@@ -94,7 +94,7 @@ for planner, _ in IMAGES:
     for task in suites.build_suite(BENCHMARKS_DIR, SUITE):
         for w in range(0,3):
             sketch_hierarchical_dir = SKETCHES_DIR / task.domain / f"width_{w}" / "hierarchical_sketch"
-            if not sketch_hierarchical_dir.is_dir(): 
+            if not sketch_hierarchical_dir.is_dir():
                 continue
             run = exp.add_run()
             run.add_resource("domain", task.domain_file, "domain.pddl")

@@ -135,7 +135,7 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
 
     logging.info(colored("Summary:", "green", "on_grey"))
     learning_statistics = LearningStatistics(
-        num_training_instances=len(selected_instance_datas),
+        num_training_instances=len(instance_datas),
         num_selected_training_instances=len(selected_instance_datas),
         num_states_in_selected_training_instances=sum([len(instance_data.state_space.get_states()) for instance_data in selected_instance_datas]),
         num_features_in_pool=len(domain_data.domain_feature_data.boolean_features.features_by_index) + len(domain_data.domain_feature_data.numerical_features.features_by_index),

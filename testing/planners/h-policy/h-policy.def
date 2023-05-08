@@ -39,7 +39,9 @@ From: ubuntu:22.04
 	cd /downward-h-policy
 	rm -rf builds
 	rm -rf libs/dlplan/builds
+	rm -rf libs/dlplan/installs
 	./build.py
+	strip --strip-all builds/release/bin/downward
 	cd /
 
 	ln -frs /downward-h-policy/fast-downward.py /fast-downward.py

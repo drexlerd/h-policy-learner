@@ -90,8 +90,9 @@ def generate_domain(height, width, npackages, add_fuel=True):
         problem.init.add(adjacent, cell_name(c, d), cell_name(a, b))
 
     cd = coord_objects[:]
-    # random.shuffle(cd)
+    random.shuffle(cd)
 
+    # In comparison to previous work, we allow for multiple packages at the same location.
     # Initial positions
     problem.init.add(at, truck, cd[random.randint(0, len(cd)-1)])
     for p in package_objects:
@@ -100,7 +101,7 @@ def generate_domain(height, width, npackages, add_fuel=True):
     problem.init.add(empty, truck)
 
     # Set the problem goal
-    target = cd.pop()
+    target = cd[random.randint(0, len(cd)-1)]
     goal = [at(p, target) for p in package_objects]
     problem.goal = land(*goal, flat=True)
 
@@ -129,18 +130,10 @@ def generate_domain(height, width, npackages, add_fuel=True):
 
 
 def main():
-    #for gridsize in [3, 4, 5, 7, 9]:
-    #    for npacks in [2, 3]:
-    #        for run in range(0, 3):
-    #            problem = generate_domain(gridsize, npackages=npacks, add_fuel=False)
-    #            writer = FstripsWriter(problem)
-    #            writer.write(domain_filename=os.path.join(_CURRENT_DIR_, "domain.pddl"),  # We can overwrite the domain
-    #                         instance_filename=os.path.join(_CURRENT_DIR_, f"instance_{gridsize}_{npacks}_{run}.pddl"),
-    #                         domain_constants=[])
-    for h in range(1,4):
-        for w in range(1,4):
-            for npacks in [1,2]:
-                for run in range(0, 30):
+    for h in range(20,31,5):
+        for w in range(20,31,5):
+            for npacks in range(30,46,5):
+                for run in range(1):
                     problem = generate_domain(h, w, npackages=npacks, add_fuel=False)
                     writer = FstripsWriter(problem)
                     writer.write(domain_filename=os.path.join(_CURRENT_DIR_, "domain.pddl"),  # We can overwrite the domain

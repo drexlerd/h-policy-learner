@@ -12,7 +12,7 @@ def experiments():
         base,
         domain_filename=BENCHMARK_DIR / "miconic" / "domain.pddl",
         task_dir=BENCHMARK_DIR / "miconic" / "instances",
-        task_dir_debug=BENCHMARK_DIR / "miconic" / "instances_debug",
+        task_dir_debug=BENCHMARK_DIR / "miconic" / "instances",
     )
 
     exps["hierarchy"] = update_dict(

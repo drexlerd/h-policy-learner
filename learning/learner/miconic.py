@@ -17,7 +17,7 @@ def experiments():
 
     exps["hierarchy"] = update_dict(
         strips_base,
-        instance_filenames=list(strips_base["task_dir"].iterdir())[:30],
+        instance_filenames=list(strips_base["task_dir"].iterdir()),
     )
 
     exps["hierarchy_debug"] = update_dict(

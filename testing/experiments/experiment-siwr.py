@@ -73,7 +73,7 @@ if project.REMOTE:
 else:
     SUITE = ["blocks_4_clear:p-200-0.pddl", "blocks_4_on:p-200-0.pddl", "delivery:instance_20_25_40_0.pddl", "gripper:p01.pddl", "miconic:p01.pddl", "reward:instance_60x60_0.pddl", "spanner:pfile01-001.pddl", "visitall:p01.pddl"]
     ENV = project.LocalEnvironment(processes=16)
-    TIME_LIMIT = 10
+    TIME_LIMIT = 30
 
 exp = Experiment(environment=ENV)
 exp.add_step("build", exp.build)
@@ -117,7 +117,7 @@ for planner, _ in IMAGES:
                     "{problem}",
                     "{sketch}",
                     w,
-                    "sas_plan",
+                    "plan.ipc",
                 ],
                 time_limit=TIME_LIMIT,
                 memory_limit=MEMORY_LIMIT,

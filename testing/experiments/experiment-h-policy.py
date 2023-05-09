@@ -48,7 +48,7 @@ ATTRIBUTES = [
 
 DIR = Path(__file__).resolve().parent
 BENCHMARKS_DIR = DIR.parent / "benchmarks"
-SKETCHES_DIR = DIR.parent.parent / "learning" / "data_kr2023_2" / "sketches_hierarchical"
+SKETCHES_DIR = DIR.parent.parent / "learning" / "data_kr2023" / "sketches_hierarchical"
 IMAGES_DIR = DIR.parent / "planners"
 print(BENCHMARKS_DIR)
 print(SKETCHES_DIR)

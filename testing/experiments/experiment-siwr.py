@@ -101,7 +101,7 @@ exp.add_resource("run_singularity", singularity_script)
 for planner, _ in IMAGES:
     for task in suites.build_suite(BENCHMARKS_DIR, SUITE):
         for w in range(0,3):
-            sketch_name = f"{task.domain}_{w}.txt"
+            sketch_name = f"sketch_{w}.txt"
             sketch_filename = SKETCHES_DIR / task.domain / sketch_name
             if not sketch_filename.is_file(): continue
             run = exp.add_run()

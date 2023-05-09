@@ -73,8 +73,6 @@ class HierarchicalSketch:
         if self.rule is not None:
             print(self.rule.dlplan_policy.compute_repr())
 
-        print(str(self.zero_cost_domain_feature_data.numerical_features.features_by_index))
-        print(str(self.zero_cost_domain_feature_data.boolean_features.features_by_index))
         # Learn sketch for width k-1
         self.sketch, self.sketch_minimized, self.statistics = learn_sketch(self.config, self.domain_data, self.instance_datas, self.zero_cost_domain_feature_data, self.workspace_learning, self.width - 1)
         write_file(self.workspace_output / "sketch.txt", self.sketch.dlplan_policy.str())

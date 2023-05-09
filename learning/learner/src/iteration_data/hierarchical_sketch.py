@@ -18,6 +18,13 @@ from learner.src.iteration_data.learn_sketch_explicit import learn_sketch
 from learner.src.iteration_data.learn_goal_separating_features import learn_goal_separating_features
 
 
+def add_zero_cost_features(domain_feature_data: DomainFeatureData, booleans: List[dlplan.Boolean], numericals: List[dlplan.Numerical]):
+    for boolean in booleans:
+        domain_feature_data.boolean_features.add_feature(Feature(boolean, 1))
+    for numerical in numericals:
+        domain_feature_data.numerical_features.add_feature(Feature(numerical, 1))
+
+
 class HierarchicalSketch:
     def __init__(self,
         workspace_learning: Path,
@@ -42,24 +49,18 @@ class HierarchicalSketch:
         if rule is None:
             self._initialize_goal_separating_features()
         else:
-            write_file(self.workspace_output / f"rule.txt", self.rule.dlplan_policy.str())
+            write_file(self.workspace_output / "rule.txt", self.rule.dlplan_policy.str())
 
         self.sketch = None
         self.sketch_minimized = None
         self.statistics: LearningStatistics = None
         self.children = []
 
-    def _add_zero_cost_features(self, booleans: List[dlplan.Boolean], numericals: List[dlplan.Numerical]):
-        for boolean in booleans:
-            self.zero_cost_domain_feature_data.boolean_features.add_feature(Feature(boolean, 1))
-        for numerical in numericals:
-            self.zero_cost_domain_feature_data.numerical_features.add_feature(Feature(numerical, 1))
-
     def _initialize_goal_separating_features(self):
         """ Instead of computing rule {-G}->{G} consisting of goal separating features,
             we only compute the goal separating features to be reused in subsequent refinements. """
         booleans, numericals = learn_goal_separating_features(self.config, self.domain_data, self.instance_datas, self.zero_cost_domain_feature_data, self.workspace_learning)
-        self._add_zero_cost_features(booleans, numericals)
+        add_zero_cost_features(self.zero_cost_domain_feature_data, booleans, numericals)
 
     def refine(self):
         """ Decomposes Q_n `self.instance_datas` at current node into subproblems of width `self.width` """
@@ -68,21 +69,21 @@ class HierarchicalSketch:
             # with of current decomposition is 0 => cannot decompose further
             return []
 
-        logging.info(colored(f"Started refining", "red", "on_grey"))
+        logging.info(colored("Started refining", "red", "on_grey"))
         if self.rule is not None:
             print(self.rule.dlplan_policy.compute_repr())
 
+        print(str(self.zero_cost_domain_feature_data.numerical_features.features_by_index))
+        print(str(self.zero_cost_domain_feature_data.boolean_features.features_by_index))
         # Learn sketch for width k-1
         self.sketch, self.sketch_minimized, self.statistics = learn_sketch(self.config, self.domain_data, self.instance_datas, self.zero_cost_domain_feature_data, self.workspace_learning, self.width - 1)
-        write_file(self.workspace_output / f"sketch.txt", self.sketch.dlplan_policy.str())
+        write_file(self.workspace_output / "sketch.txt", self.sketch.dlplan_policy.str())
+        child_zero_cost_domain_feature_data = deepcopy(self.zero_cost_domain_feature_data)
+        add_zero_cost_features(child_zero_cost_domain_feature_data, self.sketch.booleans, self.sketch.numericals)
         # Inductive case: compute children n' of n
         for rule in self.sketch.dlplan_policy.get_rules():
             # compute Q_n' of width k-1
             subproblem_instance_datas = SubproblemInstanceDataFactory().make_subproblems(self.config, self.instance_datas, self.sketch, rule, self.width - 1)
-
-            # copy features into child
-            zero_cost_domain_feature_data = deepcopy(self.zero_cost_domain_feature_data)
-            self._add_zero_cost_features(self.sketch.booleans, self.sketch.numericals)
 
             rule_sketch = self._make_rule_sketch(rule, self.width)
 
@@ -92,7 +93,7 @@ class HierarchicalSketch:
                 self.config,
                 self.domain_data,
                 subproblem_instance_datas,
-                zero_cost_domain_feature_data,
+                child_zero_cost_domain_feature_data,
                 self.width - 1,
                 rule_sketch)
             self.children.append(child)

@@ -31,6 +31,8 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
         time_limit=3600,
         feature_limit=1000000,
 
+        closed_Q=True,
+
         width=2,
 
         max_num_rules=4,

@@ -87,4 +87,4 @@ if __name__ == "__main__":
     print(f'Executing "{" ".join(map(str, command))}"')
     subprocess.run(command)
 
-# ./h-policy.py --domain_file ../../../h-policy-learner/learning/benchmarks/gripper/domain.pddl --instance_file ../../../h-policy-learner/learning/benchmarks/gripper/instances/p-5-0.pddl --hierarchical_sketch_dir ../../../h-policy-learner/learning/learner/workspace_default/output/hierarchical_sketch/ --plan_file plan.txt
+# ./h-policy.py --domain_file ../../../../learning/benchmarks/gripper/domain.pddl --instance_file ../../../../learning/benchmarks/gripper/instances/p-5-0.pddl --hierarchical_sketch_dir ../../../../learning/data_kr2023_2/workspace/gripper_2_9_9_9_9_9/output/hierarchical_sketch/ --plan_file plan.txt

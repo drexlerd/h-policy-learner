@@ -69,7 +69,10 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
 
         logging.info(colored("Initializing InstanceFeatureDatas...", "blue", "on_grey"))
         for instance_data in selected_instance_datas:
-            instance_data.set_feature_valuations(FeatureValuationsFactory().make_feature_valuations(instance_data))
+            state_feature_valuations, boolean_feature_valuations, numerical_feature_valuations = FeatureValuationsFactory().make_feature_valuations(instance_data)
+            instance_data.set_feature_valuations(state_feature_valuations)
+            instance_data.boolean_feature_valuations = boolean_feature_valuations
+            instance_data.numerical_feature_valuations = numerical_feature_valuations
         logging.info(colored("..done", "blue", "on_grey"))
 
         logging.info(colored("Initializing StatePairEquivalenceDatas...", "blue", "on_grey"))
@@ -83,7 +86,7 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
         tuple_graph_equivalence_factory.statistics.print()
         logging.info(colored("..done", "blue", "on_grey"))
 
-        logging.info(colored(f"Initializing TupleGraphEquivalenceMinimizer...", "blue", "on_grey"))
+        logging.info(colored("Initializing TupleGraphEquivalenceMinimizer...", "blue", "on_grey"))
         tuple_graph_equivalence_minimizer = TupleGraphEquivalenceMinimizer()
         for instance_data in selected_instance_datas:
             tuple_graph_equivalence_minimizer.minimize(instance_data)

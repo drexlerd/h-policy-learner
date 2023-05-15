@@ -32,7 +32,8 @@ class StatePairEquivalenceFactory:
         self.statistics = StatePairEquivalenceStatistics()
 
     def make_state_pair_equivalences(self, domain_data: DomainData, instance_datas: List[InstanceData]):
-        policy_builder = domain_data.policy_builder
+        # We have to take a new policy_builder because our feature pool F uses indices 0,...,|F|
+        policy_builder = dlplan.PolicyBuilder()
         policy_boolean_features = [policy_builder.add_boolean_feature(b.dlplan_feature) for b in domain_data.domain_feature_data.boolean_features.features_by_index]
         policy_numerical_features = [policy_builder.add_numerical_feature(n.dlplan_feature) for n in domain_data.domain_feature_data.numerical_features.features_by_index]
         rules = []

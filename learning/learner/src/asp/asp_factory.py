@@ -125,7 +125,7 @@ class ASPFactory:
                     facts.append(("feature_condition", [Number(r_idx), Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index)), Number(3)]))
                     facts.append(("c_eq_rule", [Number(r_idx), Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index))]))
                 else:
-                    raise Exception(f"Cannot parse condition {condition_str}")
+                    raise Exception("Cannot parse condition {condition_str}")
             for effect in rule.get_effects():
                 effect_str = effect.str()
                 result = re.findall(r"\(.* (\d+)\)", effect_str)
@@ -150,7 +150,7 @@ class ASPFactory:
                     facts.append(("feature_effect", [Number(r_idx), Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index)), Number(5)]))
                     facts.append(("e_bot_rule", [Number(r_idx), Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index))]))
                 else:
-                    raise Exception(f"Cannot parse effect {effect_str}")
+                    raise Exception("Cannot parse effect {effect_str}")
         # State pair equivalence facts
         #print("cover:")
         for instance_data in instance_datas:

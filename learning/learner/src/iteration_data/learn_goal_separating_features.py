@@ -17,7 +17,7 @@ from learner.src.domain_data.domain_data import DomainData
 
 
 def compute_state_b_values(booleans: List[dlplan.Boolean], numericals: List[dlplan.Numerical], instance_data: InstanceData, state: dlplan.State):
-    return tuple([boolean.evaluate(state, instance_data.denotations_caches) for boolean in booleans] + [numerical.evaluate(state, instance_data.denotations_caches) > 0 for numerical in numericals])
+    return tuple([boolean.evaluate(state) for boolean in booleans] + [numerical.evaluate(state) > 0 for numerical in numericals])
 
 
 def compute_smallest_unsolved_instance(booleans: List[dlplan.Boolean], numericals: List[dlplan.Numerical], instance_datas: List[InstanceData]):
@@ -85,8 +85,6 @@ def learn_goal_separating_features(config, domain_data, instance_datas, zero_cos
         domain_feature_data_factory = DomainFeatureDataFactory()
         domain_feature_data_factory.make_domain_feature_data_from_instance_datas(config, domain_data, selected_instance_datas)
         domain_feature_data_factory.statistics.print()
-        #for boolean_feature in domain_data.domain_feature_data.boolean_features.features_by_index:
-        #    print(boolean_feature.dlplan_feature.compute_repr())
         for zero_cost_boolean_feature in zero_cost_domain_feature_data.boolean_features.features_by_index:
             domain_data.domain_feature_data.boolean_features.add_feature(zero_cost_boolean_feature)
         for zero_cost_numerical_feature in zero_cost_domain_feature_data.numerical_features.features_by_index:
@@ -95,7 +93,10 @@ def learn_goal_separating_features(config, domain_data, instance_datas, zero_cos
 
         logging.info(colored("Initializing InstanceFeatureDatas...", "blue", "on_grey"))
         for instance_data in selected_instance_datas:
-            instance_data.set_feature_valuations(FeatureValuationsFactory().make_feature_valuations(instance_data))
+            state_feature_valuations, boolean_feature_valuations, numerical_feature_valuations = FeatureValuationsFactory().make_feature_valuations(instance_data)
+            instance_data.set_feature_valuations(state_feature_valuations)
+            instance_data.boolean_feature_valuations = boolean_feature_valuations
+            instance_data.numerical_feature_valuations = numerical_feature_valuations
         logging.info(colored("..done", "blue", "on_grey"))
 
         asp_factory = ASPFactory()

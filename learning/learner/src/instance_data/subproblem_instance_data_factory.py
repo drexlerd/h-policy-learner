@@ -11,7 +11,7 @@ from learner.src.iteration_data.sketch import Sketch
 
 
 class SubproblemInstanceDataFactory:
-    def make_subproblems(self, config, instance_datas: List[InstanceData], sketch: Sketch, rule: dlplan.Rule, width: int):
+    def make_subproblems(self, config, instance_datas: List[InstanceData], sketch: Sketch, rule: dlplan.Rule, r_idx: int, width: int):
         features = list(sketch.dlplan_policy.get_booleans()) + list(sketch.dlplan_policy.get_numericals())
         subproblem_instance_datas = []
         for instance_data in instance_datas:
@@ -23,7 +23,7 @@ class SubproblemInstanceDataFactory:
                 if instance_data.is_goal(s_idx):
                     # Definition of relevant states: state must be nongoal.
                     continue
-                if not rule.evaluate_conditions(state_space.get_states()[s_idx], instance_data.denotations_caches):
+                if not rule.evaluate_conditions(state_space.get_states()[s_idx]):
                     # Definition of relevant states: state must satisfy condition of rule
                     continue
                 state = state_space.get_states()[s_idx]
@@ -39,7 +39,7 @@ class SubproblemInstanceDataFactory:
                 # 3.2. Compute set of goal states, i.e., all s' such that (f(s), f(s')) satisfies E.
                 goal_s_idxs = set()
                 for _, target_s_idxs in feature_valuation_to_target_s_idxs.items():
-                    if not rule.evaluate_effects(state_space.get_states()[next(iter(relevant_s_idxs))], state_space.get_states()[next(iter(target_s_idxs))], instance_data.denotations_caches):
+                    if not rule.evaluate_effects(state_space.get_states()[next(iter(relevant_s_idxs))], state_space.get_states()[next(iter(target_s_idxs))]):
                         continue
                     goal_s_idxs.update(target_s_idxs)
                 if not goal_s_idxs:
@@ -85,7 +85,7 @@ class SubproblemInstanceDataFactory:
                     subproblem_instance_information = InstanceInformation(
                         name,
                         instance_data.instance_information.filename,
-                        instance_data.instance_information.workspace / f"rule_{rule.get_index()}" / name)
+                        instance_data.instance_information.workspace / f"rule_{r_idx}" / name)
                     subproblem_instance_data = InstanceData(
                         len(subproblem_instance_datas),
                         instance_data.domain_data,

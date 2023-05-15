@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 
 @dataclass
-class FeatureValuation:
+class StateFeatureValuation:
     s_idx: int
     boolean_feature_valuations: List[bool]
     numerical_feature_valuations: List[int]

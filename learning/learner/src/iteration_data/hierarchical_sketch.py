@@ -83,9 +83,9 @@ class HierarchicalSketch:
         # Inductive case: compute children n' of n
         for r_idx, rule in enumerate(self.sketch.dlplan_policy.get_rules()):
             # compute Q_n' of width k-1
-            subproblem_instance_datas = SubproblemInstanceDataFactory().make_subproblems(self.config, self.instance_datas, self.sketch, rule, self.width - 1)
+            subproblem_instance_datas = SubproblemInstanceDataFactory().make_subproblems(self.config, self.instance_datas, self.sketch, rule, r_idx, self.width - 1)
 
-            rule_sketch = Sketch(self.domain_data.policy_builder.add_policy({rule}), self.width)
+            rule_sketch = Sketch(self.domain_data.policy_builder.add_policy({rule}), self.width - 1)
 
             child = HierarchicalSketch(
                 self.workspace_learning / f"rule_{r_idx}",

@@ -5,7 +5,6 @@ from typing import Dict, MutableSet, List
 from collections import defaultdict, deque
 
 from learner.src.instance_data.instance_data import InstanceData
-from learner.src.iteration_data.feature_valuations_factory import FeatureValuationsFactory
 
 
 class Sketch:
@@ -69,6 +68,7 @@ class Sketch:
                     break
             if not bounded_by_rule:
                 print(colored("State has unbounded width for a rule", "red", "on_grey"))
+                print("Width:", self.width)
                 print("Rule:", rule)
                 print("Instance:", instance_data.id, instance_data.instance_information.name)
                 print("State:", instance_data.state_space.get_states()[root_idx])
@@ -90,14 +90,13 @@ class Sketch:
             instance_data(InstanceData): the instance
             """
         subgoal_states = set()
-        forward_successors = instance_data.state_space.get_forward_successor_state_indices()
         for rule in self.dlplan_policy.get_rules():
             queue = deque()
             queue.append(root_idx)
             root_state = instance_data.state_space.get_states()[root_idx]
             if not rule.evaluate_conditions(root_state, instance_data.denotations_caches):
                 continue
-            for tuple_distance, tuple_nodes in enumerate(instance_data.tuple_graphs[root_idx].get_tuple_nodes_by_distance()):
+            for tuple_nodes in instance_data.tuple_graphs[root_idx].get_tuple_nodes_by_distance():
                 for tuple_node in tuple_nodes:
                     for s_prime_idx in tuple_node.get_state_indices():
                         target_state = instance_data.state_space.get_states()[s_prime_idx]
@@ -188,6 +187,7 @@ class Sketch:
         return True
 
     def print(self):
+        print(self.dlplan_policy.compute_repr())
         print(self.dlplan_policy.str())
         print("Numer of sketch rules:", len(self.dlplan_policy.get_rules()))
         print("Number of selected features:", len(self.dlplan_policy.get_booleans()) + len(self.dlplan_policy.get_numericals()))

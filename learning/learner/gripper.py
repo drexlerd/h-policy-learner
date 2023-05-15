@@ -27,7 +27,9 @@ def experiments():
         add_features=["b_empty(c_and(c_primitive(at-robby,0),c_one_of(rooma)))",  # robot at room b
                       "n_count(r_primitive(carry,0,1))",  # 4 num balls that the robot carries
                       "n_count(c_equal(r_primitive(at_g,0,1), r_primitive(at,0,1)))",  # 4 num misplaced balls, i.e., num balls at roomb
-                      "b_empty(r_diff(r_primitive(at_g,0,1), r_primitive(at,0,1)))"  # goal separating feature
+                      "b_empty(r_diff(r_primitive(at_g,0,1), r_primitive(at,0,1)))",  # goal separating feature
+                      "b_empty(r_diff(r_primitive(at_g,0,1),r_primitive(at,0,1)))",
+                      "n_count(c_equal(r_primitive(carry,0,1),r_primitive(carry_g,0,1)))",
         ],
     )
     return exps

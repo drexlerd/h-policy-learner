@@ -15,12 +15,12 @@ def experiments():
         task_dir_debug=BENCHMARK_DIR / "gripper" / "instances_debug",
     )
 
-    exps["hierarchy"] = update_dict(
+    exps["release"] = update_dict(
         strips_base,
         instance_filenames=list(strips_base["task_dir"].iterdir()),
     )
 
-    exps["hierarchy_debug"] = update_dict(
+    exps["debug"] = update_dict(
         strips_base,
         instance_filenames=list(strips_base["task_dir_debug"].iterdir()),
         generate_features=False,

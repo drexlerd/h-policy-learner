@@ -11,6 +11,7 @@ class DomainData:
     """ Store data related to a domain. """
     domain_filename: str
     vocabulary_info: dlplan.VocabularyInfo
+    policy_builder: dlplan.PolicyBuilder
     syntactic_element_factory: dlplan.SyntacticElementFactory
     feature_generator: dlplan.FeatureGenerator
     domain_feature_data: DomainFeatureData = None

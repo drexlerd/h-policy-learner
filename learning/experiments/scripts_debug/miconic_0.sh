@@ -6,4 +6,4 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-user=dominik.drexler@liu.se
 
-bash ./runner.sh miconic hierarchy_debug 0
+bash ./runner.sh miconic debug 0

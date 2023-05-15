@@ -6,4 +6,4 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-user=dominik.drexler@liu.se
 
-bash ./runner.sh visitall hierarchy_debug 2
+bash ./runner.sh visitall debug 2

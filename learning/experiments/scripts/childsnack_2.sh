@@ -6,4 +6,4 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-user=dominik.drexler@liu.se
 
-bash ./runner.sh childsnack hierarchy 2
+bash ./runner.sh childsnack release 2

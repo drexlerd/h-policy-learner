@@ -9,9 +9,7 @@ from learner.src.iteration_data.feature_valuations_factory import FeatureValuati
 
 
 class Sketch:
-    def __init__(self, booleans: List[dlplan.Boolean], numericals: List[dlplan.Numerical], dlplan_policy: dlplan.Policy, width: int):
-        self.booleans = booleans
-        self.numericals = numericals
+    def __init__(self, dlplan_policy: dlplan.Policy, width: int):
         self.dlplan_policy = dlplan_policy
         self.width = width
 
@@ -192,5 +190,5 @@ class Sketch:
     def print(self):
         print(self.dlplan_policy.str())
         print("Numer of sketch rules:", len(self.dlplan_policy.get_rules()))
-        print("Number of selected features:", len(self.booleans) + len(self.booleans))
-        print("Maximum complexity of selected feature:", max([0] + [boolean.compute_complexity() for boolean in self.booleans] + [numerical.compute_complexity() for numerical in self.numericals]))
+        print("Number of selected features:", len(self.dlplan_policy.get_booleans()) + len(self.dlplan_policy.get_numericals()))
+        print("Maximum complexity of selected feature:", max([0] + [boolean.compute_complexity() for boolean in self.dlplan_policy.get_booleans()] + [numerical.compute_complexity() for numerical in self.dlplan_policy.get_numericals()]))

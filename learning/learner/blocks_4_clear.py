@@ -16,12 +16,12 @@ def experiments():
         task_dir_debug=BENCHMARK_DIR / "blocks_4_clear" / "instances_debug",
     )
 
-    exps["hierarchy"] = update_dict(
+    exps["release"] = update_dict(
         strips_base_blocks_4_clear,
         instance_filenames=list(strips_base_blocks_4_clear["task_dir"].iterdir()),
     )
 
-    exps["hierarchy_debug"] = update_dict(
+    exps["debug"] = update_dict(
         strips_base_blocks_4_clear,
         instance_filenames=list(strips_base_blocks_4_clear["task_dir_debug"].iterdir()),
         generate_features=False,

@@ -16,12 +16,12 @@ def experiments():
         task_dir_debug=BENCHMARK_DIR / "blocks_4_on" / "instances_debug",
     )
 
-    exps["hierarchy"] = update_dict(
+    exps["release"] = update_dict(
         strips_base_blocks_4_on,
         instance_filenames=list(strips_base_blocks_4_on["task_dir"].iterdir()),
     )
 
-    exps["hierarchy_debug"] = update_dict(
+    exps["debug"] = update_dict(
         strips_base_blocks_4_on,
         instance_filenames=list(strips_base_blocks_4_on["task_dir_debug"].iterdir()),
         generate_features=False,
@@ -32,6 +32,15 @@ def experiments():
                       "n_count(c_primitive(clear,0))",
                       "n_count(c_some(r_inverse(r_primitive(on_g,0,1)),c_primitive(holding,0)))",
                       "b_empty(c_and(c_not(c_equal(r_primitive(on,0,1),r_primitive(on_g,0,1))),c_primitive(clear,0)))",
+                      "b_empty(r_and(r_primitive(on,0,1),r_primitive(on_g,0,1)))",  # goal separating feature
+        ],
+    )
+
+    exps["debug_2"] = update_dict(
+        strips_base_blocks_4_on,
+        instance_filenames=list(strips_base_blocks_4_on["task_dir_debug"].iterdir()),
+        generate_features=False,
+        add_features=["b_empty(c_not(c_primitive(on-table,0)))",
                       "b_empty(r_and(r_primitive(on,0,1),r_primitive(on_g,0,1)))",  # goal separating feature
         ],
     )

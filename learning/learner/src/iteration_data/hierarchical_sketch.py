@@ -77,13 +77,13 @@ class HierarchicalSketch:
         self.sketch, self.sketch_minimized, self.statistics = learn_sketch(self.config, self.domain_data, self.instance_datas, self.zero_cost_domain_feature_data, self.workspace_learning, self.width - 1)
         write_file(self.workspace_output / "sketch.txt", self.sketch.dlplan_policy.str())
         child_zero_cost_domain_feature_data = deepcopy(self.zero_cost_domain_feature_data)
-        add_zero_cost_features(child_zero_cost_domain_feature_data, self.sketch.booleans, self.sketch.numericals)
+        add_zero_cost_features(child_zero_cost_domain_feature_data, self.sketch.dlplan_policy.get_booleans(), self.sketch.dlplan_policy.get_numericals())
         # Inductive case: compute children n' of n
         for rule in self.sketch.dlplan_policy.get_rules():
             # compute Q_n' of width k-1
             subproblem_instance_datas = SubproblemInstanceDataFactory().make_subproblems(self.config, self.instance_datas, self.sketch, rule, self.width - 1)
 
-            rule_sketch = self._make_rule_sketch(rule, self.width)
+            rule_sketch = Sketch(self.domain_data.policy_builder.add_policy({rule}), self.width)
 
             child = HierarchicalSketch(
                 self.workspace_learning / f"rule_{rule.get_index()}",
@@ -97,12 +97,6 @@ class HierarchicalSketch:
             self.children.append(child)
 
         return self.children
-
-    def _make_rule_sketch(self, rule: dlplan.Rule, width: int):
-        """ Creates a sketch containing the single given rule. """
-        builder = dlplan.PolicyBuilder()
-        rule.copy_to_builder(builder)
-        return Sketch(builder.get_booleans(), builder.get_numericals(), builder.get_result(), width)
 
     def print(self):
         """ Prints the hierarchical policy with indentation depending on the level of a node in the tree. """
@@ -131,8 +125,8 @@ class HierarchicalSketch:
         if self.children:
             for child in self.children:
                 features.extend(child.collect_features())
-        features.extend(self.sketch.booleans)
-        features.extend(self.sketch.numericals)
+        features.extend(self.sketch.dlplan_policy.get_booleans())
+        features.extend(self.sketch.dlplan_policy.get_numericals())
         return features
 
     def collect_rules(self):

@@ -110,8 +110,8 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
         asp_factory.print_statistics()
         logging.info(colored("..done", "blue", "on_grey"))
 
-        booleans, numericals, dlplan_policy = ExplicitDlplanPolicyFactory().make_dlplan_policy_from_answer_set(symbols, domain_data)
-        sketch = Sketch(booleans, numericals, dlplan_policy, width)
+        dlplan_policy = ExplicitDlplanPolicyFactory().make_dlplan_policy_from_answer_set(symbols, domain_data)
+        sketch = Sketch(dlplan_policy, width)
         logging.info("Learned the following sketch:")
         sketch.print()
         assert compute_smallest_unsolved_instance(config, sketch, selected_instance_datas) is None
@@ -145,6 +145,6 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
     print("Resulting sketch:")
     sketch.print()
     print("Resulting sketch minimized:")
-    sketch_minimized = Sketch(sketch.booleans, sketch.numericals, dlplan.PolicyMinimizer().minimize(sketch.dlplan_policy), sketch.width)
+    sketch_minimized = Sketch(dlplan.PolicyMinimizer().minimize(sketch.dlplan_policy, domain_data.policy_builder), sketch.width)
     sketch_minimized.print()
     return sketch, sketch_minimized, learning_statistics

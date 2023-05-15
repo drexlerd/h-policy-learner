@@ -6,4 +6,4 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-user=dominik.drexler@liu.se
 
-bash ./runner.sh blocks_4_on hierarchy 2
+bash ./runner.sh blocks_4_on release 2

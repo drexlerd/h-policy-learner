@@ -6,4 +6,4 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-user=dominik.drexler@liu.se
 
-bash ./runner.sh gripper hierarchy_debug 2
+bash ./runner.sh gripper debug 2

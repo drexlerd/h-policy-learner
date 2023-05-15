@@ -12,7 +12,7 @@ from learner.src.iteration_data.sketch import Sketch
 
 class SubproblemInstanceDataFactory:
     def make_subproblems(self, config, instance_datas: List[InstanceData], sketch: Sketch, rule: dlplan.Rule, width: int):
-        features = list(sketch.booleans) + list(sketch.numericals)
+        features = list(sketch.dlplan_policy.get_booleans()) + list(sketch.dlplan_policy.get_numericals())
         subproblem_instance_datas = []
         for instance_data in instance_datas:
             state_space = instance_data.state_space

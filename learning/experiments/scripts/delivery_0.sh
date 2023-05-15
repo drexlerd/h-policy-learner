@@ -6,4 +6,4 @@
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-user=dominik.drexler@liu.se
 
-bash ./delivery.sh delivery hierarchy 0
+bash ./delivery.sh delivery release 0

@@ -68,10 +68,8 @@ if __name__ == "__main__":
 
     with open(str(config.sketch_filename), "r") as file:
         sketch_data = file.read()
-    dlplan_policy = dlplan.PolicyReader().read(sketch_data, domain_data.syntactic_element_factory)
-    builder = dlplan.PolicyBuilder()
-    dlplan_policy.copy_to_builder(builder)
-    sketch = Sketch(builder.get_booleans(), builder.get_numericals(), builder.get_result(), args.width)
+    dlplan_policy = dlplan.PolicyReader().read(sketch_data, domain_data.policy_builder, domain_data.syntactic_element_factory)
+    sketch = Sketch(dlplan_policy, args.width)
 
     sketch.print()
 

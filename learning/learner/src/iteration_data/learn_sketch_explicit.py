@@ -83,7 +83,7 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
         tuple_graph_equivalence_factory.statistics.print()
         logging.info(colored("..done", "blue", "on_grey"))
 
-        # logging.info(colored(f"Initializing TupleGraphEquivalenceMinimizer...", "blue", "on_grey"))
+        logging.info(colored(f"Initializing TupleGraphEquivalenceMinimizer...", "blue", "on_grey"))
         tuple_graph_equivalence_minimizer = TupleGraphEquivalenceMinimizer()
         for instance_data in selected_instance_datas:
             tuple_graph_equivalence_minimizer.minimize(instance_data)

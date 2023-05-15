@@ -20,7 +20,6 @@ class ExplicitDlplanPolicyFactory(DlplanPolicyFactory):
     Encoding where rules are explicit in the ASP encoding (ICAPS2022)
     """
     def make_dlplan_policy_from_answer_set(self, symbols: List[Symbol], domain_data: DomainData):
-        # print(symbols)
         policy_builder = domain_data.policy_builder
         f_idx_to_policy_feature = self._add_features(policy_builder, symbols, domain_data)
         rules = self._add_rules(policy_builder, symbols, f_idx_to_policy_feature)

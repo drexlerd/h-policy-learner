@@ -11,11 +11,11 @@ class FeatureValuationsFactory:
             boolean_state_feature_valuations = []
             # print(instance_data.state_information.get_state(s_idx))
             for boolean_feature in instance_data.domain_data.domain_feature_data.boolean_features.features_by_index:
-                boolean_state_feature_valuations.append(boolean_feature.dlplan_feature.evaluate(dlplan_state))
+                boolean_state_feature_valuations.append(boolean_feature.dlplan_feature.evaluate(dlplan_state, instance_data.denotations_caches))
                 # print(boolean_feature.dlplan_feature.evaluate(dlplan_state), boolean_feature.dlplan_feature.compute_repr())
             numerical_state_feature_valuations = []
             for numerical_feature in instance_data.domain_data.domain_feature_data.numerical_features.features_by_index:
-                numerical_state_feature_valuations.append(numerical_feature.dlplan_feature.evaluate(dlplan_state))
+                numerical_state_feature_valuations.append(numerical_feature.dlplan_feature.evaluate(dlplan_state, instance_data.denotations_caches))
                 # print(numerical_feature.dlplan_feature.evaluate(dlplan_state), numerical_feature.dlplan_feature.compute_repr())
             feature_valuations[s_idx] = FeatureValuation(s_idx, boolean_state_feature_valuations, numerical_state_feature_valuations)
         return feature_valuations

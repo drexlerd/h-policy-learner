@@ -41,7 +41,7 @@ def make_callstring_rec(path: Path):
         if subpath.is_dir():
             subpaths.append(subpath)
         elif subpath.is_file():
-            if subpath.name == "rule.txt":
+            if subpath.name == "rule_repr.txt":
                 rule_file = subpath.name
     # Inductive case: apply children until reaching goal
     if subpaths:

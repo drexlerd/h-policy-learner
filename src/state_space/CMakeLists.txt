@@ -1,5 +1,3 @@
-find_package(pybind11 REQUIRED)
-
 add_library(dlplanstatespace SHARED)
 target_sources(dlplanstatespace
     PRIVATE
@@ -7,7 +5,7 @@ target_sources(dlplanstatespace
         reader.cpp
         state_space.cpp)
 
-target_link_libraries(dlplanstatespace dlplancore pybind11::embed)
+target_link_libraries(dlplanstatespace dlplancore)
 target_include_directories(dlplanstatespace
     PUBLIC
         ${PROJECT_SOURCE_DIR}/include

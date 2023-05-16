@@ -1,7 +1,6 @@
 """ Module description: initialize workspace and domain config, instance configs
 """
 
-import os
 from pathlib import Path
 from typing import List
 

@@ -1,7 +1,6 @@
 import re
-import time
 
-from clingo import Control, Number, Symbol
+from clingo import Control, Number, String
 from typing import List
 
 from learner.src.asp.returncodes import ClingoExitCode
@@ -55,7 +54,7 @@ class ASPFactory:
     def load_problem_file(self, filename):
         self.ctl.load(str(filename))
 
-    def make_state_space_facts(self, domain_data: DomainData, instance_datas: List[InstanceData]):
+    def make_state_space_facts(self, instance_datas: List[InstanceData]):
         facts = []
         # State space facts
         for instance_data in instance_datas:
@@ -76,38 +75,31 @@ class ASPFactory:
                 #print(instance_data.state_space.get_states()[s_idx])
         return facts
 
-    def make_domain_feature_data_facts(self, domain_data: DomainData, instance_datas: List[InstanceData]):
+    def make_domain_feature_data_facts(self, domain_data: DomainData):
         facts = []
         # Domain feature facts
-        for f_idx, boolean in enumerate(domain_data.domain_feature_data.boolean_features.features_by_index):
-            facts.append(("boolean", [Number(f_idx)]))
-            facts.append(("feature", [Number(f_idx)]))
-            facts.append(("complexity", [Number(f_idx), Number(boolean.complexity)]))
-            #print(f_idx, boolean.dlplan_feature.compute_repr())
-        for f_idx, numerical in enumerate(domain_data.domain_feature_data.numerical_features.features_by_index):
-            facts.append(("numerical", [Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index))]))
-            facts.append(("feature", [Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index))]))
-            facts.append(("complexity", [Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index)), Number(numerical.complexity)]))
-            #print(f_idx, numerical.dlplan_feature.compute_repr())
+        for b_idx, boolean in domain_data.domain_feature_data.boolean_features.f_idx_to_feature.items():
+            facts.append(("boolean", [String(f"b{b_idx}")]))
+            facts.append(("feature", [String(f"b{b_idx}")]))
+            facts.append(("complexity", [String(f"b{b_idx}"), Number(boolean.complexity)]))
+        for n_idx, numerical in domain_data.domain_feature_data.numerical_features.f_idx_to_feature.items():
+            facts.append(("numerical", [String(f"n{n_idx}")]))
+            facts.append(("feature", [String(f"n{n_idx}")]))
+            facts.append(("complexity", [String(f"n{n_idx}"), Number(numerical.complexity)]))
         return facts
 
-    def make_instance_feature_data_facts(self, domain_data: DomainData, instance_datas: List[InstanceData]):
+    def make_instance_feature_data_facts(self, instance_datas: List[InstanceData]):
         facts = []
         # Instance feature valuation facts
         for instance_data in instance_datas:
             for s_idx in instance_data.state_space.get_states().keys():
                 feature_valuation = instance_data.feature_valuations[s_idx]
-                for f_idx, f_val in enumerate(feature_valuation.boolean_feature_valuations):
-                    facts.append(("value", [Number(instance_data.id), Number(s_idx), Number(f_idx), Number(f_val)]))
-                    facts.append(("b_value", [Number(instance_data.id), Number(s_idx), Number(f_idx), Number(f_val)]))
-                for f_idx, f_val in enumerate(feature_valuation.numerical_feature_valuations):
-                    facts.append(("value", [Number(instance_data.id), Number(s_idx), Number(f_idx + len(feature_valuation.boolean_feature_valuations)), Number(f_val)]))
-                    facts.append(("b_value", [Number(instance_data.id), Number(s_idx), Number(f_idx + len(feature_valuation.boolean_feature_valuations)), Number(1 if f_val > 0 else 0)]))
-        #for instance_data in instance_datas:
-        #    for b_idx, boolean_feature_valuations in instance_data.boolean_feature_valuations.items():
-        #        print(b_idx, boolean_feature_valuations)
-        #    for n_idx, numerical_feature_valuations in instance_data.numerical_feature_valuations.items():
-        #        print(n_idx, numerical_feature_valuations)
+                for b_idx, f_val in feature_valuation.b_idx_to_val.items():
+                    facts.append(("value", [Number(instance_data.id), Number(s_idx), String(f"b{b_idx}"), Number(f_val)]))
+                    facts.append(("b_value", [Number(instance_data.id), Number(s_idx), String(f"b{b_idx}"), Number(f_val)]))
+                for n_idx, f_val in feature_valuation.n_idx_to_val.items():
+                    facts.append(("value", [Number(instance_data.id), Number(s_idx), String(f"n{n_idx}"), Number(f_val)]))
+                    facts.append(("b_value", [Number(instance_data.id), Number(s_idx), String(f"n{n_idx}"), Number(1 if f_val > 0 else 0)]))
         return facts
 
     def make_state_pair_equivalence_data_facts(self, domain_data: DomainData, instance_datas: List[InstanceData]):
@@ -121,21 +113,17 @@ class ASPFactory:
                 assert len(result) == 1
                 f_idx = int(result[0])
                 if condition_str.startswith("(:c_b_pos"):
-                    g_idx = domain_data.domain_feature_data.boolean_features.index_mapping[f_idx]
-                    facts.append(("feature_condition", [Number(r_idx), Number(g_idx), Number(0)]))
-                    facts.append(("c_pos_rule", [Number(r_idx), Number(g_idx)]))
+                    facts.append(("feature_condition", [Number(r_idx), String(f"b{f_idx}"), Number(0)]))
+                    facts.append(("c_pos_rule", [Number(r_idx), String(f"b{f_idx}")]))
                 elif condition_str.startswith("(:c_b_neg"):
-                    g_idx = domain_data.domain_feature_data.boolean_features.index_mapping[f_idx]
-                    facts.append(("feature_condition", [Number(r_idx), Number(g_idx), Number(1)]))
-                    facts.append(("c_neg_rule", [Number(r_idx), Number(g_idx)]))
+                    facts.append(("feature_condition", [Number(r_idx), String(f"b{f_idx}"), Number(1)]))
+                    facts.append(("c_neg_rule", [Number(r_idx), String(f"b{f_idx}")]))
                 elif condition_str.startswith("(:c_n_gt"):
-                    g_idx = domain_data.domain_feature_data.numerical_features.index_mapping[f_idx] + len(domain_data.domain_feature_data.boolean_features.features_by_index)
-                    facts.append(("feature_condition", [Number(r_idx), Number(g_idx), Number(2)]))
-                    facts.append(("c_gt_rule", [Number(r_idx), Number(g_idx)]))
+                    facts.append(("feature_condition", [Number(r_idx), String(f"n{f_idx}"), Number(2)]))
+                    facts.append(("c_gt_rule", [Number(r_idx), String(f"n{f_idx}")]))
                 elif condition_str.startswith("(:c_n_eq"):
-                    g_idx = domain_data.domain_feature_data.numerical_features.index_mapping[f_idx] + len(domain_data.domain_feature_data.boolean_features.features_by_index)
-                    facts.append(("feature_condition", [Number(r_idx), Number(g_idx), Number(3)]))
-                    facts.append(("c_eq_rule", [Number(r_idx), Number(g_idx)]))
+                    facts.append(("feature_condition", [Number(r_idx), String(f"n{f_idx}"), Number(3)]))
+                    facts.append(("c_eq_rule", [Number(r_idx), String(f"n{f_idx}")]))
                 else:
                     raise RuntimeError(f"Cannot parse condition {condition_str}")
             for effect in rule.get_effects():
@@ -144,29 +132,23 @@ class ASPFactory:
                 assert len(result) == 1
                 f_idx = int(result[0])
                 if effect_str.startswith("(:e_b_pos"):
-                    g_idx = domain_data.domain_feature_data.boolean_features.index_mapping[f_idx]
-                    facts.append(("feature_effect", [Number(r_idx), Number(g_idx), Number(0)]))
-                    facts.append(("e_pos_rule", [Number(r_idx), Number(g_idx)]))
+                    facts.append(("feature_effect", [Number(r_idx), String(f"b{f_idx}"), Number(0)]))
+                    facts.append(("e_pos_rule", [Number(r_idx), String(f"b{f_idx}")]))
                 elif effect_str.startswith("(:e_b_neg"):
-                    g_idx = domain_data.domain_feature_data.boolean_features.index_mapping[f_idx]
-                    facts.append(("feature_effect", [Number(r_idx), Number(g_idx), Number(1)]))
-                    facts.append(("e_neg_rule", [Number(r_idx), Number(g_idx)]))
+                    facts.append(("feature_effect", [Number(r_idx), String(f"b{f_idx}"), Number(1)]))
+                    facts.append(("e_neg_rule", [Number(r_idx), String(f"b{f_idx}")]))
                 elif effect_str.startswith("(:e_b_bot"):
-                    g_idx = domain_data.domain_feature_data.boolean_features.index_mapping[f_idx]
-                    facts.append(("feature_effect", [Number(r_idx), Number(g_idx), Number(2)]))
-                    facts.append(("e_bot_rule", [Number(r_idx), Number(g_idx)]))
+                    facts.append(("feature_effect", [Number(r_idx), String(f"b{f_idx}"), Number(2)]))
+                    facts.append(("e_bot_rule", [Number(r_idx), String(f"b{f_idx}")]))
                 elif effect_str.startswith("(:e_n_inc"):
-                    g_idx = domain_data.domain_feature_data.numerical_features.index_mapping[f_idx] + len(domain_data.domain_feature_data.boolean_features.features_by_index)
-                    facts.append(("feature_effect", [Number(r_idx), Number(g_idx), Number(3)]))
-                    facts.append(("e_inc_rule", [Number(r_idx), Number(g_idx)]))
+                    facts.append(("feature_effect", [Number(r_idx), String(f"n{f_idx}"), Number(3)]))
+                    facts.append(("e_inc_rule", [Number(r_idx), String(f"n{f_idx}")]))
                 elif effect_str.startswith("(:e_n_dec"):
-                    g_idx = domain_data.domain_feature_data.numerical_features.index_mapping[f_idx] + len(domain_data.domain_feature_data.boolean_features.features_by_index)
-                    facts.append(("feature_effect", [Number(r_idx), Number(g_idx), Number(4)]))
-                    facts.append(("e_dec_rule", [Number(r_idx), Number(g_idx)]))
+                    facts.append(("feature_effect", [Number(r_idx), String(f"n{f_idx}"), Number(4)]))
+                    facts.append(("e_dec_rule", [Number(r_idx), String(f"n{f_idx}")]))
                 elif effect_str.startswith("(:e_n_bot"):
-                    g_idx = domain_data.domain_feature_data.numerical_features.index_mapping[f_idx] + len(domain_data.domain_feature_data.boolean_features.features_by_index)
-                    facts.append(("feature_effect", [Number(r_idx), Number(g_idx), Number(5)]))
-                    facts.append(("e_bot_rule", [Number(r_idx), Number(g_idx)]))
+                    facts.append(("feature_effect", [Number(r_idx), String(f"n{f_idx}"), Number(5)]))
+                    facts.append(("e_bot_rule", [Number(r_idx), String(f"n{f_idx}")]))
                 else:
                     raise RuntimeError(f"Cannot parse effect {effect_str}")
         # State pair equivalence facts
@@ -183,7 +165,7 @@ class ASPFactory:
                         #print(instance_data.id, s_idx, s_prime_idx, r_idx)
         return facts
 
-    def make_tuple_graph_equivalence_facts(self, domain_data: DomainData, instance_datas: List[InstanceData]):
+    def make_tuple_graph_equivalence_facts(self, instance_datas: List[InstanceData]):
         facts = []
         # Tuple graph equivalence facts (Perhaps deprecated since we now let rules imply subgoals)
         for instance_data in instance_datas:
@@ -200,7 +182,7 @@ class ASPFactory:
                     facts.append(("d_distance", [Number(instance_data.id), Number(s_idx), Number(r_idx), Number(d)]))
         return facts
 
-    def make_tuple_graph_facts(self, domain_data: DomainData, instance_datas: List[InstanceData]):
+    def make_tuple_graph_facts(self, instance_datas: List[InstanceData]):
         facts = []
         for instance_data in instance_datas:
             for s_idx, tuple_graph in instance_data.tuple_graphs.items():
@@ -211,12 +193,12 @@ class ASPFactory:
 
     def make_facts(self, domain_data: DomainData, instance_datas: List[InstanceData]):
         facts = []
-        facts.extend(self.make_state_space_facts(domain_data, instance_datas))
-        facts.extend(self.make_domain_feature_data_facts(domain_data, instance_datas))
-        facts.extend(self.make_instance_feature_data_facts(domain_data, instance_datas))
+        facts.extend(self.make_state_space_facts(instance_datas))
+        facts.extend(self.make_domain_feature_data_facts(domain_data))
+        facts.extend(self.make_instance_feature_data_facts(instance_datas))
         facts.extend(self.make_state_pair_equivalence_data_facts(domain_data, instance_datas))
-        facts.extend(self.make_tuple_graph_equivalence_facts(domain_data, instance_datas))
-        facts.extend(self.make_tuple_graph_facts(domain_data, instance_datas))
+        facts.extend(self.make_tuple_graph_equivalence_facts(instance_datas))
+        facts.extend(self.make_tuple_graph_facts(instance_datas))
         return facts
 
     def ground(self, facts):

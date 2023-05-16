@@ -9,6 +9,7 @@ from learner.src.asp.returncodes import ClingoExitCode
 from learner.src.instance_data.instance_data import InstanceData
 from learner.src.instance_data.instance_information import InstanceInformation
 from learner.src.instance_data.tuple_graph_factory import TupleGraphFactory
+from learner.src.iteration_data.domain_feature_data import DomainFeatureData
 from learner.src.iteration_data.domain_feature_data_factory import DomainFeatureDataFactory
 from learner.src.iteration_data.feature_valuations_factory import FeatureValuationsFactory
 from learner.src.iteration_data.dlplan_policy_factory import ExplicitDlplanPolicyFactory
@@ -29,7 +30,7 @@ def compute_smallest_unsolved_instance(config, sketch: Sketch, instance_datas: L
     return None
 
 
-def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_data, workspace, width: int):
+def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_data: DomainFeatureData, workspace, width: int):
     """ Learns a sketch that solves all given instances while first computing required data.
     """
     clock = Clock("LEARNING")
@@ -61,9 +62,9 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
         domain_feature_data_factory = DomainFeatureDataFactory()
         domain_feature_data_factory.make_domain_feature_data_from_instance_datas(config, domain_data, selected_instance_datas)
         domain_feature_data_factory.statistics.print()
-        for zero_cost_boolean_feature in zero_cost_domain_feature_data.boolean_features.features_by_index:
+        for zero_cost_boolean_feature in zero_cost_domain_feature_data.boolean_features.f_idx_to_feature.values():
             domain_data.domain_feature_data.boolean_features.add_feature(zero_cost_boolean_feature)
-        for zero_cost_numerical_feature in zero_cost_domain_feature_data.numerical_features.features_by_index:
+        for zero_cost_numerical_feature in zero_cost_domain_feature_data.numerical_features.f_idx_to_feature.values():
             domain_data.domain_feature_data.numerical_features.add_feature(zero_cost_numerical_feature)
         logging.info(colored("..done", "blue", "on_grey"))
 
@@ -141,7 +142,7 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
         num_training_instances=len(instance_datas),
         num_selected_training_instances=len(selected_instance_datas),
         num_states_in_selected_training_instances=sum([len(instance_data.state_space.get_states()) for instance_data in selected_instance_datas]),
-        num_features_in_pool=len(domain_data.domain_feature_data.boolean_features.features_by_index) + len(domain_data.domain_feature_data.numerical_features.features_by_index),
+        num_features_in_pool=len(domain_data.domain_feature_data.boolean_features.f_idx_to_feature) + len(domain_data.domain_feature_data.numerical_features.f_idx_to_feature),
         num_cpu_seconds=clock.accumulated,
         num_peak_memory_mb=clock.used_memory())
     learning_statistics.print()

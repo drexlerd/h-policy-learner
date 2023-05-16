@@ -22,7 +22,7 @@ def experiments():
 
     exps["debug"] = update_dict(
         strips_base,
-        instance_filenames=list(strips_base["task_dir_debug"].iterdir())[:2],
+        instance_filenames=list(strips_base["task_dir_debug"].iterdir()),
         generate_features=False,
         add_features=["b_empty(c_and(c_primitive(at-robby,0),c_one_of(rooma)))",  # robot at room b
                       "n_count(r_primitive(carry,0,1))",  # 4 num balls that the robot carries

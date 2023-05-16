@@ -78,7 +78,7 @@ class HierarchicalSketch:
         self.sketch, self.sketch_minimized, self.statistics = learn_sketch(self.config, self.domain_data, self.instance_datas, self.zero_cost_domain_feature_data, self.workspace_learning, self.width - 1)
         write_file(self.workspace_output / "sketch_str.txt", self.sketch.dlplan_policy.str())
         write_file(self.workspace_output / "sketch_repr.txt", self.sketch.dlplan_policy.compute_repr())
-        child_zero_cost_domain_feature_data = deepcopy(self.zero_cost_domain_feature_data)
+        child_zero_cost_domain_feature_data = copy.copy(self.zero_cost_domain_feature_data)
         add_zero_cost_features(child_zero_cost_domain_feature_data, self.sketch.dlplan_policy.get_booleans(), self.sketch.dlplan_policy.get_numericals())
         # Inductive case: compute children n' of n
         for r_idx, rule in enumerate(self.sketch.dlplan_policy.get_rules()):

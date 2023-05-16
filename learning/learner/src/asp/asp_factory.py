@@ -1,4 +1,5 @@
 import re
+import time
 
 from clingo import Control, Number, Symbol
 from typing import List
@@ -58,21 +59,21 @@ class ASPFactory:
         facts = []
         # State space facts
         for instance_data in instance_datas:
-            instance_idx = instance_data.id
             for s_idx in instance_data.initial_s_idxs:
-                facts.append(("initial", [Number(instance_idx), Number(s_idx)]))
+                facts.append(("initial", [Number(instance_data.id), Number(s_idx)]))
             for s_idx in instance_data.state_space.get_states().keys():
-                facts.append(("state", [Number(instance_idx), Number(s_idx)]))
+                facts.append(("state", [Number(instance_data.id), Number(s_idx)]))
                 if not instance_data.is_deadend(s_idx):
-                    facts.append(("solvable", [Number(instance_idx), Number(s_idx)]))
+                    facts.append(("solvable", [Number(instance_data.id), Number(s_idx)]))
                 else:
-                    facts.append(("unsolvable", [Number(instance_idx), Number(s_idx)]))
+                    facts.append(("unsolvable", [Number(instance_data.id), Number(s_idx)]))
                 if instance_data.is_goal(s_idx):
-                    facts.append(("goal", [Number(instance_idx), Number(s_idx)]))
+                    facts.append(("goal", [Number(instance_data.id), Number(s_idx)]))
                 else:
-                    facts.append(("nongoal", [Number(instance_idx), Number(s_idx)]))
+                    facts.append(("nongoal", [Number(instance_data.id), Number(s_idx)]))
                 if instance_data.is_alive(s_idx):
-                    facts.append(("alive", [Number(instance_idx), Number(s_idx)]))
+                    facts.append(("alive", [Number(instance_data.id), Number(s_idx)]))
+                #print(instance_data.state_space.get_states()[s_idx])
         return facts
 
     def make_domain_feature_data_facts(self, domain_data: DomainData, instance_datas: List[InstanceData]):
@@ -82,10 +83,12 @@ class ASPFactory:
             facts.append(("boolean", [Number(f_idx)]))
             facts.append(("feature", [Number(f_idx)]))
             facts.append(("complexity", [Number(f_idx), Number(boolean.complexity)]))
+            #print(f_idx, boolean.dlplan_feature.compute_repr())
         for f_idx, numerical in enumerate(domain_data.domain_feature_data.numerical_features.features_by_index):
             facts.append(("numerical", [Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index))]))
             facts.append(("feature", [Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index))]))
             facts.append(("complexity", [Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index)), Number(numerical.complexity)]))
+            #print(f_idx, numerical.dlplan_feature.compute_repr())
         return facts
 
     def make_instance_feature_data_facts(self, domain_data: DomainData, instance_datas: List[InstanceData]):
@@ -100,6 +103,11 @@ class ASPFactory:
                 for f_idx, f_val in enumerate(feature_valuation.numerical_feature_valuations):
                     facts.append(("value", [Number(instance_data.id), Number(s_idx), Number(f_idx + len(feature_valuation.boolean_feature_valuations)), Number(f_val)]))
                     facts.append(("b_value", [Number(instance_data.id), Number(s_idx), Number(f_idx + len(feature_valuation.boolean_feature_valuations)), Number(1 if f_val > 0 else 0)]))
+        #for instance_data in instance_datas:
+        #    for b_idx, boolean_feature_valuations in instance_data.boolean_feature_valuations.items():
+        #        print(b_idx, boolean_feature_valuations)
+        #    for n_idx, numerical_feature_valuations in instance_data.numerical_feature_valuations.items():
+        #        print(n_idx, numerical_feature_valuations)
         return facts
 
     def make_state_pair_equivalence_data_facts(self, domain_data: DomainData, instance_datas: List[InstanceData]):
@@ -113,44 +121,54 @@ class ASPFactory:
                 assert len(result) == 1
                 f_idx = int(result[0])
                 if condition_str.startswith("(:c_b_pos"):
-                    facts.append(("feature_condition", [Number(r_idx), Number(f_idx), Number(0)]))
-                    facts.append(("c_pos_rule", [Number(r_idx), Number(f_idx)]))
+                    g_idx = domain_data.domain_feature_data.boolean_features.index_mapping[f_idx]
+                    facts.append(("feature_condition", [Number(r_idx), Number(g_idx), Number(0)]))
+                    facts.append(("c_pos_rule", [Number(r_idx), Number(g_idx)]))
                 elif condition_str.startswith("(:c_b_neg"):
-                    facts.append(("feature_condition", [Number(r_idx), Number(f_idx), Number(1)]))
-                    facts.append(("c_neg_rule", [Number(r_idx), Number(f_idx)]))
+                    g_idx = domain_data.domain_feature_data.boolean_features.index_mapping[f_idx]
+                    facts.append(("feature_condition", [Number(r_idx), Number(g_idx), Number(1)]))
+                    facts.append(("c_neg_rule", [Number(r_idx), Number(g_idx)]))
                 elif condition_str.startswith("(:c_n_gt"):
-                    facts.append(("feature_condition", [Number(r_idx), Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index)), Number(2)]))
-                    facts.append(("c_gt_rule", [Number(r_idx), Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index))]))
+                    g_idx = domain_data.domain_feature_data.numerical_features.index_mapping[f_idx] + len(domain_data.domain_feature_data.boolean_features.features_by_index)
+                    facts.append(("feature_condition", [Number(r_idx), Number(g_idx), Number(2)]))
+                    facts.append(("c_gt_rule", [Number(r_idx), Number(g_idx)]))
                 elif condition_str.startswith("(:c_n_eq"):
-                    facts.append(("feature_condition", [Number(r_idx), Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index)), Number(3)]))
-                    facts.append(("c_eq_rule", [Number(r_idx), Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index))]))
+                    g_idx = domain_data.domain_feature_data.numerical_features.index_mapping[f_idx] + len(domain_data.domain_feature_data.boolean_features.features_by_index)
+                    facts.append(("feature_condition", [Number(r_idx), Number(g_idx), Number(3)]))
+                    facts.append(("c_eq_rule", [Number(r_idx), Number(g_idx)]))
                 else:
-                    raise Exception("Cannot parse condition {condition_str}")
+                    raise RuntimeError(f"Cannot parse condition {condition_str}")
             for effect in rule.get_effects():
                 effect_str = effect.str()
                 result = re.findall(r"\(.* (\d+)\)", effect_str)
                 assert len(result) == 1
                 f_idx = int(result[0])
                 if effect_str.startswith("(:e_b_pos"):
-                    facts.append(("feature_effect", [Number(r_idx), Number(f_idx), Number(0)]))
-                    facts.append(("e_pos_rule", [Number(r_idx), Number(f_idx)]))
+                    g_idx = domain_data.domain_feature_data.boolean_features.index_mapping[f_idx]
+                    facts.append(("feature_effect", [Number(r_idx), Number(g_idx), Number(0)]))
+                    facts.append(("e_pos_rule", [Number(r_idx), Number(g_idx)]))
                 elif effect_str.startswith("(:e_b_neg"):
-                    facts.append(("feature_effect", [Number(r_idx), Number(f_idx), Number(1)]))
-                    facts.append(("e_neg_rule", [Number(r_idx), Number(f_idx)]))
+                    g_idx = domain_data.domain_feature_data.boolean_features.index_mapping[f_idx]
+                    facts.append(("feature_effect", [Number(r_idx), Number(g_idx), Number(1)]))
+                    facts.append(("e_neg_rule", [Number(r_idx), Number(g_idx)]))
                 elif effect_str.startswith("(:e_b_bot"):
-                    facts.append(("feature_effect", [Number(r_idx), Number(f_idx), Number(2)]))
-                    facts.append(("e_bot_rule", [Number(r_idx), Number(f_idx)]))
+                    g_idx = domain_data.domain_feature_data.boolean_features.index_mapping[f_idx]
+                    facts.append(("feature_effect", [Number(r_idx), Number(g_idx), Number(2)]))
+                    facts.append(("e_bot_rule", [Number(r_idx), Number(g_idx)]))
                 elif effect_str.startswith("(:e_n_inc"):
-                    facts.append(("feature_effect", [Number(r_idx), Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index)), Number(3)]))
-                    facts.append(("e_inc_rule", [Number(r_idx), Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index))]))
+                    g_idx = domain_data.domain_feature_data.numerical_features.index_mapping[f_idx] + len(domain_data.domain_feature_data.boolean_features.features_by_index)
+                    facts.append(("feature_effect", [Number(r_idx), Number(g_idx), Number(3)]))
+                    facts.append(("e_inc_rule", [Number(r_idx), Number(g_idx)]))
                 elif effect_str.startswith("(:e_n_dec"):
-                    facts.append(("feature_effect", [Number(r_idx), Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index)), Number(4)]))
-                    facts.append(("e_dec_rule", [Number(r_idx), Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index))]))
+                    g_idx = domain_data.domain_feature_data.numerical_features.index_mapping[f_idx] + len(domain_data.domain_feature_data.boolean_features.features_by_index)
+                    facts.append(("feature_effect", [Number(r_idx), Number(g_idx), Number(4)]))
+                    facts.append(("e_dec_rule", [Number(r_idx), Number(g_idx)]))
                 elif effect_str.startswith("(:e_n_bot"):
-                    facts.append(("feature_effect", [Number(r_idx), Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index)), Number(5)]))
-                    facts.append(("e_bot_rule", [Number(r_idx), Number(f_idx + len(domain_data.domain_feature_data.boolean_features.features_by_index))]))
+                    g_idx = domain_data.domain_feature_data.numerical_features.index_mapping[f_idx] + len(domain_data.domain_feature_data.boolean_features.features_by_index)
+                    facts.append(("feature_effect", [Number(r_idx), Number(g_idx), Number(5)]))
+                    facts.append(("e_bot_rule", [Number(r_idx), Number(g_idx)]))
                 else:
-                    raise Exception("Cannot parse effect {effect_str}")
+                    raise RuntimeError(f"Cannot parse effect {effect_str}")
         # State pair equivalence facts
         #print("cover:")
         for instance_data in instance_datas:

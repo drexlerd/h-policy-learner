@@ -1,7 +1,7 @@
 import dlplan
 import math
 
-from collections import defaultdict, deque
+from collections import defaultdict
 from typing import  List, Dict
 
 from learner.src.instance_data.instance_information import InstanceInformation
@@ -23,23 +23,23 @@ class SubproblemInstanceDataFactory:
                 if instance_data.is_goal(s_idx):
                     # Definition of relevant states: state must be nongoal.
                     continue
-                if not rule.evaluate_conditions(state_space.get_states()[s_idx]):
+                if not rule.evaluate_conditions(state_space.get_states()[s_idx], instance_data.denotations_caches):
                     # Definition of relevant states: state must satisfy condition of rule
                     continue
                 state = state_space.get_states()[s_idx]
-                feature_valuation = tuple([feature.evaluate(state) for feature in features])
+                feature_valuation = tuple([feature.evaluate(state, instance_data.denotations_caches) for feature in features])
                 feature_valuation_to_relevant_s_idxs[feature_valuation].add(s_idx)
             # 2. Group subgoal states with same feature valuation together
             feature_valuation_to_target_s_idxs = defaultdict(set)
             for s_idx, state in instance_data.state_space.get_states().items():
-                feature_valuation = tuple([feature.evaluate(state) for feature in features])
+                feature_valuation = tuple([feature.evaluate(state, instance_data.denotations_caches) for feature in features])
                 feature_valuation_to_target_s_idxs[feature_valuation].add(s_idx)
             # 3. Compute goals for each group.
             for _, relevant_s_idxs in feature_valuation_to_relevant_s_idxs.items():
                 # 3.2. Compute set of goal states, i.e., all s' such that (f(s), f(s')) satisfies E.
                 goal_s_idxs = set()
                 for _, target_s_idxs in feature_valuation_to_target_s_idxs.items():
-                    if not rule.evaluate_effects(state_space.get_states()[next(iter(relevant_s_idxs))], state_space.get_states()[next(iter(target_s_idxs))]):
+                    if not rule.evaluate_effects(state_space.get_states()[next(iter(relevant_s_idxs))], state_space.get_states()[next(iter(target_s_idxs))], instance_data.denotations_caches):
                         continue
                     goal_s_idxs.update(target_s_idxs)
                 if not goal_s_idxs:
@@ -105,7 +105,6 @@ class SubproblemInstanceDataFactory:
         subproblem_instance_datas = sorted(subproblem_instance_datas, key=lambda x : len(x.state_space.get_states()))
         for instance_idx, instance_data in enumerate(subproblem_instance_datas):
             instance_data.id = instance_idx
-            instance_data.state_space.get_instance_info().set_index(instance_idx)
         print("Number of problems:", len(instance_datas))
         print("Number of subproblems:", len(subproblem_instance_datas))
         print("Highest number of states in problem:", max([len(instance_data.state_space.get_states()) for instance_data in instance_datas]))

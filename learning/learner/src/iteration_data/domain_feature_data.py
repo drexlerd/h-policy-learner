@@ -11,6 +11,7 @@ class Features:
     def __init__(self):
         self.features_by_index = []
         self.features_by_repr = OrderedDict()
+        self.index_mapping = dict()
 
     def add_feature(self, feature: Feature):
         """
@@ -18,6 +19,7 @@ class Features:
         """
         feature_repr = feature.dlplan_feature.compute_repr()
         if feature_repr not in self.features_by_repr:
+            self.index_mapping[feature.dlplan_feature.get_index()] = len(self.features_by_index)
             self.features_by_index.append(feature)
             self.features_by_repr[feature_repr] = feature
         else:

@@ -15,7 +15,7 @@ from learner.src.util.command import create_experiment_workspace
 class InstanceData:
     id: int
     domain_data: DomainData
-    denotations_caches: dlplan.DenotationsCaches
+    denotations_caches: dlplan.DenotationsCaches  # We use a cache for each instance such that we can ignore the instance index.
     instance_information: InstanceInformation
     state_space: dlplan.StateSpace = None
     goal_distances: Dict[int, int] = None

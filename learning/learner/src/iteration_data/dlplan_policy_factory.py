@@ -34,10 +34,10 @@ class ExplicitDlplanPolicyFactory(DlplanPolicyFactory):
                 f_idx = symbol.arguments[0].number
                 if f_idx < len(domain_data.domain_feature_data.boolean_features.features_by_index):
                     #print(f_idx, domain_data.domain_feature_data.boolean_features.features_by_index[f_idx].dlplan_feature.compute_repr())
-                    f_idx_to_policy_feature[f_idx] = policy_builder.add_boolean_feature(domain_data.domain_feature_data.boolean_features.features_by_index[f_idx].dlplan_feature)
+                    f_idx_to_policy_feature[f_idx] = domain_data.domain_feature_data.boolean_features.features_by_index[f_idx].dlplan_feature
                 else:
                     #print(f_idx, domain_data.domain_feature_data.numerical_features.features_by_index[f_idx - len(domain_data.domain_feature_data.boolean_features.features_by_index)].dlplan_feature.compute_repr())
-                    f_idx_to_policy_feature[f_idx] = policy_builder.add_numerical_feature(domain_data.domain_feature_data.numerical_features.features_by_index[f_idx - len(domain_data.domain_feature_data.boolean_features.features_by_index)].dlplan_feature)
+                    f_idx_to_policy_feature[f_idx] = domain_data.domain_feature_data.numerical_features.features_by_index[f_idx - len(domain_data.domain_feature_data.boolean_features.features_by_index)].dlplan_feature
         return f_idx_to_policy_feature
 
     def _add_rules(self, policy_builder: dlplan.PolicyBuilder, symbols: List[Symbol], f_idx_to_policy_feature):

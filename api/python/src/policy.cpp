@@ -72,8 +72,6 @@ void init_policy(py::module_ &m) {
 
     py::class_<PolicyBuilder>(m, "PolicyBuilder")
         .def(py::init<>())
-        .def("add_boolean_feature", &PolicyBuilder::add_boolean_feature)
-        .def("add_numerical_feature", &PolicyBuilder::add_numerical_feature)
         .def("add_pos_condition", &PolicyBuilder::add_pos_condition)
         .def("add_neg_condition", &PolicyBuilder::add_neg_condition)
         .def("add_gt_condition", &PolicyBuilder::add_gt_condition)
@@ -82,8 +80,8 @@ void init_policy(py::module_ &m) {
         .def("add_neg_effect", &PolicyBuilder::add_neg_effect)
         .def("add_inc_effect", &PolicyBuilder::add_inc_effect)
         .def("add_dec_effect", &PolicyBuilder::add_dec_effect)
-        .def("add_bot_effect", py::overload_cast<std::shared_ptr<const Boolean>>(&PolicyBuilder::add_bot_effect))
-        .def("add_bot_effect", py::overload_cast<std::shared_ptr<const Numerical>>(&PolicyBuilder::add_bot_effect))
+        .def("add_bot_effect", py::overload_cast<const std::shared_ptr<const Boolean>&>(&PolicyBuilder::add_bot_effect))
+        .def("add_bot_effect", py::overload_cast<const std::shared_ptr<const Numerical>&>(&PolicyBuilder::add_bot_effect))
         .def("add_rule", &PolicyBuilder::add_rule)
         .def("add_policy", &PolicyBuilder::add_policy)
     ;

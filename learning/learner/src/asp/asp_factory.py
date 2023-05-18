@@ -1,6 +1,6 @@
 import re
 
-from clingo import Control, Number, String
+from clingo import Control, Number, String, Model
 from typing import List
 
 from learner.src.asp.returncodes import ClingoExitCode
@@ -8,9 +8,12 @@ from learner.src.domain_data.domain_data import DomainData
 from learner.src.instance_data.instance_data import InstanceData
 
 
+def on_model(model: Model):
+    print(model.optimality_proven)
+
 class ASPFactory:
     def __init__(self, max_num_rules=2):
-        self.ctl = Control(arguments=["--const", f"max_num_rules={max_num_rules}", "--parallel-mode=32,split", "--opt-mode=optN"])
+        self.ctl = Control(arguments=["--const", f"max_num_rules={max_num_rules}", "--parallel-mode=32", "--models=0", "--opt-mode=opt"])
         # features
         self.ctl.add("select", ["f"], "select(f).")  # temp
         self.ctl.add("boolean", ["b"], "boolean(b).")
@@ -208,24 +211,23 @@ class ASPFactory:
         self.ctl.ground(facts)  # ground a set of facts
 
     def solve(self):
-        """ https://potassco.org/clingo/python-api/current/clingo/solving.html
-            with fix where we place resume at the end. """
-        
-        with self.ctl.solve(yield_=True, async_=True) as solve_handle:
-            while True:
-                _ = solve_handle.wait()
-                result = solve_handle.get()
-                model = solve_handle.model()
-                if model is None and not result.exhausted:
-                    with open("error.model", "w", encoding="iso8859-1") as file:
-                        file.write("\n".join([str(atom.symbol) for atom in self.ctl.symbolic_atoms]))
-                    print("Model is None but search is not exhausted.")
-                    exit(1)
-                if model is None and result.exhausted:
-                    return None, ClingoExitCode.UNSATISFIABLE
-                if model.optimality_proven:
-                    return model.symbols(shown=True), ClingoExitCode.SATISFIABLE
-                solve_handle.resume()  # discards last model, hence should not be called in first iteration.
+        """ https://potassco.org/clingo/python-api/current/clingo/solving.html """
+        with self.ctl.solve(yield_=True) as handle:
+            last_model = None
+            for model in handle:
+                last_model = model
+            if last_model is not None:
+                assert last_model.optimality_proven
+                return last_model.symbols(shown=True), ClingoExitCode.SATISFIABLE
+            result = handle.get()
+            if result.exhausted:
+                return None, ClingoExitCode.EXHAUSTED
+            elif result.unsatisfiable:
+                return None, ClingoExitCode.UNSATISFIABLE
+            elif result.unknown:
+                return None, ClingoExitCode.UNKNOWN
+            elif result.interrupted:
+                return None, ClingoExitCode.INTERRUPTED
 
     def print_statistics(self):
         print("Clingo statistics:")

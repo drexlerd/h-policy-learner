@@ -45,3 +45,19 @@ def experiments():
         ],
     )
     return exps
+
+
+# Learning solution for width 2 requires instance of 4 blocks
+# Potential solutions for width 2
+# (:policy
+# (:rule (:conditions (:c_n_eq "n_count(c_not(c_primitive(on-table,0)))")) (:effects (:e_b_neg "b_empty(r_and(r_primitive(on,0,1),r_primitive(on_g,0,1)))")))
+# (:rule (:conditions (:c_n_gt "n_count(c_not(c_primitive(on-table,0)))")) (:effects (:e_n_dec "n_count(c_not(c_primitive(on-table,0)))")))
+# )
+
+# Potential solution for width 2
+# (:policy
+# (:rule (:conditions (:c_b_pos "b_nullary(arm-empty)") (:c_n_eq "n_count(r_primitive(on,0,1))")) (:effects (:e_b_neg "b_empty(r_and(r_primitive(on,0,1),r_primitive(on_g,0,1)))")))
+# (:rule (:conditions (:c_b_pos "b_nullary(arm-empty)") (:c_n_gt "n_count(r_primitive(on,0,1))")) (:effects (:e_n_dec "n_count(r_primitive(on,0,1))")))
+# (:rule (:conditions (:c_b_neg "b_nullary(arm-empty)")) (:effects (:e_n_inc "n_count(c_primitive(on-table,0))")))
+# )
+

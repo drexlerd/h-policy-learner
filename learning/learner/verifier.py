@@ -73,6 +73,8 @@ if __name__ == "__main__":
 
     sketch.print()
 
-    print(sketch.solves(config, instance_datas[0]))
+    for instance_data in instance_datas:
+        if not sketch.solves(config, instance_data):
+            print(instance_data.instance_information.name)
 
 

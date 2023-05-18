@@ -53,7 +53,6 @@ class ASPFactory:
         self.ctl.add("d_distance", ["i", "s", "r", "d"], "d_distance(i,s,r,d).")
         self.ctl.add("r_distance", ["i", "s", "r", "d"], "r_distance(i,s,r,d).")
         self.ctl.add("s_distance", ["i", "s1", "s2", "d"], "s_distance(i,s1,s2,d).")
-        self.facts = None
 
     def load_problem_file(self, filename):
         self.ctl.load(str(filename))
@@ -206,7 +205,6 @@ class ASPFactory:
         return facts
 
     def ground(self, facts):
-        self.facts = facts
         facts.append(("base", []))
         self.ctl.ground(facts)  # ground a set of facts
 

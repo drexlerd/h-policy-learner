@@ -217,7 +217,7 @@ class ASPFactory:
                 result = solve_handle.get()
                 model = solve_handle.model()
                 if model is None and not result.exhausted:
-                    with open("error.model", "w", "iso8859-1") as file:
+                    with open("error.model", "w", encoding="iso8859-1") as file:
                         file.write("\n".join([str(atom.symbol) for atom in self.ctl.symbolic_atoms]))
                     print("Model is None but search is not exhausted.")
                     exit(1)

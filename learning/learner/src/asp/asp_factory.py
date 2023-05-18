@@ -50,6 +50,7 @@ class ASPFactory:
         self.ctl.add("d_distance", ["i", "s", "r", "d"], "d_distance(i,s,r,d).")
         self.ctl.add("r_distance", ["i", "s", "r", "d"], "r_distance(i,s,r,d).")
         self.ctl.add("s_distance", ["i", "s1", "s2", "d"], "s_distance(i,s1,s2,d).")
+        self.facts = None
 
     def load_problem_file(self, filename):
         self.ctl.load(str(filename))
@@ -202,20 +203,28 @@ class ASPFactory:
         return facts
 
     def ground(self, facts):
+        self.facts = facts
         facts.append(("base", []))
         self.ctl.ground(facts)  # ground a set of facts
 
     def solve(self):
         """ https://potassco.org/clingo/python-api/current/clingo/solving.html
             with fix where we place resume at the end. """
+        
         with self.ctl.solve(yield_=True, async_=True) as solve_handle:
             while True:
                 _ = solve_handle.wait()
+                result = solve_handle.get()
                 model = solve_handle.model()
+                if model is None and not result.exhausted:
+                    with open("error.model", "w", "iso8859-1") as file:
+                        file.write("\n".join([str(atom.symbol) for atom in self.ctl.symbolic_atoms]))
+                    print("Model is None but search is not exhausted.")
+                    exit(1)
+                if model is None and result.exhausted:
+                    return None, ClingoExitCode.UNSATISFIABLE
                 if model.optimality_proven:
                     return model.symbols(shown=True), ClingoExitCode.SATISFIABLE
-                if model is None:
-                    return None, ClingoExitCode.UNSATISFIABLE
                 solve_handle.resume()  # discards last model, hence should not be called in first iteration.
 
     def print_statistics(self):

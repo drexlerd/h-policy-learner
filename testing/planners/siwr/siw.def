@@ -4,11 +4,6 @@ From: ubuntu:20.04
 %files
    ## Copy subdirectory into the root directory of the container
    $PWD/LAPKT-SIWR /LAPKT-SIWR
-   $PWD/dlplan /dlplan
-
-%environment
-    ## Add runtime library search paths
-    export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib/dlplan/"
 
 %post
     ## Add info for tzdata
@@ -35,15 +30,9 @@ From: ubuntu:20.04
 	g++-multilib \
 	g++
 
-    ## Install DLPlan
-    cd /dlplan
-	cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local/ -S . -B build/
-	cmake --build build -j4
-	cmake --install build
-	cd /
-
-    ## Add DLPlan to compile time linker
-	export LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib/dlplan/"
+    cd /LAPKT-SIWR/libs/dlplan
+    rm -rf builds
+    rm -rf installs
 
 	## Install SIW
     cd /LAPKT-SIWR
@@ -51,12 +40,6 @@ From: ubuntu:20.04
 	cd /LAPKT-SIWR/planners/siw/
     scons --clean
 	./build.py
-
-	# Copy planner files into separate subdirectory
-    mkdir /siw
-	cp /LAPKT-SIWR/planners/siw/siw.py /siw/siw.py
-	cp /LAPKT-SIWR/planners/siw/libsiw.so /siw/libsiw.so
-	cp -r /LAPKT-SIWR/planners/siw/fd /siw/fd
 
 	## Remove packages unneeded for running the planner.
     apt-get -y autoremove cmake \
@@ -71,9 +54,6 @@ From: ubuntu:20.04
         g++
     rm -rf /var/lib/apt/lists/*
 
-	# Cleanup trash
-	rm -rf /LAPKT-SIWR
-
 %runscript
     ## The runscript is called whenever the container is used to solve
     ## an instance.
@@ -83,7 +63,7 @@ From: ubuntu:20.04
     PLANFILE=$3
 
     ## Call your planner using FD-parser.
-    /siw/siw.py $DOMAINFILE $PROBLEMFILE $PLANFILE
+    /LAPKT-SIWR/planners/siw/siw.py $DOMAINFILE $PROBLEMFILE $PLANFILE
 
 ## Update the following fields with meta data about your submission.
 ## Please use the same field names and use only one line for each value.

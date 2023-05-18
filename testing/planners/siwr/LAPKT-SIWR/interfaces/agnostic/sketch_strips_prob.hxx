@@ -50,7 +50,7 @@ struct StateData {
 
 class Sketch_STRIPS_Problem : public STRIPS_Problem {
 protected:
-	std::unique_ptr<dlplan::policy::Policy> m_sketch;
+	std::shared_ptr<const dlplan::policy::Policy> m_sketch;
     // init_fluents, we assume they are added after fluents
 	Fluent_Ptr_Vec m_static_fluents;
 	std::vector<const Fluent*> m_static_const_fluents;
@@ -109,9 +109,9 @@ public:
 	 * Setters
 	 */
 	void set_sketch_textual( std::string sketch_textual ) {
+		dlplan::policy::PolicyBuilder builder;
 		dlplan::core::SyntacticElementFactory factory(m_vocabulary_info);
-		m_sketch = make_unique<dlplan::policy::Policy>(dlplan::policy::PolicyReader().read(
-			sketch_textual, factory));
+		m_sketch = dlplan::policy::PolicyReader().read(sketch_textual, builder, factory);
 	}
 
     /**
@@ -126,7 +126,7 @@ public:
     unsigned num_predicates() const { return m_num_predicates; }
 	unsigned num_objects() const { return m_num_objects; }
 
-	dlplan::policy::Policy& sketch() const { return *m_sketch; }
+	const std::shared_ptr<const dlplan::policy::Policy> sketch() const { return m_sketch; }
 
     /**
 	 * Printers.

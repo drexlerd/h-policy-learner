@@ -30,13 +30,9 @@ From: ubuntu:20.04
 	g++-multilib \
 	g++
 
-    ## Install DLPlan
     cd /LAPKT-SIWR/libs/dlplan
     rm -rf builds
-	cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=${PWD}/installs/release -S . -B builds/
-	cmake --build builds -j4
-	cmake --install builds
-	cd /
+    rm -rf installs
 
 	## Install SIWR
     cd /LAPKT-SIWR

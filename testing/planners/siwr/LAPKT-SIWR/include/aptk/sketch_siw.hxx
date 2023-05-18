@@ -77,7 +77,7 @@ public:
 		this->start( new_init_state );
         // new_init_state->print( std::cout );
 
-        m_sketch = &m_sketch_problem->sketch();
+        m_sketch = m_sketch_problem->sketch();
 
 		// count the number of sketch rules applied s.t. we can terminate in the case of a cycle
 		int count_applied_sketch_rules = 0;
@@ -205,7 +205,7 @@ protected:
 
 	// sketch related information
 	const Sketch_STRIPS_Problem* m_sketch_problem;
-	dlplan::policy::Policy* m_sketch;
+	std::shared_ptr<const dlplan::policy::Policy> m_sketch;
 	dlplan::core::DenotationsCaches m_denotation_caches;
 
 	dlplan::core::State m_dlplan_initial_state;

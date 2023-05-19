@@ -1,0 +1,5 @@
+(:policy
+(:booleans )
+(:numericals (3922 "n_count(c_and(c_one_of(rooma),c_primitive(at-robby,0)))"))
+(:rule (:conditions (:c_n_gt 3922)) (:effects (:e_n_dec 3922)))
+)

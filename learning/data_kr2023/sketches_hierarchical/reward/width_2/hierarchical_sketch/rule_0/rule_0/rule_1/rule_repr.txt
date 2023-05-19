@@ -1,0 +1,3 @@
+(:policy
+(:rule (:conditions (:c_n_eq "n_concept_distance(c_primitive(at,0),r_restrict(r_primitive(adjacent,0,1),c_primitive(unblocked,0)),c_primitive(reward,0))")) (:effects (:e_n_inc "n_count(c_primitive(picked,0))") (:e_n_inc "n_concept_distance(c_primitive(at,0),r_restrict(r_primitive(adjacent,0,1),c_primitive(unblocked,0)),c_primitive(reward,0))")))
+)

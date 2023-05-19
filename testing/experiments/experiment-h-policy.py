@@ -39,10 +39,12 @@ class BaseReport(AbsoluteReport):
 
 ATTRIBUTES = [
     "run_dir",
-    "cost",
     "coverage",
+    "cost",
     "error",
-    Attribute(name="total_time", absolute=True, function=max),
+    "expanded",
+    "generated",
+    "total_time",
 ]
 
 

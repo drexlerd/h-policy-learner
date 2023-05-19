@@ -1,0 +1,5 @@
+(:policy
+(:booleans )
+(:numericals (518 "n_count(c_not(c_primitive(clear,0)))") (513 "n_count(c_primitive(holding,0))"))
+(:rule (:conditions (:c_n_eq 513)) (:effects (:e_n_inc 513) (:e_n_bot 518)))
+)

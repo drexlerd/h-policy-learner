@@ -44,9 +44,11 @@ class BaseReport(AbsoluteReport):
 
 ATTRIBUTES = [
     "run_dir",
-    "cost",
     "coverage",
+    "cost",
     "error",
+    "expanded",
+    "generated",
     "total_time",
 ]
 

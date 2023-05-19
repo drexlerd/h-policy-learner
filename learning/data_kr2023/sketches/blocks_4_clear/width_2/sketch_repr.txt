@@ -1,0 +1,3 @@
+(:policy
+(:rule (:conditions ) (:effects (:e_b_neg "b_empty(c_and(c_primitive(clear,0),c_primitive(clear_g,0)))")))
+)

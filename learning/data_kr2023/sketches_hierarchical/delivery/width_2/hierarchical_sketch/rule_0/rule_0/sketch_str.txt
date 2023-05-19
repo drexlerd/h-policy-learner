@@ -1,0 +1,6 @@
+(:policy
+(:booleans )
+(:numericals (15241 "n_count(r_and(r_primitive(at,0,1),r_primitive(at_g,0,1)))") (104637 "n_concept_distance(c_some(r_inverse(r_primitive(at,0,1)),c_primitive(truck,0)),r_primitive(adjacent,0,1),c_some(r_inverse(r_primitive(at_g,0,1)),c_top))"))
+(:rule (:conditions (:c_n_gt 104637)) (:effects (:e_n_bot 15241) (:e_n_dec 104637)))
+(:rule (:conditions (:c_n_eq 104637)) (:effects (:e_n_inc 15241)))
+)

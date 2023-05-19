@@ -1,0 +1,6 @@
+(:policy
+(:booleans )
+(:numericals (3918 "n_count(r_primitive(carry,0,1))") (3929 "n_count(c_all(r_primitive(at,0,1),c_one_of(rooma)))"))
+(:rule (:conditions (:c_n_eq 3918) (:c_n_gt 3929)) (:effects (:e_n_inc 3918) (:e_n_bot 3929)))
+(:rule (:conditions (:c_n_gt 3918) (:c_n_gt 3929)) (:effects (:e_n_dec 3929)))
+)

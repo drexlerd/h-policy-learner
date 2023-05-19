@@ -45,6 +45,7 @@ def main():
         file="driver.log",
         required=True,
     )
+
     parser.add_pattern("total_time", r"Singularity runtime: (.+?)s", type=float)
     parser.add_pattern("cost", r"\nFinal value: (.+)\n", type=int)
     parser.add_function(coverage)

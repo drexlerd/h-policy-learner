@@ -1,0 +1,3 @@
+(:policy
+(:rule (:conditions ) (:effects (:e_n_inc "n_count(c_primitive(visited,0))")))
+)

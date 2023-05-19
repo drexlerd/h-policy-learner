@@ -1,0 +1,4 @@
+(:policy
+(:rule (:conditions (:c_n_eq "n_count(r_primitive(carry,0,1))") (:c_n_eq "n_count(c_and(c_one_of(rooma),c_primitive(at-robby,0)))")) (:effects (:e_n_bot "n_count(r_primitive(carry,0,1))") (:e_n_inc "n_count(c_and(c_one_of(rooma),c_primitive(at-robby,0)))")))
+(:rule (:conditions (:c_n_eq "n_count(r_primitive(carry,0,1))") (:c_n_gt "n_count(c_and(c_one_of(rooma),c_primitive(at-robby,0)))")) (:effects (:e_n_inc "n_count(r_primitive(carry,0,1))")))
+)

@@ -104,11 +104,14 @@ class HierarchicalSketch:
 
     def print(self):
         """ Prints the hierarchical policy with indentation depending on the level of a node in the tree. """
+        print("HierarchicalPolicy:")
         self.print_rec(level=0)
-        print("Num features:", len(set([feature.compute_repr() for feature in self.collect_features()])))
-        print("Max feature complexity", max([feature.compute_complexity() for feature in self.collect_features()]))
-        print("Num rules:", len(set([rule.compute_repr() for rule in self.collect_rules()])))
-        self.compute_overall_statistics().print()
+        print("HierarchicalPolicyStatistics:")
+        print("    Max feature complexity (C):", max([feature.compute_complexity() for feature in self.collect_features()]))
+        print("    Num features (|Phi|):", len(set([feature.compute_repr() for feature in self.collect_features()])))
+        print("    Num rules (R):", len(set([rule.compute_repr() for rule in self.collect_rules()])))
+        print("    Max rules (m):", self.collect_max_rules())
+        self.compute_overall_learning_statistics().print()
 
     def print_rec(self, level):
         """ Print helper function. """
@@ -143,18 +146,26 @@ class HierarchicalSketch:
                 rules.extend(child.collect_rules())
         rules.extend(self.sketch.dlplan_policy.get_rules())
         return rules
+    
+    def collect_max_rules(self):
+        """ Returns maximum number of rules in a sketch in the hierarchical policy. """
+        if self.sketch is None:
+            return 0
+        assert self.children
+        m = 0
+        for child in self.children:
+            m = max(m, child.collect_max_rules())
+        return max(m, len(self.children))
 
-    def compute_overall_statistics(self):
+    def compute_overall_learning_statistics(self):
         """ Returns accumulated statistics of the hierarchical policy. """
         if self.sketch is None:
             return LearningStatistics()
         statistics = copy.deepcopy(self.statistics)
         for child in self.children:
-            child_statistics = child.compute_overall_statistics()
+            child_statistics = child.compute_overall_learning_statistics()
             statistics.num_training_instances += child_statistics.num_training_instances
             statistics.num_selected_training_instances = max(statistics.num_selected_training_instances, child_statistics.num_selected_training_instances)
             statistics.num_states_in_selected_training_instances = max(statistics.num_states_in_selected_training_instances, child_statistics.num_states_in_selected_training_instances)
             statistics.num_features_in_pool = max(statistics.num_features_in_pool, child_statistics.num_features_in_pool)
-            statistics.num_cpu_seconds += child_statistics.num_cpu_seconds
-            statistics.num_peak_memory_mb = max(statistics.num_peak_memory_mb, child_statistics.num_peak_memory_mb)
         return statistics

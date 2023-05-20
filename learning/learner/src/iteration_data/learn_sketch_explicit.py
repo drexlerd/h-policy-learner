@@ -19,7 +19,6 @@ from learner.src.iteration_data.tuple_graph_equivalence_factory import TupleGrap
 from learner.src.iteration_data.tuple_graph_equivalence_minimizer import TupleGraphEquivalenceMinimizer
 from learner.src.util.timer import CountDownTimer
 from learner.src.util.command import create_experiment_workspace
-from learner.src.util.clock import Clock
 from learner.src.iteration_data.learning_statistics import LearningStatistics
 
 
@@ -33,9 +32,6 @@ def compute_smallest_unsolved_instance(config, sketch: Sketch, instance_datas: L
 def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_data: DomainFeatureData, workspace, width: int):
     """ Learns a sketch that solves all given instances while first computing required data.
     """
-    clock = Clock("LEARNING")
-    clock.set_start()
-
     logging.info(colored("Initializing TupleGraphs...", "blue", "on_grey"))
     tuple_graph_factory = TupleGraphFactory(width)
     for instance_data in instance_datas:
@@ -135,16 +131,13 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
             print("Smallest unsolved instance:", smallest_unsolved_instance.id)
             print("Selected instances:", selected_instance_idxs)
         i += 1
-    clock.set_accumulate()
 
     logging.info(colored("Summary:", "green", "on_grey"))
     learning_statistics = LearningStatistics(
         num_training_instances=len(instance_datas),
         num_selected_training_instances=len(selected_instance_datas),
         num_states_in_selected_training_instances=sum([len(instance_data.state_space.get_states()) for instance_data in selected_instance_datas]),
-        num_features_in_pool=len(domain_data.domain_feature_data.boolean_features.f_idx_to_feature) + len(domain_data.domain_feature_data.numerical_features.f_idx_to_feature),
-        num_cpu_seconds=clock.accumulated,
-        num_peak_memory_mb=clock.used_memory())
+        num_features_in_pool=len(domain_data.domain_feature_data.boolean_features.f_idx_to_feature) + len(domain_data.domain_feature_data.numerical_features.f_idx_to_feature))
     learning_statistics.print()
     print("Resulting sketch:")
     sketch.print()

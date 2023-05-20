@@ -15,7 +15,6 @@ from learner.src.iteration_data.domain_feature_data_factory import DomainFeature
 from learner.src.iteration_data.feature_valuations_factory import FeatureValuationsFactory
 from learner.src.util.timer import CountDownTimer
 from learner.src.util.command import create_experiment_workspace
-from learner.src.util.clock import Clock
 from learner.src.domain_data.domain_data import DomainData
 
 
@@ -68,9 +67,6 @@ def parse_features_from_answer_set(symbols: List[Symbol], domain_data: DomainDat
 def learn_goal_separating_features(config, domain_data, instance_datas, zero_cost_domain_feature_data, workspace):
     """ Learns goal separating features
     """
-    clock = Clock("LEARNING")
-    clock.set_start()
-
     booleans = []
     numericals = []
     i = 0
@@ -147,5 +143,4 @@ def learn_goal_separating_features(config, domain_data, instance_datas, zero_cos
             print("Smallest unsolved instance:", smallest_unsolved_instance.id)
             print("Selected instances:", selected_instance_idxs)
         i += 1
-    clock.set_accumulate()
     return booleans, numericals

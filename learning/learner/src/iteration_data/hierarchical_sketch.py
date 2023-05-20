@@ -19,8 +19,8 @@ from learner.src.iteration_data.learn_goal_separating_features import learn_goal
 
 
 def add_zero_cost_features(domain_feature_data: DomainFeatureData, booleans: List[dlplan.Boolean], numericals: List[dlplan.Numerical]):
-    for boolean in booleans:
-        domain_feature_data.boolean_features.add_feature(Feature(boolean, 1))
+    #for boolean in booleans:
+    #    domain_feature_data.boolean_features.add_feature(Feature(boolean, 1))
     for numerical in numericals:
         domain_feature_data.numerical_features.add_feature(Feature(numerical, 1))
 

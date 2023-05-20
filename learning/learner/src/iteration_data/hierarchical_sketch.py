@@ -20,7 +20,7 @@ from learner.src.iteration_data.learn_goal_separating_features import learn_goal
 
 def add_zero_cost_features(domain_feature_data: DomainFeatureData, booleans: List[dlplan.Boolean], numericals: List[dlplan.Numerical]):
     for boolean in booleans:
-        domain_feature_data.boolean_features.add_feature(Feature(boolean, 2))
+        domain_feature_data.boolean_features.add_feature(Feature(boolean, 1))
     for numerical in numericals:
         domain_feature_data.numerical_features.add_feature(Feature(numerical, 1))
 
@@ -61,7 +61,8 @@ class HierarchicalSketch:
         """ Instead of computing rule {-G}->{G} consisting of goal separating features,
             we only compute the goal separating features to be reused in subsequent refinements. """
         booleans, numericals = learn_goal_separating_features(self.config, self.domain_data, self.instance_datas, self.zero_cost_domain_feature_data, self.workspace_learning)
-        add_zero_cost_features(self.zero_cost_domain_feature_data, booleans, numericals)
+        if self.config.add_parent_features:
+            add_zero_cost_features(self.zero_cost_domain_feature_data, booleans, numericals)
 
     def refine(self):
         """ Decomposes Q_n `self.instance_datas` at current node into subproblems of width `self.width` """
@@ -79,7 +80,8 @@ class HierarchicalSketch:
         write_file(self.workspace_output / "sketch_str.txt", self.sketch.dlplan_policy.str())
         write_file(self.workspace_output / "sketch_repr.txt", self.sketch.dlplan_policy.compute_repr())
         child_zero_cost_domain_feature_data = copy.copy(self.zero_cost_domain_feature_data)
-        add_zero_cost_features(child_zero_cost_domain_feature_data, self.sketch.dlplan_policy.get_booleans(), self.sketch.dlplan_policy.get_numericals())
+        if self.config.add_parent_features:
+            add_zero_cost_features(child_zero_cost_domain_feature_data, self.sketch.dlplan_policy.get_booleans(), self.sketch.dlplan_policy.get_numericals())
         # Inductive case: compute children n' of n
         for r_idx, rule in enumerate(self.sketch.dlplan_policy.get_rules()):
             # compute Q_n' of width k-1

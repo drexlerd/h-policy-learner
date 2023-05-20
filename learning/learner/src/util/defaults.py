@@ -40,6 +40,7 @@ def generate_experiment(domain_filename: str, instance_filenames: List[str], wor
 
         add_features=[],
         generate_features=True,
+        add_parent_features=False,
 
         quiet=False,
         random_seed=0,

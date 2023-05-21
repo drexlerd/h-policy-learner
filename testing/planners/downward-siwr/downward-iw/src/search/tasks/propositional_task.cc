@@ -187,6 +187,10 @@ bool PropositionalTask::is_negated_fact(int fact_id) const {
     return m_is_negated_facts[fact_id];
 }
 
+void PropositionalTask::clear_denotations_caches() {
+    m_denotations_caches = dlplan::core::DenotationsCaches();
+}
+
 dlplan::policy::PolicyBuilder& PropositionalTask::get_policy_builder() {
     return m_policy_builder;
 }

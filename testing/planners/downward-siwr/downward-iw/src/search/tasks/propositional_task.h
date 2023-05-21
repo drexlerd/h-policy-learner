@@ -48,6 +48,7 @@ public:
     const std::unordered_set<int>& get_goal_fact_ids() const;
     std::vector<int> get_state_fact_ids(const State& state) const;
     bool is_negated_fact(int fact_id) const;
+    void clear_denotations_caches();
 
     /**
      * Getters.

@@ -45,6 +45,8 @@ SearchStatus SIWR::step() {
         } else {
             // Search unfinished: update child search initial states
             m_child_search->set_initial_state(m_state_registry->lookup_state(m_partial_solutions.back().state_id));
+            // we clear the cache to not fill it up too heavily.
+            m_propositional_task->clear_denotations_caches();
             return SearchStatus::IN_PROGRESS;
         }
     }

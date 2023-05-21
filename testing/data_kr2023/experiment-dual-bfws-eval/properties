@@ -10,12 +10,15 @@
       "blocks_4_clear",
       "p-200-0.pddl"
     ],
-    "node": "n243",
+    "node": "n1718",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 331.93,
+    "planner_wall_clock_time": 318.18,
     "problem": "p-200-0.pddl",
     "run_dir": "runs-00001-00100/00001",
-    "total_time": 331.9
+    "total_time": 318.16,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-202-0.pddl": {
     "algorithm": "dual_bfws",
@@ -28,12 +31,15 @@
       "blocks_4_clear",
       "p-202-0.pddl"
     ],
-    "node": "n137",
+    "node": "n1668",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 340.9,
+    "planner_wall_clock_time": 344.39,
     "problem": "p-202-0.pddl",
     "run_dir": "runs-00001-00100/00002",
-    "total_time": 340.74
+    "total_time": 344.37,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-204-0.pddl": {
     "algorithm": "dual_bfws",
@@ -46,12 +52,15 @@
       "blocks_4_clear",
       "p-204-0.pddl"
     ],
-    "node": "n1012",
+    "node": "n1690",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 301.65,
+    "planner_wall_clock_time": 305.38,
     "problem": "p-204-0.pddl",
     "run_dir": "runs-00001-00100/00003",
-    "total_time": 301.62
+    "total_time": 305.36,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-206-0.pddl": {
     "algorithm": "dual_bfws",
@@ -64,12 +73,15 @@
       "blocks_4_clear",
       "p-206-0.pddl"
     ],
-    "node": "n163",
+    "node": "n1044",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 350.66,
+    "planner_wall_clock_time": 345.93,
     "problem": "p-206-0.pddl",
     "run_dir": "runs-00001-00100/00004",
-    "total_time": 350.6
+    "total_time": 345.9,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-208-0.pddl": {
     "algorithm": "dual_bfws",
@@ -82,12 +94,15 @@
       "blocks_4_clear",
       "p-208-0.pddl"
     ],
-    "node": "n817",
+    "node": "n1891",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 350.04,
+    "planner_wall_clock_time": 300.09,
     "problem": "p-208-0.pddl",
     "run_dir": "runs-00001-00100/00005",
-    "total_time": 350.02
+    "total_time": 300.07,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-210-0.pddl": {
     "algorithm": "dual_bfws",
@@ -100,12 +115,15 @@
       "blocks_4_clear",
       "p-210-0.pddl"
     ],
-    "node": "n1009",
+    "node": "n770",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 373.24,
+    "planner_wall_clock_time": 378.06,
     "problem": "p-210-0.pddl",
     "run_dir": "runs-00001-00100/00006",
-    "total_time": 373.2
+    "total_time": 378.04,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-212-0.pddl": {
     "algorithm": "dual_bfws",
@@ -118,12 +136,15 @@
       "blocks_4_clear",
       "p-212-0.pddl"
     ],
-    "node": "n199",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 437.31,
+    "planner_wall_clock_time": 408.28,
     "problem": "p-212-0.pddl",
     "run_dir": "runs-00001-00100/00007",
-    "total_time": 437.26
+    "total_time": 408.26,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-214-0.pddl": {
     "algorithm": "dual_bfws",
@@ -136,12 +157,15 @@
       "blocks_4_clear",
       "p-214-0.pddl"
     ],
-    "node": "n1011",
+    "node": "n770",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 517.04,
+    "planner_wall_clock_time": 410.59,
     "problem": "p-214-0.pddl",
     "run_dir": "runs-00001-00100/00008",
-    "total_time": 517.01
+    "total_time": 410.58,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-216-0.pddl": {
     "algorithm": "dual_bfws",
@@ -154,12 +178,15 @@
       "blocks_4_clear",
       "p-216-0.pddl"
     ],
-    "node": "n1012",
+    "node": "n968",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 395.51,
+    "planner_wall_clock_time": 360.51,
     "problem": "p-216-0.pddl",
     "run_dir": "runs-00001-00100/00009",
-    "total_time": 395.41
+    "total_time": 360.49,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-218-0.pddl": {
     "algorithm": "dual_bfws",
@@ -172,12 +199,15 @@
       "blocks_4_clear",
       "p-218-0.pddl"
     ],
-    "node": "n1490",
+    "node": "n1326",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 473.07,
+    "planner_wall_clock_time": 445.97,
     "problem": "p-218-0.pddl",
     "run_dir": "runs-00001-00100/00010",
-    "total_time": 473.05
+    "total_time": 445.95,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-220-0.pddl": {
     "algorithm": "dual_bfws",
@@ -190,12 +220,15 @@
       "blocks_4_clear",
       "p-220-0.pddl"
     ],
-    "node": "n390",
+    "node": "n1806",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 513.84,
+    "planner_wall_clock_time": 462.16,
     "problem": "p-220-0.pddl",
     "run_dir": "runs-00001-00100/00011",
-    "total_time": 513.8
+    "total_time": 462.14,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-222-0.pddl": {
     "algorithm": "dual_bfws",
@@ -208,12 +241,15 @@
       "blocks_4_clear",
       "p-222-0.pddl"
     ],
-    "node": "n201",
+    "node": "n1994",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 429.92,
+    "planner_wall_clock_time": 449.9,
     "problem": "p-222-0.pddl",
     "run_dir": "runs-00001-00100/00012",
-    "total_time": 429.9
+    "total_time": 449.88,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-224-0.pddl": {
     "algorithm": "dual_bfws",
@@ -226,12 +262,15 @@
       "blocks_4_clear",
       "p-224-0.pddl"
     ],
-    "node": "n247",
+    "node": "n1806",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 560.45,
+    "planner_wall_clock_time": 496.17,
     "problem": "p-224-0.pddl",
     "run_dir": "runs-00001-00100/00013",
-    "total_time": 560.4
+    "total_time": 496.15,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-226-0.pddl": {
     "algorithm": "dual_bfws",
@@ -244,12 +283,15 @@
       "blocks_4_clear",
       "p-226-0.pddl"
     ],
-    "node": "n196",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 622.54,
+    "planner_wall_clock_time": 523.19,
     "problem": "p-226-0.pddl",
     "run_dir": "runs-00001-00100/00014",
-    "total_time": 622.52
+    "total_time": 523.17,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-228-0.pddl": {
     "algorithm": "dual_bfws",
@@ -262,12 +304,15 @@
       "blocks_4_clear",
       "p-228-0.pddl"
     ],
-    "node": "n205",
+    "node": "n1044",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 626.66,
+    "planner_wall_clock_time": 531.31,
     "problem": "p-228-0.pddl",
     "run_dir": "runs-00001-00100/00015",
-    "total_time": 626.63
+    "total_time": 531.29,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-230-0.pddl": {
     "algorithm": "dual_bfws",
@@ -280,12 +325,15 @@
       "blocks_4_clear",
       "p-230-0.pddl"
     ],
-    "node": "n1401",
+    "node": "n1690",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 497.68,
+    "planner_wall_clock_time": 505.82,
     "problem": "p-230-0.pddl",
     "run_dir": "runs-00001-00100/00016",
-    "total_time": 497.65
+    "total_time": 505.79,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-232-0.pddl": {
     "algorithm": "dual_bfws",
@@ -298,12 +346,15 @@
       "blocks_4_clear",
       "p-232-0.pddl"
     ],
-    "node": "n160",
+    "node": "n1668",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 549.44,
+    "planner_wall_clock_time": 623.08,
     "problem": "p-232-0.pddl",
     "run_dir": "runs-00001-00100/00017",
-    "total_time": 549.41
+    "total_time": 623.06,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-234-0.pddl": {
     "algorithm": "dual_bfws",
@@ -316,12 +367,15 @@
       "blocks_4_clear",
       "p-234-0.pddl"
     ],
-    "node": "n1012",
+    "node": "n1044",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 628.05,
+    "planner_wall_clock_time": 591.39,
     "problem": "p-234-0.pddl",
     "run_dir": "runs-00001-00100/00018",
-    "total_time": 628.01
+    "total_time": 591.37,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-236-0.pddl": {
     "algorithm": "dual_bfws",
@@ -334,12 +388,15 @@
       "blocks_4_clear",
       "p-236-0.pddl"
     ],
-    "node": "n1493",
+    "node": "n1690",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 664.06,
+    "planner_wall_clock_time": 555.42,
     "problem": "p-236-0.pddl",
     "run_dir": "runs-00001-00100/00019",
-    "total_time": 664.03
+    "total_time": 555.4,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-238-0.pddl": {
     "algorithm": "dual_bfws",
@@ -352,12 +409,15 @@
       "blocks_4_clear",
       "p-238-0.pddl"
     ],
-    "node": "n205",
+    "node": "n134",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 747.18,
+    "planner_wall_clock_time": 660.14,
     "problem": "p-238-0.pddl",
     "run_dir": "runs-00001-00100/00020",
-    "total_time": 747.15
+    "total_time": 660.12,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-240-0.pddl": {
     "algorithm": "dual_bfws",
@@ -370,12 +430,15 @@
       "blocks_4_clear",
       "p-240-0.pddl"
     ],
-    "node": "n135",
+    "node": "n1891",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 749.93,
+    "planner_wall_clock_time": 630.09,
     "problem": "p-240-0.pddl",
     "run_dir": "runs-00001-00100/00021",
-    "total_time": 749.9
+    "total_time": 630.06,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-242-0.pddl": {
     "algorithm": "dual_bfws",
@@ -388,12 +451,15 @@
       "blocks_4_clear",
       "p-242-0.pddl"
     ],
-    "node": "n818",
+    "node": "n132",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 796.78,
+    "planner_wall_clock_time": 754.54,
     "problem": "p-242-0.pddl",
     "run_dir": "runs-00001-00100/00022",
-    "total_time": 796.76
+    "total_time": 754.52,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-244-0.pddl": {
     "algorithm": "dual_bfws",
@@ -406,12 +472,15 @@
       "blocks_4_clear",
       "p-244-0.pddl"
     ],
-    "node": "n392",
+    "node": "n981",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 693.34,
+    "planner_wall_clock_time": 660.85,
     "problem": "p-244-0.pddl",
     "run_dir": "runs-00001-00100/00023",
-    "total_time": 693.32
+    "total_time": 660.83,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-246-0.pddl": {
     "algorithm": "dual_bfws",
@@ -424,12 +493,15 @@
       "blocks_4_clear",
       "p-246-0.pddl"
     ],
-    "node": "n240",
+    "node": "n134",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 835.25,
+    "planner_wall_clock_time": 760.22,
     "problem": "p-246-0.pddl",
     "run_dir": "runs-00001-00100/00024",
-    "total_time": 835.22
+    "total_time": 760.2,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-248-0.pddl": {
     "algorithm": "dual_bfws",
@@ -442,12 +514,15 @@
       "blocks_4_clear",
       "p-248-0.pddl"
     ],
-    "node": "n817",
+    "node": "n803",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 841.27,
+    "planner_wall_clock_time": 682.08,
     "problem": "p-248-0.pddl",
     "run_dir": "runs-00001-00100/00025",
-    "total_time": 841.2
+    "total_time": 682.06,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-250-0.pddl": {
     "algorithm": "dual_bfws",
@@ -460,12 +535,15 @@
       "blocks_4_clear",
       "p-250-0.pddl"
     ],
-    "node": "n146",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 885.83,
+    "planner_wall_clock_time": 796.83,
     "problem": "p-250-0.pddl",
     "run_dir": "runs-00001-00100/00026",
-    "total_time": 885.74
+    "total_time": 796.79,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-252-0.pddl": {
     "algorithm": "dual_bfws",
@@ -478,12 +556,15 @@
       "blocks_4_clear",
       "p-252-0.pddl"
     ],
-    "node": "n235",
+    "node": "n1806",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 785.52,
+    "planner_wall_clock_time": 803.05,
     "problem": "p-252-0.pddl",
     "run_dir": "runs-00001-00100/00027",
-    "total_time": 785.5
+    "total_time": 803.03,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-254-0.pddl": {
     "algorithm": "dual_bfws",
@@ -496,12 +577,15 @@
       "blocks_4_clear",
       "p-254-0.pddl"
     ],
-    "node": "n818",
+    "node": "n1973",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 994.77,
+    "planner_wall_clock_time": 840.37,
     "problem": "p-254-0.pddl",
     "run_dir": "runs-00001-00100/00028",
-    "total_time": 994.74
+    "total_time": 840.35,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-256-0.pddl": {
     "algorithm": "dual_bfws",
@@ -514,12 +598,15 @@
       "blocks_4_clear",
       "p-256-0.pddl"
     ],
-    "node": "n240",
+    "node": "n1806",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1008.14,
+    "planner_wall_clock_time": 860.22,
     "problem": "p-256-0.pddl",
     "run_dir": "runs-00001-00100/00029",
-    "total_time": 1008.11
+    "total_time": 860.2,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_clear-p-258-0.pddl": {
     "algorithm": "dual_bfws",
@@ -532,12 +619,15 @@
       "blocks_4_clear",
       "p-258-0.pddl"
     ],
-    "node": "n135",
+    "node": "n383",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1016.67,
+    "planner_wall_clock_time": 1014.11,
     "problem": "p-258-0.pddl",
     "run_dir": "runs-00001-00100/00030",
-    "total_time": 1016.64
+    "total_time": 1014.08,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-200-0.pddl": {
     "algorithm": "dual_bfws",
@@ -550,12 +640,15 @@
       "blocks_4_on",
       "p-200-0.pddl"
     ],
-    "node": "n153",
+    "node": "n936",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 603.26,
+    "planner_wall_clock_time": 819.8,
     "problem": "p-200-0.pddl",
     "run_dir": "runs-00001-00100/00031",
-    "total_time": 603.23
+    "total_time": 819.76,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-202-0.pddl": {
     "algorithm": "dual_bfws",
@@ -568,12 +661,15 @@
       "blocks_4_on",
       "p-202-0.pddl"
     ],
-    "node": "n163",
+    "node": "n770",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 320.65,
+    "planner_wall_clock_time": 316.66,
     "problem": "p-202-0.pddl",
     "run_dir": "runs-00001-00100/00032",
-    "total_time": 320.55
+    "total_time": 316.64,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-204-0.pddl": {
     "algorithm": "dual_bfws",
@@ -586,12 +682,15 @@
       "blocks_4_on",
       "p-204-0.pddl"
     ],
-    "node": "n136",
+    "node": "n1800",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 765.04,
+    "planner_wall_clock_time": 734.09,
     "problem": "p-204-0.pddl",
     "run_dir": "runs-00001-00100/00033",
-    "total_time": 764.99
+    "total_time": 734.07,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-206-0.pddl": {
     "algorithm": "dual_bfws",
@@ -603,11 +702,14 @@
       "blocks_4_on",
       "p-206-0.pddl"
     ],
-    "node": "n279",
+    "node": "n1994",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1801.62,
+    "planner_wall_clock_time": 1801.64,
     "problem": "p-206-0.pddl",
-    "run_dir": "runs-00001-00100/00034"
+    "run_dir": "runs-00001-00100/00034",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-208-0.pddl": {
     "algorithm": "dual_bfws",
@@ -620,12 +722,15 @@
       "blocks_4_on",
       "p-208-0.pddl"
     ],
-    "node": "n818",
+    "node": "n1044",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 396.16,
+    "planner_wall_clock_time": 364.06,
     "problem": "p-208-0.pddl",
     "run_dir": "runs-00001-00100/00035",
-    "total_time": 396.13
+    "total_time": 364.03,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-210-0.pddl": {
     "algorithm": "dual_bfws",
@@ -638,12 +743,15 @@
       "blocks_4_on",
       "p-210-0.pddl"
     ],
-    "node": "n393",
+    "node": "n1888",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 496.29,
+    "planner_wall_clock_time": 391.25,
     "problem": "p-210-0.pddl",
     "run_dir": "runs-00001-00100/00036",
-    "total_time": 496.26
+    "total_time": 391.22,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-212-0.pddl": {
     "algorithm": "dual_bfws",
@@ -656,12 +764,15 @@
       "blocks_4_on",
       "p-212-0.pddl"
     ],
-    "node": "n198",
+    "node": "n1800",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 525.33,
+    "planner_wall_clock_time": 409.4,
     "problem": "p-212-0.pddl",
     "run_dir": "runs-00001-00100/00037",
-    "total_time": 525.3
+    "total_time": 409.38,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-214-0.pddl": {
     "algorithm": "dual_bfws",
@@ -674,12 +785,15 @@
       "blocks_4_on",
       "p-214-0.pddl"
     ],
-    "node": "n817",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 787.45,
+    "planner_wall_clock_time": 708.58,
     "problem": "p-214-0.pddl",
     "run_dir": "runs-00001-00100/00038",
-    "total_time": 787.39
+    "total_time": 708.52,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-216-0.pddl": {
     "algorithm": "dual_bfws",
@@ -692,12 +806,15 @@
       "blocks_4_on",
       "p-216-0.pddl"
     ],
-    "node": "n1396",
+    "node": "n383",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 508.29,
+    "planner_wall_clock_time": 433.04,
     "problem": "p-216-0.pddl",
     "run_dir": "runs-00001-00100/00039",
-    "total_time": 508.26
+    "total_time": 433.01,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-218-0.pddl": {
     "algorithm": "dual_bfws",
@@ -710,12 +827,15 @@
       "blocks_4_on",
       "p-218-0.pddl"
     ],
-    "node": "n200",
+    "node": "n1800",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1179.18,
+    "planner_wall_clock_time": 1027.38,
     "problem": "p-218-0.pddl",
     "run_dir": "runs-00001-00100/00040",
-    "total_time": 1179.11
+    "total_time": 1027.31,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-220-0.pddl": {
     "algorithm": "dual_bfws",
@@ -728,12 +848,15 @@
       "blocks_4_on",
       "p-220-0.pddl"
     ],
-    "node": "n279",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 514.41,
+    "planner_wall_clock_time": 485.97,
     "problem": "p-220-0.pddl",
     "run_dir": "runs-00001-00100/00041",
-    "total_time": 514.38
+    "total_time": 485.94,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-222-0.pddl": {
     "algorithm": "dual_bfws",
@@ -746,12 +869,15 @@
       "blocks_4_on",
       "p-222-0.pddl"
     ],
-    "node": "n163",
+    "node": "n928",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 474.35,
+    "planner_wall_clock_time": 452.98,
     "problem": "p-222-0.pddl",
     "run_dir": "runs-00001-00100/00042",
-    "total_time": 474.29
+    "total_time": 452.96,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-224-0.pddl": {
     "algorithm": "dual_bfws",
@@ -764,12 +890,15 @@
       "blocks_4_on",
       "p-224-0.pddl"
     ],
-    "node": "n160",
+    "node": "n383",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 478.57,
+    "planner_wall_clock_time": 566.22,
     "problem": "p-224-0.pddl",
     "run_dir": "runs-00001-00100/00043",
-    "total_time": 478.54
+    "total_time": 566.2,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-226-0.pddl": {
     "algorithm": "dual_bfws",
@@ -782,12 +911,15 @@
       "blocks_4_on",
       "p-226-0.pddl"
     ],
-    "node": "n197",
+    "node": "n1668",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 459.59,
+    "planner_wall_clock_time": 585.31,
     "problem": "p-226-0.pddl",
     "run_dir": "runs-00001-00100/00044",
-    "total_time": 459.56
+    "total_time": 585.29,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-228-0.pddl": {
     "algorithm": "dual_bfws",
@@ -800,12 +932,15 @@
       "blocks_4_on",
       "p-228-0.pddl"
     ],
-    "node": "n279",
+    "node": "n968",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 580.53,
+    "planner_wall_clock_time": 452.38,
     "problem": "p-228-0.pddl",
     "run_dir": "runs-00001-00100/00045",
-    "total_time": 580.5
+    "total_time": 452.36,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-230-0.pddl": {
     "algorithm": "dual_bfws",
@@ -818,12 +953,15 @@
       "blocks_4_on",
       "p-230-0.pddl"
     ],
-    "node": "n392",
+    "node": "n770",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 544.55,
+    "planner_wall_clock_time": 531.35,
     "problem": "p-230-0.pddl",
     "run_dir": "runs-00001-00100/00046",
-    "total_time": 544.52
+    "total_time": 531.33,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-232-0.pddl": {
     "algorithm": "dual_bfws",
@@ -836,12 +974,15 @@
       "blocks_4_on",
       "p-232-0.pddl"
     ],
-    "node": "n393",
+    "node": "n1744",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 705.71,
+    "planner_wall_clock_time": 611.0,
     "problem": "p-232-0.pddl",
     "run_dir": "runs-00001-00100/00047",
-    "total_time": 705.68
+    "total_time": 610.98,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-234-0.pddl": {
     "algorithm": "dual_bfws",
@@ -853,11 +994,14 @@
       "blocks_4_on",
       "p-234-0.pddl"
     ],
-    "node": "n163",
+    "node": "n928",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1801.63,
+    "planner_wall_clock_time": 1801.97,
     "problem": "p-234-0.pddl",
-    "run_dir": "runs-00001-00100/00048"
+    "run_dir": "runs-00001-00100/00048",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-236-0.pddl": {
     "algorithm": "dual_bfws",
@@ -870,12 +1014,15 @@
       "blocks_4_on",
       "p-236-0.pddl"
     ],
-    "node": "n135",
+    "node": "n1891",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 699.65,
+    "planner_wall_clock_time": 553.34,
     "problem": "p-236-0.pddl",
     "run_dir": "runs-00001-00100/00049",
-    "total_time": 699.62
+    "total_time": 553.31,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-238-0.pddl": {
     "algorithm": "dual_bfws",
@@ -888,12 +1035,15 @@
       "blocks_4_on",
       "p-238-0.pddl"
     ],
-    "node": "n1493",
+    "node": "n1044",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 699.08,
+    "planner_wall_clock_time": 633.09,
     "problem": "p-238-0.pddl",
     "run_dir": "runs-00001-00100/00050",
-    "total_time": 699.06
+    "total_time": 633.04,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-240-0.pddl": {
     "algorithm": "dual_bfws",
@@ -905,11 +1055,14 @@
       "blocks_4_on",
       "p-240-0.pddl"
     ],
-    "node": "n236",
+    "node": "n383",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1801.46,
+    "planner_wall_clock_time": 1801.79,
     "problem": "p-240-0.pddl",
-    "run_dir": "runs-00001-00100/00051"
+    "run_dir": "runs-00001-00100/00051",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-242-0.pddl": {
     "algorithm": "dual_bfws",
@@ -921,11 +1074,14 @@
       "blocks_4_on",
       "p-242-0.pddl"
     ],
-    "node": "n205",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1801.52,
+    "planner_wall_clock_time": 1801.95,
     "problem": "p-242-0.pddl",
-    "run_dir": "runs-00001-00100/00052"
+    "run_dir": "runs-00001-00100/00052",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-244-0.pddl": {
     "algorithm": "dual_bfws",
@@ -938,12 +1094,15 @@
       "blocks_4_on",
       "p-244-0.pddl"
     ],
-    "node": "n390",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1220.02,
+    "planner_wall_clock_time": 1122.06,
     "problem": "p-244-0.pddl",
     "run_dir": "runs-00001-00100/00053",
-    "total_time": 1220.0
+    "total_time": 1122.03,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-246-0.pddl": {
     "algorithm": "dual_bfws",
@@ -956,12 +1115,15 @@
       "blocks_4_on",
       "p-246-0.pddl"
     ],
-    "node": "n1011",
+    "node": "n803",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 970.44,
+    "planner_wall_clock_time": 643.97,
     "problem": "p-246-0.pddl",
     "run_dir": "runs-00001-00100/00054",
-    "total_time": 970.42
+    "total_time": 643.95,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-248-0.pddl": {
     "algorithm": "dual_bfws",
@@ -974,12 +1136,15 @@
       "blocks_4_on",
       "p-248-0.pddl"
     ],
-    "node": "n1490",
+    "node": "n1994",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1218.34,
+    "planner_wall_clock_time": 1038.44,
     "problem": "p-248-0.pddl",
     "run_dir": "runs-00001-00100/00055",
-    "total_time": 1218.32
+    "total_time": 1038.41,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-250-0.pddl": {
     "algorithm": "dual_bfws",
@@ -991,11 +1156,14 @@
       "blocks_4_on",
       "p-250-0.pddl"
     ],
-    "node": "n136",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1801.69,
+    "planner_wall_clock_time": 1802.0,
     "problem": "p-250-0.pddl",
-    "run_dir": "runs-00001-00100/00056"
+    "run_dir": "runs-00001-00100/00056",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-252-0.pddl": {
     "algorithm": "dual_bfws",
@@ -1008,12 +1176,15 @@
       "blocks_4_on",
       "p-252-0.pddl"
     ],
-    "node": "n279",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 864.23,
+    "planner_wall_clock_time": 836.41,
     "problem": "p-252-0.pddl",
     "run_dir": "runs-00001-00100/00057",
-    "total_time": 864.2
+    "total_time": 836.38,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-254-0.pddl": {
     "algorithm": "dual_bfws",
@@ -1025,11 +1196,14 @@
       "blocks_4_on",
       "p-254-0.pddl"
     ],
-    "node": "n135",
+    "node": "n1806",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1803.68,
+    "planner_wall_clock_time": 1801.68,
     "problem": "p-254-0.pddl",
-    "run_dir": "runs-00001-00100/00058"
+    "run_dir": "runs-00001-00100/00058",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-256-0.pddl": {
     "algorithm": "dual_bfws",
@@ -1042,12 +1216,15 @@
       "blocks_4_on",
       "p-256-0.pddl"
     ],
-    "node": "n247",
+    "node": "n770",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1006.93,
+    "planner_wall_clock_time": 842.71,
     "problem": "p-256-0.pddl",
     "run_dir": "runs-00001-00100/00059",
-    "total_time": 1006.9
+    "total_time": 842.65,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-blocks_4_on-p-258-0.pddl": {
     "algorithm": "dual_bfws",
@@ -1059,15 +1236,18 @@
       "blocks_4_on",
       "p-258-0.pddl"
     ],
-    "node": "n232",
+    "node": "n132",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1802.08,
+    "planner_wall_clock_time": 1802.57,
     "problem": "p-258-0.pddl",
-    "run_dir": "runs-00001-00100/00060"
+    "run_dir": "runs-00001-00100/00060",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_20_25_40_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 1553,
+    "cost": 1152,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1076,16 +1256,19 @@
       "delivery",
       "instance_20_25_40_0.pddl"
     ],
-    "node": "n135",
+    "node": "n968",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 98.66,
+    "planner_wall_clock_time": 68.13,
     "problem": "instance_20_25_40_0.pddl",
     "run_dir": "runs-00001-00100/00061",
-    "total_time": 98.57
+    "total_time": 68.06,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_20_25_45_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 1839,
+    "cost": 1384,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1094,16 +1277,19 @@
       "delivery",
       "instance_20_25_45_0.pddl"
     ],
-    "node": "n279",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 136.07,
+    "planner_wall_clock_time": 93.17,
     "problem": "instance_20_25_45_0.pddl",
     "run_dir": "runs-00001-00100/00062",
-    "total_time": 135.98
+    "total_time": 93.09,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_20_30_30_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 1427,
+    "cost": 1165,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1112,16 +1298,19 @@
       "delivery",
       "instance_20_30_30_0.pddl"
     ],
-    "node": "n818",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 88.56,
+    "planner_wall_clock_time": 65.75,
     "problem": "instance_20_30_30_0.pddl",
     "run_dir": "runs-00001-00100/00063",
-    "total_time": 88.46
+    "total_time": 65.67,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_20_30_35_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 1801,
+    "cost": 1628,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1130,16 +1319,19 @@
       "delivery",
       "instance_20_30_35_0.pddl"
     ],
-    "node": "n201",
+    "node": "n1891",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 111.17,
+    "planner_wall_clock_time": 100.57,
     "problem": "instance_20_30_35_0.pddl",
     "run_dir": "runs-00001-00100/00064",
-    "total_time": 111.09
+    "total_time": 100.49,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_20_30_40_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 1855,
+    "cost": 1192,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1148,16 +1340,19 @@
       "delivery",
       "instance_20_30_40_0.pddl"
     ],
-    "node": "n1012",
+    "node": "n1044",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 146.97,
+    "planner_wall_clock_time": 102.62,
     "problem": "instance_20_30_40_0.pddl",
     "run_dir": "runs-00001-00100/00065",
-    "total_time": 146.87
+    "total_time": 102.55,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_20_30_45_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 2156,
+    "cost": 1195,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1166,16 +1361,19 @@
       "delivery",
       "instance_20_30_45_0.pddl"
     ],
-    "node": "n202",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 231.61,
+    "planner_wall_clock_time": 127.26,
     "problem": "instance_20_30_45_0.pddl",
     "run_dir": "runs-00001-00100/00066",
-    "total_time": 231.49
+    "total_time": 127.19,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_25_20_30_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 1386,
+    "cost": 808,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1184,16 +1382,19 @@
       "delivery",
       "instance_25_20_30_0.pddl"
     ],
-    "node": "n247",
+    "node": "n1326",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 68.25,
+    "planner_wall_clock_time": 41.28,
     "problem": "instance_25_20_30_0.pddl",
     "run_dir": "runs-00001-00100/00067",
-    "total_time": 68.17
+    "total_time": 41.22,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_25_20_35_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 1567,
+    "cost": 1109,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1202,16 +1403,19 @@
       "delivery",
       "instance_25_20_35_0.pddl"
     ],
-    "node": "n240",
+    "node": "n981",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 85.55,
+    "planner_wall_clock_time": 54.3,
     "problem": "instance_25_20_35_0.pddl",
     "run_dir": "runs-00001-00100/00068",
-    "total_time": 85.46
+    "total_time": 54.23,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_25_20_40_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 2079,
+    "cost": 1202,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1220,16 +1424,19 @@
       "delivery",
       "instance_25_20_40_0.pddl"
     ],
-    "node": "n205",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 140.97,
+    "planner_wall_clock_time": 71.58,
     "problem": "instance_25_20_40_0.pddl",
     "run_dir": "runs-00001-00100/00069",
-    "total_time": 140.87
+    "total_time": 71.5,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_25_20_45_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 2302,
+    "cost": 1667,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1238,16 +1445,19 @@
       "delivery",
       "instance_25_20_45_0.pddl"
     ],
-    "node": "n204",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 178.26,
+    "planner_wall_clock_time": 113.36,
     "problem": "instance_25_20_45_0.pddl",
     "run_dir": "runs-00001-00100/00070",
-    "total_time": 178.15
+    "total_time": 113.28,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_25_25_30_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 1655,
+    "cost": 1073,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1256,16 +1466,19 @@
       "delivery",
       "instance_25_25_30_0.pddl"
     ],
-    "node": "n203",
+    "node": "n1800",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 105.67,
+    "planner_wall_clock_time": 64.43,
     "problem": "instance_25_25_30_0.pddl",
     "run_dir": "runs-00001-00100/00071",
-    "total_time": 105.57
+    "total_time": 64.36,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_25_25_35_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 1737,
+    "cost": 1019,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1274,16 +1487,19 @@
       "delivery",
       "instance_25_25_35_0.pddl"
     ],
-    "node": "n247",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 139.17,
+    "planner_wall_clock_time": 81.38,
     "problem": "instance_25_25_35_0.pddl",
     "run_dir": "runs-00001-00100/00072",
-    "total_time": 139.07
+    "total_time": 81.31,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_25_25_40_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 2319,
+    "cost": 1502,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1292,16 +1508,19 @@
       "delivery",
       "instance_25_25_40_0.pddl"
     ],
-    "node": "n206",
+    "node": "n968",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 218.96,
+    "planner_wall_clock_time": 127.79,
     "problem": "instance_25_25_40_0.pddl",
     "run_dir": "runs-00001-00100/00073",
-    "total_time": 218.86
+    "total_time": 127.7,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_25_25_45_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 2513,
+    "cost": 1763,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1310,16 +1529,19 @@
       "delivery",
       "instance_25_25_45_0.pddl"
     ],
-    "node": "n248",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 281.52,
+    "planner_wall_clock_time": 180.01,
     "problem": "instance_25_25_45_0.pddl",
     "run_dir": "runs-00001-00100/00074",
-    "total_time": 281.38
+    "total_time": 179.92,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_25_30_30_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 1606,
+    "cost": 1104,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1328,16 +1550,19 @@
       "delivery",
       "instance_25_30_30_0.pddl"
     ],
-    "node": "n201",
+    "node": "n1044",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 114.85,
+    "planner_wall_clock_time": 93.7,
     "problem": "instance_25_30_30_0.pddl",
     "run_dir": "runs-00001-00100/00075",
-    "total_time": 114.76
+    "total_time": 93.62,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_25_30_35_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 1834,
+    "cost": 1365,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1346,16 +1571,19 @@
       "delivery",
       "instance_25_30_35_0.pddl"
     ],
-    "node": "n817",
+    "node": "n1653",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 181.61,
+    "planner_wall_clock_time": 170.56,
     "problem": "instance_25_30_35_0.pddl",
     "run_dir": "runs-00001-00100/00076",
-    "total_time": 181.37
+    "total_time": 170.46,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_25_30_40_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 2171,
+    "cost": 1542,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1364,16 +1592,19 @@
       "delivery",
       "instance_25_30_40_0.pddl"
     ],
-    "node": "n1400",
+    "node": "n803",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 275.05,
+    "planner_wall_clock_time": 181.65,
     "problem": "instance_25_30_40_0.pddl",
     "run_dir": "runs-00001-00100/00077",
-    "total_time": 274.93
+    "total_time": 181.56,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_25_30_45_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 2474,
+    "cost": 1666,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1382,16 +1613,19 @@
       "delivery",
       "instance_25_30_45_0.pddl"
     ],
-    "node": "n248",
+    "node": "n1326",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 346.15,
+    "planner_wall_clock_time": 252.44,
     "problem": "instance_25_30_45_0.pddl",
     "run_dir": "runs-00001-00100/00078",
-    "total_time": 346.03
+    "total_time": 252.34,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_30_20_30_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 1547,
+    "cost": 1178,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1400,16 +1634,19 @@
       "delivery",
       "instance_30_20_30_0.pddl"
     ],
-    "node": "n248",
+    "node": "n1763",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 88.57,
+    "planner_wall_clock_time": 68.29,
     "problem": "instance_30_20_30_0.pddl",
     "run_dir": "runs-00001-00100/00079",
-    "total_time": 88.47
+    "total_time": 68.21,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_30_20_35_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 1726,
+    "cost": 1069,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1418,16 +1655,19 @@
       "delivery",
       "instance_30_20_35_0.pddl"
     ],
-    "node": "n392",
+    "node": "n1800",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 106.98,
+    "planner_wall_clock_time": 77.02,
     "problem": "instance_30_20_35_0.pddl",
     "run_dir": "runs-00001-00100/00080",
-    "total_time": 106.89
+    "total_time": 76.95,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_30_20_40_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 2130,
+    "cost": 1164,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1436,16 +1676,19 @@
       "delivery",
       "instance_30_20_40_0.pddl"
     ],
-    "node": "n1011",
+    "node": "n1994",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 165.87,
+    "planner_wall_clock_time": 100.33,
     "problem": "instance_30_20_40_0.pddl",
     "run_dir": "runs-00001-00100/00081",
-    "total_time": 165.77
+    "total_time": 100.25,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_30_20_45_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 2081,
+    "cost": 1592,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1454,16 +1697,19 @@
       "delivery",
       "instance_30_20_45_0.pddl"
     ],
-    "node": "n163",
+    "node": "n1806",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 211.34,
+    "planner_wall_clock_time": 143.93,
     "problem": "instance_30_20_45_0.pddl",
     "run_dir": "runs-00001-00100/00082",
-    "total_time": 211.1
+    "total_time": 143.84,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_30_25_30_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 1648,
+    "cost": 1189,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1472,16 +1718,19 @@
       "delivery",
       "instance_30_25_30_0.pddl"
     ],
-    "node": "n818",
+    "node": "n1324",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 149.67,
+    "planner_wall_clock_time": 113.46,
     "problem": "instance_30_25_30_0.pddl",
     "run_dir": "runs-00001-00100/00083",
-    "total_time": 149.56
+    "total_time": 113.36,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_30_25_35_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 1942,
+    "cost": 1661,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1490,16 +1739,19 @@
       "delivery",
       "instance_30_25_35_0.pddl"
     ],
-    "node": "n386",
+    "node": "n770",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 269.13,
+    "planner_wall_clock_time": 165.2,
     "problem": "instance_30_25_35_0.pddl",
     "run_dir": "runs-00001-00100/00084",
-    "total_time": 269.01
+    "total_time": 165.11,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_30_25_40_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 2085,
+    "cost": 1377,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1508,12 +1760,15 @@
       "delivery",
       "instance_30_25_40_0.pddl"
     ],
-    "node": "n1401",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 244.27,
+    "planner_wall_clock_time": 186.88,
     "problem": "instance_30_25_40_0.pddl",
     "run_dir": "runs-00001-00100/00085",
-    "total_time": 244.17
+    "total_time": 186.8,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_30_25_45_0.pddl": {
     "algorithm": "dual_bfws",
@@ -1525,15 +1780,18 @@
       "delivery",
       "instance_30_25_45_0.pddl"
     ],
-    "node": "n205",
+    "node": "n192",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 393.82,
+    "planner_wall_clock_time": 378.42,
     "problem": "instance_30_25_45_0.pddl",
-    "run_dir": "runs-00001-00100/00086"
+    "run_dir": "runs-00001-00100/00086",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_30_30_30_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 1736,
+    "cost": 1226,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1542,17 +1800,19 @@
       "delivery",
       "instance_30_30_30_0.pddl"
     ],
-    "node": "n338",
+    "node": "n981",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 198.65,
+    "planner_wall_clock_time": 142.84,
     "problem": "instance_30_30_30_0.pddl",
     "run_dir": "runs-00001-00100/00087",
-    "total_time": 198.55
+    "total_time": 142.75,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_30_30_35_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 2138,
-    "coverage": 1,
+    "coverage": 0,
     "domain": "delivery",
     "error": "none",
     "id": [
@@ -1560,16 +1820,18 @@
       "delivery",
       "instance_30_30_35_0.pddl"
     ],
-    "node": "n279",
+    "node": "n192",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 351.27,
+    "planner_wall_clock_time": 333.72,
     "problem": "instance_30_30_35_0.pddl",
     "run_dir": "runs-00001-00100/00088",
-    "total_time": 351.14
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_30_30_40_0.pddl": {
     "algorithm": "dual_bfws",
-    "cost": 2222,
+    "cost": 1569,
     "coverage": 1,
     "domain": "delivery",
     "error": "none",
@@ -1578,16 +1840,20 @@
       "delivery",
       "instance_30_30_40_0.pddl"
     ],
-    "node": "n241",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 411.92,
+    "planner_wall_clock_time": 265.2,
     "problem": "instance_30_30_40_0.pddl",
     "run_dir": "runs-00001-00100/00089",
-    "total_time": 411.8
+    "total_time": 265.09,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-delivery-instance_30_30_45_0.pddl": {
     "algorithm": "dual_bfws",
-    "coverage": 0,
+    "cost": 1727,
+    "coverage": 1,
     "domain": "delivery",
     "error": "none",
     "id": [
@@ -1595,11 +1861,15 @@
       "delivery",
       "instance_30_30_45_0.pddl"
     ],
-    "node": "n338",
+    "node": "n1806",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 404.5,
+    "planner_wall_clock_time": 320.19,
     "problem": "instance_30_30_45_0.pddl",
-    "run_dir": "runs-00001-00100/00090"
+    "run_dir": "runs-00001-00100/00090",
+    "total_time": 320.09,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p01.pddl": {
     "algorithm": "dual_bfws",
@@ -1612,12 +1882,15 @@
       "gripper",
       "p01.pddl"
     ],
-    "node": "n393",
+    "node": "n981",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.72,
+    "planner_wall_clock_time": 0.42,
     "problem": "p01.pddl",
     "run_dir": "runs-00001-00100/00091",
-    "total_time": 0.58
+    "total_time": 0.4,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p02.pddl": {
     "algorithm": "dual_bfws",
@@ -1630,12 +1903,15 @@
       "gripper",
       "p02.pddl"
     ],
-    "node": "n818",
+    "node": "n1994",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.52,
+    "planner_wall_clock_time": 0.43,
     "problem": "p02.pddl",
     "run_dir": "runs-00001-00100/00092",
-    "total_time": 0.48
+    "total_time": 0.4,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p03.pddl": {
     "algorithm": "dual_bfws",
@@ -1648,12 +1924,15 @@
       "gripper",
       "p03.pddl"
     ],
-    "node": "n392",
+    "node": "n1888",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.46,
+    "planner_wall_clock_time": 0.55,
     "problem": "p03.pddl",
     "run_dir": "runs-00001-00100/00093",
-    "total_time": 0.43
+    "total_time": 0.53,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p04.pddl": {
     "algorithm": "dual_bfws",
@@ -1666,12 +1945,15 @@
       "gripper",
       "p04.pddl"
     ],
-    "node": "n392",
+    "node": "n1690",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.47,
+    "planner_wall_clock_time": 0.45,
     "problem": "p04.pddl",
     "run_dir": "runs-00001-00100/00094",
-    "total_time": 0.44
+    "total_time": 0.42,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p05.pddl": {
     "algorithm": "dual_bfws",
@@ -1684,12 +1966,15 @@
       "gripper",
       "p05.pddl"
     ],
-    "node": "n279",
+    "node": "n1326",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.57,
+    "planner_wall_clock_time": 0.5,
     "problem": "p05.pddl",
     "run_dir": "runs-00001-00100/00095",
-    "total_time": 0.53
+    "total_time": 0.48,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p06.pddl": {
     "algorithm": "dual_bfws",
@@ -1702,12 +1987,15 @@
       "gripper",
       "p06.pddl"
     ],
-    "node": "n393",
+    "node": "n1800",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.65,
+    "planner_wall_clock_time": 0.52,
     "problem": "p06.pddl",
     "run_dir": "runs-00001-00100/00096",
-    "total_time": 0.62
+    "total_time": 0.45,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p07.pddl": {
     "algorithm": "dual_bfws",
@@ -1720,12 +2008,15 @@
       "gripper",
       "p07.pddl"
     ],
-    "node": "n1011",
+    "node": "n968",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.67,
+    "planner_wall_clock_time": 0.65,
     "problem": "p07.pddl",
     "run_dir": "runs-00001-00100/00097",
-    "total_time": 0.64
+    "total_time": 0.62,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p08.pddl": {
     "algorithm": "dual_bfws",
@@ -1738,12 +2029,15 @@
       "gripper",
       "p08.pddl"
     ],
-    "node": "n392",
+    "node": "n1888",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.64,
+    "planner_wall_clock_time": 0.57,
     "problem": "p08.pddl",
     "run_dir": "runs-00001-00100/00098",
-    "total_time": 0.61
+    "total_time": 0.54,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p09.pddl": {
     "algorithm": "dual_bfws",
@@ -1756,12 +2050,15 @@
       "gripper",
       "p09.pddl"
     ],
-    "node": "n1490",
+    "node": "n1668",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.67,
+    "planner_wall_clock_time": 0.71,
     "problem": "p09.pddl",
     "run_dir": "runs-00001-00100/00099",
-    "total_time": 0.64
+    "total_time": 0.68,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p10.pddl": {
     "algorithm": "dual_bfws",
@@ -1774,12 +2071,15 @@
       "gripper",
       "p10.pddl"
     ],
-    "node": "n279",
+    "node": "n1994",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.86,
+    "planner_wall_clock_time": 0.73,
     "problem": "p10.pddl",
     "run_dir": "runs-00001-00100/00100",
-    "total_time": 0.73
+    "total_time": 0.69,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p11.pddl": {
     "algorithm": "dual_bfws",
@@ -1792,12 +2092,15 @@
       "gripper",
       "p11.pddl"
     ],
-    "node": "n393",
+    "node": "n1891",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.92,
+    "planner_wall_clock_time": 0.79,
     "problem": "p11.pddl",
     "run_dir": "runs-00101-00200/00101",
-    "total_time": 0.88
+    "total_time": 0.76,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p12.pddl": {
     "algorithm": "dual_bfws",
@@ -1810,12 +2113,15 @@
       "gripper",
       "p12.pddl"
     ],
-    "node": "n1396",
+    "node": "n770",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1.04,
+    "planner_wall_clock_time": 0.9,
     "problem": "p12.pddl",
     "run_dir": "runs-00101-00200/00102",
-    "total_time": 1.01
+    "total_time": 0.87,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p13.pddl": {
     "algorithm": "dual_bfws",
@@ -1828,12 +2134,15 @@
       "gripper",
       "p13.pddl"
     ],
-    "node": "n1490",
+    "node": "n770",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1.14,
+    "planner_wall_clock_time": 0.95,
     "problem": "p13.pddl",
     "run_dir": "runs-00101-00200/00103",
-    "total_time": 1.01
+    "total_time": 0.92,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p14.pddl": {
     "algorithm": "dual_bfws",
@@ -1846,12 +2155,15 @@
       "gripper",
       "p14.pddl"
     ],
-    "node": "n1396",
+    "node": "n383",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1.23,
+    "planner_wall_clock_time": 1.18,
     "problem": "p14.pddl",
     "run_dir": "runs-00101-00200/00104",
-    "total_time": 1.19
+    "total_time": 1.14,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p15.pddl": {
     "algorithm": "dual_bfws",
@@ -1864,12 +2176,15 @@
       "gripper",
       "p15.pddl"
     ],
-    "node": "n1011",
+    "node": "n1326",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1.5,
+    "planner_wall_clock_time": 1.15,
     "problem": "p15.pddl",
     "run_dir": "runs-00101-00200/00105",
-    "total_time": 1.44
+    "total_time": 1.12,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p16.pddl": {
     "algorithm": "dual_bfws",
@@ -1882,12 +2197,15 @@
       "gripper",
       "p16.pddl"
     ],
-    "node": "n1012",
+    "node": "n1800",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1.4,
+    "planner_wall_clock_time": 1.29,
     "problem": "p16.pddl",
     "run_dir": "runs-00101-00200/00106",
-    "total_time": 1.36
+    "total_time": 1.26,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p17.pddl": {
     "algorithm": "dual_bfws",
@@ -1900,12 +2218,15 @@
       "gripper",
       "p17.pddl"
     ],
-    "node": "n1490",
+    "node": "n1891",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1.5,
+    "planner_wall_clock_time": 1.53,
     "problem": "p17.pddl",
     "run_dir": "runs-00101-00200/00107",
-    "total_time": 1.46
+    "total_time": 1.43,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p18.pddl": {
     "algorithm": "dual_bfws",
@@ -1918,12 +2239,15 @@
       "gripper",
       "p18.pddl"
     ],
-    "node": "n388",
+    "node": "n383",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1.72,
+    "planner_wall_clock_time": 1.7,
     "problem": "p18.pddl",
     "run_dir": "runs-00101-00200/00108",
-    "total_time": 1.68
+    "total_time": 1.59,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p19.pddl": {
     "algorithm": "dual_bfws",
@@ -1936,12 +2260,15 @@
       "gripper",
       "p19.pddl"
     ],
-    "node": "n279",
+    "node": "n132",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1.79,
+    "planner_wall_clock_time": 1.91,
     "problem": "p19.pddl",
     "run_dir": "runs-00101-00200/00109",
-    "total_time": 1.75
+    "total_time": 1.87,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p20.pddl": {
     "algorithm": "dual_bfws",
@@ -1954,12 +2281,15 @@
       "gripper",
       "p20.pddl"
     ],
-    "node": "n247",
+    "node": "n1800",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 2.14,
+    "planner_wall_clock_time": 1.93,
     "problem": "p20.pddl",
     "run_dir": "runs-00101-00200/00110",
-    "total_time": 2.06
+    "total_time": 1.89,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p21.pddl": {
     "algorithm": "dual_bfws",
@@ -1972,12 +2302,15 @@
       "gripper",
       "p21.pddl"
     ],
-    "node": "n136",
+    "node": "n1668",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 2.1,
+    "planner_wall_clock_time": 2.38,
     "problem": "p21.pddl",
     "run_dir": "runs-00101-00200/00111",
-    "total_time": 2.06
+    "total_time": 2.34,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p22.pddl": {
     "algorithm": "dual_bfws",
@@ -1990,12 +2323,15 @@
       "gripper",
       "p22.pddl"
     ],
-    "node": "n392",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 2.2,
+    "planner_wall_clock_time": 2.36,
     "problem": "p22.pddl",
     "run_dir": "runs-00101-00200/00112",
-    "total_time": 2.16
+    "total_time": 2.32,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p23.pddl": {
     "algorithm": "dual_bfws",
@@ -2008,12 +2344,15 @@
       "gripper",
       "p23.pddl"
     ],
-    "node": "n203",
+    "node": "n1653",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 2.68,
+    "planner_wall_clock_time": 2.86,
     "problem": "p23.pddl",
     "run_dir": "runs-00101-00200/00113",
-    "total_time": 2.64
+    "total_time": 2.82,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p24.pddl": {
     "algorithm": "dual_bfws",
@@ -2026,12 +2365,15 @@
       "gripper",
       "p24.pddl"
     ],
-    "node": "n818",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 3.56,
+    "planner_wall_clock_time": 2.97,
     "problem": "p24.pddl",
     "run_dir": "runs-00101-00200/00114",
-    "total_time": 3.46
+    "total_time": 2.9,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p25.pddl": {
     "algorithm": "dual_bfws",
@@ -2044,12 +2386,15 @@
       "gripper",
       "p25.pddl"
     ],
-    "node": "n135",
+    "node": "n803",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 3.44,
+    "planner_wall_clock_time": 3.05,
     "problem": "p25.pddl",
     "run_dir": "runs-00101-00200/00115",
-    "total_time": 3.39
+    "total_time": 3.01,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p26.pddl": {
     "algorithm": "dual_bfws",
@@ -2062,12 +2407,15 @@
       "gripper",
       "p26.pddl"
     ],
-    "node": "n1012",
+    "node": "n936",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 3.97,
+    "planner_wall_clock_time": 3.85,
     "problem": "p26.pddl",
     "run_dir": "runs-00101-00200/00116",
-    "total_time": 3.92
+    "total_time": 3.8,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p27.pddl": {
     "algorithm": "dual_bfws",
@@ -2080,12 +2428,15 @@
       "gripper",
       "p27.pddl"
     ],
-    "node": "n1012",
+    "node": "n1800",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 4.17,
+    "planner_wall_clock_time": 3.98,
     "problem": "p27.pddl",
     "run_dir": "runs-00101-00200/00117",
-    "total_time": 4.12
+    "total_time": 3.94,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p28.pddl": {
     "algorithm": "dual_bfws",
@@ -2098,12 +2449,15 @@
       "gripper",
       "p28.pddl"
     ],
-    "node": "n205",
+    "node": "n981",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 4.96,
+    "planner_wall_clock_time": 4.33,
     "problem": "p28.pddl",
     "run_dir": "runs-00101-00200/00118",
-    "total_time": 4.92
+    "total_time": 4.28,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p29.pddl": {
     "algorithm": "dual_bfws",
@@ -2116,12 +2470,15 @@
       "gripper",
       "p29.pddl"
     ],
-    "node": "n247",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 5.22,
+    "planner_wall_clock_time": 5.15,
     "problem": "p29.pddl",
     "run_dir": "runs-00101-00200/00119",
-    "total_time": 5.15
+    "total_time": 5.11,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-gripper-p30.pddl": {
     "algorithm": "dual_bfws",
@@ -2134,12 +2491,15 @@
       "gripper",
       "p30.pddl"
     ],
-    "node": "n818",
+    "node": "n1800",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 6.55,
+    "planner_wall_clock_time": 5.37,
     "problem": "p30.pddl",
     "run_dir": "runs-00101-00200/00120",
-    "total_time": 6.5
+    "total_time": 5.32,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p01.pddl": {
     "algorithm": "dual_bfws",
@@ -2152,12 +2512,15 @@
       "miconic",
       "p01.pddl"
     ],
-    "node": "n390",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.49,
+    "planner_wall_clock_time": 0.41,
     "problem": "p01.pddl",
     "run_dir": "runs-00101-00200/00121",
-    "total_time": 0.46
+    "total_time": 0.39,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p02.pddl": {
     "algorithm": "dual_bfws",
@@ -2170,12 +2533,15 @@
       "miconic",
       "p02.pddl"
     ],
-    "node": "n1400",
+    "node": "n1806",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.68,
+    "planner_wall_clock_time": 0.46,
     "problem": "p02.pddl",
     "run_dir": "runs-00101-00200/00122",
-    "total_time": 0.52
+    "total_time": 0.38,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p03.pddl": {
     "algorithm": "dual_bfws",
@@ -2188,12 +2554,15 @@
       "miconic",
       "p03.pddl"
     ],
-    "node": "n817",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.49,
+    "planner_wall_clock_time": 0.45,
     "problem": "p03.pddl",
     "run_dir": "runs-00101-00200/00123",
-    "total_time": 0.46
+    "total_time": 0.42,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p04.pddl": {
     "algorithm": "dual_bfws",
@@ -2206,12 +2575,15 @@
       "miconic",
       "p04.pddl"
     ],
-    "node": "n203",
+    "node": "n1326",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.65,
+    "planner_wall_clock_time": 0.51,
     "problem": "p04.pddl",
     "run_dir": "runs-00101-00200/00124",
-    "total_time": 0.62
+    "total_time": 0.48,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p05.pddl": {
     "algorithm": "dual_bfws",
@@ -2224,12 +2596,15 @@
       "miconic",
       "p05.pddl"
     ],
-    "node": "n388",
+    "node": "n1891",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.56,
+    "planner_wall_clock_time": 0.49,
     "problem": "p05.pddl",
     "run_dir": "runs-00101-00200/00125",
-    "total_time": 0.53
+    "total_time": 0.46,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p06.pddl": {
     "algorithm": "dual_bfws",
@@ -2242,12 +2617,15 @@
       "miconic",
       "p06.pddl"
     ],
-    "node": "n388",
+    "node": "n1668",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.62,
+    "planner_wall_clock_time": 0.7,
     "problem": "p06.pddl",
     "run_dir": "runs-00101-00200/00126",
-    "total_time": 0.58
+    "total_time": 0.66,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p07.pddl": {
     "algorithm": "dual_bfws",
@@ -2260,12 +2638,15 @@
       "miconic",
       "p07.pddl"
     ],
-    "node": "n1493",
+    "node": "n134",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.66,
+    "planner_wall_clock_time": 0.67,
     "problem": "p07.pddl",
     "run_dir": "runs-00101-00200/00127",
-    "total_time": 0.62
+    "total_time": 0.64,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p08.pddl": {
     "algorithm": "dual_bfws",
@@ -2278,12 +2659,15 @@
       "miconic",
       "p08.pddl"
     ],
-    "node": "n1012",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.74,
+    "planner_wall_clock_time": 0.71,
     "problem": "p08.pddl",
     "run_dir": "runs-00101-00200/00128",
-    "total_time": 0.7
+    "total_time": 0.68,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p09.pddl": {
     "algorithm": "dual_bfws",
@@ -2296,12 +2680,15 @@
       "miconic",
       "p09.pddl"
     ],
-    "node": "n390",
+    "node": "n968",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1.03,
+    "planner_wall_clock_time": 0.78,
     "problem": "p09.pddl",
     "run_dir": "runs-00101-00200/00129",
-    "total_time": 0.98
+    "total_time": 0.75,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p10.pddl": {
     "algorithm": "dual_bfws",
@@ -2314,12 +2701,15 @@
       "miconic",
       "p10.pddl"
     ],
-    "node": "n235",
+    "node": "n1326",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.96,
+    "planner_wall_clock_time": 0.99,
     "problem": "p10.pddl",
     "run_dir": "runs-00101-00200/00130",
-    "total_time": 0.92
+    "total_time": 0.95,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p11.pddl": {
     "algorithm": "dual_bfws",
@@ -2332,12 +2722,15 @@
       "miconic",
       "p11.pddl"
     ],
-    "node": "n206",
+    "node": "n981",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1.24,
+    "planner_wall_clock_time": 1.07,
     "problem": "p11.pddl",
     "run_dir": "runs-00101-00200/00131",
-    "total_time": 1.19
+    "total_time": 1.03,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p12.pddl": {
     "algorithm": "dual_bfws",
@@ -2350,12 +2743,15 @@
       "miconic",
       "p12.pddl"
     ],
-    "node": "n135",
+    "node": "n803",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1.5,
+    "planner_wall_clock_time": 1.31,
     "problem": "p12.pddl",
     "run_dir": "runs-00101-00200/00132",
-    "total_time": 1.42
+    "total_time": 1.27,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p13.pddl": {
     "algorithm": "dual_bfws",
@@ -2368,12 +2764,15 @@
       "miconic",
       "p13.pddl"
     ],
-    "node": "n240",
+    "node": "n1891",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1.83,
+    "planner_wall_clock_time": 1.46,
     "problem": "p13.pddl",
     "run_dir": "runs-00101-00200/00133",
-    "total_time": 1.78
+    "total_time": 1.42,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p14.pddl": {
     "algorithm": "dual_bfws",
@@ -2386,12 +2785,15 @@
       "miconic",
       "p14.pddl"
     ],
-    "node": "n1493",
+    "node": "n1800",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 2.2,
+    "planner_wall_clock_time": 1.9,
     "problem": "p14.pddl",
     "run_dir": "runs-00101-00200/00134",
-    "total_time": 2.15
+    "total_time": 1.86,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p15.pddl": {
     "algorithm": "dual_bfws",
@@ -2404,12 +2806,15 @@
       "miconic",
       "p15.pddl"
     ],
-    "node": "n393",
+    "node": "n1690",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 2.6,
+    "planner_wall_clock_time": 2.23,
     "problem": "p15.pddl",
     "run_dir": "runs-00101-00200/00135",
-    "total_time": 2.54
+    "total_time": 2.18,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p16.pddl": {
     "algorithm": "dual_bfws",
@@ -2422,12 +2827,15 @@
       "miconic",
       "p16.pddl"
     ],
-    "node": "n1012",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 2.8,
+    "planner_wall_clock_time": 2.82,
     "problem": "p16.pddl",
     "run_dir": "runs-00101-00200/00136",
-    "total_time": 2.75
+    "total_time": 2.77,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p17.pddl": {
     "algorithm": "dual_bfws",
@@ -2440,12 +2848,15 @@
       "miconic",
       "p17.pddl"
     ],
-    "node": "n235",
+    "node": "n770",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 3.28,
+    "planner_wall_clock_time": 3.47,
     "problem": "p17.pddl",
     "run_dir": "runs-00101-00200/00137",
-    "total_time": 3.23
+    "total_time": 3.41,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p18.pddl": {
     "algorithm": "dual_bfws",
@@ -2458,12 +2869,15 @@
       "miconic",
       "p18.pddl"
     ],
-    "node": "n135",
+    "node": "n1763",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 4.27,
+    "planner_wall_clock_time": 4.29,
     "problem": "p18.pddl",
     "run_dir": "runs-00101-00200/00138",
-    "total_time": 4.21
+    "total_time": 4.23,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p19.pddl": {
     "algorithm": "dual_bfws",
@@ -2476,12 +2890,15 @@
       "miconic",
       "p19.pddl"
     ],
-    "node": "n393",
+    "node": "n1891",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 5.42,
+    "planner_wall_clock_time": 4.4,
     "problem": "p19.pddl",
     "run_dir": "runs-00101-00200/00139",
-    "total_time": 5.36
+    "total_time": 4.34,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p20.pddl": {
     "algorithm": "dual_bfws",
@@ -2494,12 +2911,15 @@
       "miconic",
       "p20.pddl"
     ],
-    "node": "n1011",
+    "node": "n1653",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 6.71,
+    "planner_wall_clock_time": 6.24,
     "problem": "p20.pddl",
     "run_dir": "runs-00101-00200/00140",
-    "total_time": 6.64
+    "total_time": 6.18,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p21.pddl": {
     "algorithm": "dual_bfws",
@@ -2512,12 +2932,15 @@
       "miconic",
       "p21.pddl"
     ],
-    "node": "n240",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 7.41,
+    "planner_wall_clock_time": 6.48,
     "problem": "p21.pddl",
     "run_dir": "runs-00101-00200/00141",
-    "total_time": 7.34
+    "total_time": 6.34,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p22.pddl": {
     "algorithm": "dual_bfws",
@@ -2530,12 +2953,15 @@
       "miconic",
       "p22.pddl"
     ],
-    "node": "n203",
+    "node": "n1744",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 7.41,
+    "planner_wall_clock_time": 7.66,
     "problem": "p22.pddl",
     "run_dir": "runs-00101-00200/00142",
-    "total_time": 7.34
+    "total_time": 7.59,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p23.pddl": {
     "algorithm": "dual_bfws",
@@ -2548,12 +2974,15 @@
       "miconic",
       "p23.pddl"
     ],
-    "node": "n392",
+    "node": "n1806",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 8.51,
+    "planner_wall_clock_time": 8.76,
     "problem": "p23.pddl",
     "run_dir": "runs-00101-00200/00143",
-    "total_time": 8.44
+    "total_time": 8.69,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p24.pddl": {
     "algorithm": "dual_bfws",
@@ -2566,12 +2995,15 @@
       "miconic",
       "p24.pddl"
     ],
-    "node": "n153",
+    "node": "n803",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 9.17,
+    "planner_wall_clock_time": 10.3,
     "problem": "p24.pddl",
     "run_dir": "runs-00101-00200/00144",
-    "total_time": 9.09
+    "total_time": 10.23,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p25.pddl": {
     "algorithm": "dual_bfws",
@@ -2584,12 +3016,15 @@
       "miconic",
       "p25.pddl"
     ],
-    "node": "n240",
+    "node": "n1891",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 12.75,
+    "planner_wall_clock_time": 10.8,
     "problem": "p25.pddl",
     "run_dir": "runs-00101-00200/00145",
-    "total_time": 12.66
+    "total_time": 10.72,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p26.pddl": {
     "algorithm": "dual_bfws",
@@ -2602,12 +3037,15 @@
       "miconic",
       "p26.pddl"
     ],
-    "node": "n392",
+    "node": "n1690",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 12.51,
+    "planner_wall_clock_time": 12.91,
     "problem": "p26.pddl",
     "run_dir": "runs-00101-00200/00146",
-    "total_time": 12.43
+    "total_time": 12.83,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p27.pddl": {
     "algorithm": "dual_bfws",
@@ -2620,12 +3058,15 @@
       "miconic",
       "p27.pddl"
     ],
-    "node": "n392",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 15.01,
+    "planner_wall_clock_time": 15.09,
     "problem": "p27.pddl",
     "run_dir": "runs-00101-00200/00147",
-    "total_time": 14.92
+    "total_time": 15.01,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p28.pddl": {
     "algorithm": "dual_bfws",
@@ -2638,12 +3079,15 @@
       "miconic",
       "p28.pddl"
     ],
-    "node": "n1493",
+    "node": "n1800",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 17.84,
+    "planner_wall_clock_time": 16.97,
     "problem": "p28.pddl",
     "run_dir": "runs-00101-00200/00148",
-    "total_time": 17.75
+    "total_time": 16.89,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p29.pddl": {
     "algorithm": "dual_bfws",
@@ -2656,12 +3100,15 @@
       "miconic",
       "p29.pddl"
     ],
-    "node": "n247",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 19.3,
+    "planner_wall_clock_time": 19.06,
     "problem": "p29.pddl",
     "run_dir": "runs-00101-00200/00149",
-    "total_time": 19.2
+    "total_time": 18.97,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-miconic-p30.pddl": {
     "algorithm": "dual_bfws",
@@ -2674,12 +3121,15 @@
       "miconic",
       "p30.pddl"
     ],
-    "node": "n160",
+    "node": "n803",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 19.69,
+    "planner_wall_clock_time": 21.13,
     "problem": "p30.pddl",
     "run_dir": "runs-00101-00200/00150",
-    "total_time": 19.53
+    "total_time": 21.03,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_60x60_0.pddl": {
     "algorithm": "dual_bfws",
@@ -2692,12 +3142,15 @@
       "reward",
       "instance_60x60_0.pddl"
     ],
-    "node": "n206",
+    "node": "n1800",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 6.08,
+    "planner_wall_clock_time": 5.04,
     "problem": "instance_60x60_0.pddl",
     "run_dir": "runs-00101-00200/00151",
-    "total_time": 5.72
+    "total_time": 4.81,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_60x60_1.pddl": {
     "algorithm": "dual_bfws",
@@ -2710,12 +3163,15 @@
       "reward",
       "instance_60x60_1.pddl"
     ],
-    "node": "n337",
+    "node": "n1806",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 7.03,
+    "planner_wall_clock_time": 5.1,
     "problem": "instance_60x60_1.pddl",
     "run_dir": "runs-00101-00200/00152",
-    "total_time": 6.77
+    "total_time": 4.87,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_60x60_2.pddl": {
     "algorithm": "dual_bfws",
@@ -2728,12 +3184,15 @@
       "reward",
       "instance_60x60_2.pddl"
     ],
-    "node": "n135",
+    "node": "n1718",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 5.67,
+    "planner_wall_clock_time": 5.14,
     "problem": "instance_60x60_2.pddl",
     "run_dir": "runs-00101-00200/00153",
-    "total_time": 5.43
+    "total_time": 4.92,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_60x60_3.pddl": {
     "algorithm": "dual_bfws",
@@ -2746,12 +3205,15 @@
       "reward",
       "instance_60x60_3.pddl"
     ],
-    "node": "n240",
+    "node": "n132",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 6.04,
+    "planner_wall_clock_time": 5.88,
     "problem": "instance_60x60_3.pddl",
     "run_dir": "runs-00101-00200/00154",
-    "total_time": 5.79
+    "total_time": 5.63,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_60x60_4.pddl": {
     "algorithm": "dual_bfws",
@@ -2764,12 +3226,15 @@
       "reward",
       "instance_60x60_4.pddl"
     ],
-    "node": "n136",
+    "node": "n1718",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 5.58,
+    "planner_wall_clock_time": 5.44,
     "problem": "instance_60x60_4.pddl",
     "run_dir": "runs-00101-00200/00155",
-    "total_time": 5.28
+    "total_time": 5.2,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_65x65_0.pddl": {
     "algorithm": "dual_bfws",
@@ -2782,12 +3247,15 @@
       "reward",
       "instance_65x65_0.pddl"
     ],
-    "node": "n338",
+    "node": "n1044",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 8.1,
+    "planner_wall_clock_time": 7.92,
     "problem": "instance_65x65_0.pddl",
     "run_dir": "runs-00101-00200/00156",
-    "total_time": 7.79
+    "total_time": 7.66,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_65x65_1.pddl": {
     "algorithm": "dual_bfws",
@@ -2800,12 +3268,15 @@
       "reward",
       "instance_65x65_1.pddl"
     ],
-    "node": "n240",
+    "node": "n134",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 9.7,
+    "planner_wall_clock_time": 7.8,
     "problem": "instance_65x65_1.pddl",
     "run_dir": "runs-00101-00200/00157",
-    "total_time": 9.41
+    "total_time": 7.54,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_65x65_2.pddl": {
     "algorithm": "dual_bfws",
@@ -2818,12 +3289,15 @@
       "reward",
       "instance_65x65_2.pddl"
     ],
-    "node": "n160",
+    "node": "n968",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 7.67,
+    "planner_wall_clock_time": 6.69,
     "problem": "instance_65x65_2.pddl",
     "run_dir": "runs-00101-00200/00158",
-    "total_time": 7.43
+    "total_time": 6.44,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_65x65_3.pddl": {
     "algorithm": "dual_bfws",
@@ -2836,12 +3310,15 @@
       "reward",
       "instance_65x65_3.pddl"
     ],
-    "node": "n279",
+    "node": "n981",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 8.51,
+    "planner_wall_clock_time": 7.95,
     "problem": "instance_65x65_3.pddl",
     "run_dir": "runs-00101-00200/00159",
-    "total_time": 8.25
+    "total_time": 7.71,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_65x65_4.pddl": {
     "algorithm": "dual_bfws",
@@ -2854,12 +3331,15 @@
       "reward",
       "instance_65x65_4.pddl"
     ],
-    "node": "n1493",
+    "node": "n968",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 8.28,
+    "planner_wall_clock_time": 7.05,
     "problem": "instance_65x65_4.pddl",
     "run_dir": "runs-00101-00200/00160",
-    "total_time": 7.99
+    "total_time": 6.8,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_70x70_0.pddl": {
     "algorithm": "dual_bfws",
@@ -2872,12 +3352,15 @@
       "reward",
       "instance_70x70_0.pddl"
     ],
-    "node": "n390",
+    "node": "n1044",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 16.31,
+    "planner_wall_clock_time": 11.54,
     "problem": "instance_70x70_0.pddl",
     "run_dir": "runs-00101-00200/00161",
-    "total_time": 15.97
+    "total_time": 11.25,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_70x70_1.pddl": {
     "algorithm": "dual_bfws",
@@ -2890,12 +3373,15 @@
       "reward",
       "instance_70x70_1.pddl"
     ],
-    "node": "n205",
+    "node": "n1044",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 10.38,
+    "planner_wall_clock_time": 9.92,
     "problem": "instance_70x70_1.pddl",
     "run_dir": "runs-00101-00200/00162",
-    "total_time": 9.95
+    "total_time": 9.63,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_70x70_2.pddl": {
     "algorithm": "dual_bfws",
@@ -2908,12 +3394,15 @@
       "reward",
       "instance_70x70_2.pddl"
     ],
-    "node": "n201",
+    "node": "n1800",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 8.82,
+    "planner_wall_clock_time": 8.75,
     "problem": "instance_70x70_2.pddl",
     "run_dir": "runs-00101-00200/00163",
-    "total_time": 8.54
+    "total_time": 8.48,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_70x70_3.pddl": {
     "algorithm": "dual_bfws",
@@ -2926,12 +3415,15 @@
       "reward",
       "instance_70x70_3.pddl"
     ],
-    "node": "n1011",
+    "node": "n968",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 16.64,
+    "planner_wall_clock_time": 9.27,
     "problem": "instance_70x70_3.pddl",
     "run_dir": "runs-00101-00200/00164",
-    "total_time": 16.27
+    "total_time": 8.99,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_70x70_4.pddl": {
     "algorithm": "dual_bfws",
@@ -2944,12 +3436,15 @@
       "reward",
       "instance_70x70_4.pddl"
     ],
-    "node": "n1401",
+    "node": "n258",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 8.88,
+    "planner_wall_clock_time": 13.21,
     "problem": "instance_70x70_4.pddl",
     "run_dir": "runs-00101-00200/00165",
-    "total_time": 8.46
+    "total_time": 12.89,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_75x75_0.pddl": {
     "algorithm": "dual_bfws",
@@ -2962,12 +3457,15 @@
       "reward",
       "instance_75x75_0.pddl"
     ],
-    "node": "n386",
+    "node": "n1744",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 24.61,
+    "planner_wall_clock_time": 17.92,
     "problem": "instance_75x75_0.pddl",
     "run_dir": "runs-00101-00200/00166",
-    "total_time": 24.18
+    "total_time": 17.54,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_75x75_1.pddl": {
     "algorithm": "dual_bfws",
@@ -2980,12 +3478,15 @@
       "reward",
       "instance_75x75_1.pddl"
     ],
-    "node": "n205",
+    "node": "n1800",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 16.12,
+    "planner_wall_clock_time": 11.4,
     "problem": "instance_75x75_1.pddl",
     "run_dir": "runs-00101-00200/00167",
-    "total_time": 15.72
+    "total_time": 11.08,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_75x75_2.pddl": {
     "algorithm": "dual_bfws",
@@ -2998,12 +3499,15 @@
       "reward",
       "instance_75x75_2.pddl"
     ],
-    "node": "n1493",
+    "node": "n1718",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 15.31,
+    "planner_wall_clock_time": 17.49,
     "problem": "instance_75x75_2.pddl",
     "run_dir": "runs-00101-00200/00168",
-    "total_time": 14.92
+    "total_time": 17.15,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_75x75_3.pddl": {
     "algorithm": "dual_bfws",
@@ -3016,12 +3520,15 @@
       "reward",
       "instance_75x75_3.pddl"
     ],
-    "node": "n136",
+    "node": "n1973",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 12.05,
+    "planner_wall_clock_time": 11.39,
     "problem": "instance_75x75_3.pddl",
     "run_dir": "runs-00101-00200/00169",
-    "total_time": 11.71
+    "total_time": 11.04,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_75x75_4.pddl": {
     "algorithm": "dual_bfws",
@@ -3034,12 +3541,15 @@
       "reward",
       "instance_75x75_4.pddl"
     ],
-    "node": "n1490",
+    "node": "n1800",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 12.5,
+    "planner_wall_clock_time": 10.65,
     "problem": "instance_75x75_4.pddl",
     "run_dir": "runs-00101-00200/00170",
-    "total_time": 12.16
+    "total_time": 10.34,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_80x80_0.pddl": {
     "algorithm": "dual_bfws",
@@ -3052,12 +3562,15 @@
       "reward",
       "instance_80x80_0.pddl"
     ],
-    "node": "n240",
+    "node": "n1763",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 21.57,
+    "planner_wall_clock_time": 19.89,
     "problem": "instance_80x80_0.pddl",
     "run_dir": "runs-00101-00200/00171",
-    "total_time": 21.13
+    "total_time": 19.47,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_80x80_1.pddl": {
     "algorithm": "dual_bfws",
@@ -3070,12 +3583,15 @@
       "reward",
       "instance_80x80_1.pddl"
     ],
-    "node": "n1493",
+    "node": "n134",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 22.31,
+    "planner_wall_clock_time": 19.08,
     "problem": "instance_80x80_1.pddl",
     "run_dir": "runs-00101-00200/00172",
-    "total_time": 21.89
+    "total_time": 18.68,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_80x80_2.pddl": {
     "algorithm": "dual_bfws",
@@ -3088,12 +3604,15 @@
       "reward",
       "instance_80x80_2.pddl"
     ],
-    "node": "n247",
+    "node": "n1718",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 24.22,
+    "planner_wall_clock_time": 23.53,
     "problem": "instance_80x80_2.pddl",
     "run_dir": "runs-00101-00200/00173",
-    "total_time": 23.78
+    "total_time": 23.15,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_80x80_3.pddl": {
     "algorithm": "dual_bfws",
@@ -3106,12 +3625,15 @@
       "reward",
       "instance_80x80_3.pddl"
     ],
-    "node": "n1401",
+    "node": "n1326",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 15.99,
+    "planner_wall_clock_time": 13.79,
     "problem": "instance_80x80_3.pddl",
     "run_dir": "runs-00101-00200/00174",
-    "total_time": 15.64
+    "total_time": 13.42,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_80x80_4.pddl": {
     "algorithm": "dual_bfws",
@@ -3124,12 +3646,15 @@
       "reward",
       "instance_80x80_4.pddl"
     ],
-    "node": "n136",
+    "node": "n803",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 16.31,
+    "planner_wall_clock_time": 13.58,
     "problem": "instance_80x80_4.pddl",
     "run_dir": "runs-00101-00200/00175",
-    "total_time": 15.9
+    "total_time": 13.22,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_85x85_0.pddl": {
     "algorithm": "dual_bfws",
@@ -3142,12 +3667,15 @@
       "reward",
       "instance_85x85_0.pddl"
     ],
-    "node": "n392",
+    "node": "n1973",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 30.72,
+    "planner_wall_clock_time": 19.62,
     "problem": "instance_85x85_0.pddl",
     "run_dir": "runs-00101-00200/00176",
-    "total_time": 30.3
+    "total_time": 19.22,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_85x85_1.pddl": {
     "algorithm": "dual_bfws",
@@ -3160,12 +3688,15 @@
       "reward",
       "instance_85x85_1.pddl"
     ],
-    "node": "n236",
+    "node": "n1326",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 32.32,
+    "planner_wall_clock_time": 30.9,
     "problem": "instance_85x85_1.pddl",
     "run_dir": "runs-00101-00200/00177",
-    "total_time": 31.86
+    "total_time": 30.42,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_85x85_2.pddl": {
     "algorithm": "dual_bfws",
@@ -3178,12 +3709,15 @@
       "reward",
       "instance_85x85_2.pddl"
     ],
-    "node": "n1012",
+    "node": "n993",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 30.2,
+    "planner_wall_clock_time": 32.04,
     "problem": "instance_85x85_2.pddl",
     "run_dir": "runs-00101-00200/00178",
-    "total_time": 29.78
+    "total_time": 31.58,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_85x85_3.pddl": {
     "algorithm": "dual_bfws",
@@ -3196,12 +3730,15 @@
       "reward",
       "instance_85x85_3.pddl"
     ],
-    "node": "n247",
+    "node": "n1763",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 34.42,
+    "planner_wall_clock_time": 32.55,
     "problem": "instance_85x85_3.pddl",
     "run_dir": "runs-00101-00200/00179",
-    "total_time": 33.95
+    "total_time": 32.08,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-reward-instance_85x85_4.pddl": {
     "algorithm": "dual_bfws",
@@ -3214,12 +3751,15 @@
       "reward",
       "instance_85x85_4.pddl"
     ],
-    "node": "n136",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 30.08,
+    "planner_wall_clock_time": 35.62,
     "problem": "instance_85x85_4.pddl",
     "run_dir": "runs-00101-00200/00180",
-    "total_time": 29.62
+    "total_time": 35.14,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile01-001.pddl": {
     "algorithm": "dual_bfws",
@@ -3231,11 +3771,14 @@
       "spanner",
       "pfile01-001.pddl"
     ],
-    "node": "n340",
+    "node": "n1888",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.73,
+    "planner_wall_clock_time": 1800.51,
     "problem": "pfile01-001.pddl",
-    "run_dir": "runs-00101-00200/00181"
+    "run_dir": "runs-00101-00200/00181",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile01-002.pddl": {
     "algorithm": "dual_bfws",
@@ -3247,11 +3790,14 @@
       "spanner",
       "pfile01-002.pddl"
     ],
-    "node": "n247",
+    "node": "n928",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.51,
+    "planner_wall_clock_time": 1800.58,
     "problem": "pfile01-002.pddl",
-    "run_dir": "runs-00101-00200/00182"
+    "run_dir": "runs-00101-00200/00182",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile01-003.pddl": {
     "algorithm": "dual_bfws",
@@ -3263,11 +3809,14 @@
       "spanner",
       "pfile01-003.pddl"
     ],
-    "node": "n1011",
+    "node": "n1718",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.83,
+    "planner_wall_clock_time": 1800.88,
     "problem": "pfile01-003.pddl",
-    "run_dir": "runs-00101-00200/00183"
+    "run_dir": "runs-00101-00200/00183",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile01-004.pddl": {
     "algorithm": "dual_bfws",
@@ -3279,11 +3828,14 @@
       "spanner",
       "pfile01-004.pddl"
     ],
-    "node": "n392",
+    "node": "n1973",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1802.25,
+    "planner_wall_clock_time": 1800.51,
     "problem": "pfile01-004.pddl",
-    "run_dir": "runs-00101-00200/00184"
+    "run_dir": "runs-00101-00200/00184",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile01-005.pddl": {
     "algorithm": "dual_bfws",
@@ -3295,11 +3847,14 @@
       "spanner",
       "pfile01-005.pddl"
     ],
-    "node": "n232",
+    "node": "n1744",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.65,
+    "planner_wall_clock_time": 1800.47,
     "problem": "pfile01-005.pddl",
-    "run_dir": "runs-00101-00200/00185"
+    "run_dir": "runs-00101-00200/00185",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile02-006.pddl": {
     "algorithm": "dual_bfws",
@@ -3311,11 +3866,14 @@
       "spanner",
       "pfile02-006.pddl"
     ],
-    "node": "n194",
+    "node": "n1653",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.7,
+    "planner_wall_clock_time": 1800.95,
     "problem": "pfile02-006.pddl",
-    "run_dir": "runs-00101-00200/00186"
+    "run_dir": "runs-00101-00200/00186",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile02-007.pddl": {
     "algorithm": "dual_bfws",
@@ -3327,11 +3885,14 @@
       "spanner",
       "pfile02-007.pddl"
     ],
-    "node": "n163",
+    "node": "n1718",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.55,
+    "planner_wall_clock_time": 1800.48,
     "problem": "pfile02-007.pddl",
-    "run_dir": "runs-00101-00200/00187"
+    "run_dir": "runs-00101-00200/00187",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile02-008.pddl": {
     "algorithm": "dual_bfws",
@@ -3343,11 +3904,14 @@
       "spanner",
       "pfile02-008.pddl"
     ],
-    "node": "n231",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.57,
+    "planner_wall_clock_time": 1801.18,
     "problem": "pfile02-008.pddl",
-    "run_dir": "runs-00101-00200/00188"
+    "run_dir": "runs-00101-00200/00188",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile02-009.pddl": {
     "algorithm": "dual_bfws",
@@ -3359,11 +3923,14 @@
       "spanner",
       "pfile02-009.pddl"
     ],
-    "node": "n279",
+    "node": "n1044",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.91,
+    "planner_wall_clock_time": 1800.58,
     "problem": "pfile02-009.pddl",
-    "run_dir": "runs-00101-00200/00189"
+    "run_dir": "runs-00101-00200/00189",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile02-010.pddl": {
     "algorithm": "dual_bfws",
@@ -3375,11 +3942,14 @@
       "spanner",
       "pfile02-010.pddl"
     ],
-    "node": "n388",
+    "node": "n383",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.48,
+    "planner_wall_clock_time": 1802.99,
     "problem": "pfile02-010.pddl",
-    "run_dir": "runs-00101-00200/00190"
+    "run_dir": "runs-00101-00200/00190",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile03-011.pddl": {
     "algorithm": "dual_bfws",
@@ -3391,11 +3961,14 @@
       "spanner",
       "pfile03-011.pddl"
     ],
-    "node": "n135",
+    "node": "n981",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1801.2,
+    "planner_wall_clock_time": 1800.86,
     "problem": "pfile03-011.pddl",
-    "run_dir": "runs-00101-00200/00191"
+    "run_dir": "runs-00101-00200/00191",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile03-012.pddl": {
     "algorithm": "dual_bfws",
@@ -3407,11 +3980,14 @@
       "spanner",
       "pfile03-012.pddl"
     ],
-    "node": "n818",
+    "node": "n928",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.75,
+    "planner_wall_clock_time": 1800.39,
     "problem": "pfile03-012.pddl",
-    "run_dir": "runs-00101-00200/00192"
+    "run_dir": "runs-00101-00200/00192",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile03-013.pddl": {
     "algorithm": "dual_bfws",
@@ -3423,11 +3999,14 @@
       "spanner",
       "pfile03-013.pddl"
     ],
-    "node": "n200",
+    "node": "n1973",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.52,
+    "planner_wall_clock_time": 1800.39,
     "problem": "pfile03-013.pddl",
-    "run_dir": "runs-00101-00200/00193"
+    "run_dir": "runs-00101-00200/00193",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile03-014.pddl": {
     "algorithm": "dual_bfws",
@@ -3439,11 +4018,14 @@
       "spanner",
       "pfile03-014.pddl"
     ],
-    "node": "n243",
+    "node": "n1668",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.46,
+    "planner_wall_clock_time": 1800.52,
     "problem": "pfile03-014.pddl",
-    "run_dir": "runs-00101-00200/00194"
+    "run_dir": "runs-00101-00200/00194",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile03-015.pddl": {
     "algorithm": "dual_bfws",
@@ -3455,11 +4037,14 @@
       "spanner",
       "pfile03-015.pddl"
     ],
-    "node": "n146",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1808.03,
+    "planner_wall_clock_time": 1801.19,
     "problem": "pfile03-015.pddl",
-    "run_dir": "runs-00101-00200/00195"
+    "run_dir": "runs-00101-00200/00195",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile04-016.pddl": {
     "algorithm": "dual_bfws",
@@ -3471,11 +4056,14 @@
       "spanner",
       "pfile04-016.pddl"
     ],
-    "node": "n160",
+    "node": "n1653",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.41,
+    "planner_wall_clock_time": 1800.93,
     "problem": "pfile04-016.pddl",
-    "run_dir": "runs-00101-00200/00196"
+    "run_dir": "runs-00101-00200/00196",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile04-017.pddl": {
     "algorithm": "dual_bfws",
@@ -3487,11 +4075,14 @@
       "spanner",
       "pfile04-017.pddl"
     ],
-    "node": "n393",
+    "node": "n770",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.51,
+    "planner_wall_clock_time": 1800.85,
     "problem": "pfile04-017.pddl",
-    "run_dir": "runs-00101-00200/00197"
+    "run_dir": "runs-00101-00200/00197",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile04-018.pddl": {
     "algorithm": "dual_bfws",
@@ -3503,11 +4094,14 @@
       "spanner",
       "pfile04-018.pddl"
     ],
-    "node": "n238",
+    "node": "n936",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1801.34,
+    "planner_wall_clock_time": 1800.52,
     "problem": "pfile04-018.pddl",
-    "run_dir": "runs-00101-00200/00198"
+    "run_dir": "runs-00101-00200/00198",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile04-019.pddl": {
     "algorithm": "dual_bfws",
@@ -3519,11 +4113,14 @@
       "spanner",
       "pfile04-019.pddl"
     ],
-    "node": "n392",
+    "node": "n1653",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.43,
+    "planner_wall_clock_time": 1800.83,
     "problem": "pfile04-019.pddl",
-    "run_dir": "runs-00101-00200/00199"
+    "run_dir": "runs-00101-00200/00199",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile04-020.pddl": {
     "algorithm": "dual_bfws",
@@ -3535,11 +4132,14 @@
       "spanner",
       "pfile04-020.pddl"
     ],
-    "node": "n136",
+    "node": "n383",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.53,
+    "planner_wall_clock_time": 1800.69,
     "problem": "pfile04-020.pddl",
-    "run_dir": "runs-00101-00200/00200"
+    "run_dir": "runs-00101-00200/00200",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile05-021.pddl": {
     "algorithm": "dual_bfws",
@@ -3551,11 +4151,14 @@
       "spanner",
       "pfile05-021.pddl"
     ],
-    "node": "n243",
+    "node": "n1744",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.43,
+    "planner_wall_clock_time": 1800.5,
     "problem": "pfile05-021.pddl",
-    "run_dir": "runs-00201-00300/00201"
+    "run_dir": "runs-00201-00300/00201",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile05-022.pddl": {
     "algorithm": "dual_bfws",
@@ -3567,11 +4170,14 @@
       "spanner",
       "pfile05-022.pddl"
     ],
-    "node": "n392",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.4,
+    "planner_wall_clock_time": 1800.41,
     "problem": "pfile05-022.pddl",
-    "run_dir": "runs-00201-00300/00202"
+    "run_dir": "runs-00201-00300/00202",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile05-023.pddl": {
     "algorithm": "dual_bfws",
@@ -3583,11 +4189,14 @@
       "spanner",
       "pfile05-023.pddl"
     ],
-    "node": "n205",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.47,
+    "planner_wall_clock_time": 1801.41,
     "problem": "pfile05-023.pddl",
-    "run_dir": "runs-00201-00300/00203"
+    "run_dir": "runs-00201-00300/00203",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile05-024.pddl": {
     "algorithm": "dual_bfws",
@@ -3599,11 +4208,14 @@
       "spanner",
       "pfile05-024.pddl"
     ],
-    "node": "n160",
+    "node": "n1558",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.4,
+    "planner_wall_clock_time": 1800.49,
     "problem": "pfile05-024.pddl",
-    "run_dir": "runs-00201-00300/00204"
+    "run_dir": "runs-00201-00300/00204",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile05-025.pddl": {
     "algorithm": "dual_bfws",
@@ -3615,11 +4227,14 @@
       "spanner",
       "pfile05-025.pddl"
     ],
-    "node": "n1490",
+    "node": "n134",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.4,
+    "planner_wall_clock_time": 1800.6,
     "problem": "pfile05-025.pddl",
-    "run_dir": "runs-00201-00300/00205"
+    "run_dir": "runs-00201-00300/00205",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile06-026.pddl": {
     "algorithm": "dual_bfws",
@@ -3631,11 +4246,14 @@
       "spanner",
       "pfile06-026.pddl"
     ],
-    "node": "n160",
+    "node": "n1888",
     "planner_exit_code": 0,
     "planner_wall_clock_time": 1800.41,
     "problem": "pfile06-026.pddl",
-    "run_dir": "runs-00201-00300/00206"
+    "run_dir": "runs-00201-00300/00206",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile06-027.pddl": {
     "algorithm": "dual_bfws",
@@ -3647,11 +4265,14 @@
       "spanner",
       "pfile06-027.pddl"
     ],
-    "node": "n1493",
+    "node": "n936",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.5,
+    "planner_wall_clock_time": 1800.48,
     "problem": "pfile06-027.pddl",
-    "run_dir": "runs-00201-00300/00207"
+    "run_dir": "runs-00201-00300/00207",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile06-028.pddl": {
     "algorithm": "dual_bfws",
@@ -3663,11 +4284,14 @@
       "spanner",
       "pfile06-028.pddl"
     ],
-    "node": "n235",
+    "node": "n1806",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1802.09,
+    "planner_wall_clock_time": 1801.02,
     "problem": "pfile06-028.pddl",
-    "run_dir": "runs-00201-00300/00208"
+    "run_dir": "runs-00201-00300/00208",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile06-029.pddl": {
     "algorithm": "dual_bfws",
@@ -3679,11 +4303,14 @@
       "spanner",
       "pfile06-029.pddl"
     ],
-    "node": "n337",
+    "node": "n1973",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1800.51,
+    "planner_wall_clock_time": 1800.43,
     "problem": "pfile06-029.pddl",
-    "run_dir": "runs-00201-00300/00209"
+    "run_dir": "runs-00201-00300/00209",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-spanner-pfile06-030.pddl": {
     "algorithm": "dual_bfws",
@@ -3695,11 +4322,14 @@
       "spanner",
       "pfile06-030.pddl"
     ],
-    "node": "n388",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1801.11,
+    "planner_wall_clock_time": 1800.92,
     "problem": "pfile06-030.pddl",
-    "run_dir": "runs-00201-00300/00210"
+    "run_dir": "runs-00201-00300/00210",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p01.pddl": {
     "algorithm": "dual_bfws",
@@ -3712,12 +4342,15 @@
       "visitall",
       "p01.pddl"
     ],
-    "node": "n240",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.46,
+    "planner_wall_clock_time": 0.42,
     "problem": "p01.pddl",
     "run_dir": "runs-00201-00300/00211",
-    "total_time": 0.43
+    "total_time": 0.39,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p02.pddl": {
     "algorithm": "dual_bfws",
@@ -3730,12 +4363,15 @@
       "visitall",
       "p02.pddl"
     ],
-    "node": "n1012",
+    "node": "n132",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.62,
+    "planner_wall_clock_time": 0.51,
     "problem": "p02.pddl",
     "run_dir": "runs-00201-00300/00212",
-    "total_time": 0.55
+    "total_time": 0.47,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p03.pddl": {
     "algorithm": "dual_bfws",
@@ -3748,12 +4384,15 @@
       "visitall",
       "p03.pddl"
     ],
-    "node": "n1493",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.52,
+    "planner_wall_clock_time": 0.78,
     "problem": "p03.pddl",
     "run_dir": "runs-00201-00300/00213",
-    "total_time": 0.49
+    "total_time": 0.55,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p04.pddl": {
     "algorithm": "dual_bfws",
@@ -3766,12 +4405,15 @@
       "visitall",
       "p04.pddl"
     ],
-    "node": "n392",
+    "node": "n1044",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.61,
+    "planner_wall_clock_time": 0.57,
     "problem": "p04.pddl",
     "run_dir": "runs-00201-00300/00214",
-    "total_time": 0.57
+    "total_time": 0.52,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p05.pddl": {
     "algorithm": "dual_bfws",
@@ -3784,12 +4426,15 @@
       "visitall",
       "p05.pddl"
     ],
-    "node": "n1493",
+    "node": "n1744",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.89,
+    "planner_wall_clock_time": 0.68,
     "problem": "p05.pddl",
     "run_dir": "runs-00201-00300/00215",
-    "total_time": 0.74
+    "total_time": 0.63,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p06.pddl": {
     "algorithm": "dual_bfws",
@@ -3802,12 +4447,15 @@
       "visitall",
       "p06.pddl"
     ],
-    "node": "n201",
+    "node": "n928",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 0.9,
+    "planner_wall_clock_time": 0.93,
     "problem": "p06.pddl",
     "run_dir": "runs-00201-00300/00216",
-    "total_time": 0.84
+    "total_time": 0.87,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p07.pddl": {
     "algorithm": "dual_bfws",
@@ -3820,12 +4468,15 @@
       "visitall",
       "p07.pddl"
     ],
-    "node": "n243",
+    "node": "n1718",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1.08,
+    "planner_wall_clock_time": 0.97,
     "problem": "p07.pddl",
     "run_dir": "runs-00201-00300/00217",
-    "total_time": 1.0
+    "total_time": 0.9,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p08.pddl": {
     "algorithm": "dual_bfws",
@@ -3838,12 +4489,15 @@
       "visitall",
       "p08.pddl"
     ],
-    "node": "n1493",
+    "node": "n770",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1.59,
+    "planner_wall_clock_time": 1.53,
     "problem": "p08.pddl",
     "run_dir": "runs-00201-00300/00218",
-    "total_time": 1.5
+    "total_time": 1.45,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p09.pddl": {
     "algorithm": "dual_bfws",
@@ -3856,12 +4510,15 @@
       "visitall",
       "p09.pddl"
     ],
-    "node": "n817",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 2.02,
+    "planner_wall_clock_time": 1.81,
     "problem": "p09.pddl",
     "run_dir": "runs-00201-00300/00219",
-    "total_time": 1.91
+    "total_time": 1.71,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p10.pddl": {
     "algorithm": "dual_bfws",
@@ -3874,12 +4531,15 @@
       "visitall",
       "p10.pddl"
     ],
-    "node": "n240",
+    "node": "n1044",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 10.38,
+    "planner_wall_clock_time": 9.07,
     "problem": "p10.pddl",
     "run_dir": "runs-00201-00300/00220",
-    "total_time": 10.25
+    "total_time": 8.96,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p11.pddl": {
     "algorithm": "dual_bfws",
@@ -3892,12 +4552,15 @@
       "visitall",
       "p11.pddl"
     ],
-    "node": "n235",
+    "node": "n1690",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 4.18,
+    "planner_wall_clock_time": 4.32,
     "problem": "p11.pddl",
     "run_dir": "runs-00201-00300/00221",
-    "total_time": 4.06
+    "total_time": 4.18,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p12.pddl": {
     "algorithm": "dual_bfws",
@@ -3910,12 +4573,15 @@
       "visitall",
       "p12.pddl"
     ],
-    "node": "n1401",
+    "node": "n1973",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 6.92,
+    "planner_wall_clock_time": 7.16,
     "problem": "p12.pddl",
     "run_dir": "runs-00201-00300/00222",
-    "total_time": 6.77
+    "total_time": 7.01,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p13.pddl": {
     "algorithm": "dual_bfws",
@@ -3928,12 +4594,15 @@
       "visitall",
       "p13.pddl"
     ],
-    "node": "n1490",
+    "node": "n1806",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 10.43,
+    "planner_wall_clock_time": 9.96,
     "problem": "p13.pddl",
     "run_dir": "runs-00201-00300/00223",
-    "total_time": 10.26
+    "total_time": 9.79,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p14.pddl": {
     "algorithm": "dual_bfws",
@@ -3946,12 +4615,15 @@
       "visitall",
       "p14.pddl"
     ],
-    "node": "n243",
+    "node": "n1690",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 43.03,
+    "planner_wall_clock_time": 46.38,
     "problem": "p14.pddl",
     "run_dir": "runs-00201-00300/00224",
-    "total_time": 42.83
+    "total_time": 46.19,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p15.pddl": {
     "algorithm": "dual_bfws",
@@ -3964,12 +4636,15 @@
       "visitall",
       "p15.pddl"
     ],
-    "node": "n337",
+    "node": "n1888",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 35.54,
+    "planner_wall_clock_time": 30.43,
     "problem": "p15.pddl",
     "run_dir": "runs-00201-00300/00225",
-    "total_time": 35.3
+    "total_time": 30.22,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p16.pddl": {
     "algorithm": "dual_bfws",
@@ -3982,12 +4657,15 @@
       "visitall",
       "p16.pddl"
     ],
-    "node": "n136",
+    "node": "n1718",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 30.57,
+    "planner_wall_clock_time": 31.12,
     "problem": "p16.pddl",
     "run_dir": "runs-00201-00300/00226",
-    "total_time": 30.32
+    "total_time": 30.87,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p17.pddl": {
     "algorithm": "dual_bfws",
@@ -4000,12 +4678,15 @@
       "visitall",
       "p17.pddl"
     ],
-    "node": "n1490",
+    "node": "n928",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 38.9,
+    "planner_wall_clock_time": 33.74,
     "problem": "p17.pddl",
     "run_dir": "runs-00201-00300/00227",
-    "total_time": 38.62
+    "total_time": 33.5,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p18.pddl": {
     "algorithm": "dual_bfws",
@@ -4018,12 +4699,15 @@
       "visitall",
       "p18.pddl"
     ],
-    "node": "n388",
+    "node": "n1973",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 182.78,
+    "planner_wall_clock_time": 204.38,
     "problem": "p18.pddl",
     "run_dir": "runs-00201-00300/00228",
-    "total_time": 182.47
+    "total_time": 204.08,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p19.pddl": {
     "algorithm": "dual_bfws",
@@ -4036,12 +4720,15 @@
       "visitall",
       "p19.pddl"
     ],
-    "node": "n247",
+    "node": "n1744",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 119.33,
+    "planner_wall_clock_time": 114.36,
     "problem": "p19.pddl",
     "run_dir": "runs-00201-00300/00229",
-    "total_time": 118.98
+    "total_time": 114.0,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p20.pddl": {
     "algorithm": "dual_bfws",
@@ -4054,12 +4741,15 @@
       "visitall",
       "p20.pddl"
     ],
-    "node": "n280",
+    "node": "n1891",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 312.3,
+    "planner_wall_clock_time": 289.49,
     "problem": "p20.pddl",
     "run_dir": "runs-00201-00300/00230",
-    "total_time": 311.84
+    "total_time": 289.15,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p21.pddl": {
     "algorithm": "dual_bfws",
@@ -4072,12 +4762,15 @@
       "visitall",
       "p21.pddl"
     ],
-    "node": "n1011",
+    "node": "n981",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 507.22,
+    "planner_wall_clock_time": 343.58,
     "problem": "p21.pddl",
     "run_dir": "runs-00201-00300/00231",
-    "total_time": 506.74
+    "total_time": 343.23,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p22.pddl": {
     "algorithm": "dual_bfws",
@@ -4090,12 +4783,15 @@
       "visitall",
       "p22.pddl"
     ],
-    "node": "n1396",
+    "node": "n1891",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 974.57,
+    "planner_wall_clock_time": 735.16,
     "problem": "p22.pddl",
     "run_dir": "runs-00201-00300/00232",
-    "total_time": 974.09
+    "total_time": 734.78,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p23.pddl": {
     "algorithm": "dual_bfws",
@@ -4107,11 +4803,14 @@
       "visitall",
       "p23.pddl"
     ],
-    "node": "n279",
+    "node": "n1718",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 959.11,
+    "planner_wall_clock_time": 898.65,
     "problem": "p23.pddl",
-    "run_dir": "runs-00201-00300/00233"
+    "run_dir": "runs-00201-00300/00233",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p24.pddl": {
     "algorithm": "dual_bfws",
@@ -4124,12 +4823,15 @@
       "visitall",
       "p24.pddl"
     ],
-    "node": "n392",
+    "node": "n1994",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 631.79,
+    "planner_wall_clock_time": 550.27,
     "problem": "p24.pddl",
     "run_dir": "runs-00201-00300/00234",
-    "total_time": 631.31
+    "total_time": 549.81,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p25.pddl": {
     "algorithm": "dual_bfws",
@@ -4141,11 +4843,14 @@
       "visitall",
       "p25.pddl"
     ],
-    "node": "n136",
+    "node": "n132",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 863.17,
+    "planner_wall_clock_time": 998.07,
     "problem": "p25.pddl",
-    "run_dir": "runs-00201-00300/00235"
+    "run_dir": "runs-00201-00300/00235",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p26.pddl": {
     "algorithm": "dual_bfws",
@@ -4158,12 +4863,15 @@
       "visitall",
       "p26.pddl"
     ],
-    "node": "n240",
+    "node": "n803",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 475.35,
+    "planner_wall_clock_time": 371.12,
     "problem": "p26.pddl",
     "run_dir": "runs-00201-00300/00236",
-    "total_time": 474.69
+    "total_time": 370.59,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p27.pddl": {
     "algorithm": "dual_bfws",
@@ -4175,11 +4883,14 @@
       "visitall",
       "p27.pddl"
     ],
-    "node": "n338",
+    "node": "n1763",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 902.38,
+    "planner_wall_clock_time": 877.23,
     "problem": "p27.pddl",
-    "run_dir": "runs-00201-00300/00237"
+    "run_dir": "runs-00201-00300/00237",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p28.pddl": {
     "algorithm": "dual_bfws",
@@ -4192,12 +4903,15 @@
       "visitall",
       "p28.pddl"
     ],
-    "node": "n206",
+    "node": "n871",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 755.17,
+    "planner_wall_clock_time": 789.71,
     "problem": "p28.pddl",
     "run_dir": "runs-00201-00300/00238",
-    "total_time": 754.49
+    "total_time": 788.98,
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p29.pddl": {
     "algorithm": "dual_bfws",
@@ -4209,11 +4923,14 @@
       "visitall",
       "p29.pddl"
     ],
-    "node": "n160",
+    "node": "n1888",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 859.85,
+    "planner_wall_clock_time": 900.26,
     "problem": "p29.pddl",
-    "run_dir": "runs-00201-00300/00239"
+    "run_dir": "runs-00201-00300/00239",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   },
   "dual_bfws-visitall-p30.pddl": {
     "algorithm": "dual_bfws",
@@ -4225,10 +4942,13 @@
       "visitall",
       "p30.pddl"
     ],
-    "node": "n392",
+    "node": "n1806",
     "planner_exit_code": 0,
-    "planner_wall_clock_time": 1535.71,
+    "planner_wall_clock_time": 879.64,
     "problem": "p30.pddl",
-    "run_dir": "runs-00201-00300/00240"
+    "run_dir": "runs-00201-00300/00240",
+    "unexplained_errors": [
+      "output-to-slurm.err"
+    ]
   }
 }

@@ -1,0 +1,2764 @@
+Changing working directory:  /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/experiments/scripts/workspace/miconic_0_9_9_9_9_9
+================================================================================
+SLTP v.0.2.0
+================================================================================
+================================================================================
+(pid: 213659) STARTING STEP #1: Incremental learning module
+================================================================================
+2023-05-20 12:33:32 INFO     Initializing InstanceDatas...
+2023-05-20 12:33:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-16.pddl
+2023-05-20 12:33:32 INFO     Constructing DomainData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/domain.pddl
+Num states: 27
+2023-05-20 12:33:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-92.pddl
+Num states: 162
+2023-05-20 12:33:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-64.pddl
+Num states: 36
+2023-05-20 12:33:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-84.pddl
+Num states: 162
+2023-05-20 12:33:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-98.pddl
+Num states: 162
+2023-05-20 12:33:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-76.pddl
+Num states: 162
+2023-05-20 12:33:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-80.pddl
+Num states: 81
+2023-05-20 12:33:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-72.pddl
+Num states: 27
+2023-05-20 12:33:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-14.pddl
+Num states: 108
+2023-05-20 12:33:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-4.pddl
+Num states: 162
+2023-05-20 12:33:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-40.pddl
+Num states: 36
+2023-05-20 12:33:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-40.pddl
+Num states: 243
+2023-05-20 12:33:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-66.pddl
+Num states: 81
+2023-05-20 12:33:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-75.pddl
+Num states: 18
+2023-05-20 12:33:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-16.pddl
+Num states: 36
+2023-05-20 12:33:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-59.pddl
+Num states: 36
+2023-05-20 12:33:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-31.pddl
+Num states: 36
+2023-05-20 12:33:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-33.pddl
+Num states: 162
+2023-05-20 12:33:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-56.pddl
+Num states: 18
+2023-05-20 12:33:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-63.pddl
+Num states: 36
+2023-05-20 12:33:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-92.pddl
+Num states: 36
+2023-05-20 12:33:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-78.pddl
+Num states: 81
+2023-05-20 12:33:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-23.pddl
+Num states: 243
+2023-05-20 12:33:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-27.pddl
+Num states: 162
+2023-05-20 12:33:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-38.pddl
+Num states: 243
+2023-05-20 12:33:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-38.pddl
+Num states: 162
+2023-05-20 12:33:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-73.pddl
+Num states: 243
+2023-05-20 12:33:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-55.pddl
+Num states: 243
+2023-05-20 12:33:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-24.pddl
+Num states: 54
+2023-05-20 12:33:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-25.pddl
+Num states: 18
+2023-05-20 12:33:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-1.pddl
+Num states: 18
+2023-05-20 12:33:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-44.pddl
+Num states: 18
+2023-05-20 12:33:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-99.pddl
+Num states: 108
+2023-05-20 12:33:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-64.pddl
+Num states: 18
+2023-05-20 12:33:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-34.pddl
+Num states: 81
+2023-05-20 12:33:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-13.pddl
+Num states: 162
+2023-05-20 12:33:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-77.pddl
+Num states: 162
+2023-05-20 12:33:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-17.pddl
+Num states: 243
+2023-05-20 12:33:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-65.pddl
+Num states: 81
+2023-05-20 12:33:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-79.pddl
+Num states: 18
+2023-05-20 12:33:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-83.pddl
+Num states: 108
+2023-05-20 12:33:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-98.pddl
+Num states: 54
+2023-05-20 12:33:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-2.pddl
+Num states: 27
+2023-05-20 12:33:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-79.pddl
+Num states: 243
+2023-05-20 12:33:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-97.pddl
+Num states: 27
+2023-05-20 12:33:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-14.pddl
+Num states: 18
+2023-05-20 12:33:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-80.pddl
+Num states: 243
+2023-05-20 12:33:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-2.pddl
+Num states: 18
+2023-05-20 12:33:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-78.pddl
+Num states: 108
+2023-05-20 12:33:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-37.pddl
+Num states: 243
+2023-05-20 12:33:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-49.pddl
+Num states: 243
+2023-05-20 12:33:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-51.pddl
+Num states: 81
+2023-05-20 12:33:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-77.pddl
+Num states: 81
+2023-05-20 12:33:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-66.pddl
+Num states: 162
+2023-05-20 12:33:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-99.pddl
+Num states: 18
+2023-05-20 12:33:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-24.pddl
+Num states: 81
+2023-05-20 12:33:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-45.pddl
+Num states: 243
+2023-05-20 12:33:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-81.pddl
+Num states: 243
+2023-05-20 12:33:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-5.pddl
+Num states: 18
+2023-05-20 12:33:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-85.pddl
+Num states: 162
+2023-05-20 12:33:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-15.pddl
+Num states: 108
+2023-05-20 12:33:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-63.pddl
+Num states: 162
+2023-05-20 12:33:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-51.pddl
+Num states: 243
+2023-05-20 12:33:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-12.pddl
+Num states: 81
+2023-05-20 12:33:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-64.pddl
+Num states: 27
+2023-05-20 12:33:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-65.pddl
+Num states: 36
+2023-05-20 12:33:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-47.pddl
+Num states: 27
+2023-05-20 12:33:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-98.pddl
+Num states: 36
+2023-05-20 12:33:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-76.pddl
+Num states: 54
+2023-05-20 12:33:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-5.pddl
+Num states: 27
+2023-05-20 12:33:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-63.pddl
+Num states: 243
+2023-05-20 12:33:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-9.pddl
+Num states: 27
+2023-05-20 12:33:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-1.pddl
+Num states: 81
+2023-05-20 12:33:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-60.pddl
+Num states: 162
+2023-05-20 12:33:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-39.pddl
+Num states: 36
+2023-05-20 12:33:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-55.pddl
+Num states: 18
+2023-05-20 12:33:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-85.pddl
+Num states: 81
+2023-05-20 12:33:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-37.pddl
+Num states: 18
+2023-05-20 12:33:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-45.pddl
+Num states: 162
+2023-05-20 12:33:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-25.pddl
+Num states: 162
+2023-05-20 12:33:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-11.pddl
+Num states: 36
+2023-05-20 12:33:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-35.pddl
+Num states: 18
+2023-05-20 12:33:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-44.pddl
+Num states: 81
+2023-05-20 12:33:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-21.pddl
+Num states: 54
+2023-05-20 12:33:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-18.pddl
+Num states: 81
+2023-05-20 12:33:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-70.pddl
+Num states: 27
+2023-05-20 12:33:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-88.pddl
+Num states: 243
+2023-05-20 12:33:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-57.pddl
+Num states: 18
+2023-05-20 12:33:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-94.pddl
+Num states: 162
+2023-05-20 12:33:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-54.pddl
+Num states: 54
+2023-05-20 12:33:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-63.pddl
+Num states: 54
+2023-05-20 12:33:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-7.pddl
+Num states: 81
+2023-05-20 12:33:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-6.pddl
+Num states: 36
+2023-05-20 12:33:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-84.pddl
+Num states: 108
+2023-05-20 12:33:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-87.pddl
+Num states: 36
+2023-05-20 12:34:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-72.pddl
+Num states: 36
+2023-05-20 12:34:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-20.pddl
+Num states: 81
+2023-05-20 12:34:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-59.pddl
+Num states: 108
+2023-05-20 12:34:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-9.pddl
+Num states: 18
+2023-05-20 12:34:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-1.pddl
+Num states: 36
+2023-05-20 12:34:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-3.pddl
+Num states: 36
+2023-05-20 12:34:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-8.pddl
+Num states: 18
+2023-05-20 12:34:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-26.pddl
+Num states: 18
+2023-05-20 12:34:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-54.pddl
+Num states: 36
+2023-05-20 12:34:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-40.pddl
+Num states: 108
+2023-05-20 12:34:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-68.pddl
+Num states: 108
+2023-05-20 12:34:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-68.pddl
+Num states: 243
+2023-05-20 12:34:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-56.pddl
+Num states: 36
+2023-05-20 12:34:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-70.pddl
+Num states: 108
+2023-05-20 12:34:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-37.pddl
+Num states: 81
+2023-05-20 12:34:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-26.pddl
+Num states: 108
+2023-05-20 12:34:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-51.pddl
+Num states: 36
+2023-05-20 12:34:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-78.pddl
+Num states: 54
+2023-05-20 12:34:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-74.pddl
+Num states: 18
+2023-05-20 12:34:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-4.pddl
+Num states: 54
+2023-05-20 12:34:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-14.pddl
+Num states: 243
+2023-05-20 12:34:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-30.pddl
+Num states: 54
+2023-05-20 12:34:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-16.pddl
+Num states: 81
+2023-05-20 12:34:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-79.pddl
+Num states: 54
+2023-05-20 12:34:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-57.pddl
+Num states: 162
+2023-05-20 12:34:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-67.pddl
+Num states: 162
+2023-05-20 12:34:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-21.pddl
+Num states: 162
+2023-05-20 12:34:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-97.pddl
+Num states: 162
+2023-05-20 12:34:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-11.pddl
+Num states: 162
+2023-05-20 12:34:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-22.pddl
+Num states: 81
+2023-05-20 12:34:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-74.pddl
+Num states: 108
+2023-05-20 12:34:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-7.pddl
+Num states: 108
+2023-05-20 12:34:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-36.pddl
+Num states: 243
+2023-05-20 12:34:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-99.pddl
+Num states: 81
+2023-05-20 12:34:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-93.pddl
+Num states: 18
+2023-05-20 12:34:10 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-85.pddl
+Num states: 54
+2023-05-20 12:34:10 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-96.pddl
+Num states: 27
+2023-05-20 12:34:10 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-88.pddl
+Num states: 18
+2023-05-20 12:34:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-74.pddl
+Num states: 243
+2023-05-20 12:34:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-6.pddl
+Num states: 108
+2023-05-20 12:34:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-81.pddl
+Num states: 27
+2023-05-20 12:34:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-30.pddl
+Num states: 108
+2023-05-20 12:34:12 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-30.pddl
+Num states: 81
+2023-05-20 12:34:12 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-71.pddl
+Num states: 27
+2023-05-20 12:34:12 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-68.pddl
+Num states: 54
+2023-05-20 12:34:13 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-7.pddl
+Num states: 27
+2023-05-20 12:34:13 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-81.pddl
+Num states: 36
+2023-05-20 12:34:13 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-89.pddl
+Num states: 54
+2023-05-20 12:34:13 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-23.pddl
+Num states: 36
+2023-05-20 12:34:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-93.pddl
+Num states: 162
+2023-05-20 12:34:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-78.pddl
+Num states: 162
+2023-05-20 12:34:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-37.pddl
+Num states: 108
+2023-05-20 12:34:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-61.pddl
+Num states: 54
+2023-05-20 12:34:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-60.pddl
+Num states: 18
+2023-05-20 12:34:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-68.pddl
+Num states: 27
+2023-05-20 12:34:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-66.pddl
+Num states: 54
+2023-05-20 12:34:16 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-41.pddl
+Num states: 81
+2023-05-20 12:34:16 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-13.pddl
+Num states: 36
+2023-05-20 12:34:16 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-28.pddl
+Num states: 27
+2023-05-20 12:34:17 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-74.pddl
+Num states: 27
+2023-05-20 12:34:17 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-82.pddl
+Num states: 108
+2023-05-20 12:34:17 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-58.pddl
+Num states: 18
+2023-05-20 12:34:17 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-87.pddl
+Num states: 108
+2023-05-20 12:34:18 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-59.pddl
+Num states: 54
+2023-05-20 12:34:18 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-73.pddl
+Num states: 27
+2023-05-20 12:34:18 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-10.pddl
+Num states: 81
+2023-05-20 12:34:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-32.pddl
+Num states: 36
+2023-05-20 12:34:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-40.pddl
+Num states: 27
+2023-05-20 12:34:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-70.pddl
+Num states: 243
+2023-05-20 12:34:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-97.pddl
+Num states: 36
+2023-05-20 12:34:20 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-13.pddl
+Num states: 18
+2023-05-20 12:34:20 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-53.pddl
+Num states: 27
+2023-05-20 12:34:20 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-89.pddl
+Num states: 108
+2023-05-20 12:34:20 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-2.pddl
+Num states: 108
+2023-05-20 12:34:21 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-75.pddl
+Num states: 54
+2023-05-20 12:34:21 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-97.pddl
+Num states: 108
+2023-05-20 12:34:21 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-11.pddl
+Num states: 27
+2023-05-20 12:34:22 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-8.pddl
+Num states: 36
+2023-05-20 12:34:22 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-72.pddl
+Num states: 81
+2023-05-20 12:34:22 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-58.pddl
+Num states: 27
+2023-05-20 12:34:23 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-87.pddl
+Num states: 243
+2023-05-20 12:34:23 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-22.pddl
+Num states: 18
+2023-05-20 12:34:23 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-78.pddl
+Num states: 36
+2023-05-20 12:34:23 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-97.pddl
+Num states: 18
+2023-05-20 12:34:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-80.pddl
+Num states: 36
+2023-05-20 12:34:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-72.pddl
+Num states: 243
+2023-05-20 12:34:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-37.pddl
+Num states: 27
+2023-05-20 12:34:25 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-26.pddl
+Num states: 27
+2023-05-20 12:34:25 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-79.pddl
+Num states: 27
+2023-05-20 12:34:25 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-46.pddl
+Num states: 27
+2023-05-20 12:34:25 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-87.pddl
+Num states: 27
+2023-05-20 12:34:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-35.pddl
+Num states: 36
+2023-05-20 12:34:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-73.pddl
+Num states: 18
+2023-05-20 12:34:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-6.pddl
+Num states: 81
+2023-05-20 12:34:27 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-64.pddl
+Num states: 162
+2023-05-20 12:34:27 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-86.pddl
+Num states: 162
+2023-05-20 12:34:27 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-37.pddl
+Num states: 54
+2023-05-20 12:34:27 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-7.pddl
+Num states: 243
+2023-05-20 12:34:28 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-63.pddl
+Num states: 81
+2023-05-20 12:34:28 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-97.pddl
+Num states: 243
+2023-05-20 12:34:28 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-29.pddl
+Num states: 81
+2023-05-20 12:34:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-85.pddl
+Num states: 27
+2023-05-20 12:34:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-17.pddl
+Num states: 36
+2023-05-20 12:34:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-96.pddl
+Num states: 162
+2023-05-20 12:34:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-15.pddl
+Num states: 54
+2023-05-20 12:34:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-24.pddl
+Num states: 243
+2023-05-20 12:34:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-31.pddl
+Num states: 108
+2023-05-20 12:34:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-65.pddl
+Num states: 108
+2023-05-20 12:34:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-60.pddl
+Num states: 54
+2023-05-20 12:34:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-71.pddl
+Num states: 18
+2023-05-20 12:34:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-25.pddl
+Num states: 243
+2023-05-20 12:34:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-72.pddl
+Num states: 18
+2023-05-20 12:34:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-34.pddl
+Num states: 108
+2023-05-20 12:34:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-54.pddl
+Num states: 243
+2023-05-20 12:34:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-39.pddl
+Num states: 243
+2023-05-20 12:34:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-88.pddl
+Num states: 108
+2023-05-20 12:34:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-83.pddl
+Num states: 54
+2023-05-20 12:34:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-50.pddl
+Num states: 54
+2023-05-20 12:34:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-30.pddl
+Num states: 36
+2023-05-20 12:34:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-80.pddl
+Num states: 27
+2023-05-20 12:34:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-76.pddl
+Num states: 27
+2023-05-20 12:34:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-3.pddl
+Num states: 18
+2023-05-20 12:34:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-67.pddl
+Num states: 27
+2023-05-20 12:34:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-28.pddl
+Num states: 108
+2023-05-20 12:34:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-23.pddl
+Num states: 27
+2023-05-20 12:34:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-10.pddl
+Num states: 243
+2023-05-20 12:34:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-38.pddl
+Num states: 108
+2023-05-20 12:34:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-86.pddl
+Num states: 81
+2023-05-20 12:34:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-19.pddl
+Num states: 36
+2023-05-20 12:34:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-96.pddl
+Num states: 36
+2023-05-20 12:34:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-42.pddl
+Num states: 243
+2023-05-20 12:34:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-0.pddl
+Num states: 162
+2023-05-20 12:34:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-24.pddl
+Num states: 162
+2023-05-20 12:34:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-53.pddl
+Num states: 18
+2023-05-20 12:34:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-39.pddl
+Num states: 18
+2023-05-20 12:34:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-47.pddl
+Num states: 108
+2023-05-20 12:34:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-48.pddl
+Num states: 243
+2023-05-20 12:34:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-52.pddl
+Num states: 81
+2023-05-20 12:34:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-66.pddl
+Num states: 36
+2023-05-20 12:34:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-81.pddl
+Num states: 54
+2023-05-20 12:34:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-32.pddl
+Num states: 243
+2023-05-20 12:34:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-59.pddl
+Num states: 243
+2023-05-20 12:34:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-13.pddl
+Num states: 243
+2023-05-20 12:34:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-54.pddl
+Num states: 81
+2023-05-20 12:34:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-53.pddl
+Num states: 108
+2023-05-20 12:34:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-74.pddl
+Num states: 54
+2023-05-20 12:34:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-49.pddl
+Num states: 36
+2023-05-20 12:34:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-49.pddl
+Num states: 18
+2023-05-20 12:34:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-53.pddl
+Num states: 81
+2023-05-20 12:34:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-58.pddl
+Num states: 81
+2023-05-20 12:34:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-36.pddl
+Num states: 36
+2023-05-20 12:34:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-89.pddl
+Num states: 27
+2023-05-20 12:34:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-4.pddl
+Num states: 81
+2023-05-20 12:34:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-10.pddl
+Num states: 36
+2023-05-20 12:34:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-86.pddl
+Num states: 36
+2023-05-20 12:34:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-35.pddl
+Num states: 243
+2023-05-20 12:34:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-88.pddl
+Num states: 36
+2023-05-20 12:34:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-42.pddl
+Num states: 108
+2023-05-20 12:34:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-61.pddl
+Num states: 36
+2023-05-20 12:34:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-80.pddl
+Num states: 108
+2023-05-20 12:34:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-95.pddl
+Num states: 243
+2023-05-20 12:34:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-60.pddl
+Num states: 81
+2023-05-20 12:34:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-92.pddl
+Num states: 243
+2023-05-20 12:34:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-99.pddl
+Num states: 162
+2023-05-20 12:34:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-16.pddl
+Num states: 162
+2023-05-20 12:34:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-29.pddl
+Num states: 243
+2023-05-20 12:34:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-92.pddl
+Num states: 81
+2023-05-20 12:34:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-40.pddl
+Num states: 81
+2023-05-20 12:34:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-95.pddl
+Num states: 54
+2023-05-20 12:34:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-23.pddl
+Num states: 108
+2023-05-20 12:34:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-76.pddl
+Num states: 108
+2023-05-20 12:34:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-67.pddl
+Num states: 54
+2023-05-20 12:34:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-93.pddl
+Num states: 81
+2023-05-20 12:34:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-38.pddl
+Num states: 27
+2023-05-20 12:34:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-77.pddl
+Num states: 54
+2023-05-20 12:34:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-97.pddl
+Num states: 54
+2023-05-20 12:34:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-64.pddl
+Num states: 81
+2023-05-20 12:34:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-70.pddl
+Num states: 162
+2023-05-20 12:34:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-49.pddl
+Num states: 108
+2023-05-20 12:34:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-73.pddl
+Num states: 108
+2023-05-20 12:34:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-30.pddl
+Num states: 162
+2023-05-20 12:34:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-95.pddl
+Num states: 36
+2023-05-20 12:34:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-60.pddl
+Num states: 243
+2023-05-20 12:34:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-72.pddl
+Num states: 162
+2023-05-20 12:34:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-61.pddl
+Num states: 162
+2023-05-20 12:34:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-58.pddl
+Num states: 54
+2023-05-20 12:34:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-41.pddl
+Num states: 54
+2023-05-20 12:34:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-94.pddl
+Num states: 54
+2023-05-20 12:34:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-28.pddl
+Num states: 162
+2023-05-20 12:34:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-4.pddl
+Num states: 36
+2023-05-20 12:34:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-87.pddl
+Num states: 18
+2023-05-20 12:34:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-35.pddl
+Num states: 27
+2023-05-20 12:34:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-55.pddl
+Num states: 162
+2023-05-20 12:34:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-32.pddl
+Num states: 108
+2023-05-20 12:34:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-7.pddl
+Num states: 36
+2023-05-20 12:34:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-26.pddl
+Num states: 81
+2023-05-20 12:34:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-64.pddl
+Num states: 108
+2023-05-20 12:34:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-27.pddl
+Num states: 36
+2023-05-20 12:34:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-86.pddl
+Num states: 243
+2023-05-20 12:34:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-68.pddl
+Num states: 36
+2023-05-20 12:34:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-18.pddl
+Num states: 54
+2023-05-20 12:34:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-29.pddl
+Num states: 27
+2023-05-20 12:34:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-19.pddl
+Num states: 81
+2023-05-20 12:34:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-33.pddl
+Num states: 18
+2023-05-20 12:34:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-58.pddl
+Num states: 243
+2023-05-20 12:34:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-65.pddl
+Num states: 54
+2023-05-20 12:34:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-55.pddl
+Num states: 108
+2023-05-20 12:34:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-3.pddl
+Num states: 54
+2023-05-20 12:35:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-32.pddl
+Num states: 27
+2023-05-20 12:35:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-75.pddl
+Num states: 27
+2023-05-20 12:35:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-81.pddl
+Num states: 81
+2023-05-20 12:35:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-95.pddl
+Num states: 18
+2023-05-20 12:35:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-12.pddl
+Num states: 36
+2023-05-20 12:35:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-82.pddl
+Num states: 54
+2023-05-20 12:35:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-21.pddl
+Num states: 81
+2023-05-20 12:35:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-41.pddl
+Num states: 18
+2023-05-20 12:35:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-48.pddl
+Num states: 18
+2023-05-20 12:35:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-32.pddl
+Num states: 162
+2023-05-20 12:35:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-0.pddl
+Num states: 243
+2023-05-20 12:35:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-11.pddl
+Num states: 18
+2023-05-20 12:35:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-26.pddl
+Num states: 54
+2023-05-20 12:35:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-82.pddl
+Num states: 27
+2023-05-20 12:35:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-24.pddl
+Num states: 18
+2023-05-20 12:35:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-20.pddl
+Num states: 36
+2023-05-20 12:35:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-9.pddl
+Num states: 108
+2023-05-20 12:35:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-79.pddl
+Num states: 36
+2023-05-20 12:35:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-52.pddl
+Num states: 27
+2023-05-20 12:35:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-18.pddl
+Num states: 27
+2023-05-20 12:35:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-89.pddl
+Num states: 81
+2023-05-20 12:35:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-81.pddl
+Num states: 162
+2023-05-20 12:35:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-39.pddl
+Num states: 81
+2023-05-20 12:35:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-9.pddl
+Num states: 54
+2023-05-20 12:35:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-54.pddl
+Num states: 27
+2023-05-20 12:35:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-68.pddl
+Num states: 162
+2023-05-20 12:35:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-35.pddl
+Num states: 54
+2023-05-20 12:35:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-89.pddl
+Num states: 36
+2023-05-20 12:35:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-98.pddl
+Num states: 108
+2023-05-20 12:35:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-46.pddl
+Num states: 243
+2023-05-20 12:35:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-35.pddl
+Num states: 108
+2023-05-20 12:35:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-24.pddl
+Num states: 27
+2023-05-20 12:35:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-26.pddl
+Num states: 162
+2023-05-20 12:35:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-5.pddl
+Num states: 81
+2023-05-20 12:35:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-1.pddl
+Num states: 54
+2023-05-20 12:35:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-90.pddl
+Num states: 243
+2023-05-20 12:35:10 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-78.pddl
+Num states: 18
+2023-05-20 12:35:10 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-42.pddl
+Num states: 18
+2023-05-20 12:35:10 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-61.pddl
+Num states: 243
+2023-05-20 12:35:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-22.pddl
+Num states: 36
+2023-05-20 12:35:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-50.pddl
+Num states: 243
+2023-05-20 12:35:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-44.pddl
+Num states: 54
+2023-05-20 12:35:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-1.pddl
+Num states: 162
+2023-05-20 12:35:12 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-66.pddl
+Num states: 243
+2023-05-20 12:35:12 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-3.pddl
+Num states: 243
+2023-05-20 12:35:12 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-31.pddl
+Num states: 18
+2023-05-20 12:35:13 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-40.pddl
+Num states: 162
+2023-05-20 12:35:13 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-56.pddl
+Num states: 81
+2023-05-20 12:35:13 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-74.pddl
+Num states: 162
+2023-05-20 12:35:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-91.pddl
+Num states: 81
+2023-05-20 12:35:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-82.pddl
+Num states: 243
+2023-05-20 12:35:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-33.pddl
+Num states: 27
+2023-05-20 12:35:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-67.pddl
+Num states: 108
+2023-05-20 12:35:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-8.pddl
+Num states: 108
+2023-05-20 12:35:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-14.pddl
+Num states: 36
+2023-05-20 12:35:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-28.pddl
+Num states: 18
+2023-05-20 12:35:16 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-34.pddl
+Num states: 243
+2023-05-20 12:35:16 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-59.pddl
+Num states: 27
+2023-05-20 12:35:16 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-22.pddl
+Num states: 108
+2023-05-20 12:35:16 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-56.pddl
+Num states: 108
+2023-05-20 12:35:17 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-26.pddl
+Num states: 36
+2023-05-20 12:35:17 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-44.pddl
+Num states: 108
+2023-05-20 12:35:17 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-48.pddl
+Num states: 36
+2023-05-20 12:35:18 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-6.pddl
+Num states: 54
+2023-05-20 12:35:18 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-47.pddl
+Num states: 18
+2023-05-20 12:35:18 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-52.pddl
+Num states: 54
+2023-05-20 12:35:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-86.pddl
+Num states: 108
+2023-05-20 12:35:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-50.pddl
+Num states: 18
+2023-05-20 12:35:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-9.pddl
+Num states: 243
+2023-05-20 12:35:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-6.pddl
+Num states: 162
+2023-05-20 12:35:20 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-77.pddl
+Num states: 36
+2023-05-20 12:35:20 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-53.pddl
+Num states: 36
+2023-05-20 12:35:20 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-70.pddl
+Num states: 81
+2023-05-20 12:35:21 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-53.pddl
+Num states: 54
+2023-05-20 12:35:21 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-5.pddl
+Num states: 243
+2023-05-20 12:35:21 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-48.pddl
+Num states: 81
+2023-05-20 12:35:22 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-67.pddl
+Num states: 36
+2023-05-20 12:35:22 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-94.pddl
+Num states: 108
+2023-05-20 12:35:22 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-29.pddl
+Num states: 162
+2023-05-20 12:35:22 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-12.pddl
+Num states: 54
+2023-05-20 12:35:23 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-87.pddl
+Num states: 54
+2023-05-20 12:35:23 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-95.pddl
+Num states: 81
+2023-05-20 12:35:23 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-10.pddl
+Num states: 162
+2023-05-20 12:35:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-68.pddl
+Num states: 18
+2023-05-20 12:35:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-13.pddl
+Num states: 27
+2023-05-20 12:35:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-36.pddl
+Num states: 81
+2023-05-20 12:35:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-15.pddl
+Num states: 81
+2023-05-20 12:35:25 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-75.pddl
+Num states: 36
+2023-05-20 12:35:25 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-25.pddl
+Num states: 81
+2023-05-20 12:35:25 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-14.pddl
+Num states: 54
+2023-05-20 12:35:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-70.pddl
+Num states: 36
+2023-05-20 12:35:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-36.pddl
+Num states: 27
+2023-05-20 12:35:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-61.pddl
+Num states: 81
+2023-05-20 12:35:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-73.pddl
+Num states: 81
+2023-05-20 12:35:27 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-14.pddl
+Num states: 27
+2023-05-20 12:35:27 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-56.pddl
+Num states: 243
+2023-05-20 12:35:27 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-13.pddl
+Num states: 81
+2023-05-20 12:35:28 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-42.pddl
+Num states: 81
+2023-05-20 12:35:28 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-27.pddl
+Num states: 108
+2023-05-20 12:35:28 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-34.pddl
+Num states: 18
+2023-05-20 12:35:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-35.pddl
+Num states: 162
+2023-05-20 12:35:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-91.pddl
+Num states: 243
+2023-05-20 12:35:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-15.pddl
+Num states: 36
+2023-05-20 12:35:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-54.pddl
+Num states: 162
+2023-05-20 12:35:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-69.pddl
+Num states: 27
+2023-05-20 12:35:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-69.pddl
+Num states: 243
+2023-05-20 12:35:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-45.pddl
+Num states: 18
+2023-05-20 12:35:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-23.pddl
+Num states: 162
+2023-05-20 12:35:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-82.pddl
+Num states: 81
+2023-05-20 12:35:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-30.pddl
+Num states: 27
+2023-05-20 12:35:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-28.pddl
+Num states: 243
+2023-05-20 12:35:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-42.pddl
+Num states: 36
+2023-05-20 12:35:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-51.pddl
+Num states: 162
+2023-05-20 12:35:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-65.pddl
+Num states: 162
+2023-05-20 12:35:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-43.pddl
+Num states: 81
+2023-05-20 12:35:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-65.pddl
+Num states: 243
+2023-05-20 12:35:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-49.pddl
+Num states: 162
+2023-05-20 12:35:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-16.pddl
+Num states: 18
+2023-05-20 12:35:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-48.pddl
+Num states: 162
+2023-05-20 12:35:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-96.pddl
+Num states: 243
+2023-05-20 12:35:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-41.pddl
+Num states: 108
+2023-05-20 12:35:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-25.pddl
+Num states: 36
+2023-05-20 12:35:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-33.pddl
+Num states: 81
+2023-05-20 12:35:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-67.pddl
+Num states: 81
+2023-05-20 12:35:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-38.pddl
+Num states: 36
+2023-05-20 12:35:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-5.pddl
+Num states: 108
+2023-05-20 12:35:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-34.pddl
+Num states: 27
+2023-05-20 12:35:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-91.pddl
+Num states: 54
+2023-05-20 12:35:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-8.pddl
+Num states: 81
+2023-05-20 12:35:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-69.pddl
+Num states: 162
+2023-05-20 12:35:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-4.pddl
+Num states: 27
+2023-05-20 12:35:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-72.pddl
+Num states: 108
+2023-05-20 12:35:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-4.pddl
+Num states: 108
+2023-05-20 12:35:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-59.pddl
+Num states: 81
+2023-05-20 12:35:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-82.pddl
+Num states: 162
+2023-05-20 12:35:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-22.pddl
+Num states: 162
+2023-05-20 12:35:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-84.pddl
+Num states: 243
+2023-05-20 12:35:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-94.pddl
+Num states: 243
+2023-05-20 12:35:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-85.pddl
+Num states: 243
+2023-05-20 12:35:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-52.pddl
+Num states: 243
+2023-05-20 12:35:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-28.pddl
+Num states: 36
+2023-05-20 12:35:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-48.pddl
+Num states: 27
+2023-05-20 12:35:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-45.pddl
+Num states: 36
+2023-05-20 12:35:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-86.pddl
+Num states: 27
+2023-05-20 12:35:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-23.pddl
+Num states: 81
+2023-05-20 12:35:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-85.pddl
+Num states: 108
+2023-05-20 12:35:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-17.pddl
+Num states: 108
+2023-05-20 12:35:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-27.pddl
+Num states: 18
+2023-05-20 12:35:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-3.pddl
+Num states: 27
+2023-05-20 12:35:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-57.pddl
+Num states: 54
+2023-05-20 12:35:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-18.pddl
+Num states: 36
+2023-05-20 12:35:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-43.pddl
+Num states: 243
+2023-05-20 12:35:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-6.pddl
+Num states: 243
+2023-05-20 12:35:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-66.pddl
+Num states: 108
+2023-05-20 12:35:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-22.pddl
+Num states: 27
+2023-05-20 12:35:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-92.pddl
+Num states: 54
+2023-05-20 12:35:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-21.pddl
+Num states: 243
+2023-05-20 12:35:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-96.pddl
+Num states: 81
+2023-05-20 12:35:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-92.pddl
+Num states: 108
+2023-05-20 12:35:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-62.pddl
+Num states: 18
+2023-05-20 12:35:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-26.pddl
+Num states: 243
+2023-05-20 12:35:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-43.pddl
+Num states: 162
+2023-05-20 12:35:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-48.pddl
+Num states: 108
+2023-05-20 12:35:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-21.pddl
+Num states: 18
+2023-05-20 12:35:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-14.pddl
+Num states: 81
+2023-05-20 12:35:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-22.pddl
+Num states: 243
+2023-05-20 12:35:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-6.pddl
+Num states: 27
+2023-05-20 12:35:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-33.pddl
+Num states: 243
+2023-05-20 12:35:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-18.pddl
+Num states: 108
+2023-05-20 12:35:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-80.pddl
+Num states: 18
+2023-05-20 12:35:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-10.pddl
+Num states: 108
+2023-05-20 12:35:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-85.pddl
+Num states: 18
+2023-05-20 12:35:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-15.pddl
+Num states: 243
+2023-05-20 12:35:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-15.pddl
+Num states: 27
+2023-05-20 12:35:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-58.pddl
+Num states: 108
+2023-05-20 12:35:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-91.pddl
+Num states: 36
+2023-05-20 12:35:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-48.pddl
+Num states: 54
+2023-05-20 12:35:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-15.pddl
+Num states: 162
+2023-05-20 12:35:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-96.pddl
+Num states: 54
+2023-05-20 12:35:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-62.pddl
+Num states: 243
+2023-05-20 12:35:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-63.pddl
+Num states: 27
+2023-05-20 12:35:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-88.pddl
+Num states: 81
+2023-05-20 12:35:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-44.pddl
+Num states: 27
+2023-05-20 12:35:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-16.pddl
+Num states: 108
+2023-05-20 12:35:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-80.pddl
+Num states: 162
+2023-05-20 12:35:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-27.pddl
+Num states: 81
+2023-05-20 12:35:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-67.pddl
+Num states: 243
+2023-05-20 12:35:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-44.pddl
+Num states: 162
+2023-05-20 12:35:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-75.pddl
+Num states: 243
+2023-05-20 12:35:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-83.pddl
+Num states: 243
+2023-05-20 12:35:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-39.pddl
+Num states: 54
+2023-05-20 12:35:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-25.pddl
+Num states: 54
+2023-05-20 12:35:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-76.pddl
+Num states: 18
+2023-05-20 12:35:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-95.pddl
+Num states: 108
+2023-05-20 12:35:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-90.pddl
+Num states: 18
+2023-05-20 12:35:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-56.pddl
+Num states: 27
+2023-05-20 12:35:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-61.pddl
+Num states: 18
+2023-05-20 12:35:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-53.pddl
+Num states: 162
+2023-05-20 12:35:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-36.pddl
+Num states: 162
+2023-05-20 12:35:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-57.pddl
+Num states: 108
+2023-05-20 12:35:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-51.pddl
+Num states: 18
+2023-05-20 12:35:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-2.pddl
+Num states: 54
+2023-05-20 12:35:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-45.pddl
+Num states: 108
+2023-05-20 12:35:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-41.pddl
+Num states: 162
+2023-05-20 12:35:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-79.pddl
+Num states: 162
+2023-05-20 12:35:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-47.pddl
+Num states: 54
+2023-05-20 12:35:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-69.pddl
+Num states: 108
+2023-05-20 12:36:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-60.pddl
+Num states: 108
+2023-05-20 12:36:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-3.pddl
+Num states: 81
+2023-05-20 12:36:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-34.pddl
+Num states: 36
+2023-05-20 12:36:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-95.pddl
+Num states: 162
+2023-05-20 12:36:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-8.pddl
+Num states: 162
+2023-05-20 12:36:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-18.pddl
+Num states: 18
+2023-05-20 12:36:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-37.pddl
+Num states: 162
+2023-05-20 12:36:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-83.pddl
+Num states: 18
+2023-05-20 12:36:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-50.pddl
+Num states: 27
+2023-05-20 12:36:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-39.pddl
+Num states: 162
+2023-05-20 12:36:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-83.pddl
+Num states: 162
+2023-05-20 12:36:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-84.pddl
+Num states: 81
+2023-05-20 12:36:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-51.pddl
+Num states: 54
+2023-05-20 12:36:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-42.pddl
+Num states: 162
+2023-05-20 12:36:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-62.pddl
+Num states: 54
+2023-05-20 12:36:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-46.pddl
+Num states: 81
+2023-05-20 12:36:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-30.pddl
+Num states: 18
+2023-05-20 12:36:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-69.pddl
+Num states: 54
+2023-05-20 12:36:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-98.pddl
+Num states: 81
+2023-05-20 12:36:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-4.pddl
+Num states: 243
+2023-05-20 12:36:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-87.pddl
+Num states: 81
+2023-05-20 12:36:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-45.pddl
+Num states: 54
+2023-05-20 12:36:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-76.pddl
+Num states: 81
+2023-05-20 12:36:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-0.pddl
+Num states: 18
+2023-05-20 12:36:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-74.pddl
+Num states: 36
+2023-05-20 12:36:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-51.pddl
+Num states: 27
+2023-05-20 12:36:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-2.pddl
+Num states: 162
+2023-05-20 12:36:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-20.pddl
+Num states: 243
+2023-05-20 12:36:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-43.pddl
+Num states: 108
+2023-05-20 12:36:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-78.pddl
+Num states: 27
+2023-05-20 12:36:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-7.pddl
+Num states: 18
+2023-05-20 12:36:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-47.pddl
+Num states: 243
+2023-05-20 12:36:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-71.pddl
+Num states: 108
+2023-05-20 12:36:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-84.pddl
+Num states: 54
+2023-05-20 12:36:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-91.pddl
+Num states: 18
+2023-05-20 12:36:10 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-94.pddl
+Num states: 36
+2023-05-20 12:36:10 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-29.pddl
+Num states: 108
+2023-05-20 12:36:10 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-33.pddl
+Num states: 108
+2023-05-20 12:36:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-9.pddl
+Num states: 162
+2023-05-20 12:36:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-8.pddl
+Num states: 243
+2023-05-20 12:36:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-14.pddl
+Num states: 162
+2023-05-20 12:36:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-75.pddl
+Num states: 162
+2023-05-20 12:36:12 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-66.pddl
+Num states: 27
+2023-05-20 12:36:12 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-91.pddl
+Num states: 162
+2023-05-20 12:36:12 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-76.pddl
+Num states: 243
+2023-05-20 12:36:13 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-94.pddl
+Num states: 27
+2023-05-20 12:36:13 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-40.pddl
+Num states: 18
+2023-05-20 12:36:13 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-56.pddl
+Num states: 162
+2023-05-20 12:36:13 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-84.pddl
+Num states: 36
+2023-05-20 12:36:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-55.pddl
+Num states: 27
+2023-05-20 12:36:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-17.pddl
+Num states: 162
+2023-05-20 12:36:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-59.pddl
+Num states: 162
+2023-05-20 12:36:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-50.pddl
+Num states: 162
+2023-05-20 12:36:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-12.pddl
+Num states: 108
+2023-05-20 12:36:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-28.pddl
+Num states: 54
+2023-05-20 12:36:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-57.pddl
+Num states: 36
+2023-05-20 12:36:16 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-63.pddl
+Num states: 18
+2023-05-20 12:36:16 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-39.pddl
+Num states: 108
+2023-05-20 12:36:16 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-93.pddl
+Num states: 27
+2023-05-20 12:36:17 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-78.pddl
+Num states: 243
+2023-05-20 12:36:17 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-12.pddl
+Num states: 18
+2023-05-20 12:36:17 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-57.pddl
+Num states: 81
+2023-05-20 12:36:18 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-0.pddl
+Num states: 81
+2023-05-20 12:36:18 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-43.pddl
+Num states: 18
+2023-05-20 12:36:18 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-85.pddl
+Num states: 36
+2023-05-20 12:36:18 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-9.pddl
+Num states: 81
+2023-05-20 12:36:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-90.pddl
+Num states: 162
+2023-05-20 12:36:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-75.pddl
+Num states: 108
+2023-05-20 12:36:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-6.pddl
+Num states: 18
+2023-05-20 12:36:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-92.pddl
+Num states: 27
+2023-05-20 12:36:20 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-51.pddl
+Num states: 108
+2023-05-20 12:36:20 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-77.pddl
+Num states: 18
+2023-05-20 12:36:20 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-38.pddl
+Num states: 54
+2023-05-20 12:36:21 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-83.pddl
+Num states: 36
+2023-05-20 12:36:21 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-10.pddl
+Num states: 18
+2023-05-20 12:36:21 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-35.pddl
+Num states: 81
+2023-05-20 12:36:21 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-54.pddl
+Num states: 18
+2023-05-20 12:36:22 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-73.pddl
+Num states: 162
+2023-05-20 12:36:22 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-52.pddl
+Num states: 108
+2023-05-20 12:36:22 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-32.pddl
+Num states: 81
+2023-05-20 12:36:23 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-47.pddl
+Num states: 81
+2023-05-20 12:36:23 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-90.pddl
+Num states: 108
+2023-05-20 12:36:23 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-17.pddl
+Num states: 54
+2023-05-20 12:36:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-11.pddl
+Num states: 108
+2023-05-20 12:36:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-50.pddl
+Num states: 36
+2023-05-20 12:36:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-91.pddl
+Num states: 27
+2023-05-20 12:36:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-49.pddl
+Num states: 81
+2023-05-20 12:36:25 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-39.pddl
+Num states: 27
+2023-05-20 12:36:25 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-31.pddl
+Num states: 243
+2023-05-20 12:36:25 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-52.pddl
+Num states: 162
+2023-05-20 12:36:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-56.pddl
+Num states: 54
+2023-05-20 12:36:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-71.pddl
+Num states: 36
+2023-05-20 12:36:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-49.pddl
+Num states: 54
+2023-05-20 12:36:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-91.pddl
+Num states: 108
+2023-05-20 12:36:27 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-12.pddl
+Num states: 243
+2023-05-20 12:36:27 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-96.pddl
+Num states: 108
+2023-05-20 12:36:27 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-93.pddl
+Num states: 108
+2023-05-20 12:36:28 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-50.pddl
+Num states: 108
+2023-05-20 12:36:28 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-93.pddl
+Num states: 36
+2023-05-20 12:36:28 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-41.pddl
+Num states: 36
+2023-05-20 12:36:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-46.pddl
+Num states: 36
+2023-05-20 12:36:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-62.pddl
+Num states: 108
+2023-05-20 12:36:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-95.pddl
+Num states: 27
+2023-05-20 12:36:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-42.pddl
+Num states: 54
+2023-05-20 12:36:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-71.pddl
+Num states: 162
+2023-05-20 12:36:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-37.pddl
+Num states: 36
+2023-05-20 12:36:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-76.pddl
+Num states: 36
+2023-05-20 12:36:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-32.pddl
+Num states: 18
+2023-05-20 12:36:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-62.pddl
+Num states: 27
+2023-05-20 12:36:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-29.pddl
+Num states: 54
+2023-05-20 12:36:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-84.pddl
+Num states: 18
+2023-05-20 12:36:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-65.pddl
+Num states: 27
+2023-05-20 12:36:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-24.pddl
+Num states: 36
+2023-05-20 12:36:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-52.pddl
+Num states: 36
+2023-05-20 12:36:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-20.pddl
+Num states: 162
+2023-05-20 12:36:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-46.pddl
+Num states: 54
+2023-05-20 12:36:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-41.pddl
+Num states: 243
+2023-05-20 12:36:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-96.pddl
+Num states: 18
+2023-05-20 12:36:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-18.pddl
+Num states: 162
+2023-05-20 12:36:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-58.pddl
+Num states: 162
+2023-05-20 12:36:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-84.pddl
+Num states: 27
+2023-05-20 12:36:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-36.pddl
+Num states: 18
+2023-05-20 12:36:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-12.pddl
+Num states: 27
+2023-05-20 12:36:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-70.pddl
+Num states: 18
+2023-05-20 12:36:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-28.pddl
+Num states: 81
+2023-05-20 12:36:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-86.pddl
+Num states: 18
+2023-05-20 12:36:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-19.pddl
+Num states: 18
+2023-05-20 12:36:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-29.pddl
+Num states: 18
+2023-05-20 12:36:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-19.pddl
+Num states: 162
+2023-05-20 12:36:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-15.pddl
+Num states: 18
+2023-05-20 12:36:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-9.pddl
+Num states: 36
+2023-05-20 12:36:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-94.pddl
+Num states: 81
+2023-05-20 12:36:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-3.pddl
+Num states: 108
+2023-05-20 12:36:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-81.pddl
+Num states: 108
+2023-05-20 12:36:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-22.pddl
+Num states: 54
+2023-05-20 12:36:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-61.pddl
+Num states: 27
+2023-05-20 12:36:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-98.pddl
+Num states: 18
+2023-05-20 12:36:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-33.pddl
+Num states: 54
+2023-05-20 12:36:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-1.pddl
+Num states: 27
+2023-05-20 12:36:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-27.pddl
+Num states: 54
+2023-05-20 12:36:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-19.pddl
+Num states: 243
+2023-05-20 12:36:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-58.pddl
+Num states: 36
+2023-05-20 12:36:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-43.pddl
+Num states: 54
+2023-05-20 12:36:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-20.pddl
+Num states: 108
+2023-05-20 12:36:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-1.pddl
+Num states: 108
+2023-05-20 12:36:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-77.pddl
+Num states: 27
+2023-05-20 12:36:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-13.pddl
+Num states: 108
+2023-05-20 12:36:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-36.pddl
+Num states: 54
+2023-05-20 12:36:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-81.pddl
+Num states: 18
+2023-05-20 12:36:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-99.pddl
+Num states: 54
+2023-05-20 12:36:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-92.pddl
+Num states: 18
+2023-05-20 12:36:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-38.pddl
+Num states: 18
+2023-05-20 12:36:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-41.pddl
+Num states: 27
+2023-05-20 12:36:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-42.pddl
+Num states: 27
+2023-05-20 12:36:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-44.pddl
+Num states: 243
+2023-05-20 12:36:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-45.pddl
+Num states: 27
+2023-05-20 12:36:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-10.pddl
+Num states: 54
+2023-05-20 12:36:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-71.pddl
+Num states: 81
+2023-05-20 12:36:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-17.pddl
+Num states: 27
+2023-05-20 12:36:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-80.pddl
+Num states: 54
+2023-05-20 12:36:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-99.pddl
+Num states: 243
+2023-05-20 12:36:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-62.pddl
+Num states: 162
+2023-05-20 12:36:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-25.pddl
+Num states: 27
+2023-05-20 12:36:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-97.pddl
+Num states: 81
+2023-05-20 12:36:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-71.pddl
+Num states: 54
+2023-05-20 12:36:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-64.pddl
+Num states: 54
+2023-05-20 12:36:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-5.pddl
+Num states: 36
+2023-05-20 12:36:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-63.pddl
+Num states: 108
+2023-05-20 12:36:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-89.pddl
+Num states: 18
+2023-05-20 12:36:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-87.pddl
+Num states: 162
+2023-05-20 12:36:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-31.pddl
+Num states: 162
+2023-05-20 12:36:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-99.pddl
+Num states: 27
+2023-05-20 12:36:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-11.pddl
+Num states: 54
+2023-05-20 12:36:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-69.pddl
+Num states: 81
+2023-05-20 12:36:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-7.pddl
+Num states: 162
+2023-05-20 12:36:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-10.pddl
+Num states: 27
+2023-05-20 12:36:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-62.pddl
+Num states: 81
+2023-05-20 12:36:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-43.pddl
+Num states: 27
+2023-05-20 12:36:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-5.pddl
+Num states: 54
+2023-05-20 12:36:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-17.pddl
+Num states: 18
+2023-05-20 12:36:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-8.pddl
+Num states: 27
+2023-05-20 12:36:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-44.pddl
+Num states: 36
+2023-05-20 12:36:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-7.pddl
+Num states: 54
+2023-05-20 12:36:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-5.pddl
+Num states: 162
+2023-05-20 12:36:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-89.pddl
+Num states: 243
+2023-05-20 12:36:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-90.pddl
+Num states: 27
+2023-05-20 12:36:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-27.pddl
+Num states: 243
+2023-05-20 12:36:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-98.pddl
+Num states: 27
+2023-05-20 12:36:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-13.pddl
+Num states: 54
+2023-05-20 12:36:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-55.pddl
+Num states: 54
+2023-05-20 12:36:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-20.pddl
+Num states: 54
+2023-05-20 12:36:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-2.pddl
+Num states: 243
+2023-05-20 12:36:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-98.pddl
+Num states: 243
+2023-05-20 12:36:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-16.pddl
+Num states: 54
+2023-05-20 12:36:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-69.pddl
+Num states: 18
+2023-05-20 12:36:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-33.pddl
+Num states: 36
+2023-05-20 12:36:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-18.pddl
+Num states: 243
+2023-05-20 12:36:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-49.pddl
+Num states: 27
+2023-05-20 12:36:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-71.pddl
+Num states: 243
+2023-05-20 12:36:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-4.pddl
+Num states: 18
+2023-05-20 12:36:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-20.pddl
+Num states: 18
+2023-05-20 12:36:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-0.pddl
+Num states: 36
+2023-05-20 12:36:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-77.pddl
+Num states: 108
+2023-05-20 12:36:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-2.pddl
+Num states: 81
+2023-05-20 12:36:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-24.pddl
+Num states: 108
+2023-05-20 12:36:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-43.pddl
+Num states: 36
+2023-05-20 12:37:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-32.pddl
+Num states: 54
+2023-05-20 12:37:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-16.pddl
+Num states: 243
+2023-05-20 12:37:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-1.pddl
+Num states: 243
+2023-05-20 12:37:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-23.pddl
+Num states: 54
+2023-05-20 12:37:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-8.pddl
+Num states: 54
+2023-05-20 12:37:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-27.pddl
+Num states: 27
+2023-05-20 12:37:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-31.pddl
+Num states: 27
+2023-05-20 12:37:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-36.pddl
+Num states: 108
+2023-05-20 12:37:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-19.pddl
+Num states: 108
+2023-05-20 12:37:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-54.pddl
+Num states: 108
+2023-05-20 12:37:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-55.pddl
+Num states: 36
+2023-05-20 12:37:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-88.pddl
+Num states: 54
+2023-05-20 12:37:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-89.pddl
+Num states: 162
+2023-05-20 12:37:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-74.pddl
+Num states: 81
+2023-05-20 12:37:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-34.pddl
+Num states: 162
+2023-05-20 12:37:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-75.pddl
+Num states: 81
+2023-05-20 12:37:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-47.pddl
+Num states: 162
+2023-05-20 12:37:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-3.pddl
+Num states: 162
+2023-05-20 12:37:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-0.pddl
+Num states: 54
+2023-05-20 12:37:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-61.pddl
+Num states: 108
+2023-05-20 12:37:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-34.pddl
+Num states: 54
+2023-05-20 12:37:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-94.pddl
+Num states: 18
+2023-05-20 12:37:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-30.pddl
+Num states: 243
+2023-05-20 12:37:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-86.pddl
+Num states: 54
+2023-05-20 12:37:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-69.pddl
+Num states: 36
+2023-05-20 12:37:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-46.pddl
+Num states: 162
+2023-05-20 12:37:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-20.pddl
+Num states: 27
+2023-05-20 12:37:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-12.pddl
+Num states: 162
+2023-05-20 12:37:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-45.pddl
+Num states: 81
+2023-05-20 12:37:10 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-53.pddl
+Num states: 243
+2023-05-20 12:37:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-90.pddl
+Num states: 54
+2023-05-20 12:37:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-64.pddl
+Num states: 243
+2023-05-20 12:37:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-73.pddl
+Num states: 54
+2023-05-20 12:37:12 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-4-88.pddl
+Num states: 162
+2023-05-20 12:37:12 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-19.pddl
+Num states: 54
+2023-05-20 12:37:13 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-52.pddl
+Num states: 18
+2023-05-20 12:37:13 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-82.pddl
+Num states: 18
+2023-05-20 12:37:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-79.pddl
+Num states: 108
+2023-05-20 12:37:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-21.pddl
+Num states: 108
+2023-05-20 12:37:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-17.pddl
+Num states: 81
+2023-05-20 12:37:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-68.pddl
+Num states: 81
+2023-05-20 12:37:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-79.pddl
+Num states: 81
+2023-05-20 12:37:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-62.pddl
+Num states: 36
+2023-05-20 12:37:16 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-82.pddl
+Num states: 36
+2023-05-20 12:37:16 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-65.pddl
+Num states: 18
+2023-05-20 12:37:17 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-67.pddl
+Num states: 18
+2023-05-20 12:37:17 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-2.pddl
+Num states: 36
+2023-05-20 12:37:17 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-40.pddl
+Num states: 54
+2023-05-20 12:37:18 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-0.pddl
+Num states: 108
+2023-05-20 12:37:18 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-55.pddl
+Num states: 81
+2023-05-20 12:37:18 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-70.pddl
+Num states: 54
+2023-05-20 12:37:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-72.pddl
+Num states: 54
+2023-05-20 12:37:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-60.pddl
+Num states: 36
+2023-05-20 12:37:20 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-83.pddl
+Num states: 81
+2023-05-20 12:37:20 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-57.pddl
+Num states: 243
+2023-05-20 12:37:21 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-46.pddl
+Num states: 108
+2023-05-20 12:37:21 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-11.pddl
+Num states: 243
+2023-05-20 12:37:21 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-60.pddl
+Num states: 27
+2023-05-20 12:37:22 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-93.pddl
+Num states: 54
+2023-05-20 12:37:23 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-59.pddl
+Num states: 18
+2023-05-20 12:37:23 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-50.pddl
+Num states: 81
+2023-05-20 12:37:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-88.pddl
+Num states: 27
+2023-05-20 12:37:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-99.pddl
+Num states: 36
+2023-05-20 12:37:25 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-29.pddl
+Num states: 36
+2023-05-20 12:37:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-57.pddl
+Num states: 27
+2023-05-20 12:37:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-47.pddl
+Num states: 36
+2023-05-20 12:37:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-3-31.pddl
+Num states: 54
+2023-05-20 12:37:27 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-90.pddl
+Num states: 36
+2023-05-20 12:37:27 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-3-25.pddl
+Num states: 108
+2023-05-20 12:37:28 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-21.pddl
+Num states: 27
+2023-05-20 12:37:28 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-23.pddl
+Num states: 18
+2023-05-20 12:37:28 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-73.pddl
+Num states: 36
+2023-05-20 12:37:28 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-4-2-21.pddl
+Num states: 36
+2023-05-20 12:37:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-66.pddl
+Num states: 18
+2023-05-20 12:37:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-83.pddl
+Num states: 27
+2023-05-20 12:37:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-38.pddl
+Num states: 81
+2023-05-20 12:37:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-77.pddl
+Num states: 243
+2023-05-20 12:37:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-4-93.pddl
+Num states: 243
+2023-05-20 12:37:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-90.pddl
+Num states: 81
+2023-05-20 12:37:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-0.pddl
+Num states: 27
+2023-05-20 12:37:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-2-2-46.pddl
+Num states: 18
+2023-05-20 12:37:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-11.pddl
+Num states: 81
+2023-05-20 12:37:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-3-31.pddl
+Num states: 81
+2023-05-20 12:37:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/miconic/instances/p-3-2-19.pddl
+Num states: 27
+2023-05-20 12:37:33 INFO     ..done
+2023-05-20 12:37:33 INFO     Iteration: 0
+     id: 0 name: p-2-2-75
+2023-05-20 12:37:33 INFO     Initializing DomainFeatureData...
+[t=242.075s, 243944 KB] Started generating base features of complexity 1.
+[t=242.075s, 243944 KB] Complexity 1:
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 0
+    c_not: 0
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 0
+    r_transitive_closure: 0
+    b_empty: 0
+    n_count: 0
+    n_concept_distance: 0
+[t=242.075s, 243944 KB] Finished generating base features.
+[t=242.075s, 243944 KB] Started generating composite features. 
+[t=242.076s, 243944 KB] Complexity 2:
+Total concept elements: 10
+Total role elements: 7
+Total numerical elements: 7
+Total boolean elements: 5
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 0
+    c_not: 3
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 3
+    r_transitive_closure: 0
+    b_empty: 5
+    n_count: 7
+    n_concept_distance: 0
+[t=242.078s, 243944 KB] Complexity 3:
+Total concept elements: 20
+Total role elements: 10
+Total numerical elements: 10
+Total boolean elements: 5
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 0
+    c_not: 3
+    c_equal: 1
+    c_some: 5
+    c_all: 4
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 3
+    r_transitive_closure: 0
+    b_empty: 5
+    n_count: 10
+    n_concept_distance: 0
+[t=242.08s, 243944 KB] Complexity 4:
+Total concept elements: 39
+Total role elements: 13
+Total numerical elements: 16
+Total boolean elements: 7
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 3
+    c_not: 9
+    c_equal: 1
+    c_some: 10
+    c_all: 9
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 7
+    n_count: 15
+    n_concept_distance: 1
+[t=242.084s, 243944 KB] Complexity 5:
+Total concept elements: 72
+Total role elements: 13
+Total numerical elements: 25
+Total boolean elements: 11
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 12
+    c_not: 17
+    c_equal: 1
+    c_some: 18
+    c_all: 17
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 11
+    n_count: 23
+    n_concept_distance: 2
+[t=242.091s, 243944 KB] Complexity 6:
+Total concept elements: 147
+Total role elements: 13
+Total numerical elements: 47
+Total boolean elements: 18
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 36
+    c_not: 31
+    c_equal: 1
+    c_some: 35
+    c_all: 37
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 18
+    n_count: 40
+    n_concept_distance: 7
+[t=242.101s, 243944 KB] Complexity 7:
+Total concept elements: 245
+Total role elements: 13
+Total numerical elements: 101
+Total boolean elements: 32
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 85
+    c_not: 72
+    c_equal: 1
+    c_some: 39
+    c_all: 41
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 32
+    n_count: 82
+    n_concept_distance: 19
+[t=242.12s, 243944 KB] Complexity 8:
+Total concept elements: 516
+Total role elements: 13
+Total numerical elements: 169
+Total boolean elements: 53
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 215
+    c_not: 119
+    c_equal: 1
+    c_some: 79
+    c_all: 95
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 53
+    n_count: 135
+    n_concept_distance: 34
+[t=242.155s, 243944 KB] Complexity 9:
+Total concept elements: 968
+Total role elements: 13
+Total numerical elements: 333
+Total boolean elements: 96
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 437
+    c_not: 272
+    c_equal: 1
+    c_some: 110
+    c_all: 141
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 96
+    n_count: 268
+    n_concept_distance: 65
+[t=242.155s, 243944 KB] Finished generating composite features.
+DomainFeatureDataStatistics:
+    num_dlplan_states: 18
+    num_boolean_features: 96
+    num_numerical_features: 333
+2023-05-20 12:37:34 INFO     ..done
+2023-05-20 12:37:34 INFO     Initializing InstanceFeatureDatas...
+2023-05-20 12:37:34 INFO     ..done
+2023-05-20 12:37:34 INFO     Grounding Logic Program...
+2023-05-20 12:37:34 INFO     ..done
+2023-05-20 12:37:34 INFO     Solving Logic Program...
+Clingo statistics:
+{'call': 0.0, 'result': 1.0, 'signal': 0.0, 'exhausted': 1.0, 'costs': [7.0], 'lower': [7.0], 'concurrency': 32.0, 'winner': 20.0, 'times': {'total': 0.15817594528198242, 'cpu': 0.17902700000000138, 'solve': 0.006124019622802734, 'unsat': 0.0010080337524414062, 'sat': 0.004639148712158203}, 'models': {'enumerated': 5.0, 'optimal': 1.0}}
+Solution cost: [7.0]
+Total time: 0.15817594528198242
+CPU time: 0.17902700000000138
+Solve time: 0.006124019622802734
+2023-05-20 12:37:34 INFO     ..done
+2023-05-20 12:37:34 INFO     Learned the following goal separating features:
+b_empty(c_and(c_not(c_primitive(served,0)),c_primitive(served_g,0)))
+
+2023-05-20 12:37:34 INFO     Verifying goal separating features...
+2023-05-20 12:37:34 INFO     ..done
+Features separate all goal from non-goal states!
+2023-05-20 12:37:34 INFO     Started refining
+2023-05-20 12:37:34 INFO     Initializing TupleGraphs...
+2023-05-20 12:37:35 INFO     ..done
+2023-05-20 12:37:35 INFO     Iteration: 0
+     id: 0 name: p-2-2-75 initial_states: [15, 14, 13, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2023-05-20 12:37:35 INFO     Initializing DomainFeatureData...
+[t=243.576s, 2506364 KB] Started generating base features of complexity 1.
+[t=243.577s, 2506364 KB] Complexity 1:
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 0
+    c_not: 0
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 0
+    r_transitive_closure: 0
+    b_empty: 0
+    n_count: 0
+    n_concept_distance: 0
+[t=243.577s, 2506364 KB] Finished generating base features.
+[t=243.577s, 2506364 KB] Started generating composite features. 
+[t=243.578s, 2506364 KB] Complexity 2:
+Total concept elements: 10
+Total role elements: 7
+Total numerical elements: 7
+Total boolean elements: 5
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 0
+    c_not: 3
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 3
+    r_transitive_closure: 0
+    b_empty: 5
+    n_count: 7
+    n_concept_distance: 0
+[t=243.582s, 2506364 KB] Complexity 3:
+Total concept elements: 20
+Total role elements: 10
+Total numerical elements: 10
+Total boolean elements: 5
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 0
+    c_not: 3
+    c_equal: 1
+    c_some: 5
+    c_all: 4
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 3
+    r_transitive_closure: 0
+    b_empty: 5
+    n_count: 10
+    n_concept_distance: 0
+[t=243.587s, 2506364 KB] Complexity 4:
+Total concept elements: 39
+Total role elements: 13
+Total numerical elements: 16
+Total boolean elements: 7
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 3
+    c_not: 9
+    c_equal: 1
+    c_some: 10
+    c_all: 9
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 7
+    n_count: 15
+    n_concept_distance: 1
+[t=243.594s, 2506364 KB] Complexity 5:
+Total concept elements: 72
+Total role elements: 13
+Total numerical elements: 25
+Total boolean elements: 11
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 12
+    c_not: 17
+    c_equal: 1
+    c_some: 18
+    c_all: 17
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 11
+    n_count: 23
+    n_concept_distance: 2
+[t=243.604s, 2506364 KB] Complexity 6:
+Total concept elements: 147
+Total role elements: 13
+Total numerical elements: 47
+Total boolean elements: 18
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 36
+    c_not: 31
+    c_equal: 1
+    c_some: 35
+    c_all: 37
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 18
+    n_count: 40
+    n_concept_distance: 7
+[t=243.616s, 2506364 KB] Complexity 7:
+Total concept elements: 245
+Total role elements: 13
+Total numerical elements: 101
+Total boolean elements: 32
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 85
+    c_not: 72
+    c_equal: 1
+    c_some: 39
+    c_all: 41
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 32
+    n_count: 82
+    n_concept_distance: 19
+[t=243.637s, 2506364 KB] Complexity 8:
+Total concept elements: 516
+Total role elements: 13
+Total numerical elements: 169
+Total boolean elements: 53
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 215
+    c_not: 119
+    c_equal: 1
+    c_some: 79
+    c_all: 95
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 53
+    n_count: 135
+    n_concept_distance: 34
+[t=243.674s, 2506364 KB] Complexity 9:
+Total concept elements: 968
+Total role elements: 13
+Total numerical elements: 333
+Total boolean elements: 96
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 437
+    c_not: 272
+    c_equal: 1
+    c_some: 110
+    c_all: 141
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 96
+    n_count: 268
+    n_concept_distance: 65
+[t=243.674s, 2506364 KB] Finished generating composite features.
+DomainFeatureDataStatistics:
+    num_dlplan_states: 18
+    num_boolean_features: 96
+    num_numerical_features: 333
+2023-05-20 12:37:35 INFO     ..done
+2023-05-20 12:37:35 INFO     Initializing InstanceFeatureDatas...
+2023-05-20 12:37:35 INFO     ..done
+2023-05-20 12:37:35 INFO     Initializing StatePairEquivalenceDatas...
+2023-05-20 12:37:35 INFO     ..done
+2023-05-20 12:37:35 INFO     Initializing TupleGraphEquivalences...
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 84
+    num_single_rule_subgoal_tuples: 84
+    num_multi_rule_subgoal_tuples: 0
+2023-05-20 12:37:35 INFO     ..done
+2023-05-20 12:37:35 INFO     Initializing TupleGraphEquivalenceMinimizer...
+2023-05-20 12:37:35 INFO     ..done
+2023-05-20 12:37:35 INFO     Iteration data preprocessing summary:
+DomainFeatureDataStatistics:
+    num_dlplan_states: 18
+    num_boolean_features: 96
+    num_numerical_features: 333
+StatePairEquivalenceStatistics:
+    num_subgoal_states: 48
+    num_equivalences: 48
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 84
+    num_single_rule_subgoal_tuples: 84
+    num_multi_rule_subgoal_tuples: 0
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 48
+    num_single_rule_subgoal_tuples: 48
+    num_multi_rule_subgoal_tuples: 0
+2023-05-20 12:37:36 INFO     Grounding Logic Program...
+2023-05-20 12:37:37 INFO     ..done
+2023-05-20 12:37:37 INFO     Solving Logic Program...
+Clingo statistics:
+{'call': 0.0, 'result': 1.0, 'signal': 0.0, 'exhausted': 1.0, 'costs': [19.0], 'lower': [19.0], 'concurrency': 32.0, 'winner': 22.0, 'times': {'total': 167.88074898719788, 'cpu': 5243.427245, 'solve': 165.19309496879578, 'unsat': 83.1244490146637, 'sat': 74.60522294044495}, 'models': {'enumerated': 9.0, 'optimal': 1.0}}
+Solution cost: [19.0]
+Total time: 167.88074898719788
+CPU time: 5243.427245
+Solve time: 165.19309496879578
+2023-05-20 12:40:23 INFO     ..done
+2023-05-20 12:40:23 INFO     Learned the following sketch:
+(:policy
+(:rule (:conditions (:c_n_eq "n_concept_distance(c_some(r_primitive(destin,0,1),c_primitive(lift-at,0)),r_primitive(origin,0,1),c_primitive(boarded,0))")) (:effects (:e_n_dec "n_count(c_primitive(boarded,0))") (:e_n_bot "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))") (:e_n_inc "n_concept_distance(c_some(r_primitive(destin,0,1),c_primitive(lift-at,0)),r_primitive(origin,0,1),c_primitive(boarded,0))")))
+(:rule (:conditions (:c_n_eq "n_count(c_primitive(boarded,0))") (:c_n_eq "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))") (:c_n_gt "n_concept_distance(c_some(r_primitive(destin,0,1),c_primitive(lift-at,0)),r_primitive(origin,0,1),c_primitive(boarded,0))")) (:effects (:e_n_bot "n_count(c_primitive(boarded,0))") (:e_n_inc "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))") (:e_n_bot "n_concept_distance(c_some(r_primitive(destin,0,1),c_primitive(lift-at,0)),r_primitive(origin,0,1),c_primitive(boarded,0))")))
+(:rule (:conditions (:c_n_gt "n_count(c_primitive(boarded,0))") (:c_n_gt "n_concept_distance(c_some(r_primitive(destin,0,1),c_primitive(lift-at,0)),r_primitive(origin,0,1),c_primitive(boarded,0))")) (:effects (:e_n_dec "n_concept_distance(c_some(r_primitive(destin,0,1),c_primitive(lift-at,0)),r_primitive(origin,0,1),c_primitive(boarded,0))")))
+(:rule (:conditions (:c_n_gt "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))") (:c_n_gt "n_concept_distance(c_some(r_primitive(destin,0,1),c_primitive(lift-at,0)),r_primitive(origin,0,1),c_primitive(boarded,0))")) (:effects (:e_n_inc "n_count(c_primitive(boarded,0))") (:e_n_bot "n_concept_distance(c_some(r_primitive(destin,0,1),c_primitive(lift-at,0)),r_primitive(origin,0,1),c_primitive(boarded,0))")))
+)
+(:policy
+(:booleans )
+(:numericals (2000 "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))") (1993 "n_count(c_primitive(boarded,0))") (2034 "n_concept_distance(c_some(r_primitive(destin,0,1),c_primitive(lift-at,0)),r_primitive(origin,0,1),c_primitive(boarded,0))"))
+(:rule (:conditions (:c_n_eq 1993) (:c_n_eq 2000) (:c_n_gt 2034)) (:effects (:e_n_bot 1993) (:e_n_inc 2000) (:e_n_bot 2034)))
+(:rule (:conditions (:c_n_gt 2000) (:c_n_gt 2034)) (:effects (:e_n_inc 1993) (:e_n_bot 2034)))
+(:rule (:conditions (:c_n_gt 1993) (:c_n_gt 2034)) (:effects (:e_n_dec 2034)))
+(:rule (:conditions (:c_n_eq 2034)) (:effects (:e_n_dec 1993) (:e_n_bot 2000) (:e_n_inc 2034)))
+)
+Numer of sketch rules: 4
+Number of selected features: 3
+Maximum complexity of selected feature: 6
+2023-05-20 12:40:23 INFO     Verifying learned sketch...
+State has unbounded width for a rule
+Width: 0
+Rule: (:rule (:conditions (:c_n_eq 2034)) (:effects (:e_n_dec 1993) (:e_n_bot 2000) (:e_n_inc 2034)))
+Instance: 6 p-2-2-79
+State: (instance index=39, state index=8, atoms={lift-at(f0), boarded(p1), boarded(p0)})
+2023-05-20 12:40:23 INFO     ..done
+Smallest unsolved instance: 6
+Selected instances: [6]
+2023-05-20 12:40:23 INFO     Iteration: 1
+     id: 6 name: p-2-2-79 initial_states: [16, 14, 13, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2023-05-20 12:40:23 INFO     Initializing DomainFeatureData...
+[t=411.979s, 5803940 KB] Started generating base features of complexity 1.
+[t=411.979s, 5803940 KB] Complexity 1:
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 0
+    c_not: 0
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 0
+    r_transitive_closure: 0
+    b_empty: 0
+    n_count: 0
+    n_concept_distance: 0
+[t=411.979s, 5803940 KB] Finished generating base features.
+[t=411.979s, 5803940 KB] Started generating composite features. 
+[t=411.98s, 5803940 KB] Complexity 2:
+Total concept elements: 10
+Total role elements: 7
+Total numerical elements: 7
+Total boolean elements: 5
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 0
+    c_not: 3
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 3
+    r_transitive_closure: 0
+    b_empty: 5
+    n_count: 7
+    n_concept_distance: 0
+[t=411.981s, 5803940 KB] Complexity 3:
+Total concept elements: 20
+Total role elements: 10
+Total numerical elements: 10
+Total boolean elements: 5
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 0
+    c_not: 3
+    c_equal: 1
+    c_some: 5
+    c_all: 4
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 3
+    r_transitive_closure: 0
+    b_empty: 5
+    n_count: 10
+    n_concept_distance: 0
+[t=411.982s, 5803940 KB] Complexity 4:
+Total concept elements: 39
+Total role elements: 13
+Total numerical elements: 18
+Total boolean elements: 8
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 3
+    c_not: 9
+    c_equal: 1
+    c_some: 10
+    c_all: 9
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 8
+    n_count: 17
+    n_concept_distance: 1
+[t=411.985s, 5803940 KB] Complexity 5:
+Total concept elements: 56
+Total role elements: 13
+Total numerical elements: 33
+Total boolean elements: 11
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 12
+    c_not: 17
+    c_equal: 1
+    c_some: 10
+    c_all: 9
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 11
+    n_count: 31
+    n_concept_distance: 2
+[t=411.99s, 5803940 KB] Complexity 6:
+Total concept elements: 113
+Total role elements: 13
+Total numerical elements: 49
+Total boolean elements: 15
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 40
+    c_not: 23
+    c_equal: 1
+    c_some: 20
+    c_all: 22
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 15
+    n_count: 45
+    n_concept_distance: 4
+[t=411.998s, 5803940 KB] Complexity 7:
+Total concept elements: 199
+Total role elements: 13
+Total numerical elements: 108
+Total boolean elements: 26
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 81
+    c_not: 60
+    c_equal: 1
+    c_some: 24
+    c_all: 26
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 26
+    n_count: 94
+    n_concept_distance: 14
+[t=412.016s, 5803940 KB] Complexity 8:
+Total concept elements: 349
+Total role elements: 13
+Total numerical elements: 177
+Total boolean elements: 39
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 148
+    c_not: 103
+    c_equal: 1
+    c_some: 41
+    c_all: 49
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 39
+    n_count: 159
+    n_concept_distance: 18
+[t=412.048s, 5803940 KB] Complexity 9:
+Total concept elements: 606
+Total role elements: 13
+Total numerical elements: 303
+Total boolean elements: 57
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 272
+    c_not: 182
+    c_equal: 1
+    c_some: 62
+    c_all: 82
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 57
+    n_count: 273
+    n_concept_distance: 30
+[t=412.048s, 5803940 KB] Finished generating composite features.
+DomainFeatureDataStatistics:
+    num_dlplan_states: 18
+    num_boolean_features: 57
+    num_numerical_features: 303
+2023-05-20 12:40:23 INFO     ..done
+2023-05-20 12:40:23 INFO     Initializing InstanceFeatureDatas...
+2023-05-20 12:40:23 INFO     ..done
+2023-05-20 12:40:23 INFO     Initializing StatePairEquivalenceDatas...
+2023-05-20 12:40:24 INFO     ..done
+2023-05-20 12:40:24 INFO     Initializing TupleGraphEquivalences...
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 84
+    num_single_rule_subgoal_tuples: 84
+    num_multi_rule_subgoal_tuples: 0
+2023-05-20 12:40:24 INFO     ..done
+2023-05-20 12:40:24 INFO     Initializing TupleGraphEquivalenceMinimizer...
+2023-05-20 12:40:24 INFO     ..done
+2023-05-20 12:40:24 INFO     Iteration data preprocessing summary:
+DomainFeatureDataStatistics:
+    num_dlplan_states: 18
+    num_boolean_features: 57
+    num_numerical_features: 303
+StatePairEquivalenceStatistics:
+    num_subgoal_states: 48
+    num_equivalences: 30
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 84
+    num_single_rule_subgoal_tuples: 84
+    num_multi_rule_subgoal_tuples: 0
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 46
+    num_single_rule_subgoal_tuples: 46
+    num_multi_rule_subgoal_tuples: 0
+2023-05-20 12:40:25 INFO     Grounding Logic Program...
+2023-05-20 12:40:26 INFO     ..done
+2023-05-20 12:40:26 INFO     Solving Logic Program...
+Clingo statistics:
+{'call': 0.0, 'result': 1.0, 'signal': 0.0, 'exhausted': 1.0, 'costs': [12.0], 'lower': [12.0], 'concurrency': 32.0, 'winner': 7.0, 'times': {'total': 20.145393133163452, 'cpu': 552.3187260000004, 'solve': 17.419583082199097, 'unsat': 2.3360750675201416, 'sat': 12.247259140014648}, 'models': {'enumerated': 13.0, 'optimal': 1.0}}
+Solution cost: [12.0]
+Total time: 20.145393133163452
+CPU time: 552.3187260000004
+Solve time: 17.419583082199097
+2023-05-20 12:40:44 INFO     ..done
+2023-05-20 12:40:44 INFO     Learned the following sketch:
+(:policy
+(:rule (:conditions (:c_n_eq "n_count(c_primitive(boarded,0))") (:c_n_eq "n_count(c_some(r_primitive(destin,0,1),c_primitive(lift-at,0)))")) (:effects (:e_n_inc "n_count(c_primitive(boarded,0))")))
+(:rule (:conditions (:c_n_eq "n_count(c_primitive(boarded,0))") (:c_n_gt "n_count(c_some(r_primitive(destin,0,1),c_primitive(lift-at,0)))")) (:effects (:e_n_dec "n_count(c_some(r_primitive(destin,0,1),c_primitive(lift-at,0)))")))
+(:rule (:conditions (:c_n_gt "n_count(c_primitive(boarded,0))") (:c_n_eq "n_count(c_some(r_primitive(destin,0,1),c_primitive(lift-at,0)))")) (:effects (:e_n_inc "n_count(c_some(r_primitive(destin,0,1),c_primitive(lift-at,0)))")))
+(:rule (:conditions (:c_n_gt "n_count(c_primitive(boarded,0))") (:c_n_gt "n_count(c_some(r_primitive(destin,0,1),c_primitive(lift-at,0)))")) (:effects (:e_n_dec "n_count(c_primitive(boarded,0))")))
+)
+(:policy
+(:booleans )
+(:numericals (1993 "n_count(c_primitive(boarded,0))") (5140 "n_count(c_some(r_primitive(destin,0,1),c_primitive(lift-at,0)))"))
+(:rule (:conditions (:c_n_gt 1993) (:c_n_eq 5140)) (:effects (:e_n_inc 5140)))
+(:rule (:conditions (:c_n_gt 1993) (:c_n_gt 5140)) (:effects (:e_n_dec 1993)))
+(:rule (:conditions (:c_n_eq 1993) (:c_n_gt 5140)) (:effects (:e_n_dec 5140)))
+(:rule (:conditions (:c_n_eq 1993) (:c_n_eq 5140)) (:effects (:e_n_inc 1993)))
+)
+Numer of sketch rules: 4
+Number of selected features: 2
+Maximum complexity of selected feature: 4
+2023-05-20 12:40:44 INFO     Verifying learned sketch...
+State has unbounded width for a rule
+Width: 0
+Rule: (:rule (:conditions (:c_n_eq 1993) (:c_n_gt 5140)) (:effects (:e_n_dec 5140)))
+Instance: 0 p-2-2-75
+State: (instance index=13, state index=13, atoms={lift-at(f1), origin(p1,f0), served(p0)})
+2023-05-20 12:40:44 INFO     ..done
+Smallest unsolved instance: 0
+Selected instances: [6, 0]
+2023-05-20 12:40:44 INFO     Iteration: 2
+     id: 6 name: p-2-2-79 initial_states: [16, 14, 13, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+     id: 0 name: p-2-2-75 initial_states: [15, 14, 13, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2023-05-20 12:40:44 INFO     Initializing DomainFeatureData...
+[t=432.588s, 5803940 KB] Started generating base features of complexity 1.
+[t=432.59s, 5803940 KB] Complexity 1:
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 0
+    c_not: 0
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 0
+    r_transitive_closure: 0
+    b_empty: 0
+    n_count: 0
+    n_concept_distance: 0
+[t=432.59s, 5803940 KB] Finished generating base features.
+[t=432.59s, 5803940 KB] Started generating composite features. 
+[t=432.591s, 5803940 KB] Complexity 2:
+Total concept elements: 10
+Total role elements: 7
+Total numerical elements: 7
+Total boolean elements: 5
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 0
+    c_not: 3
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 3
+    r_transitive_closure: 0
+    b_empty: 5
+    n_count: 7
+    n_concept_distance: 0
+[t=432.597s, 5803940 KB] Complexity 3:
+Total concept elements: 20
+Total role elements: 10
+Total numerical elements: 10
+Total boolean elements: 5
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 0
+    c_not: 3
+    c_equal: 1
+    c_some: 5
+    c_all: 4
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 3
+    r_transitive_closure: 0
+    b_empty: 5
+    n_count: 10
+    n_concept_distance: 0
+[t=432.602s, 5803940 KB] Complexity 4:
+Total concept elements: 41
+Total role elements: 13
+Total numerical elements: 18
+Total boolean elements: 8
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 3
+    c_not: 9
+    c_equal: 1
+    c_some: 11
+    c_all: 10
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 8
+    n_count: 17
+    n_concept_distance: 1
+[t=432.61s, 5803940 KB] Complexity 5:
+Total concept elements: 74
+Total role elements: 13
+Total numerical elements: 35
+Total boolean elements: 13
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 12
+    c_not: 17
+    c_equal: 1
+    c_some: 19
+    c_all: 18
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 13
+    n_count: 33
+    n_concept_distance: 2
+[t=432.621s, 5803940 KB] Complexity 6:
+Total concept elements: 182
+Total role elements: 13
+Total numerical elements: 67
+Total boolean elements: 22
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 43
+    c_not: 31
+    c_equal: 1
+    c_some: 48
+    c_all: 52
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 22
+    n_count: 63
+    n_concept_distance: 4
+[t=432.635s, 5803940 KB] Complexity 7:
+Total concept elements: 314
+Total role elements: 13
+Total numerical elements: 178
+Total boolean elements: 53
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 100
+    c_not: 94
+    c_equal: 1
+    c_some: 54
+    c_all: 58
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 53
+    n_count: 158
+    n_concept_distance: 20
+[t=432.672s, 5803940 KB] Complexity 8:
+Total concept elements: 728
+Total role elements: 13
+Total numerical elements: 299
+Total boolean elements: 90
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 265
+    c_not: 152
+    c_equal: 1
+    c_some: 139
+    c_all: 164
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 90
+    n_count: 271
+    n_concept_distance: 28
+[t=432.738s, 5803940 KB] Complexity 9:
+Total concept elements: 1447
+Total role elements: 13
+Total numerical elements: 673
+Total boolean elements: 182
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 5
+    r_primitive: 4
+    c_and: 583
+    c_not: 396
+    c_equal: 1
+    c_some: 197
+    c_all: 263
+    r_restrict: 3
+    r_and: 0
+    r_inverse: 6
+    r_transitive_closure: 0
+    b_empty: 182
+    n_count: 595
+    n_concept_distance: 78
+[t=432.738s, 5803940 KB] Finished generating composite features.
+DomainFeatureDataStatistics:
+    num_dlplan_states: 36
+    num_boolean_features: 182
+    num_numerical_features: 673
+2023-05-20 12:40:44 INFO     ..done
+2023-05-20 12:40:44 INFO     Initializing InstanceFeatureDatas...
+2023-05-20 12:40:44 INFO     ..done
+2023-05-20 12:40:44 INFO     Initializing StatePairEquivalenceDatas...
+2023-05-20 12:40:45 INFO     ..done
+2023-05-20 12:40:45 INFO     Initializing TupleGraphEquivalences...
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 168
+    num_single_rule_subgoal_tuples: 168
+    num_multi_rule_subgoal_tuples: 0
+2023-05-20 12:40:45 INFO     ..done
+2023-05-20 12:40:45 INFO     Initializing TupleGraphEquivalenceMinimizer...
+2023-05-20 12:40:45 INFO     ..done
+2023-05-20 12:40:45 INFO     Iteration data preprocessing summary:
+DomainFeatureDataStatistics:
+    num_dlplan_states: 36
+    num_boolean_features: 182
+    num_numerical_features: 673
+StatePairEquivalenceStatistics:
+    num_subgoal_states: 96
+    num_equivalences: 78
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 168
+    num_single_rule_subgoal_tuples: 168
+    num_multi_rule_subgoal_tuples: 0
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 94
+    num_single_rule_subgoal_tuples: 94
+    num_multi_rule_subgoal_tuples: 0
+2023-05-20 12:40:48 INFO     Grounding Logic Program...
+2023-05-20 12:40:53 INFO     ..done
+2023-05-20 12:40:53 INFO     Solving Logic Program...
+Clingo statistics:
+{'call': 0.0, 'result': 1.0, 'signal': 0.0, 'exhausted': 1.0, 'costs': [19.0], 'lower': [19.0], 'concurrency': 32.0, 'winner': 13.0, 'times': {'total': 1218.063717842102, 'cpu': 38480.601393000004, 'solve': 1207.4539248943329, 'unsat': 397.78037095069885, 'sat': 651.4850668907166}, 'models': {'enumerated': 19.0, 'optimal': 1.0}}
+Solution cost: [19.0]
+Total time: 1218.063717842102
+CPU time: 38480.601393000004
+Solve time: 1207.4539248943329
+2023-05-20 13:01:04 INFO     ..done
+2023-05-20 13:01:04 INFO     Learned the following sketch:
+(:policy
+(:rule (:conditions (:c_n_eq "n_count(c_primitive(boarded,0))") (:c_n_eq "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))") (:c_n_eq "n_count(c_and(c_primitive(boarded,0),c_some(r_primitive(destin,0,1),c_primitive(lift-at,0))))")) (:effects (:e_n_inc "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))")))
+(:rule (:conditions (:c_n_eq "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))") (:c_n_gt "n_count(c_and(c_primitive(boarded,0),c_some(r_primitive(destin,0,1),c_primitive(lift-at,0))))")) (:effects (:e_n_dec "n_count(c_primitive(boarded,0))")))
+(:rule (:conditions (:c_n_gt "n_count(c_primitive(boarded,0))") (:c_n_eq "n_count(c_and(c_primitive(boarded,0),c_some(r_primitive(destin,0,1),c_primitive(lift-at,0))))")) (:effects (:e_n_inc "n_count(c_and(c_primitive(boarded,0),c_some(r_primitive(destin,0,1),c_primitive(lift-at,0))))")))
+(:rule (:conditions (:c_n_gt "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))")) (:effects (:e_n_inc "n_count(c_primitive(boarded,0))")))
+)
+(:policy
+(:booleans )
+(:numericals (2000 "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))") (1993 "n_count(c_primitive(boarded,0))") (2017 "n_count(c_and(c_primitive(boarded,0),c_some(r_primitive(destin,0,1),c_primitive(lift-at,0))))"))
+(:rule (:conditions (:c_n_gt 2000)) (:effects (:e_n_inc 1993)))
+(:rule (:conditions (:c_n_eq 1993) (:c_n_eq 2000) (:c_n_eq 2017)) (:effects (:e_n_inc 2000)))
+(:rule (:conditions (:c_n_gt 1993) (:c_n_eq 2017)) (:effects (:e_n_inc 2017)))
+(:rule (:conditions (:c_n_eq 2000) (:c_n_gt 2017)) (:effects (:e_n_dec 1993)))
+)
+Numer of sketch rules: 4
+Number of selected features: 3
+Maximum complexity of selected feature: 6
+2023-05-20 13:01:04 INFO     Verifying learned sketch...
+2023-05-20 13:03:11 INFO     ..done
+Sketch solves all instances!
+2023-05-20 13:03:11 INFO     Summary:
+LearningStatistics:
+    num_training_instances: 800
+    num_selected_training_instances (|P|): 2
+    num_states_in_selected_training_instances (|S|): 36
+    num_features_in_pool (|F|): 855
+Resulting sketch:
+(:policy
+(:rule (:conditions (:c_n_eq "n_count(c_primitive(boarded,0))") (:c_n_eq "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))") (:c_n_eq "n_count(c_and(c_primitive(boarded,0),c_some(r_primitive(destin,0,1),c_primitive(lift-at,0))))")) (:effects (:e_n_inc "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))")))
+(:rule (:conditions (:c_n_eq "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))") (:c_n_gt "n_count(c_and(c_primitive(boarded,0),c_some(r_primitive(destin,0,1),c_primitive(lift-at,0))))")) (:effects (:e_n_dec "n_count(c_primitive(boarded,0))")))
+(:rule (:conditions (:c_n_gt "n_count(c_primitive(boarded,0))") (:c_n_eq "n_count(c_and(c_primitive(boarded,0),c_some(r_primitive(destin,0,1),c_primitive(lift-at,0))))")) (:effects (:e_n_inc "n_count(c_and(c_primitive(boarded,0),c_some(r_primitive(destin,0,1),c_primitive(lift-at,0))))")))
+(:rule (:conditions (:c_n_gt "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))")) (:effects (:e_n_inc "n_count(c_primitive(boarded,0))")))
+)
+(:policy
+(:booleans )
+(:numericals (2000 "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))") (1993 "n_count(c_primitive(boarded,0))") (2017 "n_count(c_and(c_primitive(boarded,0),c_some(r_primitive(destin,0,1),c_primitive(lift-at,0))))"))
+(:rule (:conditions (:c_n_gt 2000)) (:effects (:e_n_inc 1993)))
+(:rule (:conditions (:c_n_eq 1993) (:c_n_eq 2000) (:c_n_eq 2017)) (:effects (:e_n_inc 2000)))
+(:rule (:conditions (:c_n_gt 1993) (:c_n_eq 2017)) (:effects (:e_n_inc 2017)))
+(:rule (:conditions (:c_n_eq 2000) (:c_n_gt 2017)) (:effects (:e_n_dec 1993)))
+)
+Numer of sketch rules: 4
+Number of selected features: 3
+Maximum complexity of selected feature: 6
+Resulting sketch minimized:
+(:policy
+(:rule (:conditions (:c_n_eq "n_count(c_primitive(boarded,0))") (:c_n_eq "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))") (:c_n_eq "n_count(c_and(c_primitive(boarded,0),c_some(r_primitive(destin,0,1),c_primitive(lift-at,0))))")) (:effects (:e_n_inc "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))")))
+(:rule (:conditions (:c_n_eq "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))") (:c_n_gt "n_count(c_and(c_primitive(boarded,0),c_some(r_primitive(destin,0,1),c_primitive(lift-at,0))))")) (:effects (:e_n_dec "n_count(c_primitive(boarded,0))")))
+(:rule (:conditions (:c_n_gt "n_count(c_primitive(boarded,0))") (:c_n_eq "n_count(c_and(c_primitive(boarded,0),c_some(r_primitive(destin,0,1),c_primitive(lift-at,0))))")) (:effects (:e_n_inc "n_count(c_and(c_primitive(boarded,0),c_some(r_primitive(destin,0,1),c_primitive(lift-at,0))))")))
+(:rule (:conditions (:c_n_gt "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))")) (:effects (:e_n_inc "n_count(c_primitive(boarded,0))")))
+)
+(:policy
+(:booleans )
+(:numericals (2000 "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))") (1993 "n_count(c_primitive(boarded,0))") (2017 "n_count(c_and(c_primitive(boarded,0),c_some(r_primitive(destin,0,1),c_primitive(lift-at,0))))"))
+(:rule (:conditions (:c_n_gt 2000)) (:effects (:e_n_inc 1993)))
+(:rule (:conditions (:c_n_eq 1993) (:c_n_eq 2000) (:c_n_eq 2017)) (:effects (:e_n_inc 2000)))
+(:rule (:conditions (:c_n_gt 1993) (:c_n_eq 2017)) (:effects (:e_n_inc 2017)))
+(:rule (:conditions (:c_n_eq 2000) (:c_n_gt 2017)) (:effects (:e_n_dec 1993)))
+)
+Numer of sketch rules: 4
+Number of selected features: 3
+Maximum complexity of selected feature: 6
+Number of problems: 800
+Number of subproblems: 21566
+Highest number of states in problem: 243
+Highest number of states in subproblem: 24
+Number of problems: 800
+Number of subproblems: 4864
+Highest number of states in problem: 243
+Highest number of states in subproblem: 4
+Number of problems: 800
+Number of subproblems: 9152
+Highest number of states in problem: 243
+Highest number of states in subproblem: 156
+Number of problems: 800
+Number of subproblems: 19473
+Highest number of states in problem: 243
+Highest number of states in subproblem: 84
+2023-05-20 13:08:03 INFO     Summary:
+2023-05-20 13:08:03 INFO     Hierarchical sketch:
+HierarchicalPolicy:
+Level 0 sketch:
+(:policy
+(:booleans )
+(:numericals (2000 "n_count(c_some(r_primitive(origin,0,1),c_primitive(lift-at,0)))") (1993 "n_count(c_primitive(boarded,0))") (2017 "n_count(c_and(c_primitive(boarded,0),c_some(r_primitive(destin,0,1),c_primitive(lift-at,0))))"))
+(:rule (:conditions (:c_n_gt 2000)) (:effects (:e_n_inc 1993)))
+(:rule (:conditions (:c_n_eq 1993) (:c_n_eq 2000) (:c_n_eq 2017)) (:effects (:e_n_inc 2000)))
+(:rule (:conditions (:c_n_gt 1993) (:c_n_eq 2017)) (:effects (:e_n_inc 2017)))
+(:rule (:conditions (:c_n_eq 2000) (:c_n_gt 2017)) (:effects (:e_n_dec 1993)))
+)
+HierarchicalPolicyStatistics:
+    Max feature complexity (C): 6
+    Num features (|Phi|): 3
+    Num rules (R): 4
+    Max rules (m): 4
+LearningStatistics:
+    num_training_instances: 800
+    num_selected_training_instances (|P|): 2
+    num_states_in_selected_training_instances (|S|): 36
+    num_features_in_pool (|F|): 855
+================================================================================
+END OF STEP #1: Incremental learning module. 12.48 CPU hours - 13.52 GB
+================================================================================

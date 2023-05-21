@@ -1,0 +1,5 @@
+(:policy
+(:booleans )
+(:numericals (5652 "n_concept_distance(c_primitive(at,0),r_restrict(r_primitive(adjacent,0,1),c_primitive(unblocked,0)),c_primitive(reward,0))"))
+(:rule (:conditions (:c_n_gt 5652)) (:effects (:e_n_dec 5652)))
+)

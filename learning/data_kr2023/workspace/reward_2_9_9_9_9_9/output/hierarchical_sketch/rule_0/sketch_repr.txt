@@ -1,0 +1,3 @@
+(:policy
+(:rule (:conditions ) (:effects (:e_n_dec "n_count(c_primitive(reward,0))")))
+)

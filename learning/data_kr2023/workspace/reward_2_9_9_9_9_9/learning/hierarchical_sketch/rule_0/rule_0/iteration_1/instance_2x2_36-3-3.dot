@@ -1,0 +1,27 @@
+digraph {
+rankdir="LR"
+s3[label="(instance index=34, state index=3, atoms={at(c_0_1), reward(c_1_0), picked(c_0_1)})"]
+s5[label="(instance index=34, state index=5, atoms={at(c_0_0), reward(c_1_0), picked(c_0_1)})"]
+s7[label="(instance index=34, state index=7, atoms={at(c_1_0), reward(c_1_0), picked(c_0_1)})"]
+s9[peripheries=2,label="(instance index=34, state index=9, atoms={at(c_1_0), picked(c_1_0), picked(c_0_1)})"]
+Dangling [ label = "", style = invis ]
+{ rank = same; Dangling }
+Dangling -> s3
+{ rank = same; s3}
+{ rank = same; s5}
+{ rank = same; s7}
+{ rank = same; s9}
+{
+s3->s5
+}
+{
+s5->s7
+s5->s3
+}
+{
+s7->s9
+s7->s5
+}
+{
+}
+}

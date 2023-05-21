@@ -1,0 +1,20 @@
+digraph {
+rankdir="LR"
+s7[label="(instance index=13, state index=7, atoms={lift-at(f1), boarded(p1), boarded(p0)})"]
+s8[label="(instance index=13, state index=8, atoms={lift-at(f0), boarded(p1), boarded(p0)})"]
+s11[peripheries=2,label="(instance index=13, state index=11, atoms={lift-at(f1), served(p1), boarded(p0)})"]
+s12[peripheries=2,label="(instance index=13, state index=12, atoms={lift-at(f0), boarded(p1), served(p0)})"]
+Dangling [ label = "", style = invis ]
+{ rank = same; Dangling }
+Dangling -> s8
+{ rank = same; s8}
+{ rank = same; s11,s12}
+{
+s7->s8
+s7->s11
+s8->s7
+s8->s12
+}
+{
+}
+}

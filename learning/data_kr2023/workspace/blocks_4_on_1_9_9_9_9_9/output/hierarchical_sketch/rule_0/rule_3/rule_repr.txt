@@ -1,0 +1,3 @@
+(:policy
+(:rule (:conditions (:c_n_eq "n_count(c_primitive(holding,0))") (:c_n_gt "n_count(r_primitive(on,0,1))")) (:effects (:e_n_inc "n_count(c_primitive(holding,0))") (:e_n_dec "n_count(r_primitive(on,0,1))")))
+)

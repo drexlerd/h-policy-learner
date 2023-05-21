@@ -1,0 +1,752 @@
+Changing working directory:  /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/experiments/scripts/workspace/spanner_0_9_9_9_9_9
+================================================================================
+SLTP v.0.2.0
+================================================================================
+================================================================================
+(pid: 178083) STARTING STEP #1: Incremental learning module
+================================================================================
+2023-05-20 12:33:29 INFO     Initializing InstanceDatas...
+2023-05-20 12:33:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-6.pddl
+2023-05-20 12:33:30 INFO     Constructing DomainData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/domain.pddl
+Num states: 80
+2023-05-20 12:33:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-18.pddl
+Num states: 73
+2023-05-20 12:33:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-9.pddl
+Num states: 19
+2023-05-20 12:33:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-7.pddl
+Num states: 80
+2023-05-20 12:33:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-2.pddl
+Num states: 24
+2023-05-20 12:33:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-16.pddl
+Num states: 20
+2023-05-20 12:33:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-4.pddl
+Num states: 81
+2023-05-20 12:33:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-8.pddl
+Num states: 22
+2023-05-20 12:33:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-3.pddl
+Num states: 78
+2023-05-20 12:33:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-5.pddl
+Num states: 84
+2023-05-20 12:33:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-15.pddl
+Num states: 80
+2023-05-20 12:33:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-13.pddl
+Num states: 76
+2023-05-20 12:33:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-11.pddl
+Num states: 74
+2023-05-20 12:33:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-19.pddl
+Num states: 74
+2023-05-20 12:33:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-2.pddl
+Num states: 80
+2023-05-20 12:33:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-11.pddl
+Num states: 24
+2023-05-20 12:33:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-16.pddl
+Num states: 76
+2023-05-20 12:33:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-12.pddl
+Num states: 19
+2023-05-20 12:33:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-17.pddl
+Num states: 73
+2023-05-20 12:33:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-1.pddl
+Num states: 20
+2023-05-20 12:33:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-8.pddl
+Num states: 78
+2023-05-20 12:33:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-13.pddl
+Num states: 78
+2023-05-20 12:33:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-13.pddl
+Num states: 22
+2023-05-20 12:33:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-1.pddl
+Num states: 77
+2023-05-20 12:33:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-16.pddl
+Num states: 26
+2023-05-20 12:33:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-19.pddl
+Num states: 84
+2023-05-20 12:33:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-4.pddl
+Num states: 76
+2023-05-20 12:33:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-7.pddl
+Num states: 23
+2023-05-20 12:33:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-12.pddl
+Num states: 73
+2023-05-20 12:33:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-11.pddl
+Num states: 22
+2023-05-20 12:33:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-14.pddl
+Num states: 80
+2023-05-20 12:33:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-6.pddl
+Num states: 21
+2023-05-20 12:33:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-6.pddl
+Num states: 20
+2023-05-20 12:33:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-0.pddl
+Num states: 24
+2023-05-20 12:33:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-17.pddl
+Num states: 19
+2023-05-20 12:33:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-0.pddl
+Num states: 80
+2023-05-20 12:33:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-0.pddl
+Num states: 76
+2023-05-20 12:33:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-8.pddl
+Num states: 74
+2023-05-20 12:33:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-3.pddl
+Num states: 76
+2023-05-20 12:33:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-18.pddl
+Num states: 20
+2023-05-20 12:33:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-4.pddl
+Num states: 22
+2023-05-20 12:33:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-10.pddl
+Num states: 76
+2023-05-20 12:33:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-7.pddl
+Num states: 75
+2023-05-20 12:33:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-11.pddl
+Num states: 76
+2023-05-20 12:33:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-2.pddl
+Num states: 20
+2023-05-20 12:33:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-15.pddl
+Num states: 22
+2023-05-20 12:33:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-1.pddl
+Num states: 76
+2023-05-20 12:33:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-9.pddl
+Num states: 76
+2023-05-20 12:33:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-2.pddl
+Num states: 76
+2023-05-20 12:33:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-12.pddl
+Num states: 80
+2023-05-20 12:33:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-18.pddl
+Num states: 21
+2023-05-20 12:33:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-15.pddl
+Num states: 76
+2023-05-20 12:33:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-10.pddl
+Num states: 23
+2023-05-20 12:33:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-3.pddl
+Num states: 21
+2023-05-20 12:33:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-18.pddl
+Num states: 76
+2023-05-20 12:33:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-14.pddl
+Num states: 19
+2023-05-20 12:33:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-10.pddl
+Num states: 77
+2023-05-20 12:33:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-4.pddl
+Num states: 26
+2023-05-20 12:33:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-17.pddl
+Num states: 23
+2023-05-20 12:33:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-16.pddl
+Num states: 84
+2023-05-20 12:33:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-12.pddl
+Num states: 22
+2023-05-20 12:33:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-9.pddl
+Num states: 21
+2023-05-20 12:33:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-15.pddl
+Num states: 20
+2023-05-20 12:33:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-5.pddl
+Num states: 19
+2023-05-20 12:33:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-5.pddl
+Num states: 76
+2023-05-20 12:33:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-8.pddl
+Num states: 26
+2023-05-20 12:33:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-9.pddl
+Num states: 80
+2023-05-20 12:33:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-3-3-6.pddl
+Num states: 76
+2023-05-20 12:33:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-13.pddl
+Num states: 23
+2023-05-20 12:33:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-19.pddl
+Num states: 24
+2023-05-20 12:33:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-5.pddl
+Num states: 24
+2023-05-20 12:33:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-10.pddl
+Num states: 22
+2023-05-20 12:33:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-0.pddl
+Num states: 20
+2023-05-20 12:33:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-17.pddl
+Num states: 82
+2023-05-20 12:33:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-19.pddl
+Num states: 20
+2023-05-20 12:33:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-3-3-14.pddl
+Num states: 76
+2023-05-20 12:33:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-1.pddl
+Num states: 20
+2023-05-20 12:33:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-3-2-2-14.pddl
+Num states: 22
+2023-05-20 12:33:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-3.pddl
+Num states: 19
+2023-05-20 12:33:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/spanner/instances/p-2-2-2-7.pddl
+Num states: 19
+2023-05-20 12:33:52 INFO     ..done
+2023-05-20 12:33:52 INFO     Iteration: 0
+     id: 0 name: p-2-2-2-9
+2023-05-20 12:33:52 INFO     Initializing DomainFeatureData...
+[t=22.8653s, 196624 KB] Started generating base features of complexity 1.
+[t=22.8664s, 196624 KB] Complexity 1:
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 0
+    c_not: 0
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 0
+    r_transitive_closure: 0
+    b_empty: 0
+    n_count: 0
+    n_concept_distance: 0
+[t=22.8667s, 196624 KB] Finished generating base features.
+[t=22.8668s, 196624 KB] Started generating composite features. 
+[t=22.8678s, 196624 KB] Complexity 2:
+Total concept elements: 16
+Total role elements: 8
+Total numerical elements: 11
+Total boolean elements: 5
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 0
+    c_not: 6
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 5
+    n_count: 11
+    n_concept_distance: 0
+[t=22.8722s, 196624 KB] Complexity 3:
+Total concept elements: 24
+Total role elements: 10
+Total numerical elements: 16
+Total boolean elements: 5
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 0
+    c_not: 6
+    c_equal: 1
+    c_some: 4
+    c_all: 3
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 4
+    r_transitive_closure: 1
+    b_empty: 5
+    n_count: 16
+    n_concept_distance: 0
+[t=22.8778s, 196624 KB] Complexity 4:
+Total concept elements: 47
+Total role elements: 11
+Total numerical elements: 25
+Total boolean elements: 6
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 7
+    c_not: 8
+    c_equal: 1
+    c_some: 12
+    c_all: 9
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 5
+    r_transitive_closure: 1
+    b_empty: 6
+    n_count: 22
+    n_concept_distance: 3
+[t=22.8828s, 196624 KB] Complexity 5:
+Total concept elements: 84
+Total role elements: 11
+Total numerical elements: 37
+Total boolean elements: 7
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 24
+    c_not: 20
+    c_equal: 1
+    c_some: 16
+    c_all: 13
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 5
+    r_transitive_closure: 1
+    b_empty: 7
+    n_count: 34
+    n_concept_distance: 3
+[t=22.8915s, 196624 KB] Complexity 6:
+Total concept elements: 171
+Total role elements: 11
+Total numerical elements: 63
+Total boolean elements: 10
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 52
+    c_not: 34
+    c_equal: 1
+    c_some: 39
+    c_all: 35
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 5
+    r_transitive_closure: 1
+    b_empty: 10
+    n_count: 55
+    n_concept_distance: 8
+[t=22.9048s, 196624 KB] Complexity 7:
+Total concept elements: 326
+Total role elements: 11
+Total numerical elements: 134
+Total boolean elements: 18
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 112
+    c_not: 94
+    c_equal: 1
+    c_some: 58
+    c_all: 51
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 5
+    r_transitive_closure: 1
+    b_empty: 18
+    n_count: 119
+    n_concept_distance: 15
+[t=22.9322s, 196624 KB] Complexity 8:
+Total concept elements: 620
+Total role elements: 11
+Total numerical elements: 237
+Total boolean elements: 23
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 247
+    c_not: 157
+    c_equal: 1
+    c_some: 105
+    c_all: 100
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 5
+    r_transitive_closure: 1
+    b_empty: 23
+    n_count: 213
+    n_concept_distance: 24
+[t=22.9893s, 196624 KB] Complexity 9:
+Total concept elements: 1141
+Total role elements: 11
+Total numerical elements: 441
+Total boolean elements: 46
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 524
+    c_not: 321
+    c_equal: 1
+    c_some: 141
+    c_all: 144
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 5
+    r_transitive_closure: 1
+    b_empty: 46
+    n_count: 396
+    n_concept_distance: 45
+[t=22.9894s, 196624 KB] Finished generating composite features.
+DomainFeatureDataStatistics:
+    num_dlplan_states: 19
+    num_boolean_features: 47
+    num_numerical_features: 441
+2023-05-20 12:33:52 INFO     ..done
+2023-05-20 12:33:52 INFO     Initializing InstanceFeatureDatas...
+2023-05-20 12:33:52 INFO     ..done
+2023-05-20 12:33:52 INFO     Grounding Logic Program...
+2023-05-20 12:33:52 INFO     ..done
+2023-05-20 12:33:52 INFO     Solving Logic Program...
+Clingo statistics:
+{'call': 0.0, 'result': 1.0, 'signal': 0.0, 'exhausted': 1.0, 'costs': [4.0], 'lower': [4.0], 'concurrency': 32.0, 'winner': 3.0, 'times': {'total': 0.15462398529052734, 'cpu': 0.1704030000000003, 'solve': 0.004904985427856445, 'unsat': 0.00067901611328125, 'sat': 0.0037870407104492188}, 'models': {'enumerated': 4.0, 'optimal': 1.0}}
+Solution cost: [4.0]
+Total time: 0.15462398529052734
+CPU time: 0.1704030000000003
+Solve time: 0.004904985427856445
+2023-05-20 12:33:52 INFO     ..done
+2023-05-20 12:33:52 INFO     Learned the following goal separating features:
+b_empty(c_primitive(useable,0))
+
+2023-05-20 12:33:52 INFO     Verifying goal separating features...
+2023-05-20 12:33:52 INFO     ..done
+Features separate all goal from non-goal states!
+2023-05-20 12:33:52 INFO     Started refining
+2023-05-20 12:33:52 INFO     Initializing TupleGraphs...
+2023-05-20 12:33:52 INFO     ..done
+2023-05-20 12:33:52 INFO     Iteration: 0
+     id: 0 name: p-2-2-2-9 initial_states: [17, 16, 15, 14, 0, 1, 2, 4, 5, 7, 11]
+2023-05-20 12:33:52 INFO     Initializing DomainFeatureData...
+[t=23.2428s, 2369168 KB] Started generating base features of complexity 1.
+[t=23.2431s, 2369168 KB] Complexity 1:
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 0
+    c_not: 0
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 0
+    r_transitive_closure: 0
+    b_empty: 0
+    n_count: 0
+    n_concept_distance: 0
+[t=23.2432s, 2369168 KB] Finished generating base features.
+[t=23.2432s, 2369168 KB] Started generating composite features. 
+[t=23.2436s, 2369168 KB] Complexity 2:
+Total concept elements: 16
+Total role elements: 8
+Total numerical elements: 11
+Total boolean elements: 5
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 0
+    c_not: 6
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 5
+    n_count: 11
+    n_concept_distance: 0
+[t=23.2455s, 2369168 KB] Complexity 3:
+Total concept elements: 24
+Total role elements: 10
+Total numerical elements: 16
+Total boolean elements: 5
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 0
+    c_not: 6
+    c_equal: 1
+    c_some: 4
+    c_all: 3
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 4
+    r_transitive_closure: 1
+    b_empty: 5
+    n_count: 16
+    n_concept_distance: 0
+[t=23.2479s, 2369168 KB] Complexity 4:
+Total concept elements: 47
+Total role elements: 11
+Total numerical elements: 25
+Total boolean elements: 6
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 7
+    c_not: 8
+    c_equal: 1
+    c_some: 12
+    c_all: 9
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 5
+    r_transitive_closure: 1
+    b_empty: 6
+    n_count: 22
+    n_concept_distance: 3
+[t=23.251s, 2369168 KB] Complexity 5:
+Total concept elements: 84
+Total role elements: 11
+Total numerical elements: 37
+Total boolean elements: 7
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 24
+    c_not: 20
+    c_equal: 1
+    c_some: 16
+    c_all: 13
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 5
+    r_transitive_closure: 1
+    b_empty: 7
+    n_count: 34
+    n_concept_distance: 3
+[t=23.2578s, 2369168 KB] Complexity 6:
+Total concept elements: 171
+Total role elements: 11
+Total numerical elements: 63
+Total boolean elements: 10
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 52
+    c_not: 34
+    c_equal: 1
+    c_some: 39
+    c_all: 35
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 5
+    r_transitive_closure: 1
+    b_empty: 10
+    n_count: 55
+    n_concept_distance: 8
+[t=23.2715s, 2369168 KB] Complexity 7:
+Total concept elements: 326
+Total role elements: 11
+Total numerical elements: 134
+Total boolean elements: 18
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 112
+    c_not: 94
+    c_equal: 1
+    c_some: 58
+    c_all: 51
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 5
+    r_transitive_closure: 1
+    b_empty: 18
+    n_count: 119
+    n_concept_distance: 15
+[t=23.3014s, 2369168 KB] Complexity 8:
+Total concept elements: 620
+Total role elements: 11
+Total numerical elements: 237
+Total boolean elements: 23
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 247
+    c_not: 157
+    c_equal: 1
+    c_some: 105
+    c_all: 100
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 5
+    r_transitive_closure: 1
+    b_empty: 23
+    n_count: 213
+    n_concept_distance: 24
+[t=23.3638s, 2369168 KB] Complexity 9:
+Total concept elements: 1141
+Total role elements: 11
+Total numerical elements: 441
+Total boolean elements: 46
+    b_nullary: 0
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 8
+    r_primitive: 4
+    c_and: 524
+    c_not: 321
+    c_equal: 1
+    c_some: 141
+    c_all: 144
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 5
+    r_transitive_closure: 1
+    b_empty: 46
+    n_count: 396
+    n_concept_distance: 45
+[t=23.3639s, 2369168 KB] Finished generating composite features.
+DomainFeatureDataStatistics:
+    num_dlplan_states: 19
+    num_boolean_features: 47
+    num_numerical_features: 441
+2023-05-20 12:33:53 INFO     ..done
+2023-05-20 12:33:53 INFO     Initializing InstanceFeatureDatas...
+2023-05-20 12:33:53 INFO     ..done
+2023-05-20 12:33:53 INFO     Initializing StatePairEquivalenceDatas...
+2023-05-20 12:33:53 INFO     ..done
+2023-05-20 12:33:53 INFO     Initializing TupleGraphEquivalences...
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 94
+    num_single_rule_subgoal_tuples: 94
+    num_multi_rule_subgoal_tuples: 0
+2023-05-20 12:33:53 INFO     ..done
+2023-05-20 12:33:53 INFO     Initializing TupleGraphEquivalenceMinimizer...
+2023-05-20 12:33:53 INFO     ..done
+2023-05-20 12:33:53 INFO     Iteration data preprocessing summary:
+DomainFeatureDataStatistics:
+    num_dlplan_states: 19
+    num_boolean_features: 47
+    num_numerical_features: 441
+StatePairEquivalenceStatistics:
+    num_subgoal_states: 30
+    num_equivalences: 17
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 94
+    num_single_rule_subgoal_tuples: 94
+    num_multi_rule_subgoal_tuples: 0
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 26
+    num_single_rule_subgoal_tuples: 26
+    num_multi_rule_subgoal_tuples: 0
+2023-05-20 12:33:53 INFO     Grounding Logic Program...
+2023-05-20 12:33:54 INFO     ..done
+2023-05-20 12:33:54 INFO     Solving Logic Program...
+Clingo statistics:
+{'call': 0.0, 'result': 1.0, 'signal': 0.0, 'exhausted': 1.0, 'costs': [26.0], 'lower': [26.0], 'concurrency': 32.0, 'winner': 5.0, 'times': {'total': 162.96203303337097, 'cpu': 5126.132304, 'solve': 161.61457204818726, 'unsat': 112.65424299240112, 'sat': 23.418192148208618}, 'models': {'enumerated': 26.0, 'optimal': 1.0}}
+Solution cost: [26.0]
+Total time: 162.96203303337097
+CPU time: 5126.132304
+Solve time: 161.61457204818726
+2023-05-20 12:36:36 INFO     ..done
+2023-05-20 12:36:36 INFO     Learned the following sketch:
+(:policy
+(:rule (:conditions (:c_n_eq "n_count(c_some(r_primitive(at,0,1),c_all(r_inverse(r_primitive(at,0,1)),c_primitive(man,0))))") (:c_n_gt "n_count(c_some(r_inverse(r_transitive_closure(r_primitive(link,0,1))),c_some(r_inverse(r_primitive(at,0,1)),c_top)))")) (:effects (:e_n_inc "n_count(r_restrict(r_primitive(carrying,0,1),c_primitive(useable,0)))")))
+(:rule (:conditions (:c_n_gt "n_count(c_some(r_primitive(at,0,1),c_all(r_inverse(r_primitive(at,0,1)),c_primitive(man,0))))") (:c_n_gt "n_count(c_some(r_inverse(r_transitive_closure(r_primitive(link,0,1))),c_some(r_inverse(r_primitive(at,0,1)),c_top)))")) (:effects (:e_n_bot "n_count(r_restrict(r_primitive(carrying,0,1),c_primitive(useable,0)))") (:e_n_dec "n_count(c_some(r_inverse(r_transitive_closure(r_primitive(link,0,1))),c_some(r_inverse(r_primitive(at,0,1)),c_top)))")))
+(:rule (:conditions (:c_n_gt "n_count(r_restrict(r_primitive(carrying,0,1),c_primitive(useable,0)))") (:c_n_eq "n_count(c_some(r_primitive(at,0,1),c_all(r_inverse(r_primitive(at,0,1)),c_primitive(man,0))))") (:c_n_eq "n_count(c_some(r_inverse(r_transitive_closure(r_primitive(link,0,1))),c_some(r_inverse(r_primitive(at,0,1)),c_top)))")) (:effects (:e_n_dec "n_count(r_restrict(r_primitive(carrying,0,1),c_primitive(useable,0)))")))
+)
+(:policy
+(:booleans )
+(:numericals (2055 "n_count(c_some(r_inverse(r_transitive_closure(r_primitive(link,0,1))),c_some(r_inverse(r_primitive(at,0,1)),c_top)))") (1774 "n_count(c_some(r_primitive(at,0,1),c_all(r_inverse(r_primitive(at,0,1)),c_primitive(man,0))))") (1699 "n_count(r_restrict(r_primitive(carrying,0,1),c_primitive(useable,0)))"))
+(:rule (:conditions (:c_n_gt 1774) (:c_n_gt 2055)) (:effects (:e_n_bot 1699) (:e_n_dec 2055)))
+(:rule (:conditions (:c_n_gt 1699) (:c_n_eq 1774) (:c_n_eq 2055)) (:effects (:e_n_dec 1699)))
+(:rule (:conditions (:c_n_eq 1774) (:c_n_gt 2055)) (:effects (:e_n_inc 1699)))
+)
+Numer of sketch rules: 3
+Number of selected features: 3
+Maximum complexity of selected feature: 9
+2023-05-20 12:36:36 INFO     Verifying learned sketch...
+2023-05-20 12:36:37 INFO     ..done
+Sketch solves all instances!
+2023-05-20 12:36:37 INFO     Summary:
+LearningStatistics:
+    num_training_instances: 80
+    num_selected_training_instances (|P|): 1
+    num_states_in_selected_training_instances (|S|): 19
+    num_features_in_pool (|F|): 488
+Resulting sketch:
+(:policy
+(:rule (:conditions (:c_n_eq "n_count(c_some(r_primitive(at,0,1),c_all(r_inverse(r_primitive(at,0,1)),c_primitive(man,0))))") (:c_n_gt "n_count(c_some(r_inverse(r_transitive_closure(r_primitive(link,0,1))),c_some(r_inverse(r_primitive(at,0,1)),c_top)))")) (:effects (:e_n_inc "n_count(r_restrict(r_primitive(carrying,0,1),c_primitive(useable,0)))")))
+(:rule (:conditions (:c_n_gt "n_count(c_some(r_primitive(at,0,1),c_all(r_inverse(r_primitive(at,0,1)),c_primitive(man,0))))") (:c_n_gt "n_count(c_some(r_inverse(r_transitive_closure(r_primitive(link,0,1))),c_some(r_inverse(r_primitive(at,0,1)),c_top)))")) (:effects (:e_n_bot "n_count(r_restrict(r_primitive(carrying,0,1),c_primitive(useable,0)))") (:e_n_dec "n_count(c_some(r_inverse(r_transitive_closure(r_primitive(link,0,1))),c_some(r_inverse(r_primitive(at,0,1)),c_top)))")))
+(:rule (:conditions (:c_n_gt "n_count(r_restrict(r_primitive(carrying,0,1),c_primitive(useable,0)))") (:c_n_eq "n_count(c_some(r_primitive(at,0,1),c_all(r_inverse(r_primitive(at,0,1)),c_primitive(man,0))))") (:c_n_eq "n_count(c_some(r_inverse(r_transitive_closure(r_primitive(link,0,1))),c_some(r_inverse(r_primitive(at,0,1)),c_top)))")) (:effects (:e_n_dec "n_count(r_restrict(r_primitive(carrying,0,1),c_primitive(useable,0)))")))
+)
+(:policy
+(:booleans )
+(:numericals (2055 "n_count(c_some(r_inverse(r_transitive_closure(r_primitive(link,0,1))),c_some(r_inverse(r_primitive(at,0,1)),c_top)))") (1774 "n_count(c_some(r_primitive(at,0,1),c_all(r_inverse(r_primitive(at,0,1)),c_primitive(man,0))))") (1699 "n_count(r_restrict(r_primitive(carrying,0,1),c_primitive(useable,0)))"))
+(:rule (:conditions (:c_n_gt 1774) (:c_n_gt 2055)) (:effects (:e_n_bot 1699) (:e_n_dec 2055)))
+(:rule (:conditions (:c_n_gt 1699) (:c_n_eq 1774) (:c_n_eq 2055)) (:effects (:e_n_dec 1699)))
+(:rule (:conditions (:c_n_eq 1774) (:c_n_gt 2055)) (:effects (:e_n_inc 1699)))
+)
+Numer of sketch rules: 3
+Number of selected features: 3
+Maximum complexity of selected feature: 9
+Resulting sketch minimized:
+(:policy
+(:rule (:conditions (:c_n_eq "n_count(c_some(r_primitive(at,0,1),c_all(r_inverse(r_primitive(at,0,1)),c_primitive(man,0))))") (:c_n_gt "n_count(c_some(r_inverse(r_transitive_closure(r_primitive(link,0,1))),c_some(r_inverse(r_primitive(at,0,1)),c_top)))")) (:effects (:e_n_inc "n_count(r_restrict(r_primitive(carrying,0,1),c_primitive(useable,0)))")))
+(:rule (:conditions (:c_n_gt "n_count(c_some(r_primitive(at,0,1),c_all(r_inverse(r_primitive(at,0,1)),c_primitive(man,0))))") (:c_n_gt "n_count(c_some(r_inverse(r_transitive_closure(r_primitive(link,0,1))),c_some(r_inverse(r_primitive(at,0,1)),c_top)))")) (:effects (:e_n_bot "n_count(r_restrict(r_primitive(carrying,0,1),c_primitive(useable,0)))") (:e_n_dec "n_count(c_some(r_inverse(r_transitive_closure(r_primitive(link,0,1))),c_some(r_inverse(r_primitive(at,0,1)),c_top)))")))
+(:rule (:conditions (:c_n_gt "n_count(r_restrict(r_primitive(carrying,0,1),c_primitive(useable,0)))") (:c_n_eq "n_count(c_some(r_primitive(at,0,1),c_all(r_inverse(r_primitive(at,0,1)),c_primitive(man,0))))") (:c_n_eq "n_count(c_some(r_inverse(r_transitive_closure(r_primitive(link,0,1))),c_some(r_inverse(r_primitive(at,0,1)),c_top)))")) (:effects (:e_n_dec "n_count(r_restrict(r_primitive(carrying,0,1),c_primitive(useable,0)))")))
+)
+(:policy
+(:booleans )
+(:numericals (2055 "n_count(c_some(r_inverse(r_transitive_closure(r_primitive(link,0,1))),c_some(r_inverse(r_primitive(at,0,1)),c_top)))") (1774 "n_count(c_some(r_primitive(at,0,1),c_all(r_inverse(r_primitive(at,0,1)),c_primitive(man,0))))") (1699 "n_count(r_restrict(r_primitive(carrying,0,1),c_primitive(useable,0)))"))
+(:rule (:conditions (:c_n_gt 1774) (:c_n_gt 2055)) (:effects (:e_n_bot 1699) (:e_n_dec 2055)))
+(:rule (:conditions (:c_n_gt 1699) (:c_n_eq 1774) (:c_n_eq 2055)) (:effects (:e_n_dec 1699)))
+(:rule (:conditions (:c_n_eq 1774) (:c_n_gt 2055)) (:effects (:e_n_inc 1699)))
+)
+Numer of sketch rules: 3
+Number of selected features: 3
+Maximum complexity of selected feature: 9
+Number of problems: 80
+Number of subproblems: 960
+Highest number of states in problem: 84
+Highest number of states in subproblem: 10
+Number of problems: 80
+Number of subproblems: 281
+Highest number of states in problem: 84
+Highest number of states in subproblem: 13
+Number of problems: 80
+Number of subproblems: 280
+Highest number of states in problem: 84
+Highest number of states in subproblem: 2
+2023-05-20 12:36:40 INFO     Summary:
+2023-05-20 12:36:40 INFO     Hierarchical sketch:
+HierarchicalPolicy:
+Level 0 sketch:
+(:policy
+(:booleans )
+(:numericals (2055 "n_count(c_some(r_inverse(r_transitive_closure(r_primitive(link,0,1))),c_some(r_inverse(r_primitive(at,0,1)),c_top)))") (1774 "n_count(c_some(r_primitive(at,0,1),c_all(r_inverse(r_primitive(at,0,1)),c_primitive(man,0))))") (1699 "n_count(r_restrict(r_primitive(carrying,0,1),c_primitive(useable,0)))"))
+(:rule (:conditions (:c_n_gt 1774) (:c_n_gt 2055)) (:effects (:e_n_bot 1699) (:e_n_dec 2055)))
+(:rule (:conditions (:c_n_gt 1699) (:c_n_eq 1774) (:c_n_eq 2055)) (:effects (:e_n_dec 1699)))
+(:rule (:conditions (:c_n_eq 1774) (:c_n_gt 2055)) (:effects (:e_n_inc 1699)))
+)
+HierarchicalPolicyStatistics:
+    Max feature complexity (C): 9
+    Num features (|Phi|): 3
+    Num rules (R): 3
+    Max rules (m): 3
+LearningStatistics:
+    num_training_instances: 80
+    num_selected_training_instances (|P|): 1
+    num_states_in_selected_training_instances (|S|): 19
+    num_features_in_pool (|F|): 488
+================================================================================
+END OF STEP #1: Incremental learning module. 1.43 CPU hours - 3.57 GB
+================================================================================

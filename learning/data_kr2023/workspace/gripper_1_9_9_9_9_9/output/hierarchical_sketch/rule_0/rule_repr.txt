@@ -1,0 +1,3 @@
+(:policy
+(:rule (:conditions (:c_n_gt "n_count(r_primitive(carry,0,1))")) (:effects (:e_n_dec "n_count(r_primitive(carry,0,1))") (:e_n_bot "n_count(c_all(r_primitive(at,0,1),c_one_of(roomb)))")))
+)

@@ -1,0 +1,43 @@
+digraph {
+rankdir="LR"
+s13[label="(instance index=4, state index=13, atoms={on-table(b2), on(b3,b2), arm-empty(), clear(b1), on(b1,b3)})"]
+s0[label="(instance index=4, state index=0, atoms={on(b2,b3), on(b3,b1), clear(b2), arm-empty(), on-table(b1)})"]
+s8[label="(instance index=4, state index=8, atoms={on-table(b2), on(b3,b2), clear(b3), holding(b1)})"]
+s1[label="(instance index=4, state index=1, atoms={holding(b2), on(b3,b1), clear(b3), on-table(b1)})"]
+s5[label="(instance index=4, state index=5, atoms={on-table(b2), on(b3,b2), clear(b3), arm-empty(), clear(b1), on-table(b1)})"]
+s2[label="(instance index=4, state index=2, atoms={on-table(b2), on(b3,b1), clear(b2), clear(b3), arm-empty(), on-table(b1)})"]
+s3[label="(instance index=4, state index=3, atoms={on-table(b2), holding(b3), clear(b2), clear(b1), on-table(b1)})"]
+s4[peripheries=2,label="(instance index=4, state index=4, atoms={on-table(b2), on-table(b3), clear(b2), clear(b3), arm-empty(), clear(b1), on-table(b1)})"]
+Dangling [ label = "", style = invis ]
+{ rank = same; Dangling }
+Dangling -> s13
+{ rank = same; s13}
+{ rank = same; s8,s1}
+{ rank = same; s5,s2}
+{ rank = same; s3}
+{ rank = same; s4}
+{
+s13->s8
+s0->s1
+}
+{
+s8->s13
+s8->s5
+s1->s2
+s1->s0
+}
+{
+s5->s3
+s5->s8
+s2->s1
+s2->s3
+}
+{
+s3->s4
+s3->s5
+s3->s2
+}
+{
+s4->s3
+}
+}

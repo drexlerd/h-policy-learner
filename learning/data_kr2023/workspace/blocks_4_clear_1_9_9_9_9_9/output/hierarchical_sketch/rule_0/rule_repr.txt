@@ -1,0 +1,3 @@
+(:policy
+(:rule (:conditions (:c_n_gt "n_count(c_primitive(on-table,0))")) (:effects (:e_n_inc "n_count(c_primitive(on-table,0))")))
+)

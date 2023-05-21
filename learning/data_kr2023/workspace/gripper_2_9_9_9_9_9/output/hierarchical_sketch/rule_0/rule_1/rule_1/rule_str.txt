@@ -1,0 +1,5 @@
+(:policy
+(:booleans )
+(:numericals (3936 "n_concept_distance(c_one_of(roomb),r_primitive(carry,0,1),c_primitive(at-robby,0))") (3917 "n_count(r_primitive(carry,0,1))"))
+(:rule (:conditions (:c_n_gt 3936)) (:effects (:e_n_inc 3917)))
+)

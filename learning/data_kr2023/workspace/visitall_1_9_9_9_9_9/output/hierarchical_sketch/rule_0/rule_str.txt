@@ -1,0 +1,5 @@
+(:policy
+(:booleans )
+(:numericals (119 "n_count(c_primitive(visited,0))"))
+(:rule (:conditions (:c_n_gt 119)) (:effects (:e_n_inc 119)))
+)

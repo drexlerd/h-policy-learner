@@ -1,0 +1,25 @@
+digraph {
+rankdir="LR"
+s8[label="(instance index=2, state index=8, atoms={at(t1,c_0_0), empty(t1), at(p1,c_1_0)})"]
+s9[label="(instance index=2, state index=9, atoms={at(t1,c_2_0), empty(t1), at(p1,c_1_0)})"]
+s6[label="(instance index=2, state index=6, atoms={at(t1,c_1_0), empty(t1), at(p1,c_1_0)})"]
+s4[peripheries=2,label="(instance index=2, state index=4, atoms={at(t1,c_1_0), carrying(t1,p1)})"]
+Dangling [ label = "", style = invis ]
+{ rank = same; Dangling }
+Dangling -> s8
+{ rank = same; s8}
+{ rank = same; s6}
+{ rank = same; s4}
+{
+s8->s6
+s9->s6
+}
+{
+s6->s8
+s6->s9
+s6->s4
+}
+{
+s4->s6
+}
+}

@@ -1,0 +1,6 @@
+(:policy
+(:booleans )
+(:numericals (390 "n_count(c_primitive(holding,0))") (391 "n_count(c_primitive(on-table,0))"))
+(:rule (:conditions (:c_n_eq 390)) (:effects (:e_n_inc 390) (:e_n_bot 391)))
+(:rule (:conditions (:c_n_gt 390) (:c_n_gt 391)) (:effects (:e_n_inc 391)))
+)

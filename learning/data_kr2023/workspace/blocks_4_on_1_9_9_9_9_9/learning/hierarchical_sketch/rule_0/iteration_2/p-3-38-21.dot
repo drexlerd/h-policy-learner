@@ -1,0 +1,22 @@
+digraph {
+rankdir="LR"
+s21[label="(instance index=4, state index=21, atoms={on(b2,b1), on-table(b3), clear(b2), arm-empty(), on(b1,b3)})"]
+s17[label="(instance index=4, state index=17, atoms={holding(b2), on-table(b3), clear(b1), on(b1,b3)})"]
+s12[peripheries=2,label="(instance index=4, state index=12, atoms={on-table(b2), on-table(b3), clear(b2), arm-empty(), clear(b1), on(b1,b3)})"]
+Dangling [ label = "", style = invis ]
+{ rank = same; Dangling }
+Dangling -> s21
+{ rank = same; s21}
+{ rank = same; s17}
+{ rank = same; s12}
+{
+s21->s17
+}
+{
+s17->s12
+s17->s21
+}
+{
+s12->s17
+}
+}

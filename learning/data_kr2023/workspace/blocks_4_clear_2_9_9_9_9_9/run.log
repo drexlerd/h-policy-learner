@@ -1,0 +1,2083 @@
+Changing working directory:  /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/experiments/scripts/workspace/blocks_4_clear_2_9_9_9_9_9
+================================================================================
+SLTP v.0.2.0
+================================================================================
+================================================================================
+(pid: 82215) STARTING STEP #1: Incremental learning module
+================================================================================
+2023-05-20 12:33:32 INFO     Initializing InstanceDatas...
+2023-05-20 12:33:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-87.pddl
+2023-05-20 12:33:33 INFO     Constructing DomainData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/domain.pddl
+Num states: 5
+2023-05-20 12:33:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-1.pddl
+Num states: 125
+2023-05-20 12:33:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-84.pddl
+Num states: 125
+2023-05-20 12:33:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-10.pddl
+Num states: 5
+2023-05-20 12:33:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-38.pddl
+Num states: 22
+2023-05-20 12:33:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-75.pddl
+Num states: 5
+2023-05-20 12:33:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-43.pddl
+Num states: 125
+2023-05-20 12:33:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-72.pddl
+Num states: 22
+2023-05-20 12:33:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-17.pddl
+Num states: 22
+2023-05-20 12:33:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-89.pddl
+Num states: 22
+2023-05-20 12:33:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-75.pddl
+Num states: 125
+2023-05-20 12:33:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-67.pddl
+Num states: 125
+2023-05-20 12:33:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-18.pddl
+Num states: 22
+2023-05-20 12:33:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-36.pddl
+Num states: 22
+2023-05-20 12:33:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-36.pddl
+Num states: 5
+2023-05-20 12:33:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-39.pddl
+Num states: 5
+2023-05-20 12:33:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-57.pddl
+Num states: 125
+2023-05-20 12:33:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-77.pddl
+Num states: 5
+2023-05-20 12:33:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-27.pddl
+Num states: 5
+2023-05-20 12:33:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-78.pddl
+Num states: 22
+2023-05-20 12:33:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-22.pddl
+Num states: 5
+2023-05-20 12:33:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-2.pddl
+Num states: 125
+2023-05-20 12:33:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-45.pddl
+Num states: 22
+2023-05-20 12:33:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-59.pddl
+Num states: 22
+2023-05-20 12:33:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-78.pddl
+Num states: 125
+2023-05-20 12:33:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-13.pddl
+Num states: 125
+2023-05-20 12:33:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-75.pddl
+Num states: 22
+2023-05-20 12:33:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-45.pddl
+Num states: 5
+2023-05-20 12:33:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-61.pddl
+Num states: 125
+2023-05-20 12:33:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-69.pddl
+Num states: 22
+2023-05-20 12:33:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-9.pddl
+Num states: 5
+2023-05-20 12:33:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-28.pddl
+Num states: 5
+2023-05-20 12:33:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-6.pddl
+Num states: 5
+2023-05-20 12:33:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-81.pddl
+Num states: 125
+2023-05-20 12:33:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-66.pddl
+Num states: 22
+2023-05-20 12:33:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-63.pddl
+Num states: 125
+2023-05-20 12:33:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-99.pddl
+Num states: 22
+2023-05-20 12:33:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-25.pddl
+Num states: 125
+2023-05-20 12:33:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-0.pddl
+Num states: 125
+2023-05-20 12:33:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-30.pddl
+Num states: 22
+2023-05-20 12:33:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-32.pddl
+Num states: 5
+2023-05-20 12:33:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-0.pddl
+Num states: 5
+2023-05-20 12:33:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-96.pddl
+Num states: 22
+2023-05-20 12:33:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-1.pddl
+Num states: 22
+2023-05-20 12:33:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-27.pddl
+Num states: 22
+2023-05-20 12:33:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-35.pddl
+Num states: 125
+2023-05-20 12:33:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-12.pddl
+Num states: 22
+2023-05-20 12:33:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-82.pddl
+Num states: 5
+2023-05-20 12:33:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-65.pddl
+Num states: 22
+2023-05-20 12:33:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-94.pddl
+Num states: 22
+2023-05-20 12:33:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-4.pddl
+Num states: 22
+2023-05-20 12:33:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-33.pddl
+Num states: 5
+2023-05-20 12:33:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-34.pddl
+Num states: 22
+2023-05-20 12:33:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-54.pddl
+Num states: 22
+2023-05-20 12:33:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-27.pddl
+Num states: 125
+2023-05-20 12:33:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-78.pddl
+Num states: 5
+2023-05-20 12:33:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-50.pddl
+Num states: 22
+2023-05-20 12:33:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-90.pddl
+Num states: 125
+2023-05-20 12:33:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-89.pddl
+Num states: 125
+2023-05-20 12:33:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-92.pddl
+Num states: 5
+2023-05-20 12:33:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-81.pddl
+Num states: 5
+2023-05-20 12:33:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-24.pddl
+Num states: 5
+2023-05-20 12:33:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-7.pddl
+Num states: 125
+2023-05-20 12:33:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-58.pddl
+Num states: 22
+2023-05-20 12:33:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-63.pddl
+Num states: 22
+2023-05-20 12:33:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-50.pddl
+Num states: 125
+2023-05-20 12:33:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-76.pddl
+Num states: 5
+2023-05-20 12:33:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-7.pddl
+Num states: 5
+2023-05-20 12:33:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-40.pddl
+Num states: 5
+2023-05-20 12:33:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-40.pddl
+Num states: 125
+2023-05-20 12:33:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-95.pddl
+Num states: 22
+2023-05-20 12:33:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-56.pddl
+Num states: 22
+2023-05-20 12:33:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-60.pddl
+Num states: 5
+2023-05-20 12:34:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-42.pddl
+Num states: 5
+2023-05-20 12:34:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-13.pddl
+Num states: 5
+2023-05-20 12:34:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-12.pddl
+Num states: 125
+2023-05-20 12:34:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-57.pddl
+Num states: 5
+2023-05-20 12:34:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-23.pddl
+Num states: 125
+2023-05-20 12:34:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-67.pddl
+Num states: 5
+2023-05-20 12:34:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-85.pddl
+Num states: 5
+2023-05-20 12:34:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-93.pddl
+Num states: 125
+2023-05-20 12:34:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-88.pddl
+Num states: 125
+2023-05-20 12:34:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-99.pddl
+Num states: 5
+2023-05-20 12:34:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-10.pddl
+Num states: 125
+2023-05-20 12:34:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-46.pddl
+Num states: 125
+2023-05-20 12:34:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-44.pddl
+Num states: 22
+2023-05-20 12:34:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-35.pddl
+Num states: 22
+2023-05-20 12:34:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-89.pddl
+Num states: 5
+2023-05-20 12:34:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-53.pddl
+Num states: 5
+2023-05-20 12:34:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-57.pddl
+Num states: 22
+2023-05-20 12:34:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-62.pddl
+Num states: 5
+2023-05-20 12:34:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-11.pddl
+Num states: 5
+2023-05-20 12:34:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-68.pddl
+Num states: 22
+2023-05-20 12:34:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-66.pddl
+Num states: 125
+2023-05-20 12:34:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-98.pddl
+Num states: 5
+2023-05-20 12:34:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-92.pddl
+Num states: 125
+2023-05-20 12:34:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-90.pddl
+Num states: 5
+2023-05-20 12:34:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-52.pddl
+Num states: 5
+2023-05-20 12:34:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-22.pddl
+Num states: 22
+2023-05-20 12:34:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-72.pddl
+Num states: 125
+2023-05-20 12:34:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-70.pddl
+Num states: 125
+2023-05-20 12:34:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-80.pddl
+Num states: 5
+2023-05-20 12:34:09 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-18.pddl
+Num states: 125
+2023-05-20 12:34:10 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-54.pddl
+Num states: 5
+2023-05-20 12:34:10 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-91.pddl
+Num states: 22
+2023-05-20 12:34:10 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-59.pddl
+Num states: 125
+2023-05-20 12:34:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-51.pddl
+Num states: 125
+2023-05-20 12:34:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-56.pddl
+Num states: 125
+2023-05-20 12:34:11 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-61.pddl
+Num states: 5
+2023-05-20 12:34:12 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-80.pddl
+Num states: 125
+2023-05-20 12:34:12 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-94.pddl
+Num states: 125
+2023-05-20 12:34:12 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-79.pddl
+Num states: 5
+2023-05-20 12:34:12 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-41.pddl
+Num states: 5
+2023-05-20 12:34:13 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-80.pddl
+Num states: 22
+2023-05-20 12:34:13 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-77.pddl
+Num states: 125
+2023-05-20 12:34:13 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-2.pddl
+Num states: 5
+2023-05-20 12:34:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-7.pddl
+Num states: 22
+2023-05-20 12:34:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-48.pddl
+Num states: 5
+2023-05-20 12:34:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-23.pddl
+Num states: 5
+2023-05-20 12:34:14 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-5.pddl
+Num states: 22
+2023-05-20 12:34:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-38.pddl
+Num states: 5
+2023-05-20 12:34:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-37.pddl
+Num states: 22
+2023-05-20 12:34:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-49.pddl
+Num states: 125
+2023-05-20 12:34:15 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-76.pddl
+Num states: 22
+2023-05-20 12:34:16 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-8.pddl
+Num states: 22
+2023-05-20 12:34:16 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-90.pddl
+Num states: 22
+2023-05-20 12:34:16 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-37.pddl
+Num states: 5
+2023-05-20 12:34:17 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-29.pddl
+Num states: 22
+2023-05-20 12:34:18 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-15.pddl
+Num states: 22
+2023-05-20 12:34:18 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-21.pddl
+Num states: 5
+2023-05-20 12:34:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-46.pddl
+Num states: 22
+2023-05-20 12:34:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-50.pddl
+Num states: 5
+2023-05-20 12:34:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-99.pddl
+Num states: 125
+2023-05-20 12:34:19 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-11.pddl
+Num states: 22
+2023-05-20 12:34:20 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-56.pddl
+Num states: 5
+2023-05-20 12:34:20 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-30.pddl
+Num states: 5
+2023-05-20 12:34:20 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-73.pddl
+Num states: 5
+2023-05-20 12:34:21 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-76.pddl
+Num states: 125
+2023-05-20 12:34:21 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-24.pddl
+Num states: 125
+2023-05-20 12:34:21 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-51.pddl
+Num states: 5
+2023-05-20 12:34:22 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-53.pddl
+Num states: 22
+2023-05-20 12:34:22 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-70.pddl
+Num states: 5
+2023-05-20 12:34:22 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-3.pddl
+Num states: 125
+2023-05-20 12:34:23 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-19.pddl
+Num states: 5
+2023-05-20 12:34:23 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-86.pddl
+Num states: 125
+2023-05-20 12:34:23 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-54.pddl
+Num states: 125
+2023-05-20 12:34:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-20.pddl
+Num states: 5
+2023-05-20 12:34:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-83.pddl
+Num states: 5
+2023-05-20 12:34:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-82.pddl
+Num states: 22
+2023-05-20 12:34:24 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-12.pddl
+Num states: 5
+2023-05-20 12:34:25 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-55.pddl
+Num states: 22
+2023-05-20 12:34:25 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-46.pddl
+Num states: 5
+2023-05-20 12:34:25 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-52.pddl
+Num states: 22
+2023-05-20 12:34:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-26.pddl
+Num states: 22
+2023-05-20 12:34:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-94.pddl
+Num states: 5
+2023-05-20 12:34:26 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-8.pddl
+Num states: 125
+2023-05-20 12:34:27 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-72.pddl
+Num states: 5
+2023-05-20 12:34:27 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-83.pddl
+Num states: 125
+2023-05-20 12:34:27 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-34.pddl
+Num states: 5
+2023-05-20 12:34:27 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-84.pddl
+Num states: 5
+2023-05-20 12:34:28 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-48.pddl
+Num states: 22
+2023-05-20 12:34:28 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-67.pddl
+Num states: 22
+2023-05-20 12:34:28 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-25.pddl
+Num states: 22
+2023-05-20 12:34:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-33.pddl
+Num states: 22
+2023-05-20 12:34:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-20.pddl
+Num states: 125
+2023-05-20 12:34:29 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-62.pddl
+Num states: 125
+2023-05-20 12:34:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-30.pddl
+Num states: 125
+2023-05-20 12:34:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-69.pddl
+Num states: 125
+2023-05-20 12:34:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-21.pddl
+Num states: 125
+2023-05-20 12:34:30 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-39.pddl
+Num states: 22
+2023-05-20 12:34:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-96.pddl
+Num states: 125
+2023-05-20 12:34:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-14.pddl
+Num states: 5
+2023-05-20 12:34:31 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-53.pddl
+Num states: 125
+2023-05-20 12:34:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-5.pddl
+Num states: 125
+2023-05-20 12:34:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-65.pddl
+Num states: 5
+2023-05-20 12:34:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-3.pddl
+Num states: 22
+2023-05-20 12:34:32 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-60.pddl
+Num states: 125
+2023-05-20 12:34:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-63.pddl
+Num states: 5
+2023-05-20 12:34:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-96.pddl
+Num states: 5
+2023-05-20 12:34:33 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-71.pddl
+Num states: 5
+2023-05-20 12:34:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-44.pddl
+Num states: 5
+2023-05-20 12:34:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-14.pddl
+Num states: 125
+2023-05-20 12:34:34 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-42.pddl
+Num states: 125
+2023-05-20 12:34:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-15.pddl
+Num states: 125
+2023-05-20 12:34:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-47.pddl
+Num states: 22
+2023-05-20 12:34:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-88.pddl
+Num states: 22
+2023-05-20 12:34:35 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-9.pddl
+Num states: 125
+2023-05-20 12:34:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-49.pddl
+Num states: 5
+2023-05-20 12:34:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-86.pddl
+Num states: 5
+2023-05-20 12:34:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-23.pddl
+Num states: 22
+2023-05-20 12:34:36 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-26.pddl
+Num states: 125
+2023-05-20 12:34:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-44.pddl
+Num states: 125
+2023-05-20 12:34:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-97.pddl
+Num states: 22
+2023-05-20 12:34:37 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-39.pddl
+Num states: 125
+2023-05-20 12:34:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-35.pddl
+Num states: 5
+2023-05-20 12:34:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-17.pddl
+Num states: 5
+2023-05-20 12:34:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-15.pddl
+Num states: 5
+2023-05-20 12:34:38 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-28.pddl
+Num states: 125
+2023-05-20 12:34:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-18.pddl
+Num states: 5
+2023-05-20 12:34:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-4.pddl
+Num states: 5
+2023-05-20 12:34:39 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-29.pddl
+Num states: 5
+2023-05-20 12:34:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-34.pddl
+Num states: 125
+2023-05-20 12:34:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-31.pddl
+Num states: 5
+2023-05-20 12:34:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-25.pddl
+Num states: 5
+2023-05-20 12:34:40 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-41.pddl
+Num states: 125
+2023-05-20 12:34:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-4.pddl
+Num states: 125
+2023-05-20 12:34:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-37.pddl
+Num states: 125
+2023-05-20 12:34:41 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-64.pddl
+Num states: 22
+2023-05-20 12:34:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-51.pddl
+Num states: 22
+2023-05-20 12:34:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-8.pddl
+Num states: 5
+2023-05-20 12:34:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-17.pddl
+Num states: 125
+2023-05-20 12:34:42 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-73.pddl
+Num states: 125
+2023-05-20 12:34:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-6.pddl
+Num states: 22
+2023-05-20 12:34:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-62.pddl
+Num states: 22
+2023-05-20 12:34:43 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-42.pddl
+Num states: 22
+2023-05-20 12:34:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-19.pddl
+Num states: 22
+2023-05-20 12:34:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-13.pddl
+Num states: 22
+2023-05-20 12:34:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-16.pddl
+Num states: 125
+2023-05-20 12:34:44 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-58.pddl
+Num states: 125
+2023-05-20 12:34:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-11.pddl
+Num states: 125
+2023-05-20 12:34:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-10.pddl
+Num states: 22
+2023-05-20 12:34:45 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-64.pddl
+Num states: 125
+2023-05-20 12:34:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-43.pddl
+Num states: 5
+2023-05-20 12:34:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-86.pddl
+Num states: 22
+2023-05-20 12:34:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-79.pddl
+Num states: 22
+2023-05-20 12:34:46 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-59.pddl
+Num states: 5
+2023-05-20 12:34:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-87.pddl
+Num states: 125
+2023-05-20 12:34:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-2.pddl
+Num states: 22
+2023-05-20 12:34:47 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-38.pddl
+Num states: 125
+2023-05-20 12:34:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-24.pddl
+Num states: 22
+2023-05-20 12:34:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-83.pddl
+Num states: 22
+2023-05-20 12:34:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-26.pddl
+Num states: 5
+2023-05-20 12:34:48 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-28.pddl
+Num states: 22
+2023-05-20 12:34:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-41.pddl
+Num states: 22
+2023-05-20 12:34:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-65.pddl
+Num states: 125
+2023-05-20 12:34:49 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-82.pddl
+Num states: 125
+2023-05-20 12:34:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-5.pddl
+Num states: 5
+2023-05-20 12:34:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-61.pddl
+Num states: 22
+2023-05-20 12:34:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-45.pddl
+Num states: 125
+2023-05-20 12:34:50 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-71.pddl
+Num states: 125
+2023-05-20 12:34:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-16.pddl
+Num states: 22
+2023-05-20 12:34:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-60.pddl
+Num states: 22
+2023-05-20 12:34:51 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-32.pddl
+Num states: 125
+2023-05-20 12:34:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-93.pddl
+Num states: 22
+2023-05-20 12:34:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-21.pddl
+Num states: 22
+2023-05-20 12:34:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-97.pddl
+Num states: 5
+2023-05-20 12:34:52 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-71.pddl
+Num states: 22
+2023-05-20 12:34:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-84.pddl
+Num states: 22
+2023-05-20 12:34:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-47.pddl
+Num states: 125
+2023-05-20 12:34:53 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-93.pddl
+Num states: 5
+2023-05-20 12:34:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-19.pddl
+Num states: 125
+2023-05-20 12:34:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-22.pddl
+Num states: 125
+2023-05-20 12:34:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-88.pddl
+Num states: 5
+2023-05-20 12:34:54 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-48.pddl
+Num states: 125
+2023-05-20 12:34:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-68.pddl
+Num states: 5
+2023-05-20 12:34:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-68.pddl
+Num states: 125
+2023-05-20 12:34:55 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-69.pddl
+Num states: 5
+2023-05-20 12:34:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-52.pddl
+Num states: 125
+2023-05-20 12:34:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-98.pddl
+Num states: 125
+2023-05-20 12:34:56 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-0.pddl
+Num states: 22
+2023-05-20 12:34:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-20.pddl
+Num states: 22
+2023-05-20 12:34:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-91.pddl
+Num states: 5
+2023-05-20 12:34:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-16.pddl
+Num states: 5
+2023-05-20 12:34:57 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-66.pddl
+Num states: 5
+2023-05-20 12:34:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-47.pddl
+Num states: 5
+2023-05-20 12:34:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-85.pddl
+Num states: 125
+2023-05-20 12:34:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-73.pddl
+Num states: 22
+2023-05-20 12:34:58 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-43.pddl
+Num states: 22
+2023-05-20 12:34:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-31.pddl
+Num states: 125
+2023-05-20 12:34:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-97.pddl
+Num states: 125
+2023-05-20 12:34:59 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-74.pddl
+Num states: 5
+2023-05-20 12:35:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-70.pddl
+Num states: 22
+2023-05-20 12:35:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-3.pddl
+Num states: 5
+2023-05-20 12:35:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-85.pddl
+Num states: 22
+2023-05-20 12:35:00 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-58.pddl
+Num states: 5
+2023-05-20 12:35:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-33.pddl
+Num states: 125
+2023-05-20 12:35:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-95.pddl
+Num states: 5
+2023-05-20 12:35:01 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-9.pddl
+Num states: 22
+2023-05-20 12:35:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-87.pddl
+Num states: 22
+2023-05-20 12:35:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-77.pddl
+Num states: 22
+2023-05-20 12:35:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-29.pddl
+Num states: 125
+2023-05-20 12:35:02 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-91.pddl
+Num states: 125
+2023-05-20 12:35:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-55.pddl
+Num states: 5
+2023-05-20 12:35:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-49.pddl
+Num states: 22
+2023-05-20 12:35:03 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-92.pddl
+Num states: 22
+2023-05-20 12:35:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-32.pddl
+Num states: 22
+2023-05-20 12:35:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-6.pddl
+Num states: 125
+2023-05-20 12:35:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-14.pddl
+Num states: 22
+2023-05-20 12:35:04 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-74.pddl
+Num states: 22
+2023-05-20 12:35:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-31.pddl
+Num states: 22
+2023-05-20 12:35:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-81.pddl
+Num states: 22
+2023-05-20 12:35:05 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-64.pddl
+Num states: 5
+2023-05-20 12:35:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-98.pddl
+Num states: 22
+2023-05-20 12:35:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-79.pddl
+Num states: 125
+2023-05-20 12:35:06 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-2-1.pddl
+Num states: 5
+2023-05-20 12:35:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-95.pddl
+Num states: 125
+2023-05-20 12:35:07 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-74.pddl
+Num states: 125
+2023-05-20 12:35:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-55.pddl
+Num states: 125
+2023-05-20 12:35:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-4-36.pddl
+Num states: 125
+2023-05-20 12:35:08 INFO     Constructing InstanceData for filename /proj/ssiw/users/x_domdr/projects/code/h-policy-learner/learning/benchmarks/blocks_4_clear/instances/p-3-40.pddl
+Num states: 22
+2023-05-20 12:35:10 INFO     ..done
+2023-05-20 12:35:10 INFO     Iteration: 0
+     id: 0 name: p-2-87
+2023-05-20 12:35:10 INFO     Initializing DomainFeatureData...
+[t=98.4683s, 197392 KB] Started generating base features of complexity 1.
+[t=98.4692s, 197392 KB] Complexity 1:
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 0
+    c_not: 0
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 0
+    r_transitive_closure: 0
+    b_empty: 0
+    n_count: 0
+    n_concept_distance: 0
+[t=98.4696s, 197392 KB] Finished generating base features.
+[t=98.4697s, 197392 KB] Started generating composite features. 
+[t=98.4702s, 197392 KB] Complexity 2:
+Total concept elements: 10
+Total role elements: 3
+Total numerical elements: 6
+Total boolean elements: 4
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 0
+    c_not: 4
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 2
+    n_count: 6
+    n_concept_distance: 0
+[t=98.4717s, 197392 KB] Complexity 3:
+Total concept elements: 18
+Total role elements: 4
+Total numerical elements: 8
+Total boolean elements: 5
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 4
+    c_not: 4
+    c_equal: 1
+    c_some: 2
+    c_all: 1
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 3
+    n_count: 8
+    n_concept_distance: 0
+[t=98.4736s, 197392 KB] Complexity 4:
+Total concept elements: 34
+Total role elements: 5
+Total numerical elements: 20
+Total boolean elements: 10
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 11
+    c_not: 10
+    c_equal: 1
+    c_some: 3
+    c_all: 3
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 2
+    r_transitive_closure: 0
+    b_empty: 8
+    n_count: 15
+    n_concept_distance: 5
+[t=98.4773s, 197392 KB] Complexity 5:
+Total concept elements: 48
+Total role elements: 5
+Total numerical elements: 42
+Total boolean elements: 17
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 17
+    c_not: 18
+    c_equal: 1
+    c_some: 3
+    c_all: 3
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 2
+    r_transitive_closure: 0
+    b_empty: 15
+    n_count: 27
+    n_concept_distance: 15
+[t=98.4831s, 197392 KB] Complexity 6:
+Total concept elements: 64
+Total role elements: 5
+Total numerical elements: 61
+Total boolean elements: 22
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 27
+    c_not: 24
+    c_equal: 1
+    c_some: 3
+    c_all: 3
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 2
+    r_transitive_closure: 0
+    b_empty: 20
+    n_count: 39
+    n_concept_distance: 22
+[t=98.4894s, 197392 KB] Complexity 7:
+Total concept elements: 86
+Total role elements: 5
+Total numerical elements: 78
+Total boolean elements: 26
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 41
+    c_not: 32
+    c_equal: 1
+    c_some: 3
+    c_all: 3
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 2
+    r_transitive_closure: 0
+    b_empty: 24
+    n_count: 51
+    n_concept_distance: 27
+[t=98.4964s, 197392 KB] Complexity 8:
+Total concept elements: 107
+Total role elements: 5
+Total numerical elements: 91
+Total boolean elements: 28
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 54
+    c_not: 40
+    c_equal: 1
+    c_some: 3
+    c_all: 3
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 2
+    r_transitive_closure: 0
+    b_empty: 26
+    n_count: 61
+    n_concept_distance: 30
+[t=98.5043s, 197392 KB] Complexity 9:
+Total concept elements: 123
+Total role elements: 5
+Total numerical elements: 101
+Total boolean elements: 28
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 69
+    c_not: 41
+    c_equal: 1
+    c_some: 3
+    c_all: 3
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 2
+    r_transitive_closure: 0
+    b_empty: 26
+    n_count: 70
+    n_concept_distance: 31
+[t=98.5045s, 197392 KB] Finished generating composite features.
+DomainFeatureDataStatistics:
+    num_dlplan_states: 5
+    num_boolean_features: 28
+    num_numerical_features: 101
+2023-05-20 12:35:10 INFO     ..done
+2023-05-20 12:35:10 INFO     Initializing InstanceFeatureDatas...
+2023-05-20 12:35:10 INFO     ..done
+2023-05-20 12:35:10 INFO     Grounding Logic Program...
+2023-05-20 12:35:10 INFO     ..done
+2023-05-20 12:35:10 INFO     Solving Logic Program...
+Clingo statistics:
+{'call': 0.0, 'result': 1.0, 'signal': 0.0, 'exhausted': 1.0, 'costs': [6.0], 'lower': [6.0], 'concurrency': 32.0, 'winner': 25.0, 'times': {'total': 0.025164127349853516, 'cpu': 0.039719000000000726, 'solve': 0.0060460567474365234, 'unsat': 0.0009920597076416016, 'sat': 0.004456996917724609}, 'models': {'enumerated': 6.0, 'optimal': 1.0}}
+Solution cost: [6.0]
+Total time: 0.025164127349853516
+CPU time: 0.039719000000000726
+Solve time: 0.0060460567474365234
+2023-05-20 12:35:10 INFO     ..done
+2023-05-20 12:35:10 INFO     Learned the following goal separating features:
+b_empty(c_and(c_primitive(clear,0),c_primitive(clear_g,0)))
+
+2023-05-20 12:35:10 INFO     Verifying goal separating features...
+2023-05-20 12:35:10 INFO     ..done
+Features separate all goal from non-goal states!
+2023-05-20 12:35:10 INFO     Started refining
+2023-05-20 12:35:10 INFO     Initializing TupleGraphs...
+2023-05-20 12:35:21 INFO     ..done
+2023-05-20 12:35:21 INFO     Iteration: 0
+     id: 0 name: p-2-87 initial_states: [3, 0]
+2023-05-20 12:35:21 INFO     Initializing DomainFeatureData...
+[t=109.691s, 2973980 KB] Started generating base features of complexity 1.
+[t=109.691s, 2973980 KB] Complexity 1:
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 0
+    c_not: 0
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 0
+    r_transitive_closure: 0
+    b_empty: 0
+    n_count: 0
+    n_concept_distance: 0
+[t=109.691s, 2973980 KB] Finished generating base features.
+[t=109.691s, 2973980 KB] Started generating composite features. 
+[t=109.691s, 2973980 KB] Complexity 2:
+Total concept elements: 10
+Total role elements: 3
+Total numerical elements: 6
+Total boolean elements: 4
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 0
+    c_not: 4
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 2
+    n_count: 6
+    n_concept_distance: 0
+[t=109.692s, 2973980 KB] Complexity 3:
+Total concept elements: 18
+Total role elements: 4
+Total numerical elements: 8
+Total boolean elements: 5
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 4
+    c_not: 4
+    c_equal: 1
+    c_some: 2
+    c_all: 1
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 3
+    n_count: 8
+    n_concept_distance: 0
+[t=109.692s, 2973980 KB] Complexity 4:
+Total concept elements: 34
+Total role elements: 5
+Total numerical elements: 20
+Total boolean elements: 10
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 11
+    c_not: 10
+    c_equal: 1
+    c_some: 3
+    c_all: 3
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 2
+    r_transitive_closure: 0
+    b_empty: 8
+    n_count: 15
+    n_concept_distance: 5
+[t=109.693s, 2973980 KB] Complexity 5:
+Total concept elements: 48
+Total role elements: 5
+Total numerical elements: 42
+Total boolean elements: 17
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 17
+    c_not: 18
+    c_equal: 1
+    c_some: 3
+    c_all: 3
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 2
+    r_transitive_closure: 0
+    b_empty: 15
+    n_count: 27
+    n_concept_distance: 15
+[t=109.695s, 2973980 KB] Complexity 6:
+Total concept elements: 64
+Total role elements: 5
+Total numerical elements: 61
+Total boolean elements: 22
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 27
+    c_not: 24
+    c_equal: 1
+    c_some: 3
+    c_all: 3
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 2
+    r_transitive_closure: 0
+    b_empty: 20
+    n_count: 39
+    n_concept_distance: 22
+[t=109.698s, 2973980 KB] Complexity 7:
+Total concept elements: 86
+Total role elements: 5
+Total numerical elements: 78
+Total boolean elements: 26
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 41
+    c_not: 32
+    c_equal: 1
+    c_some: 3
+    c_all: 3
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 2
+    r_transitive_closure: 0
+    b_empty: 24
+    n_count: 51
+    n_concept_distance: 27
+[t=109.703s, 2973980 KB] Complexity 8:
+Total concept elements: 107
+Total role elements: 5
+Total numerical elements: 91
+Total boolean elements: 28
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 54
+    c_not: 40
+    c_equal: 1
+    c_some: 3
+    c_all: 3
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 2
+    r_transitive_closure: 0
+    b_empty: 26
+    n_count: 61
+    n_concept_distance: 30
+[t=109.709s, 2973980 KB] Complexity 9:
+Total concept elements: 123
+Total role elements: 5
+Total numerical elements: 101
+Total boolean elements: 28
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 69
+    c_not: 41
+    c_equal: 1
+    c_some: 3
+    c_all: 3
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 2
+    r_transitive_closure: 0
+    b_empty: 26
+    n_count: 70
+    n_concept_distance: 31
+[t=109.709s, 2973980 KB] Finished generating composite features.
+DomainFeatureDataStatistics:
+    num_dlplan_states: 5
+    num_boolean_features: 28
+    num_numerical_features: 101
+2023-05-20 12:35:21 INFO     ..done
+2023-05-20 12:35:21 INFO     Initializing InstanceFeatureDatas...
+2023-05-20 12:35:21 INFO     ..done
+2023-05-20 12:35:21 INFO     Initializing StatePairEquivalenceDatas...
+2023-05-20 12:35:21 INFO     ..done
+2023-05-20 12:35:21 INFO     Initializing TupleGraphEquivalences...
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 100
+    num_single_rule_subgoal_tuples: 94
+    num_multi_rule_subgoal_tuples: 6
+2023-05-20 12:35:21 INFO     ..done
+2023-05-20 12:35:21 INFO     Initializing TupleGraphEquivalenceMinimizer...
+2023-05-20 12:35:21 INFO     ..done
+2023-05-20 12:35:21 INFO     Iteration data preprocessing summary:
+DomainFeatureDataStatistics:
+    num_dlplan_states: 5
+    num_boolean_features: 28
+    num_numerical_features: 101
+StatePairEquivalenceStatistics:
+    num_subgoal_states: 25
+    num_equivalences: 25
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 100
+    num_single_rule_subgoal_tuples: 94
+    num_multi_rule_subgoal_tuples: 6
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 25
+    num_single_rule_subgoal_tuples: 25
+    num_multi_rule_subgoal_tuples: 0
+2023-05-20 12:35:21 INFO     Grounding Logic Program...
+2023-05-20 12:35:21 INFO     ..done
+2023-05-20 12:35:21 INFO     Solving Logic Program...
+Clingo statistics:
+{'call': 0.0, 'result': 1.0, 'signal': 0.0, 'exhausted': 1.0, 'costs': [4.0], 'lower': [4.0], 'concurrency': 32.0, 'winner': 19.0, 'times': {'total': 0.7165648937225342, 'cpu': 6.075750000000003, 'solve': 0.3522219657897949, 'unsat': 0.005362987518310547, 'sat': 0.25327515602111816}, 'models': {'enumerated': 9.0, 'optimal': 1.0}}
+Solution cost: [4.0]
+Total time: 0.7165648937225342
+CPU time: 6.075750000000003
+Solve time: 0.3522219657897949
+2023-05-20 12:35:22 INFO     ..done
+2023-05-20 12:35:22 INFO     Learned the following sketch:
+(:policy
+(:rule (:conditions (:c_n_gt "n_count(c_primitive(clear,0))")) (:effects (:e_n_inc "n_count(c_primitive(clear,0))")))
+)
+(:policy
+(:booleans )
+(:numericals (390 "n_count(c_primitive(clear,0))"))
+(:rule (:conditions (:c_n_gt 390)) (:effects (:e_n_inc 390)))
+)
+Numer of sketch rules: 1
+Number of selected features: 1
+Maximum complexity of selected feature: 2
+2023-05-20 12:35:22 INFO     Verifying learned sketch...
+2023-05-20 12:37:23 INFO     ..done
+Sketch solves all instances!
+2023-05-20 12:37:23 INFO     Summary:
+LearningStatistics:
+    num_training_instances: 300
+    num_selected_training_instances (|P|): 1
+    num_states_in_selected_training_instances (|S|): 5
+    num_features_in_pool (|F|): 129
+Resulting sketch:
+(:policy
+(:rule (:conditions (:c_n_gt "n_count(c_primitive(clear,0))")) (:effects (:e_n_inc "n_count(c_primitive(clear,0))")))
+)
+(:policy
+(:booleans )
+(:numericals (390 "n_count(c_primitive(clear,0))"))
+(:rule (:conditions (:c_n_gt 390)) (:effects (:e_n_inc 390)))
+)
+Numer of sketch rules: 1
+Number of selected features: 1
+Maximum complexity of selected feature: 2
+Resulting sketch minimized:
+(:policy
+(:rule (:conditions (:c_n_gt "n_count(c_primitive(clear,0))")) (:effects (:e_n_inc "n_count(c_primitive(clear,0))")))
+)
+(:policy
+(:booleans )
+(:numericals (390 "n_count(c_primitive(clear,0))"))
+(:rule (:conditions (:c_n_gt 390)) (:effects (:e_n_inc 390)))
+)
+Numer of sketch rules: 1
+Number of selected features: 1
+Maximum complexity of selected feature: 2
+Number of problems: 300
+Number of subproblems: 4800
+Highest number of states in problem: 125
+Highest number of states in subproblem: 125
+2023-05-20 12:39:24 INFO     Started refining
+(:policy
+(:rule (:conditions (:c_n_gt "n_count(c_primitive(clear,0))")) (:effects (:e_n_inc "n_count(c_primitive(clear,0))")))
+)
+2023-05-20 12:39:24 INFO     Initializing TupleGraphs...
+2023-05-20 12:39:28 INFO     ..done
+2023-05-20 12:39:28 INFO     Iteration: 0
+     id: 0 name: p-2-87-0 initial_states: {0}
+2023-05-20 12:39:28 INFO     Initializing DomainFeatureData...
+[t=356.764s, 3983676 KB] Started generating base features of complexity 1.
+[t=356.764s, 3983676 KB] Complexity 1:
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 0
+    c_not: 0
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 0
+    r_transitive_closure: 0
+    b_empty: 0
+    n_count: 0
+    n_concept_distance: 0
+[t=356.764s, 3983676 KB] Finished generating base features.
+[t=356.764s, 3983676 KB] Started generating composite features. 
+[t=356.765s, 3983676 KB] Complexity 2:
+Total concept elements: 10
+Total role elements: 3
+Total numerical elements: 6
+Total boolean elements: 4
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 0
+    c_not: 4
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 2
+    n_count: 6
+    n_concept_distance: 0
+[t=356.765s, 3983676 KB] Complexity 3:
+Total concept elements: 14
+Total role elements: 3
+Total numerical elements: 8
+Total boolean elements: 5
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 2
+    c_not: 4
+    c_equal: 1
+    c_some: 1
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 3
+    n_count: 8
+    n_concept_distance: 0
+[t=356.766s, 3983676 KB] Complexity 4:
+Total concept elements: 20
+Total role elements: 3
+Total numerical elements: 13
+Total boolean elements: 6
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 5
+    c_not: 6
+    c_equal: 1
+    c_some: 1
+    c_all: 1
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 4
+    n_count: 11
+    n_concept_distance: 2
+[t=356.766s, 3983676 KB] Complexity 5:
+Total concept elements: 22
+Total role elements: 3
+Total numerical elements: 23
+Total boolean elements: 8
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 5
+    c_not: 8
+    c_equal: 1
+    c_some: 1
+    c_all: 1
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 6
+    n_count: 15
+    n_concept_distance: 8
+[t=356.767s, 3983676 KB] Complexity 6:
+Total concept elements: 24
+Total role elements: 3
+Total numerical elements: 27
+Total boolean elements: 8
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 7
+    c_not: 8
+    c_equal: 1
+    c_some: 1
+    c_all: 1
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 6
+    n_count: 17
+    n_concept_distance: 10
+[t=356.768s, 3983676 KB] Complexity 7:
+Total concept elements: 29
+Total role elements: 3
+Total numerical elements: 27
+Total boolean elements: 8
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 10
+    c_not: 10
+    c_equal: 1
+    c_some: 1
+    c_all: 1
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 6
+    n_count: 17
+    n_concept_distance: 10
+[t=356.769s, 3983676 KB] Complexity 8:
+Total concept elements: 32
+Total role elements: 3
+Total numerical elements: 29
+Total boolean elements: 8
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 12
+    c_not: 11
+    c_equal: 1
+    c_some: 1
+    c_all: 1
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 6
+    n_count: 19
+    n_concept_distance: 10
+[t=356.77s, 3983676 KB] Complexity 9:
+Total concept elements: 32
+Total role elements: 3
+Total numerical elements: 31
+Total boolean elements: 8
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 12
+    c_not: 11
+    c_equal: 1
+    c_some: 1
+    c_all: 1
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 6
+    n_count: 21
+    n_concept_distance: 10
+[t=356.771s, 3983676 KB] Finished generating composite features.
+DomainFeatureDataStatistics:
+    num_dlplan_states: 3
+    num_boolean_features: 8
+    num_numerical_features: 31
+2023-05-20 12:39:28 INFO     ..done
+2023-05-20 12:39:28 INFO     Initializing InstanceFeatureDatas...
+2023-05-20 12:39:28 INFO     ..done
+2023-05-20 12:39:28 INFO     Initializing StatePairEquivalenceDatas...
+2023-05-20 12:39:28 INFO     ..done
+2023-05-20 12:39:28 INFO     Initializing TupleGraphEquivalences...
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 21
+    num_single_rule_subgoal_tuples: 19
+    num_multi_rule_subgoal_tuples: 2
+2023-05-20 12:39:28 INFO     ..done
+2023-05-20 12:39:28 INFO     Initializing TupleGraphEquivalenceMinimizer...
+2023-05-20 12:39:28 INFO     ..done
+2023-05-20 12:39:28 INFO     Iteration data preprocessing summary:
+DomainFeatureDataStatistics:
+    num_dlplan_states: 3
+    num_boolean_features: 8
+    num_numerical_features: 31
+StatePairEquivalenceStatistics:
+    num_subgoal_states: 9
+    num_equivalences: 9
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 21
+    num_single_rule_subgoal_tuples: 19
+    num_multi_rule_subgoal_tuples: 2
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 9
+    num_single_rule_subgoal_tuples: 9
+    num_multi_rule_subgoal_tuples: 0
+2023-05-20 12:39:28 INFO     Grounding Logic Program...
+2023-05-20 12:39:28 INFO     ..done
+2023-05-20 12:39:28 INFO     Solving Logic Program...
+Clingo statistics:
+{'call': 0.0, 'result': 1.0, 'signal': 0.0, 'exhausted': 1.0, 'costs': [2.0], 'lower': [2.0], 'concurrency': 32.0, 'winner': 20.0, 'times': {'total': 0.11598491668701172, 'cpu': 0.6038350000000037, 'solve': 0.02488088607788086, 'unsat': 0.0020568370819091797, 'sat': 0.02282404899597168}, 'models': {'enumerated': 1.0, 'optimal': 1.0}}
+Solution cost: [2.0]
+Total time: 0.11598491668701172
+CPU time: 0.6038350000000037
+Solve time: 0.02488088607788086
+2023-05-20 12:39:28 INFO     ..done
+2023-05-20 12:39:28 INFO     Learned the following sketch:
+(:policy
+(:rule (:conditions ) (:effects (:e_n_inc "n_count(c_primitive(clear,0))")))
+)
+(:policy
+(:booleans )
+(:numericals (390 "n_count(c_primitive(clear,0))"))
+(:rule (:conditions ) (:effects (:e_n_inc 390)))
+)
+Numer of sketch rules: 1
+Number of selected features: 1
+Maximum complexity of selected feature: 2
+2023-05-20 12:39:28 INFO     Verifying learned sketch...
+2023-05-20 12:39:30 INFO     ..done
+Sketch solves all instances!
+2023-05-20 12:39:30 INFO     Summary:
+LearningStatistics:
+    num_training_instances: 4800
+    num_selected_training_instances (|P|): 1
+    num_states_in_selected_training_instances (|S|): 3
+    num_features_in_pool (|F|): 39
+Resulting sketch:
+(:policy
+(:rule (:conditions ) (:effects (:e_n_inc "n_count(c_primitive(clear,0))")))
+)
+(:policy
+(:booleans )
+(:numericals (390 "n_count(c_primitive(clear,0))"))
+(:rule (:conditions ) (:effects (:e_n_inc 390)))
+)
+Numer of sketch rules: 1
+Number of selected features: 1
+Maximum complexity of selected feature: 2
+Resulting sketch minimized:
+(:policy
+(:rule (:conditions ) (:effects (:e_n_inc "n_count(c_primitive(clear,0))")))
+)
+(:policy
+(:booleans )
+(:numericals (390 "n_count(c_primitive(clear,0))"))
+(:rule (:conditions ) (:effects (:e_n_inc 390)))
+)
+Numer of sketch rules: 1
+Number of selected features: 1
+Maximum complexity of selected feature: 2
+Number of problems: 4800
+Number of subproblems: 4800
+Highest number of states in problem: 125
+Highest number of states in subproblem: 125
+2023-05-20 12:39:35 INFO     Started refining
+(:policy
+(:rule (:conditions ) (:effects (:e_n_inc "n_count(c_primitive(clear,0))")))
+)
+2023-05-20 12:39:35 INFO     Initializing TupleGraphs...
+2023-05-20 12:39:36 INFO     ..done
+2023-05-20 12:39:36 INFO     Iteration: 0
+     id: 0 name: p-2-87-0-0 initial_states: {0}
+2023-05-20 12:39:36 INFO     Initializing DomainFeatureData...
+[t=364.224s, 4010864 KB] Started generating base features of complexity 1.
+[t=364.224s, 4010864 KB] Complexity 1:
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 0
+    c_not: 0
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 0
+    r_transitive_closure: 0
+    b_empty: 0
+    n_count: 0
+    n_concept_distance: 0
+[t=364.224s, 4010864 KB] Finished generating base features.
+[t=364.224s, 4010864 KB] Started generating composite features. 
+[t=364.224s, 4010864 KB] Complexity 2:
+Total concept elements: 10
+Total role elements: 3
+Total numerical elements: 6
+Total boolean elements: 4
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 0
+    c_not: 4
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 2
+    n_count: 6
+    n_concept_distance: 0
+[t=364.225s, 4010864 KB] Complexity 3:
+Total concept elements: 14
+Total role elements: 3
+Total numerical elements: 8
+Total boolean elements: 5
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 2
+    c_not: 4
+    c_equal: 1
+    c_some: 1
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 3
+    n_count: 8
+    n_concept_distance: 0
+[t=364.225s, 4010864 KB] Complexity 4:
+Total concept elements: 20
+Total role elements: 3
+Total numerical elements: 13
+Total boolean elements: 6
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 5
+    c_not: 6
+    c_equal: 1
+    c_some: 1
+    c_all: 1
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 4
+    n_count: 11
+    n_concept_distance: 2
+[t=364.226s, 4010864 KB] Complexity 5:
+Total concept elements: 22
+Total role elements: 3
+Total numerical elements: 23
+Total boolean elements: 8
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 5
+    c_not: 8
+    c_equal: 1
+    c_some: 1
+    c_all: 1
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 6
+    n_count: 15
+    n_concept_distance: 8
+[t=364.227s, 4010864 KB] Complexity 6:
+Total concept elements: 24
+Total role elements: 3
+Total numerical elements: 27
+Total boolean elements: 8
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 7
+    c_not: 8
+    c_equal: 1
+    c_some: 1
+    c_all: 1
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 6
+    n_count: 17
+    n_concept_distance: 10
+[t=364.227s, 4010864 KB] Complexity 7:
+Total concept elements: 29
+Total role elements: 3
+Total numerical elements: 27
+Total boolean elements: 8
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 10
+    c_not: 10
+    c_equal: 1
+    c_some: 1
+    c_all: 1
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 6
+    n_count: 17
+    n_concept_distance: 10
+[t=364.228s, 4010864 KB] Complexity 8:
+Total concept elements: 32
+Total role elements: 3
+Total numerical elements: 29
+Total boolean elements: 8
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 12
+    c_not: 11
+    c_equal: 1
+    c_some: 1
+    c_all: 1
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 6
+    n_count: 19
+    n_concept_distance: 10
+[t=364.229s, 4010864 KB] Complexity 9:
+Total concept elements: 32
+Total role elements: 3
+Total numerical elements: 31
+Total boolean elements: 8
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 12
+    c_not: 11
+    c_equal: 1
+    c_some: 1
+    c_all: 1
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 0
+    b_empty: 6
+    n_count: 21
+    n_concept_distance: 10
+[t=364.229s, 4010864 KB] Finished generating composite features.
+DomainFeatureDataStatistics:
+    num_dlplan_states: 3
+    num_boolean_features: 8
+    num_numerical_features: 31
+2023-05-20 12:39:36 INFO     ..done
+2023-05-20 12:39:36 INFO     Initializing InstanceFeatureDatas...
+2023-05-20 12:39:36 INFO     ..done
+2023-05-20 12:39:36 INFO     Initializing StatePairEquivalenceDatas...
+2023-05-20 12:39:36 INFO     ..done
+2023-05-20 12:39:36 INFO     Initializing TupleGraphEquivalences...
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 19
+    num_single_rule_subgoal_tuples: 17
+    num_multi_rule_subgoal_tuples: 2
+2023-05-20 12:39:36 INFO     ..done
+2023-05-20 12:39:36 INFO     Initializing TupleGraphEquivalenceMinimizer...
+2023-05-20 12:39:36 INFO     ..done
+2023-05-20 12:39:36 INFO     Iteration data preprocessing summary:
+DomainFeatureDataStatistics:
+    num_dlplan_states: 3
+    num_boolean_features: 8
+    num_numerical_features: 31
+StatePairEquivalenceStatistics:
+    num_subgoal_states: 7
+    num_equivalences: 7
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 19
+    num_single_rule_subgoal_tuples: 17
+    num_multi_rule_subgoal_tuples: 2
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 7
+    num_single_rule_subgoal_tuples: 7
+    num_multi_rule_subgoal_tuples: 0
+2023-05-20 12:39:36 INFO     Grounding Logic Program...
+2023-05-20 12:39:36 INFO     ..done
+2023-05-20 12:39:36 INFO     Solving Logic Program...
+Clingo statistics:
+{'call': 0.0, 'result': 1.0, 'signal': 0.0, 'exhausted': 1.0, 'costs': [6.0], 'lower': [6.0], 'concurrency': 32.0, 'winner': 10.0, 'times': {'total': 0.09596014022827148, 'cpu': 1.0499309999999014, 'solve': 0.04035615921020508, 'unsat': 0.006754159927368164, 'sat': 0.029316186904907227}, 'models': {'enumerated': 2.0, 'optimal': 1.0}}
+Solution cost: [6.0]
+Total time: 0.09596014022827148
+CPU time: 1.0499309999999014
+Solve time: 0.04035615921020508
+2023-05-20 12:39:36 INFO     ..done
+2023-05-20 12:39:36 INFO     Learned the following sketch:
+(:policy
+(:rule (:conditions ) (:effects (:e_n_inc "n_count(c_and(c_primitive(clear,0),c_primitive(on-table,0)))")))
+)
+(:policy
+(:booleans )
+(:numericals (397 "n_count(c_and(c_primitive(clear,0),c_primitive(on-table,0)))"))
+(:rule (:conditions ) (:effects (:e_n_inc 397)))
+)
+Numer of sketch rules: 1
+Number of selected features: 1
+Maximum complexity of selected feature: 4
+2023-05-20 12:39:36 INFO     Verifying learned sketch...
+State has unbounded width for a rule
+Width: 0
+Rule: (:rule (:conditions ) (:effects (:e_n_inc 397)))
+Instance: 200 p-3-38-5-5
+State: (instance index=4, state index=5, atoms={on-table(b1), on(b2,b1), on(b3,b2), clear(b3), arm-empty()})
+2023-05-20 12:39:36 INFO     ..done
+Smallest unsolved instance: 200
+Selected instances: [200]
+2023-05-20 12:39:36 INFO     Iteration: 1
+     id: 200 name: p-3-38-5-5 initial_states: {2, 5}
+2023-05-20 12:39:36 INFO     Initializing DomainFeatureData...
+[t=364.359s, 4020592 KB] Started generating base features of complexity 1.
+[t=364.359s, 4020592 KB] Complexity 1:
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 0
+    c_not: 0
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 0
+    r_transitive_closure: 0
+    b_empty: 0
+    n_count: 0
+    n_concept_distance: 0
+[t=364.36s, 4020592 KB] Finished generating base features.
+[t=364.36s, 4020592 KB] Started generating composite features. 
+[t=364.36s, 4020592 KB] Complexity 2:
+Total concept elements: 10
+Total role elements: 4
+Total numerical elements: 6
+Total boolean elements: 3
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 0
+    c_not: 4
+    c_equal: 0
+    c_some: 0
+    c_all: 0
+    r_restrict: 0
+    r_and: 0
+    r_inverse: 1
+    r_transitive_closure: 1
+    b_empty: 1
+    n_count: 6
+    n_concept_distance: 0
+[t=364.36s, 4020592 KB] Complexity 3:
+Total concept elements: 15
+Total role elements: 6
+Total numerical elements: 10
+Total boolean elements: 3
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 1
+    c_not: 4
+    c_equal: 1
+    c_some: 2
+    c_all: 1
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 2
+    r_transitive_closure: 1
+    b_empty: 1
+    n_count: 10
+    n_concept_distance: 0
+[t=364.361s, 4020592 KB] Complexity 4:
+Total concept elements: 23
+Total role elements: 7
+Total numerical elements: 14
+Total boolean elements: 4
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 2
+    c_not: 7
+    c_equal: 1
+    c_some: 4
+    c_all: 3
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 2
+    n_count: 13
+    n_concept_distance: 1
+[t=364.362s, 4020592 KB] Complexity 5:
+Total concept elements: 30
+Total role elements: 7
+Total numerical elements: 16
+Total boolean elements: 5
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 6
+    c_not: 10
+    c_equal: 1
+    c_some: 4
+    c_all: 3
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 3
+    n_count: 15
+    n_concept_distance: 1
+[t=364.363s, 4020592 KB] Complexity 6:
+Total concept elements: 43
+Total role elements: 7
+Total numerical elements: 21
+Total boolean elements: 7
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 15
+    c_not: 13
+    c_equal: 1
+    c_some: 4
+    c_all: 4
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 5
+    n_count: 19
+    n_concept_distance: 2
+[t=364.365s, 4020592 KB] Complexity 7:
+Total concept elements: 57
+Total role elements: 7
+Total numerical elements: 27
+Total boolean elements: 8
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 23
+    c_not: 17
+    c_equal: 1
+    c_some: 4
+    c_all: 6
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 6
+    n_count: 24
+    n_concept_distance: 3
+[t=364.367s, 4020592 KB] Complexity 8:
+Total concept elements: 68
+Total role elements: 7
+Total numerical elements: 29
+Total boolean elements: 8
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 30
+    c_not: 21
+    c_equal: 1
+    c_some: 4
+    c_all: 6
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 6
+    n_count: 26
+    n_concept_distance: 3
+[t=364.371s, 4020592 KB] Complexity 9:
+Total concept elements: 80
+Total role elements: 7
+Total numerical elements: 32
+Total boolean elements: 8
+    b_nullary: 2
+    c_one_of: 0
+    c_top: 1
+    c_bot: 1
+    c_primitive: 4
+    r_primitive: 2
+    c_and: 39
+    c_not: 24
+    c_equal: 1
+    c_some: 4
+    c_all: 6
+    r_restrict: 1
+    r_and: 0
+    r_inverse: 3
+    r_transitive_closure: 1
+    b_empty: 6
+    n_count: 28
+    n_concept_distance: 4
+[t=364.371s, 4020592 KB] Finished generating composite features.
+DomainFeatureDataStatistics:
+    num_dlplan_states: 3
+    num_boolean_features: 8
+    num_numerical_features: 32
+2023-05-20 12:39:36 INFO     ..done
+2023-05-20 12:39:36 INFO     Initializing InstanceFeatureDatas...
+2023-05-20 12:39:36 INFO     ..done
+2023-05-20 12:39:36 INFO     Initializing StatePairEquivalenceDatas...
+2023-05-20 12:39:36 INFO     ..done
+2023-05-20 12:39:36 INFO     Initializing TupleGraphEquivalences...
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 22
+    num_single_rule_subgoal_tuples: 20
+    num_multi_rule_subgoal_tuples: 2
+2023-05-20 12:39:36 INFO     ..done
+2023-05-20 12:39:36 INFO     Initializing TupleGraphEquivalenceMinimizer...
+2023-05-20 12:39:36 INFO     ..done
+2023-05-20 12:39:36 INFO     Iteration data preprocessing summary:
+DomainFeatureDataStatistics:
+    num_dlplan_states: 3
+    num_boolean_features: 8
+    num_numerical_features: 32
+StatePairEquivalenceStatistics:
+    num_subgoal_states: 7
+    num_equivalences: 7
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 22
+    num_single_rule_subgoal_tuples: 20
+    num_multi_rule_subgoal_tuples: 2
+TupleGraphEquivalenceFactoryStatistics:
+    num_subgoal_tuples: 7
+    num_single_rule_subgoal_tuples: 7
+    num_multi_rule_subgoal_tuples: 0
+2023-05-20 12:39:36 INFO     Grounding Logic Program...
+2023-05-20 12:39:36 INFO     ..done
+2023-05-20 12:39:36 INFO     Solving Logic Program...
+Clingo statistics:
+{'call': 0.0, 'result': 1.0, 'signal': 0.0, 'exhausted': 1.0, 'costs': [6.0], 'lower': [6.0], 'concurrency': 32.0, 'winner': 20.0, 'times': {'total': 0.09630298614501953, 'cpu': 1.0765650000000733, 'solve': 0.03770184516906738, 'unsat': 0.004217863082885742, 'sat': 0.014150857925415039}, 'models': {'enumerated': 4.0, 'optimal': 1.0}}
+Solution cost: [6.0]
+Total time: 0.09630298614501953
+CPU time: 1.0765650000000733
+Solve time: 0.03770184516906738
+2023-05-20 12:39:36 INFO     ..done
+2023-05-20 12:39:36 INFO     Learned the following sketch:
+(:policy
+(:rule (:conditions (:c_b_neg "b_nullary(arm-empty)")) (:effects (:e_n_inc "n_count(c_primitive(clear,0))")))
+(:rule (:conditions (:c_b_pos "b_nullary(arm-empty)")) (:effects (:e_b_neg "b_nullary(arm-empty)") (:e_n_bot "n_count(c_primitive(clear,0))")))
+)
+(:policy
+(:booleans (114 "b_nullary(arm-empty)"))
+(:numericals (390 "n_count(c_primitive(clear,0))"))
+(:rule (:conditions (:c_b_pos 114)) (:effects (:e_b_neg 114) (:e_n_bot 390)))
+(:rule (:conditions (:c_b_neg 114)) (:effects (:e_n_inc 390)))
+)
+Numer of sketch rules: 2
+Number of selected features: 2
+Maximum complexity of selected feature: 2
+2023-05-20 12:39:36 INFO     Verifying learned sketch...
+2023-05-20 12:39:38 INFO     ..done
+Sketch solves all instances!
+2023-05-20 12:39:38 INFO     Summary:
+LearningStatistics:
+    num_training_instances: 4800
+    num_selected_training_instances (|P|): 1
+    num_states_in_selected_training_instances (|S|): 3
+    num_features_in_pool (|F|): 40
+Resulting sketch:
+(:policy
+(:rule (:conditions (:c_b_neg "b_nullary(arm-empty)")) (:effects (:e_n_inc "n_count(c_primitive(clear,0))")))
+(:rule (:conditions (:c_b_pos "b_nullary(arm-empty)")) (:effects (:e_b_neg "b_nullary(arm-empty)") (:e_n_bot "n_count(c_primitive(clear,0))")))
+)
+(:policy
+(:booleans (114 "b_nullary(arm-empty)"))
+(:numericals (390 "n_count(c_primitive(clear,0))"))
+(:rule (:conditions (:c_b_pos 114)) (:effects (:e_b_neg 114) (:e_n_bot 390)))
+(:rule (:conditions (:c_b_neg 114)) (:effects (:e_n_inc 390)))
+)
+Numer of sketch rules: 2
+Number of selected features: 2
+Maximum complexity of selected feature: 2
+Resulting sketch minimized:
+(:policy
+(:rule (:conditions (:c_b_neg "b_nullary(arm-empty)")) (:effects (:e_n_inc "n_count(c_primitive(clear,0))")))
+(:rule (:conditions (:c_b_pos "b_nullary(arm-empty)")) (:effects (:e_b_neg "b_nullary(arm-empty)") (:e_n_bot "n_count(c_primitive(clear,0))")))
+)
+(:policy
+(:booleans (114 "b_nullary(arm-empty)"))
+(:numericals (390 "n_count(c_primitive(clear,0))"))
+(:rule (:conditions (:c_b_pos 114)) (:effects (:e_b_neg 114) (:e_n_bot 390)))
+(:rule (:conditions (:c_b_neg 114)) (:effects (:e_n_inc 390)))
+)
+Numer of sketch rules: 2
+Number of selected features: 2
+Maximum complexity of selected feature: 2
+Number of problems: 4800
+Number of subproblems: 4600
+Highest number of states in problem: 125
+Highest number of states in subproblem: 44
+Number of problems: 4800
+Number of subproblems: 4800
+Highest number of states in problem: 125
+Highest number of states in subproblem: 125
+2023-05-20 12:39:44 INFO     Summary:
+2023-05-20 12:39:44 INFO     Hierarchical sketch:
+HierarchicalPolicy:
+Level 0 sketch:
+(:policy
+(:booleans )
+(:numericals (390 "n_count(c_primitive(clear,0))"))
+(:rule (:conditions (:c_n_gt 390)) (:effects (:e_n_inc 390)))
+)
+    Level 1 sketch:
+(:policy
+(:booleans )
+(:numericals (390 "n_count(c_primitive(clear,0))"))
+(:rule (:conditions ) (:effects (:e_n_inc 390)))
+)
+        Level 2 sketch:
+(:policy
+(:booleans (114 "b_nullary(arm-empty)"))
+(:numericals (390 "n_count(c_primitive(clear,0))"))
+(:rule (:conditions (:c_b_pos 114)) (:effects (:e_b_neg 114) (:e_n_bot 390)))
+(:rule (:conditions (:c_b_neg 114)) (:effects (:e_n_inc 390)))
+)
+HierarchicalPolicyStatistics:
+    Max feature complexity (C): 2
+    Num features (|Phi|): 2
+    Num rules (R): 4
+    Max rules (m): 2
+LearningStatistics:
+    num_training_instances: 9900
+    num_selected_training_instances (|P|): 1
+    num_states_in_selected_training_instances (|S|): 5
+    num_features_in_pool (|F|): 129
+================================================================================
+END OF STEP #1: Incremental learning module. 0.10 CPU hours - 1.96 GB
+================================================================================

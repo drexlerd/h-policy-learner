@@ -1,0 +1,5 @@
+(:policy
+(:booleans (114 "b_nullary(arm-empty)"))
+(:numericals (390 "n_count(c_primitive(clear,0))"))
+(:rule (:conditions (:c_b_pos 114)) (:effects (:e_b_neg 114) (:e_n_bot 390)))
+)

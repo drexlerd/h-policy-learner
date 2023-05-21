@@ -1,0 +1,56 @@
+digraph {
+rankdir="LR"
+s0[label="(instance index=34, state index=0, atoms={at(c_0_0), reward(c_1_0), reward(c_0_1)})"]
+s1[label="(instance index=34, state index=1, atoms={at(c_0_1), reward(c_1_0), reward(c_0_1)})"]
+s2[label="(instance index=34, state index=2, atoms={at(c_1_0), reward(c_1_0), reward(c_0_1)})"]
+s3[label="(instance index=34, state index=3, atoms={at(c_0_1), reward(c_1_0), picked(c_0_1)})"]
+s4[label="(instance index=34, state index=4, atoms={at(c_1_0), picked(c_1_0), reward(c_0_1)})"]
+s5[label="(instance index=34, state index=5, atoms={at(c_0_0), reward(c_1_0), picked(c_0_1)})"]
+s6[label="(instance index=34, state index=6, atoms={at(c_0_0), picked(c_1_0), reward(c_0_1)})"]
+s7[label="(instance index=34, state index=7, atoms={at(c_1_0), reward(c_1_0), picked(c_0_1)})"]
+s8[label="(instance index=34, state index=8, atoms={at(c_0_1), picked(c_1_0), reward(c_0_1)})"]
+s9[peripheries=2,label="(instance index=34, state index=9, atoms={at(c_1_0), picked(c_1_0), picked(c_0_1)})"]
+s10[peripheries=2,label="(instance index=34, state index=10, atoms={at(c_0_1), picked(c_1_0), picked(c_0_1)})"]
+s11[peripheries=2,label="(instance index=34, state index=11, atoms={at(c_0_0), picked(c_1_0), picked(c_0_1)})"]
+Dangling [ label = "", style = invis ]
+{ rank = same; Dangling }
+Dangling -> s0
+{ rank = same; s0}
+{ rank = same; s1,s2}
+{ rank = same; s3,s4}
+{ rank = same; s5,s6}
+{ rank = same; s7,s8}
+{ rank = same; s9,s10,s11}
+{
+s0->s2
+s0->s1
+}
+{
+s1->s3
+s1->s0
+s2->s4
+s2->s0
+}
+{
+s3->s5
+s4->s6
+}
+{
+s5->s7
+s5->s3
+s6->s4
+s6->s8
+}
+{
+s7->s9
+s7->s5
+s8->s10
+s8->s6
+}
+{
+s9->s11
+s10->s11
+s11->s9
+s11->s10
+}
+}

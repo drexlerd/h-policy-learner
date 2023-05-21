@@ -1,0 +1,3 @@
+(:policy
+(:rule (:conditions (:c_n_gt "n_concept_distance(c_one_of(roomb),r_primitive(carry,0,1),c_primitive(at-robby,0))")) (:effects (:e_n_inc "n_count(r_primitive(carry,0,1))")))
+)

@@ -1,0 +1,27 @@
+digraph {
+rankdir="LR"
+s3[label="(instance index=389, state index=3, atoms={at-robot(loc-x0-y2), visited(loc-x0-y1)})"]
+s1[label="(instance index=389, state index=1, atoms={at-robot(loc-x0-y1), visited(loc-x0-y1)})"]
+s2[label="(instance index=389, state index=2, atoms={at-robot(loc-x0-y0), visited(loc-x0-y1)})"]
+s4[peripheries=2,label="(instance index=389, state index=4, atoms={at-robot(loc-x1-y0), visited(loc-x1-y0), visited(loc-x0-y1)})"]
+Dangling [ label = "", style = invis ]
+{ rank = same; Dangling }
+Dangling -> s3
+{ rank = same; s3}
+{ rank = same; s1}
+{ rank = same; s2}
+{ rank = same; s4}
+{
+s3->s1
+}
+{
+s1->s2
+s1->s3
+}
+{
+s2->s1
+s2->s4
+}
+{
+}
+}

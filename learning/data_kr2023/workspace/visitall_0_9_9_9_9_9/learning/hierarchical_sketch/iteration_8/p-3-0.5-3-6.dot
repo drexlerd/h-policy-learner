@@ -1,0 +1,41 @@
+digraph {
+rankdir="LR"
+s3[label="(instance index=389, state index=3, atoms={at-robot(loc-x0-y2), visited(loc-x0-y1)})"]
+s0[label="(instance index=389, state index=0, atoms={at-robot(loc-x0-y2)})"]
+s1[label="(instance index=389, state index=1, atoms={at-robot(loc-x0-y1), visited(loc-x0-y1)})"]
+s2[label="(instance index=389, state index=2, atoms={at-robot(loc-x0-y0), visited(loc-x0-y1)})"]
+s4[peripheries=2,label="(instance index=389, state index=4, atoms={at-robot(loc-x1-y0), visited(loc-x1-y0), visited(loc-x0-y1)})"]
+s5[peripheries=2,label="(instance index=389, state index=5, atoms={at-robot(loc-x0-y0), visited(loc-x1-y0), visited(loc-x0-y1)})"]
+s6[peripheries=2,label="(instance index=389, state index=6, atoms={at-robot(loc-x2-y0), visited(loc-x1-y0), visited(loc-x0-y1)})"]
+s7[peripheries=2,label="(instance index=389, state index=7, atoms={at-robot(loc-x0-y1), visited(loc-x1-y0), visited(loc-x0-y1)})"]
+s8[peripheries=2,label="(instance index=389, state index=8, atoms={at-robot(loc-x0-y2), visited(loc-x1-y0), visited(loc-x0-y1)})"]
+Dangling [ label = "", style = invis ]
+{ rank = same; Dangling }
+Dangling -> s0
+{ rank = same; s0}
+{ rank = same; s1}
+{ rank = same; s2}
+{ rank = same; s4,s5,s6,s7,s8}
+{
+s3->s1
+s0->s1
+}
+{
+s1->s3
+s1->s2
+}
+{
+s2->s4
+s2->s1
+}
+{
+s4->s6
+s4->s5
+s5->s4
+s5->s7
+s6->s4
+s7->s8
+s7->s5
+s8->s7
+}
+}

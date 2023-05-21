@@ -1,0 +1,24 @@
+digraph {
+rankdir="LR"
+s4[label="(instance index=2, state index=4, atoms={at(bob,location2), carrying(bob,spanner2), at(spanner1,location2), useable(spanner1), useable(spanner2), loose(nut1), loose(nut2)})"]
+s7[peripheries=2,label="(instance index=2, state index=7, atoms={at(bob,location2), carrying(bob,spanner2), carrying(bob,spanner1), useable(spanner1), useable(spanner2), loose(nut1), loose(nut2)})"]
+s6[label="(instance index=2, state index=6, atoms={at(bob,gate), carrying(bob,spanner2), at(spanner1,location2), useable(spanner1), useable(spanner2), loose(nut1), loose(nut2)})"]
+s10[label="(instance index=2, state index=10, atoms={at(bob,gate), carrying(bob,spanner2), at(spanner1,location2), useable(spanner1), loose(nut1), tightened(nut2)})"]
+s9[label="(instance index=2, state index=9, atoms={at(bob,gate), carrying(bob,spanner2), at(spanner1,location2), useable(spanner1), tightened(nut1), loose(nut2)})"]
+Dangling [ label = "", style = invis ]
+{ rank = same; Dangling }
+Dangling -> s4
+{ rank = same; s4}
+{ rank = same; s7,s6}
+{ rank = same; s10,s9}
+{
+s4->s7
+s4->s6
+}
+{
+s6->s10
+s6->s9
+}
+{
+}
+}

@@ -1,0 +1,8 @@
+(:policy
+(:booleans )
+(:numericals (576 "n_count(c_and(c_equal(r_primitive(on,0,1),r_primitive(on_g,0,1)),c_not(c_primitive(holding,0))))") (515 "n_count(r_primitive(on,0,1))") (514 "n_count(c_primitive(holding,0))"))
+(:rule (:conditions (:c_n_gt 514) (:c_n_gt 515)) (:effects (:e_n_dec 514) (:e_n_bot 515)))
+(:rule (:conditions (:c_n_gt 514) (:c_n_eq 515)) (:effects (:e_n_inc 576)))
+(:rule (:conditions (:c_n_eq 514) (:c_n_eq 515)) (:effects (:e_n_inc 514) (:e_n_bot 576)))
+(:rule (:conditions (:c_n_eq 514) (:c_n_gt 515)) (:effects (:e_n_inc 514) (:e_n_dec 515)))
+)

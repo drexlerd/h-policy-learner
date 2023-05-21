@@ -16,15 +16,10 @@ images to a local filesystem (e.g., /tmp/) before running experiments.
 
 import os
 from pathlib import Path
-import shutil
-import subprocess
 
 from downward import suites
 from downward.reports.absolute import AbsoluteReport
-from downward.experiment import FastDownwardExperiment
-from lab.experiment import Experiment, Run
-from lab import tools
-from lab.reports import Attribute, arithmetic_mean
+from lab.experiment import Experiment
 
 import project
 

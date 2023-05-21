@@ -20,7 +20,6 @@ from pathlib import Path
 from downward import suites
 from downward.reports.absolute import AbsoluteReport
 from lab.experiment import Experiment
-from lab.reports import Attribute, arithmetic_mean
 
 import project
 

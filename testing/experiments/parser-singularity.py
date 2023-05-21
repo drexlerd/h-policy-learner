@@ -1,7 +1,5 @@
 #! /usr/bin/env python
 
-import re
-
 from lab.parser import Parser
 
 

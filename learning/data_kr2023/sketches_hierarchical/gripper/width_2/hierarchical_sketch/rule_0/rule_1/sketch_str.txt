@@ -1,6 +1,6 @@
 (:policy
 (:booleans )
-(:numericals (3917 "n_count(r_primitive(carry,0,1))") (3922 "n_count(c_and(c_one_of(rooma),c_primitive(at-robby,0)))"))
-(:rule (:conditions (:c_n_eq 3917) (:c_n_gt 3922)) (:effects (:e_n_inc 3917)))
-(:rule (:conditions (:c_n_eq 3917) (:c_n_eq 3922)) (:effects (:e_n_bot 3917) (:e_n_inc 3922)))
+(:numericals (3936 "n_concept_distance(c_one_of(roomb),r_primitive(carry,0,1),c_primitive(at-robby,0))") (3917 "n_count(r_primitive(carry,0,1))"))
+(:rule (:conditions (:c_n_gt 3936)) (:effects (:e_n_inc 3917)))
+(:rule (:conditions (:c_n_eq 3917) (:c_n_eq 3936)) (:effects (:e_n_inc 3936)))
 )

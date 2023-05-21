@@ -1,3 +1,0 @@
-(:policy
-(:rule (:conditions (:c_n_gt "n_count(c_primitive(holding,0))")) (:effects (:e_n_dec "n_count(c_not(c_primitive(clear,0)))")))
-)

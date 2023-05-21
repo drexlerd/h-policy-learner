@@ -160,6 +160,9 @@ cython_debug/
 #.idea/
 
 # singularity containers
-*.img
+*.sif
 
 .vscode
+
+# input directories of the learning 
+input/

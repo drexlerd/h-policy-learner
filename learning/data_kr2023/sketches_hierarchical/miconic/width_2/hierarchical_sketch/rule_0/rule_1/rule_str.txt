@@ -1,5 +1,5 @@
 (:policy
 (:booleans )
-(:numericals (1992 "n_count(c_primitive(boarded,0))"))
-(:rule (:conditions (:c_n_eq 1992)) (:effects (:e_n_inc 1992)))
+(:numericals (1994 "n_count(c_primitive(boarded,0))"))
+(:rule (:conditions (:c_n_gt 1994)) (:effects (:e_n_dec 1994)))
 )

@@ -1,3 +1,0 @@
-(:policy
-(:rule (:conditions (:c_n_eq "n_count(c_primitive(empty,0))") (:c_n_eq "n_concept_distance(c_some(r_inverse(r_primitive(at,0,1)),c_primitive(truck,0)),r_primitive(adjacent,0,1),c_some(r_inverse(r_primitive(at_g,0,1)),c_top))")) (:effects (:e_n_inc "n_count(c_primitive(empty,0))") (:e_n_bot "n_concept_distance(c_some(r_inverse(r_primitive(at,0,1)),c_primitive(truck,0)),r_primitive(adjacent,0,1),c_and(c_all(r_inverse(r_primitive(at_g,0,1)),c_bot),c_some(r_inverse(r_primitive(at,0,1)),c_primitive(package,0))))")))
-)

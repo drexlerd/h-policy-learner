@@ -1,5 +1,5 @@
 (:policy
-(:booleans (285 "b_empty(r_and(r_primitive(on,0,1),r_primitive(on_g,0,1)))"))
-(:numericals (517 "n_count(c_not(c_primitive(on-table,0)))"))
-(:rule (:conditions (:c_b_pos 285) (:c_n_eq 517)) (:effects (:e_b_neg 285) (:e_n_inc 517)))
+(:booleans )
+(:numericals (518 "n_count(c_not(c_primitive(on-table,0)))"))
+(:rule (:conditions (:c_n_gt 518)) (:effects (:e_n_dec 518)))
 )

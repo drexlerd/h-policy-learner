@@ -1,6 +1,6 @@
 (:policy
 (:booleans )
-(:numericals (1594 "n_count(c_primitive(picked,0))") (7196 "n_concept_distance(c_primitive(at,0),r_restrict(r_primitive(adjacent,0,1),c_primitive(unblocked,0)),c_primitive(reward,0))"))
-(:rule (:conditions (:c_n_gt 7196)) (:effects (:e_n_bot 1594) (:e_n_dec 7196)))
-(:rule (:conditions (:c_n_eq 7196)) (:effects (:e_n_inc 1594) (:e_n_inc 7196)))
+(:numericals (1593 "n_count(c_primitive(reward,0))") (6322 "n_concept_distance(c_primitive(at,0),r_restrict(r_primitive(adjacent,0,1),c_primitive(unblocked,0)),c_primitive(reward,0))"))
+(:rule (:conditions (:c_n_gt 1593) (:c_n_gt 6322)) (:effects (:e_n_dec 6322)))
+(:rule (:conditions (:c_n_gt 1593) (:c_n_eq 6322)) (:effects (:e_n_dec 1593) (:e_n_inc 6322)))
 )

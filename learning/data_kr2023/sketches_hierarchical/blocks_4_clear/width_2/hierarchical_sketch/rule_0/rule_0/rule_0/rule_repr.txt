@@ -1,3 +1,3 @@
 (:policy
-(:rule (:conditions (:c_n_gt "n_count(c_primitive(holding,0))")) (:effects (:e_n_dec "n_count(c_primitive(holding,0))") (:e_n_bot "n_count(r_primitive(on,0,1))")))
+(:rule (:conditions (:c_b_pos "b_nullary(arm-empty)")) (:effects (:e_b_neg "b_nullary(arm-empty)") (:e_n_bot "n_count(c_primitive(clear,0))")))
 )

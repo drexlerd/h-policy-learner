@@ -2,7 +2,7 @@ import re
 
 from abc import ABC, abstractmethod
 
-import dlplan
+from dlplan.policy import PolicyBuilder
 from clingo import Symbol
 from typing import List
 
@@ -52,7 +52,7 @@ class ExplicitDlplanPolicyFactory(DlplanPolicyFactory):
                     f_idx_to_dlplan_numerical[f_idx] = domain_data.domain_feature_data.numerical_features.f_idx_to_feature[f_idx].dlplan_feature
         return f_idx_to_dlplan_boolean, f_idx_to_dlplan_numerical
 
-    def _add_rules(self, policy_builder: dlplan.PolicyBuilder, symbols: List[Symbol], f_idx_to_dlplan_boolean, f_idx_to_dlplan_numerical):
+    def _add_rules(self, policy_builder: PolicyBuilder, symbols: List[Symbol], f_idx_to_dlplan_boolean, f_idx_to_dlplan_numerical):
         """ """
         rules_dict = dict()
         for symbol in symbols:
@@ -102,9 +102,9 @@ class D2sepDlplanPolicyFactory(DlplanPolicyFactory):
             if symbol.name == "select":
                 f_idx = symbol.arguments[0].number
                 if f_idx < len(domain_data.domain_feature_data.boolean_features.features_by_index):
-                    selected_feature_reprs.add(domain_data.domain_feature_data.boolean_features.features_by_index[f_idx].dlplan_feature.compute_repr())
+                    selected_feature_reprs.add(repr(domain_data.domain_feature_data.boolean_features.features_by_index[f_idx].dlplan_feature))
                 else:
-                    selected_feature_reprs.add(domain_data.domain_feature_data.numerical_features.features_by_index[f_idx - len(domain_data.domain_feature_data.boolean_features.features_by_index)].dlplan_feature.compute_repr())
+                    selected_feature_reprs.add(repr(domain_data.domain_feature_data.numerical_features.features_by_index[f_idx - len(domain_data.domain_feature_data.boolean_features.features_by_index)].dlplan_feature))
         rules = set()
         for symbol in symbols:
             if symbol.name == "good":
@@ -112,12 +112,18 @@ class D2sepDlplanPolicyFactory(DlplanPolicyFactory):
                 rule = domain_data.domain_state_pair_equivalence.rules[r_idx]
                 conditions = []
                 for condition in rule.get_conditions():
-                    if condition.get_base_feature().compute_repr() in selected_feature_reprs:
+                    feature = condition.get_boolean()
+                    if feature is None:
+                        feature = condition.get_numerical()
+                    if repr(feature) in selected_feature_reprs:
                         new_condition = condition.copy_to_builder(policy_builder)
                         conditions.append(new_condition)
                 effects = []
                 for effect in rule.get_effects():
-                    if effect.get_base_feature().compute_repr() in selected_feature_reprs:
+                    feature = effect.get_boolean()
+                    if feature is None:
+                        feature = effect.get_numerical()
+                    if repr(feature) in selected_feature_reprs:
                         new_effect = effect.copy_to_builder(policy_builder)
                         effects.append(new_effect)
                 rules.add(policy_builder.add_rule(conditions, effects))

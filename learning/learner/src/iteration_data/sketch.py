@@ -1,4 +1,5 @@
-import dlplan
+from dlplan.policy import Policy
+
 import math
 from termcolor import colored
 from typing import Dict, MutableSet, List
@@ -8,7 +9,7 @@ from learner.src.instance_data.instance_data import InstanceData
 
 
 class Sketch:
-    def __init__(self, dlplan_policy: dlplan.Policy, width: int):
+    def __init__(self, dlplan_policy: Policy, width: int):
         self.dlplan_policy = dlplan_policy
         self.width = width
 
@@ -45,8 +46,10 @@ class Sketch:
             if not rule.evaluate_conditions(source_state, instance_data.denotations_caches):
                 continue
             min_compatible_distance = math.inf
-            for tuple_distance, tuple_nodes in enumerate(instance_data.tuple_graphs[root_idx].get_tuple_nodes_by_distance()):
-                for tuple_node in tuple_nodes:
+            tuple_graph = instance_data.tuple_graphs[root_idx]
+            for tuple_distance, tuple_node_indices in enumerate(tuple_graph.get_tuple_node_indices_by_distance()):
+                for tuple_node_index in tuple_node_indices:
+                    tuple_node = tuple_graph.get_tuple_nodes()[tuple_node_index]
                     subgoal = True
                     for s_prime_idx in tuple_node.get_state_indices():
                         target_state = instance_data.state_space.get_states()[s_prime_idx]
@@ -96,8 +99,10 @@ class Sketch:
             root_state = instance_data.state_space.get_states()[root_idx]
             if not rule.evaluate_conditions(root_state, instance_data.denotations_caches):
                 continue
-            for tuple_nodes in instance_data.tuple_graphs[root_idx].get_tuple_nodes_by_distance():
-                for tuple_node in tuple_nodes:
+            tuple_graph = instance_data.tuple_graphs[root_idx]
+            for tuple_node_indices in tuple_graph.get_tuple_node_indices_by_distance():
+                for tuple_node_index in tuple_node_indices:
+                    tuple_node = tuple_graph.get_tuple_nodes()[tuple_node_index]
                     for s_prime_idx in tuple_node.get_state_indices():
                         target_state = instance_data.state_space.get_states()[s_prime_idx]
                         if rule.evaluate_effects(root_state, target_state, instance_data.denotations_caches):
@@ -187,8 +192,8 @@ class Sketch:
         return True
 
     def print(self):
-        print(self.dlplan_policy.compute_repr())
-        print(self.dlplan_policy.str())
+        print(repr(self.dlplan_policy))
+        print(str(self.dlplan_policy))
         print("Numer of sketch rules:", len(self.dlplan_policy.get_rules()))
         print("Number of selected features:", len(self.dlplan_policy.get_booleans()) + len(self.dlplan_policy.get_numericals()))
         print("Maximum complexity of selected feature:", max([0] + [boolean.compute_complexity() for boolean in self.dlplan_policy.get_booleans()] + [numerical.compute_complexity() for numerical in self.dlplan_policy.get_numericals()]))

@@ -1,5 +1,6 @@
+from dlplan.policy import PolicyMinimizer
+
 import logging
-import dlplan
 
 from termcolor import colored
 from typing import List
@@ -142,6 +143,6 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
     print("Resulting sketch:")
     sketch.print()
     print("Resulting sketch minimized:")
-    sketch_minimized = Sketch(dlplan.PolicyMinimizer().minimize(sketch.dlplan_policy, domain_data.policy_builder), sketch.width)
+    sketch_minimized = Sketch(PolicyMinimizer().minimize(sketch.dlplan_policy, domain_data.policy_builder), sketch.width)
     sketch_minimized.print()
     return sketch, sketch_minimized, learning_statistics

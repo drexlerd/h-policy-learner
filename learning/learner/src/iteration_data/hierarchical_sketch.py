@@ -1,8 +1,8 @@
+from dlplan.core import Boolean, Numerical
+
 import copy
-import dlplan
 import logging
 
-from copy import deepcopy
 from termcolor import colored
 from pathlib import Path
 from typing import List
@@ -18,7 +18,7 @@ from learner.src.iteration_data.learn_sketch_explicit import learn_sketch
 from learner.src.iteration_data.learn_goal_separating_features import learn_goal_separating_features
 
 
-def add_zero_cost_features(domain_feature_data: DomainFeatureData, booleans: List[dlplan.Boolean], numericals: List[dlplan.Numerical]):
+def add_zero_cost_features(domain_feature_data: DomainFeatureData, booleans: List[Boolean], numericals: List[Numerical]):
     #for boolean in booleans:
     #    domain_feature_data.boolean_features.add_feature(Feature(boolean, 1))
     for numerical in numericals:
@@ -49,8 +49,8 @@ class HierarchicalSketch:
         if rule is None:
             self._initialize_goal_separating_features()
         else:
-            write_file(self.workspace_output / "rule_str.txt", self.rule.dlplan_policy.str())
-            write_file(self.workspace_output / "rule_repr.txt", self.rule.dlplan_policy.compute_repr())
+            write_file(self.workspace_output / "rule_str.txt", str(self.rule.dlplan_policy))
+            write_file(self.workspace_output / "rule_repr.txt", repr(self.rule.dlplan_policy))
 
         self.sketch = None
         self.sketch_minimized = None
@@ -73,12 +73,12 @@ class HierarchicalSketch:
 
         logging.info(colored("Started refining", "red", "on_grey"))
         if self.rule is not None:
-            print(self.rule.dlplan_policy.compute_repr())
+            print(repr(self.rule.dlplan_policy))
 
         # Learn sketch for width k-1
         self.sketch, self.sketch_minimized, self.statistics = learn_sketch(self.config, self.domain_data, self.instance_datas, self.zero_cost_domain_feature_data, self.workspace_learning, self.width - 1)
-        write_file(self.workspace_output / "sketch_str.txt", self.sketch.dlplan_policy.str())
-        write_file(self.workspace_output / "sketch_repr.txt", self.sketch.dlplan_policy.compute_repr())
+        write_file(self.workspace_output / "sketch_str.txt", str(self.sketch.dlplan_policy))
+        write_file(self.workspace_output / "sketch_repr.txt", repr(self.sketch.dlplan_policy))
         child_zero_cost_domain_feature_data = copy.copy(self.zero_cost_domain_feature_data)
         if self.config.add_parent_features:
             add_zero_cost_features(child_zero_cost_domain_feature_data, self.sketch.dlplan_policy.get_booleans(), self.sketch.dlplan_policy.get_numericals())
@@ -108,8 +108,8 @@ class HierarchicalSketch:
         self.print_rec(level=0)
         print("HierarchicalPolicyStatistics:")
         print("    Max feature complexity (C):", max([feature.compute_complexity() for feature in self.collect_features()]))
-        print("    Num features (|Phi|):", len(set([feature.compute_repr() for feature in self.collect_features()])))
-        print("    Num rules (R):", len(set([rule.compute_repr() for rule in self.collect_rules()])))
+        print("    Num features (|Phi|):", len(set([repr(feature) for feature in self.collect_features()])))
+        print("    Num rules (R):", len(set([repr(rule) for rule in self.collect_rules()])))
         print("    Max rules (m):", self.collect_max_rules())
         self.compute_overall_learning_statistics().print()
 
@@ -118,7 +118,7 @@ class HierarchicalSketch:
         if self.sketch is not None:
             print(colored("    " * level + f"Level {level} sketch:", "green", "on_grey"))
             if self.sketch is not None:
-                print(self.sketch.dlplan_policy.str())
+                print(str(self.sketch.dlplan_policy))
                 for child in self.children:
                     child.print_rec(level+1)
             else:
@@ -146,7 +146,7 @@ class HierarchicalSketch:
                 rules.extend(child.collect_rules())
         rules.extend(self.sketch.dlplan_policy.get_rules())
         return rules
-    
+
     def collect_max_rules(self):
         """ Returns maximum number of rules in a sketch in the hierarchical policy. """
         if self.sketch is None:

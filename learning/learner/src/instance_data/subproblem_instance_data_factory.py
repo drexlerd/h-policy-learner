@@ -1,4 +1,6 @@
-import dlplan
+from dlplan.policy import Rule
+from dlplan.state_space import StateSpace
+
 import math
 
 from collections import defaultdict
@@ -11,7 +13,7 @@ from learner.src.iteration_data.sketch import Sketch
 
 
 class SubproblemInstanceDataFactory:
-    def make_subproblems(self, config, instance_datas: List[InstanceData], sketch: Sketch, rule: dlplan.Rule, r_idx: int, width: int):
+    def make_subproblems(self, config, instance_datas: List[InstanceData], sketch: Sketch, rule: Rule, r_idx: int, width: int):
         features = list(sketch.dlplan_policy.get_booleans()) + list(sketch.dlplan_policy.get_numericals())
         subproblem_instance_datas = []
         for instance_data in instance_datas:
@@ -75,7 +77,7 @@ class SubproblemInstanceDataFactory:
                         covered_relevant_s_idxs.add(initial_s_prime_idx)
 
                     # 6. Instantiate subproblem for initial state and subgoals.
-                    subproblem_state_space = dlplan.StateSpace(
+                    subproblem_state_space = StateSpace(
                         instance_data.state_space,
                         state_indices)
                     subproblem_state_space.set_initial_state_index(initial_s_idx)

@@ -111,7 +111,7 @@ class ASPFactory:
         for r_idx, rule in enumerate(domain_data.domain_state_pair_equivalence.rules):
             facts.append(("state_pair_class", [Number(r_idx)]))
             for condition in rule.get_conditions():
-                condition_str = condition.str()
+                condition_str = str(condition)
                 result = re.findall(r"\(.* (\d+)\)", condition_str)
                 assert len(result) == 1
                 f_idx = int(result[0])
@@ -130,7 +130,7 @@ class ASPFactory:
                 else:
                     raise RuntimeError(f"Cannot parse condition {condition_str}")
             for effect in rule.get_effects():
-                effect_str = effect.str()
+                effect_str = str(effect)
                 result = re.findall(r"\(.* (\d+)\)", effect_str)
                 assert len(result) == 1
                 f_idx = int(result[0])
@@ -183,6 +183,7 @@ class ASPFactory:
                     facts.append(("t_distance", [Number(instance_data.id), Number(s_idx), Number(t_idx), Number(d)]))
                 for r_idx, d in tuple_graph_equivalence.r_idx_to_deadend_distance.items():
                     facts.append(("d_distance", [Number(instance_data.id), Number(s_idx), Number(r_idx), Number(d)]))
+        print(facts)
         return facts
 
     def make_tuple_graph_facts(self, instance_datas: List[InstanceData]):

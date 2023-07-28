@@ -1,5 +1,6 @@
+from dlplan.core import Boolean, Numerical, State
+
 import logging
-import dlplan
 import re
 
 from clingo import Symbol
@@ -18,12 +19,12 @@ from learner.src.util.command import create_experiment_workspace
 from learner.src.domain_data.domain_data import DomainData
 
 
-def compute_state_b_values(booleans: List[dlplan.Boolean], numericals: List[dlplan.Numerical], instance_data: InstanceData, state: dlplan.State):
+def compute_state_b_values(booleans: List[Boolean], numericals: List[Numerical], instance_data: InstanceData, state: State):
     """ """
     return tuple([boolean.evaluate(state) for boolean in booleans] + [numerical.evaluate(state) > 0 for numerical in numericals])
 
 
-def compute_smallest_unsolved_instance(booleans: List[dlplan.Boolean], numericals: List[dlplan.Numerical], instance_datas: List[InstanceData]):
+def compute_smallest_unsolved_instance(booleans: List[Boolean], numericals: List[Numerical], instance_datas: List[InstanceData]):
     """ """
     goal_b_values = set()
     nongoal_b_values = set()
@@ -124,8 +125,8 @@ def learn_goal_separating_features(config, domain_data, instance_datas, zero_cos
 
         logging.info("Learned the following goal separating features:")
         booleans, numericals = parse_features_from_answer_set(symbols, domain_data)
-        print("\n".join([boolean.compute_repr() for boolean in booleans]))
-        print("\n".join([numerical.compute_repr() for numerical in numericals]))
+        print("\n".join([repr(boolean) for boolean in booleans]))
+        print("\n".join([repr(numerical) for numerical in numericals]))
         assert compute_smallest_unsolved_instance(booleans, numericals, selected_instance_datas) is None
 
         logging.info(colored("Verifying goal separating features...", "blue", "on_grey"))

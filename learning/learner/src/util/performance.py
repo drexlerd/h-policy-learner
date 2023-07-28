@@ -5,8 +5,6 @@ import os
 import resource
 import tracemalloc
 
-from learner.src.util import console
-
 
 def display_top(snapshot, key_type='lineno', limit=3):
     snapshot = snapshot.filter_traces((

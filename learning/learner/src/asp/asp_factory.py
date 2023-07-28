@@ -183,7 +183,6 @@ class ASPFactory:
                     facts.append(("t_distance", [Number(instance_data.id), Number(s_idx), Number(t_idx), Number(d)]))
                 for r_idx, d in tuple_graph_equivalence.r_idx_to_deadend_distance.items():
                     facts.append(("d_distance", [Number(instance_data.id), Number(s_idx), Number(r_idx), Number(d)]))
-        print(facts)
         return facts
 
     def make_tuple_graph_facts(self, instance_datas: List[InstanceData]):

@@ -61,7 +61,7 @@ class TupleGraphEquivalenceFactory:
                         t_idx_to_distance[t_idx] = subgoal_distance
                         t_idx_to_r_idxs[t_idx] = r_idxs
                 tuple_graph_equivalence = TupleGraphEquivalence(t_idx_to_r_idxs, t_idx_to_distance, r_idx_to_deadend_distance)
-                tuple_graph_equivalence.print()
+                # tuple_graph_equivalence.print()
                 tuple_graph_equivalences[s_idx] = tuple_graph_equivalence
                 self.statistics.collect_statistics(tuple_graph_equivalence)
             instance_data.tuple_graph_equivalences = tuple_graph_equivalences

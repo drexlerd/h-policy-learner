@@ -12,7 +12,7 @@ from dlplan.core import DenotationsCaches
 from dlplan.state_space import GeneratorExitCode, generate_state_space
 
 from learner.src.domain_data.domain_data import DomainData
-from learner.src.domain_data.domain_data_factory import DomainDataFactory
+from learner.src.domain_data.domain_data_utils import compute_domain_data
 from learner.src.instance_data.instance_data import InstanceData
 from learner.src.instance_data.instance_information import InstanceInformation
 from learner.src.instance_data.tuple_graph_factory import TupleGraphFactory
@@ -37,7 +37,7 @@ def compute_instance_datas(config) -> Tuple[List[InstanceData], DomainData]:
         if vocabulary_info is None:
             # We obtain the parsed vocabulary from the first instance
             vocabulary_info = state_space.get_instance_info().get_vocabulary_info()
-            domain_data = DomainDataFactory().make_domain_data(config, vocabulary_info)
+            domain_data = compute_domain_data(config, vocabulary_info)
         if len(state_space.get_states()) > config.max_states_per_instance:
             continue
         goal_distances = state_space.compute_goal_distances()

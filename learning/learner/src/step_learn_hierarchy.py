@@ -6,7 +6,7 @@ from termcolor import colored
 from learner.src.returncodes import ExitCode
 from learner.src.instance_data.instance_data_factory import InstanceDataFactory
 from learner.src.iteration_data.hierarchical_sketch import HierarchicalSketch
-from learner.src.iteration_data.domain_feature_data import DomainFeatureData
+from learner.src.iteration_data.feature_pool import FeaturePool
 
 
 def run(config, data, rng):
@@ -20,7 +20,7 @@ def run(config, data, rng):
         config,
         domain_data,
         instance_datas,  # Q_n
-        DomainFeatureData(),
+        FeaturePool(),
         config.width + 1,  # Assume Q_n has width k+1, s.t. in first sketch computation sketch has width k+1-1=k
     )
     # Learn sketches in BrFS mode, i.e., refine sketches with largest width first

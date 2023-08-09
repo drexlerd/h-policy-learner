@@ -7,7 +7,7 @@ from typing import List, Dict
 
 from learner.src.domain_data.domain_data import DomainData
 from learner.src.instance_data.instance_information import InstanceInformation
-from learner.src.iteration_data.feature_valuations import StateFeatureValuation
+from learner.src.iteration_data.feature_valuations import PerStateFeatureValuations
 from learner.src.iteration_data.state_pair_equivalence import StatePairEquivalence
 from learner.src.iteration_data.tuple_graph_equivalence import TupleGraphEquivalence
 from learner.src.util.command import write_file
@@ -24,9 +24,7 @@ class InstanceData:
     goal_distances: Dict[int, int] = None
     tuple_graphs: Dict[int, TupleGraph] = None
     initial_s_idxs: List[int] = None  # in cases we need multiple initial states
-    feature_valuations: List[StateFeatureValuation] = None
-    boolean_feature_valuations: Dict[int, List[bool]] = None
-    numerical_feature_valuations: Dict[int, List[int]] = None
+    per_state_feature_valuations: PerStateFeatureValuations = None
     state_pair_equivalences: Dict[int, StatePairEquivalence] = None
     tuple_graph_equivalences: Dict[int, TupleGraphEquivalence] = None
 
@@ -43,11 +41,11 @@ class InstanceData:
                 create_experiment_workspace(self.instance_information.workspace / "tuple_graphs", False)
                 write_file(self.instance_information.workspace / "tuple_graphs" / f"{tuple_graph.get_root_state_index()}.dot", tuple_graph.to_dot(1))
 
-    def set_feature_valuations(self, feature_valuations: List[StateFeatureValuation], create_dump=False):
-        self.feature_valuations = feature_valuations
+    def set_per_state_feature_valuations(self, per_state_feature_valuations: PerStateFeatureValuations, create_dump=False):
+        self.per_state_feature_valuations = per_state_feature_valuations
         if create_dump:
             create_experiment_workspace(self.instance_information.workspace, False)
-            write_file(self.instance_information.workspace / self.instance_information.name / "feature_valuations.txt", str(self.feature_valuations))
+            write_file(self.instance_information.workspace / self.instance_information.name / "per_state_feature_valuations.txt", str(self.per_state_feature_valuations))
 
     def set_state_pair_equivalences(self, state_pair_equivalences: Dict[int, StatePairEquivalence]):
         self.state_pair_equivalences = state_pair_equivalences

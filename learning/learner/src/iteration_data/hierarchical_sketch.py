@@ -12,17 +12,17 @@ from learner.src.domain_data.domain_data import DomainData
 from learner.src.iteration_data.sketch import Sketch
 from learner.src.iteration_data.learning_statistics import LearningStatistics
 from learner.src.instance_data.subproblem_instance_data_factory import SubproblemInstanceDataFactory
-from learner.src.iteration_data.domain_feature_data import DomainFeatureData, Feature
+from learner.src.iteration_data.feature_pool import Feature, FeaturePool
 from learner.src.util.command import create_experiment_workspace, write_file
 from learner.src.iteration_data.learn_sketch_explicit import learn_sketch
 from learner.src.iteration_data.learn_goal_separating_features import learn_goal_separating_features
 
 
-def add_zero_cost_features(domain_feature_data: DomainFeatureData, booleans: List[Boolean], numericals: List[Numerical]):
+def add_zero_cost_features(feature_pool: FeaturePool, booleans: List[Boolean], numericals: List[Numerical]):
     #for boolean in booleans:
     #    domain_feature_data.boolean_features.add_feature(Feature(boolean, 1))
     for numerical in numericals:
-        domain_feature_data.numerical_features.add_feature(Feature(numerical, 1))
+        feature_pool.numerical_features.add_feature(Feature(numerical, 1))
 
 
 class HierarchicalSketch:
@@ -32,7 +32,7 @@ class HierarchicalSketch:
         config,
         domain_data: DomainData,
         instance_datas: List[InstanceData],
-        zero_cost_domain_feature_data: DomainFeatureData,
+        zero_cost_feature_pool: FeaturePool,
         width: int,
         rule: Sketch=None):
         assert width >= 0
@@ -43,7 +43,7 @@ class HierarchicalSketch:
         self.config = config
         self.domain_data = domain_data
         self.instance_datas = instance_datas  # Q_n0
-        self.zero_cost_domain_feature_data = zero_cost_domain_feature_data  # features that are used in sketches of the parents
+        self.zero_cost_feature_pool = zero_cost_feature_pool  # features that are used in sketches of the parents
         self.width = width  # width k of the subproblems in the current node. In the root we use config.width+1 such that first decompositions yields problems with width config.width
         self.rule = rule
         if rule is None:
@@ -60,9 +60,9 @@ class HierarchicalSketch:
     def _initialize_goal_separating_features(self):
         """ Instead of computing rule {-G}->{G} consisting of goal separating features,
             we only compute the goal separating features to be reused in subsequent refinements. """
-        booleans, numericals = learn_goal_separating_features(self.config, self.domain_data, self.instance_datas, self.zero_cost_domain_feature_data, self.workspace_learning)
+        booleans, numericals = learn_goal_separating_features(self.config, self.domain_data, self.instance_datas, self.zero_cost_feature_pool, self.workspace_learning)
         if self.config.add_parent_features:
-            add_zero_cost_features(self.zero_cost_domain_feature_data, booleans, numericals)
+            add_zero_cost_features(self.zero_cost_feature_pool, booleans, numericals)
 
     def refine(self):
         """ Decomposes Q_n `self.instance_datas` at current node into subproblems of width `self.width` """
@@ -76,12 +76,12 @@ class HierarchicalSketch:
             print(repr(self.rule.dlplan_policy))
 
         # Learn sketch for width k-1
-        self.sketch, self.sketch_minimized, self.statistics = learn_sketch(self.config, self.domain_data, self.instance_datas, self.zero_cost_domain_feature_data, self.workspace_learning, self.width - 1)
+        self.sketch, self.sketch_minimized, self.statistics = learn_sketch(self.config, self.domain_data, self.instance_datas, self.zero_cost_feature_pool, self.workspace_learning, self.width - 1)
         write_file(self.workspace_output / "sketch_str.txt", str(self.sketch.dlplan_policy))
         write_file(self.workspace_output / "sketch_repr.txt", repr(self.sketch.dlplan_policy))
-        child_zero_cost_domain_feature_data = copy.copy(self.zero_cost_domain_feature_data)
+        child_zero_cost_feature_pool = copy.copy(self.zero_cost_feature_pool)
         if self.config.add_parent_features:
-            add_zero_cost_features(child_zero_cost_domain_feature_data, self.sketch.dlplan_policy.get_booleans(), self.sketch.dlplan_policy.get_numericals())
+            add_zero_cost_features(child_zero_cost_feature_pool, self.sketch.dlplan_policy.get_booleans(), self.sketch.dlplan_policy.get_numericals())
         # Inductive case: compute children n' of n
         for r_idx, rule in enumerate(self.sketch.dlplan_policy.get_rules()):
             # compute Q_n' of width k-1
@@ -95,7 +95,7 @@ class HierarchicalSketch:
                 self.config,
                 self.domain_data,
                 subproblem_instance_datas,
-                child_zero_cost_domain_feature_data,
+                child_zero_cost_feature_pool,
                 self.width - 1,
                 rule_sketch)
             self.children.append(child)

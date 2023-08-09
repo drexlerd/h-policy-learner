@@ -46,10 +46,10 @@ class ExplicitDlplanPolicyFactory(DlplanPolicyFactory):
             if symbol.name == "select":
                 if symbol.arguments[0].string[0] == "b":
                     f_idx = extract_f_idx_from_argument(symbol.arguments[0].string)
-                    f_idx_to_dlplan_boolean[f_idx] = domain_data.domain_feature_data.boolean_features.f_idx_to_feature[f_idx].dlplan_feature
+                    f_idx_to_dlplan_boolean[f_idx] = domain_data.feature_pool.boolean_features.f_idx_to_feature[f_idx].dlplan_feature
                 elif symbol.arguments[0].string[0] == "n":
                     f_idx = extract_f_idx_from_argument(symbol.arguments[0].string)
-                    f_idx_to_dlplan_numerical[f_idx] = domain_data.domain_feature_data.numerical_features.f_idx_to_feature[f_idx].dlplan_feature
+                    f_idx_to_dlplan_numerical[f_idx] = domain_data.feature_pool.numerical_features.f_idx_to_feature[f_idx].dlplan_feature
         return f_idx_to_dlplan_boolean, f_idx_to_dlplan_numerical
 
     def _add_rules(self, policy_builder: PolicyBuilder, symbols: List[Symbol], f_idx_to_dlplan_boolean, f_idx_to_dlplan_numerical):
@@ -101,10 +101,10 @@ class D2sepDlplanPolicyFactory(DlplanPolicyFactory):
         for symbol in symbols:
             if symbol.name == "select":
                 f_idx = symbol.arguments[0].number
-                if f_idx < len(domain_data.domain_feature_data.boolean_features.features_by_index):
-                    selected_feature_reprs.add(repr(domain_data.domain_feature_data.boolean_features.features_by_index[f_idx].dlplan_feature))
+                if f_idx < len(domain_data.feature_pool.boolean_features.features_by_index):
+                    selected_feature_reprs.add(repr(domain_data.feature_pool.boolean_features.features_by_index[f_idx].dlplan_feature))
                 else:
-                    selected_feature_reprs.add(repr(domain_data.domain_feature_data.numerical_features.features_by_index[f_idx - len(domain_data.domain_feature_data.boolean_features.features_by_index)].dlplan_feature))
+                    selected_feature_reprs.add(repr(domain_data.feature_pool.numerical_features.features_by_index[f_idx - len(domain_data.feature_pool.boolean_features.features_by_index)].dlplan_feature))
         rules = set()
         for symbol in symbols:
             if symbol.name == "good":

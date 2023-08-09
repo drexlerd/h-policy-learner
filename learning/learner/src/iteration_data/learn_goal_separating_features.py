@@ -12,8 +12,8 @@ from learner.src.asp.asp_factory import ASPFactory
 from learner.src.asp.returncodes import ClingoExitCode
 from learner.src.instance_data.instance_data import InstanceData
 from learner.src.instance_data.instance_information import InstanceInformation
-from learner.src.iteration_data.domain_feature_data_factory import DomainFeatureDataFactory
-from learner.src.iteration_data.feature_valuations_factory import FeatureValuationsFactory
+from learner.src.iteration_data.feature_pool_utils import compute_feature_pool
+from learner.src.iteration_data.feature_valuations_utils import compute_per_state_feature_valuations
 from learner.src.util.timer import CountDownTimer
 from learner.src.util.command import create_experiment_workspace
 from learner.src.domain_data.domain_data import DomainData
@@ -58,10 +58,10 @@ def parse_features_from_answer_set(symbols: List[Symbol], domain_data: DomainDat
             assert isinstance(symbol, Symbol)
             if symbol.arguments[0].string[0] == "b":
                 f_idx = int(re.findall(r"b(.+)", symbol.arguments[0].string)[0])
-                booleans.append(domain_data.domain_feature_data.boolean_features.f_idx_to_feature[f_idx].dlplan_feature)
+                booleans.append(domain_data.feature_pool.boolean_features.f_idx_to_feature[f_idx].dlplan_feature)
             elif symbol.arguments[0].string[0] == "n":
                 f_idx = int(re.findall(r"n(.+)", symbol.arguments[0].string)[0])
-                numericals.append(domain_data.domain_feature_data.numerical_features.f_idx_to_feature[f_idx].dlplan_feature)
+                numericals.append(domain_data.feature_pool.numerical_features.f_idx_to_feature[f_idx].dlplan_feature)
     return booleans, numericals
 
 
@@ -87,21 +87,17 @@ def learn_goal_separating_features(config, domain_data, instance_datas, zero_cos
             print("     id:", instance_data.id, "name:", instance_data.instance_information.name)
 
         logging.info(colored("Initializing DomainFeatureData...", "blue", "on_grey"))
-        domain_feature_data_factory = DomainFeatureDataFactory()
-        domain_feature_data_factory.make_domain_feature_data_from_instance_datas(config, domain_data, selected_instance_datas)
-        domain_feature_data_factory.statistics.print()
+        domain_data.feature_pool = compute_feature_pool(config, domain_data, selected_instance_datas)
         for zero_cost_boolean_feature in zero_cost_domain_feature_data.boolean_features.f_idx_to_feature.values():
-            domain_data.domain_feature_data.boolean_features.add_feature(zero_cost_boolean_feature)
+            domain_data.feature_pool.boolean_features.add_feature(zero_cost_boolean_feature)
         for zero_cost_numerical_feature in zero_cost_domain_feature_data.numerical_features.f_idx_to_feature.values():
-            domain_data.domain_feature_data.numerical_features.add_feature(zero_cost_numerical_feature)
+            domain_data.feature_pool.numerical_features.add_feature(zero_cost_numerical_feature)
         logging.info(colored("..done", "blue", "on_grey"))
 
         logging.info(colored("Initializing InstanceFeatureDatas...", "blue", "on_grey"))
         for instance_data in selected_instance_datas:
-            state_feature_valuations, boolean_feature_valuations, numerical_feature_valuations = FeatureValuationsFactory().make_feature_valuations(instance_data)
-            instance_data.set_feature_valuations(state_feature_valuations)
-            instance_data.boolean_feature_valuations = boolean_feature_valuations
-            instance_data.numerical_feature_valuations = numerical_feature_valuations
+            per_state_feature_valuations = compute_per_state_feature_valuations(instance_data)
+            instance_data.set_per_state_feature_valuations(per_state_feature_valuations)
         logging.info(colored("..done", "blue", "on_grey"))
 
         asp_factory = ASPFactory()

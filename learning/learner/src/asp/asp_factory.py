@@ -81,11 +81,11 @@ class ASPFactory:
     def make_domain_feature_data_facts(self, domain_data: DomainData):
         facts = []
         # Domain feature facts
-        for b_idx, boolean in domain_data.domain_feature_data.boolean_features.f_idx_to_feature.items():
+        for b_idx, boolean in domain_data.feature_pool.boolean_features.f_idx_to_feature.items():
             facts.append(("boolean", [String(f"b{b_idx}")]))
             facts.append(("feature", [String(f"b{b_idx}")]))
             facts.append(("complexity", [String(f"b{b_idx}"), Number(boolean.complexity)]))
-        for n_idx, numerical in domain_data.domain_feature_data.numerical_features.f_idx_to_feature.items():
+        for n_idx, numerical in domain_data.feature_pool.numerical_features.f_idx_to_feature.items():
             facts.append(("numerical", [String(f"n{n_idx}")]))
             facts.append(("feature", [String(f"n{n_idx}")]))
             facts.append(("complexity", [String(f"n{n_idx}"), Number(numerical.complexity)]))
@@ -96,7 +96,7 @@ class ASPFactory:
         # Instance feature valuation facts
         for instance_data in instance_datas:
             for s_idx in instance_data.state_space.get_states().keys():
-                feature_valuation = instance_data.feature_valuations[s_idx]
+                feature_valuation = instance_data.per_state_feature_valuations.s_idx_to_feature_valuations[s_idx]
                 for b_idx, f_val in feature_valuation.b_idx_to_val.items():
                     facts.append(("value", [Number(instance_data.id), Number(s_idx), String(f"b{b_idx}"), Number(f_val)]))
                     facts.append(("b_value", [Number(instance_data.id), Number(s_idx), String(f"b{b_idx}"), Number(f_val)]))

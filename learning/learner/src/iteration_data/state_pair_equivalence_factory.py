@@ -9,8 +9,8 @@ from typing import List
 from learner.src.domain_data.domain_data import DomainData
 from learner.src.instance_data.instance_data import InstanceData
 from learner.src.iteration_data.state_pair_equivalence import DomainStatePairEquivalence, StatePairEquivalence
-from learner.src.iteration_data.domain_feature_data import DomainFeatureData
-from learner.src.iteration_data.feature_valuations import StateFeatureValuation
+from learner.src.iteration_data.feature_pool import FeaturePool
+from learner.src.iteration_data.feature_valuations import FeatureValuations
 
 
 @dataclass
@@ -50,12 +50,12 @@ class StatePairEquivalenceFactory:
                 r_idx_to_subgoal_states = defaultdict(set)
                 subgoal_states_to_r_idx = dict()
                 # add conditions
-                conditions = self._make_conditions(policy_builder, domain_data.domain_feature_data, instance_data.feature_valuations[s_idx])
+                conditions = self._make_conditions(policy_builder, domain_data.feature_pool, instance_data.per_state_feature_valuations.s_idx_to_feature_valuations[s_idx])
                 for d, s_prime_idxs in enumerate(tuple_graph.get_state_indices_by_distance()):
                     for s_prime_idx in s_prime_idxs:
                         self.statistics.increment_num_subgoal_states()
                         # add effects
-                        effects = self._make_effects(policy_builder, domain_data.domain_feature_data, instance_data.feature_valuations[s_idx], instance_data.feature_valuations[s_prime_idx])
+                        effects = self._make_effects(policy_builder, domain_data.feature_pool, instance_data.per_state_feature_valuations.s_idx_to_feature_valuations[s_idx], instance_data.per_state_feature_valuations.s_idx_to_feature_valuations[s_prime_idx])
                         # add rule
                         rule = policy_builder.add_rule(conditions, effects)
                         rule_repr = repr(rule)
@@ -76,17 +76,17 @@ class StatePairEquivalenceFactory:
 
     def _make_conditions(self,
         policy_builder: PolicyBuilder,
-        domain_feature_data: DomainFeatureData,
-        feature_valuations: StateFeatureValuation):
+        feature_pool: FeaturePool,
+        feature_valuations: FeatureValuations):
         """ Create conditions over all features that are satisfied in source_idx """
         conditions = set()
-        for b_idx, boolean in domain_feature_data.boolean_features.f_idx_to_feature.items():
+        for b_idx, boolean in feature_pool.boolean_features.f_idx_to_feature.items():
             val = feature_valuations.b_idx_to_val[b_idx]
             if val:
                 conditions.add(policy_builder.add_pos_condition(boolean.dlplan_feature))
             else:
                 conditions.add(policy_builder.add_neg_condition(boolean.dlplan_feature))
-        for n_idx, numerical in domain_feature_data.numerical_features.f_idx_to_feature.items():
+        for n_idx, numerical in feature_pool.numerical_features.f_idx_to_feature.items():
             val = feature_valuations.n_idx_to_val[n_idx]
             if val > 0:
                 conditions.add(policy_builder.add_gt_condition(numerical.dlplan_feature))
@@ -96,12 +96,12 @@ class StatePairEquivalenceFactory:
 
     def _make_effects(self,
         policy_builder: PolicyBuilder,
-        domain_feature_data: DomainFeatureData,
-        source_feature_valuations: StateFeatureValuation,
-        target_feature_valuations: StateFeatureValuation):
+        feature_pool: FeaturePool,
+        source_feature_valuations: FeatureValuations,
+        target_feature_valuations: FeatureValuations):
         """ Create effects over all features that are satisfied in (source_idx,target_idx) """
         effects = set()
-        for b_idx, boolean in domain_feature_data.boolean_features.f_idx_to_feature.items():
+        for b_idx, boolean in feature_pool.boolean_features.f_idx_to_feature.items():
             source_val = source_feature_valuations.b_idx_to_val[b_idx]
             target_val = target_feature_valuations.b_idx_to_val[b_idx]
             if source_val and not target_val:
@@ -110,7 +110,7 @@ class StatePairEquivalenceFactory:
                 effects.add(policy_builder.add_pos_effect(boolean.dlplan_feature))
             else:
                 effects.add(policy_builder.add_bot_effect(boolean.dlplan_feature))
-        for n_idx, numerical in domain_feature_data.numerical_features.f_idx_to_feature.items():
+        for n_idx, numerical in feature_pool.numerical_features.f_idx_to_feature.items():
             source_val = source_feature_valuations.n_idx_to_val[n_idx]
             target_val = target_feature_valuations.n_idx_to_val[n_idx]
             if source_val > target_val:

@@ -10,9 +10,9 @@ from learner.src.asp.returncodes import ClingoExitCode
 from learner.src.instance_data.instance_data import InstanceData
 from learner.src.instance_data.instance_information import InstanceInformation
 from learner.src.instance_data.tuple_graph_factory import TupleGraphFactory
-from learner.src.iteration_data.domain_feature_data import DomainFeatureData
-from learner.src.iteration_data.domain_feature_data_factory import DomainFeatureDataFactory
-from learner.src.iteration_data.feature_valuations_factory import FeatureValuationsFactory
+from learner.src.iteration_data.feature_pool import FeaturePool
+from learner.src.iteration_data.feature_pool_utils import compute_feature_pool
+from learner.src.iteration_data.feature_valuations_utils import compute_per_state_feature_valuations
 from learner.src.iteration_data.dlplan_policy_factory import ExplicitDlplanPolicyFactory
 from learner.src.iteration_data.sketch import Sketch
 from learner.src.iteration_data.state_pair_equivalence_factory import StatePairEquivalenceFactory
@@ -30,7 +30,7 @@ def compute_smallest_unsolved_instance(config, sketch: Sketch, instance_datas: L
     return None
 
 
-def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_data: DomainFeatureData, workspace, width: int):
+def learn_sketch(config, domain_data, instance_datas, zero_cost_feature_pool: FeaturePool, workspace, width: int):
     """ Learns a sketch that solves all given instances while first computing required data.
     """
     logging.info(colored("Initializing TupleGraphs...", "blue", "on_grey"))
@@ -56,21 +56,17 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
             print("     id:", instance_data.id, "name:", instance_data.instance_information.name, "initial_states:", instance_data.initial_s_idxs)
 
         logging.info(colored("Initializing DomainFeatureData...", "blue", "on_grey"))
-        domain_feature_data_factory = DomainFeatureDataFactory()
-        domain_feature_data_factory.make_domain_feature_data_from_instance_datas(config, domain_data, selected_instance_datas)
-        domain_feature_data_factory.statistics.print()
-        for zero_cost_boolean_feature in zero_cost_domain_feature_data.boolean_features.f_idx_to_feature.values():
-            domain_data.domain_feature_data.boolean_features.add_feature(zero_cost_boolean_feature)
-        for zero_cost_numerical_feature in zero_cost_domain_feature_data.numerical_features.f_idx_to_feature.values():
-            domain_data.domain_feature_data.numerical_features.add_feature(zero_cost_numerical_feature)
+        domain_data.feature_pool = compute_feature_pool(config, domain_data, selected_instance_datas)
+        for zero_cost_boolean_feature in zero_cost_feature_pool.boolean_features.f_idx_to_feature.values():
+            domain_data.feature_pool.boolean_features.add_feature(zero_cost_boolean_feature)
+        for zero_cost_numerical_feature in zero_cost_feature_pool.numerical_features.f_idx_to_feature.values():
+            domain_data.feature_pool.numerical_features.add_feature(zero_cost_numerical_feature)
         logging.info(colored("..done", "blue", "on_grey"))
 
         logging.info(colored("Initializing InstanceFeatureDatas...", "blue", "on_grey"))
         for instance_data in selected_instance_datas:
-            state_feature_valuations, boolean_feature_valuations, numerical_feature_valuations = FeatureValuationsFactory().make_feature_valuations(instance_data)
-            instance_data.set_feature_valuations(state_feature_valuations)
-            instance_data.boolean_feature_valuations = boolean_feature_valuations
-            instance_data.numerical_feature_valuations = numerical_feature_valuations
+            per_state_feature_valuations = compute_per_state_feature_valuations(instance_data)
+            instance_data.set_per_state_feature_valuations(per_state_feature_valuations)
         logging.info(colored("..done", "blue", "on_grey"))
 
         logging.info(colored("Initializing StatePairEquivalenceDatas...", "blue", "on_grey"))
@@ -91,7 +87,6 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
         logging.info(colored("..done", "blue", "on_grey"))
 
         logging.info(colored("Iteration data preprocessing summary:", "yellow", "on_grey"))
-        domain_feature_data_factory.statistics.print()
         state_pair_equivalence_factory.statistics.print()
         tuple_graph_equivalence_factory.statistics.print()
         tuple_graph_equivalence_minimizer.statistics.print()
@@ -138,7 +133,7 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_domain_feature_d
         num_training_instances=len(instance_datas),
         num_selected_training_instances=len(selected_instance_datas),
         num_states_in_selected_training_instances=sum([len(instance_data.state_space.get_states()) for instance_data in selected_instance_datas]),
-        num_features_in_pool=len(domain_data.domain_feature_data.boolean_features.f_idx_to_feature) + len(domain_data.domain_feature_data.numerical_features.f_idx_to_feature))
+        num_features_in_pool=len(domain_data.feature_pool.boolean_features.f_idx_to_feature) + len(domain_data.feature_pool.numerical_features.f_idx_to_feature))
     learning_statistics.print()
     print("Resulting sketch:")
     sketch.print()

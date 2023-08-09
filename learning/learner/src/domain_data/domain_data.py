@@ -18,5 +18,3 @@ class DomainData:
     feature_generator: FeatureGenerator
     domain_feature_data: FeaturePool = None
     domain_state_pair_equivalence: StatePairEquivalenceClasses = None
-    # store all generated features to not let them run out of scope and to keep cache entries alive
-    # all_domain_feature_data: FeaturePool = FeaturePool()

@@ -14,7 +14,7 @@ from pathlib import Path
 
 from learner.src.instance_data.instance_information import InstanceInformation
 from learner.src.instance_data.instance_data_utils import compute_instance_datas
-from learner.src.instance_data.tuple_graph_factory import TupleGraphFactory
+from learner.src.instance_data.tuple_graph_utils import compute_tuple_graphs
 from learner.src.driver import Bunch
 from learner.src.iteration_data.sketch import Sketch
 
@@ -60,16 +60,14 @@ if __name__ == "__main__":
     instance_datas, domain_data = compute_instance_datas(config)
     logging.info(colored("..done", "blue", "on_grey"))
 
-    logging.info(colored("Initializing TupleGraphs...", "blue", "on_grey"))
-    tuple_graph_factory = TupleGraphFactory(args.width)
-    for instance_data in instance_datas:
-        instance_data.set_tuple_graphs(tuple_graph_factory.make_tuple_graphs(instance_data))
+    logging.info(colored("Constructing TupleGraphs...", "blue", "on_grey"))
+    compute_tuple_graphs(config["width"], instance_datas)
     logging.info(colored("..done", "blue", "on_grey"))
 
-    with open(str(config.sketch_filename), "r") as file:
+    with open(str(config["sketch_filename"]), "r") as file:
         sketch_data = file.read()
     dlplan_policy = dlplan.PolicyReader().read(sketch_data, domain_data.policy_builder, domain_data.syntactic_element_factory)
-    sketch = Sketch(dlplan_policy, args.width)
+    sketch = Sketch(dlplan_policy, config["width"])
 
     sketch.print()
 

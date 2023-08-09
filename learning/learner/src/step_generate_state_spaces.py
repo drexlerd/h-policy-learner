@@ -7,17 +7,16 @@ from pathlib import Path
 
 from learner.src.returncodes import ExitCode
 from learner.src.instance_data.instance_data_utils import compute_instance_datas
+from learner.src.instance_data.state_spaces import StateSpaces
 
 
 def run(config, data, rng):
+    output = dict()
     logging.info(colored("Initializing InstanceDatas...", "blue", "on_grey"))
-    if not Path(config.workspace / "input" / "dlplan_serialization_data.serialized").is_file():
-        instance_datas, domain_data = compute_instance_datas(config)
-        data = Data()
-        data.state_spaces = [instance_data.state_space for instance_data in instance_datas]
-        with open(config.workspace / "input" / "dlplan_serialization_data.serialized", "w", encoding="iso-8859-1") as file:
-            file.write(serialize(data))
-    else:
-        print("State spaced were previously generated.")
+    instance_datas, domain_data = compute_instance_datas(config)
+    instance_informations = [instance_data.instance_information for instance_data in instance_datas]
+    state_spaces = [instance_data.state_space for instance_data in instance_datas]
+    goal_distances = [instance_data.goal_distances for instance_data in instance_datas]
+    output["state_spaces"] = StateSpaces(instance_informations, state_spaces, goal_distances)
     logging.info(colored("..done", "blue", "on_grey"))
-    return ExitCode.Success, None
+    return ExitCode.Success, output

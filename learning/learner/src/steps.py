@@ -61,7 +61,7 @@ class LearningHierarchiesStep(Step):
         return []
 
     def get_required_data(self):
-        return []
+        return ["state_spaces"]
 
     def description(self):
         return "Incremental learning module"
@@ -91,6 +91,7 @@ def generate_pipeline_from_list(elements, **kwargs):
 
 DEFAULT_PIPELINES = dict(
     hierarchy=[
+        GenerateStateSpacesStep,
         LearningHierarchiesStep
     ],
 )

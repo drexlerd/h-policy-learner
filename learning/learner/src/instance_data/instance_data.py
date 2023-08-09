@@ -26,8 +26,8 @@ class InstanceData:
     per_state_tuple_graphs: PerStateTupleGraphs = None
     initial_s_idxs: List[int] = None  # in cases we need multiple initial states
     per_state_feature_valuations: PerStateFeatureValuations = None
-    per_state_state_pair_equivalence: PerStateStatePairEquivalences = None
-    per_state_tuple_graph_equivalence: PerStateTupleGraphEquivalences = None
+    per_state_state_pair_equivalences: PerStateStatePairEquivalences = None
+    per_state_tuple_graph_equivalences: PerStateTupleGraphEquivalences = None
 
     def set_state_space(self, state_space: StateSpace, create_dump: bool = False):
         self.state_space = state_space
@@ -49,10 +49,10 @@ class InstanceData:
             write_file(self.instance_information.workspace / self.instance_information.name / "per_state_feature_valuations.txt", str(self.per_state_feature_valuations))
 
     def set_per_state_state_pair_equivalences(self, per_state_state_pair_equivalences: PerStateStatePairEquivalences):
-        self.per_state_state_pair_equivalence = per_state_state_pair_equivalences
+        self.per_state_state_pair_equivalences = per_state_state_pair_equivalences
 
     def set_per_state_tuple_graph_equivalences(self, per_state_tuple_graph_equivalence: PerStateTupleGraphEquivalences):
-        self.per_state_tuple_graph_equivalence = per_state_tuple_graph_equivalence
+        self.per_state_tuple_graph_equivalences = per_state_tuple_graph_equivalence
 
     def set_goal_distances(self, goal_distances: Dict[int, int]):
         self.goal_distances =  goal_distances

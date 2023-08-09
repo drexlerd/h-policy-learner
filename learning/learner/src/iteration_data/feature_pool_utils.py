@@ -32,5 +32,4 @@ def compute_feature_pool(config, domain_data: DomainData, instance_datas: List[I
         add_features(domain_data.syntactic_element_factory, feature_reprs, feature_pool)
     if config.add_features:
         add_features(domain_data.syntactic_element_factory, config.add_features, feature_pool)
-
     return feature_pool

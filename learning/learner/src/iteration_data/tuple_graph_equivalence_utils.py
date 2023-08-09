@@ -17,7 +17,7 @@ def compute_tuple_graph_equivalences(instance_datas: List[InstanceData]) -> None
         for s_idx, tuple_graph in instance_data.per_state_tuple_graphs.s_idx_to_tuple_graph.items():
             if instance_data.is_deadend(s_idx):
                 continue
-            state_pair_equivalence = instance_data.per_state_state_pair_equivalence.s_idx_to_state_pair_equivalence[s_idx]
+            state_pair_equivalence = instance_data.per_state_state_pair_equivalences.s_idx_to_state_pair_equivalence[s_idx]
             tuple_graph_equivalence = TupleGraphEquivalence()
             # rule distances, deadend rule distances
             for state_distance, s_prime_idxs in enumerate(tuple_graph.get_state_indices_by_distance()):
@@ -53,7 +53,7 @@ def minimize_tuple_graph_equivalences(instance_datas: List[InstanceData]):
             if instance_data.is_deadend(root_idx):
                 continue
 
-            tuple_graph_equivalence = instance_data.per_state_tuple_graph_equivalence.s_idx_to_tuple_graph_equivalence[root_idx]
+            tuple_graph_equivalence = instance_data.per_state_tuple_graph_equivalences.s_idx_to_tuple_graph_equivalence[root_idx]
             # compute order
             order = defaultdict(set)
             for t_idx_1 in tuple_graph_equivalence.t_idx_to_r_idxs.keys():

@@ -19,7 +19,7 @@ from learner.src.util.command import create_experiment_workspace
 from learner.src.domain_data.domain_data import DomainData
 
 
-def compute_state_b_values(booleans: List[Boolean], numericals: List[Numerical], instance_data: InstanceData, state: State):
+def compute_state_b_values(booleans: List[Boolean], numericals: List[Numerical], state: State):
     """ """
     return tuple([boolean.evaluate(state) for boolean in booleans] + [numerical.evaluate(state) > 0 for numerical in numericals])
 
@@ -30,7 +30,7 @@ def compute_smallest_unsolved_instance(booleans: List[Boolean], numericals: List
     nongoal_b_values = set()
     for instance_data in instance_datas:
         for s_idx, state in instance_data.state_space.get_states().items():
-            b_values = compute_state_b_values(booleans, numericals, instance_data, state)
+            b_values = compute_state_b_values(booleans, numericals, state)
             separating = True
             if instance_data.is_goal(s_idx):
                 goal_b_values.add(b_values)

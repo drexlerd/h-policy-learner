@@ -1,7 +1,4 @@
-import os
-import sys
 import copy
-import math
 
 
 class Step:

@@ -15,7 +15,7 @@ from learner.src.iteration_data.feature_pool_utils import compute_feature_pool
 from learner.src.iteration_data.feature_valuations_utils import compute_per_state_feature_valuations
 from learner.src.iteration_data.dlplan_policy_factory import ExplicitDlplanPolicyFactory
 from learner.src.iteration_data.sketch import Sketch
-from learner.src.iteration_data.state_pair_equivalence_factory import StatePairEquivalenceFactory
+from learner.src.iteration_data.state_pair_equivalence_utils import compute_state_pair_equivalences
 from learner.src.iteration_data.tuple_graph_equivalence_utils import compute_tuple_graph_equivalences, minimize_tuple_graph_equivalences
 from learner.src.util.timer import CountDownTimer
 from learner.src.util.command import create_experiment_workspace
@@ -62,15 +62,12 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_feature_pool: Fe
             domain_data.feature_pool.numerical_features.add_feature(zero_cost_numerical_feature)
         logging.info(colored("..done", "blue", "on_grey"))
 
-        logging.info(colored("Initializing InstanceFeatureDatas...", "blue", "on_grey"))
-        for instance_data in selected_instance_datas:
-            per_state_feature_valuations = compute_per_state_feature_valuations(instance_data)
-            instance_data.set_per_state_feature_valuations(per_state_feature_valuations)
+        logging.info(colored("Constructing PerStateFeatureValuations...", "blue", "on_grey"))
+        compute_per_state_feature_valuations(selected_instance_datas)
         logging.info(colored("..done", "blue", "on_grey"))
 
-        logging.info(colored("Initializing StatePairEquivalenceDatas...", "blue", "on_grey"))
-        state_pair_equivalence_factory = StatePairEquivalenceFactory()
-        state_pair_equivalence_factory.make_state_pair_equivalences(domain_data, selected_instance_datas)
+        logging.info(colored("Constructing StatePairEquivalenceDatas...", "blue", "on_grey"))
+        compute_state_pair_equivalences(domain_data, selected_instance_datas)
         logging.info(colored("..done", "blue", "on_grey"))
 
         logging.info(colored("Constructing TupleGraphEquivalences...", "blue", "on_grey"))
@@ -80,9 +77,6 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_feature_pool: Fe
         logging.info(colored("Minimizing TupleGraphEquivalences...", "blue", "on_grey"))
         minimize_tuple_graph_equivalences(selected_instance_datas)
         logging.info(colored("..done", "blue", "on_grey"))
-
-        logging.info(colored("Iteration data preprocessing summary:", "yellow", "on_grey"))
-        state_pair_equivalence_factory.statistics.print()
 
         asp_factory = ASPFactory(max_num_rules=config.max_num_rules)
         asp_factory.load_problem_file(config.asp_location / config.asp_name)

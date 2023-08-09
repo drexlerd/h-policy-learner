@@ -4,7 +4,7 @@ from dlplan.policy import PolicyBuilder
 
 from dataclasses import dataclass
 
-from learner.src.iteration_data.state_pair_equivalence import DomainStatePairEquivalence
+from learner.src.iteration_data.state_pair_equivalence import StatePairEquivalenceClasses
 from learner.src.iteration_data.feature_pool import FeaturePool
 
 
@@ -17,6 +17,6 @@ class DomainData:
     syntactic_element_factory: SyntacticElementFactory
     feature_generator: FeatureGenerator
     domain_feature_data: FeaturePool = None
-    domain_state_pair_equivalence: DomainStatePairEquivalence = None
+    domain_state_pair_equivalence: StatePairEquivalenceClasses = None
     # store all generated features to not let them run out of scope and to keep cache entries alive
     # all_domain_feature_data: FeaturePool = FeaturePool()

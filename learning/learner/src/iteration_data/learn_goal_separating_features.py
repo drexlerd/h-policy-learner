@@ -94,10 +94,8 @@ def learn_goal_separating_features(config, domain_data, instance_datas, zero_cos
             domain_data.feature_pool.numerical_features.add_feature(zero_cost_numerical_feature)
         logging.info(colored("..done", "blue", "on_grey"))
 
-        logging.info(colored("Initializing InstanceFeatureDatas...", "blue", "on_grey"))
-        for instance_data in selected_instance_datas:
-            per_state_feature_valuations = compute_per_state_feature_valuations(instance_data)
-            instance_data.set_per_state_feature_valuations(per_state_feature_valuations)
+        logging.info(colored("Constructing PerStateFeatureValuations...", "blue", "on_grey"))
+        compute_per_state_feature_valuations(selected_instance_datas)
         logging.info(colored("..done", "blue", "on_grey"))
 
         asp_factory = ASPFactory()

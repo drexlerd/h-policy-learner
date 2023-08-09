@@ -1,9 +1,10 @@
-from dlplan.policy import PolicyMinimizer
-
 import logging
 
-from termcolor import colored
 from typing import List
+
+from termcolor import colored
+
+from dlplan.policy import PolicyMinimizer
 
 from learner.src.asp.asp_factory import ASPFactory
 from learner.src.asp.returncodes import ClingoExitCode

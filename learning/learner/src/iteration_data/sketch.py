@@ -1,9 +1,11 @@
-from dlplan.policy import Policy
-
 import math
-from termcolor import colored
-from typing import Dict, MutableSet, List
+
+from typing import Dict, MutableSet
 from collections import defaultdict, deque
+
+from termcolor import colored
+
+from dlplan.policy import Policy
 
 from learner.src.instance_data.instance_data import InstanceData
 

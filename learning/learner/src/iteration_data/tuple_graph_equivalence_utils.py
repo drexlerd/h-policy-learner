@@ -4,7 +4,7 @@ from collections import defaultdict
 
 
 from learner.src.instance_data.instance_data import InstanceData
-from learner.src.iteration_data.tuple_graph_equivalence import TupleGraphEquivalence
+from learner.src.iteration_data.tuple_graph_equivalence import TupleGraphEquivalence, PerStateTupleGraphEquivalence
 
 
 
@@ -13,20 +13,18 @@ def compute_tuple_graph_equivalences(instance_datas: List[InstanceData]) -> None
     """
     num_nodes = 0
     for instance_data in instance_datas:
-        tuple_graph_equivalences = dict()
+        per_state_tuple_graph_equivalence = PerStateTupleGraphEquivalence()
         for s_idx, tuple_graph in instance_data.tuple_graphs.items():
             if instance_data.is_deadend(s_idx):
                 continue
-            state_pair_equivalence = instance_data.state_pair_equivalences[s_idx]
+            state_pair_equivalence = instance_data.per_state_state_pair_equivalence.s_idx_to_state_pair_equivalence[s_idx]
+            tuple_graph_equivalence = TupleGraphEquivalence()
             # rule distances, deadend rule distances
-            r_idx_to_deadend_distance = dict()
             for state_distance, s_prime_idxs in enumerate(tuple_graph.get_state_indices_by_distance()):
                 for s_prime_idx in s_prime_idxs:
                     r_idx = state_pair_equivalence.subgoal_state_to_r_idx[s_prime_idx]
                     if instance_data.is_deadend(s_prime_idx):
-                        r_idx_to_deadend_distance[r_idx] = min(r_idx_to_deadend_distance.get(r_idx, math.inf), state_distance)
-            t_idx_to_r_idxs = defaultdict(set)
-            t_idx_to_distance = dict()
+                        tuple_graph_equivalence.r_idx_to_deadend_distance[r_idx] = min(tuple_graph_equivalence.r_idx_to_deadend_distance.get(r_idx, math.inf), state_distance)
             for subgoal_distance, tuple_node_indices in enumerate(tuple_graph.get_tuple_node_indices_by_distance()):
                 for tuple_node_index in tuple_node_indices:
                     tuple_node = tuple_graph.get_tuple_nodes()[tuple_node_index]
@@ -35,12 +33,11 @@ def compute_tuple_graph_equivalences(instance_datas: List[InstanceData]) -> None
                     for s_prime_idx in tuple_node.get_state_indices():
                         r_idx = state_pair_equivalence.subgoal_state_to_r_idx[s_prime_idx]
                         r_idxs.add(r_idx)
-                    t_idx_to_distance[t_idx] = subgoal_distance
-                    t_idx_to_r_idxs[t_idx] = r_idxs
+                    tuple_graph_equivalence.t_idx_to_distance[t_idx] = subgoal_distance
+                    tuple_graph_equivalence.t_idx_to_r_idxs[t_idx] = r_idxs
                     num_nodes += 1
-            tuple_graph_equivalence = TupleGraphEquivalence(t_idx_to_r_idxs, t_idx_to_distance, r_idx_to_deadend_distance)
-            tuple_graph_equivalences[s_idx] = tuple_graph_equivalence
-        instance_data.tuple_graph_equivalences = tuple_graph_equivalences
+            per_state_tuple_graph_equivalence.s_idx_to_tuple_graph_equivalence[s_idx] = tuple_graph_equivalence
+        instance_data.set_per_state_tuple_graph_equivalence(per_state_tuple_graph_equivalence)
 
     print("Tuple graph equivalence construction statistics:")
     print("Num nodes:", num_nodes)
@@ -57,7 +54,7 @@ def minimize_tuple_graph_equivalences(instance_datas: List[InstanceData]):
                 continue
 
             tuple_graph = instance_data.tuple_graphs[root_idx]
-            tuple_graph_equivalence = instance_data.tuple_graph_equivalences[root_idx]
+            tuple_graph_equivalence = instance_data.per_state_tuple_graph_equivalence.s_idx_to_tuple_graph_equivalence[root_idx]
             # compute order
             order = defaultdict(set)
             for t_idx_1 in tuple_graph_equivalence.t_idx_to_r_idxs.keys():

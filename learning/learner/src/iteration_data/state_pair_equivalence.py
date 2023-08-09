@@ -1,7 +1,7 @@
 from dlplan.policy import Rule
 
 from typing import Dict, List, MutableSet
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 
 @dataclass
@@ -47,3 +47,7 @@ class StatePairEquivalenceClasses:
         rules_str = ", ".join([repr(rule) for rule in self.rules])
         return f"StatePairEquivalenceClasses(rules=[{rules_str}])"
 
+
+@dataclass
+class PerStateStatePairEquivalence:
+    s_idx_to_state_pair_equivalence: Dict[int, StatePairEquivalence] = field(default_factory=dict)

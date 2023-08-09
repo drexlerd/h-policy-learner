@@ -157,7 +157,7 @@ class ASPFactory:
         # State pair equivalence facts
         #print("cover:")
         for instance_data in instance_datas:
-            for s_idx, state_pair_equivalence in instance_data.state_pair_equivalences.items():
+            for s_idx, state_pair_equivalence in instance_data.per_state_state_pair_equivalence.s_idx_to_state_pair_equivalence.items():
                 if instance_data.is_deadend(s_idx):
                     continue
                 for r_idx, d in state_pair_equivalence.r_idx_to_distance.items():
@@ -172,7 +172,7 @@ class ASPFactory:
         facts = []
         # Tuple graph equivalence facts (Perhaps deprecated since we now let rules imply subgoals)
         for instance_data in instance_datas:
-            for s_idx, tuple_graph_equivalence in instance_data.tuple_graph_equivalences.items():
+            for s_idx, tuple_graph_equivalence in instance_data.per_state_tuple_graph_equivalence.s_idx_to_tuple_graph_equivalence.items():
                 if instance_data.is_deadend(s_idx):
                     continue
                 for t_idx, r_idxs in tuple_graph_equivalence.t_idx_to_r_idxs.items():

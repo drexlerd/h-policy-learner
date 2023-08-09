@@ -8,8 +8,8 @@ from typing import List, Dict
 from learner.src.domain_data.domain_data import DomainData
 from learner.src.instance_data.instance_information import InstanceInformation
 from learner.src.iteration_data.feature_valuations import PerStateFeatureValuations
-from learner.src.iteration_data.state_pair_equivalence import StatePairEquivalence
-from learner.src.iteration_data.tuple_graph_equivalence import TupleGraphEquivalence
+from learner.src.iteration_data.state_pair_equivalence import PerStateStatePairEquivalence
+from learner.src.iteration_data.tuple_graph_equivalence import PerStateTupleGraphEquivalence
 from learner.src.util.command import write_file
 from learner.src.util.command import create_experiment_workspace
 
@@ -25,8 +25,8 @@ class InstanceData:
     tuple_graphs: Dict[int, TupleGraph] = None
     initial_s_idxs: List[int] = None  # in cases we need multiple initial states
     per_state_feature_valuations: PerStateFeatureValuations = None
-    state_pair_equivalences: Dict[int, StatePairEquivalence] = None
-    tuple_graph_equivalences: Dict[int, TupleGraphEquivalence] = None
+    per_state_state_pair_equivalence: PerStateStatePairEquivalence = None
+    per_state_tuple_graph_equivalence: PerStateTupleGraphEquivalence = None
 
     def set_state_space(self, state_space: StateSpace, create_dump: bool = False):
         self.state_space = state_space
@@ -47,11 +47,11 @@ class InstanceData:
             create_experiment_workspace(self.instance_information.workspace, False)
             write_file(self.instance_information.workspace / self.instance_information.name / "per_state_feature_valuations.txt", str(self.per_state_feature_valuations))
 
-    def set_state_pair_equivalences(self, state_pair_equivalences: Dict[int, StatePairEquivalence]):
-        self.state_pair_equivalences = state_pair_equivalences
+    def set_per_state_state_pair_equivalence(self, per_state_state_pair_equivalences: PerStateStatePairEquivalence):
+        self.per_state_state_pair_equivalence = per_state_state_pair_equivalences
 
-    def set_tuple_graph_equivalences(self, tuple_graph_equivalences: Dict[int, TupleGraphEquivalence]):
-        self.tuple_graph_equivalences = tuple_graph_equivalences
+    def set_per_state_tuple_graph_equivalence(self, per_state_tuple_graph_equivalence: PerStateTupleGraphEquivalence):
+        self.per_state_tuple_graph_equivalence = per_state_tuple_graph_equivalence
 
     def set_goal_distances(self, goal_distances: Dict[int, int]):
         self.goal_distances =  goal_distances

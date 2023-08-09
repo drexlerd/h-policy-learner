@@ -7,7 +7,7 @@ from typing import List
 
 from learner.src.domain_data.domain_data import DomainData
 from learner.src.instance_data.instance_data import InstanceData
-from learner.src.iteration_data.state_pair_equivalence import StatePairEquivalenceClasses, StatePairEquivalence
+from learner.src.iteration_data.state_pair_equivalence import StatePairEquivalenceClasses, StatePairEquivalence, PerStateStatePairEquivalence
 from learner.src.iteration_data.feature_pool import FeaturePool
 from learner.src.iteration_data.feature_valuations import FeatureValuations
 
@@ -66,7 +66,7 @@ def compute_state_pair_equivalences(domain_data: DomainData,
     rules = []
     rule_repr_to_idx = dict()
     for instance_data in instance_datas:
-        state_pair_equivalences = dict()
+        per_state_state_pair_equivalences = PerStateStatePairEquivalence()
         for s_idx, tuple_graph in instance_data.tuple_graphs.items():
             if instance_data.is_deadend(s_idx):
                 continue
@@ -91,6 +91,6 @@ def compute_state_pair_equivalences(domain_data: DomainData,
                     r_idx_to_distance[r_idx] = min(r_idx_to_distance.get(r_idx, math.inf), s_distance)
                     r_idx_to_subgoal_states[r_idx].add(s_prime_idx)
                     subgoal_states_to_r_idx[s_prime_idx] = r_idx
-            state_pair_equivalences[s_idx] = StatePairEquivalence(r_idx_to_subgoal_states, r_idx_to_distance, subgoal_states_to_r_idx)
-        instance_data.set_state_pair_equivalences(state_pair_equivalences)
+            per_state_state_pair_equivalences.s_idx_to_state_pair_equivalence[s_idx] = StatePairEquivalence(r_idx_to_subgoal_states, r_idx_to_distance, subgoal_states_to_r_idx)
+        instance_data.set_per_state_state_pair_equivalence(per_state_state_pair_equivalences)
     domain_data.domain_state_pair_equivalence = StatePairEquivalenceClasses(rules)

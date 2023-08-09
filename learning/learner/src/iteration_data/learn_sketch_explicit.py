@@ -16,8 +16,7 @@ from learner.src.iteration_data.feature_valuations_utils import compute_per_stat
 from learner.src.iteration_data.dlplan_policy_factory import ExplicitDlplanPolicyFactory
 from learner.src.iteration_data.sketch import Sketch
 from learner.src.iteration_data.state_pair_equivalence_factory import StatePairEquivalenceFactory
-from learner.src.iteration_data.tuple_graph_equivalence_factory import TupleGraphEquivalenceFactory
-from learner.src.iteration_data.tuple_graph_equivalence_minimizer import TupleGraphEquivalenceMinimizer
+from learner.src.iteration_data.tuple_graph_equivalence_utils import compute_tuple_graph_equivalences, minimize_tuple_graph_equivalences
 from learner.src.util.timer import CountDownTimer
 from learner.src.util.command import create_experiment_workspace
 from learner.src.iteration_data.learning_statistics import LearningStatistics
@@ -74,22 +73,16 @@ def learn_sketch(config, domain_data, instance_datas, zero_cost_feature_pool: Fe
         state_pair_equivalence_factory.make_state_pair_equivalences(domain_data, selected_instance_datas)
         logging.info(colored("..done", "blue", "on_grey"))
 
-        logging.info(colored("Initializing TupleGraphEquivalences...", "blue", "on_grey"))
-        tuple_graph_equivalence_factory = TupleGraphEquivalenceFactory()
-        tuple_graph_equivalence_factory.make_tuple_graph_equivalences(domain_data, selected_instance_datas)
-        tuple_graph_equivalence_factory.statistics.print()
+        logging.info(colored("Constructing TupleGraphEquivalences...", "blue", "on_grey"))
+        compute_tuple_graph_equivalences(selected_instance_datas)
         logging.info(colored("..done", "blue", "on_grey"))
 
-        logging.info(colored("Initializing TupleGraphEquivalenceMinimizer...", "blue", "on_grey"))
-        tuple_graph_equivalence_minimizer = TupleGraphEquivalenceMinimizer()
-        for instance_data in selected_instance_datas:
-            tuple_graph_equivalence_minimizer.minimize(instance_data)
+        logging.info(colored("Minimizing TupleGraphEquivalences...", "blue", "on_grey"))
+        minimize_tuple_graph_equivalences(selected_instance_datas)
         logging.info(colored("..done", "blue", "on_grey"))
 
         logging.info(colored("Iteration data preprocessing summary:", "yellow", "on_grey"))
         state_pair_equivalence_factory.statistics.print()
-        tuple_graph_equivalence_factory.statistics.print()
-        tuple_graph_equivalence_minimizer.statistics.print()
 
         asp_factory = ASPFactory(max_num_rules=config.max_num_rules)
         asp_factory.load_problem_file(config.asp_location / config.asp_name)

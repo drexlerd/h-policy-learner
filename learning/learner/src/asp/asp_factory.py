@@ -8,9 +8,6 @@ from learner.src.domain_data.domain_data import DomainData
 from learner.src.instance_data.instance_data import InstanceData
 
 
-def on_model(model: Model):
-    print(model.optimality_proven)
-
 class ASPFactory:
     def __init__(self, max_num_rules=2):
         self.ctl = Control(arguments=["--const", f"max_num_rules={max_num_rules}", "--parallel-mode=32", "--models=0", "--opt-mode=opt"])
@@ -155,7 +152,6 @@ class ASPFactory:
                 else:
                     raise RuntimeError(f"Cannot parse effect {effect_str}")
         # State pair equivalence facts
-        #print("cover:")
         for instance_data in instance_datas:
             for s_idx, state_pair_equivalence in instance_data.per_state_state_pair_equivalences.s_idx_to_state_pair_equivalence.items():
                 if instance_data.is_deadend(s_idx):
@@ -165,12 +161,11 @@ class ASPFactory:
                 for r_idx, s_prime_idxs in state_pair_equivalence.r_idx_to_subgoal_states.items():
                     for s_prime_idx in s_prime_idxs:
                         facts.append(("cover", [Number(instance_data.id), Number(s_idx), Number(s_prime_idx), Number(r_idx)]))
-                        #print(instance_data.id, s_idx, s_prime_idx, r_idx)
         return facts
 
     def make_tuple_graph_equivalence_facts(self, instance_datas: List[InstanceData]):
         facts = []
-        # Tuple graph equivalence facts (Perhaps deprecated since we now let rules imply subgoals)
+        # Tuple graph equivalence facts
         for instance_data in instance_datas:
             for s_idx, tuple_graph_equivalence in instance_data.per_state_tuple_graph_equivalences.s_idx_to_tuple_graph_equivalence.items():
                 if instance_data.is_deadend(s_idx):

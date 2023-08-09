@@ -25,7 +25,7 @@ def compute_instance_datas(config) -> Tuple[List[InstanceData], DomainData]:
     vocabulary_info = None
     instance_datas = []
     for instance_information in config.instance_informations:
-        logging.info(f"Constructing InstanceData for filename {instance_information.filename}")
+        logging.info("Constructing InstanceData for filename %s", instance_information.filename)
         create_experiment_workspace(instance_information.workspace, False)
         # change working directory to put planner output files in correct directory
         os.chdir(instance_information.workspace)
@@ -44,22 +44,21 @@ def compute_instance_datas(config) -> Tuple[List[InstanceData], DomainData]:
         if goal_distances.get(state_space.get_initial_state_index(), None) is None:
             print("Unsolvable.")
             continue
-        elif set(state_space.get_states().keys()) == set(state_space.get_goal_state_indices()):
+        if set(state_space.get_states().keys()) == set(state_space.get_goal_state_indices()):
             print("Trivially solvable.")
             continue
-        elif not config.closed_Q and state_space.get_initial_state_index() in set(state_space.get_goal_state_indices()):
+        if not config.closed_Q and state_space.get_initial_state_index() in set(state_space.get_goal_state_indices()):
             print("Initial state is goal.")
             continue
+        print("Num states:", len(state_space.get_states()))
+        instance_data = InstanceData(len(instance_datas), domain_data, DenotationsCaches(), instance_information)
+        instance_data.set_state_space(state_space, create_dump=True)
+        instance_data.set_goal_distances(goal_distances)
+        if config.closed_Q:
+            instance_data.initial_s_idxs = [s_idx for s_idx in state_space.get_states().keys() if instance_data.is_alive(s_idx)]
         else:
-            print("Num states:", len(state_space.get_states()))
-            instance_data = InstanceData(len(instance_datas), domain_data, DenotationsCaches(), instance_information)
-            instance_data.set_state_space(state_space, create_dump=True)
-            instance_data.set_goal_distances(goal_distances)
-            if config.closed_Q:
-                instance_data.initial_s_idxs = [s_idx for s_idx in state_space.get_states().keys() if instance_data.is_alive(s_idx)]
-            else:
-                instance_data.initial_s_idxs = [state_space.get_initial_state_index(),]
-            instance_datas.append(instance_data)
+            instance_data.initial_s_idxs = [state_space.get_initial_state_index(),]
+        instance_datas.append(instance_data)
     # Sort the instances according to size and fix the indices afterwards
     instance_datas = sorted(instance_datas, key=lambda x : len(x.state_space.get_states()))
     for instance_idx, instance_data in enumerate(instance_datas):

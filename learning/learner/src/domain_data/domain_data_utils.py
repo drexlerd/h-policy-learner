@@ -8,7 +8,7 @@ from learner.src.domain_data.domain_data import DomainData
 
 
 def compute_domain_data(config, vocabulary_info: VocabularyInfo) -> DomainData:
-    logging.info(f"Constructing DomainData for filename {config.domain_filename}")
+    logging.info("Constructing DomainData for filename %s", config.domain_filename)
     domain_filename = config.domain_filename
     policy_builder = PolicyBuilder()
     syntactic_element_factory = SyntacticElementFactory(vocabulary_info)

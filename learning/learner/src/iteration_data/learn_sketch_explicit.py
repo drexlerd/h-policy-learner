@@ -9,7 +9,7 @@ from learner.src.asp.asp_factory import ASPFactory
 from learner.src.asp.returncodes import ClingoExitCode
 from learner.src.instance_data.instance_data import InstanceData
 from learner.src.instance_data.instance_information import InstanceInformation
-from learner.src.instance_data.tuple_graph_factory import TupleGraphFactory
+from learner.src.instance_data.tuple_graph_utils import compute_tuple_graphs
 from learner.src.iteration_data.feature_pool import FeaturePool
 from learner.src.iteration_data.feature_pool_utils import compute_feature_pool
 from learner.src.iteration_data.feature_valuations_utils import compute_per_state_feature_valuations
@@ -32,10 +32,8 @@ def compute_smallest_unsolved_instance(config, sketch: Sketch, instance_datas: L
 def learn_sketch(config, domain_data, instance_datas, zero_cost_feature_pool: FeaturePool, workspace, width: int):
     """ Learns a sketch that solves all given instances while first computing required data.
     """
-    logging.info(colored("Initializing TupleGraphs...", "blue", "on_grey"))
-    tuple_graph_factory = TupleGraphFactory(width)
-    for instance_data in instance_datas:
-        instance_data.set_tuple_graphs(tuple_graph_factory.make_tuple_graphs(instance_data))
+    logging.info(colored("Constructing TupleGraphs...", "blue", "on_grey"))
+    compute_tuple_graphs(width, instance_datas)
     logging.info(colored("..done", "blue", "on_grey"))
 
     i = 0

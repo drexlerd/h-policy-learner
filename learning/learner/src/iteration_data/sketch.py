@@ -46,7 +46,7 @@ class Sketch:
             if not rule.evaluate_conditions(source_state, instance_data.denotations_caches):
                 continue
             min_compatible_distance = math.inf
-            tuple_graph = instance_data.tuple_graphs[root_idx]
+            tuple_graph = instance_data.per_state_tuple_graphs.s_idx_to_tuple_graph[root_idx]
             for tuple_distance, tuple_node_indices in enumerate(tuple_graph.get_tuple_node_indices_by_distance()):
                 for tuple_node_index in tuple_node_indices:
                     tuple_node = tuple_graph.get_tuple_nodes()[tuple_node_index]
@@ -99,7 +99,7 @@ class Sketch:
             root_state = instance_data.state_space.get_states()[root_idx]
             if not rule.evaluate_conditions(root_state, instance_data.denotations_caches):
                 continue
-            tuple_graph = instance_data.tuple_graphs[root_idx]
+            tuple_graph = instance_data.per_state_tuple_graphs.s_idx_to_tuple_graph[root_idx]
             for tuple_node_indices in tuple_graph.get_tuple_node_indices_by_distance():
                 for tuple_node_index in tuple_node_indices:
                     tuple_node = tuple_graph.get_tuple_nodes()[tuple_node_index]

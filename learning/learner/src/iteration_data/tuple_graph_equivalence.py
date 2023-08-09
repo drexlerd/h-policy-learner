@@ -22,5 +22,5 @@ class TupleGraphEquivalence:
 
 
 @dataclass
-class PerStateTupleGraphEquivalence:
+class PerStateTupleGraphEquivalences:
     s_idx_to_tuple_graph_equivalence: Dict[int, TupleGraphEquivalence] = field(default_factory=dict)

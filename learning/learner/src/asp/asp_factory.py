@@ -188,7 +188,7 @@ class ASPFactory:
     def make_tuple_graph_facts(self, instance_datas: List[InstanceData]):
         facts = []
         for instance_data in instance_datas:
-            for s_idx, tuple_graph in instance_data.tuple_graphs.items():
+            for s_idx, tuple_graph in instance_data.per_state_tuple_graphs.s_idx_to_tuple_graph.items():
                 for d, s_prime_idxs in enumerate(tuple_graph.get_state_indices_by_distance()):
                     for s_prime_idx in s_prime_idxs:
                         facts.append(("s_distance", [Number(instance_data.id), Number(s_idx), Number(s_prime_idx), Number(d)]))

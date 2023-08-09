@@ -15,7 +15,7 @@ from learner.src.domain_data.domain_data import DomainData
 from learner.src.domain_data.domain_data_utils import compute_domain_data
 from learner.src.instance_data.instance_data import InstanceData
 from learner.src.instance_data.instance_information import InstanceInformation
-from learner.src.instance_data.tuple_graph_factory import TupleGraphFactory
+from learner.src.instance_data.tuple_graph_utils import compute_tuple_graphs
 from learner.src.iteration_data.sketch import Sketch
 from learner.src.util.command import create_experiment_workspace
 
@@ -156,7 +156,7 @@ def compute_subproblems(config, instance_datas: List[InstanceData], sketch: Sket
                     continue
                 assert all([subproblem_instance_data.is_alive(initial_s_idx) for initial_s_idx in subproblem_instance_data.initial_s_idxs])
                 # 2.2.1. Recompute tuple graph for restricted state space
-                subproblem_instance_data.set_tuple_graphs(TupleGraphFactory(width).make_tuple_graphs(subproblem_instance_data))
+                compute_tuple_graphs(width, [subproblem_instance_data])
                 subproblem_instance_datas.append(subproblem_instance_data)
             instance_data.state_space.set_goal_state_indices(old_goal_state_indices)
             instance_data.goal_distances = old_goal_distances

@@ -4,7 +4,7 @@ from collections import defaultdict
 
 
 from learner.src.instance_data.instance_data import InstanceData
-from learner.src.iteration_data.tuple_graph_equivalence import TupleGraphEquivalence, PerStateTupleGraphEquivalence
+from learner.src.iteration_data.tuple_graph_equivalence import TupleGraphEquivalence, PerStateTupleGraphEquivalences
 
 
 
@@ -13,8 +13,8 @@ def compute_tuple_graph_equivalences(instance_datas: List[InstanceData]) -> None
     """
     num_nodes = 0
     for instance_data in instance_datas:
-        per_state_tuple_graph_equivalence = PerStateTupleGraphEquivalence()
-        for s_idx, tuple_graph in instance_data.tuple_graphs.items():
+        per_state_tuple_graph_equivalences = PerStateTupleGraphEquivalences()
+        for s_idx, tuple_graph in instance_data.per_state_tuple_graphs.s_idx_to_tuple_graph.items():
             if instance_data.is_deadend(s_idx):
                 continue
             state_pair_equivalence = instance_data.per_state_state_pair_equivalence.s_idx_to_state_pair_equivalence[s_idx]
@@ -36,8 +36,8 @@ def compute_tuple_graph_equivalences(instance_datas: List[InstanceData]) -> None
                     tuple_graph_equivalence.t_idx_to_distance[t_idx] = subgoal_distance
                     tuple_graph_equivalence.t_idx_to_r_idxs[t_idx] = r_idxs
                     num_nodes += 1
-            per_state_tuple_graph_equivalence.s_idx_to_tuple_graph_equivalence[s_idx] = tuple_graph_equivalence
-        instance_data.set_per_state_tuple_graph_equivalence(per_state_tuple_graph_equivalence)
+            per_state_tuple_graph_equivalences.s_idx_to_tuple_graph_equivalence[s_idx] = tuple_graph_equivalence
+        instance_data.set_per_state_tuple_graph_equivalences(per_state_tuple_graph_equivalences)
 
     print("Tuple graph equivalence construction statistics:")
     print("Num nodes:", num_nodes)
@@ -49,11 +49,10 @@ def minimize_tuple_graph_equivalences(instance_datas: List[InstanceData]):
     num_kept_nodes = 0
     num_orig_nodes = 0
     for instance_data in instance_datas:
-        for root_idx, tuple_graph in instance_data.tuple_graphs.items():
+        for root_idx, tuple_graph in instance_data.per_state_tuple_graphs.s_idx_to_tuple_graph.items():
             if instance_data.is_deadend(root_idx):
                 continue
 
-            tuple_graph = instance_data.tuple_graphs[root_idx]
             tuple_graph_equivalence = instance_data.per_state_tuple_graph_equivalence.s_idx_to_tuple_graph_equivalence[root_idx]
             # compute order
             order = defaultdict(set)

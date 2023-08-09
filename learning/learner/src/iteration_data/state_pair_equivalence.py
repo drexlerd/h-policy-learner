@@ -49,5 +49,5 @@ class StatePairEquivalenceClasses:
 
 
 @dataclass
-class PerStateStatePairEquivalence:
+class PerStateStatePairEquivalences:
     s_idx_to_state_pair_equivalence: Dict[int, StatePairEquivalence] = field(default_factory=dict)

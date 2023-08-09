@@ -11,7 +11,7 @@ from learner.src.instance_data.instance_data import InstanceData
 from learner.src.domain_data.domain_data import DomainData
 from learner.src.iteration_data.sketch import Sketch
 from learner.src.iteration_data.learning_statistics import LearningStatistics
-from learner.src.instance_data.subproblem_instance_data_factory import SubproblemInstanceDataFactory
+from learner.src.instance_data.instance_data_utils import compute_subproblems
 from learner.src.iteration_data.feature_pool import Feature, FeaturePool
 from learner.src.util.command import create_experiment_workspace, write_file
 from learner.src.iteration_data.learn_sketch_explicit import learn_sketch
@@ -85,7 +85,7 @@ class HierarchicalSketch:
         # Inductive case: compute children n' of n
         for r_idx, rule in enumerate(self.sketch.dlplan_policy.get_rules()):
             # compute Q_n' of width k-1
-            subproblem_instance_datas = SubproblemInstanceDataFactory().make_subproblems(self.config, self.instance_datas, self.sketch, rule, r_idx, self.width - 1)
+            subproblem_instance_datas = compute_subproblems(self.config, self.instance_datas, self.sketch, rule, r_idx, self.width - 1)
 
             rule_sketch = Sketch(self.domain_data.policy_builder.add_policy({rule}), self.width - 1)
 

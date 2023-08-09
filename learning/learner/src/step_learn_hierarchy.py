@@ -4,14 +4,14 @@ from collections import  deque
 from termcolor import colored
 
 from learner.src.returncodes import ExitCode
-from learner.src.instance_data.instance_data_factory import InstanceDataFactory
+from learner.src.instance_data.instance_data_utils import compute_instance_datas
 from learner.src.iteration_data.hierarchical_sketch import HierarchicalSketch
 from learner.src.iteration_data.feature_pool import FeaturePool
 
 
 def run(config, data, rng):
     logging.info(colored("Initializing InstanceDatas...", "blue", "on_grey"))
-    instance_datas, domain_data = InstanceDataFactory().make_instance_datas(config)
+    instance_datas, domain_data = compute_instance_datas(config)
     logging.info(colored("..done", "blue", "on_grey"))
 
     root_hierarchical_sketch = HierarchicalSketch(

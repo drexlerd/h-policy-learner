@@ -6,13 +6,13 @@ from termcolor import colored
 from pathlib import Path
 
 from learner.src.returncodes import ExitCode
-from learner.src.instance_data.instance_data_factory import InstanceDataFactory
+from learner.src.instance_data.instance_data_utils import compute_instance_datas
 
 
 def run(config, data, rng):
     logging.info(colored("Initializing InstanceDatas...", "blue", "on_grey"))
     if not Path(config.workspace / "input" / "dlplan_serialization_data.serialized").is_file():
-        instance_datas, domain_data = InstanceDataFactory().make_instance_datas(config)
+        instance_datas, domain_data = compute_instance_datas(config)
         data = Data()
         data.state_spaces = [instance_data.state_space for instance_data in instance_datas]
         with open(config.workspace / "input" / "dlplan_serialization_data.serialized", "w", encoding="iso-8859-1") as file:

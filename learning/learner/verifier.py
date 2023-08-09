@@ -12,11 +12,11 @@ from termcolor import colored
 
 from pathlib import Path
 
-from src.instance_data.instance_information import InstanceInformation
-from src.instance_data.instance_data_factory import InstanceDataFactory
-from src.instance_data.tuple_graph_factory import TupleGraphFactory
-from src.driver import Bunch
-from src.iteration_data.sketch import Sketch
+from learner.src.instance_data.instance_information import InstanceInformation
+from learner.src.instance_data.instance_data_utils import compute_instance_datas
+from learner.src.instance_data.tuple_graph_factory import TupleGraphFactory
+from learner.src.driver import Bunch
+from learner.src.iteration_data.sketch import Sketch
 
 from learner.src.driver import BENCHMARK_DIR
 from learner.src.util.command import create_experiment_workspace, change_working_directory
@@ -57,7 +57,7 @@ if __name__ == "__main__":
     change_working_directory(workspace)
 
     logging.info(colored("Initializing InstanceDatas...", "blue", "on_grey"))
-    instance_datas, domain_data = InstanceDataFactory().make_instance_datas(config)
+    instance_datas, domain_data = compute_instance_datas(config)
     logging.info(colored("..done", "blue", "on_grey"))
 
     logging.info(colored("Initializing TupleGraphs...", "blue", "on_grey"))

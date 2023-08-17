@@ -24,6 +24,7 @@ class InstanceData:
     state_space: StateSpace = None
     goal_distances: Dict[int, int] = None
     per_state_tuple_graphs: PerStateTupleGraphs = None
+
     initial_s_idxs: List[int] = None  # in cases we need multiple initial states
     per_state_feature_valuations: PerStateFeatureValuations = None
     per_state_state_pair_equivalences: PerStateStatePairEquivalences = None

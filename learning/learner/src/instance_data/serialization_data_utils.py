@@ -7,17 +7,16 @@ from dlplan.core import DenotationsCaches
 from learner.src.domain_data.domain_data import DomainData
 from learner.src.domain_data.domain_data_utils import compute_domain_data
 from learner.src.instance_data.instance_data import InstanceData
-from learner.src.instance_data.state_spaces import StateSpaces
+from learner.src.instance_data.serialization_data import SerializationData
 
 
-def compute_instance_datas(config, state_spaces: StateSpaces) -> Tuple[List[InstanceData], DomainData]:
+def compute_instance_datas(config, serialization_data: SerializationData) -> Tuple[List[InstanceData], DomainData]:
     """ Reparses StateSpaces into InstanceDatas. """
-    if not state_spaces.state_spaces:
-        return []
-    vocabulary_info = state_spaces.state_spaces[0].get_instance_info().get_vocabulary_info()
-    domain_data = compute_domain_data(config, vocabulary_info)
     instance_datas = []
-    for i, (state_space, instance_information, goal_distances) in enumerate(zip(state_spaces.state_spaces, state_spaces.instance_informations, state_spaces.goal_distances)):
+    state_spaces = [serialization_data.state_spaces[key] for key in sorted(serialization_data.state_spaces.keys())]
+    vocabulary_info = state_spaces[0].get_instance_info().get_vocabulary_info()
+    domain_data = compute_domain_data(config, vocabulary_info)
+    for i, (state_space, instance_information, goal_distances) in enumerate(zip(state_spaces, serialization_data.instance_informations, serialization_data.goal_distances)):
         logging.info("Parsing InstanceData of filename %s", instance_information.filename)
         print("Num states:", len(state_space.get_states()))
         instance_data = InstanceData(i, domain_data, DenotationsCaches(), instance_information)

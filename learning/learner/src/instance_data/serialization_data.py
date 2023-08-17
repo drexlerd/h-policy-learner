@@ -8,10 +8,10 @@ from learner.src.instance_data.instance_information import InstanceInformation
 
 
 @dataclass
-class StateSpaces:
+class SerializationData:
     """ Stores all information necessary for serialization and deserialization of InstanceDatas. """
     instance_informations: List[InstanceInformation]
-    state_spaces: List[StateSpace]
+    state_spaces: Dict[str, StateSpace]
     goal_distances: List[Dict[int, int]]
 
     def __getstate__(self):

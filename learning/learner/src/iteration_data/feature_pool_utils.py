@@ -23,6 +23,7 @@ def compute_feature_pool(config, domain_data: DomainData, instance_datas: List[I
     dlplan_states = set()
     for instance_data in instance_datas:
         dlplan_states.update(set(instance_data.state_space.get_states().values()))
+    dlplan_states = list(dlplan_states)
 
     syntactic_element_factory = domain_data.syntactic_element_factory
     feature_pool = FeaturePool()

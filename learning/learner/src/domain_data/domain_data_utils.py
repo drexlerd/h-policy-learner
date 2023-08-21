@@ -7,9 +7,8 @@ from dlplan.policy import PolicyBuilder
 from learner.src.domain_data.domain_data import DomainData
 
 
-def compute_domain_data(config, vocabulary_info: VocabularyInfo) -> DomainData:
-    logging.info("Constructing DomainData for filename %s", config.domain_filename)
-    domain_filename = config.domain_filename
+def compute_domain_data(domain_filename: str, vocabulary_info: VocabularyInfo) -> DomainData:
+    logging.info("Constructing DomainData for filename %s", domain_filename)
     policy_builder = PolicyBuilder()
     syntactic_element_factory = SyntacticElementFactory(vocabulary_info)
     feature_generator = FeatureGenerator()

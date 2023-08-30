@@ -11,6 +11,6 @@ def run(config, data, rng):
     output = dict()
     logging.info(colored("Constructing InstanceDatas...", "blue", "on_grey"))
     instance_datas, domain_data = compute_instance_datas(config)
-    output["instance_serialization_data"] = SerializationData(domain_data, instance_datas)
+    output["generate_state_space"] = SerializationData(domain_data, instance_datas)
     logging.info(colored("..done", "blue", "on_grey"))
     return ExitCode.Success, output

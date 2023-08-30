@@ -10,7 +10,7 @@ from learner.src.iteration_data.feature_pool import FeaturePool
 
 def run(config, data, rng):
     logging.info(colored("Parsing InstanceDatas...", "blue", "on_grey"))
-    serialization_data = data["instance_serialization_data"]
+    serialization_data = data["generate_state_space"]
     domain_data = serialization_data.domain_data
     instance_datas = serialization_data.instance_datas
     logging.info(colored("..done", "blue", "on_grey"))

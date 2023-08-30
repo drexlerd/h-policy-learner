@@ -58,7 +58,7 @@ class LearningHierarchiesStep(Step):
         return []
 
     def get_required_data(self):
-        return ["instance_serialization_data"]
+        return ["generate_state_space"]
 
     def description(self):
         return "Incremental learning module"

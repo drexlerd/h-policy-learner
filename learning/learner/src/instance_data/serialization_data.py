@@ -15,7 +15,11 @@ def parse_tuple(t: str):
 
 @dataclass
 class SerializationData:
-    """ Stores all information necessary for serialization and deserialization of InstanceDatas. """
+    """ Stores all information necessary for serialization and deserialization of InstanceDatas.
+
+    We could also serialize the whole program state to be able to restart
+    the whole pipeline during each intermediate step.
+    """
     domain_data: DomainData
     instance_datas: List[InstanceData]
 

@@ -1,6 +1,6 @@
 import ast
 from dataclasses import dataclass
-from typing import List, Dict
+from typing import List
 
 from dlplan.serialization import Data, serialize, deserialize
 
@@ -40,7 +40,7 @@ class SerializationData:
         state["domain_feature_data"] = self.domain_data.domain_feature_data
         state["domain_state_pair_equivalence"] = self.domain_data.domain_state_pair_equivalence
 
-        # InstanceInfos
+        # Flatten InstanceInfos
         ids = []
         instance_informations = []
         goal_distances = []
@@ -73,6 +73,7 @@ class SerializationData:
         state["per_state_state_pair_equivalences"] = per_state_state_pair_equivalences
         state["per_state_tuple_graph_equivalences"] = per_state_tuple_graph_equivalences
 
+        # Serialize DLPlan related data.
         data = Data()
         data.vocabulary_infos = vocabulary_infos
         data.policy_builders = policy_builders

@@ -4,14 +4,15 @@ from collections import  deque
 from termcolor import colored
 
 from learner.src.returncodes import ExitCode
-from learner.src.instance_data.serialization_data_utils import compute_instance_datas
 from learner.src.iteration_data.hierarchical_sketch import HierarchicalSketch
 from learner.src.iteration_data.feature_pool import FeaturePool
 
 
 def run(config, data, rng):
     logging.info(colored("Parsing InstanceDatas...", "blue", "on_grey"))
-    instance_datas, domain_data = compute_instance_datas(config, data["instance_serialization_data"])
+    serialization_data = data["instance_serialization_data"]
+    domain_data = serialization_data.domain_data
+    instance_datas = serialization_data.instance_datas
     logging.info(colored("..done", "blue", "on_grey"))
 
     root_hierarchical_sketch = HierarchicalSketch(

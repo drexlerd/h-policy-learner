@@ -37,7 +37,7 @@ def compute_instance_datas(config) -> Tuple[List[InstanceData], DomainData]:
         if vocabulary_info is None:
             # We obtain the parsed vocabulary from the first instance
             vocabulary_info = state_space.get_instance_info().get_vocabulary_info()
-            domain_data = compute_domain_data(config, vocabulary_info)
+            domain_data = compute_domain_data(config.domain_filename, vocabulary_info)
         if len(state_space.get_states()) > config.max_states_per_instance:
             continue
         goal_distances = state_space.compute_goal_distances()

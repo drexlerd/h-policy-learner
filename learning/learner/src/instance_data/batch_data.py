@@ -5,7 +5,6 @@ from typing import List
 from dlplan.serialization import Data, serialize, deserialize
 
 from learner.src.domain_data.domain_data import DomainData
-from learner.src.domain_data.domain_data_utils import construct_feature_generator
 from learner.src.instance_data.instance_data import InstanceData
 
 
@@ -14,7 +13,7 @@ def parse_tuple(t: str):
 
 
 @dataclass
-class SerializationData:
+class BatchData:
     """ Stores all information necessary for serialization and deserialization of InstanceDatas.
 
     We could also serialize the whole program state to be able to restart
@@ -93,10 +92,9 @@ class SerializationData:
         vocabulary_info = data.vocabulary_infos["0"]
         policy_builder = data.policy_builders["0"]
         syntactic_element_factory = data.syntactic_element_factories["0"]
-        feature_generator = construct_feature_generator()
         domain_feature_data = state["domain_feature_data"]
         domain_state_pair_equivalence = state["domain_state_pair_equivalence"]
-        self.domain_data = DomainData(state["domain_filename"], vocabulary_info, policy_builder, syntactic_element_factory, feature_generator, domain_feature_data, domain_state_pair_equivalence)
+        self.domain_data = DomainData(state["domain_filename"], vocabulary_info, policy_builder, syntactic_element_factory, domain_feature_data, domain_state_pair_equivalence)
         # InstanceData
         self.instance_datas = []
         num_instances = state["num_instances"]
@@ -115,5 +113,3 @@ class SerializationData:
                     state["per_state_feature_valuations"][str(i)],
                     state["per_state_state_pair_equivalences"][str(i)],
                     state["per_state_tuple_graph_equivalences"][str(i)]))
-
-
